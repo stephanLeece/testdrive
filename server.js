@@ -20,4 +20,32 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/drivedrive', function(req, res) {
+  res.render('home',
+  {
+    layout: 'layout'
+  });
+});
+
+app.get('/testdrive', function(req, res) {
+  res.render('testdrive',
+  {
+    layout: 'layout'
+  });
+});
+
+app.get('/info', function(req, res) {
+  res.render('info',
+  {
+    layout: 'layout'
+  });
+});
+
+app.get('/space', function(req, res) {
+  res.render('space',
+  {
+    layout: 'layout'
+  });
+});
+
 app.listen(8080, () => console.log('Listening on port 8080'));
