@@ -48,4 +48,7 @@ app.get('/space', function(req, res) {
   });
 });
 
+// node server.js
+// sass: npm run scss
+
 app.listen(8080, () => console.log('Listening on port 8080'));
