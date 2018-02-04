@@ -27,6 +27,20 @@ app.get('/drivedrive', function(req, res) {
   });
 });
 
+// app.get('/drivedrive/events', function(req, res) {
+//   res.render('home',
+//   {
+//     layout: 'layout'
+//   });
+// });
+
+// app.get('/drivedrive/catalogue', function(req, res) {
+//   res.render('home',
+//   {
+//     layout: 'layout'
+//   });
+// });
+
 app.get('/testdrive', function(req, res) {
   res.render('testdrive',
   {
@@ -47,5 +61,8 @@ app.get('/space', function(req, res) {
     layout: 'layout'
   });
 });
+
+// node server.js
+// sass: npm run scss
 
 app.listen(8080, () => console.log('Listening on port 8080'));
