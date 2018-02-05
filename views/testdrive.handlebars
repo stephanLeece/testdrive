@@ -1,1 +1,24 @@
-<h1>testdrive</h1>
+<div id="testdrive">
+  <div class="events testdrive">
+  <h1>TestDrive</h1>
+  <h2>Events On:</h2>
+  <ul>
+    {{#events}}
+    <li><a href="testdrive/event/{{id}}">{{title}}</a></li>
+    {{/events}}
+  </ul>
+  </div>
+
+  {{#modal}}
+  <div class="modal testdrive">
+    {{#content}}
+    <div class="event content">
+    <img src="{{url}}">
+    <p>{{description}}</p>
+    <div>
+    {{/content}}
+  </div>
+  {{/modal}}
+
+
+</div>
