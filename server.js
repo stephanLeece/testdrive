@@ -27,9 +27,25 @@ app.get('/drivedrive', function(req, res) {
   });
 });
 
+
 // need a get route for testdrive events module -- "testdrive/event/:id"
 // res.send to modal to show 'modal', and 'content' for the individual event info
 // probably will need the same for drivedrive events modal
+
+// app.get('/drivedrive/events', function(req, res) {
+//   res.render('home',
+//   {
+//     layout: 'layout'
+//   });
+// });
+
+// app.get('/drivedrive/catalogue', function(req, res) {
+//   res.render('home',
+//   {
+//     layout: 'layout'
+//   });
+// });
+
 
 app.get('/testdrive', function(req, res) {
   // need a db.query or req from cms for events information
@@ -54,5 +70,8 @@ app.get('/space', function(req, res) {
     layout: 'layout'
   });
 });
+
+// node server.js
+// sass: npm run scss
 
 app.listen(8080, () => console.log('Listening on port 8080'));
