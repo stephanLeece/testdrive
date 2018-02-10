@@ -2,6 +2,16 @@ const path = require('path');
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
+const contentful = require('contentful');
+const secrets = require('./secrets.json');
+
+
+
+
+client = contentful.createClient({
+  space: secrets.space,
+  accessToken: secrets.accessToken,
+})
 
 const app = express();
 
@@ -14,21 +24,47 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+<<<<<<< HEAD
     res.render('home',
         {
             layout: 'layout'
         });
+=======
+  client.getEntries()
+  .then(function (entries) {
+  // log the title for all the entries that have it
+  entries.items.forEach(function (entry) {
+
+      console.log(entry)
+
+  })
+})
+  res.render('home',
+  {
+    layout: 'layout'
+  });
+>>>>>>> 5eac2b23a2b926d509ce7374eada6c9ad75e79f8
 });
 
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/drivedrive', function(req, res) {
+<<<<<<< HEAD
     res.render('drivedrive',
         {
             layout: 'layout'
             // ,events: eventsResults,
             // catalogue: catalogueResults
         });
+=======
+
+  res.render('drivedrive',
+  {
+    layout: 'layout'
+    // ,events: eventsResults,
+    // catalogue: catalogueResults
+  });
+>>>>>>> 5eac2b23a2b926d509ce7374eada6c9ad75e79f8
 });
 
 app.get('/drivedrive/events', function(req, res) {
