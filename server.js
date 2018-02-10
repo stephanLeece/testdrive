@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const contentful = require('contentful');
 const secrets = require('./secrets.json');
 
+
 client = contentful.createClient({
   space: secrets.space,
   accessToken: secrets.accessToken,
