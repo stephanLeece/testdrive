@@ -2,6 +2,17 @@ const path = require('path');
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
+const contentful = require('contentful');
+const secrets = require('multer');
+
+key: secrets.space,
+  secret: secrets.accessToken,
+
+
+client = contentful.createClient({
+  space: secrets.space,
+  accessToken: secrets.accessToken,
+})
 
 const app = express();
 
@@ -14,6 +25,15 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+  client.getEntries()
+  .then(function (entries) {
+  // log the title for all the entries that have it
+  entries.items.forEach(function (entry) {
+
+      console.log(entry)
+
+  })
+})
   res.render('home',
   {
     layout: 'layout'
@@ -23,6 +43,7 @@ app.get('/', function(req, res) {
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/drivedrive', function(req, res) {
+
   res.render('drivedrive',
   {
     layout: 'layout'
