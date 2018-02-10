@@ -3,11 +3,7 @@ const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
-const secrets = require('multer');
-
-key: secrets.space,
-  secret: secrets.accessToken,
-
+const secrets = require('./secrets.json');
 
 client = contentful.createClient({
   space: secrets.space,
