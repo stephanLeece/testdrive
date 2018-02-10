@@ -29,7 +29,7 @@ app.get('/', function(req, res) {
   // log the title for all the entries that have it
   entries.items.forEach(function (entry) {
 
-      console.log(entry)
+      console.log("This is the entry:", entry.fields.eventImage)
 
   })
 })
