@@ -6,12 +6,10 @@ const contentful = require('contentful');
 const secrets = require('./secrets.json');
 
 
-
-
 client = contentful.createClient({
-    space: secrets.space,
-    accessToken: secrets.accessToken,
-});
+  space: secrets.space,
+  accessToken: secrets.accessToken,
+})
 
 const app = express();
 
@@ -24,21 +22,25 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+  let result = [];
+  client.getEntries()
+  .then(function (entries) {
+  // log the title for all the entries that have it
+  entries.items.forEach(function (entry) {
 
+      console.log(entry)
+      console.log('entry object: ', )
+      result.push(entry.fields)
+  })
+  console.log('result: ', result)
     res.render('home',
-        {
-            layout: 'layout'
-        });
+    {
+      layout: 'layout',
+      content: result
+    });
 
-    client.getEntries()
-        .then(function (entries) {
-            // log the title for all the entries that have it
-            entries.items.forEach(function (entry) {
+})
 
-                console.log("entry: ", entry.fields.eventImage.fields.file.url);
-
-            });
-        });
 
 });
 
@@ -46,39 +48,30 @@ app.get('/', function(req, res) {
 
 app.get('/drivedrive', function(req, res) {
 
-    res.render('drivedrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults,
-            // catalogue: catalogueResults
-        });
-
-
-    res.render('drivedrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults,
-            // catalogue: catalogueResults
-        });
-
+  res.render('drivedrive',
+  {
+    layout: 'layout'
+    // ,events: eventsResults,
+    // catalogue: catalogueResults
+  });
 });
 
 app.get('/drivedrive/events', function(req, res) {
-    res.render('drivedrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults,
-            // catalogue: catalogueResults
-        });
+  res.render('drivedrive',
+  {
+    layout: 'layout'
+    // ,events: eventsResults,
+    // catalogue: catalogueResults
+  });
 });
 
 app.get('/drivedrive/catalogue', function(req, res) {
-    res.render('drivedrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults,
-            // catalogue: catalogueResults
-        });
+  res.render('drivedrive',
+  {
+    layout: 'layout'
+    // ,events: eventsResults,
+    // catalogue: catalogueResults
+  });
 });
 
 // need a get route for testdrive events module -- "testdrive/event/:id"
@@ -86,28 +79,28 @@ app.get('/drivedrive/catalogue', function(req, res) {
 // probably will need the same for drivedrive events modal
 
 app.get('/testdrive', function(req, res) {
-    // need a db.query or req from cms for events information
+  // need a db.query or req from cms for events information
 
-    res.render('testdrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults
+  res.render('testdrive',
+  {
+    layout: 'layout'
+    // ,events: eventsResults
 
-        });
+  });
 });
 
 app.get('/info', function(req, res) {
-    res.render('info',
-        {
-            layout: 'layout'
-        });
+  res.render('info',
+  {
+    layout: 'layout'
+  });
 });
 
 app.get('/space', function(req, res) {
-    res.render('space',
-        {
-            layout: 'layout'
-        });
+  res.render('space',
+  {
+    layout: 'layout'
+  });
 });
 
 app.listen(8080, () => console.log('Listening on port 8080'));
