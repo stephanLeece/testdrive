@@ -9,9 +9,9 @@ const secrets = require('./secrets.json');
 
 
 client = contentful.createClient({
-  space: secrets.space,
-  accessToken: secrets.accessToken,
-})
+    space: secrets.space,
+    accessToken: secrets.accessToken,
+});
 
 const app = express();
 
@@ -24,47 +24,43 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-<<<<<<< HEAD
+
     res.render('home',
         {
             layout: 'layout'
         });
-=======
-  client.getEntries()
-  .then(function (entries) {
-  // log the title for all the entries that have it
-  entries.items.forEach(function (entry) {
 
-      console.log(entry)
+    client.getEntries()
+        .then(function (entries) {
+            // log the title for all the entries that have it
+            entries.items.forEach(function (entry) {
 
-  })
-})
-  res.render('home',
-  {
-    layout: 'layout'
-  });
->>>>>>> 5eac2b23a2b926d509ce7374eada6c9ad75e79f8
+                console.log("entry: ", entry.fields.eventImage.fields.file.url);
+
+            });
+        });
+
 });
 
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/drivedrive', function(req, res) {
-<<<<<<< HEAD
+
     res.render('drivedrive',
         {
             layout: 'layout'
             // ,events: eventsResults,
             // catalogue: catalogueResults
         });
-=======
 
-  res.render('drivedrive',
-  {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
->>>>>>> 5eac2b23a2b926d509ce7374eada6c9ad75e79f8
+
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
+
 });
 
 app.get('/drivedrive/events', function(req, res) {
