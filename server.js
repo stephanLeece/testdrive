@@ -3,10 +3,9 @@ const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
-const secrets = require('multer');
+const secrets = require('./secrets.json');
 
-key: secrets.space,
-  secret: secrets.accessToken,
+
 
 
 client = contentful.createClient({
