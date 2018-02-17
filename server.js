@@ -27,12 +27,8 @@ app.get('/', function(req, res) {
         .then(function (entries) {
             // log the title for all the entries that have it
             entries.items.forEach(function (entry) {
-
-                console.log(entry);
-                console.log('entry object: ' );
                 result.push(entry.fields);
             });
-            console.log('result: ', result);
             res.render('home',
                 {
                     layout: 'layout',
@@ -91,6 +87,14 @@ app.get('/testdrive', function(req, res) {
 });
 
 app.get('/info', function(req, res) {
+    res.render('info',
+        {
+            layout: 'layout'
+        });
+});
+
+app.post('/info', function(req, res) {
+  console.log(req.body);
     res.render('info',
         {
             layout: 'layout'
