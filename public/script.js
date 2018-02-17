@@ -1,6 +1,11 @@
-console.log(window.location.pathname);
+function showModal() {
+    console.log("running modal");
 
-
-// if pathname matches testdrive/event or drivedrive/event, set modal to show on page load.
-
-// same with /catalogue
+    $("h1").on('click', function(){
+        console.log("hi h1");
+        $('#modal').css({
+            "visibility":"visible"
+        })
+    })
+}
+showModal();

@@ -22,6 +22,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+
     let result = [];
     client.getEntries()
         .then(function (entries) {
@@ -36,6 +37,7 @@ app.get('/', function(req, res) {
                 });
 
         });
+
 
 
 });
