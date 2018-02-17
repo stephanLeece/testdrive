@@ -6,8 +6,6 @@ const contentful = require('contentful');
 const secrets = require('./secrets.json');
 
 
-
-
 client = contentful.createClient({
   space: secrets.space,
   accessToken: secrets.accessToken,
@@ -24,19 +22,25 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+  let result = [];
   client.getEntries()
   .then(function (entries) {
   // log the title for all the entries that have it
   entries.items.forEach(function (entry) {
 
-      console.log("This is the entry:", entry.fields.eventImage)
-
+      console.log(entry)
+      result.push(entry.fields)
   })
+  console.log('result: ', result)
+    res.render('home',
+    {
+      layout: 'layout',
+      content: result
+    });
+
 })
-  res.render('home',
-  {
-    layout: 'layout'
-  });
+
+
 });
 
 // placeholders for eventresults and catalogueResults returned from database/cms
