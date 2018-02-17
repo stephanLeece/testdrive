@@ -1,25 +1,11 @@
-console.log(window.location.pathname);
-
-
-// if pathname matches testdrive/event or drivedrive/event, set modal to show on page load.
-
-// same with /catalogue
-var events = $('#events')
-//
-// events.on("click", showModal);
-
 function showModal() {
-    console.log("running showModal");
+    console.log("running modal");
 
-    var html = `
-        <div id="intro">
-            <div id="introoverlay">`
-
-    $('#try').append(html);
-
-    $(function openIntro() {
-        $('#intro').slideDown('slow');
-        $('#introoverlay').slideDown("fast");
-    });
+    $("h1").on('click', function(){
+        console.log("hi h1");
+        $('#modal').css({
+            "visibility":"visible"
+        })
+    })
 }
 showModal();
