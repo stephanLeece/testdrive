@@ -1,17 +1,54 @@
-html,body {
+html {
   height: 100%;
 }
 
 body {
+
+  height: inherit;
   display: grid;
-  grid-template-columns: 80px 222.5px 222.5px 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 98.3px);
+  grid-column-gap: 30px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 
 
-#gMap {
-  width: 600px;
-  height: 700px;
+#infoMap {
+  grid-column: 6 / 9;
+  align-self: center;
+  height: 300px;
+  width: 300px;
+
   border: 1px solid black;
+}
+
+#infoContentOutline {
+  grid-column: 1 / 3;
+  height: 800px;
+  width: 800px;
+  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#eventList {
+  grid-column: 1 / 3;
+
+  li {
+    &:hover {
+      background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
+    }
+  }
+}
+
+#eventFull {
+  width: 200px;
+  height: 200px;
+  grid-column: 5 / 7;
+  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }

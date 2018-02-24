@@ -11,11 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "~1.17.1",
+    "chalk-animation": "^1.4.0",
     "contentful": "^5.1.0",
     "cookie-parser": "~1.4.3",
     "eslint": "^4.9.0",
     "express": "~4.15.2",
     "express-handlebars": "^3.0.0",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "nodemailer": "^4.6.0"
   }
 }
