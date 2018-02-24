@@ -3,8 +3,8 @@ html, body {
 
 body {
   display: grid;
-  grid-template-columns: 80px 222.5px 222.5px 1fr;
-  grid-template-rows: 1fr; }
+  grid-template-columns: repeat(12, 98.3px);
+  grid-column-gap: 30px; }
 
 #gMap {
   width: 600px;
