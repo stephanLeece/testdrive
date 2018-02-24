@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="558px" height="475px" viewBox="0 0 558 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1439.54688 586.226562 1439.54688 763.382812 1349.28906 763.382812 1349.28906 814.210938 1206.61719 805.570312 1206.61719 857.492188 1021.63281 857.492188 1021.63281 937.507812 1077.65425 937.507812 1077.65425 1034.57812 1550.5 1034.57812 1550.5 586.226562"></polygon>
+        <filter x="-11.5%" y="-13.2%" width="123.1%" height="127.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.637117347   0 0 0 0 0.637117347   0 0 0 0 0.637117347  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="DDTD-Info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-982.000000, -549.000000)">
+        <g id="Path-2">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
