@@ -1,28 +1,30 @@
-<div id="testdrive">
-  {{> bigmac}}
-  {{> sideMenu}}
+  {{>bigMac}}
+  {{>sideMenu}}
+
+<div id="catalogue-artists-purple">
+  <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg">
+
+  {{#artists}}
+  <p>{{firstname lastname}}</p>
+  {{/artists}}
 </div>
 
-  {{#catalogue}}
-  <div class="catalogue">
-    <div>
-    <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg">
-    {{#essays}}
-    <p>{{author}}</p>
+<img id="catalogue-line-green" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-green.svg">
+
+
+<div id="catalogue-line-blue">
+  <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg">
+  {{#essays}}
+  <a href=`/{{filename}}` target="_blank"><p>{{file}}</p><a>
     {{/essays}}
-    <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-green.svg">
-    </div>
-
-    <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg">
-    {{#files}}
-      <p>{{title}}</p>
-    {{/files}}
-
-    <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-blue.svg">
-
-    <div>
-      <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg">
-      <iframe src="{{some.url}}" width="" height=""></iframe>
-    </div>
   </div>
-  {{/catalogue}}
+
+  <img id="catalogue-line-blue" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-blue.svg">
+
+
+  <div class="video">
+    {{#video}}
+    <iframe src="https://www.youtube.com/watch?v=mrZRURcb1cM" width="300" height="400"></iframe>
+    {{/video}}
+    <img id="catalogue-video-grey" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg">
+  </div>
