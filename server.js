@@ -18,7 +18,12 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
+
+client = contentful.createClient({
+    space: secrets.space,
+    accessToken: secrets.accessToken,
+});
+
 
 const app = express();
 
@@ -33,12 +38,17 @@ app.use(express.static(__dirname + `/public`));
 app.get('/', function(req, res) {
 
   let result = [];
-  client.getEntries().then(function(entries) {
-    // log the title for all the entries that have it
-    entries.items.forEach(function(entry) {
-      result.push(entry.fields);
-    });
-    res.render('home', {
+  client.getEntries()
+  .then(function (entries) {
+  // log the title for all the entries that have it
+  entries.items.forEach(function (entry) {
+
+      result.push(entry.fields)
+      console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
+  })
+  console.log('result: ', result)
+    res.render('home',
+    {
       layout: 'layout',
       content: result
     });
@@ -51,28 +61,32 @@ app.get('/', function(req, res) {
 
 app.get('/drivedrive', function(req, res) {
 
-  res.render('drivedrive', {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 app.get('/drivedrive/events', function(req, res) {
 
-  res.render('drivedrive', {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 app.get('/drivedrive/catalogue', function(req, res) {
-  res.render('drivedrive', {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 // need a get route for testdrive events module -- "testdrive/event/:id"
@@ -80,13 +94,14 @@ app.get('/drivedrive/catalogue', function(req, res) {
 // probably will need the same for drivedrive events modal
 
 app.get('/testdrive', function(req, res) {
-  // need a db.query or req from cms for events information
+    // need a db.query or req from cms for events information
 
-  res.render('testdrive', {
-    layout: 'layout'
-    // ,events: eventsResults
 
-  });
+    res.render('testdrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults
+        });
 });
 
 app.get('/info', function(req, res) {
