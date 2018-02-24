@@ -14,7 +14,7 @@ body {
   align-self: center;
   height: 300px;
   width: 300px;
-  border: 1px solid black; 
+  border: 1px solid black;
 }
 
 #infoContentOutline {
@@ -26,16 +26,11 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
-#eventList {
-  grid-column: 1 / 3; }
-  #eventList li:hover {
-    background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg"); }
+.home {
+   height: 50px;
+  }
 
-#eventFull {
-  width: 200px;
-  height: 200px;
-  grid-column: 5 / 7;
-  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center; }
+#modal {
+    visibility: hidden;
+    height: 50px;
+}
