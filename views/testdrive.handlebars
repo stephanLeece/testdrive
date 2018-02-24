@@ -1,20 +1,9 @@
-  <div class="events testdrive">
-  <h1>TestDrive</h1>
-  <h2>Events On:</h2>
+<div id="eventList">
   <ul>
-    {{#events}}
-    <li><a href="testdrive/event/{{id}}">{{title}}</a></li>
-    {{/events}}
+    <li>event 1</li>
+    <li>event 2</li>
+    <li>event 3</li>
   </ul>
-  </div>
+</div>
+<div id="eventFull"></div>
 
-  {{#modal}}
-  <div class="modal testdrive">
-    {{#content}}
-    <div class="event content">
-    <img src="{{url}}">
-    <p>{{description}}</p>
-    <div>
-    {{/content}}
-  </div>
-  {{/modal}}
