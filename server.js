@@ -28,9 +28,8 @@ app.get('/', function(req, res) {
   // log the title for all the entries that have it
   entries.items.forEach(function (entry) {
 
-      console.log(entry)
-      console.log('entry object: ', )
       result.push(entry.fields)
+      console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
   })
   console.log('result: ', result)
     res.render('home',
