@@ -7,9 +7,9 @@ const secrets = require('./secrets.json');
 
 
 client = contentful.createClient({
-  space: secrets.space,
-  accessToken: secrets.accessToken,
-})
+    space: secrets.space,
+    accessToken: secrets.accessToken,
+});
 
 const app = express();
 
@@ -47,30 +47,31 @@ app.get('/', function(req, res) {
 
 app.get('/drivedrive', function(req, res) {
 
-  res.render('drivedrive',
-  {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 app.get('/drivedrive/events', function(req, res) {
-  res.render('drivedrive',
-  {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 app.get('/drivedrive/catalogue', function(req, res) {
-  res.render('drivedrive',
-  {
-    layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
-  });
+    res.render('drivedrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults,
+            // catalogue: catalogueResults
+        });
 });
 
 // need a get route for testdrive events module -- "testdrive/event/:id"
@@ -78,28 +79,36 @@ app.get('/drivedrive/catalogue', function(req, res) {
 // probably will need the same for drivedrive events modal
 
 app.get('/testdrive', function(req, res) {
-  // need a db.query or req from cms for events information
+    // need a db.query or req from cms for events information
 
-  res.render('testdrive',
-  {
-    layout: 'layout'
-    // ,events: eventsResults
+    res.render('testdrive',
+        {
+            layout: 'layout'
+            // ,events: eventsResults
 
-  });
+        });
 });
 
 app.get('/info', function(req, res) {
-  res.render('info',
-  {
-    layout: 'layout'
-  });
+    res.render('info',
+        {
+            layout: 'layout'
+        });
+});
+
+app.post('/info', function(req, res) {
+  console.log(req.body);
+    res.render('info',
+        {
+            layout: 'layout'
+        });
 });
 
 app.get('/space', function(req, res) {
-  res.render('space',
-  {
-    layout: 'layout'
-  });
+    res.render('space',
+        {
+            layout: 'layout'
+        });
 });
 
 app.listen(8080, () => console.log('Listening on port 8080'));

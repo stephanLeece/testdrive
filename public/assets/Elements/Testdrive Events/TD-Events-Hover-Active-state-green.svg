@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="501px" height="167px" viewBox="0 0 501 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M164.703044,293.984375 L107.0861,303.53125 L78.8154168,331.726562 C70.6259384,356.924479 65.9198188,373.528646 64.697058,381.539062 C62.8629167,393.554688 509.691427,409.710938 509.691427,381.539062 C509.691427,353.367188 448.03258,341.90625 448.03258,331.726562 C448.03258,321.546875 430.336513,303.367188 416.320051,293.984375 C406.975743,287.729167 323.103407,287.729167 164.703044,293.984375 Z" id="path-1"></path>
+        <filter x="-10.3%" y="-40.8%" width="120.7%" height="185.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.878431373   0 0 0 0 0.301960784  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="DDTD-TD-Events-01.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-37.000000, -262.000000)">
+        <g id="Path-7">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
