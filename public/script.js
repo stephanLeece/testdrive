@@ -1,7 +1,7 @@
 function showModal() {
     console.log("running modal");
 
-    $("img").on('click', function(){
+    $("home-render-top").on('click', function(){
         console.log("hi h1");
         $('#modal').css({
             "visibility":"visible"
@@ -9,3 +9,10 @@ function showModal() {
     })
 }
 showModal();
+
+function fadeIntoImg() {
+    console.log("lag?");
+$('#intro').fadeOut(5000);
+
+}
+// fadeIntoImg();
