@@ -1,4 +1,3 @@
-
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#back-button")
@@ -7,7 +6,6 @@ backButton.on('click', () => {
   console.log('herstory: ', window.history)
   window.history.back();
 })
-
 
 function showModal() {
   console.log("running modal");
@@ -28,13 +26,13 @@ function fadeIntoImg() {
 
 // ------------------------------- testdrive functions ------------------
 
+$(window).on('load', () => {
+  $('.eventsInfoBox').empty()
+}
+
 // swap out for ajax request to contentful or server route to populate with event deets
 events = ['main1, main2, main3, main4']
 
 $('li').on('click', e => {
-  $('#eventFull')
-    .empty()
-    .append(`<p> ${$(e.target).attr('class')} </p>`)
-
-
+  $('.eventsInfoBox').empty().append(`<p> ${$(e.target).attr('class')} </p>`)
 });

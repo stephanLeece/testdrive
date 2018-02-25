@@ -59,8 +59,11 @@ app.get('/catalogue', function(req, res) {
   });
 });
 
+
+
+
 app.get('/events', function(req, res) {
-  res.render('home', {
+  res.render('events', {
     layout: 'layout'
     // ,events: eventsResults,
     // catalogue: catalogueResults
