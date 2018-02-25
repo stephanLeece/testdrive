@@ -14,6 +14,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.drivedrive-menu {
+  grid-column: 1 / 3;
+}
+
+#side-menu {
+  grid-column: 12 / 13;
+}
+
+
 //---------------------- INFO STYLES-------------------------------------------
 
 #infoMap {
@@ -58,8 +71,12 @@ body {
 }
 
 
-//---------------------- HOME STYLES-------------------------------------------
 
+
+//---------------------- HOME STYLES-------------------------------------------
+.home {
+  height: 50px;
+}
 #modal {
     visibility: hidden;
     height: 50px;
