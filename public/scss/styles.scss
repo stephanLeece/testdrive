@@ -5,7 +5,6 @@ html {
 }
 
 body {
-
   height: inherit;
   display: grid;
   grid-template-columns: repeat(12, 98.3px);
@@ -23,10 +22,28 @@ body {
 }
 
 #side-menu {
-  grid-column: 12 / 13;
+  grid-column: 11 / 12;
 }
 
+.testdrive-logo {
+  grid-column: 12 / 13;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.eventList {
+  grid-column: 1 / 3;
+}
+
+.eventsInfoBox {
+  height: 400px;
+  width: 200px;
+  grid-column: 5 / 7;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 //---------------------- INFO STYLES-------------------------------------------
 
 #infoMap {
@@ -34,7 +51,6 @@ body {
   align-self: center;
   height: 300px;
   width: 300px;
-
   border: 1px solid black;
 }
 
@@ -47,37 +63,39 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 //---------------------- TESTDRIVE STYLES-------------------------------------------
 
-#eventList {
+#testdrive-logo-home {
   grid-column: 1 / 3;
+}
 
-  li {
-    &:hover {
-      background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
-    }
+#tdEventsList {
+  li:hover {
+    background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   }
 }
 
-#eventFull {
-  width: 200px;
-  height: 200px;
-  grid-column: 5 / 7;
+#tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+//---------------------- drivedrive events STYLES-------------------------------------------
+
+#ddEventsList {
+  li:hover {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+  }
 }
 
-
-
-
+#ddEventsInfobox {
+  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.svg");
+}
 //---------------------- HOME STYLES-------------------------------------------
+
 .home {
   height: 50px;
 }
+
 #modal {
-    visibility: hidden;
-    height: 50px;
+  visibility: hidden;
+  height: 50px;
 }
