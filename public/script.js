@@ -28,7 +28,7 @@ function fadeIntoImg() {
 
 $(window).on('load', () => {
   $('.eventsInfoBox').empty()
-}
+});
 
 // swap out for ajax request to contentful or server route to populate with event deets
 events = ['main1, main2, main3, main4']
