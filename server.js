@@ -18,12 +18,7 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-
-client = contentful.createClient({
-    space: secrets.space,
-    accessToken: secrets.accessToken,
-});
-
+client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
 
 const app = express();
 
@@ -37,59 +32,47 @@ app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
 
-  let result = [];
-  client.getEntries()
-  .then(function (entries) {
-  // log the title for all the entries that have it
-  entries.items.forEach(function (entry) {
+  // let result = [];
+  // client.getEntries()
+  // .then(function (entries) {
+  //  log the title for all the entries that have it
+  // entries.items.forEach(function (entry) {
+  //
+  //     result.push(entry.fields)
+  //     console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
+  // })
 
-      result.push(entry.fields)
-      console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
-  })
-  console.log('result: ', result)
-    res.render('home',
-    {
-      layout: 'layout',
-      content: result
-    });
-
+  res.render('home', {
+    layout: 'layout'
+    // ,content: result
   });
-
 });
 
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
-
   //need client.getEntries for artists names / essays
-
-    res.render('catalogue',
-        {
-            layout: 'layout'
-            // artists: artistsResults,
-            // essays: essaysResults
-        });
+  res.render('catalogue', {
+    layout: 'layout'
+    // artists: artistsResults,
+    // essays: essaysResults
+  });
 });
 
-app.get('/drivedrive/events', function(req, res) {
-
-    res.render('drivedrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults,
-            // catalogue: catalogueResults
-        });
+app.get('/events', function(req, res) {
+  res.render('home', {
+    layout: 'layout'
+    // ,events: eventsResults,
+    // catalogue: catalogueResults
+  });
 });
 
 app.get('/testdrive', function(req, res) {
-    // need a db.query or req from cms for events information
-
-
-    res.render('testdrive',
-        {
-            layout: 'layout'
-            // ,events: eventsResults
-        });
+  // need a db.query or req from cms for events information
+  res.render('testdrive', {
+    layout: 'layout'
+    // ,events: eventsResults
+  });
 });
 
 app.get('/info', function(req, res) {
@@ -104,7 +87,6 @@ app.post('/info', function(req, res) {
     to: 'bar@example.com, baz@example.com', // list of receivers
     subject: 'new user sign up:', // Subject line
     text: req.body.userEmail, // plain text body
-
   };
 
   // send mail with defined transport object
@@ -119,12 +101,7 @@ app.post('/info', function(req, res) {
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
     // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   });
-
   res.render('info', {layout: 'layout'});
-});
-
-app.get('/space', function(req, res) {
-  res.render('space', {layout: 'layout'});
 });
 
 app.listen(8080, () => console.log('Listening on port 8080'));
