@@ -26,13 +26,12 @@ function fadeIntoImg() {
 
 // ------------------------------- testdrive functions ------------------
 
-$(window).on('load', () => {
-  $('.eventsInfoBox').empty()
-});
-
-// swap out for ajax request to contentful or server route to populate with event deets
-events = ['main1, main2, main3, main4']
+// $(parentSelector).find(childSelector)
 
 $('li').on('click', e => {
-  $('.eventsInfoBox').empty().append(`<p> ${$(e.target).attr('class')} </p>`)
+  let eventToShow = '.' + $(e.target).attr('class')
+console.log(eventToShow);
+$('.eventsInfoBox').find(`p`).addClass('hidden');
+$('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
+
 });

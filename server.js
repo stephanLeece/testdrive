@@ -65,10 +65,11 @@ app.get('/catalogue', function(req, res) {
 app.get('/events', function(req, res) {
   res.render('events', {
     layout: 'layout'
-    // ,events: eventsResults,
-    // catalogue: catalogueResults
+    // ,events: eventsResults
   });
 });
+
+
 
 app.get('/testdrive', function(req, res) {
   // need a db.query or req from cms for events information
@@ -77,6 +78,8 @@ app.get('/testdrive', function(req, res) {
     // ,events: eventsResults
   });
 });
+
+
 
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});

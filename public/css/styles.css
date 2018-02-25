@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat; }
 
 .hidden {
-  visibility: hidden; }
+  display: none; }
 
 .drivedrive-menu {
   grid-column: 1 / 3; }
