@@ -1,4 +1,13 @@
+
 // ---------------------------------- homepage functions -----------------
+
+let backButton = $("#back-button")
+
+backButton.on('click', () => {
+  console.log('herstory: ', window.history)
+  window.history.back();
+})
+
 
 function showModal() {
   console.log("running modal");
