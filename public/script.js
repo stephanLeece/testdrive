@@ -35,3 +35,15 @@ $('.eventsInfoBox').find(`p`).addClass('hidden');
 $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
 });
+
+// ------------------------------- video functions ----------
+
+let video = $('.video')
+
+function play() {
+  video.play()
+}
+
+function pause() {
+  video.pause()
+}

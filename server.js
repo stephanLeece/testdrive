@@ -43,15 +43,44 @@ app.get('/', function(req, res) {
   });
 });
 
+function compare(a, b) {
+    var splitA = a.split(" ");
+    var splitB = b.split(" ");
+    var lastA = splitA[splitA.length - 1];
+    var lastB = splitB[splitB.length - 1];
+
+    if (lastA < lastB) return -1;
+    if (lastA > lastB) return 1;
+    return 0;
+}
+
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
-  //need client.getEntries for artists names / essays
-  res.render('catalogue', {
-    layout: 'layout'
-    // artists: artistsResults,
-    // essays: essaysResults
-  });
+
+  client.getEntries().then((entries) => {
+    let artists = [];
+    let video;
+
+    entries.items.forEach(entry=> {
+      if (entry.fields.artistName) {
+        artists.push(entry.fields.artistName)
+      } else if (entry.fields.video) {
+        video = entry.fields.video.fields.file.url.replace('//', '')
+      }
+    })
+
+    artists.sort(compare);
+    console.log(video);
+
+    res.render('catalogue', {
+      layout: 'layout',
+      artists: artists,
+      video: video
+    });
+  }).catch((err) => {
+    console.log('err: ', err)
+  })
 });
 
 app.get('/events', function(req, res) {
