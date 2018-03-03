@@ -2,11 +2,8 @@
 
 DriveDrive
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.37.56](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/drivedrive.png)
-=======
 ![Screen Shot 2018-03-03 at 14.37.56](./drivedrive.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .drive-drive {
@@ -20,11 +17,8 @@ DriveDrive
 
 Catalogue
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.43.17](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/catalogue.png)
-=======
 ![Screen Shot 2018-03-03 at 14.43.17](./catalogue.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .catalogue {
@@ -45,11 +39,9 @@ Catalogue
 
 Events
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.45.00](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/events.png)
-=======
+
 ![Screen Shot 2018-03-03 at 14.45.00](./events.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .events {
@@ -69,11 +61,9 @@ Events
 
 Image behind video
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.51.26](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/backgroundvideoimg.png)
-=======
+
 ![Screen Shot 2018-03-03 at 14.51.26](./backgroundvideoimg.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .img-video-background {
@@ -86,13 +76,11 @@ Image behind video
 
 
 
-Video 
+Video
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.54.55](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/video.png)
-=======
+
 ![Screen Shot 2018-03-03 at 14.54.55](./video.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .video-home {
@@ -104,11 +92,9 @@ Video
 
 Red Line
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 14.58.32](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/redline.png)
-=======
+
 ![Screen Shot 2018-03-03 at 14.58.32](./redline.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .redline-img-home {
@@ -121,11 +107,8 @@ Red Line
 
 Info
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.00.09](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/info.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.00.09](./info.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
 
 ```css
 .info {
@@ -147,11 +130,8 @@ Info
 
 testdrive-home
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.01.29](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/testdrive.png)
-=======
 ![Screen Shot 2018-03-03 at 15.01.29](./testdrive.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .testdrive-home {
@@ -163,11 +143,9 @@ testdrive-home
 
 motor bike
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.04.58](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/motorbike.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.04.58](./motorbike.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .motorbike {
@@ -190,11 +168,9 @@ motor bike
 
 Image - the two images are now one:
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.06.28](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/spaceimg.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.06.28](./spaceimg.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .img-space-hm {
@@ -208,11 +184,8 @@ Image - the two images are now one:
 
 Info blue img and text (separate elements) Appearing on Click
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.19.22](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/blue-line.png)
-=======
 ![Screen Shot 2018-03-03 at 15.19.22](./blue-line.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .info-space-img-hm {
@@ -226,11 +199,9 @@ Info blue img and text (separate elements) Appearing on Click
 
 
 
-<<<<<<< HEAD
-Info text![Screen Shot 2018-03-03 at 15.22.52](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/textinblueline.png)
-=======
+
 Info text![Screen Shot 2018-03-03 at 15.22.52](./textinblueline.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .info-space-text-hm {
@@ -260,11 +231,8 @@ INTO DRIVE DRIVE PAGE
 
 purple line img
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.32.12](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/purple-line-artistlist.png)
-=======
 ![Screen Shot 2018-03-03 at 15.32.12](./purple-line-artistlist.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .purple-line-img-drv {
@@ -282,11 +250,9 @@ purple line img
 
 artist list
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.34.17](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/artistlist.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.34.17](./artistlist.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .artist-list-drv {
@@ -312,11 +278,9 @@ artist list
 
 PDF
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.36.11](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/pdf.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.36.11](./pdf.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .pdf-drv {
@@ -342,11 +306,9 @@ PDF
 
 green line
 
-<<<<<<< HEAD
-![Screen Shot 2018-03-03 at 15.38.13](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/green-line.png)
-=======
+
 ![Screen Shot 2018-03-03 at 15.38.13](./green-line.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .green-line-img-drv {
@@ -363,11 +325,9 @@ green line
 
 video img background
 
-<<<<<<< HEAD
-![videoimgbackground](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/videoimgbackground.png)
-=======
+
 ![videoimgbackground](./videoimgbackground.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .video-background-img-drv {
@@ -382,11 +342,8 @@ video img background
 
 video Drive Drive
 
-<<<<<<< HEAD
-![videodrivedrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/videodrivedrive.png)
-=======
 ![videodrivedrive](./videodrivedrive.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```
 .video-catalogue-drv {
@@ -399,11 +356,9 @@ video Drive Drive
 
 Blue line drive drive
 
-<<<<<<< HEAD
-![blue-line-drivedrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/blue-line-drivedrive.png)
-=======
+
 ![blue-line-drivedrive](./blue-line-drivedrive.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
+
 
 ```css
 .blue-line-img-drv {
@@ -420,11 +375,8 @@ Blue line drive drive
 
 Back
 
-<<<<<<< HEAD
-![back](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/back.png)
-=======
+
 ![back](./back.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
 
 ```css
 .back {
@@ -450,11 +402,8 @@ DriveDrive Events
 
 Top artist-name-events-dr
 
-<<<<<<< HEAD
-![artistnamedr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/artistnamedr.png)
-=======
+
 ![artistnamedr](./artistnamedr.png)
->>>>>>> 03bfecf16822cd992f357d04e0379c9b8bd1ff51
 
 ```
 .title-artist-name-drv {
@@ -498,7 +447,7 @@ image-events-drive
 
 Events description drive drive
 
-![events-description-dr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/events-description-dr.png)
+![events-description-dr](./events-description-dr.png)
 
 ```
 .events-description-drv {
@@ -520,7 +469,7 @@ Events description drive drive
 
 Pink line img drive drive
 
-![pinkline-img](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/pinkline-img.png)
+![pinkline-img](./pinkline-img.png)
 
 ```css
 .pinkline-img-drv {
@@ -536,7 +485,7 @@ Pink line img drive drive
 
 Drive drive events Date
 
-![dr-events-date](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/dr-events-date.png)
+![dr-events-date](./dr-events-date.png)
 
 ```
 .events-date-drv {
@@ -558,7 +507,7 @@ Drive drive events Date
 
 Drive drive events artistname
 
-![event-name-dr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/event-name-dr.png)
+![event-name-dr](./event-name-dr.png)
 
 ```
 .events-name-drv {
@@ -578,9 +527,9 @@ Drive drive events artistname
 
 
 
-event info modal // 
+event info modal //
 
-![event-modal](/Users/elektroniki/Desktop/event-modal.png)
+![event-modal](./event-modal.png)
 
 ```
 .event-info-modal-drv {
@@ -596,7 +545,7 @@ event info modal //
 
 Testdrive
 
-![tesdrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/tesdrive.png)
+![tesdrive](./tesdrive.png)
 
 ```
 .event-info-modal-trv {
@@ -612,7 +561,7 @@ Testdrive
 
 green-line-img-tr
 
-![greenline](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/greenline.png)
+![greenline](./greenline.png)
 
 ```
 .greenline-img-trv {
@@ -628,7 +577,7 @@ green-line-img-tr
 
 testdrive events date
 
-![datetr](/Users/elektroniki/Desktop/datetr.png)
+![datetr](./datetr.png)
 
 ```
 .greenline-img-trv {
@@ -650,7 +599,7 @@ testdrive events date
 
 event title testdrive
 
-![title-tr](/Users/elektroniki/Desktop/title-tr.png)
+![title-tr](./title-tr.png)
 
 ```
 .event-title-trv {
@@ -676,7 +625,7 @@ InfoPage
 
 background image for info
 
-![openingtimesbackground](/Users/elektroniki/Desktop/openingtimesbackground.png)
+![openingtimesbackground](./openingtimesbackground.png)
 
 ```
 .image-info-outline {
@@ -691,9 +640,9 @@ background image for info
 
 
 
-gallery info 
+gallery info
 
-![info](/Users/elektroniki/Desktop/info.png)
+![info](./info.png)
 
 ```
 .gallery-info {
@@ -710,7 +659,7 @@ gallery info
 
 sign up
 
-![signup](/Users/elektroniki/Desktop/signup.png)
+![signup](./signup.png)
 
 ```
 .sign-up-to-our-list {
@@ -732,7 +681,7 @@ sign up
 
 sign up input
 
-![signupinput](/Users/elektroniki/Desktop/signupinput.png)
+![signupinput](./signupinput.png)
 
 ```
 .sign-up-input {
@@ -744,7 +693,7 @@ sign up input
 
 button
 
-![button](/Users/elektroniki/Desktop/button.png)
+![button](./button.png)
 
 ```
 .sign-up-button {
@@ -758,7 +707,7 @@ button
 
 Info page map
 
-![map](/Users/elektroniki/Desktop/map.png)
+![map](./map.png)
 
 ```
 .infopage-map {
@@ -772,7 +721,7 @@ Info page map
 
 Testdrive on right corner
 
-![testdrive](/Users/elektroniki/Desktop/testdrive.png)
+![testdrive](./testdrive.png)
 
 ```
 .testdrive {
@@ -788,7 +737,7 @@ cc
 
 
 
-![cc](/Users/elektroniki/Desktop/cc.png)
+![cc](./cc.png)
 
 ```
 .cc {
@@ -805,4 +754,3 @@ cc
 	color: #ffffff;
 }
 ```
-
