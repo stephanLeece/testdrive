@@ -1,6 +1,8 @@
+
+
 DriveDrive
 
-![Screen Shot 2018-03-03 at 14.37.56](/Users/elektroniki/Desktop/ScrenshotCSS/drivedrive.png)
+![Screen Shot 2018-03-03 at 14.37.56](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/drivedrive.png)
 
 ```css
 .drive-drive {
@@ -14,7 +16,7 @@ DriveDrive
 
 Catalogue
 
-![Screen Shot 2018-03-03 at 14.43.17](/Users/elektroniki/Desktop/ScrenshotCSS/catalogue.png)
+![Screen Shot 2018-03-03 at 14.43.17](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/catalogue.png)
 
 ```css
 .catalogue {
@@ -35,7 +37,7 @@ Catalogue
 
 Events
 
-![Screen Shot 2018-03-03 at 14.45.00](/Users/elektroniki/Desktop/ScrenshotCSS/events.png)
+![Screen Shot 2018-03-03 at 14.45.00](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/events.png)
 
 ```css
 .events {
@@ -55,7 +57,7 @@ Events
 
 Image behind video
 
-![Screen Shot 2018-03-03 at 14.51.26](/Users/elektroniki/Desktop/ScrenshotCSS/backgroundvideoimg.png)
+![Screen Shot 2018-03-03 at 14.51.26](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/backgroundvideoimg.png)
 
 ```css
 .img-video-background {
@@ -70,7 +72,7 @@ Image behind video
 
 Video 
 
-![Screen Shot 2018-03-03 at 14.54.55](/Users/elektroniki/Desktop/ScrenshotCSS/video.png)
+![Screen Shot 2018-03-03 at 14.54.55](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/video.png)
 
 ```
 .video-home {
@@ -82,7 +84,7 @@ Video
 
 Red Line
 
-![Screen Shot 2018-03-03 at 14.58.32](/Users/elektroniki/Desktop/ScrenshotCSS/redline.png)
+![Screen Shot 2018-03-03 at 14.58.32](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/redline.png)
 
 ```css
 .redline-img-home {
@@ -95,7 +97,7 @@ Red Line
 
 Info
 
-![Screen Shot 2018-03-03 at 15.00.09](/Users/elektroniki/Desktop/ScrenshotCSS/info.png)
+![Screen Shot 2018-03-03 at 15.00.09](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/info.png)
 
 ```css
 .info {
@@ -117,7 +119,7 @@ Info
 
 testdrive-home
 
-![Screen Shot 2018-03-03 at 15.01.29](/Users/elektroniki/Desktop/ScrenshotCSS/testdrive.png)
+![Screen Shot 2018-03-03 at 15.01.29](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/testdrive.png)
 
 ```css
 .testdrive-home {
@@ -129,7 +131,7 @@ testdrive-home
 
 motor bike
 
-![Screen Shot 2018-03-03 at 15.04.58](/Users/elektroniki/Desktop/ScrenshotCSS/motorbike.png)
+![Screen Shot 2018-03-03 at 15.04.58](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/motorbike.png)
 
 ```
 .motorbike {
@@ -152,10 +154,10 @@ motor bike
 
 Image - the two images are now one:
 
-![Screen Shot 2018-03-03 at 15.06.28](/Users/elektroniki/Desktop/ScrenshotCSS/spaceimg.png)
+![Screen Shot 2018-03-03 at 15.06.28](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/spaceimg.png)
 
 ```css
-.img-space {
+.img-space-hm {
 	width: 869px;
 	height: 524px;
 	object-fit: contain;
@@ -166,10 +168,10 @@ Image - the two images are now one:
 
 Info blue img and text (separate elements) Appearing on Click
 
-![Screen Shot 2018-03-03 at 15.19.22](/Users/elektroniki/Desktop/ScrenshotCSS/blue-line.png)
+![Screen Shot 2018-03-03 at 15.19.22](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/blue-line.png)
 
 ```
-.info-space-img {
+.info-space-img-hm {
 	width: 466.2px;
 	height: 607.5px;
 	object-fit: contain;
@@ -180,10 +182,10 @@ Info blue img and text (separate elements) Appearing on Click
 
 
 
-Info text![Screen Shot 2018-03-03 at 15.22.52](/Users/elektroniki/Desktop/ScrenshotCSS/textinblueline.png)
+Info text![Screen Shot 2018-03-03 at 15.22.52](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/textinblueline.png)
 
 ```css
-.info-space-text {
+.info-space-text-hm {
 	width: 372px;
 	height: 462px;
 	font-family: TimesNewRomanPSMT;
@@ -210,10 +212,10 @@ INTO DRIVE DRIVE PAGE
 
 purple line img
 
-![Screen Shot 2018-03-03 at 15.32.12](/Users/elektroniki/Desktop/ScrenshotCSS/purple-line-artistlist.png)
+![Screen Shot 2018-03-03 at 15.32.12](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/purple-line-artistlist.png)
 
 ```
-.purple-line-img-dr {
+.purple-line-img-drv {
 	width: 277.1px;
 	height: 687.8px;
 	object-fit: contain;
@@ -228,10 +230,10 @@ purple line img
 
 artist list
 
-![Screen Shot 2018-03-03 at 15.34.17](/Users/elektroniki/Desktop/ScrenshotCSS/artistlist.png)
+![Screen Shot 2018-03-03 at 15.34.17](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/artistlist.png)
 
 ```css
-.artist-list-dr {
+.artist-list-drv {
 	width: 149px;
 	height: 628px;
 	font-family: TimesNewRomanPSMT;
@@ -254,10 +256,10 @@ artist list
 
 PDF
 
-![Screen Shot 2018-03-03 at 15.36.11](/Users/elektroniki/Desktop/ScrenshotCSS/pdf.png)
+![Screen Shot 2018-03-03 at 15.36.11](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/pdf.png)
 
 ```css
-.pdf-dr {
+.pdf-drv {
 	width: 460px;
 	height: 1011px;
 	font-family: TimesNewRomanPSMT;
@@ -280,10 +282,10 @@ PDF
 
 green line
 
-![Screen Shot 2018-03-03 at 15.38.13](/Users/elektroniki/Desktop/ScrenshotCSS/green-line.png)
+![Screen Shot 2018-03-03 at 15.38.13](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/green-line.png)
 
 ```
-.green-line-img-dr {
+.green-line-img-drv {
 	width: 162.9px;
 	height: 221.6px;
 	object-fit: contain;
@@ -297,10 +299,10 @@ green line
 
 video img background
 
-![videoimgbackground](/Users/elektroniki/Desktop/ScrenshotCSS/videoimgbackground.png)
+![videoimgbackground](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/videoimgbackground.png)
 
 ```
-.video-background-img-dr {
+.video-background-img-drv {
 	width: 445px;
 	height: 313px;
 	object-fit: contain;
@@ -312,10 +314,10 @@ video img background
 
 video Drive Drive
 
-![videodrivedrive](/Users/elektroniki/Desktop/ScrenshotCSS/videodrivedrive.png)
+![videodrivedrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/videodrivedrive.png)
 
 ```
-.video-catalogue-dr {
+.video-catalogue-drv {
 	width: 330.3px;
 	height: 191px;
 }
@@ -325,10 +327,10 @@ video Drive Drive
 
 Blue line drive drive
 
-![blue-line-drivedrive](/Users/elektroniki/Desktop/ScrenshotCSS/blue-line-drivedrive.png)
+![blue-line-drivedrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/blue-line-drivedrive.png)
 
 ```css
-.blue-line-img-dr {
+.blue-line-img-drv {
 	width: 248.6px;
 	height: 196.3px;
 	object-fit: contain;
@@ -342,7 +344,7 @@ Blue line drive drive
 
 Back
 
-![back](/Users/elektroniki/Desktop/ScrenshotCSS/back.png)
+![back](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/back.png)
 
 ```css
 .back {
@@ -368,10 +370,10 @@ DriveDrive Events
 
 Top artist-name-events-dr
 
-![artistnamedr](/Users/elektroniki/Desktop/ScrenshotCSS/artistnamedr.png)
+![artistnamedr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/artistnamedr.png)
 
 ```
-.title-artist-name-dr {
+.title-artist-name-drv {
 	width: 723px;
 	height: 33px;
 	font-family: TimesNewRomanPSMT;
@@ -393,7 +395,7 @@ image-events-drive
 ![image-evnets-drive](/Users/elektroniki/Desktop/image-evnets-drive.png)
 
 ```css
-.events-img-dr {
+.events-img-drv {
 	width: 723px;
 	height: 33px;
 	font-family: TimesNewRomanPSMT;
@@ -405,6 +407,318 @@ image-events-drive
 	letter-spacing: -1.9px;
 	text-align: left;
 	color: #ff4819;
+}
+```
+
+
+
+Events description drive drive
+
+![events-description-dr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/events-description-dr.png)
+
+```
+.events-description-drv {
+	width: 694px;
+	height: 66px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #000000;
+}
+```
+
+
+
+Pink line img drive drive
+
+![pinkline-img](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/pinkline-img.png)
+
+```css
+.pinkline-img-drv {
+	width: 445px;
+	height: 107.9px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 #fa69db;
+}
+```
+
+
+
+Drive drive events Date
+
+![dr-events-date](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/dr-events-date.png)
+
+```
+.events-date-drv {
+	width: 93px;
+	height: 37px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.18;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+Drive drive events artistname
+
+![event-name-dr](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/event-name-dr.png)
+
+```
+.events-name-drv {
+	width: 204px;
+	height: 33px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.85;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+event info modal // 
+
+![event-modal](/Users/elektroniki/Desktop/event-modal.png)
+
+```
+.event-info-modal-drv {
+	width: 740px;
+	height: 1021px;
+	object-fit: contain;
+	background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+	box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+}
+```
+
+---
+
+Testdrive
+
+![tesdrive](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/tesdrive.png)
+
+```
+.event-info-modal-trv {
+	width: 740px;
+	height: 1024px;
+	object-fit: contain;
+	background-image: linear-gradient(to bottom, #d1fbca, #ffffff);
+	box-shadow: 0 2px 40px 0 #d1fbca;
+}
+```
+
+
+
+green-line-img-tr
+
+![greenline](/Users/elektroniki/Desktop/testdrivetest/testdrive/ScrenshotCSS/greenline.png)
+
+```
+.greenline-img-trv {
+	width: 445px;
+	height: 107.9px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 #1fe04d;
+}
+```
+
+
+
+testdrive events date
+
+![datetr](/Users/elektroniki/Desktop/datetr.png)
+
+```
+.greenline-img-trv {
+	width: 60px;
+	height: 37px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.18;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+event title testdrive
+
+![title-tr](/Users/elektroniki/Desktop/title-tr.png)
+
+```
+.event-title-trv {
+	width: 204px;
+	height: 33px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.85;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+---
+
+InfoPage
+
+background image for info
+
+![openingtimesbackground](/Users/elektroniki/Desktop/openingtimesbackground.png)
+
+```
+.image-info-outline {
+	width: 446.4px;
+	height: 515.3px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+	border: solid 1px #979797;
+}
+```
+
+
+
+gallery info 
+
+![info](/Users/elektroniki/Desktop/info.png)
+
+```
+.gallery-info {
+	width: 446.4px;
+	height: 515.3px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+	border: solid 1px #979797;
+}
+```
+
+
+
+sign up
+
+![signup](/Users/elektroniki/Desktop/signup.png)
+
+```
+.sign-up-to-our-list {
+	width: 245px;
+	height: 23px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.05;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+sign up input
+
+![signupinput](/Users/elektroniki/Desktop/signupinput.png)
+
+```
+.sign-up-input {
+	width: 221px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+button
+
+![button](/Users/elektroniki/Desktop/button.png)
+
+```
+.sign-up-button {
+	width: 108px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+
+
+Info page map
+
+![map](/Users/elektroniki/Desktop/map.png)
+
+```
+.infopage-map {
+	width: 108px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+
+
+Testdrive on right corner
+
+![testdrive](/Users/elektroniki/Desktop/testdrive.png)
+
+```
+.testdrive {
+	width: 338px;
+	height: 35px;
+	object-fit: contain;
+}
+```
+
+
+
+cc
+
+
+
+![cc](/Users/elektroniki/Desktop/cc.png)
+
+```
+.cc {
+	width: 361px;
+	height: 14px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.5px;
+	text-align: left;
+	color: #ffffff;
 }
 ```
 
