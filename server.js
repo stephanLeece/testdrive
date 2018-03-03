@@ -31,11 +31,16 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-  
+
   client.getEntries({'content_type': 'drivedriveEvent'}).then(function(entries) {
-    entries.items.forEach(function(entry) {
-      console.log(entry.fields, entry.fields.ddEventContent)
-    })
+    const eventList = entries.items.map((entry) => {
+      return {
+    eventTitle: entry.fields.ddEventTitle,
+    eventDate: entry.fields.ddEventDate,
+    eventContent: entry.fields.ddEventContent
+  }
+});
+console.log(eventList[0]);
   })
   res.render('home', {
     layout: 'layout'
