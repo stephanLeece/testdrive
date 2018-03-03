@@ -1,6 +1,6 @@
 DriveDrive
 
-![Screen Shot 2018-03-03 at 14.37.56](/Users/elektroniki/Desktop/ScrenshotCSS/drivedrive.png)
+![Screen Shot 2018-03-03 at 14.37.56](./drivedrive.png)
 
 ```css
 .drive-drive {
@@ -14,7 +14,7 @@ DriveDrive
 
 Catalogue
 
-![Screen Shot 2018-03-03 at 14.43.17](/Users/elektroniki/Desktop/ScrenshotCSS/catalogue.png)
+![Screen Shot 2018-03-03 at 14.43.17](./catalogue.png)
 
 ```css
 .catalogue {
@@ -35,7 +35,7 @@ Catalogue
 
 Events
 
-![Screen Shot 2018-03-03 at 14.45.00](/Users/elektroniki/Desktop/ScrenshotCSS/events.png)
+![Screen Shot 2018-03-03 at 14.45.00](./events.png)
 
 ```css
 .events {
@@ -55,7 +55,7 @@ Events
 
 Image behind video
 
-![Screen Shot 2018-03-03 at 14.51.26](/Users/elektroniki/Desktop/ScrenshotCSS/backgroundvideoimg.png)
+![Screen Shot 2018-03-03 at 14.51.26](./backgroundvideoimg.png)
 
 ```css
 .img-video-background {
@@ -70,7 +70,7 @@ Image behind video
 
 Video 
 
-![Screen Shot 2018-03-03 at 14.54.55](/Users/elektroniki/Desktop/ScrenshotCSS/video.png)
+![Screen Shot 2018-03-03 at 14.54.55](./video.png)
 
 ```
 .video-home {
@@ -82,7 +82,7 @@ Video
 
 Red Line
 
-![Screen Shot 2018-03-03 at 14.58.32](/Users/elektroniki/Desktop/ScrenshotCSS/redline.png)
+![Screen Shot 2018-03-03 at 14.58.32](./redline.png)
 
 ```css
 .redline-img-home {
@@ -95,7 +95,7 @@ Red Line
 
 Info
 
-![Screen Shot 2018-03-03 at 15.00.09](/Users/elektroniki/Desktop/ScrenshotCSS/info.png)
+![Screen Shot 2018-03-03 at 15.00.09](./info.png)
 
 ```css
 .info {
@@ -117,7 +117,7 @@ Info
 
 testdrive-home
 
-![Screen Shot 2018-03-03 at 15.01.29](/Users/elektroniki/Desktop/ScrenshotCSS/testdrive.png)
+![Screen Shot 2018-03-03 at 15.01.29](./testdrive.png)
 
 ```css
 .testdrive-home {
@@ -129,7 +129,7 @@ testdrive-home
 
 motor bike
 
-![Screen Shot 2018-03-03 at 15.04.58](/Users/elektroniki/Desktop/ScrenshotCSS/motorbike.png)
+![Screen Shot 2018-03-03 at 15.04.58](./motorbike.png)
 
 ```
 .motorbike {
@@ -152,7 +152,7 @@ motor bike
 
 Image - the two images are now one:
 
-![Screen Shot 2018-03-03 at 15.06.28](/Users/elektroniki/Desktop/ScrenshotCSS/spaceimg.png)
+![Screen Shot 2018-03-03 at 15.06.28](./spaceimg.png)
 
 ```css
 .img-space {
@@ -166,7 +166,7 @@ Image - the two images are now one:
 
 Info blue img and text (separate elements) Appearing on Click
 
-![Screen Shot 2018-03-03 at 15.19.22](/Users/elektroniki/Desktop/ScrenshotCSS/blue-line.png)
+![Screen Shot 2018-03-03 at 15.19.22](./blue-line.png)
 
 ```
 .info-space-img {
@@ -180,7 +180,7 @@ Info blue img and text (separate elements) Appearing on Click
 
 
 
-Info text![Screen Shot 2018-03-03 at 15.22.52](/Users/elektroniki/Desktop/ScrenshotCSS/textinblueline.png)
+Info text![Screen Shot 2018-03-03 at 15.22.52](./textinblueline.png)
 
 ```css
 .info-space-text {
@@ -210,7 +210,7 @@ INTO DRIVE DRIVE PAGE
 
 purple line img
 
-![Screen Shot 2018-03-03 at 15.32.12](/Users/elektroniki/Desktop/ScrenshotCSS/purple-line-artistlist.png)
+![Screen Shot 2018-03-03 at 15.32.12](./purple-line-artistlist.png)
 
 ```
 .purple-line-img-dr {
@@ -228,7 +228,7 @@ purple line img
 
 artist list
 
-![Screen Shot 2018-03-03 at 15.34.17](/Users/elektroniki/Desktop/ScrenshotCSS/artistlist.png)
+![Screen Shot 2018-03-03 at 15.34.17](./artistlist.png)
 
 ```css
 .artist-list-dr {
@@ -254,7 +254,7 @@ artist list
 
 PDF
 
-![Screen Shot 2018-03-03 at 15.36.11](/Users/elektroniki/Desktop/ScrenshotCSS/pdf.png)
+![Screen Shot 2018-03-03 at 15.36.11](./pdf.png)
 
 ```css
 .pdf-dr {
@@ -280,7 +280,7 @@ PDF
 
 green line
 
-![Screen Shot 2018-03-03 at 15.38.13](/Users/elektroniki/Desktop/ScrenshotCSS/green-line.png)
+![Screen Shot 2018-03-03 at 15.38.13](./green-line.png)
 
 ```
 .green-line-img-dr {
@@ -297,7 +297,7 @@ green line
 
 video img background
 
-![videoimgbackground](/Users/elektroniki/Desktop/ScrenshotCSS/videoimgbackground.png)
+![videoimgbackground](./videoimgbackground.png)
 
 ```
 .video-background-img-dr {
@@ -312,7 +312,7 @@ video img background
 
 video Drive Drive
 
-![videodrivedrive](/Users/elektroniki/Desktop/ScrenshotCSS/videodrivedrive.png)
+![videodrivedrive](./videodrivedrive.png)
 
 ```
 .video-catalogue-dr {
@@ -325,7 +325,7 @@ video Drive Drive
 
 Blue line drive drive
 
-![blue-line-drivedrive](/Users/elektroniki/Desktop/ScrenshotCSS/blue-line-drivedrive.png)
+![blue-line-drivedrive](./blue-line-drivedrive.png)
 
 ```css
 .blue-line-img-dr {
@@ -342,7 +342,7 @@ Blue line drive drive
 
 Back
 
-![back](/Users/elektroniki/Desktop/ScrenshotCSS/back.png)
+![back](./back.png)
 
 ```css
 .back {
@@ -368,7 +368,7 @@ DriveDrive Events
 
 Top artist-name-events-dr
 
-![artistnamedr](/Users/elektroniki/Desktop/ScrenshotCSS/artistnamedr.png)
+![artistnamedr](./artistnamedr.png)
 
 ```
 .title-artist-name-dr {
@@ -390,7 +390,7 @@ Top artist-name-events-dr
 
 image-events-drive
 
-![image-evnets-drive](/Users/elektroniki/Desktop/image-evnets-drive.png)
+![image-evnets-drive](./image-evnets-drive.png)
 
 ```css
 .events-img-dr {
