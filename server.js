@@ -31,17 +31,12 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-
-  // let result = [];
-  // client.getEntries()
-  // .then(function (entries) {
-  //  log the title for all the entries that have it
-  // entries.items.forEach(function (entry) {
-  //
-  //     result.push(entry.fields)
-  //     console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
-  // })
-
+  
+  client.getEntries({'content_type': 'drivedriveEvent'}).then(function(entries) {
+    entries.items.forEach(function(entry) {
+      console.log(entry.fields, entry.fields.ddEventContent)
+    })
+  })
   res.render('home', {
     layout: 'layout'
     // ,content: result
@@ -59,17 +54,12 @@ app.get('/catalogue', function(req, res) {
   });
 });
 
-
-
-
 app.get('/events', function(req, res) {
   res.render('events', {
     layout: 'layout'
     // ,events: eventsResults
   });
 });
-
-
 
 app.get('/testdrive', function(req, res) {
   // need a db.query or req from cms for events information
@@ -78,8 +68,6 @@ app.get('/testdrive', function(req, res) {
     // ,events: eventsResults
   });
 });
-
-
 
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
