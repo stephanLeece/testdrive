@@ -65,23 +65,25 @@ app.get('/catalogue', function(req, res) {
 
   client.getEntries().then((entries) => {
     let artists = [];
-    let video;
-
+    let videos = [];
     entries.items.forEach(entry=> {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
-      } else if (entry.fields.video) {
-        video = entry.fields.video.fields.file.url.replace('//', '')
+      } else if (entry.fields.videoFile) {
+        entry.fields.videoFile.forEach(file=> {
+          videos.push(file.fields)
+        })
+        // video.push(entry.fields.video.fields.file.url)
       }
     })
 
     artists.sort(compare);
-    console.log(video);
+    console.log(videos);
 
     res.render('catalogue', {
       layout: 'layout',
       artists: artists,
-      video: video
+      video: videos
     });
   }).catch((err) => {
     console.log('err: ', err)

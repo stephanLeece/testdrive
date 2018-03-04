@@ -27,7 +27,7 @@
   <div class="video-container">
     {{#video}}
     <video class='video' height="240" width="400" onmouseover="pause()" onmouseleave="play()" autoplay controls>
-      <source src={{.}} type="video/mp4">
+      <source src='https:{{file.url}}' type='{{file.contentType}}'>
     </video>
     {{/video}}
     <img id="catalogue-video-grey" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg">
