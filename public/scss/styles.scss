@@ -1,3 +1,10 @@
+@function get-vw($object) {
+    $vw: (1540 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
+}
+
+// width: get-vw(100px)vw;
+
 //---------------------- SITEWIDE STYLES-------------------------------------------
 
 html {
@@ -5,10 +12,11 @@ html {
 }
 
 body {
+  // can only use get-vw on direct width assignments.
   height: inherit;
   display: grid;
-  grid-template-columns: repeat(12, 98.3px);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(12, 6.363636363636363vw);
+  grid-column-gap: 1.948051948051948vw;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -50,7 +58,7 @@ body {
   grid-column: 6 / 9;
   align-self: center;
   height: 300px;
-  width: 300px;
+  width: get-vw(300px)vw;
   border: 1px solid black;
 }
 

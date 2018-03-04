@@ -1,22 +1,11 @@
 html {
-  height: 100%;
-}
-  .scrollbar {
-      background-color: #F5F5F5;
-      float: left;
-      height: 300px;
-      margin-bottom: 25px;
-      margin-left: 22px;
-      margin-top: 40px;
-      width: 65px;
-         overflow-y: scroll;
-  }
+  height: 100%; }
 
 body {
   height: inherit;
   display: grid;
-  grid-template-columns: repeat(12, 79px);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(12, 6.36364vw);
+  grid-column-gap: 1.948051948051948vw;
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -50,7 +39,7 @@ body {
   grid-column: 6 / 9;
   align-self: center;
   height: 300px;
-  width: 300px;
+  width: 19.48052vw vw;
   border: 1px solid black; }
 
 #infoContentOutline {
@@ -79,14 +68,14 @@ body {
 
 .home {
   height: 50px; }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 958d4f342b058368b68152b77a94d0a7c7028645
 
 #modal {
   visibility: hidden;
   height: 50px; }
 
-/* ----------------HOMEPAGE------------------ */
-
 #home-img-cloud {
-    grid-column:  2 / 3;
-}
+  grid-column: 1 / 2; }
