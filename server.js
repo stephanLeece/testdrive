@@ -31,11 +31,16 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-  
+
   client.getEntries({'content_type': 'drivedriveEvent'}).then(function(entries) {
-    entries.items.forEach(function(entry) {
-      console.log(entry.fields, entry.fields.ddEventContent)
-    })
+    const eventList = entries.items.map((entry) => {
+      return {
+    eventTitle: entry.fields.ddEventTitle,
+    eventDate: entry.fields.ddEventDate,
+    eventContent: entry.fields.ddEventContent
+  }
+});
+console.log(eventList[0]);
   })
   res.render('home', {
     layout: 'layout'
@@ -43,15 +48,44 @@ app.get('/', function(req, res) {
   });
 });
 
+function compare(a, b) {
+    var splitA = a.split(" ");
+    var splitB = b.split(" ");
+    var lastA = splitA[splitA.length - 1];
+    var lastB = splitB[splitB.length - 1];
+
+    if (lastA < lastB) return -1;
+    if (lastA > lastB) return 1;
+    return 0;
+}
+
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
-  //need client.getEntries for artists names / essays
-  res.render('catalogue', {
-    layout: 'layout'
-    // artists: artistsResults,
-    // essays: essaysResults
-  });
+
+  client.getEntries().then((entries) => {
+    let artists = [];
+    let video;
+
+    entries.items.forEach(entry=> {
+      if (entry.fields.artistName) {
+        artists.push(entry.fields.artistName)
+      } else if (entry.fields.video) {
+        video = entry.fields.video.fields.file.url.replace('//', '')
+      }
+    })
+
+    artists.sort(compare);
+    console.log(video);
+
+    res.render('catalogue', {
+      layout: 'layout',
+      artists: artists,
+      video: video
+    });
+  }).catch((err) => {
+    console.log('err: ', err)
+  })
 });
 
 app.get('/events', function(req, res) {
