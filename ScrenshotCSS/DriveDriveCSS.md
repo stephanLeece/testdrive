@@ -1,6 +1,9 @@
+
+
 DriveDrive
 
 ![Screen Shot 2018-03-03 at 14.37.56](./drivedrive.png)
+
 
 ```css
 .drive-drive {
@@ -15,6 +18,7 @@ DriveDrive
 Catalogue
 
 ![Screen Shot 2018-03-03 at 14.43.17](./catalogue.png)
+
 
 ```css
 .catalogue {
@@ -35,7 +39,9 @@ Catalogue
 
 Events
 
+
 ![Screen Shot 2018-03-03 at 14.45.00](./events.png)
+
 
 ```css
 .events {
@@ -55,7 +61,9 @@ Events
 
 Image behind video
 
+
 ![Screen Shot 2018-03-03 at 14.51.26](./backgroundvideoimg.png)
+
 
 ```css
 .img-video-background {
@@ -68,9 +76,11 @@ Image behind video
 
 
 
-Video 
+Video
+
 
 ![Screen Shot 2018-03-03 at 14.54.55](./video.png)
+
 
 ```
 .video-home {
@@ -82,7 +92,9 @@ Video
 
 Red Line
 
+
 ![Screen Shot 2018-03-03 at 14.58.32](./redline.png)
+
 
 ```css
 .redline-img-home {
@@ -94,6 +106,7 @@ Red Line
 ```
 
 Info
+
 
 ![Screen Shot 2018-03-03 at 15.00.09](./info.png)
 
@@ -119,6 +132,7 @@ testdrive-home
 
 ![Screen Shot 2018-03-03 at 15.01.29](./testdrive.png)
 
+
 ```css
 .testdrive-home {
 	width: 338px;
@@ -129,7 +143,9 @@ testdrive-home
 
 motor bike
 
+
 ![Screen Shot 2018-03-03 at 15.04.58](./motorbike.png)
+
 
 ```
 .motorbike {
@@ -152,10 +168,12 @@ motor bike
 
 Image - the two images are now one:
 
+
 ![Screen Shot 2018-03-03 at 15.06.28](./spaceimg.png)
 
+
 ```css
-.img-space {
+.img-space-hm {
 	width: 869px;
 	height: 524px;
 	object-fit: contain;
@@ -168,8 +186,9 @@ Info blue img and text (separate elements) Appearing on Click
 
 ![Screen Shot 2018-03-03 at 15.19.22](./blue-line.png)
 
+
 ```
-.info-space-img {
+.info-space-img-hm {
 	width: 466.2px;
 	height: 607.5px;
 	object-fit: contain;
@@ -180,10 +199,12 @@ Info blue img and text (separate elements) Appearing on Click
 
 
 
+
 Info text![Screen Shot 2018-03-03 at 15.22.52](./textinblueline.png)
 
+
 ```css
-.info-space-text {
+.info-space-text-hm {
 	width: 372px;
 	height: 462px;
 	font-family: TimesNewRomanPSMT;
@@ -212,8 +233,9 @@ purple line img
 
 ![Screen Shot 2018-03-03 at 15.32.12](./purple-line-artistlist.png)
 
+
 ```
-.purple-line-img-dr {
+.purple-line-img-drv {
 	width: 277.1px;
 	height: 687.8px;
 	object-fit: contain;
@@ -228,10 +250,12 @@ purple line img
 
 artist list
 
+
 ![Screen Shot 2018-03-03 at 15.34.17](./artistlist.png)
 
+
 ```css
-.artist-list-dr {
+.artist-list-drv {
 	width: 149px;
 	height: 628px;
 	font-family: TimesNewRomanPSMT;
@@ -254,10 +278,12 @@ artist list
 
 PDF
 
+
 ![Screen Shot 2018-03-03 at 15.36.11](./pdf.png)
 
+
 ```css
-.pdf-dr {
+.pdf-drv {
 	width: 460px;
 	height: 1011px;
 	font-family: TimesNewRomanPSMT;
@@ -280,10 +306,12 @@ PDF
 
 green line
 
+
 ![Screen Shot 2018-03-03 at 15.38.13](./green-line.png)
 
+
 ```
-.green-line-img-dr {
+.green-line-img-drv {
 	width: 162.9px;
 	height: 221.6px;
 	object-fit: contain;
@@ -297,10 +325,12 @@ green line
 
 video img background
 
+
 ![videoimgbackground](./videoimgbackground.png)
 
+
 ```
-.video-background-img-dr {
+.video-background-img-drv {
 	width: 445px;
 	height: 313px;
 	object-fit: contain;
@@ -314,8 +344,9 @@ video Drive Drive
 
 ![videodrivedrive](./videodrivedrive.png)
 
+
 ```
-.video-catalogue-dr {
+.video-catalogue-drv {
 	width: 330.3px;
 	height: 191px;
 }
@@ -325,10 +356,12 @@ video Drive Drive
 
 Blue line drive drive
 
+
 ![blue-line-drivedrive](./blue-line-drivedrive.png)
 
+
 ```css
-.blue-line-img-dr {
+.blue-line-img-drv {
 	width: 248.6px;
 	height: 196.3px;
 	object-fit: contain;
@@ -341,6 +374,7 @@ Blue line drive drive
 
 
 Back
+
 
 ![back](./back.png)
 
@@ -368,10 +402,11 @@ DriveDrive Events
 
 Top artist-name-events-dr
 
+
 ![artistnamedr](./artistnamedr.png)
 
 ```
-.title-artist-name-dr {
+.title-artist-name-drv {
 	width: 723px;
 	height: 33px;
 	font-family: TimesNewRomanPSMT;
@@ -393,7 +428,7 @@ image-events-drive
 ![image-evnets-drive](./image-evnets-drive.png)
 
 ```css
-.events-img-dr {
+.events-img-drv {
 	width: 723px;
 	height: 33px;
 	font-family: TimesNewRomanPSMT;
@@ -408,3 +443,314 @@ image-events-drive
 }
 ```
 
+
+
+Events description drive drive
+
+![events-description-dr](./events-description-dr.png)
+
+```
+.events-description-drv {
+	width: 694px;
+	height: 66px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #000000;
+}
+```
+
+
+
+Pink line img drive drive
+
+![pinkline-img](./pinkline-img.png)
+
+```css
+.pinkline-img-drv {
+	width: 445px;
+	height: 107.9px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 #fa69db;
+}
+```
+
+
+
+Drive drive events Date
+
+![dr-events-date](./dr-events-date.png)
+
+```
+.events-date-drv {
+	width: 93px;
+	height: 37px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.18;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+Drive drive events artistname
+
+![event-name-dr](./event-name-dr.png)
+
+```
+.events-name-drv {
+	width: 204px;
+	height: 33px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.85;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+event info modal //
+
+![event-modal](./event-modal.png)
+
+```
+.event-info-modal-drv {
+	width: 740px;
+	height: 1021px;
+	object-fit: contain;
+	background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+	box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+}
+```
+
+---
+
+Testdrive
+
+![tesdrive](./tesdrive.png)
+
+```
+.event-info-modal-trv {
+	width: 740px;
+	height: 1024px;
+	object-fit: contain;
+	background-image: linear-gradient(to bottom, #d1fbca, #ffffff);
+	box-shadow: 0 2px 40px 0 #d1fbca;
+}
+```
+
+
+
+green-line-img-tr
+
+![greenline](./greenline.png)
+
+```
+.greenline-img-trv {
+	width: 445px;
+	height: 107.9px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 #1fe04d;
+}
+```
+
+
+
+testdrive events date
+
+![datetr](./datetr.png)
+
+```
+.greenline-img-trv {
+	width: 60px;
+	height: 37px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 17px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.18;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+event title testdrive
+
+![title-tr](./title-tr.png)
+
+```
+.event-title-trv {
+	width: 204px;
+	height: 33px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.85;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+---
+
+InfoPage
+
+background image for info
+
+![openingtimesbackground](./openingtimesbackground.png)
+
+```
+.image-info-outline {
+	width: 446.4px;
+	height: 515.3px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+	border: solid 1px #979797;
+}
+```
+
+
+
+gallery info
+
+![info](./info.png)
+
+```
+.gallery-info {
+	width: 446.4px;
+	height: 515.3px;
+	object-fit: contain;
+	background-color: #ffffff;
+	box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+	border: solid 1px #979797;
+}
+```
+
+
+
+sign up
+
+![signup](./signup.png)
+
+```
+.sign-up-to-our-list {
+	width: 245px;
+	height: 23px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.05;
+	letter-spacing: -0.9px;
+	text-align: left;
+	color: #222222;
+}
+```
+
+
+
+sign up input
+
+![signupinput](./signupinput.png)
+
+```
+.sign-up-input {
+	width: 221px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+button
+
+![button](./button.png)
+
+```
+.sign-up-button {
+	width: 108px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+
+
+Info page map
+
+![map](./map.png)
+
+```
+.infopage-map {
+	width: 108px;
+	height: 40px;
+	border: solid 1px #000000;
+}
+```
+
+
+
+Testdrive on right corner
+
+![testdrive](./testdrive.png)
+
+```
+.testdrive {
+	width: 338px;
+	height: 35px;
+	object-fit: contain;
+}
+```
+
+
+
+cc
+
+
+
+![cc](./cc.png)
+
+```
+.cc {
+	width: 361px;
+	height: 14px;
+	font-family: TimesNewRomanPSMT;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: -1.5px;
+	text-align: left;
+	color: #ffffff;
+}
+```

@@ -10,7 +10,7 @@ backButton.on('click', () => {
 function showModal() {
   console.log("running modal");
 
-  $("#home-render-top").on('click', function() {
+  $("#gallery-space-img").on('click', function() {
     console.log("hi h1");
     $('#modal').css({"visibility": "visible"})
   })
@@ -19,9 +19,13 @@ showModal();
 
 function fadeIntoImg() {
   console.log("lag?");
-  $('#intro').fadeOut(5000);
-
+  $('#halk').fadeOut(3000);
 }
+// function fadeIntoImg(body) {
+//   console.log("lag?");
+//   $('body').fadeOut(3000);
+// }
+//
 // fadeIntoImg();
 
 // ------------------------------- testdrive functions ------------------
