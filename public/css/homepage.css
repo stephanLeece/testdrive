@@ -1,3 +1,4 @@
+/* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
     width: 290px;
     height: 46px;
@@ -26,6 +27,33 @@
   height: 46px;
 }
 
+/* END STYLING FOR BIG MAC */
+
+
+
+
+
+
+
+
+/* BEGIN STYLING FOR HOMEPAGE
+
+ALL WIDTH & HEIGHT PROPERTIES ARE FROM ZEPLIN.
+
+all position:relative and bottom/left/top/right properties are me not knowing how to
+position things well and forcing things to be positioned into place
+
+Feel free to change all if you know of a better way to position the elements (gray cloud, blue/green/red lines, etc.) better!
+
+*/
+
+
+
+
+
+
+
+
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
     width: 933px;
@@ -51,31 +79,27 @@ SHOULD WE BE USING SOME VARIATION OF filter: drop-shadow(inset 0 1px 357px 0 rgb
   width: 447px;
   height: 276px;
   object-fit: contain;
-  box-shadow: inset 0 1px 357px 0 rgba(9, 9, 9, 0.49);
-  padding-right: 121px;
-}
-
-#gallery-space-img {
-    width: 933px;
-    height: 863px;
-}
-
-#home-img-cloud {
-  width: 447px;
-  height: 276px;
-  object-fit: contain;
   filter: drop-shadow(inset 0 1px 357px 0 rgba(9, 9, 9, 0.49));
   position: relative;
   margin-left: 45px;
   bottom: 95%;
 }
 
+
+
+
+
+
+
+
+
+/* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
   width: 288.4px;
   height: 156px;
   object-fit: contain;
   grid-column: 1 / 4;
-    position: relative;
+  position: relative;
   bottom: -152px;
 }
 
