@@ -77,6 +77,10 @@ app.get('/catalogue', function(req, res) {
   })
 });
 
+// gonna refactor this so i'm not repeating the same code. gonna make the contentful field names the same for dd/td too.
+// function gimmieThemEvents (contentType) {}
+
+
 app.get('/events', function(req, res) {
   client.getEntries({'content_type': 'drivedriveEvent'}).then( (entries)=> {
     const eventList = entries.items.map((entry) => {
