@@ -1,0 +1,32 @@
+#infoMap {
+  grid-column: 6 / 9;
+  align-self: center;
+  width: 31.36364vw;
+  height: 56.34766vh;
+  border: 1px solid black;
+  -moz-box-shadow: 0 0 50px #8315a8;
+  -webkit-box-shadow: 0 0 50px #8315a8;
+  box-shadow: 0 0 50px #8315a8; }
+
+#infoContentOutline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 2 / 4;
+  width: 28.98701vw;
+  height: 50.32227vh;
+  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  #infoContentOutline div {
+    margin-left: 4.22078vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.16883vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }

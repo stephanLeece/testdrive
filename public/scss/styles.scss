@@ -10,6 +10,14 @@
 
 // width: get-vw(100px)vw;
 
+@function get-vh($object) {
+    $vh: (1024 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
+
+
+    // height: get-vh(20px)vh;
+
 //---------------------- SITEWIDE STYLES-------------------------------------------
 
 html {
@@ -59,23 +67,7 @@ body {
 }
 //---------------------- INFO STYLES-------------------------------------------
 
-#infoMap {
-  grid-column: 6 / 9;
-  align-self: center;
-  height: 300px;
-  width: get-vw(300px)vw;
-  border: 1px solid black;
-}
 
-#infoContentOutline {
-  grid-column: 1 / 3;
-  height: 400px;
-  width: 200px;
-  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 //---------------------- TESTDRIVE STYLES-------------------------------------------
 
 #testdrive-logo-home {

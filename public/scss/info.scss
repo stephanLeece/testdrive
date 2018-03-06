@@ -1,0 +1,54 @@
+@function get-vw($object) {
+    $vw: (1540 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
+}
+
+// width: get-vw(100px);
+
+@function get-vh($object) {
+    $vh: (1024 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
+
+
+    // height: get-vh(20px);
+
+
+// ------------------------------------------
+
+
+#infoMap {
+  grid-column: 6 / 9;
+  align-self: center;
+  width: get-vw(483px);
+  height: get-vh(577px);
+  border: 1px solid black;
+  -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
+  -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
+  box-shadow: 0 0 50px rgb(131, 21, 168);
+}
+
+#infoContentOutline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column: 2 / 4;
+  width: get-vw(446.4px);
+  height: get-vh(515.3px);
+  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  div {
+    margin-left: get-vw(65px);
+   font-family: TimesNewRomanPSMT;
+   font-size: get-vw(18px);
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 1.05;
+   letter-spacing: -0.9px;
+   text-align: left;
+   color: #222222;
+  }
+}

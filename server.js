@@ -27,36 +27,25 @@ app.engine('handlebars', expressHandlebars());
 app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/public', express.static(__dirname + '/public'));
-
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-
-  client.getEntries({'content_type': 'drivedriveEvent'}).then(function(entries) {
-    const eventList = entries.items.map((entry) => {
-      return {
-    eventTitle: entry.fields.ddEventTitle,
-    eventDate: entry.fields.ddEventDate,
-    eventContent: entry.fields.ddEventContent
-  }
-});
-console.log(eventList[0]);
-  })
   res.render('home', {
     layout: 'layout'
-    // ,content: result
   });
 });
 
 function compare(a, b) {
-    var splitA = a.split(" ");
-    var splitB = b.split(" ");
-    var lastA = splitA[splitA.length - 1];
-    var lastB = splitB[splitB.length - 1];
+  var splitA = a.split(" ");
+  var splitB = b.split(" ");
+  var lastA = splitA[splitA.length - 1];
+  var lastB = splitB[splitB.length - 1];
 
-    if (lastA < lastB) return -1;
-    if (lastA > lastB) return 1;
-    return 0;
+  if (lastA < lastB)
+    return -1;
+  if (lastA > lastB)
+    return 1;
+  return 0;
 }
 
 // placeholders for eventresults and catalogueResults returned from database/cms
@@ -68,7 +57,7 @@ app.get('/catalogue', function(req, res) {
     let video;
     let catalogue = [];
 
-    entries.items.forEach(entry=> {
+    entries.items.forEach(entry => {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
       } else if (entry.fields.video) {
@@ -95,20 +84,57 @@ app.get('/catalogue', function(req, res) {
   })
 });
 
+// gonna refactor this so i'm not repeating the same code. gonna make the contentful field names the same for dd/td too.
+// function gimmieThemEvents (contentType) {}
+
+
 app.get('/events', function(req, res) {
-  res.render('events', {
-    layout: 'layout'
-    // ,events: eventsResults
-  });
+  client.getEntries({'content_type': 'drivedriveEvent'}).then( (entries)=> {
+    const eventList = entries.items.map((entry) => {
+      return {
+        eventClassName: entry.fields.ddClassName,
+        eventTitle: entry.fields.ddEventTitle,
+        eventDate: entry.fields.ddEventDate,
+        eventContent: entry.fields.ddEventContent.map((image) => {
+          return {
+            image: `http:${image.fields['file'].url}`,
+            imageDescrip: image.fields['description'],
+          }
+        })
+      }
+    })
+    res.render('events', {
+      layout: 'layout',
+      eventList: eventList
+    });
+  })
 });
 
+
 app.get('/testdrive', function(req, res) {
-  // need a db.query or req from cms for events information
-  res.render('testdrive', {
-    layout: 'layout'
-    // ,events: eventsResults
-  });
+  client.getEntries({'content_type': 'testdriveEvent'}).then( (entries)=> {
+    const eventList = entries.items.map((entry) => {
+      return {
+        eventClassName: entry.fields.tdClassName,
+        eventTitle: entry.fields.tdEventTitle,
+        eventDate: entry.fields.tdEventDate,
+        eventContent: entry.fields.tdEventContent.map( (image) => {
+          return {
+            image: `http:${image.fields['file'].url}`,
+            imageDescrip: image.fields['description'],
+          }
+        })
+      }
+    })
+    res.render('testdrive', {
+      layout: 'layout',
+      eventList: eventList
+    })
+  })
 });
+
+
+
 
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
