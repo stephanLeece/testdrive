@@ -26,7 +26,7 @@ function fadeIntoImg() {
 //   $('body').fadeOut(3000);
 // }
 //
-// fadeIntoImg();
+fadeIntoImg();
 
 // ------------------------------- testdrive functions ------------------
 

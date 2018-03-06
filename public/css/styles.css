@@ -75,7 +75,8 @@ body {
 
 #modal {
   visibility: hidden;
-  height: 50px; }
+  height: 50px;
+}
 
 #home-img-cloud {
   grid-column: 1 / 2; }
