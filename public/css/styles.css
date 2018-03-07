@@ -52,10 +52,15 @@ body {
 
 .home {
   height: 50px; }
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 958d4f342b058368b68152b77a94d0a7c7028645
 
 #modal {
   visibility: hidden;
-  height: 50px; }
+  height: 50px;
+}
 
 #home-img-cloud {
   grid-column: 1 / 2; }

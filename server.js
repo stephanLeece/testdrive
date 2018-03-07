@@ -56,19 +56,36 @@ app.get('/catalogue', function(req, res) {
 
   client.getEntries().then((entries) => {
 
+    let artists = [];
+    let video;
+    let catalogue = [];
+
+
     entries.items.forEach(entry => {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
-      } else if (entry.fields.videoFile) {
+
+      } else if (entry.fields.video) {
+        video = entry.fields.video.fields.file.url.replace('//', '')
+    } else if (entry.fields.cataloguePdf) {
+        console.log("CATALOGUE:",entry.fields.cataloguePdf);
+        let fileName = entry.fields.cataloguePdf.fields.file.fileName
+        let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '')
+        catalogue.push({ fileName, url })
+    }
+
+     else if (entry.fields.videoFile) {
         video = entry.fields.videoFile[0].fields.file;
       }
+
     })
 
     console.log(video)
     res.render('catalogue', {
       layout: 'layout',
-      artists: artists,
-      video: video
+      artists,
+      video,
+      catalogue
     });
   }).catch((err) => {
     console.log('err: ', err)

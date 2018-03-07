@@ -3,6 +3,11 @@
     @return ($object / $vw) * 1vw;
 }
 
+@function get-vh($object) {
+    $vh: (768 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
+
 // width: get-vw(100px)vw;
 
 //---------------------- SITEWIDE STYLES-------------------------------------------
@@ -86,20 +91,7 @@ body {
   height: 50px;
 }
 
-#modal {
-  visibility: hidden;
-  height: 50px;
-}
-
-//------------------ PARTIALS --------------------
-//
-// #testdrive-logo-img {
-//     height: 50px;
-//     width: 50%;
+// #modal {
+//   visibility: hidden;
+//   height: 50px;
 // }
-
-//----------------HOMEPAGE------------------
-
-#home-img-cloud {
-    grid-column:  1 / 2;
-}
