@@ -1,18 +1,20 @@
-{{> big-mac}}
-{{> side-menu}}
+{{> big-mac}} {{> side-menu}}
 
 <div class="eventList" id="ddEventsList">
   <ul>
-    <li class="e1">event 1</li>
-    <li class="e2">event 2</li>
-    <li class="e3">event 3</li>
-    <li class="e4">event 4</li>
+    {{#eventList}}
+      <li class= {{eventClassName}}>{{eventTitle}}</li>
+    {{/eventList}}
   </ul>
 </div>
 
 <div class="eventsInfoBox" id="ddEventsInfobox">
-  <p class="event hidden e1">event 1</p>
-  <p class="event hidden e2">event 2</p>
-  <p class="event hidden e3">event 3</p>
-  <p class="event hidden e4">event 4</p>
-</div>
+  {{#eventList}}
+    <div class= {{eventClassName}}>
+      {{#eventContent}}
+      <img src={{image}} alt="">
+        <p>{{imageDescrip}}</p>
+      {{/eventContent}}
+    </div>
+  {{/eventList}}
+  </div>

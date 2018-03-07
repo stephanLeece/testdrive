@@ -27,14 +27,13 @@ function fadeIntoImg() {
 //
 // fadeIntoImg();
 
-// ------------------------------- testdrive functions ------------------
+// ------------------------------- testdrive/events functions ------------------
 
 // $(parentSelector).find(childSelector)
-
+$('.eventsInfoBox').find('div').addClass('hidden');
 $('li').on('click', e => {
   let eventToShow = '.' + $(e.target).attr('class')
-console.log(eventToShow);
-$('.eventsInfoBox').find(`p`).addClass('hidden');
+$('.eventsInfoBox').find('div').addClass('hidden');
 $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
 });
