@@ -1,3 +1,7 @@
+* {
+  margin: 0 10px;
+}
+
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
     width: 290px;
@@ -55,12 +59,26 @@ Feel free to change all if you know of a better way to position the elements (gr
 
 
 /* STYLING FOR THE GALLERY SPACE IMAGE */
-#gallery-space-img {
+/* #gallery-space-img {
     width: 933px;
     height: 863px;
     grid-column: 3 / 10;
     position: relative;
-    top: -293px;
+    top: -392px;
+} */
+
+
+#container {
+  background-image: url(/assets/Elements/Home/galleryspace.png);
+  width: 1000px;
+  height: 930px;
+  grid-column: 3 / 10;
+  position: relative;
+  top: -105px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -98,18 +116,25 @@ SHOULD WE BE USING SOME VARIATION OF filter: drop-shadow(inset 0 1px 357px 0 rgb
   width: 288.4px;
   height: 156px;
   object-fit: contain;
-  grid-column: 1 / 4;
+/*   grid-column: 1 / 4;
   position: relative;
-  bottom: -152px;
+  bottom: -152px; */
+   align-self: flex-end;
+   margin-bottom: 50%;
+   margin-right: 76%;
 }
 
 #home-green-line {
   width: 175.7px;
   height: 101.8px;
   object-fit: contain;
-  grid-column: 9 / 11;
+/*   grid-column: 9 / 11;
   position: relative;
-  bottom: -767px;
+  bottom: -767px; */
+  align-self: flex-end;
+  order: 2;
+  margin-bottom: 78px;
+  margin-right: 20px;
 }
 
 #home-blue-line {
@@ -119,4 +144,8 @@ SHOULD WE BE USING SOME VARIATION OF filter: drop-shadow(inset 0 1px 357px 0 rgb
   grid-column: 10 / 12;
   position: relative;
   bottom: 75px;
+}
+
+#modal {
+    visibility: hidden;
 }
