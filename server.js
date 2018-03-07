@@ -51,22 +51,20 @@ function compare(a, b) {
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
+  let artists = [];
+  let video = {};
 
   client.getEntries().then((entries) => {
-    let artists = [];
-    let video;
 
     entries.items.forEach(entry => {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
-      } else if (entry.fields.video) {
-        video = entry.fields.video.fields.file.url.replace('//', '')
+      } else if (entry.fields.videoFile) {
+        video = entry.fields.videoFile[0].fields.file;
       }
     })
 
-    artists.sort(compare);
-    console.log(video);
-
+    console.log(video)
     res.render('catalogue', {
       layout: 'layout',
       artists: artists,
@@ -76,10 +74,6 @@ app.get('/catalogue', function(req, res) {
     console.log('err: ', err)
   })
 });
-
-// gonna refactor this so i'm not repeating the same code. gonna make the contentful field names the same for dd/td too.
-// function gimmieThemEvents (contentType) {}
-
 
 app.get('/events', function(req, res) {
   client.getEntries({'content_type': 'drivedriveEvent'}).then( (entries)=> {
@@ -103,7 +97,6 @@ app.get('/events', function(req, res) {
   })
 });
 
-
 app.get('/testdrive', function(req, res) {
   client.getEntries({'content_type': 'testdriveEvent'}).then( (entries)=> {
     const eventList = entries.items.map((entry) => {
@@ -125,8 +118,6 @@ app.get('/testdrive', function(req, res) {
     })
   })
 });
-
-
 
 
 app.get('/info', function(req, res) {

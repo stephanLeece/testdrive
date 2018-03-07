@@ -5,14 +5,6 @@
 
 // width: get-vw(100px)vw;
 
-@function get-vh($object) {
-    $vh: (1024 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-
-    // height: get-vh(20px)vh;
-
 //---------------------- SITEWIDE STYLES-------------------------------------------
 
 html {
@@ -61,7 +53,6 @@ body {
   background-position: center;
 }
 //---------------------- INFO STYLES-------------------------------------------
-
 
 //---------------------- TESTDRIVE STYLES-------------------------------------------
 
