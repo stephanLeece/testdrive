@@ -1,22 +1,11 @@
 html {
   height: 100%; }
 
-  .scrollbar {
-      background-color: #F5F5F5;
-      float: left;
-      height: 300px;
-      margin-bottom: 25px;
-      margin-left: 22px;
-      margin-top: 40px;
-      width: 65px;
-         overflow-y: scroll;
-  }
-
 body {
   height: inherit;
   display: grid;
-  grid-template-columns: repeat(12, 98.3px);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(12, 6.36364vw);
+  grid-column-gap: 1.948051948051948vw;
   background-size: 100%;
   background-repeat: no-repeat; }
 
@@ -50,7 +39,7 @@ body {
   grid-column: 6 / 9;
   align-self: center;
   height: 300px;
-  width: 300px;
+  width: 19.48052vw vw;
   border: 1px solid black; }
 
 #infoContentOutline {
@@ -83,3 +72,6 @@ body {
 #modal {
   visibility: hidden;
   height: 50px; }
+
+#home-img-cloud {
+  grid-column: 1 / 2; }

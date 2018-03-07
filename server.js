@@ -32,16 +32,16 @@ app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
 
-  // let result = [];
-  // client.getEntries()
-  // .then(function (entries) {
-  //  log the title for all the entries that have it
-  // entries.items.forEach(function (entry) {
-  //
-  //     result.push(entry.fields)
-  //     console.log('fields: ', entry.fields.eventImage.fields.file.url.replace('//', ''))
-  // })
-
+  client.getEntries({'content_type': 'drivedriveEvent'}).then(function(entries) {
+    const eventList = entries.items.map((entry) => {
+      return {
+    eventTitle: entry.fields.ddEventTitle,
+    eventDate: entry.fields.ddEventDate,
+    eventContent: entry.fields.ddEventContent
+  }
+});
+console.log(eventList[0]);
+  })
   res.render('home', {
     layout: 'layout'
     // ,content: result
@@ -62,36 +62,29 @@ function compare(a, b) {
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
+  let artists = [];
+  let video = {};
 
   client.getEntries().then((entries) => {
-    let artists = [];
-    let videos = [];
+
     entries.items.forEach(entry=> {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
       } else if (entry.fields.videoFile) {
-        entry.fields.videoFile.forEach(file=> {
-          videos.push(file.fields)
-        })
-        // video.push(entry.fields.video.fields.file.url)
+        video = entry.fields.videoFile[0].fields.file;
       }
     })
 
-    artists.sort(compare);
-    console.log(videos);
-
+    console.log(video)
     res.render('catalogue', {
       layout: 'layout',
       artists: artists,
-      video: videos
+      video: video
     });
   }).catch((err) => {
     console.log('err: ', err)
   })
 });
-
-
-
 
 app.get('/events', function(req, res) {
   res.render('events', {
@@ -100,8 +93,6 @@ app.get('/events', function(req, res) {
   });
 });
 
-
-
 app.get('/testdrive', function(req, res) {
   // need a db.query or req from cms for events information
   res.render('testdrive', {
@@ -109,8 +100,6 @@ app.get('/testdrive', function(req, res) {
     // ,events: eventsResults
   });
 });
-
-
 
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
