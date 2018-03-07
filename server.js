@@ -55,17 +55,16 @@ app.get('/catalogue', function(req, res) {
   let video = {};
 
   client.getEntries().then((entries) => {
-<<<<<<< HEAD
+
     let artists = [];
     let video;
     let catalogue = [];
-=======
->>>>>>> 1b5088d571a06257b4350a9934262073ac8a16ab
+
 
     entries.items.forEach(entry => {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName)
-<<<<<<< HEAD
+
       } else if (entry.fields.video) {
         video = entry.fields.video.fields.file.url.replace('//', '')
     } else if (entry.fields.cataloguePdf) {
@@ -74,11 +73,11 @@ app.get('/catalogue', function(req, res) {
         let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '')
         catalogue.push({ fileName, url })
     }
-=======
-      } else if (entry.fields.videoFile) {
+
+     else if (entry.fields.videoFile) {
         video = entry.fields.videoFile[0].fields.file;
       }
->>>>>>> 1b5088d571a06257b4350a9934262073ac8a16ab
+
     })
 
     console.log(video)
