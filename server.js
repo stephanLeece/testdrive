@@ -40,11 +40,7 @@ app.get('/', function(req, res) {
         })
         res.render('home', {
           layout: 'layout',
-<<<<<<< HEAD
           video
-=======
-          video : video
->>>>>>> c3ece8d7a1869a94d9ea0c0567bb6287137faa1c
         });
     })
 });
@@ -76,12 +72,12 @@ app.get('/catalogue', function(req, res) {
     entries.items.forEach(entry => {
       if (entry.fields.artistName) {
         artists.push(entry.fields.artistName);
-      } 
+      }
       if (entry.fields.cataloguePdf) {
         let fileName = entry.fields.cataloguePdf.fields.file.fileName;
         let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '');
         catalogue.push({ fileName, url });
-    } 
+    }
      if (entry.fields.videoFile) {
         video = entry.fields.videoFile[0].fields.file;
       }
