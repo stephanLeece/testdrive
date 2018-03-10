@@ -17,7 +17,7 @@
 <div id="pdfs-container">
   <ul class="pds">
   {{#catalogue}}
-    <li><a class="pdf" href= `{{url}}` target="_blank">{{fileName}}</a></li>
+    <li><a class="pdf" href= 'http://{{{ url }}}' target="_blank">{{fileName}}</a></li>
   {{/catalogue}}
   </ul>
 </div>
@@ -26,7 +26,7 @@
 
 
   <div id="video-container">
-    <div class="video">
+    <div id="video">
     {{#video}}
     <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay controls>
       <source src='https:{{url}}' type='{{contentType}}'>

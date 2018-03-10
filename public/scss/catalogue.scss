@@ -91,17 +91,17 @@
 }
 
 #video-container {
-position: absolute;
-background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
-background-repeat: no-repeat;
-background-size: contain;
-width:get-vw(382px);
-height:get-vh(268px);
-top: get-vh(561px);
-left: get-vw(878px);
+  position: absolute;
+  background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:get-vw(382px);
+  height:get-vh(268px);
+  top: get-vh(561px);
+  left: get-vw(878px);
 }
 
-.video {
+#video {
   position: absolute;
   margin-top: get-vh(59.9px);
   margin-left: get-vw(47px);

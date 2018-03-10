@@ -1,32 +1,23 @@
 @function get-vw($object) {
-    $vw: (1540 * 0.01) * 1px;
+    $vw: (1280 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
-// width: get-vw(100px);
+
 @function get-vh($object) {
     $vh: (1024 * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
 }
-// height: get-vh(20px);
-
-
-
-
-
-
-
-
 
 
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
     min-width: get-vw(354px);
     height: get-vh(55px);
-    margin: 0 0 0 -40px;
+    margin: get-vh(0px) get-vw(0px) get-vh(0px) get-vw(-40px);
 }
 
 .drivedrive-menu {
-    margin: 54px 0 0 80px;
+    margin: get-vh(54px) get-vw(0px) get-vh(0px) get-vw(80px);
 }
 
 .drivedrive-menu a {
@@ -36,10 +27,9 @@
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: -2.4px;
-    font-size: 41px;
+    font-size: get-vw(41px);
     font-family: TimesNewRomanPSMT;
-    letter-spacing: -2.4px;
+    letter-spacing: get-vw(-2.4px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
     width: get-vw(210px);
@@ -58,38 +48,21 @@ Feel free to change all if you know of a better way to position the elements (gr
 */
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
-    width: 72.890625vw;
-    // height: 84.27734375vh;
-    height: 115vh;
+    width: get-vw(933px);
+    height: get-vh(863px);
     position: absolute;
-    top: 102px;
-    left: 226px;
+    top: get-vw(102px);
+    left: get-vw(226px);
 }
 
-#home-img-cloud {
-    width: get-vw(538px);
-    height: get-vh(333px);
-    object-fit: contain;
-    filter: drop-shadow(inset 0 1px 357px 0 rgba(9, 9, 9, 0.49));
-    position: absolute;
-    left: get-vw(45px);
-    bottom: get-vh(74px);
-    top: get-vh(650px);
-}
-
-.video {
-    position: absolute;
-    left: get-vw(142px);
-    top: get-vh(690px);
-}
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-    width: get-vw(401.8px);
-    height: get-vh(217.3px);
+    width: get-vw(288.4px);
+    height: get-vh(156px);
     object-fit: contain;
     position: absolute;
-    top: 366px;
-    left: 16px;
+    top: get-vh(366px);
+    left: get-vw(16px);
 }
 
 #home-green-line {
@@ -97,17 +70,17 @@ Feel free to change all if you know of a better way to position the elements (gr
     height: get-vh(160px);
     object-fit: contain;
     position: absolute;
-    top: 630px;
-    left: 868px;
+    top: get-vh(630px);
+    left: get-vw(868px);
 }
 
 #home-blue-line {
-    width: get-vw(229px);
-    height: get-vh(230.5px);
+    width: get-vw(183.8px);
+    height: get-vh(185px);
     object-fit: contain;
     position: absolute;
-    top: 133px;
-    left: 974px;
+    top: get-vh(133px);
+    left: get-vw(974px);
 }
 /* STYLING FOR MODAL */
 #modal {
@@ -121,6 +94,7 @@ Feel free to change all if you know of a better way to position the elements (gr
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
 #home-container {
@@ -131,6 +105,25 @@ Feel free to change all if you know of a better way to position the elements (gr
     -ms-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
     transition: opacity 2s ease-in;
+}
+
+#home-video {
+    position: absolute;
+    background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: get-vw(447px);
+    height: get-vh(276px);
+    top: get-vh(674px);
+    left: get-vw(45px);
+}
+
+#home-v {
+    position: absolute;
+    margin-top: get-vh(46px);
+    margin-left: get-vw(44px);
+    margin-bottom: get-vh(54px);
+    margin-right: get-vw(87px); 
 }
 
 .fadeIn {

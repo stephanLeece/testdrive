@@ -47,7 +47,7 @@ $('p').on('click', e => {
 
 // ------------------------------- video functions ----------
 
-let video = $('.video');
+let video = $('video');
 
 function play() {
     video.play();
