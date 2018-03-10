@@ -1,32 +1,67 @@
+#infoContactBg {
+  width: 28.98701vw;
+  height: 50.32227vh;
+  position: absolute;
+  left: 9.15584vw;
+  top: 32.71484vh;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
+
+#infoContactInfo {
+  position: absolute;
+  left: 12.66234vw;
+  bottom: 32.71484vh;
+  width: 15.90909vw;
+  height: 31.44531vh;
+  font-size: 1.03896vw;
+  font-family: TimesNewRomanPSMT;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  text-align: left;
+  color: #222222; }
+
+form {
+  position: absolute;
+  left: 12.66234vw;
+  bottom: 24.21875vh;
+  border: 2px solid black;
+  width: 21.36364vw;
+  height: 3.90625vh;
+  margin-top: 0.39063vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+input {
+  font-size: 1.16883vw;
+  background: none;
+  border: none;
+  outline: none; }
+  input[type="email"] {
+    width: 14.35065vw;
+    height: 3.90625vh;
+    outline: none; }
+  input[type="submit"] {
+    border-left: 2px solid black;
+    width: 7.01299vw;
+    height: 3.90625vh; }
+
 #infoMap {
-  grid-column: 6 / 9;
+  position: absolute;
+  top: 16.69922vh;
+  right: 25.97403vw;
   align-self: center;
   width: 31.36364vw;
-  height: 56.34766vh;
+  height: 37.46753vw;
   border: 1px solid black;
   -moz-box-shadow: 0 0 50px #8315a8;
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
 
-#infoContentOutline {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  grid-column: 2 / 4;
-  width: 28.98701vw;
-  height: 50.32227vh;
-  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: center; }
-  #infoContentOutline div {
-    margin-left: 4.22078vw;
-    font-family: TimesNewRomanPSMT;
-    font-size: 1.16883vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #222222; }
+#tdLogo {
+  height: 3.41797vh;
+  width: 21.94805vw;
+  position: absolute;
+  bottom: 8.39844vh;
+  right: 2.20779vw; }
