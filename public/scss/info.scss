@@ -69,7 +69,17 @@
     }
   }
 
-
+#credits {
+  position: absolute;
+  bottom: get-vh(38px);
+  left: get-vw(143px);
+  white-space: nowrap;
+  background-color: black;
+  font-family: TimesNewRomanPSMT;
+ font-size: get-vw(12px);
+ text-align: left;
+ color: #ffffff;
+}
 
 
 #infoMap {
