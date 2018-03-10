@@ -58,7 +58,6 @@ function compare(a, b) {
   return 0;
 }
 
-// placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
 
