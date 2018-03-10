@@ -1,0 +1,113 @@
+@function get-vw($object) {
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+
+
+@function get-vh($object) {
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+
+
+#artist-container {
+  position: absolute;
+  top: get-vh(268px);
+  left: get-vw(130px);
+  height: get-vh(725.8px);
+  width: get-vw(315.1px);
+}
+
+.artists {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.artists p {
+  margin-left: get-vw(80px);
+  margin-right: get-vw(auto);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: get-vw(20px);
+  line-height: 1.6;
+}
+
+#catalogue-line-green {
+  position: absolute;
+  height: get-vh(240.5px);
+  width: get-vw(162.9px);
+  top: get-vh(780.7px);
+  left: get-vw(32.9px);
+}
+
+#pdfs-container {
+  position: absolute;
+  height: get-vh(1011px);
+  width: get-vw(377px);
+  top: get-vh(0px);
+  left: get-vw(442px);
+  background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.pds {
+  position: absolute;
+  top: get-vh(13px);
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: block;
+  margin-left: get-vw(55px);
+}
+
+.pds li {
+  padding-bottom: get-vw(15px);
+}
+
+.pdf {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-size: get-vw(30px);
+}
+
+.pdf:hover {
+  color: red;
+}
+
+#catalogue-line-blue {
+  height: get-vh(196.3px);
+  width: get-vw(248.6px);
+  position: absolute;
+  top: get-vh(218px);
+  left: get-vw(974px);
+}
+
+#video-container {
+position: absolute;
+background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+background-repeat: no-repeat;
+background-size: contain;
+width:get-vw(382px);
+height:get-vh(268px);
+top: get-vh(561px);
+left: get-vw(878px);
+}
+
+#video {
+  position: absolute;
+  margin-top: get-vh(59.9px);
+  margin-left: get-vw(47px);
+  margin-right: get-vw(51.4px);
+  margin-bottom: get-vh(44.5px);
+}
+
+// get-vw
+// get-vh get-vw
