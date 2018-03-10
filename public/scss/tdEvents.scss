@@ -1,0 +1,28 @@
+@function get-vw($object) {
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+// width: get-vw(100px);
+@function get-vh($object) {
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+// height: get-vh(20px);
+// ------------------------------------------
+
+
+#tdEventsList {
+  .eventDetails:hover {
+    background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+    margin: -50px;
+  }
+}
+
+#tdEventsInfobox {
+  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
+  filter: drop-shadow(0 0 0.75rem rgb(1, 223, 54));
+}

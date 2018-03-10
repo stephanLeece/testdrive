@@ -38,53 +38,16 @@ body {
   grid-column: 12 / 13;
 }
 
-.testdrive-logo {
-  grid-column: 10 / 11;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.eventList {
-  grid-column: 1 / 3;
-}
 
-.eventsInfoBox {
-  height: 400px;
-  width: 200px;
-  grid-column: 5 / 7;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 //---------------------- INFO STYLES-------------------------------------------
 
 //---------------------- TESTDRIVE STYLES-------------------------------------------
 
-#testdrive-logo-home {
-  grid-column: 1 / 3;
-}
 
-#tdEventsList {
-  li:hover {
-    background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
-  }
-}
-
-#tdEventsInfobox {
-  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.svg");
-}
 //---------------------- drivedrive events STYLES-------------------------------------------
 
-#ddEventsList {
-  li:hover {
-    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-  }
-}
-
-#ddEventsInfobox {
-  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.svg");
-}
 //---------------------- HOME STYLES-------------------------------------------
 
 .home {
