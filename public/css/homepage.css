@@ -48,16 +48,14 @@ Feel free to change all if you know of a better way to position the elements (gr
   object-fit: contain;
   filter: drop-shadow(inset 0 1px 357px 0 rgba(9, 9, 9, 0.49));
   position: absolute;
-  left: 45px;
-  bottom: 74px;
-  top: 650px; }
+  left: 2.92208vw;
+  bottom: 7.22656vh;
+  top: 63.47656vh; }
 
 .video {
   position: absolute;
-  left: 142px;
-  top: 690px;
-  width: 19.22078vw;
-  height: 16.21094vh; }
+  left: 9.22078vw;
+  top: 67.38281vh; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
