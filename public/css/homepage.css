@@ -1,11 +1,11 @@
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-  min-width: 22.98701vw;
+  min-width: 27.65625vw;
   height: 5.37109vh;
-  margin: 0 0 0 -40px; }
+  margin: 0vh 0vw 0vh -3.125vw; }
 
 .drivedrive-menu {
-  margin: 54px 0 0 80px; }
+  margin: 5.27344vh 0vw 0vh 6.25vw; }
 
 .drivedrive-menu a {
   text-decoration: none;
@@ -14,13 +14,12 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: -2.4px;
-  font-size: 41px;
+  font-size: 3.20312vw;
   font-family: TimesNewRomanPSMT;
-  letter-spacing: -2.4px;
+  letter-spacing: -0.1875vw;
   text-align: left;
   -webkit-text-stroke: 0 #979797;
-  width: 13.63636vw;
+  width: 16.40625vw;
   height: 5.46875vh; }
 
 /* END STYLING FOR BIG MAC */
@@ -36,51 +35,36 @@ Feel free to change all if you know of a better way to position the elements (gr
 */
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
-  width: 72.890625vw;
-  height: 115vh;
+  width: 72.89062vw;
+  height: 84.27734vh;
   position: absolute;
-  top: 102px;
-  left: 226px; }
-
-#home-img-cloud {
-  width: 34.93506vw;
-  height: 32.51953vh;
-  object-fit: contain;
-  filter: drop-shadow(inset 0 1px 357px 0 rgba(9, 9, 9, 0.49));
-  position: absolute;
-  left: 2.92208vw;
-  bottom: 7.22656vh;
-  top: 63.47656vh; }
-
-.video {
-  position: absolute;
-  left: 9.22078vw;
-  top: 67.38281vh; }
+  top: 7.96875vw;
+  left: 17.65625vw; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-  width: 26.09091vw;
-  height: 21.2207vh;
+  width: 22.53125vw;
+  height: 15.23438vh;
   object-fit: contain;
   position: absolute;
-  top: 366px;
-  left: 16px; }
+  top: 35.74219vh;
+  left: 1.25vw; }
 
 #home-green-line {
-  width: 16.23377vw;
+  width: 19.53125vw;
   height: 15.625vh;
   object-fit: contain;
   position: absolute;
-  top: 630px;
-  left: 868px; }
+  top: 61.52344vh;
+  left: 67.8125vw; }
 
 #home-blue-line {
-  width: 14.87013vw;
-  height: 22.50977vh;
+  width: 14.35938vw;
+  height: 18.06641vh;
   object-fit: contain;
   position: absolute;
-  top: 133px;
-  left: 974px; }
+  top: 12.98828vh;
+  left: 76.09375vw; }
 
 /* STYLING FOR MODAL */
 #modal {
@@ -93,7 +77,8 @@ Feel free to change all if you know of a better way to position the elements (gr
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 #home-container {
   opacity: 0;
@@ -103,6 +88,23 @@ Feel free to change all if you know of a better way to position the elements (gr
   -ms-transition: opacity 2s ease-in;
   -o-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in; }
+
+#home-video {
+  position: absolute;
+  background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 34.92188vw;
+  height: 26.95312vh;
+  top: 65.82031vh;
+  left: 3.51562vw; }
+
+#home-v {
+  position: absolute;
+  margin-top: 4.49219vh;
+  margin-left: 3.4375vw;
+  margin-bottom: 5.27344vh;
+  margin-right: 6.79688vw; }
 
 .fadeIn {
   opacity: 1; }

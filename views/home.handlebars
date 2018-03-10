@@ -1,25 +1,15 @@
-
-{{!-- <img id="halk" class="halk" src="/assets/Elements/Intro/Intro-bg.png"> --}}
-
 <img id="halk" class="halk" src="/assets/Elements/Intro/Intro-bg.png">
 
 {{> big-mac}}
-{{> side-menu}}
+{{> infoLink}}
 
 <div id = "home-container">
-
-
-{{!-- <div id = "home-container"> --}}
     <img id="gallery-space-img" class="home" src="/assets/Elements/Home/galleryspace.png">
 
-    <div id = "container">
         <img id="home-green-line" class="home" src="/assets/Elements/Home/Home-green-line.svg">
         <img id="home-red-line" class="home"src="/assets/Elements/Home/Home-red-line.svg">
         <img id="home-blue-line" class="home" src="/assets/Elements/Home/Home-blue-line.svg">
 
-{{!-- </div> --}}
-
-<!-- <img id="halk" class="halk" src="/assets/Elements/Intro/Intro-bg.png"> -->
 
 <div id="modal">
     <!-- <img id="home-infobox-blue" src="/assets/Elements/Home/Home-infobox-blue.svg"> -->
@@ -30,10 +20,10 @@ DriveDrive and TESTDRIVE are the result of on going conversations and debates be
 The project will be open to the public for the year 2018-2019.</p>
 </div>
 
-  <div id="home-video">
-    <div class='video'>
+  <div class="video-container home-video">
+    <div id='home-v'>
       {{#video}}
-      <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+      <video height="166" width="296" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
         <source src='https:{{url}}' type='{{contentType}}'>
       </video>
       {{/video}}
