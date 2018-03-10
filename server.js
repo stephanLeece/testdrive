@@ -36,12 +36,11 @@ app.get('/', function(req, res) {
         entries.items.forEach(entry => {
             if(entry.fields.videoFile){
                 video = entry.fields.videoFile[0].fields.file;
-                console.log('what is this', entry.fields.videoFile[0].fields.file);
             }
         })
         res.render('home', {
           layout: 'layout',
-          video : video
+          video 
         });
     })
 });
