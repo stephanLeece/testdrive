@@ -30,12 +30,16 @@ The project will be open to the public for the year 2018-2019.</p>
 <img id="home-infobox-blue" class="home" src="/assets/Elements/Home/Home-infobox-blue.svg">
 </div>
 
-  <img id="home-img-cloud" src="/assets/Elements/Home/Home-video-cloud-grey.svg">
-  {{#video}}
-  <video class='video' height="240" width="400" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
-    <source src='https:{{url}}' type='{{contentType}}'>
-  </video>
-  {{/video}}
+  <div id="home-video">
+    <div class='video'>
+      {{#video}}
+      <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+        <source src='https:{{url}}' type='{{contentType}}'>
+      </video>
+      {{/video}}
+    </div>
+  </div>
+
 
 
 
