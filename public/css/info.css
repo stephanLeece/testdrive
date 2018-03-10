@@ -28,7 +28,7 @@ form {
   border: 2px solid black;
   width: 21.36364vw;
   height: 3.90625vh;
-  margin-top: 0.39062vh;
+  margin-top: 0.39063vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -59,7 +59,7 @@ input {
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
 
-#tdLogo {
+.tdLogo {
   height: 3.41797vh;
   width: 21.94805vw;
   position: absolute;
