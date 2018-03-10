@@ -30,24 +30,25 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-<<<<<<< HEAD
-    res.render('home', {layout: 'layout'});
-=======
+
+    // res.render('home', {layout: 'layout'});
+
     let video = {};
-    client.getEntries().then((entries)=> {
+    client.getEntries().then((entries) => {
 
         entries.items.forEach(entry => {
-            if(entry.fields.videoFile){
+
+            if (entry.fields.videoFile) {
                 video = entry.fields.videoFile[0].fields.file;
                 console.log('what is this', entry.fields.videoFile[0].fields.file);
             }
-        })
-        res.render('home', {
-          layout: 'layout',
-          video : video
         });
-    })
->>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
+
+        res.render('home', {
+            layout: 'layout',
+            video: video
+        });
+    });
 });
 
 function compare(a, b) {
@@ -67,7 +68,7 @@ function compare(a, b) {
 
 app.get('/catalogue', function(req, res) {
     let artists = [];
-<<<<<<< HEAD
+
     let video = {};
 
     client.getEntries().then((entries) => {
@@ -102,101 +103,101 @@ app.get('/catalogue', function(req, res) {
         });
     }).catch((err) => {
         console.log('err: ', err);
-=======
-    let video;
-    let catalogue = [];
 
+        let video;
+        let catalogue = [];
 
-    entries.items.forEach(entry => {
-      if (entry.fields.artistName) {
-        artists.push(entry.fields.artistName)
+        entries.items.forEach(entry => {
+            if (entry.fields.artistName) {
+                artists.push(entry.fields.artistName);
 
-      } else if (entry.fields.cataloguePdf) {
-        // console.log("CATALOGUE:",entry.fields.cataloguePdf);
-        let fileName = entry.fields.cataloguePdf.fields.file.fileName
-        let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '')
-        catalogue.push({ fileName, url })
-    } else if (entry.fields.videoFile) {
-        video = entry.fields.videoFile[0].fields.file;
-      }
+            } else if (entry.fields.cataloguePdf) {
+                // console.log("CATALOGUE:",entry.fields.cataloguePdf);
+                let fileName = entry.fields.cataloguePdf.fields.file.fileName;
+                let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '');
+                catalogue.push({fileName, url});
+            } else if (entry.fields.videoFile) {
+                video = entry.fields.videoFile[0].fields.file;
+            }
 
-    })
-
-    console.log(video)
-    res.render('catalogue', {
-      layout: 'layout',
-      artists,
-      video,
-      catalogue
->>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
-    });
-});
-
-app.get('/events', function(req, res) {
-    client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
-        const eventList = entries.items.map((entry) => {
-            return {
-                eventClassName: entry.fields.ddClassName,
-                eventTitle: entry.fields.ddEventTitle,
-                eventDate: entry.fields.ddEventDate,
-                eventContent: entry.fields.ddEventContent.map((image) => {
-                    return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
-                })
-            };
         });
-        res.render('events', {
+
+        console.log(video);
+        res.render('catalogue', {
             layout: 'layout',
-            eventList: eventList
+            artists,
+            video,
+            catalogue
+
         });
     });
-});
 
-app.get('/testdrive', function(req, res) {
-    client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
-        const eventList = entries.items.map((entry) => {
-            return {
-                eventClassName: entry.fields.tdClassName,
-                eventTitle: entry.fields.tdEventTitle,
-                eventDate: entry.fields.tdEventDate,
-                eventContent: entry.fields.tdEventContent.map((image) => {
-                    return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
-                })
-            };
-        });
-        res.render('testdrive', {
-            layout: 'layout',
-            eventList: eventList
+    app.get('/events', function(req, res) {
+        client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
+            const eventList = entries.items.map((entry) => {
+                return {
+                    eventClassName: entry.fields.ddClassName,
+                    eventTitle: entry.fields.ddEventTitle,
+                    eventDate: entry.fields.ddEventDate,
+                    eventContent: entry.fields.ddEventContent.map((image) => {
+                        return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
+                    })
+                };
+            });
+            res.render('events', {
+                layout: 'layout',
+                eventList: eventList
+            });
         });
     });
-});
 
-app.get('/info', function(req, res) {
-    res.render('info', {layout: 'layout'});
-});
-
-app.post('/info', function(req, res) {
-    console.log(req.body);
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
-        to: 'bar@example.com, baz@example.com', // list of receivers
-        subject: 'new user sign up:', // Subject line
-        text: req.body.userEmail, // plain text body
-    };
-
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    app.get('/testdrive', function(req, res) {
+        client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
+            const eventList = entries.items.map((entry) => {
+                return {
+                    eventClassName: entry.fields.tdClassName,
+                    eventTitle: entry.fields.tdEventTitle,
+                    eventDate: entry.fields.tdEventDate,
+                    eventContent: entry.fields.tdEventContent.map((image) => {
+                        return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
+                    })
+                };
+            });
+            res.render('testdrive', {
+                layout: 'layout',
+                eventList: eventList
+            });
+        });
     });
-    res.render('info', {layout: 'layout'});
+
+    app.get('/info', function(req, res) {
+        res.render('info', {layout: 'layout'});
+    });
+
+    app.post('/info', function(req, res) {
+        console.log(req.body);
+        // setup email data with unicode symbols
+        let mailOptions = {
+            from: '"Fred Foo 👻" <foo@example.com>', // sender address
+            to: 'bar@example.com, baz@example.com', // list of receivers
+            subject: 'new user sign up:', // Subject line
+            text: req.body.userEmail, // plain text body
+        };
+
+        // send mail with defined transport object
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message sent: %s', info.messageId);
+            // Preview only available when sending through an Ethereal account
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+            // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+        });
+        res.render('info', {layout: 'layout'});
+    });
 });
 
 app.listen(8080, () => console.log('Listening on port 8080'));

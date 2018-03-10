@@ -7,10 +7,8 @@ backButton.on('click', () => {
 });
 
 function showModal() {
-    console.log("running modal");
 
-    $("#container").on('click', function() {
-        console.log("hi h1");
+    $("#gallery-space-img").on('click', function() {
         $('#modal').css({"visibility": "visible"});
     });
 }
@@ -18,20 +16,23 @@ function showModal() {
 showModal();
 
 function fadeIntoImg() {
-    console.log("lag?");
-    $('#halk').fadeOut(3000);
+    $('#halk').fadeOut(5000);
+
+    // setTimeout(function() {
+    $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
+    // }, 5000);
 }
-<<<<<<< HEAD
+
 // function fadeIntoImg(body) {
 //   console.log("lag?");
 //   $('body').fadeOut(3000);
 // }
 //
 // fadeIntoImg();
-=======
+
 
 fadeIntoImg();
->>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
+
 
 // ------------------------------- testdrive/events functions ------------------
 
