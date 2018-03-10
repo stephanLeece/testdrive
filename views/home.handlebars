@@ -2,6 +2,7 @@
 
 {{> big-mac}}
 {{> infoLink}}
+{{>testdriveLogo}}
 
 <div id = "home-container">
     <img id="gallery-space-img" class="home" src="/assets/Elements/Home/galleryspace.png">
@@ -20,14 +21,13 @@ The project will be open to the public for the year 2018-2019.</p>
 <img id="home-infobox-blue" class="home" src="/assets/Elements/Home/Home-infobox-blue.svg">
 </div>
 
-  <div class="video-container home-video">
-    <div id='home-v'>
-      {{#video}}
-      <video height="166" width="296" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
-        <source src='https:{{url}}' type='{{contentType}}'>
-      </video>
-      {{/video}}
-    </div>
+  <div class="video-container home-video"></div>
+  <div id='home-v'>
+    {{#video}}
+    <video height="166" width="296" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+      <source src='https:{{url}}' type='{{contentType}}'>
+    </video>
+    {{/video}}
   </div>
 
 

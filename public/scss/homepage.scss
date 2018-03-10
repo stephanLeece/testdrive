@@ -1,5 +1,5 @@
 @function get-vw($object) {
-    $vw: (1280 * 0.01) * 1px;
+    $vw: (1540 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -34,6 +34,9 @@
     -webkit-text-stroke: 0 #979797;
     width: get-vw(210px);
     height: get-vh(56px);
+    &:hover {
+      color: #ffc278;
+    }
 }
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -88,13 +91,10 @@ Feel free to change all if you know of a better way to position the elements (gr
 }
 /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
 #halk {
-    position: fixed;
-    margin: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
+  position: absolute;
+  z-index: 99;
+    height: 100vh;
+    width: 100vw;
 }
 
 #home-container {
@@ -107,23 +107,24 @@ Feel free to change all if you know of a better way to position the elements (gr
     transition: opacity 2s ease-in;
 }
 
-#home-video {
+.home-video {
     position: absolute;
     background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    background-size: get-vw(447px) get-vh(276px);
     width: get-vw(447px);
     height: get-vh(276px);
-    top: get-vh(674px);
+    bottom: get-vh(74px);
     left: get-vw(45px);
 }
 
 #home-v {
+  width: get-vw(296px);
+  height: get-vh(166px);
     position: absolute;
-    margin-top: get-vh(46px);
-    margin-left: get-vw(44px);
-    margin-bottom: get-vh(54px);
-    margin-right: get-vw(87px); 
+  bottom: get-vh(128px);
+  left: get-vw(109px);
 }
 
 .fadeIn {

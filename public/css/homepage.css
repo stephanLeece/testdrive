@@ -1,11 +1,11 @@
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-  min-width: 27.65625vw;
+  min-width: 22.98701vw;
   height: 5.37109vh;
-  margin: 0vh 0vw 0vh -3.125vw; }
+  margin: 0vh 0vw 0vh -2.5974vw; }
 
 .drivedrive-menu {
-  margin: 5.27344vh 0vw 0vh 6.25vw; }
+  margin: 5.27344vh 0vw 0vh 5.19481vw; }
 
 .drivedrive-menu a {
   text-decoration: none;
@@ -14,13 +14,15 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  font-size: 3.20312vw;
+  font-size: 2.66234vw;
   font-family: TimesNewRomanPSMT;
-  letter-spacing: -0.1875vw;
+  letter-spacing: -0.15584vw;
   text-align: left;
   -webkit-text-stroke: 0 #979797;
-  width: 16.40625vw;
+  width: 13.63636vw;
   height: 5.46875vh; }
+  .drivedrive-menu a:hover {
+    color: #ffc278; }
 
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -35,36 +37,36 @@ Feel free to change all if you know of a better way to position the elements (gr
 */
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
-  width: 72.89062vw;
+  width: 60.58442vw;
   height: 84.27734vh;
   position: absolute;
-  top: 7.96875vw;
-  left: 17.65625vw; }
+  top: 6.62338vw;
+  left: 14.67532vw; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-  width: 22.53125vw;
+  width: 18.72727vw;
   height: 15.23438vh;
   object-fit: contain;
   position: absolute;
   top: 35.74219vh;
-  left: 1.25vw; }
+  left: 1.03896vw; }
 
 #home-green-line {
-  width: 19.53125vw;
+  width: 16.23377vw;
   height: 15.625vh;
   object-fit: contain;
   position: absolute;
   top: 61.52344vh;
-  left: 67.8125vw; }
+  left: 56.36364vw; }
 
 #home-blue-line {
-  width: 14.35938vw;
+  width: 11.93506vw;
   height: 18.06641vh;
   object-fit: contain;
   position: absolute;
   top: 12.98828vh;
-  left: 76.09375vw; }
+  left: 63.24675vw; }
 
 /* STYLING FOR MODAL */
 #modal {
@@ -72,13 +74,10 @@ Feel free to change all if you know of a better way to position the elements (gr
 
 /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
 #halk {
-  position: fixed;
-  margin: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden; }
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw; }
 
 #home-container {
   opacity: 0;
@@ -89,22 +88,23 @@ Feel free to change all if you know of a better way to position the elements (gr
   -o-transition: opacity 2s ease-in;
   transition: opacity 2s ease-in; }
 
-#home-video {
+.home-video {
   position: absolute;
   background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 34.92188vw;
-  height: 26.95312vh;
-  top: 65.82031vh;
-  left: 3.51562vw; }
+  background-size: 100%;
+  background-size: 29.02597vw 26.95313vh;
+  width: 29.02597vw;
+  height: 26.95313vh;
+  bottom: 7.22656vh;
+  left: 2.92208vw; }
 
 #home-v {
+  width: 19.22078vw;
+  height: 16.21094vh;
   position: absolute;
-  margin-top: 4.49219vh;
-  margin-left: 3.4375vw;
-  margin-bottom: 5.27344vh;
-  margin-right: 6.79688vw; }
+  bottom: 12.5vh;
+  left: 7.07792vw; }
 
 .fadeIn {
   opacity: 1; }
