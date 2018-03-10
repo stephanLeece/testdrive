@@ -1,17 +1,13 @@
 @function get-vw($object) {
-    $vw: (1540 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
 }
-
 @function get-vh($object) {
-    $vh: (768 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
 }
-
 // width: get-vw(100px)vw;
-
 //---------------------- SITEWIDE STYLES-------------------------------------------
-
 html {
   height: 100%;
 }
@@ -30,26 +26,61 @@ body {
   display: none;
 }
 
-.drivedrive-menu {
-  grid-column: 1 / 3;
+#infoLink {
+  position: absolute;
+  top: get-vh(57px);
+  right: get-vw(62px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #222222;
+  }
+
+  img {
+    width: get-vw(30px);
+    height: get-vh(39px);
+  }
+  width: get-vw(138px);
+  height: get-vh(56px);
+  font-family: TimesNewRomanPSMT;
+
+  h1 {
+    font-size: get-vw(50px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    text-align: left;
+    color: #222222;
+  }
 }
 
-#side-menu {
-  grid-column: 12 / 13;
+#backButton {
+  position: absolute;
+  bottom: get-vh(86px);
+  right: get-vw(126px);
+  width: 89px;
+  height: 56px;
+
+  h1 {
+    font-size: get-vw(50px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    text-align: left;
+    color: #222222;
+  }
 }
-
-
-
-
 //---------------------- INFO STYLES-------------------------------------------
-
 //---------------------- TESTDRIVE STYLES-------------------------------------------
-
-
 //---------------------- drivedrive events STYLES-------------------------------------------
-
 //---------------------- HOME STYLES-------------------------------------------
-
 .home {
   height: 50px;
 }
