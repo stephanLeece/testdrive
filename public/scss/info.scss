@@ -1,50 +1,75 @@
 @function get-vw($object) {
-    $vw: (1540 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
 }
-
 // width: get-vw(100px);
-
 @function get-vh($object) {
-    $vh: (1024 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
 }
-
-
 // height: get-vh(20px);
-
-
 // ------------------------------------------
 
 
-
-
-#infoContentOutline {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  top: get-vh(328px);
-  left: get-vw(141px);
+#infoContactBg {
   width: get-vw(446.4px);
   height: get-vh(515.3px);
-  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: center;
-  div {
-    margin-left: get-vw(65px);
-   font-family: TimesNewRomanPSMT;
-   font-size: get-vw(18px);
-   font-weight: normal;
-   font-style: normal;
-   font-stretch: normal;
-   line-height: 1.05;
-   letter-spacing: -0.9px;
-   text-align: left;
-   color: #222222;
-  }
+  position: absolute;
+  left: get-vw(141px);
+  top: get-vh(335px);
 }
+
+
+  #infoContactInfo {
+    position: absolute;
+    left: get-vw(195px);
+    bottom: get-vh(335px);
+    width: get-vw(245px);
+    height: get-vh(322px);
+    font-size: get-vw(16px);
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    text-align: left;
+    color: #222222;
+    }
+    form {
+      position: absolute;
+      left: get-vw(195px);
+      bottom: get-vh(248px);
+      border: 2px solid black;
+      width: get-vw(329px);
+      height: get-vh(40px);
+      margin-top: get-vh(4px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+  input {
+    font-size: get-vw(18px);
+    background: none;
+    border: none;
+    outline: none;
+
+    &[type="email"] {
+      width: get-vw(221px);
+      height: get-vh(40px);
+      outline: none;
+    }
+
+    &[type="submit"] {
+      border-left: 2px solid black;
+      width: get-vw(108px);
+      height: get-vh(40px);
+    }
+  }
+
+
+
 
 #infoMap {
   position: absolute;

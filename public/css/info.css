@@ -1,27 +1,50 @@
-#infoContentOutline {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  top: 32.03125vh;
-  left: 9.15584vw;
+#infoContactBg {
   width: 28.98701vw;
   height: 50.32227vh;
-  background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: center; }
-  #infoContentOutline div {
-    margin-left: 4.22078vw;
-    font-family: TimesNewRomanPSMT;
-    font-size: 1.16883vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #222222; }
+  position: absolute;
+  left: 9.15584vw;
+  top: 32.71484vh; }
+
+#infoContactInfo {
+  position: absolute;
+  left: 12.66234vw;
+  bottom: 32.71484vh;
+  width: 15.90909vw;
+  height: 31.44531vh;
+  font-size: 1.03896vw;
+  font-family: TimesNewRomanPSMT;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  text-align: left;
+  color: #222222; }
+
+form {
+  position: absolute;
+  left: 12.66234vw;
+  bottom: 24.21875vh;
+  border: 2px solid black;
+  width: 21.36364vw;
+  height: 3.90625vh;
+  margin-top: 0.39063vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+input {
+  font-size: 1.16883vw;
+  background: none;
+  border: none;
+  outline: none; }
+  input[type="email"] {
+    width: 14.35065vw;
+    height: 3.90625vh;
+    outline: none; }
+  input[type="submit"] {
+    border-left: 2px solid black;
+    width: 7.01299vw;
+    height: 3.90625vh; }
 
 #infoMap {
   position: absolute;
