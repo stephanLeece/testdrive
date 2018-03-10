@@ -9,6 +9,7 @@
 }
 
 
+
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
     min-width: get-vw(354px);
@@ -128,4 +129,31 @@ Feel free to change all if you know of a better way to position the elements (gr
 
 .fadeIn {
     opacity: 1;
+}
+
+
+#modal{
+    position:absolute;
+    top:get-vh(128px);
+    left:get-vw(666px);
+    width: get-vw(390px);
+	height: get-vh(613px);
+    background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
+    /* background-color: #ffffff; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p {
+width: get-vw(289px);
+height: get-vh(456px);
+font-family: TimesNewRomanPSMT;
+font-size: get-vh(18px);
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.06;
+letter-spacing: -0.8px;
+text-align: left;
+color: #222222;
 }

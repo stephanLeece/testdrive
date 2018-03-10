@@ -39,8 +39,10 @@ app.get('/', function(req, res) {
             }
         });
         res.render('home', {
+
             layout: 'layout',
             video: video
+
         });
     });
 });
@@ -93,6 +95,7 @@ app.get('/catalogue', function(req, res) {
         });
     }).catch((err) => {
         console.log('err: ', err);
+
     });
 });
 
