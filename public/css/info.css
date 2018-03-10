@@ -1,18 +1,10 @@
-#infoMap {
-  grid-column: 6 / 9;
-  align-self: center;
-  width: 31.36364vw;
-  height: 56.34766vh;
-  border: 1px solid black;
-  -moz-box-shadow: 0 0 50px #8315a8;
-  -webkit-box-shadow: 0 0 50px #8315a8;
-  box-shadow: 0 0 50px #8315a8; }
-
 #infoContentOutline {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  grid-column: 2 / 4;
+  position: absolute;
+  top: 32.03125vh;
+  left: 9.15584vw;
   width: 28.98701vw;
   height: 50.32227vh;
   background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
@@ -30,3 +22,22 @@
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222; }
+
+#infoMap {
+  position: absolute;
+  top: 16.69922vh;
+  right: 25.97403vw;
+  align-self: center;
+  width: 31.36364vw;
+  height: 37.46753vw;
+  border: 1px solid black;
+  -moz-box-shadow: 0 0 50px #8315a8;
+  -webkit-box-shadow: 0 0 50px #8315a8;
+  box-shadow: 0 0 50px #8315a8; }
+
+#tdLogo {
+  height: 3.41797vh;
+  width: 21.94805vw;
+  position: absolute;
+  bottom: 8.39844vh;
+  right: 2.20779vw; }

@@ -17,22 +17,15 @@
 // ------------------------------------------
 
 
-#infoMap {
-  grid-column: 6 / 9;
-  align-self: center;
-  width: get-vw(483px);
-  height: get-vh(577px);
-  border: 1px solid black;
-  -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
-  -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
-  box-shadow: 0 0 50px rgb(131, 21, 168);
-}
+
 
 #infoContentOutline {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  grid-column: 2 / 4;
+  position: absolute;
+  top: get-vh(328px);
+  left: get-vw(141px);
   width: get-vw(446.4px);
   height: get-vh(515.3px);
   background-image: url("./../assets/Elements/Info/Info-contact-outline.svg");
@@ -51,4 +44,25 @@
    text-align: left;
    color: #222222;
   }
+}
+
+#infoMap {
+  position: absolute;
+  top: get-vh(171px);
+  right: get-vw(400px);
+  align-self: center;
+  width: get-vw(483px);
+  height: get-vw(577px);
+  border: 1px solid black;
+  -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
+  -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
+  box-shadow: 0 0 50px rgb(131, 21, 168);
+}
+
+#tdLogo {
+  height: get-vh(35px);
+  width: get-vw(338px);
+  position: absolute;
+  bottom: get-vh(86px);
+  right: get-vw(34px);
 }
