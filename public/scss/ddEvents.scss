@@ -1,0 +1,63 @@
+@function get-vw($object) {
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+// width: get-vw(100px);
+@function get-vh($object) {
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+// height: get-vh(20px);
+// ------------------------------------------
+
+.eventList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  position: absolute;
+  top: get-vh(360.3px);
+  left: get-vw(64.7px);
+  ul > li {
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+}
+
+
+.eventsInfoBox {
+  position: absolute;
+  left: get-vw(528px);
+  width: get-vw(740px);
+  height: get-vh(1021px);
+  background-size:  get-vw(740px) get-vh(1021px);
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.eventDetails {
+  margin-bottom: get-vh(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: get-vw(445px);
+  height: get-vh(107.9px);
+}
+
+#ddEventsList {
+  .eventDetails:hover {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+    margin: -50px;
+  }
+}
+
+#ddEventsInfobox {
+  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
+    filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
+}

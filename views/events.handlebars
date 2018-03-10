@@ -1,11 +1,11 @@
 {{> big-mac}} {{> side-menu}}
 
 <div class="eventList" id="ddEventsList">
-  <ul>
     {{#eventList}}
-      <li class= {{eventClassName}}>{{eventTitle}}</li>
+    <div class="eventDetails">
+        <p class= {{eventClassName}}>{{eventTitle}}</p>
+    </div>
     {{/eventList}}
-  </ul>
 </div>
 
 <div class="eventsInfoBox" id="ddEventsInfobox">

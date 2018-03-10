@@ -3,11 +3,11 @@
 
 <a id="testdrive-logo-home" href="/"><img  src="/assets/Logo-SVG/Testdrive.svg"></a>
 <div class="eventList" id="tdEventsList">
-  <ul>
-    {{#eventList}}
-    <li class={{eventClassName}}>{{eventTitle}}</li>
-    {{/eventList}}
-  </ul>
+  {{#eventList}}
+  <div class="eventDetails">
+      <p class= {{eventClassName}}>{{eventTitle}}</p>
+  </div>
+  {{/eventList}}
 </div>
 
 <div class="eventsInfoBox" id="tdEventsInfobox">
