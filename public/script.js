@@ -1,48 +1,58 @@
 // ---------------------------------- homepage functions -----------------
 
-let backButton = $("#back-button")
+let backButton = $("#back-button");
 
 backButton.on('click', () => {
-  window.history.back();
-})
+    window.history.back();
+});
 
 function showModal() {
-  console.log("running modal");
 
-  $("#gallery-space-img").on('click', function() {
-    console.log("hi h1");
-    $('#modal').css({"visibility": "visible"})
-  })
+    $("#gallery-space-img").on('click', function() {
+        $('#modal').css({"visibility": "visible"});
+    });
 }
 
 showModal();
 
 function fadeIntoImg() {
-  console.log("lag?");
-  $('#halk').fadeOut(3000);
+    $('#halk').fadeOut(5000);
+
+    // setTimeout(function() {
+    $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
+    // }, 5000);
 }
 
+// function fadeIntoImg(body) {
+//   console.log("lag?");
+//   $('body').fadeOut(3000);
+// }
+//
+// fadeIntoImg();
+
+
 fadeIntoImg();
+
 
 // ------------------------------- testdrive/events functions ------------------
 
 // $(parentSelector).find(childSelector)
 $('.eventsInfoBox').find('div').addClass('hidden');
 $('li').on('click', e => {
-  let eventToShow = '.' + $(e.target).attr('class')
-$('.eventsInfoBox').find('div').addClass('hidden');
-$('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
+    let eventToShow = '.' + $(e.target).attr('class');
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
 });
 
 // ------------------------------- video functions ----------
 
-let video = $('.video')
+let video = $('.video');
 
 function play() {
-  video.play()
+    video.play();
 }
 
 function pause() {
-  video.pause()
+    video.pause();
 }

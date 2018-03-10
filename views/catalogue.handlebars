@@ -1,34 +1,36 @@
 {{> big-mac}}
 {{> side-menu}}
-{{> testdriveLogo}}
 
-<div id="catalogue-artists-purple">
+<div id="artist-container">
+
+  <div class="artists">
   {{#artists}}
   <p>{{.}}</p>
   {{/artists}}
-
-  <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg">
+  </div>
 
 </div>
 
 <img id="catalogue-line-green" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-green.svg">
 
 
-<div id="catalogue-line-blue">
-  <img src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg">
+<div id="pdfs-container">
+  <ul class="pds">
   {{#catalogue}}
-  <a href= `{{url}}` target="_blank"><p>{{fileName}}</p><a>
-    {{/catalogue}}
+    <li><a class="pdf" href= `{{url}}` target="_blank">{{fileName}}</a></li>
+  {{/catalogue}}
+  </ul>
 </div>
 
   <img id="catalogue-line-blue" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-blue.svg">
 
 
-  <div class="video-container">
+  <div id="video-container">
+    <div id="video">
     {{#video}}
-    <video class='video' height="240" width="400" onmouseover="pause()" onmouseleave="play()" autoplay controls>
+    <video class=video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay controls>
       <source src='https:{{url}}' type='{{contentType}}'>
     </video>
     {{/video}}
-    <img id="catalogue-video-grey" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg">
+    </div>
   </div>
