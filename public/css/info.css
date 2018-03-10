@@ -3,7 +3,8 @@
   height: 50.32227vh;
   position: absolute;
   left: 9.15584vw;
-  top: 32.71484vh; }
+  top: 32.71484vh;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
 
 #infoContactInfo {
   position: absolute;
