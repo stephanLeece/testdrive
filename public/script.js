@@ -14,17 +14,14 @@ function showModal() {
     $('#modal').css({"visibility": "visible"})
   })
 }
+
 showModal();
 
 function fadeIntoImg() {
   console.log("lag?");
   $('#halk').fadeOut(3000);
 }
-// function fadeIntoImg(body) {
-//   console.log("lag?");
-//   $('body').fadeOut(3000);
-// }
-//
+
 fadeIntoImg();
 
 // ------------------------------- testdrive/events functions ------------------
