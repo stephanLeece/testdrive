@@ -107,29 +107,27 @@ Feel free to change all if you know of a better way to position the elements (gr
 .fadeIn {
   opacity: 1; }
 
-
-#modal{
-    position:absolute;
-    top:128px;
-    left:666px;
-    width: 390px;
-	height: 613px;
-    background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-    /* background-color: #ffffff; */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+#modal {
+  position: absolute;
+  top: 12.5vh;
+  left: 43.24675vw;
+  width: 25.32468vw;
+  height: 59.86328vh;
+  background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
+  /* background-color: #ffffff; */
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 p {
-width: 289px;
-height: 456px;
-font-family: TimesNewRomanPSMT;
-font-size: 18px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: 1.06;
-letter-spacing: -0.8px;
-text-align: left;
-color: #222222;
-}
+  width: 30.27273vw;
+  height: 59.32617vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 1.75781vh;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #222222;
+  z-index: 1000; }

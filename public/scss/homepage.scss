@@ -143,8 +143,8 @@ Feel free to change all if you know of a better way to position the elements (gr
 }
 
 p {
-width: get-vw(289px);
-height: get-vh(456px);
+width: get-vw(466.2px);
+height: get-vh(607.5px);
 font-family: TimesNewRomanPSMT;
 font-size: get-vh(18px);
 font-weight: normal;
@@ -154,4 +154,5 @@ line-height: 1.06;
 letter-spacing: -0.8px;
 text-align: left;
 color: #222222;
+z-index: 1000;
 }
