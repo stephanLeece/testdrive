@@ -12,13 +12,23 @@
 
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-    min-width: get-vw(354px);
-    height: get-vh(55px);
-    margin: get-vh(0px) get-vw(0px) get-vh(0px) get-vw(-40px);
+  width: get-vw(290px);
+  height: get-vh( 46px);
+position: absolute;
+top: get-vh( 54px);
+left: get-vw(92px);
+
 }
 
 .drivedrive-menu {
-    margin: get-vh(54px) get-vw(0px) get-vh(0px) get-vw(80px);
+  ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: get-vh( 117px);
+    left: get-vw(92px);
+  }
+
 }
 
 .drivedrive-menu a {
