@@ -40,7 +40,6 @@ app.get('/', function(req, res) {
 
             if (entry.fields.videoFile) {
                 video = entry.fields.videoFile[0].fields.file;
-                console.log('what is this', entry.fields.videoFile[0].fields.file);
             }
         });
 
@@ -67,9 +66,11 @@ function compare(a, b) {
 // placeholders for eventresults and catalogueResults returned from database/cms
 
 app.get('/catalogue', function(req, res) {
+
     let artists = [];
 
     let video = {};
+
 
     client.getEntries().then((entries) => {
 
@@ -130,6 +131,35 @@ app.get('/catalogue', function(req, res) {
             catalogue
 
         });
+
+    let artists = [];
+    let video;
+    let catalogue = [];
+
+
+    entries.items.forEach(entry => {
+      if (entry.fields.artistName) {
+        artists.push(entry.fields.artistName);
+      }
+      if (entry.fields.cataloguePdf) {
+        let fileName = entry.fields.cataloguePdf.fields.file.fileName;
+        let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '');
+        catalogue.push({ fileName, url });
+    }
+     if (entry.fields.videoFile) {
+        video = entry.fields.videoFile[0].fields.file;
+      }
+    })
+
+    artists.sort((a, b) => {
+      return compare(a, b);
+    });
+    res.render('catalogue', {
+      layout: 'layout',
+      artists,
+      video,
+      catalogue
+
     });
 
     app.get('/events', function(req, res) {
