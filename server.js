@@ -30,7 +30,24 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+<<<<<<< HEAD
     res.render('home', {layout: 'layout'});
+=======
+    let video = {};
+    client.getEntries().then((entries)=> {
+
+        entries.items.forEach(entry => {
+            if(entry.fields.videoFile){
+                video = entry.fields.videoFile[0].fields.file;
+                console.log('what is this', entry.fields.videoFile[0].fields.file);
+            }
+        })
+        res.render('home', {
+          layout: 'layout',
+          video : video
+        });
+    })
+>>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
 });
 
 function compare(a, b) {
@@ -50,6 +67,7 @@ function compare(a, b) {
 
 app.get('/catalogue', function(req, res) {
     let artists = [];
+<<<<<<< HEAD
     let video = {};
 
     client.getEntries().then((entries) => {
@@ -84,6 +102,33 @@ app.get('/catalogue', function(req, res) {
         });
     }).catch((err) => {
         console.log('err: ', err);
+=======
+    let video;
+    let catalogue = [];
+
+
+    entries.items.forEach(entry => {
+      if (entry.fields.artistName) {
+        artists.push(entry.fields.artistName)
+
+      } else if (entry.fields.cataloguePdf) {
+        // console.log("CATALOGUE:",entry.fields.cataloguePdf);
+        let fileName = entry.fields.cataloguePdf.fields.file.fileName
+        let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '')
+        catalogue.push({ fileName, url })
+    } else if (entry.fields.videoFile) {
+        video = entry.fields.videoFile[0].fields.file;
+      }
+
+    })
+
+    console.log(video)
+    res.render('catalogue', {
+      layout: 'layout',
+      artists,
+      video,
+      catalogue
+>>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
     });
 });
 

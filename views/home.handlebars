@@ -7,8 +7,6 @@
 {{> big-mac}}
 {{> side-menu}}
 
-<!-- {{> big-mac}} -->
-
 
 
 {{!-- <div id = "home-container"> --}}
@@ -21,13 +19,15 @@
     </div>
 {{!-- </div> --}}
 
-
 <!-- <img id="halk" class="halk" src="/assets/Elements/Intro/Intro-bg.png"> -->
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 0bb3032e03f24de0be2e733cd2c52787405bf045
 
+=======
+>>>>>>> c34c6f85c739bf1e7f9db488d3dc5dd7d5a18da4
 <div id="modal">
     <p>DriveDrive is a project initiated by visual artists Raissa Angeli and Nayia Savva. It’s located in the old town of Nicosia, in a building designed by the modernist architect Neoptolemos Michaelides in 1969.
 DriveDrive displays a selection of artworks, editions and publications in a fluctuating, ever evolving manner. The process is archived in an online index publication.
@@ -37,4 +37,9 @@ The project will be open to the public for the year 2018-2019.</p>
 <img id="home-infobox-blue" class="home" src="/assets/Elements/Home/Home-infobox-blue.svg">
 </div>
 
-<img id="home-img-cloud" src="/assets/Elements/Home/Home-video-cloud-grey.svg">
+  <img id="home-img-cloud" src="/assets/Elements/Home/Home-video-cloud-grey.svg">
+  {{#video}}
+  <video class='video' height="240" width="400" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+    <source src='https:{{url}}' type='{{contentType}}'>
+  </video>
+  {{/video}}
