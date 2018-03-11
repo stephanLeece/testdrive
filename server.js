@@ -3,23 +3,27 @@ const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
-const secrets = require('./secrets.json');
 const nodemailer = require('nodemailer');
-
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
+let secrets;
+if (process.env.NODE_ENV == 'PRODUCTION') {
+ secrets = process.env;
+} else {
+ secrets = require('./secrets');
+}
 
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
         user: 'drivedrive.testdrive@gmail.com',
-        pass: process.env.pass || secrets.pass
+        pass: secrets.pass
     }
 });
 
 
-client = contentful.createClient({space: process.env.space || secrets.space, accessToken: process.env.accessToken || secrets.accessToken});
+client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
 
 const app = express();
 
