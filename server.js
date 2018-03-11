@@ -14,12 +14,12 @@ var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
         user: 'drivedrive.testdrive@gmail.com',
-        pass: '99541997'
+        pass: process.env.pass || secrets.pass
     }
 });
 
 
-client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
+client = contentful.createClient({space: process.env.space || secrets.space, accessToken: process.env.accessToken || secrets.accessToken});
 
 const app = express();
 
@@ -31,14 +31,18 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+    console.log("line34");
     let video = {};
     client.getEntries().then((entries) => {
-
+        console.log("line 36");
         entries.items.forEach(entry => {
+            console.log("line39");
             if (entry.fields.videoFile) {
                 video = entry.fields.videoFile[0].fields.file;
+                console.log("line40");
             }
         });
+        console.log("line45");
         res.render('home', {
 
             layout: 'layout',
@@ -169,4 +173,4 @@ app.post('/info', function(req, res) {
     res.render('info', {layout: 'layout'});
 });
 
-app.listen(8080, () => console.log('Listening on port 8080'));
+app.listen(process.env.port || 8080, () => console.log('Listening on port 8080'));
