@@ -7,9 +7,12 @@ const nodemailer = require('nodemailer');
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
 let secrets;
-if (process.env.NODE_ENV == 'PRODUCTION') {
+console.log('outside if: ', process.env, process.env.NODE_ENV)
+if (process.env.NODE_ENV == 'production') {
+ console.log('process in if: ', process.env)
  secrets = process.env;
 } else {
+ console.log('process in else: ', process.env)
  secrets = require('./secrets');
 }
 
