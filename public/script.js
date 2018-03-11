@@ -38,7 +38,7 @@ fadeIntoImg();
 
 // $(parentSelector).find(childSelector)
 $('.eventsInfoBox').find('div').addClass('hidden');
-$('li').on('click', e => {
+$('p').on('click', e => {
     let eventToShow = '.' + $(e.target).attr('class');
     $('.eventsInfoBox').find('div').addClass('hidden');
     $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
@@ -47,7 +47,7 @@ $('li').on('click', e => {
 
 // ------------------------------- video functions ----------
 
-let video = $('.video');
+let video = $('video');
 
 function play() {
     video.play();

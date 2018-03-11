@@ -47,6 +47,17 @@ input {
     width: 7.01299vw;
     height: 3.90625vh; }
 
+#credits {
+  position: absolute;
+  bottom: 3.71094vh;
+  left: 9.28571vw;
+  white-space: nowrap;
+  background-color: black;
+  font-family: TimesNewRomanPSMT;
+  font-size: 0.77922vw;
+  text-align: left;
+  color: #ffffff; }
+
 #infoMap {
   position: absolute;
   top: 16.69922vh;
@@ -59,7 +70,7 @@ input {
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
 
-#tdLogo {
+.tdLogo {
   height: 3.41797vh;
   width: 21.94805vw;
   position: absolute;
