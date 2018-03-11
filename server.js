@@ -10,13 +10,14 @@ const nodemailer = require('nodemailer');
 // Only needed if you don't have a real mail account for testing
 
 // create reusable transporter object using the default SMTP transport
-let transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email', port: 587, secure: false, // true for 465, false for other ports
-    auth: {
-        user: 'eo4x2kvtldia4j3e@ethereal.email', // generated ethereal user
-        pass: 's42jbsHDqGMPzxwMRs' // generated ethereal password
+var transporter = nodemailer.createTransport({
+ service: 'gmail',
+ auth: {
+        user: 'drivedrive.testdrive@gmail.com',
+        pass: '99541997'
     }
 });
+
 
 client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
 
@@ -147,8 +148,8 @@ app.post('/info', function(req, res) {
     console.log(req.body);
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
-        to: 'bar@example.com, baz@example.com', // list of receivers
+        from: 'drivedrive.testdrive@gmail.com', // sender address
+        to: 'drivedrive.testdrive@gmail.com', // list of receivers
         subject: 'new user sign up:', // Subject line
         text: req.body.userEmail, // plain text body
     };
