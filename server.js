@@ -180,4 +180,4 @@ app.post('/info', function(req, res) {
     res.render('info', {layout: 'layout'});
 });
 
-app.listen(process.env.port || 8080, () => console.log('Listening on port 8080'));
+app.listen(process.env.PORT || 8080, () => console.log('Listening on port 8080'));
