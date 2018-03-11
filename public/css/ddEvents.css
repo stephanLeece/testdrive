@@ -8,8 +8,18 @@
   left: 4.2013vw; }
   .eventList .eventDetails {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
     width: 28.8961vw;
     height: 10.53711vh; }
 
