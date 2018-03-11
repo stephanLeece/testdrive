@@ -4,12 +4,14 @@
   justify-content: flex-start;
   align-items: space-between;
   position: absolute;
-  top: 35.18555vh;
+  top: 39.55078vh;
   left: 4.2013vw; }
-  .eventList ul > li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
+  .eventList .eventDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28.8961vw;
+    height: 10.53711vh; }
 
 .eventsInfoBox {
   position: absolute;
@@ -20,6 +22,8 @@
   display: flex;
   justify-content: center;
   overflow-y: scroll; }
+  .eventsInfoBox div {
+    width: 94%; }
 
 .eventDetails {
   margin-bottom: 0.97656vh;

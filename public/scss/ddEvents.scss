@@ -16,13 +16,15 @@
   justify-content: flex-start;
   align-items: space-between;
   position: absolute;
-  top: get-vh(360.3px);
+  top: get-vh(405px);
   left: get-vw(64.7px);
-  ul > li {
-  list-style-type: none;
-   margin: 0;
-   padding: 0;
- }
+  .eventDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: get-vw(445px);
+    height: get-vh(107.9px);
+  }
 }
 
 
@@ -35,6 +37,9 @@
   display: flex;
   justify-content: center;
   overflow-y: scroll;
+  div {
+    width: 94%;
+  }
 }
 
 .eventDetails {

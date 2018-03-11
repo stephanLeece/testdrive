@@ -101,16 +101,17 @@ app.get('/catalogue', function(req, res) {
 
 app.get('/events', function(req, res) {
     client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
-        const eventList = entries.items.map((entry) => {
+        const eventList = entries.items? entries.items.map((entry) => {
             return {
                 eventClassName: entry.fields.ddClassName,
                 eventTitle: entry.fields.ddEventTitle,
                 eventDate: entry.fields.ddEventDate,
-                eventContent: entry.fields.ddEventContent.map((image) => {
+                eventInfo: entry.fields.ddEventInfo,
+                eventContent: entry.fields.ddEventContent? entry.fields.ddEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
-                })
+                }) : null
             };
-        });
+        }) : null
         res.render('events', {
             layout: 'layout',
             eventList: eventList
@@ -120,16 +121,17 @@ app.get('/events', function(req, res) {
 
 app.get('/testdrive', function(req, res) {
     client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
-        const eventList = entries.items.map((entry) => {
+        const eventList = entries.items? entries.items.map((entry) => {
             return {
                 eventClassName: entry.fields.tdClassName,
                 eventTitle: entry.fields.tdEventTitle,
                 eventDate: entry.fields.tdEventDate,
-                eventContent: entry.fields.tdEventContent.map((image) => {
+                eventInfo: entry.fields.tdEventInfo,
+                eventContent: entry.fields.tdEventContent?  entry.fields.tdEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
-                })
+                }) : null
             };
-        });
+        }) : null
         res.render('testdrive', {
             layout: 'layout',
             eventList: eventList
