@@ -31,6 +31,7 @@
   width: 162.9px;
   top: 780.7px;
   left: 32.9px;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
 #pdfs-container {
@@ -76,6 +77,7 @@
   position: absolute;
   top: 218px;
   left: 974px;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
 #video-container {
