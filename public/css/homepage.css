@@ -56,7 +56,9 @@ Feel free to change all if you know of a better way to position the elements (gr
   object-fit: contain;
   position: absolute;
   top: 35.74219vh;
-  left: 1.25vw; }
+  left: 1.25vw;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
 
 #home-green-line {
   width: 19.53125vw;
@@ -64,7 +66,8 @@ Feel free to change all if you know of a better way to position the elements (gr
   object-fit: contain;
   position: absolute;
   top: 61.52344vh;
-  left: 67.8125vw; }
+  left: 67.8125vw;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;}
 
 #home-blue-line {
   width: 14.35938vw;
@@ -72,7 +75,9 @@ Feel free to change all if you know of a better way to position the elements (gr
   object-fit: contain;
   position: absolute;
   top: 12.98828vh;
-  left: 76.09375vw; }
+  left: 76.09375vw;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
 
 /* STYLING FOR MODAL */
 #modal {

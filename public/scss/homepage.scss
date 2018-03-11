@@ -77,6 +77,7 @@ Feel free to change all if you know of a better way to position the elements (gr
     position: absolute;
     top: get-vh(366px);
     left: get-vw(16px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
 #home-green-line {
@@ -86,6 +87,7 @@ Feel free to change all if you know of a better way to position the elements (gr
     position: absolute;
     top: get-vh(630px);
     left: get-vw(868px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
 #home-blue-line {
@@ -95,6 +97,7 @@ Feel free to change all if you know of a better way to position the elements (gr
     position: absolute;
     top: get-vh(133px);
     left: get-vw(974px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 /* STYLING FOR MODAL */
 #modal {
