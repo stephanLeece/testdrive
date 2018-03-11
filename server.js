@@ -14,12 +14,12 @@ var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
         user: 'drivedrive.testdrive@gmail.com',
-        pass: '99541997'
+        pass: process.env.pass || secrets.pass
     }
 });
 
 
-client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
+client = contentful.createClient({space: process.env.space || secrets.space, accessToken: process.env.accessToken || secrets.accessToken});
 
 const app = express();
 
@@ -169,4 +169,4 @@ app.post('/info', function(req, res) {
     res.render('info', {layout: 'layout'});
 });
 
-app.listen(8080, () => console.log('Listening on port 8080'));
+app.listen(process.env.port||8080, () => console.log('Listening on port 8080'));
