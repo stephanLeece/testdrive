@@ -75,4 +75,5 @@ input {
   width: 21.94805vw;
   position: absolute;
   bottom: 8.39844vh;
-  right: 2.20779vw; }
+  right: 2.20779vw;
+  z-index: 10; }
