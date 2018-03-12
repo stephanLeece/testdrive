@@ -18,25 +18,29 @@
   width: get-vw(277.1px);
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+    background-size: contain;
+
+  z-index: 300;
 }
 
-// .artists {
-//   height: 80%;
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: get-vh(45px);
-// }
-//
-// .artists p {
-//   margin-left: get-vw(80px);
-//   margin-right: auto;
-//   font-family: 'Times New Roman', Times, serif;
-//   font-size: get-vw(20px);
-//   line-height: 1.4;
-// }
+.artists {
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: get-vh(45px);
+}
+
+.artists p {
+  margin-left: get-vw(80px);
+  margin-right: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: get-vw(20px);
+  line-height: 1.4;
+}
 
 #catalogue-line-green {
   position: absolute;

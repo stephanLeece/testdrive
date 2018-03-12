@@ -5,7 +5,26 @@
   height: 67.16797vh;
   width: 17.99351vw;
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  z-index: 300; }
+
+.artists {
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.39453vh; }
+
+.artists p {
+  margin-left: 5.19481vw;
+  margin-right: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2987vw;
+  line-height: 1.4; }
 
 #catalogue-line-green {
   position: absolute;
