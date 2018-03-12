@@ -33,23 +33,29 @@
 
 #pdfs-container {
   position: absolute;
-  height: 98.73047vh;
-  width: 24.48052vw;
+  height: 100vh;
+  width: 31.36364vw;
+  object-fit: contain;
   top: 0vh;
-  left: 28.7013vw;
+  left: 34.28571vw;
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg");
-  display: flex;
-  flex-direction: column;
-  align-content: center; }
+  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5); }
 
 .pds {
   position: absolute;
   top: 1.26953vh;
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  display: block;
-  margin-left: 3.57143vw; }
+  width: 29.87013vw;
+  height: 98.73047vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.9px;
+  text-align: left;
+  color: #222222; }
 
 .pds li {
   padding-bottom: 0.97403vw; }

@@ -49,24 +49,38 @@
 
 #pdfs-container {
   position: absolute;
-  height: get-vh(1011px);
-  width: get-vw(377px);
+  height: get-vh(1024px);
+  width: get-vw(483px);
+  object-fit: contain;
   top: get-vh(0px);
-  left: get-vw(442px);
+  left: get-vw(528px);
   background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-content: center;
+  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
 }
 
 .pds {
   position: absolute;
   top: get-vh(13px);
-  height: 100%;
-  width: 100%;
-  list-style-type: none;
-  display: block;
-  margin-left: get-vw(55px);
+  width: get-vw(460px);
+  height: get-vh(1011px);
+  // height: 100%;
+  // width: 100%;
+  // list-style-type: none;
+  // display: block;
+  // margin-left: get-vw(55px);
+  font-family: TimesNewRomanPSMT;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.9px;
+  text-align: left;
+  color: #222222;
 }
 
 .pds li {
