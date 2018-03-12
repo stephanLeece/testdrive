@@ -1,5 +1,5 @@
 @function get-vw($object) {
-    $vw: (1280 * 0.01) * 1px;
+    $vw: (1540 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -12,54 +12,67 @@
 
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-  width: get-vw(290px);
-  height: get-vh( 46px);
-position: absolute;
-top: get-vh( 54px);
-left: get-vw(92px);
-
+width: get-vw(354px);
+// height: get-vh(55px);
+// position: absolute;
+// top: get-vh(54px);
+// left: get-vw(143px);
+// z-index: 10;
 }
+
 
 .drivedrive-menu {
   ul {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: get-vh( 117px);
+    top: get-vh(54px);
     left: get-vw(92px);
   }
 
 }
 
-.drivedrive-menu a {
+
+.cat {
+// z-index: 10;
+    margin-top: get-vh(24px);
+    width: get-vw(210px);
+    height: get-vh(56px);
     text-decoration: none;
     color: #000000;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    font-size: get-vw(41px);
+    font-size: get-vw(50px);
     font-family: TimesNewRomanPSMT;
-    letter-spacing: get-vw(-2.4px);
+    letter-spacing: get-vw(-2.1px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
-    width: get-vw(210px);
-    height: get-vh(56px);
+
     &:hover {
       color: #ffc278;
     }
 }
+
+.events {
+    margin-top: get-vh(1px);
+	width: get-vw(150px);
+	height: get-vh(56px);
+    text-decoration: none;
+	font-family: TimesNewRomanPSMT;
+	font-size: get-vw(50px);
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: get-vw(-2.1px);
+	text-align: left;
+	color: #000000;
+}
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
 
-ALL WIDTH & HEIGHT PROPERTIES ARE FROM ZEPLIN.
-
-all position:relative and bottom/left/top/right properties are me not knowing how to
-position things well and forcing things to be positioned into place
-
-Feel free to change all if you know of a better way to position the elements (gray cloud, blue/green/red lines, etc.) better!
-
-*/
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
     width: get-vw(933px);

@@ -38,20 +38,18 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-    console.log("line34");
+
     let video = {};
     client.getEntries().then((entries) => {
-        console.log("line 36");
         entries.items.forEach(entry => {
-            console.log("line39");
+
             if (entry.fields.videoFile) {
                 video = entry.fields.videoFile[0].fields.file;
-                console.log("line40");
+
             }
         });
-        console.log("line45");
-        res.render('home', {
 
+        res.render('home', {
             layout: 'layout',
             video: video
 

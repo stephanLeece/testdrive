@@ -1,80 +1,84 @@
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-  width: 22.65625vw;
-  height: 4.49219vh;
-  position: absolute;
-  top: 5.27344vh;
-  left: 7.1875vw; }
+  width: 22.98701vw; }
 
 .drivedrive-menu ul {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 11.42578vh;
-  left: 7.1875vw; }
+  top: 5.27344vh;
+  left: 5.97403vw; }
 
-.drivedrive-menu a {
+.cat {
+  margin-top: 2.34375vh;
+  width: 13.63636vw;
+  height: 5.46875vh;
   text-decoration: none;
   color: #000000;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  font-size: 3.20312vw;
+  font-size: 3.24675vw;
   font-family: TimesNewRomanPSMT;
-  letter-spacing: -0.1875vw;
+  letter-spacing: -0.13636vw;
   text-align: left;
-  -webkit-text-stroke: 0 #979797;
-  width: 16.40625vw;
-  height: 5.46875vh; }
-  .drivedrive-menu a:hover {
+  -webkit-text-stroke: 0 #979797; }
+  .cat:hover {
     color: #ffc278; }
+
+.events {
+  margin-top: 0.09766vh;
+  width: 9.74026vw;
+  height: 5.46875vh;
+  text-decoration: none;
+  font-family: TimesNewRomanPSMT;
+  font-size: 3.24675vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.13636vw;
+  text-align: left;
+  color: #000000; }
 
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
 
-ALL WIDTH & HEIGHT PROPERTIES ARE FROM ZEPLIN.
-
-all position:relative and bottom/left/top/right properties are me not knowing how to
-position things well and forcing things to be positioned into place
-
-Feel free to change all if you know of a better way to position the elements (gray cloud, blue/green/red lines, etc.) better!
-
-*/
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
-  width: 72.89062vw;
+  width: 60.58442vw;
   height: 84.27734vh;
   position: absolute;
-  top: 7.96875vw;
-  left: 17.65625vw; }
+  top: 6.62338vw;
+  left: 14.67532vw; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-  width: 22.53125vw;
+  width: 18.72727vw;
   height: 15.23438vh;
   object-fit: contain;
   position: absolute;
   top: 35.74219vh;
-  left: 1.25vw;
+  left: 1.03896vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #home-green-line {
-  width: 19.53125vw;
+  width: 16.23377vw;
   height: 15.625vh;
   object-fit: contain;
   position: absolute;
   top: 61.52344vh;
-  left: 67.8125vw;
+  left: 56.36364vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #home-blue-line {
-  width: 14.35938vw;
+  width: 11.93506vw;
   height: 18.06641vh;
   object-fit: contain;
   position: absolute;
   top: 12.98828vh;
-  left: 76.09375vw;
+  left: 63.24675vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 /* STYLING FOR MODAL */
@@ -102,18 +106,18 @@ Feel free to change all if you know of a better way to position the elements (gr
   background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: 34.92188vw 26.95312vh;
-  width: 34.92188vw;
+  background-size: 29.02597vw 26.95312vh;
+  width: 29.02597vw;
   height: 26.95312vh;
   bottom: 7.22656vh;
-  left: 3.51562vw; }
+  left: 2.92208vw; }
 
 #home-v {
-  width: 23.125vw;
+  width: 19.22078vw;
   height: 16.21094vh;
   position: absolute;
   bottom: 12.5vh;
-  left: 8.51562vw; }
+  left: 7.07792vw; }
 
 .fadeIn {
   opacity: 1; }
@@ -121,8 +125,8 @@ Feel free to change all if you know of a better way to position the elements (gr
 #modal {
   position: absolute;
   top: 22.94922vh;
-  left: 37.8125vw;
-  width: 38.28125vw;
+  left: 31.42857vw;
+  width: 31.81818vw;
   height: 69.62891vh;
   background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
   /* background-color: #ffffff; */
@@ -133,7 +137,7 @@ Feel free to change all if you know of a better way to position the elements (gr
   justify-content: center;
   align-content: center; }
   #modal p {
-    width: 22.57812vw;
+    width: 18.76623vw;
     height: 44.53125vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
@@ -142,11 +146,11 @@ Feel free to change all if you know of a better way to position the elements (gr
     font-style: normal;
     font-stretch: normal;
     line-height: 1.06;
-    letter-spacing: -0.0625vw;
+    letter-spacing: -0.05195vw;
     text-align: left;
     color: #222222;
     z-index: 1000;
     margin-top: 6.73828vh;
-    margin-left: 4.45312vw;
-    margin-right: 3.4375vw;
+    margin-left: 3.7013vw;
+    margin-right: 2.85714vw;
     margin-bottom: 8.59375vh; }
