@@ -25,21 +25,32 @@
 }
 
 .artists {
-  height: 80%;
+  // height: 80%;
+  width: get-vw(149px);
+  height: get-vh(628px);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: get-vh(45px);
+  // background-size: contain;
 }
 
-.artists p {
-  margin-left: get-vw(80px);
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
+.artists ul {
+  // margin-left: get-vw(80px);
+  // margin-right: auto;
   font-size: get-vw(20px);
-  line-height: 1.4;
+  line-height: get-vh(1.4);
+  font-family: TimesNewRomanPSMT;
+  font-size: get-vw(20px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: get-vw(-1.9px);
+  text-align: left;
+  color: #222222;
 }
 
 #catalogue-line-green {

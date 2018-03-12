@@ -11,20 +11,31 @@
   z-index: 300; }
 
 .artists {
-  height: 80%;
+  width: 9.67532vw;
+  height: 61.32812vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4.39453vh; }
+  margin-top: 4.39453vh;
+  background-size: contain; }
 
 .artists p {
   margin-left: 5.19481vw;
   margin-right: auto;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2987vw;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: TimesNewRomanPSMT;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: -1.9px;
+  text-align: left;
+  color: #222222; }
 
 #catalogue-line-green {
   position: absolute;
