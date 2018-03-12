@@ -50,17 +50,18 @@
   width: 60.58442vw;
   height: 84.27734vh;
   position: absolute;
-  top: 6.62338vw;
-  left: 14.67532vw; }
+  top: 2.98701vw;
+  left: 25.97403vw; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-  width: 18.72727vw;
-  height: 15.23438vh;
+  width: 26.09091vw;
+  height: 21.2207vh;
   object-fit: contain;
+  border: solid 1px #ff0101;
   position: absolute;
-  top: 35.74219vh;
-  left: 1.03896vw;
+  top: 30.56641vh;
+  left: 11.16883vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #home-green-line {
@@ -73,12 +74,13 @@
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #home-blue-line {
-  width: 11.93506vw;
-  height: 18.06641vh;
+  width: 19.41558vw;
+  height: 19.87305vh;
   object-fit: contain;
+  border: solid 1px #2522ff;
   position: absolute;
-  top: 12.98828vh;
-  left: 63.24675vw;
+  top: 10.73242vh;
+  left: 81.35714vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 /* STYLING FOR MODAL */

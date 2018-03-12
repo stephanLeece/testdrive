@@ -78,18 +78,19 @@ width: get-vw(354px);
     width: get-vw(933px);
     height: get-vh(863px);
     position: absolute;
-    top: get-vw(102px);
-    left: get-vw(226px);
+    top: get-vw(46px);
+    left: get-vw(400px);
 }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-    width: get-vw(288.4px);
-    height: get-vh(156px);
+    width: get-vw(401.8px);
+    height: get-vh(217.3px);
     object-fit: contain;
+    border: solid 1px #ff0101;
     position: absolute;
-    top: get-vh(366px);
-    left: get-vw(16px);
+    top: get-vh(313px);
+    left: get-vw(172px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
@@ -104,12 +105,13 @@ width: get-vw(354px);
 }
 
 #home-blue-line {
-    width: get-vw(183.8px);
-    height: get-vh(185px);
+    width: get-vw(299px);
+    height: get-vh(203.5px);
     object-fit: contain;
+    border: solid 1px #2522ff;
     position: absolute;
-    top: get-vh(133px);
-    left: get-vw(974px);
+    top: get-vh(109.9px);
+    left: get-vw(1252.9px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 /* STYLING FOR MODAL */
