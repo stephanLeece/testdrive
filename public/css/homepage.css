@@ -60,7 +60,7 @@
   width: 26.09091vw;
   height: 21.2207vh;
   object-fit: contain;
-  border: solid 1px #ff0101;
+  /* border: solid 1px #ff0101; */
   position: absolute;
   top: 30.56641vh;
   left: 11.16883vw;
@@ -79,7 +79,7 @@
   width: 19.41558vw;
   height: 19.87305vh;
   object-fit: contain;
-  border: solid 1px #2522ff;
+  /* border: solid 1px #2522ff; */
   position: absolute;
   top: 10.73242vh;
   left: 81.35714vw;

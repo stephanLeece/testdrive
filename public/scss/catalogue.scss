@@ -45,7 +45,7 @@
   object-fit: contain;
   -webkit-transform: rotate(336deg);
   transform: rotate(336deg);
-  border: solid 1px #00ff4f;
+  // border: solid 1px #00ff4f;
   top: get-vh(780.7px);
   left: get-vw(32.9px);
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
@@ -106,7 +106,7 @@
   height: get-vh(196.3px);
   width: get-vw(248.6px);
   object-fit: contain;
-  border: solid 1px #657aff;
+  // border: solid 1px #657aff;
   position: absolute;
   top: get-vh(194px);
   left: get-vw(1183.1px);
@@ -135,3 +135,15 @@
 
 // get-vw
 // get-vh get-vw
+
+#temporary {
+    z-index: 3000;
+    width: get-vw(260px);
+	height: get-vh(191px);
+    top:get-vh(559px);
+    left:get-vw(1116.8px);
+    // margin-top: get-vh(59.9px);
+    // margin-left: get-vw(47px);
+    margin-right: get-vw(51.4px);
+    margin-bottom: get-vh(44.5px);
+}
