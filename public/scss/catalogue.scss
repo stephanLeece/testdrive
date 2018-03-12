@@ -12,36 +12,40 @@
 
 #artist-container {
   position: absolute;
-  top: get-vh(168px);
-  left: get-vw(80px);
-  min-height: get-vh(825.8px);
-  min-width: get-vw(315.1px);
+  top: get-vh(301.2px);
+  left: get-vw(187.2px);
+  height: get-vh(687.8px);
+  width: get-vw(277.1px);
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
   background-repeat: no-repeat;
 }
 
-.artists {
-  height: 80%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: get-vh(45px);
-}
-
-.artists p {
-  margin-left: get-vw(80px);
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: get-vw(20px);
-  line-height: 1.4;
-}
+// .artists {
+//   height: 80%;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: get-vh(45px);
+// }
+//
+// .artists p {
+//   margin-left: get-vw(80px);
+//   margin-right: auto;
+//   font-family: 'Times New Roman', Times, serif;
+//   font-size: get-vw(20px);
+//   line-height: 1.4;
+// }
 
 #catalogue-line-green {
   position: absolute;
-  height: get-vh(240.5px);
   width: get-vw(162.9px);
+  height: get-vh(221.6px);
+  object-fit: contain;
+  -webkit-transform: rotate(336deg);
+  transform: rotate(336deg);
+  border: solid 1px #00ff4f;
   top: get-vh(780.7px);
   left: get-vw(32.9px);
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
@@ -101,9 +105,11 @@
 #catalogue-line-blue {
   height: get-vh(196.3px);
   width: get-vw(248.6px);
+  object-fit: contain;
+  border: solid 1px #657aff;
   position: absolute;
-  top: get-vh(218px);
-  left: get-vw(974px);
+  top: get-vh(194px);
+  left: get-vw(1183.1px);
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
@@ -112,10 +118,11 @@
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width:get-vw(382px);
-  height:get-vh(268px);
-  top: get-vh(561px);
-  left: get-vw(878px);
+  width:get-vw(445px);
+  height:get-vh(313px);
+  object-fit: contain;
+  top: get-vh(489px);
+  left: get-vw(1062px);
 }
 
 #video {

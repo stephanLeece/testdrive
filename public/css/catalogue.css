@@ -1,32 +1,20 @@
 #artist-container {
   position: absolute;
-  top: 16.40625vh;
-  left: 5.19481vw;
-  min-height: 80.64453vh;
-  min-width: 20.46104vw;
+  top: 29.41406vh;
+  left: 12.15584vw;
+  height: 67.16797vh;
+  width: 17.99351vw;
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
   background-repeat: no-repeat; }
 
-.artists {
-  height: 80%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4.39453vh; }
-
-.artists p {
-  margin-left: 5.19481vw;
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2987vw;
-  line-height: 1.4; }
-
 #catalogue-line-green {
   position: absolute;
-  height: 23.48633vh;
   width: 10.57792vw;
+  height: 21.64062vh;
+  object-fit: contain;
+  -webkit-transform: rotate(336deg);
+  transform: rotate(336deg);
+  border: solid 1px #00ff4f;
   top: 76.24023vh;
   left: 2.13636vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
@@ -72,9 +60,11 @@
 #catalogue-line-blue {
   height: 19.16992vh;
   width: 16.14286vw;
+  object-fit: contain;
+  border: solid 1px #657aff;
   position: absolute;
-  top: 21.28906vh;
-  left: 63.24675vw;
+  top: 18.94531vh;
+  left: 76.82468vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #video-container {
@@ -82,10 +72,11 @@
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 24.80519vw;
-  height: 26.17188vh;
-  top: 54.78516vh;
-  left: 57.01299vw; }
+  width: 28.8961vw;
+  height: 30.56641vh;
+  object-fit: contain;
+  top: 47.75391vh;
+  left: 68.96104vw; }
 
 #video {
   position: absolute;
