@@ -41,6 +41,8 @@
   letter-spacing: -0.13636vw;
   text-align: left;
   color: #000000; }
+  .events:hover {
+    color: #ffc278; }
 
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -126,33 +128,38 @@
 
 #modal {
   position: absolute;
-  top: 22.94922vh;
-  left: 31.42857vw;
-  width: 31.81818vw;
-  height: 69.62891vh;
+  top: 12.5vh;
+  left: 43.24675vw;
+  width: 30.27273vw;
+  height: 59.32617vh;
+  object-fit: contain;
   background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
-  /* background-color: #ffffff; */
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  z-index: 40; }
   #modal p {
-    width: 18.76623vw;
-    height: 44.53125vh;
+    width: 24.15584vw;
+    height: 45.11719vh;
+    left: 46.94805vw;
+    right: 28.8961vw;
+    top: 18.16406vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.75781vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.06;
-    letter-spacing: -0.05195vw;
+    line-height: 1.05;
+    letter-spacing: -0.05844vw;
     text-align: left;
     color: #222222;
     z-index: 1000;
     margin-top: 6.73828vh;
     margin-left: 3.7013vw;
     margin-right: 2.85714vw;
-    margin-bottom: 8.59375vh; }
+    margin-bottom: 8.59375vh;
+    letter-spacing: normal; }

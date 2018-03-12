@@ -69,6 +69,10 @@ width: get-vw(354px);
 	letter-spacing: get-vw(-2.1px);
 	text-align: left;
 	color: #000000;
+
+    &:hover {
+      color: #ffc278;
+    }
 }
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -163,31 +167,36 @@ width: get-vw(354px);
 
 #modal{
     position:absolute;
-    top:get-vh(235px);
-    left:get-vw(484px);
-    width: get-vw(490px);
-	height: get-vh(713px);
+    top:get-vh(128px);
+    left:get-vw(666px);
+    width: get-vw(466.2px);
+	height: get-vh(607.5px);
+    object-fit: contain;
+    // box-shadow: 0 2px 30px 0 #0007d7;
     background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-    /* background-color: #ffffff; */
+    // /* background-color: #ffffff; */
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
+    z-index: 40;
 
 p {
-    width: get-vw(289px);
-    height: get-vh(456px);
+    width: get-vw(372px);
+    height: get-vh(462px);
+    left:get-vw(723px);
+    right: get-vw(445px);
+    top:get-vh(186px);
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: get-vh(18px);
+    font-size: get-vh(20px);
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.06;
-    letter-spacing: get-vw(-0.8px);
+    line-height: 1.05;
+    letter-spacing: get-vw(-0.9px);
     text-align: left;
     color: #222222;
     z-index: 1000;
@@ -195,6 +204,7 @@ p {
     margin-left: get-vw(57px);
     margin-right: get-vw(44px);
     margin-bottom: get-vh(88px);
+    letter-spacing: normal;
 
     }
 
