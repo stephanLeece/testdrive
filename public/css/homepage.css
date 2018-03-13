@@ -56,6 +56,15 @@
   left: 25.97403vw;
   cursor: pointer; }
 
+.shadowfilter {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+
+.shadowfilter:hover {
+  -webkit-filter: drop-shadow(10px 10px 18px rgba(0, 231, 255, 0.8)); }
+
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
   width: 26.09091vw;
