@@ -63,7 +63,7 @@
   transition: all 0.5s linear; }
 
 .shadowfilter:hover {
-  -webkit-filter: drop-shadow(10px 10px 18px rgba(0, 231, 255, 0.8)); }
+  -webkit-filter: drop-shadow(10px 10px 18px #ffc278); }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
@@ -81,9 +81,11 @@
   height: 15.625vh;
   object-fit: contain;
   position: absolute;
-  top: 61.52344vh;
-  left: 56.36364vw;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
+  top: 68.35938vh;
+  left: 66.23377vw;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  z-index: 10;
+  border: solid 1px #00bb20; }
 
 #home-blue-line {
   width: 19.41558vw;
@@ -140,8 +142,8 @@
   position: absolute;
   top: 12.5vh;
   left: 43.24675vw;
-  width: 25.32468vw;
-  height: 59.86328vh;
+  width: 30.27273vw;
+  height: 59.32617vh;
   object-fit: contain;
   background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
   background-size: contain;
@@ -152,6 +154,8 @@
   align-content: center;
   z-index: 40; }
   #modal p {
+    width: 24.15584vw;
+    height: 45.11719vh;
     width: 18.76623vw;
     height: 44.53125vh;
     left: 46.94805vw;
@@ -164,7 +168,7 @@
     font-style: normal;
     font-stretch: normal;
     line-height: 1.05;
-    letter-spacing: -0.04935vw;
+    letter-spacing: -0.05844vw;
     text-align: left;
     color: #222222;
     z-index: 1000;

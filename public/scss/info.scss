@@ -1,24 +1,22 @@
 @function get-vw($object) {
-  $vw: (1540 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
+    $vw: (1540 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
 }
-// width: get-vw(100px);
-@function get-vh($object) {
-  $vh: (1024 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-// height: get-vh(20px);
-// ------------------------------------------
 
+@function get-vh($object) {
+    $vh: (1024 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
 
 #infoContactBg {
   width: get-vw(446.4px);
   height: get-vh(515.3px);
-  object-fit: contain;
+  // object-fit: contain;
   position: absolute;
   left: get-vw(141px);
-  // top: get-vh(335px);
+  top: get-vh(335px);
   top: get-vh(328px);
+  bottom: get-vh(180.7px);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -26,31 +24,50 @@
   #infoContactInfo {
     position: absolute;
     left: get-vw(195px);
-    bottom: get-vh(335px);
+    // bottom: get-vh(335px);
     width: get-vw(245px);
     height: get-vh(322px);
-    // margin-top: get-vh(40px);
-    font-size: get-vw(20px);
+    margin-top: get-vh(367px);
+    margin-bottom: get-vh(335px);
+    font-size: get-vh(20px);
     font-family: TimesNewRomanPSMT;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: get-vh(1.05);
+    line-height: 1.05;
     letter-spacing: get-vw(-0.9px);
     text-align: left;
     color: #222222;
+
     }
     form {
       position: absolute;
       left: get-vw(195px);
       bottom: get-vh(248px);
-      border: 2px solid black;
+      border: 1px solid black;
       width: get-vw(329px);
       height: get-vh(40px);
       margin-top: get-vh(4px);
       display: flex;
       justify-content: center;
       align-items: center;
+
+    }
+
+    .sign-up-to-our-maili {
+    	width: get-vw(245px);
+    	height: get-vh(23px);
+        margin-bottom:get-vh(298px);
+    	font-family: TimesNewRomanPSMT;
+    	font-size: get-vw(20px);
+    	font-weight: normal;
+    	font-style: normal;
+    	font-stretch: normal;
+    	line-height: 1.05;
+    	letter-spacing: get-vw(-0.9px);
+    	text-align: left;
+    	// color: #222222;
+        color: red;
     }
 
 
@@ -82,8 +99,8 @@
   background-color: black;
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(12px);
+  color: white;
   text-align: left;
-  color: red;
 }
 
 

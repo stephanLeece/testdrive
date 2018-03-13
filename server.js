@@ -21,12 +21,12 @@ var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
         user: 'drivedrive.testdrive@gmail.com',
-        pass: secrets.pass
+        pass: process.env.pass || secrets.pass
     }
 });
 
 
-client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
+client = contentful.createClient({space: process.env.space || secrets.space, accessToken: process.env.accessToken || secrets.accessToken});
 
 const app = express();
 

@@ -7,33 +7,16 @@
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
-  z-index: 300; }
-
-.artists {
-  width: 9.67532vw;
-  height: 61.32812vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4.39453vh;
   background-size: contain; }
 
-.artists p {
-  margin-left: 5.19481vw;
-  margin-right: auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2987vw;
-  line-height: 1.4;
+.artists {
   font-family: TimesNewRomanPSMT;
-  font-size: 20px;
+  font-size: 1.2987vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.6;
-  letter-spacing: -1.9px;
+  letter-spacing: -0.12338vw;
   text-align: left;
   color: #222222; }
 
@@ -42,8 +25,6 @@
   width: 10.57792vw;
   height: 21.64062vh;
   object-fit: contain;
-  -webkit-transform: rotate(336deg);
-  transform: rotate(336deg);
   top: 76.24023vh;
   left: 2.13636vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
@@ -64,6 +45,9 @@
   top: 1.26953vh;
   width: 29.87013vw;
   height: 98.73047vh;
+  list-style-type: none;
+  display: block;
+  margin-left: 0.64935vw;
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -84,7 +68,7 @@
   font-size: 1.94805vw; }
 
 .pdf:hover {
-  color: red; }
+  color: #ff4819; }
 
 #catalogue-line-blue {
   height: 19.16992vh;
@@ -110,14 +94,5 @@
   position: absolute;
   margin-top: 5.84961vh;
   margin-left: 3.05195vw;
-  margin-right: 3.33766vw;
-  margin-bottom: 4.3457vh; }
-
-#temporary {
-  z-index: 3000;
-  width: 16.88312vw;
-  height: 18.65234vh;
-  top: 54.58984vh;
-  left: 72.51948vw;
   margin-right: 3.33766vw;
   margin-bottom: 4.3457vh; }
