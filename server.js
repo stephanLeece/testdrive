@@ -3,11 +3,18 @@ const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
-const secrets = require('./secrets.json');
 const nodemailer = require('nodemailer');
-
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
+let secrets;
+console.log('outside if: ', process.env, process.env.NODE_ENV)
+if (process.env.NODE_ENV == 'production') {
+ console.log('process in if: ', process.env)
+ secrets = process.env;
+} else {
+ console.log('process in else: ', process.env)
+ secrets = require('./secrets');
+}
 
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
@@ -31,16 +38,18 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
+
     let video = {};
     client.getEntries().then((entries) => {
-
         entries.items.forEach(entry => {
+
             if (entry.fields.videoFile) {
                 video = entry.fields.videoFile[0].fields.file;
+
             }
         });
-        res.render('home', {
 
+        res.render('home', {
             layout: 'layout',
             video: video
 
@@ -169,4 +178,4 @@ app.post('/info', function(req, res) {
     res.render('info', {layout: 'layout'});
 });
 
-app.listen(process.env.port||8080, () => console.log('Listening on port 8080'));
+app.listen(process.env.PORT || 8080, () => console.log('Listening on port 8080'));

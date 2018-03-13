@@ -5,7 +5,7 @@
 
   <div class="artists">
   {{#artists}}
-  <p>{{.}}</p>
+  <ul>{{.}}</ul>
   {{/artists}}
   </div>
 
@@ -26,7 +26,9 @@
 
 
   <div id="video-container">
+
     <div id="video">
+        <!-- <img id="temporary" src="/assets/spaceimg.jpg"> -->
     {{#video}}
     <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay controls>
       <source src='https:{{url}}' type='{{contentType}}'>
@@ -34,3 +36,14 @@
     {{/video}}
     </div>
   </div>
+
+  <!-- Designer notes:
+
+  DD-Catalogue
+
+  1. Catalogue should have active state: Orange colour
+  2. Artists text font-size should be 20px
+  3. Back button as you said doesn’t work for now.
+  4. Can you add a pdf to the catalogue to preview text, and that it opens in a different tab etc pls??
+  5. Can the motorcycle have the same functionality wherever there are lines, i.e. this page also?
+  6. Need to preview videos to make sure they will be playing in loop at all times… -->

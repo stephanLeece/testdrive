@@ -14,9 +14,11 @@
 #infoContactBg {
   width: get-vw(446.4px);
   height: get-vh(515.3px);
+  object-fit: contain;
   position: absolute;
   left: get-vw(141px);
-  top: get-vh(335px);
+  // top: get-vh(335px);
+  top: get-vh(328px);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -27,14 +29,17 @@
     bottom: get-vh(335px);
     width: get-vw(245px);
     height: get-vh(322px);
-    font-size: get-vw(16px);
+    margin-top: get-vh(40px);
+    font-size: get-vw(20px);
     font-family: TimesNewRomanPSMT;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.05;
+    line-height: get-vh(1.05);
+    letter-spacing: get-vw(-0.9px);
     text-align: left;
     color: #222222;
+
     }
     form {
       position: absolute;
@@ -51,10 +56,11 @@
 
 
   input {
-    font-size: get-vw(18px);
+    font-size: get-vw(20px);
     background: none;
     border: none;
     outline: none;
+    font-family: TimesNewRomanPSMT;
 
     &[type="email"] {
       width: get-vw(221px);
@@ -76,9 +82,9 @@
   white-space: nowrap;
   background-color: black;
   font-family: TimesNewRomanPSMT;
- font-size: get-vw(12px);
- text-align: left;
- color: #ffffff;
+  font-size: get-vw(12px);
+  text-align: left;
+  color: red;
 }
 
 
