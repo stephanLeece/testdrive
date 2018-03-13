@@ -1,6 +1,6 @@
 // ---------------------------------- homepage functions -----------------
 
-let backButton = $("#back-button");
+let backButton = $("#backButton");
 
 backButton.on('click', () => {
     window.history.back();
