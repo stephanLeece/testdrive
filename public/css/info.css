@@ -12,12 +12,13 @@
   bottom: 32.71484vh;
   width: 15.90909vw;
   height: 31.44531vh;
-  font-size: 1.03896vw;
+  font-size: 1.2987vw;
   font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.05;
+  letter-spacing: -0.08789vh;
   text-align: left;
   color: #222222; }
 
@@ -56,7 +57,7 @@ input {
   font-family: TimesNewRomanPSMT;
   font-size: 0.77922vw;
   text-align: left;
-  color: #ffffff; }
+  color: #ffffff;}
 
 #infoMap {
   position: absolute;
