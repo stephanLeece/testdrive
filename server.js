@@ -109,13 +109,22 @@ app.get('/catalogue', function(req, res) {
     });
 });
 
+function dateToString(date) {
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let numOfMonth = date[1] - 1;
+    date[1] = months[numOfMonth];
+
+    return date.join(' ');
+}
+
 app.get('/events', function(req, res) {
     client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
         const eventList = entries.items? entries.items.map((entry) => {
+            let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse());
             return {
                 eventClassName: entry.fields.ddClassName,
                 eventTitle: entry.fields.ddEventTitle,
-                eventDate: entry.fields.ddEventDate,
+                eventDate: ddEventDate,
                 eventInfo: entry.fields.ddEventInfo,
                 eventContent: entry.fields.ddEventContent? entry.fields.ddEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -132,10 +141,11 @@ app.get('/events', function(req, res) {
 app.get('/testdrive', function(req, res) {
     client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
         const eventList = entries.items? entries.items.map((entry) => {
+            let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse());
             return {
                 eventClassName: entry.fields.tdClassName,
                 eventTitle: entry.fields.tdEventTitle,
-                eventDate: entry.fields.tdEventDate,
+                eventDate: tdEventDate,
                 eventInfo: entry.fields.tdEventInfo,
                 eventContent: entry.fields.tdEventContent?  entry.fields.tdEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
