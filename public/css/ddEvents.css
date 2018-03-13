@@ -5,7 +5,7 @@
   align-items: space-between;
   position: absolute;
   top: 39.55078vh;
-  left: 4.2013vw; }
+  left: 7.4026vw; }
   .eventList .eventDetails {
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
   width: 28.8961vw;
   height: 10.53711vh; }
 
-#ddEventsList .eventDetails:hover {
+#ddEventsList .eventDetails {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
   background-size: contain;
   background-repeat: no-repeat;
