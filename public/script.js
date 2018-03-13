@@ -10,6 +10,7 @@ function showModal() {
 
     $("#gallery-space-img").on('click', function() {
         $('#modal').css({"visibility": "visible"});
+
     });
 }
 

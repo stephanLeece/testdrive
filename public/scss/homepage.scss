@@ -84,6 +84,7 @@ width: get-vw(354px);
     position: absolute;
     top: get-vw(46px);
     left: get-vw(400px);
+    cursor: pointer;
 }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
@@ -169,8 +170,8 @@ width: get-vw(354px);
     position:absolute;
     top:get-vh(128px);
     left:get-vw(666px);
-    width: get-vw(466.2px);
-	height: get-vh(607.5px);
+    width: get-vw(390px);
+	height: get-vh(613px);
     object-fit: contain;
     // box-shadow: 0 2px 30px 0 #0007d7;
     background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
@@ -184,8 +185,10 @@ width: get-vw(354px);
     z-index: 40;
 
 p {
-    width: get-vw(372px);
-    height: get-vh(462px);
+    // width: get-vw(372px);
+    // height: get-vh(462px);
+    width: get-vw(289px);
+    height: get-vh(456px);
     left:get-vw(723px);
     right: get-vw(445px);
     top:get-vh(186px);
@@ -196,7 +199,7 @@ p {
     font-style: normal;
     font-stretch: normal;
     line-height: 1.05;
-    letter-spacing: get-vw(-0.9px);
+    letter-spacing: get-vw(-0.76px);
     text-align: left;
     color: #222222;
     z-index: 1000;

@@ -53,14 +53,15 @@
   height: 84.27734vh;
   position: absolute;
   top: 2.98701vw;
-  left: 25.97403vw; }
+  left: 25.97403vw;
+  cursor: pointer; }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
   width: 26.09091vw;
   height: 21.2207vh;
   object-fit: contain;
-  /* border: solid 1px #ff0101; */
+  border: solid 1px #ff0101;
   position: absolute;
   top: 30.56641vh;
   left: 11.16883vw;
@@ -79,7 +80,7 @@
   width: 19.41558vw;
   height: 19.87305vh;
   object-fit: contain;
-  /* border: solid 1px #2522ff; */
+  border: solid 1px #2522ff;
   position: absolute;
   top: 10.73242vh;
   left: 81.35714vw;
@@ -130,8 +131,8 @@
   position: absolute;
   top: 12.5vh;
   left: 43.24675vw;
-  width: 30.27273vw;
-  height: 59.32617vh;
+  width: 25.32468vw;
+  height: 59.86328vh;
   object-fit: contain;
   background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
   background-size: contain;
@@ -142,8 +143,8 @@
   align-content: center;
   z-index: 40; }
   #modal p {
-    width: 24.15584vw;
-    height: 45.11719vh;
+    width: 18.76623vw;
+    height: 44.53125vh;
     left: 46.94805vw;
     right: 28.8961vw;
     top: 18.16406vh;
@@ -154,7 +155,7 @@
     font-style: normal;
     font-stretch: normal;
     line-height: 1.05;
-    letter-spacing: -0.05844vw;
+    letter-spacing: -0.04935vw;
     text-align: left;
     color: #222222;
     z-index: 1000;

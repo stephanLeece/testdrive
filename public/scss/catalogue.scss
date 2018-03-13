@@ -18,15 +18,14 @@
   width: get-vw(277.1px);
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-    background-size: contain;
+  // background-size: cover;
+  // background-size: contain;
 
-  z-index: 300;
 }
 
 .artists {
   // height: 80%;
-  width: get-vw(149px);
+  width: get-vw(180px);
   height: get-vh(628px);
   position: relative;
   display: flex;
@@ -34,12 +33,15 @@
   justify-content: center;
   align-items: center;
   margin-top: get-vh(45px);
-  // background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  text-align:left;
+  color: green;
 }
 
 .artists ul {
-  // margin-left: get-vw(80px);
-  // margin-right: auto;
+  margin-left: get-vw(80px);
+  margin-right: auto;
   font-size: get-vw(20px);
   line-height: get-vh(1.4);
   font-family: TimesNewRomanPSMT;
@@ -50,7 +52,13 @@
   line-height: 1.6;
   letter-spacing: get-vw(-1.9px);
   text-align: left;
-  color: #222222;
+  // color: #222222;
+  align-items: center;
+  margin-top: get-vh(45px);
+  background-size: contain;
+  display: inline-block;
+  text-align:left;
+  color:red;
 }
 
 #catalogue-line-green {
@@ -58,8 +66,8 @@
   width: get-vw(162.9px);
   height: get-vh(221.6px);
   object-fit: contain;
-  -webkit-transform: rotate(336deg);
-  transform: rotate(336deg);
+  // -webkit-transform: rotate(336deg);
+  // transform: rotate(336deg);
   // border: solid 1px #00ff4f;
   top: get-vh(780.7px);
   left: get-vw(32.9px);
@@ -151,14 +159,14 @@
 // get-vw
 // get-vh get-vw
 
-#temporary {
-    z-index: 3000;
-    width: get-vw(260px);
-	height: get-vh(191px);
-    top:get-vh(559px);
-    left:get-vw(1116.8px);
-    // margin-top: get-vh(59.9px);
-    // margin-left: get-vw(47px);
-    margin-right: get-vw(51.4px);
-    margin-bottom: get-vh(44.5px);
-}
+// #temporary {
+//     z-index: 3000;
+//     width: get-vw(260px);
+// 	height: get-vh(191px);
+//     top:get-vh(559px);
+//     left:get-vw(1116.8px);
+//     // margin-top: get-vh(59.9px);
+//     // margin-left: get-vw(47px);
+//     margin-right: get-vw(51.4px);
+//     margin-bottom: get-vh(44.5px);
+// }
