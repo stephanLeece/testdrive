@@ -21,7 +21,8 @@
     text-align: left;
     color: #222222;
     width: 28.8961vw;
-    height: 10.53711vh; }
+    height: 10.53711vh;
+    left: 4.2013vw; }
 
 .eventsInfoBox {
   position: absolute;
@@ -54,3 +55,6 @@
 #ddEventsInfobox {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); }
+
+.events-menu {
+  visibility: visible; }

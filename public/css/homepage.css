@@ -24,8 +24,9 @@
   letter-spacing: -0.13636vw;
   text-align: left;
   -webkit-text-stroke: 0 #979797; }
-  .cat:hover {
-    color: #ffc278; }
+
+.active {
+  color: #ffc278; }
 
 .events {
   margin-top: 0.09766vh;
@@ -41,8 +42,9 @@
   letter-spacing: -0.13636vw;
   text-align: left;
   color: #000000; }
-  .events:hover {
-    color: #ffc278; }
+
+.act {
+  color: #ffc278; }
 
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -123,14 +125,20 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: 29.02597vw 26.95312vh;
-  width: 29.02597vw;
-  height: 26.95312vh;
-  bottom: 7.22656vh;
-  left: 2.92208vw; }
+  width: 34.93506vw;
+  top: 58.98438vh;
+  height: 32.51953vh;
+  bottom: 8.49609vh;
+  left: 4.22078vw;
+  object-fit: contain; }
+
+video {
+  width: 24.02597vw;
+  height: 18.55469vh;
+  left: 9.22078vw;
+  top: 65.625vh; }
 
 #home-v {
-  width: 19.22078vw;
-  height: 16.21094vh;
   position: absolute;
   bottom: 12.5vh;
   left: 7.07792vw; }

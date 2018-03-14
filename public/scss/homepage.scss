@@ -50,20 +50,14 @@ width: get-vw(354px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
 
-    // .active {
-    //  color: red;
+    // &:hover {
+    //   color: rgb(255, 194, 120);
     // }
-    &:hover {
-      color: rgb(255, 194, 120);
-    }
 }
 
-// #cat {
-//     a:active {
-//      color: red;
-//     }
-// }
-
+.active {
+    color:rgb(255, 194, 120);
+}
 
 .events {
     margin-top: get-vh(1px);
@@ -80,10 +74,13 @@ width: get-vw(354px);
 	text-align: left;
 	color: #000000;
 
-    &:hover {
-      color: #ffc278;
-    }
 }
+
+
+.act {
+    color:rgb(255, 194, 120);
+}
+
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
 
@@ -169,16 +166,25 @@ width: get-vw(354px);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: get-vw(447px) get-vh(276px);
-    width: get-vw(447px);
-    height: get-vh(276px);
-    bottom: get-vh(74px);
-    left: get-vw(45px);
+    width: get-vw(538px);
+    top: get-vh(604px);
+    height: get-vh(333px);
+    bottom: get-vh(87px);
+    left: get-vw(65px);
+    object-fit: contain;
+
+}
+
+video {
+    width: get-vw(370px);
+    height: get-vh(190px);
+    left:get-vw(142px);
+    top: get-vh(672px);
 }
 
 #home-v {
-  width: get-vw(296px);
-  height: get-vh(166px);
-    position: absolute;
+
+  position: absolute;
   bottom: get-vh(128px);
   left: get-vw(109px);
 }

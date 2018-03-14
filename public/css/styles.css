@@ -43,7 +43,8 @@ body {
   bottom: 8.39844vh;
   right: 8.18182vw;
   width: 89px;
-  height: 56px; }
+  height: 56px;
+  cursor: pointer; }
   #backButton h1 {
     font-size: 3.24675vw;
     font-weight: normal;

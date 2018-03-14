@@ -1,24 +1,35 @@
+.artistbackground {
+  position: absolute;
+  width: 25.98052vw;
+  height: 78.20312vh;
+  object-fit: contain;
+  left: 6.36364vw;
+  top: 37.12891vh;
+  z-index: -2000; }
+
 #artist-container {
   position: absolute;
   top: 29.41406vh;
   left: 12.15584vw;
-  height: 67.16797vh;
+  height: 78.20312vh;
   width: 17.99351vw;
-  background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: contain; }
-
-.artists {
-  font-family: TimesNewRomanPSMT;
-  font-size: 1.2987vw;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.6;
-  letter-spacing: -0.12338vw;
-  text-align: left;
-  color: #222222; }
+  z-index: 3000;
+  background-repeat: no-repeat; }
+  #artist-container .artists {
+    height: 61.32812vh;
+    width: 9.67532vw;
+    left: 17.20779vw;
+    top: 32.32422vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.2987vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: -0.12338vw;
+    text-align: left;
+    color: #222222;
+    z-index: 3000; }
 
 #catalogue-line-green {
   position: absolute;

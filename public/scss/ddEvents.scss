@@ -36,6 +36,7 @@ left: get-vw(114px);
     color: #222222;
     width: get-vw(445px);
     height: get-vh(107.9px);
+    left: get-vw(64.7px);
 }
 }
 
@@ -79,4 +80,9 @@ left: get-vw(114px);
 #ddEventsInfobox {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
+}
+
+
+.events-menu {
+    visibility: visible;
 }
