@@ -50,14 +50,11 @@ width: get-vw(354px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
 
-    // &:hover {
-    //   color: rgb(255, 194, 120);
-    // }
 }
 
 .active {
-    color:rgb(255, 194, 120);
-}
+        color:rgb(255, 194, 120);
+    }
 
 .events {
     margin-top: get-vh(1px);
@@ -73,13 +70,17 @@ width: get-vw(354px);
 	letter-spacing: get-vw(-2.1px);
 	text-align: left;
 	color: #000000;
-
 }
-
 
 .act {
     color:rgb(255, 194, 120);
 }
+
+
+.active-color-home {
+    color: #000000;
+}
+
 
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
@@ -236,6 +237,8 @@ p {
     margin-right: get-vw(44px);
     margin-bottom: get-vh(88px);
     letter-spacing: normal;
+    justify-content: center;
+    align-content: center;
 
     }
 

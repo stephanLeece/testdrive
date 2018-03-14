@@ -24,14 +24,6 @@ function fadeIntoImg() {
     // }, 5000);
 }
 
-// function fadeIntoImg(body) {
-//   console.log("lag?");
-//   $('body').fadeOut(3000);
-// }
-//
-// fadeIntoImg();
-
-
 fadeIntoImg();
 
 

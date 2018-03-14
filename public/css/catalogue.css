@@ -1,15 +1,15 @@
 .artistbackground {
   position: absolute;
-  width: 25.98052vw;
-  height: 78.20312vh;
+  width: 18.83766vw;
+  height: 67.46094vh;
   object-fit: contain;
   left: 6.36364vw;
-  top: 37.12891vh;
+  top: 29.29688vh;
   z-index: -2000; }
 
 #artist-container {
   position: absolute;
-  top: 29.41406vh;
+  top: 32.05078vh;
   left: 12.15584vw;
   height: 78.20312vh;
   width: 17.99351vw;
@@ -18,14 +18,14 @@
   #artist-container .artists {
     height: 61.32812vh;
     width: 9.67532vw;
-    left: 17.20779vw;
-    top: 32.32422vh;
+    left: 13.50649vw;
+    top: 29.10156vh;
     font-family: TimesNewRomanPSMT;
     font-size: 1.2987vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.6;
+    line-height: 2.73438vh;
     letter-spacing: -0.12338vw;
     text-align: left;
     color: #222222;

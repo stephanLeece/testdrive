@@ -6,18 +6,27 @@ if (window.location.pathname == '/info') {
 
 }
 
+// ------ active color Orange on current route  ----
+//Catalogue route
 
-$(function(){
-    var current = location.pathname;
-    $('#cat').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').indexOf(current) !== -1){
-            $this.addClass('active');
-        }
+//
+// if (window.location.pathname == '/') {
+//   $('#cat').addClass('active-color-home')
+// }else if {
+
+    $(function(){
+        var current = location.pathname;
+        $('#cat').each(function(){
+            var $this = $(this);
+            // if the current path is like this link, make it active
+            if($this.attr('href').indexOf(current) !== -1){
+                $this.addClass('active');
+            }
+        })
     })
-})
+// }
 
+//Event route
 $(function(){
     var current = location.pathname;
     $('#eve').each(function(){
@@ -28,6 +37,12 @@ $(function(){
         }
     })
 })
+
+// ------ active color Orange on current route end ----
+
+
+
+
 
 
 // ('.events-menu').on('p', 'img' function(){

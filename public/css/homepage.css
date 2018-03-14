@@ -46,6 +46,9 @@
 .act {
   color: #ffc278; }
 
+.active-color-home {
+  color: #000000; }
+
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
 
@@ -184,4 +187,6 @@ video {
     margin-left: 3.7013vw;
     margin-right: 2.85714vw;
     margin-bottom: 8.59375vh;
-    letter-spacing: normal; }
+    letter-spacing: normal;
+    justify-content: center;
+    align-content: center; }
