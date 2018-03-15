@@ -75,7 +75,6 @@
   width: 26.09091vw;
   height: 21.2207vh;
   object-fit: contain;
-  border: solid 1px #ff0101;
   position: absolute;
   top: 30.56641vh;
   left: 11.16883vw;
@@ -89,14 +88,12 @@
   top: 68.35938vh;
   left: 66.23377vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-  z-index: 10;
-  border: solid 1px #00bb20; }
+  z-index: 10; }
 
 #home-blue-line {
   width: 19.41558vw;
   height: 19.87305vh;
   object-fit: contain;
-  border: solid 1px #2522ff;
   position: absolute;
   top: 10.73242vh;
   left: 81.35714vw;
@@ -136,15 +133,11 @@
   object-fit: contain; }
 
 video {
-  width: 24.02597vw;
-  height: 18.55469vh;
-  left: 9.22078vw;
-  top: 65.625vh; }
-
-#home-v {
   position: absolute;
-  bottom: 12.5vh;
-  left: 7.07792vw; }
+  width: 17.46753vw;
+  height: 16.21094vh;
+  left: 9.07792vw;
+  top: 65.28906vh; }
 
 .fadeIn {
   opacity: 1; }
@@ -153,8 +146,8 @@ video {
   position: absolute;
   top: 12.5vh;
   left: 43.24675vw;
-  width: 30.27273vw;
-  height: 59.32617vh;
+  width: 30.53247vw;
+  height: 65.47852vh;
   object-fit: contain;
   background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
   background-size: contain;
@@ -164,12 +157,10 @@ video {
   justify-content: center;
   align-content: center;
   z-index: 40; }
-  #modal p {
-    width: 24.15584vw;
-    height: 45.11719vh;
+  #modal .words {
     width: 18.76623vw;
     height: 44.53125vh;
-    left: 46.94805vw;
+    left: 51.94805vw;
     right: 28.8961vw;
     top: 18.16406vh;
     word-wrap: normal;
@@ -178,13 +169,13 @@ video {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.05;
+    line-height: 1.75781vh;
     letter-spacing: -0.05844vw;
     text-align: left;
     color: #222222;
     z-index: 1000;
     margin-top: 6.73828vh;
-    margin-left: 3.7013vw;
+    margin-left: 5.06494vw;
     margin-right: 2.85714vw;
     margin-bottom: 8.59375vh;
     letter-spacing: normal;

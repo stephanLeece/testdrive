@@ -110,7 +110,6 @@ width: get-vw(354px);
     width: get-vw(401.8px);
     height: get-vh(217.3px);
     object-fit: contain;
-    border: solid 1px #ff0101;
     position: absolute;
     top: get-vh(313px);
     left: get-vw(172px);
@@ -126,14 +125,12 @@ width: get-vw(354px);
     left: get-vw(1020px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: 10;
-    border: solid 1px #00bb20;
 }
 
 #home-blue-line {
     width: get-vw(299px);
     height: get-vh(203.5px);
     object-fit: contain;
-    border: solid 1px #2522ff;
     position: absolute;
     top: get-vh(109.9px);
     left: get-vw(1252.9px);
@@ -177,18 +174,35 @@ width: get-vw(354px);
 }
 
 video {
-    width: get-vw(370px);
-    height: get-vh(190px);
-    left:get-vw(142px);
-    top: get-vh(672px);
+        // position: absolute;
+    // width: get-vw(370px);
+    // height: get-vh(190px);
+    // width: get-vw(269px);
+    // height: get-vh(166px);
+    // left:get-vw(109px);
+    // top: get-vh(730px);
+
+    position: absolute;
+width: 17.46753vw;
+height: 16.21094vh;
+left: 9.07792vw;
+top: 65.28906vh;
+
+    // bottom: get-vh(128px);
+    // left: get-vw(109px);
 }
 
-#home-v {
+// width: 296px;
+// height: 166px;
 
-  position: absolute;
-  bottom: get-vh(128px);
-  left: get-vw(109px);
-}
+
+
+// #home-v {
+//
+//   position: absolute;
+//   bottom: get-vh(128px);
+//   left: get-vw(109px);
+// }
 
 .fadeIn {
     opacity: 1;
@@ -199,8 +213,8 @@ video {
     position:absolute;
     top:get-vh(128px);
     left:get-vw(666px);
-    width: get-vw(466.2px);
-	height: get-vh(607.5px);
+    width: get-vw(470.2px);
+	height: get-vh(670.5px);
     object-fit: contain;
     // box-shadow: 0 2px 30px 0 #0007d7;
     background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
@@ -213,33 +227,32 @@ video {
     align-content: center;
     z-index: 40;
 
-p {
-    width: get-vw(372px);
-    height: get-vh(462px);
-    width: get-vw(289px);
-    height: get-vh(456px);
-    left:get-vw(723px);
-    right: get-vw(445px);
-    top:get-vh(186px);
-    word-wrap: normal;
-    font-family: TimesNewRomanPSMT;
-    font-size: get-vh(20px);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: get-vw(-0.9px);
-    text-align: left;
-    color: #222222;
-    z-index: 1000;
-    margin-top: get-vh(69px);
-    margin-left: get-vw(57px);
-    margin-right: get-vw(44px);
-    margin-bottom: get-vh(88px);
-    letter-spacing: normal;
-    justify-content: center;
-    align-content: center;
+    .words {
+        // width: get-vw(372px);
+        // height: get-vh(462px);
+        width: get-vw(289px);
+        height: get-vh(456px);
+        left:get-vw(800px);
+        right: get-vw(445px);
+        top:get-vh(186px);
+        word-wrap: normal;
+        font-family: TimesNewRomanPSMT;
+        font-size: get-vh(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: get-vh(18px);
+        letter-spacing: get-vw(-0.9px);
+        text-align: left;
+        color: #222222;
+        z-index: 1000;
+        margin-top: get-vh(69px);
+        margin-left: get-vw(78px);
+        margin-right: get-vw(44px);
+        margin-bottom: get-vh(88px);
+        letter-spacing: normal;
+        justify-content: center;
+        align-content: center;
 
-    }
-
+        }
 }
