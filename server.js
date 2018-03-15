@@ -7,19 +7,19 @@ const nodemailer = require('nodemailer');
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
 let secrets;
-console.log('outside if: ', process.env, process.env.NODE_ENV)
+console.log('outside if: ', process.env, process.env.NODE_ENV);
 if (process.env.NODE_ENV == 'production') {
- console.log('process in if: ', process.env)
- secrets = process.env;
+    console.log('process in if: ', process.env);
+    secrets = process.env;
 } else {
- console.log('process in else: ', process.env)
- secrets = require('./secrets');
+    console.log('process in else: ', process.env);
+    secrets = require('./secrets');
 }
 
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport({
- service: 'gmail',
- auth: {
+    service: 'gmail',
+    auth: {
         user: 'drivedrive.testdrive@gmail.com',
         pass: secrets.pass
     }
@@ -123,7 +123,7 @@ app.get('/events', function(req, res) {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
                 }) : null
             };
-        }) : null
+        }) : null;
         res.render('events', {
             layout: 'layout',
             eventList: eventList
@@ -143,7 +143,7 @@ app.get('/testdrive', function(req, res) {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
                 }) : null
             };
-        }) : null
+        }) : null;
         res.render('testdrive', {
             layout: 'layout',
             eventList: eventList
