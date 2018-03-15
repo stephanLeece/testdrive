@@ -103,7 +103,6 @@
 
 #video {
   position: absolute;
-  margin-top: 5.84961vh;
-  margin-left: 3.05195vw;
-  margin-right: 3.33766vw;
-  margin-bottom: 4.3457vh; }
+  height: 19.53125vh;
+  width: 22.0974vw;
+  margin-top: 5.84961vh; }

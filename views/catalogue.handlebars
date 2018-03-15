@@ -25,80 +25,11 @@
 
   <div id="video-container">
 
-    <div id="video">
+    <div>
     {{#video}}
-    <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay controls>
+    <video  id="video" onmouseover="pause()" onmouseleave="play()" autoplay controls>
       <source src='https:{{url}}' type='{{contentType}}'>
     </video>
     {{/video}}
     </div>
   </div>
-
-  <!-- Designer notes:
-
-  DD-Catalogue
-
-  1. Catalogue should have active state: Orange colour
-  2. Artists text font-size should be 20px
-  3. Back button as you said doesn’t work for now.
-  4. Can you add a pdf to the catalogue to preview text, and that it opens in a different tab etc pls??
-  5. Can the motorcycle have the same functionality wherever there are lines, i.e. this page also?
-  6. Need to preview videos to make sure they will be playing in loop at all times… -->
-
-
-<!-- pdf thing
-
-.age-of-objectificati {
-	width: 460px;
-	height: 1011px;
-	font-family: TimesNewRomanPSMT;
-	font-size: 30px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: -1.9px;
-	text-align: left;
-	color: #222222;
-}
-
-.age-of-objectificati .text-style-1 {
-	color: #ff4819;
-} -->
-
-<!-- .maria-andreou-raissa {
-	width: 149px;
-	height: 628px;
-	font-family: TimesNewRomanPSMT;
-	font-size: 20px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.6;
-	letter-spacing: -1.9px;
-	text-align: left;
-	color: #222222;
-}
-
-.maria-andreou-raissa .text-style-1 {
-	letter-spacing: -0.9px;
-} -->
-
-<!--
-.maria-andreou-raissa {
-	width: 149px;
-	height: 628px;
-	font-family: TimesNewRomanPSMT;
-	font-size: 20px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.6;
-	letter-spacing: -1.9px;
-	text-align: left;
-	color: #222222;
-}
-
-.maria-andreou-raissa .text-style-1 {
-	letter-spacing: -0.9px;
-} -->

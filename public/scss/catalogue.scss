@@ -12,12 +12,9 @@
 
 .artistbackground {
     position: absolute;
-    // width: get-vw(400.1px);
-    // height: get-vh(800.8px);
     width: get-vw(290.1px);
 	height: get-vh(690.8px);
     object-fit: contain;
-    // box-shadow: 0 2px 20px 0 #6e00d7;
     left: get-vw(98px);
     top: get-vh(300px);
     z-index: -2000;
@@ -27,7 +24,6 @@
   position: absolute;
   top: get-vh(328.2px);
   left: get-vw(187.2px);
-  // height: get-vh(687.8px);
   height: get-vh(800.8px);
   width: get-vw(277.1px);
   z-index: 3000;
@@ -63,9 +59,6 @@
   width: get-vw(162.9px);
   height: get-vh(221.6px);
   object-fit: contain;
-  // -webkit-transform: rotate(336deg);
-  // transform: rotate(336deg);
-  // border: solid 1px #00ff4f;
   top: get-vh(780.7px);
   left: get-vw(32.9px);
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
@@ -79,9 +72,6 @@
   top: get-vh(0px);
   left: get-vw(528px);
   background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
-  // display: flex;
-  // flex-direction: column;
-  // align-content: center;
   background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
   box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
 }
@@ -91,8 +81,6 @@
   top: get-vh(13px);
   width: get-vw(460px);
   height: get-vh(1011px);
-  // height: 100%;
-  // width: 100%;
   list-style-type: none;
   display: block;
   margin-left: get-vw(10px);
@@ -120,7 +108,6 @@
 }
 
 .pdf:hover {
-  // color: red;
     color: #ff4819;
 }
 
@@ -128,7 +115,6 @@
   height: get-vh(196.3px);
   width: get-vw(248.6px);
   object-fit: contain;
-  // border: solid 1px #657aff;
   position: absolute;
   top: get-vh(194px);
   left: get-vw(1183.1px);
@@ -149,8 +135,10 @@
 
 #video {
   position: absolute;
+  height: get-vh(200px);
+  width: get-vw(340.3px);
   margin-top: get-vh(59.9px);
-  margin-left: get-vw(47px);
-  margin-right: get-vw(51.4px);
-  margin-bottom: get-vh(44.5px);
+  // margin-left: get-vw(47px);
+  // margin-right: get-vw(60.4px);
+  // margin-bottom: get-vh(44.5px);
 }

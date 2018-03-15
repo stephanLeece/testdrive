@@ -83,7 +83,7 @@ app.get('/catalogue', function(req, res) {
             if (entry.fields.cataloguePdf) {
                 let fileName = entry.fields.cataloguePdf.fields.file.fileName;
                 let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '');
-                console.log("URL: ", url);
+                // console.log("URL: ", url);
                 catalogue.push({fileName, url});
             }
             if (entry.fields.videoFiles) {
@@ -161,7 +161,7 @@ app.get('/info', function(req, res) {
 });
 
 app.post('/info', function(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     // setup email data with unicode symbols
     let mailOptions = {
         from: 'drivedrive.testdrive@gmail.com', // sender address

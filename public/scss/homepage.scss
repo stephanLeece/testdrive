@@ -34,7 +34,7 @@ width: get-vw(354px);
 
 
 .cat {
-// z-index: 10;
+    
     margin-top: get-vh(24px);
     width: get-vw(210px);
     height: get-vh(56px);
@@ -173,36 +173,13 @@ width: get-vw(354px);
 
 }
 
-video {
-        // position: absolute;
-    // width: get-vw(370px);
-    // height: get-vh(190px);
-    // width: get-vw(269px);
-    // height: get-vh(166px);
-    // left:get-vw(109px);
-    // top: get-vh(730px);
-
+#home-v {
     position: absolute;
-width: 17.46753vw;
-height: 16.21094vh;
-left: 9.07792vw;
-top: 65.28906vh;
-
-    // bottom: get-vh(128px);
-    // left: get-vw(109px);
+    width: 17.46753vw;
+    height: 16.21094vh;
+    left: 9.07792vw;
+    top: 65.28906vh;
 }
-
-// width: 296px;
-// height: 166px;
-
-
-
-// #home-v {
-//
-//   position: absolute;
-//   bottom: get-vh(128px);
-//   left: get-vw(109px);
-// }
 
 .fadeIn {
     opacity: 1;
@@ -216,9 +193,7 @@ top: 65.28906vh;
     width: get-vw(470.2px);
 	height: get-vh(670.5px);
     object-fit: contain;
-    // box-shadow: 0 2px 30px 0 #0007d7;
     background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-    // /* background-color: #ffffff; */
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -228,8 +203,7 @@ top: 65.28906vh;
     z-index: 40;
 
     .words {
-        // width: get-vw(372px);
-        // height: get-vh(462px);
+
         width: get-vw(289px);
         height: get-vh(456px);
         left:get-vw(800px);
