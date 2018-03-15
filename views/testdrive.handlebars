@@ -4,6 +4,7 @@
 <div class="eventList" id="tdEventsList">
   {{#eventList}}
   <div class="eventDetails">
+      <!-- <img src="./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg"> -->
       <p class= {{eventClassName}}>{{eventTitle}}</p>
   </div>
   {{/eventList}}
@@ -12,25 +13,11 @@
 <div class="eventsInfoBox" id="tdEventsInfobox">
 {{#eventList}}
   <div class= {{eventClassName}}>
-    {{{eventInfo}}}
     {{#eventContent}}
     <img src={{image}} alt="">
       <p>{{imageDescrip}}</p>
     {{/eventContent}}
+    {{{eventInfo}}}
   </div>
 {{/eventList}}
 </div>
-
-<!-- TD-Events
-
-1. Testdrive logo should be displayed instead of DriveDrive.
-2. Menu should be Events only and have an active state (orange).
-3. Can we change the format of the date to DD MM YYYY pls i.e. 23.03–14.04.2018 plssss can you add the right dash between dates (–) :)
-4. Then the title is Hot Spring Maya Hottarek and has exactly same spacings (3px) as in DD events.
-5. Can we have active state of the selected event with the border pls?
-6. Is it possible to move the title so that the left-margin is 50px (away from the container)? It basically aligns with Catalogue and Events.
-7. Can you upload placeholders for image so I can preview?
-8. Title: Hot Spring Maya Hottarek should be 30px, letter-spacing -1.87, and in #06DF3A
-9. Body text should be: 20px line height 22px, letter-spacing -0.85
-10. Can you pls double check the shadow of the green container is X 0, Y 2, Blur 40, 0 Spread and colour D3FBCD?
-11. Also is the scroll bar gonna be the one I used in the designs with the gradient? Could we add this to the whole page when it becomes longer i.e. many events are added ? -->

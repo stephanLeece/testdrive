@@ -30,6 +30,7 @@ fadeIntoImg();
 // ------------------------------- testdrive/events functions ------------------
 
 // $(parentSelector).find(childSelector)
+//
 $('.eventsInfoBox').find('div').addClass('hidden');
 $('p').on('click', e => {
     let eventToShow = '.' + $(e.target).attr('class');
@@ -37,6 +38,15 @@ $('p').on('click', e => {
     $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
 });
+
+//trying to work this out 
+// $(document).ready(function(){
+//     $("ddEventsList").trigger("click");
+// });
+
+// $( "p span" ).first().addClass( "highlight" );
+
+
 
 // ------------------------------- video functions ----------
 

@@ -1,10 +1,9 @@
-#tdEventsList .eventDetails:hover {
+#tdEventsList .eventDetails :hover {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
-  padding: 50px;
-  margin: -50px; }
+  padding: 3.24675vw;
+  margin: -4.88281vh; }
 
 #tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");

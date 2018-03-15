@@ -13,19 +13,13 @@
 <div class="eventsInfoBox" id="ddEventsInfobox">
   {{#eventList}}
     <div class= {{eventClassName}}>
-      {{{eventInfo}}}
       {{#eventContent}}
       <img src={{image}} alt="">
         <p>{{imageDescrip}}</p>
       {{/eventContent}}
+      <br></br>
+       {{{eventInfo}}}
     </div>
   {{/eventList}}
   </div>
 </div>
-  <!-- DD-Events
-
-  3. Can we have it left aligned with the title?
-  4. Spacing between the date and title is 3px
-  5. Can we have active state of the selected event with the border pls?
-  6. Is it possible to move the title so that the left-margin is 50px (away from the container)? It basically aligns with Catalogue and Events.
-  7. Can you upload placeholders for image and text so I can preview? -->

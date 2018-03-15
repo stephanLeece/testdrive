@@ -23,14 +23,11 @@ left: get-vw(114px);
 .eventDetails {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: TimesNewRomanPSMT;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.85;
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222;
@@ -59,21 +56,18 @@ left: get-vw(114px);
   margin-bottom: get-vh(10px);
   // margin-left: get-vw(49.3px);
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: get-vw(445px);
   height: get-vh(107.9px);
 }
 
 #ddEventsList {
-  .eventDetails {
+  .eventDetails :hover {
     background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
     background-size:  contain;
     background-repeat: no-repeat;
     background-position: center center;
     padding: 50px;
     margin: -50px;
-    // left: get-vw(114px);
   }
 }
 

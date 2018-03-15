@@ -10,15 +10,15 @@
 // height: get-vh(20px);
 // ------------------------------------------
 
-
+//:hover
 #tdEventsList {
-  .eventDetails:hover {
+  .eventDetails :hover {
     background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
     background-size:  contain;
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 50px;
-    margin: -50px;
+    padding: get-vw(50px);
+    margin: get-vh(-50px);
+    // left: get-vw(91px);
   }
 }
 
