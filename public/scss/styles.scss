@@ -22,6 +22,11 @@ body {
   background-repeat: no-repeat;
 }
 
+// trying the rainbow scroll
+// body::-webkit-scrollbar-track { background-color: transparent; }
+// body::-webkit-scrollbar       { width: 8px; background: #e0ebe8; }
+// body::-webkit-scrollbar-thumb { background: #e0ebe8; }
+
 .hidden {
   display: none;
 }
@@ -65,6 +70,7 @@ body {
   right: get-vw(126px);
   width: 89px;
   height: 56px;
+  cursor: pointer;
 
   h1 {
     font-size: get-vw(50px);

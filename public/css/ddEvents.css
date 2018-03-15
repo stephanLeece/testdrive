@@ -5,23 +5,21 @@
   align-items: space-between;
   position: absolute;
   top: 39.55078vh;
-  left: 4.2013vw; }
+  left: 7.4026vw; }
   .eventList .eventDetails {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: TimesNewRomanPSMT;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.85;
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222;
     width: 28.8961vw;
-    height: 10.53711vh; }
+    height: 10.53711vh;
+    left: 4.2013vw; }
 
 .eventsInfoBox {
   position: absolute;
@@ -38,12 +36,10 @@
 .eventDetails {
   margin-bottom: 0.97656vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 28.8961vw;
   height: 10.53711vh; }
 
-#ddEventsList .eventDetails:hover {
+#ddEventsList .eventDetails :hover {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -54,3 +50,6 @@
 #ddEventsInfobox {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); }
+
+.events-menu {
+  visibility: visible; }

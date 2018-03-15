@@ -10,19 +10,28 @@
 // height: get-vh(20px);
 // ------------------------------------------
 
-
+//:hover
 #tdEventsList {
-  .eventDetails:hover {
+  .eventDetails :hover {
     background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
     background-size:  contain;
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 50px;
-    margin: -50px;
+    padding: get-vw(50px);
+    margin: get-vh(-50px);
+    // left: get-vw(91px);
   }
 }
 
 #tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgb(1, 223, 54));
+}
+
+
+.testdr-title {
+    position: absolute;
+    width: get-vw(290px);
+	height: get-vh(30px);
+    top: get-vh(100px);
+    left: get-vw(91px);
 }

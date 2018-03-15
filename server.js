@@ -7,6 +7,7 @@ const nodemailer = require('nodemailer');
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
 let secrets;
+
 console.log('outside if: ', process.env, process.env.NODE_ENV);
 if (process.env.NODE_ENV == 'production') {
     console.log('process in if: ', process.env);
@@ -14,6 +15,13 @@ if (process.env.NODE_ENV == 'production') {
 } else {
     console.log('process in else: ', process.env);
     secrets = require('./secrets');
+
+
+if (process.env.NODE_ENV == 'production') {
+ secrets = process.env;
+} else {
+ secrets = require('./secrets');
+
 }
 
 // create reusable transporter object using the default SMTP transport
@@ -21,12 +29,12 @@ var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'drivedrive.testdrive@gmail.com',
-        pass: secrets.pass
+        pass: process.env.pass || secrets.pass
     }
 });
 
 
-client = contentful.createClient({space: secrets.space, accessToken: secrets.accessToken});
+client = contentful.createClient({space: process.env.space || secrets.space, accessToken: process.env.accessToken || secrets.accessToken});
 
 const app = express();
 
@@ -38,20 +46,17 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
-    console.log("line34");
+
     let video = {};
     client.getEntries().then((entries) => {
-        console.log("line 36");
         entries.items.forEach(entry => {
-            console.log("line39");
-            if (entry.fields.videoFile) {
-                video = entry.fields.videoFile[0].fields.file;
-                console.log("line40");
+            if (entry.fields.videoFiles) {
+                video = entry.fields.videoFiles[1].fields.file;
+
             }
         });
-        console.log("line45");
-        res.render('home', {
 
+        res.render('home', {
             layout: 'layout',
             video: video
 
@@ -88,11 +93,11 @@ app.get('/catalogue', function(req, res) {
             if (entry.fields.cataloguePdf) {
                 let fileName = entry.fields.cataloguePdf.fields.file.fileName;
                 let url = entry.fields.cataloguePdf.fields.file.url.replace('//', '');
-                console.log("URL: ", url);
+                // console.log("URL: ", url);
                 catalogue.push({fileName, url});
             }
-            if (entry.fields.videoFile) {
-                video = entry.fields.videoFile[0].fields.file;
+            if (entry.fields.videoFiles) {
+                video = entry.fields.videoFiles[0].fields.file;
             }
         });
 
@@ -111,13 +116,22 @@ app.get('/catalogue', function(req, res) {
     });
 });
 
+function dateToString(date) {
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let numOfMonth = date[1] - 1;
+    date[1] = months[numOfMonth];
+
+    return date.join(' ');
+}
+
 app.get('/events', function(req, res) {
     client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
         const eventList = entries.items? entries.items.map((entry) => {
+            let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse());
             return {
                 eventClassName: entry.fields.ddClassName,
                 eventTitle: entry.fields.ddEventTitle,
-                eventDate: entry.fields.ddEventDate,
+                eventDate: ddEventDate,
                 eventInfo: entry.fields.ddEventInfo,
                 eventContent: entry.fields.ddEventContent? entry.fields.ddEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -134,10 +148,11 @@ app.get('/events', function(req, res) {
 app.get('/testdrive', function(req, res) {
     client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
         const eventList = entries.items? entries.items.map((entry) => {
+            let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse());
             return {
                 eventClassName: entry.fields.tdClassName,
                 eventTitle: entry.fields.tdEventTitle,
-                eventDate: entry.fields.tdEventDate,
+                eventDate: tdEventDate,
                 eventInfo: entry.fields.tdEventInfo,
                 eventContent: entry.fields.tdEventContent?  entry.fields.tdEventContent.map((image) => {
                     return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -156,7 +171,7 @@ app.get('/info', function(req, res) {
 });
 
 app.post('/info', function(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     // setup email data with unicode symbols
     let mailOptions = {
         from: 'drivedrive.testdrive@gmail.com', // sender address

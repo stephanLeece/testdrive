@@ -2,15 +2,13 @@
 {{> infoLink}}
 {{> backLink}}
 <div id="artist-container">
-
   <div class="artists">
   {{#artists}}
-  <p>{{.}}</p>
+  <ul>{{.}}</ul>
   {{/artists}}
   </div>
-
 </div>
-
+<img class="artistbackground" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-artists-purple.svg">
 <img id="catalogue-line-green" src="/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-line-green.svg">
 
 
@@ -26,9 +24,10 @@
 
 
   <div id="video-container">
-    <div id="video">
+
+    <div>
     {{#video}}
-    <video height="163.5" width="283.6" onmouseover="pause()" onmouseleave="play()" autoplay controls>
+    <video  id="video" onmouseover="pause()" onmouseleave="play()" autoplay controls>
       <source src='https:{{url}}' type='{{contentType}}'>
     </video>
     {{/video}}

@@ -1,10 +1,10 @@
-{{> big-mac}}{{> infoLink}}{{>backLink}}
-
-
+{{> testdriveEvents }}
+{{> backLink}}
 
 <div class="eventList" id="tdEventsList">
   {{#eventList}}
   <div class="eventDetails">
+      <!-- <img src="./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg"> -->
       <p class= {{eventClassName}}>{{eventTitle}}</p>
   </div>
   {{/eventList}}
@@ -13,11 +13,11 @@
 <div class="eventsInfoBox" id="tdEventsInfobox">
 {{#eventList}}
   <div class= {{eventClassName}}>
-    {{{eventInfo}}}
     {{#eventContent}}
     <img src={{image}} alt="">
       <p>{{imageDescrip}}</p>
     {{/eventContent}}
+    {{{eventInfo}}}
   </div>
 {{/eventList}}
 </div>

@@ -4,20 +4,24 @@
   position: absolute;
   left: 9.15584vw;
   top: 32.71484vh;
+  top: 32.03125vh;
+  bottom: 17.64648vh;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
 
 #infoContactInfo {
   position: absolute;
   left: 12.66234vw;
-  bottom: 32.71484vh;
   width: 15.90909vw;
   height: 31.44531vh;
-  font-size: 1.03896vw;
+  margin-top: 35.83984vh;
+  margin-bottom: 32.71484vh;
+  font-size: 1.95312vh;
   font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.05;
+  letter-spacing: -0.05844vw;
   text-align: left;
   color: #222222; }
 
@@ -25,7 +29,7 @@ form {
   position: absolute;
   left: 12.66234vw;
   bottom: 24.21875vh;
-  border: 2px solid black;
+  border: 1px solid black;
   width: 21.36364vw;
   height: 3.90625vh;
   margin-top: 0.39062vh;
@@ -33,11 +37,26 @@ form {
   justify-content: center;
   align-items: center; }
 
+.sign-up-to-our-maili {
+  width: 15.90909vw;
+  height: 2.24609vh;
+  margin-bottom: 29.10156vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 1.2987vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: -0.05844vw;
+  text-align: left;
+  color: red; }
+
 input {
-  font-size: 1.16883vw;
+  font-size: 1.2987vw;
   background: none;
   border: none;
-  outline: none; }
+  outline: none;
+  font-family: TimesNewRomanPSMT; }
   input[type="email"] {
     width: 14.35065vw;
     height: 3.90625vh;
@@ -55,8 +74,8 @@ input {
   background-color: black;
   font-family: TimesNewRomanPSMT;
   font-size: 0.77922vw;
-  text-align: left;
-  color: #ffffff; }
+  color: white;
+  text-align: left; }
 
 #infoMap {
   position: absolute;

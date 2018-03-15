@@ -5,7 +5,7 @@
 {{>testdriveLogo}}
 
 <div id = "home-container">
-    <img id="gallery-space-img" class="home" src="/assets/Elements/Home/galleryspace.png">
+    <img id="gallery-space-img" class="shadowfilter" src="/assets/Elements/Home/galleryspace.png">
 
         <img id="home-green-line" class="home" src="/assets/Elements/Home/Home-green-line.svg">
         <img id="home-red-line" class="home"src="/assets/Elements/Home/Home-red-line.svg">
@@ -14,7 +14,7 @@
 
 <div id="modal">
     <!-- <img id="home-infobox-blue" src="/assets/Elements/Home/Home-infobox-blue.svg"> -->
-    <p>DriveDrive is a project initiated by visual artists Raissa Angeli and Nayia Savva. It’s located in the old town of Nicosia, in a building designed by the modernist architect Neoptolemos Michaelides in 1969.<br></br>
+    <p class="words">DriveDrive is a project initiated by visual artists Raissa Angeli and Nayia Savva. It’s located in the old town of Nicosia, in a building designed by the modernist architect Neoptolemos Michaelides in 1969.<br></br>
 DriveDrive displays a selection of artworks, editions and publications in a fluctuating, ever evolving manner. The process is archived in an online index publication.<br></br>
 The space runs parallel to TESTDRIVE, a project hosting short-term site-specific events and parties.<br></br>
 DriveDrive and TESTDRIVE are the result of on going conversations and debates between friends, artists, artist-friends, and artists’ friends concerned with the multiple localities involved in operating on the island.<br></br>
@@ -22,11 +22,22 @@ The project will be open to the public for the year 2018-2019.</p>
 </div>
 
   <div class="video-container home-video"></div>
-  <div id='home-v'>
+  <div>
     {{#video}}
-    <video height="166" width="296" onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+    <video id='home-v' onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
       <source src='https:{{url}}' type='{{contentType}}'>
     </video>
     {{/video}}
   </div>
 </div>
+
+
+
+
+<!-- Design comments
+?1. We definitely need another prompt or hint for the infobox on the Homepage.
+I’m thinking maybe it’s the cursor for now, which is quick solution? A button? Wdyt?
+-2. Can you pls make sure the infobox container (box with shadow) is 390w x 613h?
+-3. And that the letter-spacing for the font is -0.76px?
+?4. Can you also make sure that the text container is 289 x 456px pls?
+?5. And finally that the text fits inside the container. -->

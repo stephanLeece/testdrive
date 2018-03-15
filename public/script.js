@@ -1,6 +1,6 @@
 // ---------------------------------- homepage functions -----------------
 
-let backButton = $("#back-button");
+let backButton = $("#backButton");
 
 backButton.on('click', () => {
     window.history.back();
@@ -10,6 +10,7 @@ function showModal() {
 
     $("#gallery-space-img").on('click', function() {
         $('#modal').css({"visibility": "visible"});
+
     });
 }
 
@@ -23,20 +24,13 @@ function fadeIntoImg() {
     // }, 5000);
 }
 
-// function fadeIntoImg(body) {
-//   console.log("lag?");
-//   $('body').fadeOut(3000);
-// }
-//
-// fadeIntoImg();
-
-
 fadeIntoImg();
 
 
 // ------------------------------- testdrive/events functions ------------------
 
 // $(parentSelector).find(childSelector)
+//
 $('.eventsInfoBox').find('div').addClass('hidden');
 $('p').on('click', e => {
     let eventToShow = '.' + $(e.target).attr('class');
@@ -44,6 +38,15 @@ $('p').on('click', e => {
     $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
 });
+
+//trying to work this out 
+// $(document).ready(function(){
+//     $("ddEventsList").trigger("click");
+// });
+
+// $( "p span" ).first().addClass( "highlight" );
+
+
 
 // ------------------------------- video functions ----------
 

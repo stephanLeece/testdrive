@@ -1,5 +1,5 @@
 @function get-vw($object) {
-    $vw: (1280 * 0.01) * 1px;
+    $vw: (1540 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -12,71 +12,107 @@
 
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-  width: get-vw(290px);
-  height: get-vh( 46px);
-position: absolute;
-top: get-vh( 54px);
-left: get-vw(92px);
-
+width: get-vw(354px);
+// height: get-vh(55px);
+// position: absolute;
+// top: get-vh(54px);
+// left: get-vw(143px);
+// z-index: 10;
 }
+
 
 .drivedrive-menu {
   ul {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: get-vh( 117px);
+    top: get-vh(54px);
     left: get-vw(92px);
   }
 
 }
 
-.drivedrive-menu a {
+
+.cat {
+    
+    margin-top: get-vh(24px);
+    width: get-vw(210px);
+    height: get-vh(56px);
     text-decoration: none;
     color: #000000;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    font-size: get-vw(41px);
+    font-size: get-vw(50px);
     font-family: TimesNewRomanPSMT;
-    letter-spacing: get-vw(-2.4px);
+    letter-spacing: get-vw(-2.1px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
-    width: get-vw(210px);
-    height: get-vh(56px);
-    &:hover {
-      color: #ffc278;
-    }
+
 }
+
+.active {
+        color:rgb(255, 194, 120);
+    }
+
+.events {
+    margin-top: get-vh(1px);
+	width: get-vw(150px);
+	height: get-vh(56px);
+    text-decoration: none;
+	font-family: TimesNewRomanPSMT;
+	font-size: get-vw(50px);
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: get-vw(-2.1px);
+	text-align: left;
+	color: #000000;
+}
+
+.act {
+    color:rgb(255, 194, 120);
+}
+
+
+.active-color-home {
+    color: #000000;
+}
+
+
 /* END STYLING FOR BIG MAC */
 /* BEGIN STYLING FOR HOMEPAGE
 
-ALL WIDTH & HEIGHT PROPERTIES ARE FROM ZEPLIN.
-
-all position:relative and bottom/left/top/right properties are me not knowing how to
-position things well and forcing things to be positioned into place
-
-Feel free to change all if you know of a better way to position the elements (gray cloud, blue/green/red lines, etc.) better!
-
-*/
 /* STYLING FOR THE GALLERY SPACE IMAGE */
 #gallery-space-img {
     width: get-vw(933px);
     height: get-vh(863px);
     position: absolute;
-    top: get-vw(102px);
-    left: get-vw(226px);
+    top: get-vw(46px);
+    left: get-vw(400px);
+    cursor: pointer;
+}
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
 }
 
 /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
 #home-red-line {
-    width: get-vw(288.4px);
-    height: get-vh(156px);
+    width: get-vw(401.8px);
+    height: get-vh(217.3px);
     object-fit: contain;
     position: absolute;
-    top: get-vh(366px);
-    left: get-vw(16px);
+    top: get-vh(313px);
+    left: get-vw(172px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
@@ -85,18 +121,19 @@ Feel free to change all if you know of a better way to position the elements (gr
     height: get-vh(160px);
     object-fit: contain;
     position: absolute;
-    top: get-vh(630px);
-    left: get-vw(868px);
+    top: get-vh(700px);
+    left: get-vw(1020px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10;
 }
 
 #home-blue-line {
-    width: get-vw(183.8px);
-    height: get-vh(185px);
+    width: get-vw(299px);
+    height: get-vh(203.5px);
     object-fit: contain;
     position: absolute;
-    top: get-vh(133px);
-    left: get-vw(974px);
+    top: get-vh(109.9px);
+    left: get-vw(1252.9px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 /* STYLING FOR MODAL */
@@ -127,18 +164,21 @@ Feel free to change all if you know of a better way to position the elements (gr
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: get-vw(447px) get-vh(276px);
-    width: get-vw(447px);
-    height: get-vh(276px);
-    bottom: get-vh(74px);
-    left: get-vw(45px);
+    width: get-vw(538px);
+    top: get-vh(604px);
+    height: get-vh(333px);
+    bottom: get-vh(87px);
+    left: get-vw(65px);
+    object-fit: contain;
+
 }
 
 #home-v {
-  width: get-vw(296px);
-  height: get-vh(166px);
     position: absolute;
-  bottom: get-vh(128px);
-  left: get-vw(109px);
+    width: 17.46753vw;
+    height: 16.21094vh;
+    left: 9.07792vw;
+    top: 65.28906vh;
 }
 
 .fadeIn {
@@ -148,39 +188,45 @@ Feel free to change all if you know of a better way to position the elements (gr
 
 #modal{
     position:absolute;
-    top:get-vh(235px);
-    left:get-vw(484px);
-    width: get-vw(490px);
-	height: get-vh(713px);
+    top:get-vh(128px);
+    left:get-vw(666px);
+    width: get-vw(470.2px);
+	height: get-vh(670.5px);
+    object-fit: contain;
     background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-    /* background-color: #ffffff; */
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    z-index: 40;
 
+    .words {
 
-p {
-    width: get-vw(289px);
-    height: get-vh(456px);
-    word-wrap: normal;
-    font-family: TimesNewRomanPSMT;
-    font-size: get-vh(18px);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.06;
-    letter-spacing: get-vw(-0.8px);
-    text-align: left;
-    color: #222222;
-    z-index: 1000;
-    margin-top: get-vh(69px);
-    margin-left: get-vw(57px);
-    margin-right: get-vw(44px);
-    margin-bottom: get-vh(88px);
+        width: get-vw(289px);
+        height: get-vh(456px);
+        left:get-vw(800px);
+        right: get-vw(445px);
+        top:get-vh(186px);
+        word-wrap: normal;
+        font-family: TimesNewRomanPSMT;
+        font-size: get-vh(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: get-vh(18px);
+        letter-spacing: get-vw(-0.9px);
+        text-align: left;
+        color: #222222;
+        z-index: 1000;
+        margin-top: get-vh(69px);
+        margin-left: get-vw(78px);
+        margin-right: get-vw(44px);
+        margin-bottom: get-vh(88px);
+        letter-spacing: normal;
+        justify-content: center;
+        align-content: center;
 
-    }
-
+        }
 }

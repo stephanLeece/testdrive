@@ -1,5 +1,6 @@
 {{> big-mac}} {{> infoLink}} {{>backLink}}
 
+<div class="events-menu" >
 <div class="eventList" id="ddEventsList">
     {{#eventList}}
     <div class="eventDetails">
@@ -12,11 +13,13 @@
 <div class="eventsInfoBox" id="ddEventsInfobox">
   {{#eventList}}
     <div class= {{eventClassName}}>
-      {{{eventInfo}}}
       {{#eventContent}}
       <img src={{image}} alt="">
         <p>{{imageDescrip}}</p>
       {{/eventContent}}
+      <br></br>
+       {{{eventInfo}}}
     </div>
   {{/eventList}}
   </div>
+</div>
