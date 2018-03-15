@@ -6,6 +6,11 @@ backButton.on('click', () => {
     window.history.back();
 });
 
+
+
+
+// FUNCTION TO SHOW MODAL ON HOME PAGE
+// ~~~~~~~~ FULL-SCREEN ~~~~~~~~
 function showModal() {
 
     $("#gallery-space-img").on('click', function() {
@@ -16,6 +21,10 @@ function showModal() {
 
 showModal();
 
+
+
+// FADE OUT HULK IMAGE & FADE IN HOME PAGE
+// ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
     $('#halk').fadeOut(5000);
 
@@ -25,6 +34,13 @@ function fadeIntoImg() {
 }
 
 fadeIntoImg();
+
+
+// HAMBURGER MENU FUNCTIONALITY
+// ~~~~~~~~ MOBILE ~~~~~~~~
+$(".burger").on("click", function() {
+    console.log("burger");
+});
 
 
 // ------------------------------- testdrive/events functions ------------------
@@ -39,7 +55,7 @@ $('p').on('click', e => {
 
 });
 
-//trying to work this out 
+//trying to work this out
 // $(document).ready(function(){
 //     $("ddEventsList").trigger("click");
 // });
