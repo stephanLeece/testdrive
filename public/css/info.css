@@ -96,3 +96,13 @@ input {
   bottom: 8.39844vh;
   right: 2.20779vw;
   z-index: 10; }
+
+/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  #infoMap {
+    position: absolute;
+    width: 92.8vw;
+    height: 62.21889vh;
+    top: 18.44078vh;
+    left: 3.73333vw; } }

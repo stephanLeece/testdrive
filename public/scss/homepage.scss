@@ -251,7 +251,7 @@ width: get-vw(354px);
 
 
 
-/* MOBILE DESIGN FOR INFO PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 
@@ -268,7 +268,28 @@ width: get-vw(354px);
     @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width:375px) and (max-width:600px){
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:600px) {
+
+
+    /* STYLING FOR MENU - MOBILE */
+    /* STYLING FOR HAMBURGER MENU ICON */
+    .burger {
+        display: block;
+        width: get-vw-mob(24px);
+        height: get-vh-mob(24px);
+        position: absolute;
+        top: get-vh-mob(84px);
+        left: get-vw-mob(176px);
+    }
 
 
     #DriveDrive {
@@ -276,11 +297,7 @@ width: get-vw(354px);
         left: get-vw-mob(46px);
         width: get-vw-mob(284px);
         height: get-vh-mob(45px);
-    // height: get-vh(55px);
-    position: fixed;
-    // top: get-vh(54px);
-    // left: get-vw(143px);
-    // z-index: 10;
+        position: fixed;
     }
 
 
@@ -396,14 +413,17 @@ width: get-vw(354px);
         z-index: 10;
     }
 
-    .burger {
-        display: block;
-        width: get-vw-mob(24px);
-        height: get-vh-mob(24px);
-        position: absolute;
-        top: get-vh-mob(84px);
-        left: get-vw-mob(176px);
-    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -448,11 +468,11 @@ width: get-vw(354px);
     #home-container {
         opacity: 0;
         transition: 5s;
-        -webkit-transition: opacity 2s ease-in;
-        -moz-transition: opacity 2s ease-in;
-        -ms-transition: opacity 2s ease-in;
-        -o-transition: opacity 2s ease-in;
-        transition: opacity 2s ease-in;
+        -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+        transition: opacity 1s ease-in;
     }
 
     .home-video {
