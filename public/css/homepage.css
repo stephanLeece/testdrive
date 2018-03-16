@@ -185,9 +185,18 @@
     justify-content: center;
     align-content: center; }
 
-/* MOBILE DESIGN FOR INFO PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media screen and (min-width: 375px) and (max-width: 600px) {
+  /* STYLING FOR MENU - MOBILE */
+  /* STYLING FOR HAMBURGER MENU ICON */
+  .burger {
+    display: block;
+    width: 6.4vw;
+    height: 3.5982vh;
+    position: absolute;
+    top: 12.5937vh;
+    left: 46.93333vw; }
   #DriveDrive {
     top: 4.04798vh;
     left: 12.26667vw;
@@ -273,13 +282,6 @@
     left: 50.66667vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: 10; }
-  .burger {
-    display: block;
-    width: 6.4vw;
-    height: 3.5982vh;
-    position: absolute;
-    top: 12.5937vh;
-    left: 46.93333vw; }
   /* STYLING FOR TESTDRIVE LOGO */
   .tdLogo {
     position: absolute;
@@ -308,11 +310,11 @@
   #home-container {
     opacity: 0;
     transition: 5s;
-    -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in; }
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in; }
   .home-video {
     position: absolute;
     background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");

@@ -8,6 +8,7 @@
     @return ($object / $vh) * 1vh;
 }
 
+
 #infoContactBg {
   width: get-vw(446.4px);
   height: get-vh(515.3px);
@@ -124,4 +125,61 @@
   bottom: get-vh(86px);
   right: get-vw(34px);
   z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+@function get-vw-mob($object) {
+    $vw: (375 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
+}
+
+@function get-vh-mob($object) {
+    $vh: (667 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:600px) {
+
+
+    #infoMap {
+        position: absolute;
+        width: get-vw-mob(348px);
+        height: get-vh-mob(415px);
+        top: get-vh-mob(123px);
+        left: get-vw-mob(14px);
+    }
+
+
 }

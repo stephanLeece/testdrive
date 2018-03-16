@@ -9,6 +9,14 @@ backButton.on('click', () => {
 
 
 
+
+
+
+
+
+
+
+
 // FUNCTION TO SHOW MODAL ON HOME PAGE
 // ~~~~~~~~ FULL-SCREEN ~~~~~~~~
 function showModal() {
@@ -20,6 +28,15 @@ function showModal() {
 }
 
 showModal();
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,11 +53,115 @@ function fadeIntoImg() {
 fadeIntoImg();
 
 
+
+
+
+
+
+
+
+
+
 // HAMBURGER MENU FUNCTIONALITY
 // ~~~~~~~~ MOBILE ~~~~~~~~
 $(".burger").on("click", function() {
-    console.log("burger");
+
+    if (location.pathname == "/info") {
+
+        $('body').css({
+            'background': 'none'
+        });
+
+        $("#hide-for-mobile").css({
+            "display": "none"
+        });
+
+        $(".mob-container").animate({ opacity: 1 }).css({
+            "z-index": "0"
+        });
+
+    }
+
+    $(".mob-container").animate({ opacity: 1 }).css({
+        "left": "0px"
+    });
+
+    $(".tdLogo").css({
+        "visibility": "hidden"
+    });
+
+    // $("#home-container").css({
+    //     "display": "none",
+    //     "transition": "0s"
+    // });
+
+    $('.burger').hide();
+
+    $("body").css({
+        "background-color": "white"
+    });
+
+
 });
+
+
+// CLOSE THE MENU - MOBILE ONLY
+$(".x").on('click', function() {
+
+    if (location.pathname == "/info") {
+        $('body').css({'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed', 'background-size': '100vw 100vh'});
+
+
+        $("#hide-for-mobile").css({
+            "display": "block"
+        });
+
+        $(".mob-container").animate({ opacity: 1 }).css({
+            "z-index": "5000"
+        });
+
+
+    }
+
+    $(".mob-container").css({
+        "left": "100%"
+    });
+
+    $(".tdLogo").css({
+        "visibility": "visible"
+    });
+    //
+    // $("#home-container").css({
+    //     "display": "block   ",
+    //     "transition": "0s"
+    // });
+
+    $('.burger').show();
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ------------------------------- testdrive/events functions ------------------
