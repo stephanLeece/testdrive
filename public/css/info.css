@@ -100,9 +100,96 @@ input {
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media screen and (min-width: 375px) and (max-width: 600px) {
+  #mobile-background-img {
+    background: url(../assets/mobile/Info-mobile.png);
+    background-size: 106.66667vw 190.25487vh;
+    width: 100vw;
+    height: 190.25487vh;
+    top: 100.74963vh;
+    left: 0vw;
+    background-repeat: repeat-y; }
   #infoMap {
     position: absolute;
     width: 92.8vw;
     height: 62.21889vh;
     top: 18.44078vh;
-    left: 3.73333vw; } }
+    left: 3.73333vw; }
+  #infoContactBg {
+    position: absolute;
+    width: 100vw;
+    height: 77.25637vh;
+    top: 86.65667vh;
+    left: 0vw; }
+  #infoContactInfo {
+    position: absolute;
+    width: 65.33333vw;
+    height: 48.27586vh;
+    top: 92.50375vh;
+    left: 6.4vw;
+    margin: 1.49925vh 28.26667vw 23.13343vh 3.73333vw;
+    /* STYLING FOR FONT */
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  form {
+    position: absolute;
+    width: 58.93333vw;
+    height: 5.997vh;
+    top: 147.82609vh;
+    left: 6.66667vw; }
+  .sign-up-to-our-maili {
+    position: absolute;
+    width: 65.33333vw;
+    height: 3.44828vh;
+    top: 50.22489vh;
+    left: 6.93333vw;
+    /* STYLING FOR FONT */
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  input {
+    font-size: 1.2987vw;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: TimesNewRomanPSMT; }
+    input[type="email"] {
+      width: 58.93333vw;
+      height: 5.997vh;
+      outline: none;
+      padding-left: 64vw; }
+    input[type="submit"] {
+      border-left: 2px solid black;
+      width: 28.8vw;
+      height: 5.997vh;
+      padding-left: 6.93333vw;
+      /* STYLING FOR FONT */
+      font-family: TimesNewRomanPSMT;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222; }
+  #tdLogo {
+    position: absolute;
+    width: 77.33333vw;
+    height: 4.49775vh;
+    top: 179.46027vh;
+    left: 11.2vw; }
+  #credits {
+    display: none; } }
