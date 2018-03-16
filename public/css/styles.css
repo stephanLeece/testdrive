@@ -65,7 +65,7 @@ body {
 @media screen and (min-width: 375px) and (max-width: 600px) {
   /* STYLING FOR NAV MENU - MOBILE */
   .mob-container {
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     top: 12.5937vh;
     height: 100%;

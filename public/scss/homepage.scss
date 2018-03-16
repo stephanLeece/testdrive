@@ -293,11 +293,11 @@ width: get-vw(354px);
 
 
     #DriveDrive {
-        top: get-vh-mob(27px);
-        left: get-vw-mob(46px);
+        top: get-vh-mob(0px);
+        left: get-vw-mob(27px);
         width: get-vw-mob(284px);
         height: get-vh-mob(45px);
-        position: fixed;
+        position: absolute;
     }
 
 
