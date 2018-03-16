@@ -145,33 +145,3 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-@media screen and (min-width:375px) and (max-width:600px){
-
-
-    .video-container {
-      position: absolute;
-      background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width:get-vw-mob(349px);
-      height:get-vh-mob(323px);
-      object-fit: contain;
-      top: get-vh-mob(138px);
-      left: get-vw-mob(13px);
-    }
-
-
-
-} /* CLOSES MEDIA QUERIES */

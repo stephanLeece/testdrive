@@ -106,18 +106,3 @@
   height: 19.53125vh;
   width: 22.0974vw;
   margin-top: 5.84961vh; }
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 375px) and (max-width: 600px) {
-  .video-container {
-    position: absolute;
-    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 93.06667vw;
-    height: 48.42579vh;
-    object-fit: contain;
-    top: 20.68966vh;
-    left: 3.46667vw; } }
-
-/* CLOSES MEDIA QUERIES */

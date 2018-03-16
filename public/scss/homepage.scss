@@ -472,27 +472,27 @@ width: get-vw(354px);
 
     #modal{
         position:absolute;
-        top:get-vh(128px);
-        left:get-vw(666px);
-        width: get-vw(470.2px);
-    	height: get-vh(670.5px);
+        top:get-vh(51px);
+        left:get-vw(0px);
+        width: get-vw(375px);
+    	height: get-vh(613px);
         object-fit: contain;
         background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        z-index: 40;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-content: center;
+        // z-index: 40;
 
         .words {
 
             width: get-vw(289px);
-            height: get-vh(456px);
-            left:get-vw(800px);
-            right: get-vw(445px);
-            top:get-vh(186px);
+            height: get-vh(437px);
+            left:get-vw(44px);
+            right: get-vw(42px);
+            top:get-vh(120px);
             word-wrap: normal;
             font-family: TimesNewRomanPSMT;
             font-size: get-vh(20px);
@@ -505,9 +505,9 @@ width: get-vw(354px);
             color: #222222;
             z-index: 1000;
             margin-top: get-vh(69px);
-            margin-left: get-vw(78px);
-            margin-right: get-vw(44px);
-            margin-bottom: get-vh(88px);
+            margin-left: get-vw(44 px);
+            margin-right: get-vw(42px);
+            margin-bottom: get-vh(107px);
             letter-spacing: normal;
             justify-content: center;
             align-content: center;
