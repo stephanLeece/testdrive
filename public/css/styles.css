@@ -70,7 +70,7 @@ body {
     top: 12.5937vh;
     height: 100%;
     background-color: white;
-    z-index: 5000; }
+    z-index: 4000; }
   .x {
     position: absolute;
     width: 3.73333vw;
