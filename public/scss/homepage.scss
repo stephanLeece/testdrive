@@ -493,7 +493,10 @@ width: get-vw(354px);
         width:get-vw-mob(145.6px);
         height:get-vh-mob(81.6px);
         top: get-vh-mob(450.2px);
-        left: get-vw-mob(153.2px);
+        left: get-vw-mob(151.2px);
+        margin: get-vh-mob(1.2px) get-vw-mob(53.2px) get-vh-mob(27.2px) get-vw-mob(-5px);
+        z-index: 10;
+
     }
 
     .fadeIn {

@@ -330,7 +330,9 @@
     width: 38.82667vw;
     height: 12.23388vh;
     top: 67.49625vh;
-    left: 40.85333vw; }
+    left: 40.32vw;
+    margin: 0.17991vh 14.18667vw 4.07796vh -1.33333vw;
+    z-index: 10; }
   .fadeIn {
     opacity: 1; }
   #modal {
