@@ -46,7 +46,7 @@
 .events-menu {
   visibility: visible; }
 
-/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR DRIVEDRIVE EVENTS - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+/* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .eventList {
@@ -83,3 +83,5 @@
     background: url(../assets/mobile/rectangle-5.svg); }
   .events-menu {
     visibility: visible; } }
+
+/* CLOSES MEDIA QUERIES */

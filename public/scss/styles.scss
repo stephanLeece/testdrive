@@ -94,6 +94,14 @@ body {
 }
 
 
+/* STYLING FOR NAV MENU - MOBILE */
+.mob-container {
+    // opacity: 0;
+    position: absolute;
+    left: 100%;
+}
+
+
 ////////////////////////////////////////////////////////////////////////////////
 /* MOBILE DESIGN  */
 
@@ -109,9 +117,135 @@ body {
     @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width:375px) and (max-width:600px){
+@media screen and (min-width:375px) and (max-width:600px) {
 
 
+    /* STYLING FOR NAV MENU - MOBILE */
+    .mob-container {
+        position: fixed;
+        min-width: 100%;
+        top: get-vh-mob(84px);
+        height: 100%;
+        background-color: white;
+        z-index: 4000;
+    }
+
+    .x {
+        position: absolute;
+        width: get-vw-mob(14px);
+        height: get-vh-mob(14px);
+        top: get-vh-mob(5px);
+        left: get-vw-mob(180px);
+    }
+
+    #mob-cat {
+        position: absolute;
+        width: get-vw-mob(157px);
+        height: get-vh-mob(46px);
+        top: get-vh-mob(43px);
+        left: get-vw-mob(109.5px);
+
+        /* STYLING FOR FONTS */
+        font-family: TimesNewRomanPSMT;
+        font-size: 41px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -2.4px;
+        text-align: center;
+        color: #000000;
+        -webkit-text-stroke: 0 #979797;
+
+    }
+
+
+    #mob-eve {
+        position: absolute;
+        width: get-vw-mob(113px);
+        height: get-vh-mob(46px);
+        top: get-vh-mob(88px);
+        left: get-vw-mob(131.5px);
+
+        /* STYLING FOR FONTS */
+        font-family: TimesNewRomanPSMT;
+        font-size: 41px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -2.2px;
+        text-align: center;
+        color: #000000;
+
+    }
+
+
+    #mob-info {
+        position: absolute;
+        width: get-vw-mob(58px);
+        height: get-vh-mob(46px);
+        top: get-vh-mob(158px);
+        left: get-vw-mob(159px);
+
+        /* STYLING FOR FONTS */
+        font-family: TimesNewRomanPSMT;
+        font-size: 41px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -2.2px;
+        text-align: center;
+        color: #000000;
+
+    }
+
+
+    #mob-bike {
+        position: absolute;
+        width: get-vw-mob(39px);
+        height: get-vh-mob(54px);
+        top: get-vh-mob(194px);
+        left: get-vw-mob(169px);
+    }
+
+
+
+    #mob-testdr-title {
+        position: absolute;
+        width: get-vw-mob(290px);
+        height: get-vh-mob(30px);
+        top: get-vh-mob(413px);
+        left: get-vw-mob(42px);
+    }
+
+    #mob-test-eve {
+        position: absolute;
+        width: get-vw-mob(113px);
+        height: get-vh-mob(46px);
+        top: get-vh-mob(457px);
+        left: get-vw-mob(130.5px);
+
+
+        /* STYLING FOR FONTS */
+        font-family: TimesNewRomanPSMT;
+        font-size: 41px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -2.2px;
+        text-align: center;
+        color: #000000;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+}
 
 
 

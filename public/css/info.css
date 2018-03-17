@@ -97,8 +97,9 @@ input {
   right: 2.20779vw;
   z-index: 10; }
 
-/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+/* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 375px) and (max-width: 600px) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
