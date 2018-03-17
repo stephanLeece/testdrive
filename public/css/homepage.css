@@ -187,8 +187,7 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-<<<<<<< HEAD
-=======
+
 @media screen and (min-width: 375px) and (max-width: 600px) {
   /* STYLING FOR MENU - MOBILE */
   /* STYLING FOR HAMBURGER MENU ICON */
@@ -200,11 +199,11 @@
     top: 12.5937vh;
     left: 46.93333vw; }
   #DriveDrive {
-    top: 4.04798vh;
-    left: 12.26667vw;
+    top: 0vh;
+    left: 7.2vw;
     width: 75.73333vw;
     height: 6.74663vh;
-    position: fixed; }
+    position: absolute; }
   .drivedrive-menu ul {
     position: absolute;
     display: flex;
@@ -375,5 +374,4 @@
       justify-content: center;
       align-content: center; } }
 
->>>>>>> cd89a23c9e6e55d2a52d499e31c906150d5a5c02
 /* CLOSES MEDIA QUERIES */

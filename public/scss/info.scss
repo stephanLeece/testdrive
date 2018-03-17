@@ -9,16 +9,26 @@
 }
 
 
+// #desktop-background-img {
+//     background: url(../assets/Elements/Info/Info-bgA.png) no-repeat center fixed;
+//     background-size: cover;
+//     position: fixed;
+//     width: get-vw(1540px);
+//     height: 100%;
+//
+// }
+
+
 #infoContactBg {
-  width: get-vw(446.4px);
-  height: get-vh(515.3px);
-  // object-fit: contain;
-  position: absolute;
-  left: get-vw(141px);
-  top: get-vh(335px);
-  top: get-vh(328px);
-  bottom: get-vh(180.7px);
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    width: get-vw(446.4px);
+    height: get-vh(515.3px);
+    // object-fit: contain;
+    position: absolute;
+    left: get-vw(141px);
+    top: get-vh(335px);
+    top: get-vh(328px);
+    bottom: get-vh(180.7px);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
 
