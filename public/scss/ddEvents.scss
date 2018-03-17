@@ -13,30 +13,31 @@
 // ------------------------------------------
 
 .eventList {
- display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: space-between;
-position: absolute;
-top: get-vh(405px);
-// left: get-vw(64.7px);
-left: get-vw(114px);
-
-.eventDetails {
     display: flex;
     flex-direction: column;
-    font-family: TimesNewRomanPSMT;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #222222;
-    width: get-vw(445px);
-    height: get-vh(107.9px);
-    left: get-vw(64.7px);
-}
+    justify-content: flex-start;
+    align-items: space-between;
+    position: absolute;
+    top: get-vh(405px);
+    // left: get-vw(64.7px);
+    left: get-vw(114px);
+
+    .eventDetails {
+        display: flex;
+        flex-direction: column;
+        font-family: TimesNewRomanPSMT;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: -0.9px;
+        text-align: left;
+        color: #222222;
+        width: get-vw(445px);
+        height: get-vh(107.9px);
+        left: get-vw(64.7px);
+    }
+
 }
 
 
@@ -49,9 +50,11 @@ left: get-vw(114px);
   display: flex;
   justify-content: center;
   overflow-y: scroll;
+
   div {
     width: 94%;
   }
+
 }
 
 .eventDetails {
@@ -63,14 +66,14 @@ left: get-vw(114px);
 }
 
 #ddEventsList {
-  .eventDetails :hover {
-    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-    background-size:  contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 50px;
-    margin: -50px;
-  }
+  // .eventDetails :hover {
+  //   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+  //   background-size:  contain;
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+  //   padding: 50px;
+  //   margin: -50px;
+  // }
 }
 
 #ddEventsInfobox {

@@ -1,3 +1,10 @@
+if ($(window).width() > 600) {
+    $(".mob-container").hide();
+} else {
+    $(".mob-container").show();
+}
+
+
 if (window.location.pathname == '/info') {
 //
 //     if ($(window).width() > 375 && $(window).width() < 600) {

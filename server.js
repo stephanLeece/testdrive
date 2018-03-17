@@ -31,6 +31,13 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
+
+
+
+
+
+
+
 app.get('/', function(req, res) {
     let video = {};
     client.getEntries().then((entries) => {
@@ -45,6 +52,13 @@ app.get('/', function(req, res) {
         });
     });
 });
+
+
+
+
+
+
+
 function compare(a, b) {
     var splitA = a.split(" ");
     var splitB = b.split(" ");
