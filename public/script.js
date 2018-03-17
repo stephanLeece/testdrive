@@ -1,5 +1,20 @@
 // ---------------------------------- homepage functions -----------------
 
+
+var clicked;
+$('.eventDetails').on('click', function(e) {
+
+    if (clicked) {
+        clicked.removeClass("clickedEvent");
+    }
+
+    clicked = $(e.currentTarget);
+    $(e.currentTarget).addClass("clickedEvent");
+
+});
+
+
+
 let backButton = $("#backButton");
 
 backButton.on('click', () => {
@@ -65,6 +80,8 @@ fadeIntoImg();
 // HAMBURGER MENU FUNCTIONALITY
 // ~~~~~~~~ MOBILE ~~~~~~~~
 $(".burger").on("click", function() {
+
+    $(".mob-container").show();
 
     if (location.pathname == "/info") {
 
