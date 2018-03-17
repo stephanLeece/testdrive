@@ -152,7 +152,149 @@
     @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width:375px) and (max-width:600px){
+/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 
 
-} /* CLOSES MEDIA QUERIES */
+
+
+
+@media screen and (min-width:375px) and (max-width:600px) {
+
+
+    #mobile-background-img {
+        background: url(../assets/mobile/Info-mobile.png);
+        background-size: get-vw-mob(400px) get-vh-mob(1269px);
+        width: get-vw-mob(375px);
+        height: get-vh-mob(1269px);
+        top: get-vh-mob(672px);
+        left: get-vw-mob(0px);
+        background-repeat: repeat-y;
+
+    }
+
+
+    #infoMap {
+        position: absolute;
+        width: get-vw-mob(348px);
+        height: get-vh-mob(415px);
+        top: get-vh-mob(123px);
+        left: get-vw-mob(14px);
+    }
+
+
+    #infoContactBg {
+        position: absolute;
+        width: get-vw-mob(375px);
+        height: get-vh-mob(515.3px);
+        top: get-vh-mob(578px);
+        left: get-vw-mob(0px);
+    }
+
+
+    #infoContactInfo {
+        position: absolute;
+        width: get-vw-mob(245px);
+        height: get-vh-mob(322px);
+        top: get-vh-mob(617px);
+        left: get-vw-mob(24px);
+        margin: get-vh-mob(10px) get-vw-mob(106px) get-vh-mob(154.3px) get-vw-mob(14px);
+
+        /* STYLING FOR FONT */
+        font-family: TimesNewRomanPSMT;
+        font-size: get-vh-mob(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.05;
+        letter-spacing: -0.9px;
+        text-align: left;
+        color: #222222;
+    }
+
+    form {
+        position: absolute;
+        width: get-vw-mob(221px);
+        height: get-vh-mob(40px);
+        top: get-vh-mob(986px);
+        left: get-vw-mob(25px);
+    }
+
+    .sign-up-to-our-maili {
+        position: absolute;
+        width: get-vw-mob(245px);
+        height: get-vh-mob(23px);
+        top: get-vh-mob(335px);
+
+        /* STYLING FOR FONT */
+        font-family: TimesNewRomanPSMT;
+        font-size: get-vh-mob(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.05;
+        letter-spacing: -0.9px;
+        text-align: left;
+        color: #222222;
+    }
+
+
+    /* STYLING FOR THE MAILING FORM & INPUT FIELD */
+    form {
+        position: absolute;
+        width: get-vw-mob(315px);
+        left: get-vw-mob(38px);
+        text-align: center;
+    }
+
+
+    input {
+        font-size: get-vw(20px);
+        background: none;
+        border: none;
+        outline: none;
+
+        /* STYLING FOR FONT */
+        font-family: TimesNewRomanPSMT;
+        font-size: get-vh-mob(20px);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.9px;
+        text-align: center;
+        color: #222222;
+
+      &[type="email"] {
+        width: get-vw-mob(221px);
+        height: get-vh-mob(40px);
+        outline: none;
+        // padding-left: get-vw-mob(140px);
+        // left: get-vw-mob(50px);
+      }
+
+      &[type="submit"] {
+        border-left: 2px solid black;
+        width: get-vw-mob(100px);
+        height: get-vh-mob(40px);
+      }
+
+    }
+
+
+
+    #tdLogo {
+        position: absolute;
+        width: get-vw-mob(290px);
+        height: get-vh-mob(30px);
+        top: get-vh-mob(1197px);
+        left: get-vw-mob(42px);
+    }
+
+    #credits {
+        display: none;
+    }
+
+
+
+}
+
