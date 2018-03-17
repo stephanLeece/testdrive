@@ -187,6 +187,7 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+
 @media screen and (min-width: 375px) and (max-width: 600px) {
   /* STYLING FOR MENU - MOBILE */
   /* STYLING FOR HAMBURGER MENU ICON */
