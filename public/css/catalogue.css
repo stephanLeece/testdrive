@@ -106,3 +106,112 @@
   height: 19.53125vh;
   width: 22.0974vw;
   margin-top: 5.84961vh; }
+
+/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .artistbackground {
+    position: absolute;
+    width: 73.89333vw;
+    height: 103.11844vh;
+    object-fit: contain;
+    left: 10.66667vw;
+    top: 32.53373vh;
+    z-index: -2000; }
+  #artist-container {
+    position: absolute;
+    top: 37.03148vh;
+    left: 34.93333vw;
+    height: 103.11844vh;
+    width: 53.33333vw;
+    margin-right: 3.46667vw;
+    z-index: 3000;
+    background-repeat: no-repeat; }
+    #artist-container .artists {
+      position: absolute;
+      height: 37.03148vh;
+      width: 39.73333vw;
+      left: -3.46667vw;
+      top: 7.04648vh;
+      font-family: TimesNewRomanPSMT;
+      font-size: 5.33333vw;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.73438vh;
+      text-align: left;
+      color: #222222;
+      z-index: 3000; }
+  #catalogue-line-green {
+    position: absolute;
+    width: 43.46667vw;
+    height: 35.98201vh;
+    object-fit: contain;
+    top: 95.2024vh;
+    left: 8vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: -2001; }
+  #catalogue-line-blue {
+    height: 29.38531vh;
+    width: 66.4vw;
+    object-fit: contain;
+    position: absolute;
+    top: 30.43478vh;
+    left: 29.06667vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: -2001; }
+  #video-container {
+    position: absolute;
+    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 92.8vw;
+    height: 33.43328vh;
+    object-fit: contain;
+    margin-top: 157.42129vh;
+    left: 8vw;
+    bottom: 1.7991vh;
+    margin-bottom: 0vh; }
+  #video {
+    position: absolute;
+    height: 22.33883vh;
+    left: 15.30667vw;
+    margin-left: 11.30667vw;
+    margin-right: 0vw;
+    margin-bottom: 5.997vh; }
+  #pdfs-container {
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+    top: 141.67916vh;
+    left: 0vw;
+    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg");
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5); }
+  .pds {
+    position: absolute;
+    top: 1.26953vh;
+    width: 29.87013vw;
+    height: 98.73047vh;
+    list-style-type: none;
+    display: block;
+    margin-left: 0.64935vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.9px;
+    text-align: left;
+    color: #222222; }
+  .pds li {
+    padding-bottom: 0.97403vw; }
+  .pdf {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-size: 8vw; }
+  .pdf:hover {
+    color: #ff4819; } }
+
+/* CLOSES MEDIA QUERIES */
