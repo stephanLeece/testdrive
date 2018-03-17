@@ -36,7 +36,7 @@ if (window.location.pathname == '/info') {
 // }else if {
 
 $(function() {
-    var current = location.pathname;
+    var current = "/catalogue";
     $('#cat').each(function() {
         var $this = $(this);
         // if the current path is like this link, make it active
@@ -49,15 +49,21 @@ $(function() {
 
 //Event route
 $(function() {
-    var current = location.pathname;
+    var current = "/events";
+    console.log("HELLO");
     $('#eve').each(function() {
         var $this = $(this);
         // if the current path is like this link, make it active
         if ($this.attr('href').indexOf(current) !== -1) {
             $this.addClass('act');
+        }else{
+
         }
     });
 });
+
+
+
 
 // ------ active color Orange on current route end ----
 
