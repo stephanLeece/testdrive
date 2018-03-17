@@ -39,14 +39,6 @@
   width: 28.8961vw;
   height: 10.53711vh; }
 
-#ddEventsList .eventDetails :hover {
-  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 50px;
-  margin: -50px; }
-
 #ddEventsInfobox {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); }
@@ -57,6 +49,31 @@
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR DRIVEDRIVE EVENTS - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media screen and (min-width: 375px) and (max-width: 600px) {
+  .eventList {
+    position: absolute;
+    width: 30.66667vw;
+    top: 17.69115vh;
+    left: 30.66667vw;
+    margin-top: 20px; }
+  /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
+  .clickedEvent {
+    display: inline-block;
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size: 92.34667vw 16.17691vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+    margin: -50px; }
+  .eventDetails {
+    display: block;
+    width: 9.06667vw;
+    height: 5.09745vh;
+    padding: 50px;
+    margin: -50px; }
+  .event-info-text {
+    display: block;
+    width: 54.4vw;
+    height: 4.94753vh; }
   #ddEventsInfobox {
     position: absolute;
     left: 0;
