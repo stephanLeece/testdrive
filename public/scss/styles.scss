@@ -93,6 +93,7 @@ body {
   height: 50px;
 }
 
+
 /* STYLING FOR NAV MENU - MOBILE */
 .mob-container {
     // opacity: 0;
@@ -210,6 +211,7 @@ body {
     }
 
 
+
     #mob-testdr-title {
         position: absolute;
         width: get-vw-mob(290px);
@@ -218,13 +220,13 @@ body {
         left: get-vw-mob(42px);
     }
 
-
     #mob-test-eve {
         position: absolute;
         width: get-vw-mob(113px);
         height: get-vh-mob(46px);
         top: get-vh-mob(457px);
         left: get-vw-mob(130.5px);
+
 
         /* STYLING FOR FONTS */
         font-family: TimesNewRomanPSMT;
