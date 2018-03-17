@@ -3,9 +3,6 @@ html {
 
 body {
   height: inherit;
-  display: grid;
-  grid-template-columns: repeat(12, 6.36364vw);
-  grid-column-gap: 1.948051948051948vw;
   background-size: 100%;
   background-repeat: no-repeat; }
 
