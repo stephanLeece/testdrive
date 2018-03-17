@@ -9,16 +9,26 @@
 }
 
 
+// #desktop-background-img {
+//     background: url(../assets/Elements/Info/Info-bgA.png) no-repeat center fixed;
+//     background-size: cover;
+//     position: fixed;
+//     width: get-vw(1540px);
+//     height: 100%;
+//
+// }
+
+
 #infoContactBg {
-  width: get-vw(446.4px);
-  height: get-vh(515.3px);
-  // object-fit: contain;
-  position: absolute;
-  left: get-vw(141px);
-  top: get-vh(335px);
-  top: get-vh(328px);
-  bottom: get-vh(180.7px);
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    width: get-vw(446.4px);
+    height: get-vh(515.3px);
+    // object-fit: contain;
+    position: absolute;
+    left: get-vw(141px);
+    top: get-vh(335px);
+    top: get-vh(328px);
+    bottom: get-vh(180.7px);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
 
@@ -213,7 +223,7 @@
 
         /* STYLING FOR FONT */
         font-family: TimesNewRomanPSMT;
-        font-size: 20px;
+        font-size: get-vh-mob(20px);
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -236,11 +246,10 @@
         width: get-vw-mob(245px);
         height: get-vh-mob(23px);
         top: get-vh-mob(335px);
-        left: get-vw-mob(26px);
 
         /* STYLING FOR FONT */
         font-family: TimesNewRomanPSMT;
-        font-size: 20px;
+        font-size: get-vh-mob(20px);
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -251,37 +260,46 @@
     }
 
 
+    /* STYLING FOR THE MAILING FORM & INPUT FIELD */
+    form {
+        position: absolute;
+        width: get-vw-mob(315px);
+        left: get-vw-mob(38px);
+        text-align: center;
+    }
+
+
     input {
-      font-size: get-vw(20px);
-      background: none;
-      border: none;
-      outline: none;
-      font-family: TimesNewRomanPSMT;
-
-      &[type="email"] {
-        width: get-vw-mob(221px);
-        height: get-vh-mob(40px);
+        font-size: get-vw(20px);
+        background: none;
+        border: none;
         outline: none;
-        padding-left: get-vw-mob(240px);
-      }
-
-      &[type="submit"] {
-        border-left: 2px solid black;
-        width: get-vw-mob(108px);
-        height: get-vh-mob(40px);
-        padding-left: get-vw-mob(26px);
 
         /* STYLING FOR FONT */
         font-family: TimesNewRomanPSMT;
-        font-size: 20px;
+        font-size: get-vh-mob(20px);
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.9px;
-        text-align: left;
+        text-align: center;
         color: #222222;
+
+      &[type="email"] {
+        width: get-vw-mob(221px);
+        height: get-vh-mob(40px);
+        outline: none;
+        // padding-left: get-vw-mob(140px);
+        // left: get-vw-mob(50px);
       }
+
+      &[type="submit"] {
+        border-left: 2px solid black;
+        width: get-vw-mob(100px);
+        height: get-vh-mob(40px);
+      }
+
     }
 
 
