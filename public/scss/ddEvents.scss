@@ -106,6 +106,61 @@
 
 @media screen and (min-width:375px) and (max-width:600px){
 
+.eventList {
+        position: absolute;
+        width: get-vw-mob(115px);
+        top: get-vh-mob(118px);
+        left: get-vw-mob(115px);
+        margin-top: 20px;
+    }
 
+
+    /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
+    .clickedEvent {
+        display: inline-block;
+        background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+        background-size:  get-vw-mob(346.3px) get-vh-mob(107.9px);
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 50px;
+        margin: -50px;
+    }
+
+    .eventDetails {
+        display: block;
+        width: get-vw-mob(34px);
+        height: get-vh-mob(34px);
+        // margin-top: get-vh-mob(18.3px);
+        // margin-left: get-vw-mob(16.7px);
+        padding: 50px;
+        margin: -50px;
+    }
+
+    .event-info-li {
+        
+    }
+
+    .event-info-text {
+        display: block;
+        width: get-vw-mob(204px);
+        height: get-vh-mob(33px);
+        // margin: get-vh-mob(263px) 0 0 get-vw-mob(66px);
+    }
+
+
+
+    #ddEventsInfobox {
+        position: absolute;
+        left: 0;
+        top: get-vh-mob(377px);
+        width: get-vw-mob(375px);
+        height: get-vh-mob(735px);
+        background: url(../assets/mobile/rectangle-5.svg);
+    }
+
+
+    .events-menu {
+        visibility: visible;
+    }
 
 } /* CLOSES MEDIA QUERIES */
