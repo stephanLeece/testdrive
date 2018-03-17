@@ -94,35 +94,8 @@ body {
 }
 
 
-/* STYLING FOR NAV MENU - MOBILE */
-.mob-container {
-    // opacity: 0;
-    position: absolute;
-    left: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-
-
-
+////////////////////////////////////////////////////////////////////////////////
+/* MOBILE DESIGN  */
 
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
@@ -135,6 +108,8 @@ body {
     $vh: (667 * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
 }
+
+@media screen and (min-width:375px) and (max-width:600px){
 
 
 
@@ -156,6 +131,8 @@ body {
         height: 100%;
         background-color: white;
         z-index: 4000;
+
+
     }
 
     .x {
@@ -273,3 +250,5 @@ body {
 
 
 }
+
+} /* CLOSES MEDIA QUERIES */
