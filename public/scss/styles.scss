@@ -247,7 +247,11 @@ body {
 
 }
 
-
+#cat, #eve {
+  &:hover {
+    color: rgb(255, 194, 120);
+  }
+}
 
 
 
@@ -382,7 +386,5 @@ body {
         text-decoration: none;
     }
 
-
-}
 
 } /* CLOSES MEDIA QUERIES */

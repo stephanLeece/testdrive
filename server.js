@@ -125,7 +125,7 @@ app.get('/events', function(req, res) {
     client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
         const eventList = entries.items
             ? entries.items.map((entry) => {
-                let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse());
+                let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse()) || null;
                 return {
                     eventClassName: entry.fields.ddClassName,
                     eventTitle: entry.fields.ddEventTitle,
@@ -149,7 +149,7 @@ app.get('/testdrive', function(req, res) {
     client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
         const eventList = entries.items
             ? entries.items.map((entry) => {
-                let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse());
+                let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse())  || null;
                 return {
                     eventClassName: entry.fields.tdClassName,
                     eventTitle: entry.fields.tdEventTitle,
