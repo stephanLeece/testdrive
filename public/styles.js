@@ -7,7 +7,6 @@ if ($(window).width() > 600) {
 $('.eventsInfoBox').find('div').addClass('hidden');
 $(".eventDetails").click(function() {
   let eventIndex = $(this).index();
-  console.log(eventIndex);
   $('.eventsInfoBox').find('div').addClass('hidden');
   $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
 });

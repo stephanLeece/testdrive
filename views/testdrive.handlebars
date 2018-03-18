@@ -1,23 +1,24 @@
-{{> testdriveEvents }}
-{{> backLink}}
+{{> testdriveEvents }} {{> backLink}}
 
-<div class="eventList" id="tdEventsList">
-  {{#eventList}}
-  <div class="eventDetails">
-      <!-- <img src="./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg"> -->
-      <p class= {{eventClassName}}>{{eventTitle}}</p>
-  </div>
-  {{/eventList}}
-</div>
 
-<div class="eventsInfoBox" id="tdEventsInfobox">
-{{#eventList}}
-  <div class= {{eventClassName}}>
-    {{#eventContent}}
-    <img src={{image}} alt="">
-      <p>{{imageDescrip}}</p>
-    {{/eventContent}}
-    {{{eventInfo}}}
+<div class="events-menu">
+  <div class="eventList" id="tdEventsList">
+    {{#eventList}}
+      <div class="eventDetails">
+        <p>{{eventDate}}</p>
+        <p>{{eventTitle}}</p>
+      </div>
+    {{/eventList}}
   </div>
-{{/eventList}}
+  <div class="eventsInfoBox" id="tdEventsInfobox">
+    {{#eventList}}
+    <div class='eventInfo'>
+        {{#eventContent}}
+          <img src= {{image}} alt="">
+          <p>{{imageDescrip}}</p>
+        {{/eventContent}}
+        {{{eventInfo}}}
+      </div>
+    {{/eventList}}
+  </div>
 </div>

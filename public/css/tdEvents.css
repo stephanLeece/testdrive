@@ -2,20 +2,10 @@
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 3.24675vw;
-  margin: -4.88281vh; }
+  background-position: center center;
+  padding: 50px;
+  margin: -50px; }
 
 #tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem #01df36); }
-
-.testdr-title {
-  position: absolute;
-  width: 18.83117vw;
-  height: 2.92969vh;
-  top: 9.76562vh;
-  left: 5.90909vw; }
-
-/* MOBILE DESIGN  */
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-/* CLOSES MEDIA QUERIES */

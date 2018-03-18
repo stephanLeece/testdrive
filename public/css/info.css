@@ -15,7 +15,7 @@
   height: 31.44531vh;
   margin-top: 35.83984vh;
   margin-bottom: 32.71484vh;
-  font-size: 1.95312vh;
+  font-size: 1.95313vh;
   font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
@@ -32,14 +32,14 @@ form {
   border: 1px solid black;
   width: 21.36364vw;
   height: 3.90625vh;
-  margin-top: 0.39062vh;
+  margin-top: 0.39063vh;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .sign-up-to-our-maili {
   width: 15.90909vw;
-  height: 1.95312vh;
+  height: 1.95313vh;
   margin-bottom: 29.10156vh;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;

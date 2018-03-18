@@ -1,0 +1,59 @@
+@function get-vw($object) {
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh($object) {
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+
+.eventList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  position: absolute;
+  top: get-vh(405px);
+  left: get-vw(64.7px);
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: TimesNewRomanPSMT;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: -0.9px;
+  text-align: left;
+  color: #222222;
+    width: get-vw(445px);
+    height: get-vh(107.9px);
+  }
+}
+
+
+.eventsInfoBox {
+  position: absolute;
+  left: get-vw(528px);
+  width: get-vw(740px);
+  height: get-vh(1021px);
+  background-size:  get-vw(740px) get-vh(1021px);
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  div {
+    width: 94%;
+  }
+}
+
+.eventDetails {
+  margin-bottom: get-vh(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: get-vw(445px);
+  height: get-vh(107.9px);
+}

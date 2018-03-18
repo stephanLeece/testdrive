@@ -7,18 +7,23 @@
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-// height: get-vh(20px);
-// ------------------------------------------
+@function get-vw-mob($object) {
+  $vw: (375 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh-mob($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
 
-//:hover
 #tdEventsList {
   .tdEventActive {
     background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
-    background-size:  contain;
+    background-size: contain;
     background-repeat: no-repeat;
-    padding: get-vw(50px);
-    margin: get-vh(-50px);
-    // left: get-vw(91px);
+    background-position: center center;
+    padding: 50px;
+    margin: -50px;
   }
 }
 
@@ -27,32 +32,6 @@
   filter: drop-shadow(0 0 0.75rem rgb(1, 223, 54));
 }
 
+@media screen and (min-width:375px) and (max-width:600px) {
 
-.testdr-title {
-    position: absolute;
-    width: get-vw(290px);
-	height: get-vh(30px);
-    top: get-vh(100px);
-    left: get-vw(91px);
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* MOBILE DESIGN  */
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-@media screen and (min-width:375px) and (max-width:600px){
-
-
-
-} /* CLOSES MEDIA QUERIES */
