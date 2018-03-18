@@ -173,13 +173,8 @@ $(".x").on('click', function() {
 
 // $(parentSelector).find(childSelector)
 //
-$('.eventsInfoBox').find('div').addClass('hidden');
-$('p').on('click', e => {
-    let eventToShow = '.' + $(e.target).attr('class');
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 
-});
+
 
 //trying to work this out
 // $(document).ready(function(){

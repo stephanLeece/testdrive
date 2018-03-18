@@ -4,6 +4,7 @@ if ($(window).width() > 600) {
     $(".mob-container").show();
 }
 
+$('.eventsInfoBox').find('div').addClass('hidden');
 $(".eventDetails").click(function() {
   let eventIndex = $(this).index();
   console.log(eventIndex);
