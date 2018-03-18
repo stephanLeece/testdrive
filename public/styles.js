@@ -30,7 +30,6 @@ function eventHover(view) {
   });
 }
 
-
 if (window.location.pathname == '/catalogue') {
   $('#cat').css({'color': 'rgb(255, 194, 120)'});
 }
@@ -48,21 +47,7 @@ if (window.location.pathname == '/testdrive') {
   eventHover('tdEventActive');
 }
 
-
-
-// ('.events-menu').on('p', 'img' function(){
-//    $(this).addClass('visible').siblings().removeClass('visible');
-// });
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------------
 
 // trying the rainbow scroll
 

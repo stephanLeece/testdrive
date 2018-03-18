@@ -1,11 +1,7 @@
 // ---------------------------------- homepage functions -----------------
 
-
-var clicked;
 $('.eventDetails p:nth-child(2)').on('click', function(e) {
-
 let eventToShow = '.' + $(e.target).attr('class');
-console.log('clicked', eventToShow );
     $('.eventsInfoBox').find('div').addClass('hidden');
     $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 });
