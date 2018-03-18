@@ -149,7 +149,7 @@
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
+    $vw: (360 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -158,7 +158,7 @@
     @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width:375px) and (max-width:600px){
+@media screen and (min-width:360px) and (max-width:600px){
 
     .artistbackground {
         position: absolute;

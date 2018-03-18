@@ -66,9 +66,10 @@
     }
 
     .sign-up-to-our-maili {
-    	width: get-vw(245px);
-    	height: get-vh(20px);
-        margin-bottom:get-vh(298px);
+    	// width: get-vw(245px);
+    	// height: get-vh(20px);
+        margin-bottom:get-vh(398px);
+        margin-top: get-vh(-15px);
     	font-family: TimesNewRomanPSMT;
     	font-size: get-vw(20px);
     	font-weight: normal;
@@ -137,7 +138,7 @@
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
+    $vw: (360 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -152,7 +153,7 @@
 
 
 
-@media screen and (min-width:375px) and (max-width:600px) {
+@media screen and (min-width:360px) and (max-width:600px) {
 
 
     #mobile-background-img {

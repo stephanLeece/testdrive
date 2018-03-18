@@ -11,12 +11,12 @@
   position: absolute;
   top: 32.05078vh;
   left: 12.15584vw;
-  height: 78.20312vh;
+  height: 78.20313vh;
   width: 17.99351vw;
   z-index: 3000;
   background-repeat: no-repeat; }
   #artist-container .artists {
-    height: 61.32812vh;
+    height: 61.32813vh;
     width: 9.67532vw;
     left: 13.50649vw;
     top: 29.10156vh;
@@ -34,7 +34,7 @@
 #catalogue-line-green {
   position: absolute;
   width: 10.57792vw;
-  height: 21.64062vh;
+  height: 21.64063vh;
   object-fit: contain;
   top: 76.24023vh;
   left: 2.13636vw;
@@ -108,32 +108,32 @@
   margin-top: 5.84961vh; }
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   .artistbackground {
     position: absolute;
-    width: 73.89333vw;
+    width: 76.97222vw;
     height: 103.11844vh;
     object-fit: contain;
-    left: 10.66667vw;
+    left: 11.11111vw;
     top: 32.53373vh;
     z-index: -2000; }
   #artist-container {
     position: absolute;
     top: 37.03148vh;
-    left: 34.93333vw;
+    left: 36.38889vw;
     height: 103.11844vh;
-    width: 53.33333vw;
-    margin-right: 3.46667vw;
+    width: 55.55556vw;
+    margin-right: 3.61111vw;
     z-index: 3000;
     background-repeat: no-repeat; }
     #artist-container .artists {
       position: absolute;
       height: 37.03148vh;
-      width: 39.73333vw;
-      left: -3.46667vw;
+      width: 41.38889vw;
+      left: -3.61111vw;
       top: 7.04648vh;
       font-family: TimesNewRomanPSMT;
-      font-size: 5.33333vw;
+      font-size: 5.55556vw;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -143,20 +143,20 @@
       z-index: 3000; }
   #catalogue-line-green {
     position: absolute;
-    width: 43.46667vw;
+    width: 45.27778vw;
     height: 35.98201vh;
     object-fit: contain;
     top: 95.2024vh;
-    left: 8vw;
+    left: 8.33333vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -2001; }
   #catalogue-line-blue {
     height: 29.38531vh;
-    width: 66.4vw;
+    width: 69.16667vw;
     object-fit: contain;
     position: absolute;
     top: 30.43478vh;
-    left: 29.06667vw;
+    left: 30.27778vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -2001; }
   #video-container {
@@ -164,18 +164,18 @@
     background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 92.8vw;
+    width: 96.66667vw;
     height: 33.43328vh;
     object-fit: contain;
     margin-top: 157.42129vh;
-    left: 8vw;
+    left: 8.33333vw;
     bottom: 1.7991vh;
     margin-bottom: 0vh; }
   #video {
     position: absolute;
     height: 22.33883vh;
-    left: 15.30667vw;
-    margin-left: 11.30667vw;
+    left: 15.94444vw;
+    margin-left: 11.77778vw;
     margin-right: 0vw;
     margin-bottom: 5.997vh; }
   #pdfs-container {
@@ -210,7 +210,7 @@
     text-decoration: none;
     color: black;
     text-align: left;
-    font-size: 8vw; }
+    font-size: 8.33333vw; }
   .pdf:hover {
     color: #ff4819; } }
 

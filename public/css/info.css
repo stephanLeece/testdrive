@@ -38,9 +38,8 @@ form {
   align-items: center; }
 
 .sign-up-to-our-maili {
-  width: 15.90909vw;
-  height: 1.95313vh;
-  margin-bottom: 29.10156vh;
+  margin-bottom: 38.86719vh;
+  margin-top: -1.46484vh;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
@@ -94,34 +93,34 @@ input {
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
-    background-size: 106.66667vw 190.25487vh;
-    width: 100vw;
+    background-size: 111.11111vw 190.25487vh;
+    width: 104.16667vw;
     height: 190.25487vh;
     top: 100.74963vh;
     left: 0vw;
     background-repeat: repeat-y; }
   #infoMap {
     position: absolute;
-    width: 92.8vw;
+    width: 96.66667vw;
     height: 62.21889vh;
     top: 18.44078vh;
-    left: 3.73333vw; }
+    left: 3.88889vw; }
   #infoContactBg {
     position: absolute;
-    width: 100vw;
+    width: 104.16667vw;
     height: 77.25637vh;
     top: 86.65667vh;
     left: 0vw; }
   #infoContactInfo {
     position: absolute;
-    width: 65.33333vw;
+    width: 68.05556vw;
     height: 48.27586vh;
     top: 92.50375vh;
-    left: 6.4vw;
-    margin: 1.49925vh 28.26667vw 23.13343vh 3.73333vw;
+    left: 6.66667vw;
+    margin: 1.49925vh 29.44444vw 23.13343vh 3.88889vw;
     /* STYLING FOR FONT */
     font-family: TimesNewRomanPSMT;
     font-size: 2.9985vh;
@@ -134,13 +133,13 @@ input {
     color: #222222; }
   form {
     position: absolute;
-    width: 58.93333vw;
+    width: 61.38889vw;
     height: 5.997vh;
     top: 147.82609vh;
-    left: 6.66667vw; }
+    left: 6.94444vw; }
   .sign-up-to-our-maili {
     position: absolute;
-    width: 65.33333vw;
+    width: 68.05556vw;
     height: 3.44828vh;
     top: 50.22489vh;
     /* STYLING FOR FONT */
@@ -157,8 +156,8 @@ input {
   /* STYLING FOR THE MAILING FORM & INPUT FIELD */
   form {
     position: absolute;
-    width: 84vw;
-    left: 10.13333vw;
+    width: 87.5vw;
+    left: 10.55556vw;
     text-align: center; }
   input {
     font-size: 1.2987vw;
@@ -176,18 +175,18 @@ input {
     text-align: center;
     color: #222222; }
     input[type="email"] {
-      width: 58.93333vw;
+      width: 61.38889vw;
       height: 5.997vh;
       outline: none; }
     input[type="submit"] {
       border-left: 2px solid black;
-      width: 26.66667vw;
+      width: 27.77778vw;
       height: 5.997vh; }
   #testdriveInfo {
     position: absolute;
-    width: 77.33333vw;
+    width: 80.55556vw;
     height: 4.49775vh;
     top: 179.46027vh;
-    left: 11.2vw; }
+    left: 11.66667vw; }
   #credits {
     display: none; } }
