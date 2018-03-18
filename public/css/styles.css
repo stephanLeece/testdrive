@@ -67,7 +67,7 @@ body {
 
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   /* STYLING FOR NAV MENU - MOBILE */
   .mob-container {
     position: fixed;
@@ -79,16 +79,16 @@ body {
     z-index: 4000; }
   .x {
     position: absolute;
-    width: 3.73333vw;
+    width: 3.88889vw;
     height: 2.09895vh;
     top: 0.74963vh;
-    left: 48vw; }
+    left: 50vw; }
   #mob-cat {
     position: absolute;
-    width: 41.86667vw;
+    width: 43.61111vw;
     height: 6.89655vh;
     top: 6.44678vh;
-    left: 29.2vw;
+    left: 30.41667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -102,10 +102,10 @@ body {
     -webkit-text-stroke: 0 #979797; }
   #mob-eve {
     position: absolute;
-    width: 30.13333vw;
+    width: 31.38889vw;
     height: 6.89655vh;
     top: 13.1934vh;
-    left: 35.06667vw;
+    left: 36.52778vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -118,10 +118,10 @@ body {
     color: #000000; }
   #mob-info {
     position: absolute;
-    width: 15.46667vw;
+    width: 16.11111vw;
     height: 6.89655vh;
     top: 23.68816vh;
-    left: 42.4vw;
+    left: 44.16667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -134,22 +134,22 @@ body {
     color: #000000; }
   #mob-bike {
     position: absolute;
-    width: 10.4vw;
+    width: 10.83333vw;
     height: 8.09595vh;
     top: 29.08546vh;
-    left: 45.06667vw; }
+    left: 46.94444vw; }
   #mob-testdr-title {
     position: absolute;
-    width: 77.33333vw;
+    width: 80.55556vw;
     height: 4.49775vh;
     top: 61.91904vh;
-    left: 11.2vw; }
+    left: 11.66667vw; }
   #mob-test-eve {
     position: absolute;
-    width: 30.13333vw;
+    width: 31.38889vw;
     height: 6.89655vh;
     top: 68.51574vh;
-    left: 34.8vw;
+    left: 36.25vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -166,7 +166,7 @@ body {
 #cat:hover, #eve:hover {
   color: #ffc278; }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   /* STYLING FOR NAV MENU - MOBILE */
   .mob-container {
     position: fixed;
@@ -177,16 +177,16 @@ body {
     z-index: 4000; }
   .x {
     position: absolute;
-    width: 3.73333vw;
+    width: 3.88889vw;
     height: 2.09895vh;
     top: 0.74963vh;
-    left: 48vw; }
+    left: 50vw; }
   #mob-cat {
     position: absolute;
-    width: 41.86667vw;
+    width: 43.61111vw;
     height: 6.89655vh;
     top: 6.44678vh;
-    left: 29.2vw;
+    left: 30.41667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -200,10 +200,10 @@ body {
     -webkit-text-stroke: 0 #979797; }
   #mob-eve {
     position: absolute;
-    width: 30.13333vw;
+    width: 31.38889vw;
     height: 6.89655vh;
     top: 13.1934vh;
-    left: 35.06667vw;
+    left: 36.52778vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -216,10 +216,10 @@ body {
     color: #000000; }
   #mob-info {
     position: absolute;
-    width: 15.46667vw;
+    width: 16.11111vw;
     height: 6.89655vh;
     top: 23.68816vh;
-    left: 42.4vw;
+    left: 44.16667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -232,22 +232,22 @@ body {
     color: #000000; }
   #mob-bike {
     position: absolute;
-    width: 10.4vw;
+    width: 10.83333vw;
     height: 8.09595vh;
     top: 29.08546vh;
-    left: 45.06667vw; }
+    left: 46.94444vw; }
   #mob-testdr-title {
     position: absolute;
-    width: 77.33333vw;
+    width: 80.55556vw;
     height: 4.49775vh;
     top: 61.91904vh;
-    left: 11.2vw; }
+    left: 11.66667vw; }
   #mob-test-eve {
     position: absolute;
-    width: 30.13333vw;
+    width: 31.38889vw;
     height: 6.89655vh;
     top: 68.51574vh;
-    left: 34.8vw;
+    left: 36.25vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;

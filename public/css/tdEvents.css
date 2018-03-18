@@ -16,11 +16,11 @@
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5)); }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   .testdr-title {
     height: 4.49775vh;
-    width: 77.33333vw;
+    width: 80.55556vw;
     position: absolute;
     top: 5.997vh;
-    left: 12.53333vw;
+    left: 13.05556vw;
     z-index: 10; } }
