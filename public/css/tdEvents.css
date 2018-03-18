@@ -1,11 +1,17 @@
-#tdEventsList .tdEventActive {
+.testdr-title {
+  height: 3.41797vh;
+  width: 21.94805vw;
+  position: absolute;
+  top: 6.93359vh;
+  left: 9.28571vw;
+  z-index: 10; }
+
+.tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
-  padding: 50px;
-  margin: -50px; }
+  background-position: center center; }
 
 #tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
-  filter: drop-shadow(0 0 0.75rem #01df36); }
+  filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5)); }

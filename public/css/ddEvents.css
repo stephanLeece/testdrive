@@ -1,4 +1,4 @@
-#ddEventsList .ddEventActive {
+.ddEventActive {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
   background-size: contain;
   background-repeat: no-repeat;

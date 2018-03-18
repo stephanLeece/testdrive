@@ -6,39 +6,63 @@
   position: absolute;
   top: 39.55078vh;
   left: 4.2013vw; }
-  .eventList .eventDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: TimesNewRomanPSMT;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.85;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #222222;
-    width: 28.8961vw;
-    height: 10.53711vh; }
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: TimesNewRomanPSMT;
+  font-size: 1.2987vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: -0.05844vw;
+  text-align: left;
+  color: #222222;
+  width: 28.8961vw;
+  height: 10.53711vh;
+  padding: 50px;
+  margin: -50px; }
 
 .eventsInfoBox {
+  display: flex;
+  justify-content: center;
   position: absolute;
   left: 34.28571vw;
   width: 48.05195vw;
   height: 99.70703vh;
   background-size: 48.05195vw 99.70703vh;
-  display: flex;
-  justify-content: center;
   overflow-y: scroll; }
   .eventsInfoBox div {
     width: 94%; }
 
-.eventDetails {
-  margin-bottom: 0.97656vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 28.8961vw;
-  height: 10.53711vh; }
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .eventList {
+    top: get-vh-mob(125px);
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: get-vh-mob(300px);
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px black solid; }
+  .eventDetails {
+    position: relative;
+    width: 100vw;
+    height: get-vh-mob(34px);
+    left: 50px;
+    padding: 50px;
+    margin: -50px; }
+  .eventsInfoBox {
+    position: absolute;
+    left: 0;
+    top: get-vh-mob(377px);
+    width: get-vw-mob(375px);
+    height: get-vh-mob(735px);
+    background: url("../assets/mobile/rectangle-5.svg"); } }

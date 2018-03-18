@@ -16,23 +16,17 @@
   @return ($object / $vh) * 1vh;
 }
 
-#ddEventsList {
-  .ddEventActive {
-    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 50px;
-    margin: -50px;
-  }
+.ddEventActive {
+  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 50px;
+  margin: -50px;
 }
 
 #ddEventsInfobox {
   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
 }
-
-
-@media screen and (min-width:375px) and (max-width:600px) {
-
-}
+@media screen and (min-width:375px) and (max-width:600px) {}

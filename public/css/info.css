@@ -91,14 +91,6 @@ input {
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
 
-.tdLogo {
-  height: 3.41797vh;
-  width: 21.94805vw;
-  position: absolute;
-  bottom: 8.39844vh;
-  right: 2.20779vw;
-  z-index: 10; }
-
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */

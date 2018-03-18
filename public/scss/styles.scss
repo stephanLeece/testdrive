@@ -64,6 +64,12 @@ body {
   }
 }
 
+
+.testdrive-logo {
+  position: absolute;
+  top: get-vh(71px);
+  left: get-vw(143px);
+}
 #backButton {
   position: absolute;
   bottom: get-vh(86px);
