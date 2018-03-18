@@ -106,25 +106,43 @@
 
 @media screen and (min-width:375px) and (max-width:600px){
 
-.eventList {
-        position: absolute;
-        width: get-vw-mob(115px);
-        top: get-vh-mob(118px);
-        left: get-vw-mob(115px);
-        margin-top: 20px;
-    }
+    .eventList {
+            position: relative;
+            width: get-vw-mob(115px);
+            top: get-vh-mob(150px);
+            left: get-vw-mob(115px);
+            margin-top: 20px;
+            display: block;
 
 
-    /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
-    .clickedEvent {
-        display: inline-block;
-        background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-        background-size:  get-vw-mob(346.3px) get-vh-mob(107.9px);
-        background-repeat: no-repeat;
-        background-position: center center;
-        padding: 50px;
-        margin: -50px;
-    }
+            /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
+            .clickedEvent {
+                display: inline-block;
+                background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+                background-size:  get-vw-mob(400.3px) get-vh-mob(207.9px);
+                background-repeat: no-repeat;
+                background-position: 90% 25%;
+                padding: 50px;
+                margin: -5000px;
+            }
+
+
+
+            .eventDetails {
+                display: block;
+                position: relative;
+                left: get-vw-mob(-75px);
+                width: 56.33333vw;
+                height: get-vh-mob(34px);
+                // margin-top: get-vh-mob(18.3px);
+                // margin-left: get-vw-mob(16.7px);
+                padding: 50px;
+                margin: -50px;
+            }
+
+
+
+        }
 
     .eventDetails {
         display: block;
@@ -142,11 +160,6 @@
         }
 
     }
-
-    .event-info-li {
-
-    }
-
 
 
 

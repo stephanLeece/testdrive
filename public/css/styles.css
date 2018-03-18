@@ -68,6 +68,7 @@ body {
     position: fixed;
     min-width: 100%;
     top: 12.5937vh;
+    left: 100%;
     height: 100%;
     background-color: white;
     z-index: 4000; }
