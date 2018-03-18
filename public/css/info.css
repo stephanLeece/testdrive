@@ -38,8 +38,10 @@ form {
   align-items: center; }
 
 .sign-up-to-our-maili {
-  margin-bottom: 38.86719vh;
-  margin-top: -1.46484vh;
+
+  width: 15.90909vw;
+  height: 1.95313vh;
+  margin-bottom: 29.10156vh;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
