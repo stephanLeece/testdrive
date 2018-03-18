@@ -1,31 +1,26 @@
 {{> big-mac}} {{> infoLink}} {{>backLink}}
 
 
-
 <div class="events-menu">
-    <div class="eventList" id="ddEventsList">
-        {{#eventList}}
-            <div class="eventDetails">
-                <p>{{eventDate}}</p>
-                <p class="{{eventClassName}}">{{eventTitle}}</p>
-            </div>
-        {{/eventList}}
+  <div class="eventList" id="ddEventsList">
+    {{#eventList}}
+      <div class="eventDetails">
+        <div>
+        <p>{{eventDate}}</p>
+        <p>{{eventTitle}}</p>
+      </div>
     </div>
-
-
-
-    <div class="eventsInfoBox" id="ddEventsInfobox">
-        {{#eventList}}
-            <div class="eventInfo">
-                {{#eventContent}}
-                    <img src= {{image}} alt="">
-                    <ul>
-                        <li class="event-info-li">{{imageDescrip}}</li>
-                {{/eventContent}}
-                <br></br>
-                <li class="event-info-li">{{{eventInfo}}}</li>
-                </ul>
-            </div>
-        {{/eventList}}
-    </div><br />
+    {{/eventList}}
+  </div>
+  <div class="eventsInfoBox" id="ddEventsInfobox">
+    {{#eventList}}
+      <div class='eventInfo'>
+        {{#eventContent}}
+          <img src= {{image}} alt="">
+          <p>{{imageDescrip}}</p>
+        {{/eventContent}}
+        {{{eventInfo}}}
+      </div>
+    {{/eventList}}
+  </div>
 </div>

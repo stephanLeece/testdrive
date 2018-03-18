@@ -7,52 +7,42 @@
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-// height: get-vh(20px);
-// ------------------------------------------
+@function get-vw-mob($object) {
+  $vw: (375 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh-mob($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
 
-//:hover
-#tdEventsList {
-  .tdEventActive {
-    background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
-    background-size:  contain;
-    background-repeat: no-repeat;
-    padding: get-vw(50px);
-    margin: get-vh(-50px);
-    // left: get-vw(91px);
-  }
+.testdr-title {
+  height: get-vh(35px);
+  width: get-vw(338px);
+  position: absolute;
+  top: get-vh(71px);
+  left: get-vw(143px);
+  z-index: 10;
+}
+
+.tdEventActive {
+  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #tdEventsInfobox {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
-  filter: drop-shadow(0 0 0.75rem rgb(1, 223, 54));
+  filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
 }
-
-
-.testdr-title {
+@media screen and (min-width:375px) and (max-width:600px) {
+  .testdr-title {
+    height: get-vh-mob(30px);
+    width: get-vw-mob(290px);
     position: absolute;
-    width: get-vw(290px);
-	height: get-vh(30px);
-    top: get-vh(100px);
-    left: get-vw(91px);
+    top: get-vh-mob(40px);
+    left: get-vw-mob(47px);
+    z-index: 10;
+  }
 }
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* MOBILE DESIGN  */
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-@media screen and (min-width:375px) and (max-width:600px){
-
-
-
-} /* CLOSES MEDIA QUERIES */
