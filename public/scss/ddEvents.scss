@@ -109,7 +109,7 @@
     .eventList {
             position: relative;
             width: get-vw-mob(115px);
-            top: get-vh-mob(118px);
+            top: get-vh-mob(150px);
             left: get-vw-mob(115px);
             margin-top: 20px;
             display: block;
@@ -130,6 +130,8 @@
 
             .eventDetails {
                 display: block;
+                position: relative;
+                left: get-vw-mob(-75px);
                 width: 56.33333vw;
                 height: get-vh-mob(34px);
                 // margin-top: get-vh-mob(18.3px);
@@ -144,7 +146,7 @@
 
 
     .event-info-text:first-child {
-        padding-top: 20px;
+        // top: get-vh-mob(100px);
     }
 
     .event-info-text {
