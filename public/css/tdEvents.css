@@ -1,4 +1,4 @@
-#tdEventsList .eventDetails :hover {
+#tdEventsList .tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   position: absolute;
   width: 18.83117vw;
   height: 2.92969vh;
-  top: 9.76562vh;
+  top: 9.76563vh;
   left: 5.90909vw; }
 
 /* MOBILE DESIGN  */

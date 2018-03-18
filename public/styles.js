@@ -4,9 +4,8 @@ if ($(window).width() > 600) {
     $(".mob-container").show();
 }
 
-
+// -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
-//
 //     if ($(window).width() > 375 && $(window).width() < 600) {
 //
 //         // $('body').css({
@@ -20,56 +19,35 @@ if (window.location.pathname == '/info') {
         'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed',
         'background-size': '100vw 100vh'
     });
-
-
-//
 //     }
-//
 }
 
-// ------ active color Orange on current route  ----
-//Catalogue route
+function eventHover(view) {
+  $(".eventDetails").hover(function(){
+      $(this).addClass(view);
+      }, function(){
+      $(this).removeClass(view);
+  });
+}
 
-//
-// if (window.location.pathname == '/') {
-//   $('#cat').addClass('active-color-home')
-// }else if {
+if (window.location.pathname == '/catalogue') {
+  $('#cat').css({'color': 'rgb(255, 194, 120)'});
+}
 
-$(function() {
-    var current = "/catalogue";
-    $('#cat').each(function() {
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if ($this.attr('href').indexOf(current) !== -1) {
-            $this.addClass('active');
-        }
-    });
-});
-// }
+if (window.location.pathname == '/events') {
+  $('#eve').css({'color': 'rgb(255, 194, 120)'});
+  $('.eventDetails:first-child').addClass('ddEventActive');
+  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  eventHover('ddEventActive');
+}
 
-//Event route
-$(function() {
-    var current = "/events";
-    console.log("HELLO");
-    $('#eve').each(function() {
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if ($this.attr('href').indexOf(current) !== -1) {
-            $this.addClass('act');
-        }else{
+if (window.location.pathname == '/testdrive') {
+  $('.eventDetails:first-child').addClass('tdEventActive');
+  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  eventHover('tdEventActive');
+}
 
-        }
-    });
-});
-
-
-
-
-// ------ active color Orange on current route end ----
-
-// ('.events-menu').on('p', 'img' function(){
-//    $(this).addClass('visible').siblings().removeClass('visible');
-// });
+// ----------------------------------------------------------------------------------
 
 // trying the rainbow scroll
 

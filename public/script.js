@@ -1,16 +1,9 @@
 // ---------------------------------- homepage functions -----------------
 
-
-var clicked;
-$('.eventDetails').on('click', function(e) {
-
-    if (clicked) {
-        clicked.removeClass("clickedEvent");
-    }
-
-    clicked = $(e.currentTarget);
-    $(e.currentTarget).addClass("clickedEvent");
-
+$('.eventDetails p:nth-child(2)').on('click', function(e) {
+let eventToShow = '.' + $(e.target).attr('class');
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 });
 
 

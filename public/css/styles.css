@@ -158,6 +158,9 @@ body {
   a {
     text-decoration: none; } }
 
+#cat:hover, #eve:hover {
+  color: #ffc278; }
+
 @media screen and (min-width: 375px) and (max-width: 600px) {
   /* STYLING FOR NAV MENU - MOBILE */
   .mob-container {
