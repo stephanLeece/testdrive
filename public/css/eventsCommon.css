@@ -25,6 +25,26 @@
   height: 10.53711vh;
   padding: 50px;
   margin: -50px; }
+  .eventDetails div p:first-child {
+    font-family: TimesNewRomanPSMT;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  .eventDetails div p:nth-child(2) {
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
 
 .eventsInfoBox {
   display: flex;
@@ -40,29 +60,38 @@
 
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .eventList {
-    top: get-vh-mob(125px);
-    left: 0;
-    position: absolute;
+    position: initial;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: get-vh-mob(300px);
-    width: 100vw;
+    min-height: 44.97751vh;
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    border: 2px black solid; }
-  .eventDetails {
-    position: relative;
-    width: 100vw;
-    height: get-vh-mob(34px);
-    left: 50px;
-    padding: 50px;
-    margin: -50px; }
+    margin-top: 14.9925vh; }
+  .eventDetails div p:first-child {
+    font-family: TimesNewRomanPSMT;
+    font-size: 4.53333vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: -0.24vw;
+    text-align: left;
+    color: #222222; }
+  .eventDetails div p:nth-child(2) {
+    font-family: TimesNewRomanPSMT;
+    font-size: 5.33333vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.24vw;
+    text-align: left;
+    color: #222222; }
   .eventsInfoBox {
-    position: absolute;
-    left: 0;
-    top: get-vh-mob(377px);
-    width: get-vw-mob(375px);
-    height: get-vh-mob(735px);
+    position: initial;
+    width: 100%;
+    min-height: 110.1949vh;
     background: url("../assets/mobile/rectangle-5.svg"); } }

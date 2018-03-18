@@ -2,7 +2,6 @@
   $vw: (1540 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
-// width: get-vw(100px);
 @function get-vh($object) {
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
