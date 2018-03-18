@@ -12,7 +12,21 @@ backButton.on('click', () => {
 
 
 
+// SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
+$(".shadowfilter").on('click', function() {
 
+    if ($(window).width() < 600) {
+        showMobileModal();
+    } else {
+        showModal();
+    }
+
+});
+
+// HIDE MODAL -- MOBILE & DESKTOP 
+$("#modal").on('click', function() {
+    hideMobileModal();
+});
 
 
 
@@ -21,7 +35,7 @@ backButton.on('click', () => {
 
 
 // FUNCTION TO SHOW MODAL ON HOME PAGE
-// ~~~~~~~~ FULL-SCREEN ~~~~~~~~
+// ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
 function showModal() {
 
     $("#gallery-space-img").on('click', function() {
@@ -30,7 +44,19 @@ function showModal() {
     });
 }
 
-showModal();
+
+
+
+// SHOW / HIDE MODAL - MOBILE ONLY
+function showMobileModal() {
+    $('#modal').css({ "visibility": "visible" });
+    $(".shadowfilter").removeAttr('id').addClass("clicked-gallery-img");
+}
+
+function hideMobileModal() {
+    $('#modal').css({ "visibility": "hidden" });
+    $(".shadowfilter").attr('id', "gallery-space-img").removeClass("clicked-gallery-img");
+}
 
 
 
