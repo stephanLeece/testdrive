@@ -241,9 +241,35 @@ width: get-vw(354px);
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////
 
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
 
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
@@ -469,8 +495,8 @@ width: get-vw(354px);
         background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        width:get-vw-mob(220px);
-        height:get-vh-mob(136px);
+        width: get-vw-mob(220px);
+        height: get-vh-mob(136px);
         object-fit: contain;
         top: get-vh-mob(423px);
         left: get-vw-mob(132px);
@@ -479,13 +505,10 @@ width: get-vw(354px);
 
     #home-v {
         position: absolute;
-        width:get-vw-mob(145.6px);
-        height:get-vh-mob(81.6px);
+        width: get-vw-mob(145.6px);
+        height: get-vh-mob(81.6px);
         top: get-vh-mob(450.2px);
-        left: get-vw-mob(151.2px);
-        margin: get-vh-mob(1.2px) get-vw-mob(53.2px) get-vh-mob(27.2px) get-vw-mob(-5px);
-        z-index: 10;
-
+        left: get-vw-mob(153.2px);
     }
 
     .fadeIn {
@@ -494,46 +517,34 @@ width: get-vw(354px);
 
 
     #modal{
-        position:absolute;
-        top:get-vh(51px);
-        left:get-vw(0px);
-        width: get-vw(375px);
-    	height: get-vh(613px);
-        object-fit: contain;
+        position: absolute;
+        top: get-vh-mob(51px);
+        left: 0;
+        width: get-vw-mob(375px);
+    	height: get-vh-mob(613px);
         background-image: url('/assets/Elements/Home/Home-infobox-blue.svg');
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-content: center;
-        // z-index: 40;
+        background-repeat: no-repeat;
+        z-index: 3000;
 
         .words {
-            width: get-vw(289px);
-            height: get-vh(437px);
-            left:get-vw(44px);
-            right: get-vw(42px);
-            top:get-vh(120px);
-            word-wrap: normal;
+            position: absolute;
+            top: get-vh-mob(58px);
+            width: get-vw-mob(289px);
+            height: get-vh-mob(437px);
+            left: get-vw-mob(44px);
+
+            /* FONT STYLING */
             font-family: TimesNewRomanPSMT;
-            font-size: get-vh(20px);
+            font-size: get-vh-mob(18px);
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
-            line-height: get-vh(18px);
-            letter-spacing: get-vw(-0.9px);
+            line-height: 1.06;
+            letter-spacing: get-vw-mob(-0.8px);
             text-align: left;
             color: #222222;
-            z-index: 1000;
-            margin-top: get-vh(69px);
-            margin-left: get-vw(44 px);
-            margin-right: get-vw(42px);
-            margin-bottom: get-vh(107px);
-            letter-spacing: normal;
-            justify-content: center;
-            align-content: center;
         }
+
 
     }
 

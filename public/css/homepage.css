@@ -185,9 +185,8 @@
     justify-content: center;
     align-content: center; }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR INFO PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-
 @media screen and (min-width: 375px) and (max-width: 600px) {
   /* STYLING FOR MENU - MOBILE */
   /* STYLING FOR HAMBURGER MENU ICON */
@@ -331,49 +330,33 @@
     width: 38.82667vw;
     height: 12.23388vh;
     top: 67.49625vh;
-    left: 40.32vw;
-    margin: 0.17991vh 14.18667vw 4.07796vh -1.33333vw;
-    z-index: 10; }
+    left: 40.85333vw; }
   .fadeIn {
     opacity: 1; }
   #modal {
     position: absolute;
-    top: 12.5vh;
-    left: 43.24675vw;
-    width: 30.53247vw;
-    height: 65.47852vh;
-    object-fit: contain;
+    top: 7.64618vh;
+    left: 0;
+    width: 100vw;
+    height: 91.90405vh;
     background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
-    background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    z-index: 40; }
+    z-index: 3000; }
     #modal .words {
-      width: 18.76623vw;
-      height: 44.53125vh;
-      left: 51.94805vw;
-      right: 28.8961vw;
-      top: 18.16406vh;
-      word-wrap: normal;
+      position: absolute;
+      top: 8.69565vh;
+      width: 77.06667vw;
+      height: 65.51724vh;
+      left: 11.73333vw;
+      /* FONT STYLING */
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95312vh;
+      font-size: 2.69865vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.75781vh;
-      letter-spacing: -0.05844vw;
+      line-height: 1.06;
+      letter-spacing: -0.21333vw;
       text-align: left;
-      color: #222222;
-      z-index: 1000;
-      margin-top: 6.73828vh;
-      margin-left: 5.06494vw;
-      margin-right: 2.85714vw;
-      margin-bottom: 8.59375vh;
-      letter-spacing: normal;
-      justify-content: center;
-      align-content: center; } }
+      color: #222222; } }
 
 /* CLOSES MEDIA QUERIES */
