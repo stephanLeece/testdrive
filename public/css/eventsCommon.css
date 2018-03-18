@@ -1,0 +1,97 @@
+.eventList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  position: absolute;
+  top: 39.55078vh;
+  left: 4.2013vw; }
+
+.eventDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: TimesNewRomanPSMT;
+  font-size: 1.2987vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: -0.05844vw;
+  text-align: left;
+  color: #222222;
+  width: 28.8961vw;
+  height: 10.53711vh;
+  padding: 50px;
+  margin: -50px; }
+  .eventDetails div p:first-child {
+    font-family: TimesNewRomanPSMT;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  .eventDetails div p:nth-child(2) {
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+
+.eventsInfoBox {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 34.28571vw;
+  width: 48.05195vw;
+  height: 99.70703vh;
+  background-size: 48.05195vw 99.70703vh;
+  overflow-y: scroll; }
+  .eventsInfoBox div {
+    width: 94%; }
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .eventList {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 44.97751vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 14.9925vh; }
+  .eventDetails div p:first-child {
+    font-family: TimesNewRomanPSMT;
+    font-size: 4.53333vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: -0.24vw;
+    text-align: left;
+    color: #222222; }
+  .eventDetails div p:nth-child(2) {
+    font-family: TimesNewRomanPSMT;
+    font-size: 5.33333vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.24vw;
+    text-align: left;
+    color: #222222; }
+  .eventsInfoBox {
+    position: initial;
+    width: 100%;
+    min-height: 110.1949vh;
+    background: url("../assets/mobile/rectangle-5.svg"); } }

@@ -15,7 +15,7 @@
   height: 31.44531vh;
   margin-top: 35.83984vh;
   margin-bottom: 32.71484vh;
-  font-size: 1.95312vh;
+  font-size: 1.95313vh;
   font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
@@ -32,14 +32,16 @@ form {
   border: 1px solid black;
   width: 21.36364vw;
   height: 3.90625vh;
-  margin-top: 0.39062vh;
+  margin-top: 0.39063vh;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .sign-up-to-our-maili {
-  margin-bottom: 38.86719vh;
-  margin-top: -1.46484vh;
+
+  width: 15.90909vw;
+  height: 1.95313vh;
+  margin-bottom: 29.10156vh;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
@@ -89,14 +91,6 @@ input {
   -moz-box-shadow: 0 0 50px #8315a8;
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
-
-.tdLogo {
-  height: 3.41797vh;
-  width: 21.94805vw;
-  position: absolute;
-  bottom: 8.39844vh;
-  right: 2.20779vw;
-  z-index: 10; }
 
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */

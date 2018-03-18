@@ -166,7 +166,7 @@ width: get-vw(354px);
 
 .home-video {
     position: absolute;
-    background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+    background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: get-vw(447px) get-vh(276px);
@@ -492,7 +492,7 @@ width: get-vw(354px);
 
     .home-video {
         position: absolute;
-        background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+        background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
         background-repeat: no-repeat;
         background-size: contain;
         width: get-vw-mob(220px);
@@ -546,6 +546,16 @@ width: get-vw(354px);
         }
 
 
+    }
+
+
+    .clicked-gallery-img {
+        width: 125.06667vw;
+        height: 85.42579vh;
+        position: fixed;
+        top: 32.68966vh;
+        left: 3.46667vw;
+        cursor: pointer;
     }
 
 

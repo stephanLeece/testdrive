@@ -124,10 +124,10 @@
 
 .home-video {
   position: absolute;
-  background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+  background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: 29.02597vw 26.95312vh;
+  background-size: 29.02597vw 26.95313vh;
   width: 34.93506vw;
   top: 58.98438vh;
   height: 32.51953vh;
@@ -168,7 +168,7 @@
     top: 18.16406vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 1.95313vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -317,7 +317,7 @@
     transition: opacity 1s ease-in; }
   .home-video {
     position: absolute;
-    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+    background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 58.66667vw;
@@ -357,6 +357,13 @@
       line-height: 1.06;
       letter-spacing: -0.21333vw;
       text-align: left;
-      color: #222222; } }
+      color: #222222; }
+  .clicked-gallery-img {
+    width: 125.06667vw;
+    height: 85.42579vh;
+    position: fixed;
+    top: 32.68966vh;
+    left: 3.46667vw;
+    cursor: pointer; } }
 
 /* CLOSES MEDIA QUERIES */
