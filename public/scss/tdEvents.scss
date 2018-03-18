@@ -16,7 +16,7 @@
   @return ($object / $vh) * 1vh;
 }
 
-.testdr-title {
+.testdriveLogo {
   height: get-vh(35px);
   width: get-vw(338px);
   position: absolute;
@@ -36,6 +36,7 @@
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
 }
+
 @media screen and (min-width:360px) and (max-width:600px) {
   .testdr-title {
     height: get-vh-mob(30px);
