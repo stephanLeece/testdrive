@@ -1,10 +1,5 @@
 // ---------------------------------- homepage functions -----------------
 
-$('.eventDetails p:nth-child(2)').on('click', function(e) {
-let eventToShow = '.' + $(e.target).attr('class');
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
-});
 
 
 

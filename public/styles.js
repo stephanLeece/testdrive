@@ -4,6 +4,13 @@ if ($(window).width() > 600) {
     $(".mob-container").show();
 }
 
+$(".eventDetails").click(function() {
+  let eventIndex = $(this).index();
+  console.log(eventIndex);
+  $('.eventsInfoBox').find('div').addClass('hidden');
+  $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+});
+
 // -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
 //     if ($(window).width() > 375 && $(window).width() < 600) {

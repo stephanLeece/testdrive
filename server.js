@@ -127,7 +127,6 @@ app.get('/events', function(req, res) {
             ? entries.items.map((entry) => {
                 let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse()) || null;
                 return {
-                    eventClassName: entry.fields.ddClassName,
                     eventTitle: entry.fields.ddEventTitle,
                     eventDate: ddEventDate,
                     eventInfo: entry.fields.ddEventInfo,
@@ -151,7 +150,6 @@ app.get('/testdrive', function(req, res) {
             ? entries.items.map((entry) => {
                 let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse())  || null;
                 return {
-                    eventClassName: entry.fields.tdClassName,
                     eventTitle: entry.fields.tdEventTitle,
                     eventDate: tdEventDate,
                     eventInfo: entry.fields.tdEventInfo,
