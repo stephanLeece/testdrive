@@ -16,14 +16,7 @@
   @return ($object / $vh) * 1vh;
 }
 
-.testdriveLogo {
-  height: get-vh(35px);
-  width: get-vw(338px);
-  position: absolute;
-  top: get-vh(71px);
-  left: get-vw(143px);
-  z-index: 10;
-}
+
 
 .tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
@@ -37,12 +30,5 @@
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
 }
 @media screen and (min-width:375px) and (max-width:600px) {
-  .testdriveLogo {
-    height: get-vh-mob(30px);
-    width: get-vw-mob(290px);
-    position: absolute;
-    top: get-vh-mob(40px);
-    left: get-vw-mob(47px);
-    z-index: 10;
-  }
+
 }

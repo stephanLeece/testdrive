@@ -35,7 +35,14 @@ body {
     text-align: left;
     color: #222222; }
 
-.testdrive-logo {
+#testdriveLogoBR {
+  position: absolute;
+  width: get-vw-mob(290px);
+  height: get-vh-mob(30px);
+  bottom: 8.39844vh;
+  right: 2.20779vw; }
+
+#testdriveLogoTL {
   position: absolute;
   top: 6.93359vh;
   left: 9.28571vw; }
@@ -144,44 +151,27 @@ body {
     height: 4.49775vh;
     top: 61.91904vh;
     left: 11.2vw; }
-  #mob-test-eve {
-    position: absolute;
-    width: 30.13333vw;
-    height: 6.89655vh;
-    top: 68.51574vh;
-    left: 34.8vw;
-    /* STYLING FOR FONTS */
-    font-family: TimesNewRomanPSMT;
-    font-size: 41px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -2.2px;
-    text-align: center;
-    color: #000000; }
   a {
     text-decoration: none; } }
 
-#cat:hover, #eve:hover {
-  color: #ffc278; }
-
-@media screen and (min-width: 375px) and (max-width: 600px) {
-  /* STYLING FOR NAV MENU - MOBILE */
-  .mob-container {
+#cat, #eve {
+  /* STYLING FOR NAV MENU - MOBILE */ }
+  #cat:hover, #eve:hover {
+    color: #ffc278; }
+  #cat .mob-container, #eve .mob-container {
     position: fixed;
     min-width: 100%;
     top: 12.5937vh;
     height: 100%;
     background-color: white;
     z-index: 4000; }
-  .x {
+  #cat .x, #eve .x {
     position: absolute;
     width: 3.73333vw;
     height: 2.09895vh;
     top: 0.74963vh;
     left: 48vw; }
-  #mob-cat {
+  #cat #mob-cat, #eve #mob-cat {
     position: absolute;
     width: 41.86667vw;
     height: 6.89655vh;
@@ -198,7 +188,7 @@ body {
     text-align: center;
     color: #000000;
     -webkit-text-stroke: 0 #979797; }
-  #mob-eve {
+  #cat #mob-eve, #eve #mob-eve {
     position: absolute;
     width: 30.13333vw;
     height: 6.89655vh;
@@ -214,7 +204,7 @@ body {
     letter-spacing: -2.2px;
     text-align: center;
     color: #000000; }
-  #mob-info {
+  #cat #mob-info, #eve #mob-info {
     position: absolute;
     width: 15.46667vw;
     height: 6.89655vh;
@@ -230,35 +220,20 @@ body {
     letter-spacing: -2.2px;
     text-align: center;
     color: #000000; }
-  #mob-bike {
+  #cat #mob-bike, #eve #mob-bike {
     position: absolute;
     width: 10.4vw;
     height: 8.09595vh;
     top: 29.08546vh;
     left: 45.06667vw; }
-  #mob-testdriveLogo {
-    position: absolute;
-    width: 77.33333vw;
+  #cat #testdriveLogoTL, #eve #testdriveLogoTL {
     height: 4.49775vh;
-    top: 61.91904vh;
-    left: 11.2vw; }
-  #mob-test-eve {
+    width: 77.33333vw;
     position: absolute;
-    width: 30.13333vw;
-    height: 6.89655vh;
-    top: 68.51574vh;
-    left: 34.8vw;
-    /* STYLING FOR FONTS */
-    font-family: TimesNewRomanPSMT;
-    font-size: 41px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -2.2px;
-    text-align: center;
-    color: #000000; }
-  a {
-    text-decoration: none; } }
+    top: 5.997vh;
+    left: 12.53333vw;
+    z-index: 10; }
+  #cat a, #eve a {
+    text-decoration: none; }
 
 /* CLOSES MEDIA QUERIES */

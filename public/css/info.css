@@ -91,13 +91,6 @@ input {
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
 
-#testdriveInfo {
-  position: absolute;
-  width: get-vw-mob(290px);
-  height: get-vh-mob(30px);
-  bottom: 8.39844vh;
-  right: 2.20779vw; }
-
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
