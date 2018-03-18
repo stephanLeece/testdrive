@@ -1,8 +1,13 @@
+.clickedEvent {
+  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+  background-size: 22.48701vw 10.53711vh;
+  background-repeat: no-repeat; }
+
 .eventList {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: space-between;
+  align-items: center;
   position: absolute;
   top: 39.55078vh;
   left: 7.4026vw; }
@@ -18,8 +23,7 @@
     text-align: left;
     color: #222222;
     width: 28.8961vw;
-    height: 10.53711vh;
-    left: 4.2013vw; }
+    height: 10.53711vh; }
 
 .eventsInfoBox {
   position: absolute;
@@ -50,33 +54,33 @@
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media screen and (min-width: 375px) and (max-width: 600px) {
   .eventList {
-    position: relative;
-    width: 30.66667vw;
-    top: 22.48876vh;
-    left: 30.66667vw;
-    margin-top: 20px;
-    display: block;
+    top: 18.74063vh;
+    left: 0px; }
+  #ddEventsList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 44.97751vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px black solid;
     /* EVENTDETAILS == EVENT DATE AND EVENT NAME */ }
-    .eventList .clickedEvent {
-      display: inline-block;
+    #ddEventsList .clickedEvent {
       background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-      background-size: 106.74667vw 31.16942vh;
-      background-repeat: no-repeat;
-      background-position: 90% 25%;
-      padding: 50px;
-      margin: -5000px; }
-    .eventList .eventDetails {
+      background-size: 92.34667vw 16.17691vh;
+      background-repeat: no-repeat; }
+    #ddEventsList .eventDetails {
       display: block;
       position: relative;
-      left: -20vw;
-      width: 56.33333vw;
+      width: 100vw;
       height: 5.09745vh;
       padding: 50px;
-      margin: -50px; }
-  .event-info-text {
-    display: block;
-    width: 41.06667vw;
-    height: 4.94753vh; }
+      margin-left: 54.66667vw;
+      align-self: center;
+      left: 50px; }
   #ddEventsInfobox {
     position: absolute;
     left: 0;

@@ -1,175 +1,173 @@
 @function get-vw($object) {
-  $vw: (1540 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-// width: get-vw(100px);
-@function get-vh($object) {
-  $vh: (1024 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-
-
-// height: get-vh(20px);
-// ------------------------------------------
-
-.eventList {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-between;
-    position: absolute;
-    top: get-vh(405px);
-    // left: get-vw(64.7px);
-    left: get-vw(114px);
-
-    .eventDetails {
-        display: flex;
-        flex-direction: column;
-        font-family: TimesNewRomanPSMT;
-        font-size: 20px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        letter-spacing: -0.9px;
-        text-align: left;
-        color: #222222;
-        width: get-vw(445px);
-        height: get-vh(107.9px);
-        left: get-vw(64.7px);
-    }
-
-}
-
-
-.eventsInfoBox {
-  position: absolute;
-  left: get-vw(528px);
-  width: get-vw(740px);
-  height: get-vh(1021px);
-  background-size:  get-vw(740px) get-vh(1021px);
-  display: flex;
-  justify-content: center;
-  overflow-y: scroll;
-
-  div {
-    width: 94%;
-  }
-
-}
-
-.eventDetails {
-  margin-bottom: get-vh(10px);
-  // margin-left: get-vw(49.3px);
-  display: flex;
-  width: get-vw(445px);
-  height: get-vh(107.9px);
-}
-
-#ddEventsList {
-  // .eventDetails :hover {
-  //   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-  //   background-size:  contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   padding: 50px;
-  //   margin: -50px;
-  // }
-}
-
-#ddEventsInfobox {
-  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
-  filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
-}
-
-
-.events-menu {
-    visibility: visible;
-}
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-/* MOBILE DESIGN  */
-
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
+    $vw: (1540 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
+  }
+  // width: get-vw(100px);
+  @function get-vh($object) {
+    $vh: (1024 * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
+  }
+  
+  
+  // height: get-vh(20px);
+  // ------------------------------------------
+
+  .clickedEvent {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size:  get-vw(346.3px) get-vh(107.9px);
+    background-repeat: no-repeat;
 }
-
-@media screen and (min-width:375px) and (max-width:600px){
-
-    .eventList {
-            position: relative;
-            width: get-vw-mob(115px);
-            top: get-vh-mob(150px);
-            left: get-vw-mob(115px);
-            margin-top: 20px;
-            display: block;
-
-
-            /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
-            .clickedEvent {
-                display: inline-block;
-                background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-                background-size:  get-vw-mob(400.3px) get-vh-mob(207.9px);
-                background-repeat: no-repeat;
-                background-position: 90% 25%;
-                padding: 50px;
-                margin: -5000px;
-            }
-
-
-
-            .eventDetails {
-                display: block;
-                position: relative;
-                left: get-vw-mob(-75px);
-                width: 56.33333vw;
-                height: get-vh-mob(34px);
-                // margin-top: get-vh-mob(18.3px);
-                // margin-left: get-vw-mob(16.7px);
-                padding: 50px;
-                margin: -50px;
-            }
-
-
-
-        }
-
-
-    .event-info-text:first-child {
-        // top: get-vh-mob(100px);
+  
+  .eventList {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      top: get-vh(405px);
+      // left: get-vw(64.7px);
+      left: get-vw(114px);
+  
+      .eventDetails {
+          display: flex;
+          flex-direction: column;
+          font-family: TimesNewRomanPSMT;
+          font-size: 20px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: -0.9px;
+          text-align: left;
+          color: #222222;
+          width: get-vw(445px);
+          height: get-vh(107.9px);
+        //   left: get-vw(64.7px);
+      }
+  
+  }
+  
+  
+  .eventsInfoBox {
+    position: absolute;
+    left: get-vw(528px);
+    width: get-vw(740px);
+    height: get-vh(1021px);
+    background-size:  get-vw(740px) get-vh(1021px);
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+  
+    div {
+      width: 94%;
     }
-
-    .event-info-text {
-        display: block;
-        width: get-vw-mob(154px);
-        height: get-vh-mob(33px);
-        // margin: get-vh-mob(263px) 0 0 get-vw-mob(66px);
-    }
-
-
-
-    #ddEventsInfobox {
-        position: absolute;
-        left: 0;
-        top: get-vh-mob(377px);
-        width: get-vw-mob(375px);
-        height: get-vh-mob(735px);
-        background: url(../assets/mobile/rectangle-5.svg);
-    }
-
-
-    .events-menu {
-        visibility: visible;
-    }
-
-} /* CLOSES MEDIA QUERIES */
+  
+  }
+  
+  .eventDetails {
+    margin-bottom: get-vh(10px);
+    // margin-left: get-vw(49.3px);
+    display: flex;
+    width: get-vw(445px);
+    height: get-vh(107.9px);
+  }
+  
+  #ddEventsList {
+    // .eventDetails :hover {
+    //   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    //   background-size:  contain;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   padding: 50px;
+    //   margin: -50px;
+    // }
+  }
+  
+  #ddEventsInfobox {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
+    filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
+  }
+  
+  
+  .events-menu {
+      visibility: visible;
+  }
+  
+  
+  
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  
+  /* MOBILE DESIGN  */
+  
+  
+  /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+  @function get-vw-mob($object) {
+      $vw: (375 * 0.01) * 1px;
+      @return ($object / $vw) * 1vw;
+  }
+  
+  @function get-vh-mob($object) {
+      $vh: (667 * 0.01) * 1px;
+      @return ($object / $vh) * 1vh;
+  }
+  
+  @media screen and (min-width:375px) and (max-width:600px){
+  
+      .eventList{
+          top: get-vh-mob(125px);
+          left: 0px;
+      }
+      
+      #ddEventsList{
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          height: get-vh-mob(300px);
+          width: 100vw;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          border: 2px black solid;
+  
+  
+              /* EVENTDETAILS == EVENT DATE AND EVENT NAME */
+              .clickedEvent {
+                  background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+                  background-size:  get-vw-mob(346.3px) get-vh-mob(107.9px);
+                  background-repeat: no-repeat;
+              }
+  
+              .eventDetails {
+                  display: block;
+                  position: relative;
+                  width: 100vw;
+                  height: get-vh-mob(34px);
+                  // margin-top: get-vh-mob(18.3px);
+                  // margin-left: get-vw-mob(16.7px);
+                  padding: 50px;
+                  margin-left: get-vw-mob(205px);
+                  align-self: center;
+                  left: 50px;
+              }
+  
+  
+  
+          }
+  
+  
+      #ddEventsInfobox {
+          position: absolute;
+          left: 0;
+          top: get-vh-mob(377px);
+          width: get-vw-mob(375px);
+          height: get-vh-mob(735px);
+          background: url(../assets/mobile/rectangle-5.svg);
+      }
+  
+  
+      .events-menu {
+          visibility: visible;
+      }
+  
+  } /* CLOSES MEDIA QUERIES */
+  
