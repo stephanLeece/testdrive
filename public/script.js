@@ -2,15 +2,12 @@
 
 
 var clicked;
-$('.eventDetails').on('click', function(e) {
+$('.eventDetails p:nth-child(2)').on('click', function(e) {
 
-    if (clicked) {
-        clicked.removeClass("clickedEvent");
-    }
-
-    clicked = $(e.currentTarget);
-    $(e.currentTarget).addClass("clickedEvent");
-
+let eventToShow = '.' + $(e.target).attr('class');
+console.log('clicked', eventToShow );
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $('.eventsInfoBox').find(`${eventToShow}`).removeClass('hidden');
 });
 
 

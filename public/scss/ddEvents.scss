@@ -134,18 +134,21 @@
         // margin-left: get-vw-mob(16.7px);
         padding: 50px;
         margin: -50px;
+        p {
+            display: block;
+            width: get-vw-mob(204px);
+            height: get-vh-mob(33px);
+            // margin: get-vh-mob(263px) 0 0 get-vw-mob(66px);
+        }
+
     }
 
     .event-info-li {
 
     }
 
-    .event-info-text {
-        display: block;
-        width: get-vw-mob(204px);
-        height: get-vh-mob(33px);
-        // margin: get-vh-mob(263px) 0 0 get-vw-mob(66px);
-    }
+
+
 
 
 

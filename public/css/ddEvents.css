@@ -78,10 +78,10 @@
     height: 5.09745vh;
     padding: 50px;
     margin: -50px; }
-  .event-info-text {
-    display: block;
-    width: 54.4vw;
-    height: 4.94753vh; }
+    .eventDetails p {
+      display: block;
+      width: 54.4vw;
+      height: 4.94753vh; }
   #ddEventsInfobox {
     position: absolute;
     left: 0;
