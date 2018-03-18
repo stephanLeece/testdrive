@@ -1,4 +1,4 @@
-.testdr-title {
+.testdriveLogo {
   height: 3.41797vh;
   width: 21.94805vw;
   position: absolute;
@@ -17,7 +17,7 @@
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5)); }
 
 @media screen and (min-width: 375px) and (max-width: 600px) {
-  .testdr-title {
+  .testdriveLogo {
     height: 4.49775vh;
     width: 77.33333vw;
     position: absolute;

@@ -130,7 +130,13 @@
 }
 
 
-
+#testdriveInfo {
+    position: absolute;
+    width: get-vw-mob(290px);
+    height: get-vh-mob(30px);
+    bottom: get-vh(86px);
+    right: get-vw(34px);
+}
 
 /* MOBILE DESIGN  */
 
@@ -277,7 +283,7 @@
 
 
 
-    #tdLogo {
+    #testdriveInfo {
         position: absolute;
         width: get-vw-mob(290px);
         height: get-vh-mob(30px);

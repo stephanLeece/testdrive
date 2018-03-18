@@ -16,7 +16,7 @@
   @return ($object / $vh) * 1vh;
 }
 
-.testdr-title {
+.testdriveLogo {
   height: get-vh(35px);
   width: get-vw(338px);
   position: absolute;
@@ -37,7 +37,7 @@
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
 }
 @media screen and (min-width:375px) and (max-width:600px) {
-  .testdr-title {
+  .testdriveLogo {
     height: get-vh-mob(30px);
     width: get-vw-mob(290px);
     position: absolute;
