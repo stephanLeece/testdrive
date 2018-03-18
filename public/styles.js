@@ -4,6 +4,16 @@ if ($(window).width() > 600) {
     $(".mob-container").show();
 }
 
+if ($(window).width() < 600 && window.location.pathname == '/testdrive') {
+  $(".mob-container").show();
+  $("#makeitblack").hide();
+  $("#backButton").hide();
+} 
+else if (window.location.pathname == '/testdrive'){
+  $(".drivedrive-menu").hide();
+  $("#makeitblack").hide();
+}
+
 $('.eventsInfoBox').find('div').addClass('hidden');
 $(".eventDetails").click(function() {
   let eventIndex = $(this).index();

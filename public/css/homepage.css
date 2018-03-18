@@ -187,20 +187,20 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 800px) {
   /* STYLING FOR MENU - MOBILE */
   /* STYLING FOR HAMBURGER MENU ICON */
   .burger {
     display: block;
-    width: 6.4vw;
+    width: 6.66667vw;
     height: 3.5982vh;
     position: absolute;
     top: 12.5937vh;
-    left: 46.93333vw; }
+    left: 48.88889vw; }
   #DriveDrive {
     top: 0vh;
-    left: 7.2vw;
-    width: 75.73333vw;
+    left: 7.5vw;
+    width: 78.88889vw;
     height: 6.74663vh;
     position: absolute; }
   .drivedrive-menu ul {
@@ -251,11 +251,11 @@
 
     /* STYLING FOR THE GALLERY SPACE IMAGE */
   #gallery-space-img {
-    width: 93.06667vw;
+    width: 96.94444vw;
     height: 48.42579vh;
     position: absolute;
     top: 20.68966vh;
-    left: 3.46667vw;
+    left: 3.61111vw;
     cursor: pointer; }
   .shadowfilter {
     -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
@@ -266,36 +266,36 @@
     -webkit-filter: drop-shadow(10px 10px 18px #ffc278); }
   /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
   #home-red-line {
-    width: 41.41333vw;
+    width: 43.13889vw;
     height: 12.5937vh;
     object-fit: contain;
     position: absolute;
     top: 57.57121vh;
-    left: 3.73333vw;
+    left: 3.88889vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
   #home-green-line {
-    width: 46.66667vw;
+    width: 48.61111vw;
     height: 15.26237vh;
     object-fit: contain;
     position: absolute;
     top: 72.41379vh;
-    left: 50.66667vw;
+    left: 52.77778vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: 10; }
   /* STYLING FOR TESTDRIVE LOGO */
   .tdLogo {
     position: absolute;
-    width: 77.33333vw;
+    width: 80.55556vw;
     height: 4.49775vh;
-    left: 11.2vw;
+    left: 11.66667vw;
     top: 89.50525vh; }
   #home-blue-line {
-    width: 27.54667vw;
+    width: 28.69444vw;
     height: 15.5922vh;
     object-fit: contain;
     position: absolute;
     top: 15.5922vh;
-    left: 68.26667vw;
+    left: 71.11111vw;
     z-index: 3000;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
   /* STYLING FOR MODAL */
@@ -320,24 +320,24 @@
     background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 58.66667vw;
+    width: 61.11111vw;
     height: 20.38981vh;
     object-fit: contain;
     top: 63.41829vh;
-    left: 35.2vw; }
+    left: 36.66667vw; }
   #home-v {
     position: absolute;
-    width: 38.82667vw;
+    width: 40.44444vw;
     height: 12.23388vh;
     top: 67.49625vh;
-    left: 40.85333vw; }
+    left: 42.55556vw; }
   .fadeIn {
     opacity: 1; }
   #modal {
     position: absolute;
     top: 7.64618vh;
     left: 0;
-    width: 100vw;
+    width: 104.16667vw;
     height: 91.90405vh;
     background-image: url("/assets/Elements/Home/Home-infobox-blue.svg");
     background-repeat: no-repeat;
@@ -345,9 +345,9 @@
     #modal .words {
       position: absolute;
       top: 8.69565vh;
-      width: 77.06667vw;
+      width: 80.27778vw;
       height: 65.51724vh;
-      left: 11.73333vw;
+      left: 12.22222vw;
       /* FONT STYLING */
       font-family: TimesNewRomanPSMT;
       font-size: 2.69865vh;
@@ -355,7 +355,7 @@
       font-style: normal;
       font-stretch: normal;
       line-height: 1.06;
-      letter-spacing: -0.21333vw;
+      letter-spacing: -0.22222vw;
       text-align: left;
       color: #222222; }
   .clicked-gallery-img {

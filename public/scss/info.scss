@@ -131,14 +131,20 @@
 }
 
 
-
+#testdriveInfo {
+    position: absolute;
+    width: get-vw-mob(290px);
+    height: get-vh-mob(30px);
+    bottom: get-vh(86px);
+    right: get-vw(34px);
+}
 
 /* MOBILE DESIGN  */
 
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
-    $vw: (375 * 0.01) * 1px;
+    $vw: (360 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -153,7 +159,7 @@
 
 
 
-@media screen and (min-width:375px) and (max-width:600px) {
+@media screen and (min-width:360px) and (max-width:600px) {
 
 
     #mobile-background-img {
@@ -278,7 +284,7 @@
 
 
 
-    #tdLogo {
+    #testdriveInfo {
         position: absolute;
         width: get-vw-mob(290px);
         height: get-vh-mob(30px);

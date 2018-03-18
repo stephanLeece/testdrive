@@ -8,7 +8,7 @@
   @return ($object / $vh) * 1vh;
 }
 @function get-vw-mob($object) {
-  $vw: (375 * 0.01) * 1px;
+  $vw: (360 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
 @function get-vh-mob($object) {
@@ -16,7 +16,7 @@
   @return ($object / $vh) * 1vh;
 }
 
-.testdr-title {
+.testdriveLogo {
   height: get-vh(35px);
   width: get-vw(338px);
   position: absolute;
@@ -36,7 +36,8 @@
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
 }
-@media screen and (min-width:375px) and (max-width:600px) {
+
+@media screen and (min-width:360px) and (max-width:600px) {
   .testdr-title {
     height: get-vh-mob(30px);
     width: get-vw-mob(290px);
