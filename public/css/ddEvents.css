@@ -52,7 +52,7 @@
   .eventList {
     position: relative;
     width: 30.66667vw;
-    top: 17.69115vh;
+    top: 22.48876vh;
     left: 30.66667vw;
     margin-top: 20px;
     display: block;
@@ -67,12 +67,12 @@
       margin: -5000px; }
     .eventList .eventDetails {
       display: block;
+      position: relative;
+      left: -20vw;
       width: 56.33333vw;
       height: 5.09745vh;
       padding: 50px;
       margin: -50px; }
-  .event-info-text:first-child {
-    padding-top: 20px; }
   .event-info-text {
     display: block;
     width: 41.06667vw;
