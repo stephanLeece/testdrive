@@ -88,4 +88,5 @@
   .eventsInfoBox {
     position: initial;
     width: 100%;
+    height: auto;
     background: url("../assets/mobile/rectangle-5.svg"); } }
