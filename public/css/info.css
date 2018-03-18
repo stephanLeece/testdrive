@@ -39,7 +39,7 @@ form {
 
 .sign-up-to-our-maili {
   width: 15.90909vw;
-  height: 2.24609vh;
+  height: 1.95312vh;
   margin-bottom: 29.10156vh;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
@@ -49,14 +49,16 @@ form {
   line-height: 1.05;
   letter-spacing: -0.05844vw;
   text-align: left;
-  color: red; }
+  color: #222222;
+  text-shadow: 3px 3px black; }
 
 input {
   font-size: 1.2987vw;
   background: none;
   border: none;
   outline: none;
-  font-family: TimesNewRomanPSMT; }
+  font-family: TimesNewRomanPSMT;
+  text-shadow: 3px 3px black; }
   input[type="email"] {
     width: 14.35065vw;
     height: 3.90625vh;
@@ -158,6 +160,7 @@ input {
     line-height: 1.05;
     letter-spacing: -0.9px;
     text-align: left;
+    text-shadow: 2px 2px black;
     color: #222222; }
   /* STYLING FOR THE MAILING FORM & INPUT FIELD */
   form {

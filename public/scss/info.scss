@@ -67,7 +67,7 @@
 
     .sign-up-to-our-maili {
     	width: get-vw(245px);
-    	height: get-vh(23px);
+    	height: get-vh(20px);
         margin-bottom:get-vh(298px);
     	font-family: TimesNewRomanPSMT;
     	font-size: get-vw(20px);
@@ -77,8 +77,8 @@
     	line-height: 1.05;
     	letter-spacing: get-vw(-0.9px);
     	text-align: left;
-    	// color: #222222;
-        color: red;
+    	color: #222222;
+        text-shadow: 3px 3px black;
     }
 
 
@@ -88,6 +88,7 @@
     border: none;
     outline: none;
     font-family: TimesNewRomanPSMT;
+    text-shadow: 3px 3px black;
 
     &[type="email"] {
       width: get-vw(221px);
@@ -234,6 +235,7 @@
         line-height: 1.05;
         letter-spacing: -0.9px;
         text-align: left;
+            text-shadow: 2px 2px black;
         color: #222222;
     }
 
@@ -297,4 +299,3 @@
 
 
 }
-
