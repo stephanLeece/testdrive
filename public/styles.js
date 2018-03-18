@@ -4,7 +4,6 @@ if ($(window).width() > 600) {
     $(".mob-container").show();
 }
 
-console.log('location', window.location.pathname);
 // -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
 //     if ($(window).width() > 375 && $(window).width() < 600) {
@@ -23,15 +22,31 @@ if (window.location.pathname == '/info') {
 //     }
 }
 
+function eventHover(view) {
+  $(".eventDetails").hover(function(){
+      $(this).addClass(view);
+      }, function(){
+      $(this).removeClass(view);
+  });
+}
+
+
 if (window.location.pathname == '/catalogue') {
   $('#cat').css({'color': 'rgb(255, 194, 120)'});
 }
 
-
 if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
+  $('.eventDetails:first-child').addClass('ddEventActive');
+  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  eventHover('ddEventActive');
 }
 
+if (window.location.pathname == '/testdrive') {
+  $('.eventDetails:first-child').addClass('tdEventActive');
+  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  eventHover('tdEventActive');
+}
 
 
 

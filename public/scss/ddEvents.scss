@@ -66,14 +66,14 @@
 }
 
 #ddEventsList {
-  // .eventDetails :hover {
-  //   background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-  //   background-size:  contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  //   padding: 50px;
-  //   margin: -50px;
-  // }
+  .ddEventActive {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+    margin: -50px;
+  }
 }
 
 #ddEventsInfobox {
@@ -137,7 +137,7 @@
     }
 
     .event-info-li {
-        
+
     }
 
     .event-info-text {
