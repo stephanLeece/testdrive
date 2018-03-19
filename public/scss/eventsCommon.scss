@@ -48,7 +48,7 @@
   div {
     p {
       &:first-child {
-        width: get-vw(203px);
+        // width: get-vw(210px);
   	    height: get-vh(33px);
         margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
@@ -62,7 +62,7 @@
         color: #222222;
       }
       &:nth-child(2) {
-        width: get-vw(203px);
+        // width: get-vw(220px);
   	    height: get-vh(33px);
         margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
@@ -139,4 +139,24 @@
     height: auto;
     background: url("../assets/mobile/rectangle-5.svg");
   }
+}
+
+.events-img {
+    width:100%;
+}
+
+.event-top-title {
+width: get-vw(723px);
+height: get-vh(33px);
+top: get-vh(13px);
+font-family: TimesNewRomanPSMT;
+font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: -1.9px;
+text-align: left;
+color: #01df36;
+
 }

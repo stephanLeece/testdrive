@@ -14,10 +14,15 @@
     {{/eventList}}
   </div>
   <div class="eventsInfoBox" id="tdEventsInfobox">
+
     {{#eventList}}
+
     <div class='eventInfo'>
+        <h1 class="event-top-title">{{eventTitle}}</h1>
+
         {{#eventContent}}
-          <img src= {{image}} alt="">
+          <br></br>
+          <img class="events-img" src= {{image}} alt="">
           <p>{{imageDescrip}}</p>
         {{/eventContent}}
         {{{eventInfo}}}
