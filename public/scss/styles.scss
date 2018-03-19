@@ -33,8 +33,10 @@ body {
 
 #infoLink {
   position: absolute;
+  right: get-vw(120px);
+  width: get-vw(131px);
+  height: get-vh(66px);
   top: get-vh(57px);
-  right: get-vw(62px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,8 +47,13 @@ body {
   }
 
   img {
+    position: absolute;
     width: get-vw(30px);
     height: get-vh(39px);
+    margin-top: get-vh(9px);
+    margin-left: get-vw(100px);
+    z-index: 80;
+
   }
   width: get-vw(138px);
   height: get-vh(56px);
@@ -82,10 +89,10 @@ body {
 
 #backButton {
   position: absolute;
-  bottom: get-vh(86px);
-  right: get-vw(126px);
-  width: 89px;
-  height: 56px;
+  bottom: get-vh(45px);
+  right: get-vw(120px);
+  width: get-vw(131px);
+  height: get-vh(66px);
   cursor: pointer;
 
   h1 {

@@ -11,8 +11,10 @@ body {
 
 #infoLink {
   position: absolute;
+  right: 7.79221vw;
+  width: 8.50649vw;
+  height: 6.44531vh;
   top: 5.56641vh;
-  right: 4.02597vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,8 +25,12 @@ body {
     text-decoration: none;
     color: #222222; }
   #infoLink img {
+    position: absolute;
     width: 1.94805vw;
-    height: 3.80859vh; }
+    height: 3.80859vh;
+    margin-top: 0.87891vh;
+    margin-left: 6.49351vw;
+    z-index: 80; }
   #infoLink h1 {
     font-size: 3.24675vw;
     font-weight: normal;
@@ -51,10 +57,10 @@ body {
 
 #backButton {
   position: absolute;
-  bottom: 8.39844vh;
-  right: 8.18182vw;
-  width: 89px;
-  height: 56px;
+  bottom: 4.39453vh;
+  right: 7.79221vw;
+  width: 8.50649vw;
+  height: 6.44531vh;
   cursor: pointer; }
   #backButton h1 {
     font-size: 3.24675vw;
