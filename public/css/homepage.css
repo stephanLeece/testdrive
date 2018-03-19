@@ -62,7 +62,8 @@
   position: absolute;
   top: 2.98701vw;
   left: 25.97403vw;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 40px; }
 
 .shadowfilter {
   -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
@@ -127,7 +128,7 @@
   background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: 29.02597vw 26.95313vh;
+  background-size: 29.02597vw 26.95312vh;
   width: 34.93506vw;
   top: 58.98438vh;
   height: 32.51953vh;
@@ -159,7 +160,8 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  z-index: 40; }
+  z-index: 40;
+  cursor: pointer; }
   #modal .words {
     width: 18.76623vw;
     height: 44.53125vh;
@@ -168,7 +170,7 @@
     top: 18.16406vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95313vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -183,7 +185,8 @@
     margin-bottom: 8.59375vh;
     letter-spacing: normal;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    cursor: pointer; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */

@@ -76,6 +76,8 @@ body {
   position: absolute;
   top: get-vh(71px);
   left: get-vw(143px);
+  width: get-vw(338px);
+  height: get-vh(35px);
 }
 
 #backButton {
@@ -248,8 +250,6 @@ body {
   &:hover {
     color: rgb(255, 194, 120);
   }
-<<<<<<< HEAD
-=======
 }
 
 
@@ -259,7 +259,6 @@ body {
 
 @media screen and (min-width:360px) and (max-width:600px) {
 
->>>>>>> ed6bf14ac7f7bb6f3511370e6620675dc7a3313c
 
     /* STYLING FOR NAV MENU - MOBILE */
     .mob-container {

@@ -22,14 +22,16 @@
   align-items: space-between;
   position: absolute;
   top: get-vh(405px);
-  left: get-vw(64.7px);
+  left: get-vw(54.7px);
+  // left: get-vw(64.7px);
+
 }
 
 .eventDetails {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: margin-left;
+  align-items: margin-left;
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
   font-weight: normal;
@@ -41,11 +43,14 @@
   color: #222222;
   width: get-vw(445px);
   height: get-vh(107.9px);
-  padding: 50px;
+  padding: 35px;
   margin: -50px;
   div {
     p {
       &:first-child {
+        width: get-vw(203px);
+  	    height: get-vh(33px);
+        margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
         font-size: 17px;
         font-weight: normal;
@@ -57,6 +62,9 @@
         color: #222222;
       }
       &:nth-child(2) {
+        width: get-vw(203px);
+  	    height: get-vh(33px);
+        margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
         font-size: 20px;
         font-weight: normal;
@@ -113,6 +121,7 @@
         font-size:  get-vw-mob(17px);
         letter-spacing:  get-vw-mob(-0.9px);
         line-height: 2.18;
+
       }
 
       &:nth-child(2) {

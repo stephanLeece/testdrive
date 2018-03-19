@@ -45,7 +45,9 @@ body {
 #testdriveLogoTL {
   position: absolute;
   top: 6.93359vh;
-  left: 9.28571vw; }
+  left: 9.28571vw;
+  width: 21.94805vw;
+  height: 3.41797vh; }
 
 #backButton {
   position: absolute;
@@ -151,22 +153,6 @@ body {
     height: 4.49775vh;
     top: 61.91904vh;
     left: 11.66667vw; }
-  #mob-test-eve {
-    position: absolute;
-    width: 31.38889vw;
-    height: 6.89655vh;
-    top: 68.51574vh;
-    left: 36.25vw;
-    /* STYLING FOR FONTS */
-    font-family: TimesNewRomanPSMT;
-    font-size: 41px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -2.2px;
-    text-align: center;
-    color: #000000; }
   a {
     text-decoration: none; } }
 
@@ -182,13 +168,13 @@ body {
     height: 100%;
     background-color: white;
     z-index: 4000; }
-  #cat .x, #eve .x {
+  .x {
     position: absolute;
     width: 3.88889vw;
     height: 2.09895vh;
     top: 0.74963vh;
-    left: 48vw; }
-  #cat #mob-cat, #eve #mob-cat {
+    left: 50vw; }
+  #mob-cat {
     position: absolute;
     width: 43.61111vw;
     height: 6.89655vh;
@@ -205,7 +191,7 @@ body {
     text-align: center;
     color: #000000;
     -webkit-text-stroke: 0 #979797; }
-  #cat #mob-eve, #eve #mob-eve {
+  #mob-eve {
     position: absolute;
     width: 31.38889vw;
     height: 6.89655vh;
@@ -221,7 +207,7 @@ body {
     letter-spacing: -2.2px;
     text-align: center;
     color: #000000; }
-  #cat #mob-info, #eve #mob-info {
+  #mob-info {
     position: absolute;
     width: 16.11111vw;
     height: 6.89655vh;
@@ -237,34 +223,19 @@ body {
     letter-spacing: -2.2px;
     text-align: center;
     color: #000000; }
-  #cat #mob-bike, #eve #mob-bike {
+  #mob-bike {
     position: absolute;
     width: 10.83333vw;
     height: 8.09595vh;
     top: 29.08546vh;
     left: 46.94444vw; }
-  #mob-testdriveLogo {
-    position: absolute;
-    width: 80.55556vw;
+  #testdriveLogoTL {
     height: 4.49775vh;
-    top: 61.91904vh;
-    left: 11.66667vw; }
-  #mob-test-eve {
+    width: 80.55556vw;
     position: absolute;
-    width: 31.38889vw;
-    height: 6.89655vh;
-    top: 68.51574vh;
-    left: 36.25vw;
-    /* STYLING FOR FONTS */
-    font-family: TimesNewRomanPSMT;
-    font-size: 41px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -2.2px;
-    text-align: center;
-    color: #000000; }
+    top: 5.997vh;
+    left: 13.05556vw;
+    z-index: 10; }
   a {
     text-decoration: none; } }
 

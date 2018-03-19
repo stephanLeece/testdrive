@@ -99,6 +99,7 @@ width: get-vw(354px);
     top: get-vw(46px);
     left: get-vw(400px);
     cursor: pointer;
+    z-index: 40px;
 }
 
 .shadowfilter {
@@ -207,6 +208,7 @@ width: get-vw(354px);
     justify-content: center;
     align-content: center;
     z-index: 40;
+    cursor: pointer;
 
     .words {
 
@@ -233,6 +235,7 @@ width: get-vw(354px);
         letter-spacing: normal;
         justify-content: center;
         align-content: center;
+        cursor: pointer;
 
         }
 }

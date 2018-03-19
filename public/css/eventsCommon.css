@@ -5,13 +5,13 @@
   align-items: space-between;
   position: absolute;
   top: 39.55078vh;
-  left: 4.2013vw; }
+  left: 3.55195vw; }
 
 .eventDetails {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: margin-left;
+  align-items: margin-left;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
@@ -23,9 +23,12 @@
   color: #222222;
   width: 28.8961vw;
   height: 10.53711vh;
-  padding: 50px;
+  padding: 35px;
   margin: -50px; }
   .eventDetails div p:first-child {
+    width: 13.18182vw;
+    height: 3.22266vh;
+    margin-left: 3.2013vw;
     font-family: TimesNewRomanPSMT;
     font-size: 17px;
     font-weight: normal;
@@ -36,6 +39,9 @@
     text-align: left;
     color: #222222; }
   .eventDetails div p:nth-child(2) {
+    width: 13.18182vw;
+    height: 3.22266vh;
+    margin-left: 3.2013vw;
     font-family: TimesNewRomanPSMT;
     font-size: 20px;
     font-weight: normal;
@@ -58,7 +64,7 @@
   .eventsInfoBox div {
     width: 94%; }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
   .eventList {
     position: initial;
     display: flex;
@@ -78,12 +84,12 @@
     text-align: left;
     color: #222222; }
     .eventDetails div p:first-child {
-      font-size: 4.53333vw;
-      letter-spacing: -0.24vw;
+      font-size: 4.72222vw;
+      letter-spacing: -0.25vw;
       line-height: 2.18; }
     .eventDetails div p:nth-child(2) {
-      font-size: 5.33333vw;
-      letter-spacing: -0.24vw;
+      font-size: 5.55556vw;
+      letter-spacing: -0.25vw;
       line-height: 1.05; }
   .eventsInfoBox {
     position: initial;
