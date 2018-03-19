@@ -143,7 +143,7 @@ color: #ff4819;
 
 //MEDIA Q HERE STOP TYPING HERE EXPECTIGN THING TO CHANGE ON WEB ELENA!
 
-@media screen and (min-width:360px) and (max-width:600px) {
+@media screen and (min-width:360px) and (max-width:600px) and (orientation: portrait){
   .eventList {
     position: initial;
     display: flex;

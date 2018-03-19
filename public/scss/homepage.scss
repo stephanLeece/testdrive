@@ -288,14 +288,7 @@ width: get-vw(354px);
 
 
 
-
-
-
-
-
-
-
-@media screen and (min-width:360px) and (max-width:800px) {
+@media screen and (min-width:360px) and (max-width:800px) and (orientation: portrait) {
 
 
     /* STYLING FOR MENU - MOBILE */

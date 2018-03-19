@@ -93,7 +93,7 @@ input {
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-@media screen and (min-width: 360px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
     background-size: 111.11111vw 190.25487vh;

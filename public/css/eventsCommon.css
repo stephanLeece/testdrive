@@ -95,7 +95,7 @@
   text-align: left;
   color: #ff4819; }
 
-@media screen and (min-width: 360px) and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
   .eventList {
     position: initial;
     display: flex;
