@@ -94,6 +94,55 @@
     width: 94%;
   }
 }
+
+
+
+.events-img {
+    width:85%;
+    // left: get-vw(620px);
+    margin-left: get-vw(40px);
+    margin-right: get-vw(1px);
+
+}
+
+.event-top-title {
+width: get-vw(723px);
+height: get-vh(33px);
+top: get-vh(13px);
+font-family: TimesNewRomanPSMT;
+font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: -1.9px;
+text-align: left;
+color: #01df36;
+
+}
+
+.ddevent-top-title {
+width: get-vw(723px);
+height: get-vh(33px);
+top: get-vh(13px);
+font-family: TimesNewRomanPSMT;
+font-size: 30px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: -1.9px;
+text-align: left;
+color: #ff4819;
+
+}
+
+
+
+
+
+//MEDIA Q HERE STOP TYPING HERE EXPECTIGN THING TO CHANGE ON WEB ELENA!
+
 @media screen and (min-width:360px) and (max-width:600px) {
   .eventList {
     position: initial;
@@ -139,40 +188,4 @@
     height: auto;
     background: url("../assets/mobile/rectangle-5.svg");
   }
-}
-
-.events-img {
-    width:100%;
-}
-
-.event-top-title {
-width: get-vw(723px);
-height: get-vh(33px);
-top: get-vh(13px);
-font-family: TimesNewRomanPSMT;
-font-size: 30px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: -1.9px;
-text-align: left;
-color: #01df36;
-
-}
-
-.ddevent-top-title {
-width: get-vw(723px);
-height: get-vh(33px);
-top: get-vh(13px);
-font-family: TimesNewRomanPSMT;
-font-size: 30px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: -1.9px;
-text-align: left;
-color: #ff4819;
-
 }

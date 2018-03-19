@@ -43,10 +43,11 @@ body {
 
 #testdriveLogoBR {
   position: absolute;
-  width: get-vw-mob(290px);
-  height: get-vh-mob(30px);
+  width: 18.83117vw;
+  height: 2.92969vh;
   bottom: 8.39844vh;
-  right: 2.20779vw; }
+  right: 2.20779vw;
+  z-index: 20; }
 
 #testdriveLogoTL {
   position: absolute;

@@ -73,10 +73,11 @@ body {
 
 #testdriveLogoBR {
     position: absolute;
-    width: get-vw-mob(290px);
-    height: get-vh-mob(30px);
+    width: get-vw(290px);
+    height: get-vh(30px);
     bottom: get-vh(86px);
     right: get-vw(34px);
+    z-index: 20;
 }
 
 #testdriveLogoTL {
@@ -262,7 +263,9 @@ body {
 
 
 
+// ?????? WHY DO WE HAVE THIS TWO TIMES OMG !!!!!!!!!!!!!!
 
+//MEDIA Q HERE STOP TYPING HERE EXPECTIGN THING TO CHANGE ON WEB ELENA!
 
 @media screen and (min-width:360px) and (max-width:600px) {
 

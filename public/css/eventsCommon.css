@@ -62,6 +62,39 @@
   .eventsInfoBox div {
     width: 94%; }
 
+.events-img {
+  width: 85%;
+  margin-left: 2.5974vw;
+  margin-right: 0.06494vw; }
+
+.event-top-title {
+  width: 46.94805vw;
+  height: 3.22266vh;
+  top: 1.26953vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.9px;
+  text-align: left;
+  color: #01df36; }
+
+.ddevent-top-title {
+  width: 46.94805vw;
+  height: 3.22266vh;
+  top: 1.26953vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.9px;
+  text-align: left;
+  color: #ff4819; }
+
 @media screen and (min-width: 360px) and (max-width: 600px) {
   .eventList {
     position: initial;
@@ -94,34 +127,3 @@
     width: 100%;
     height: auto;
     background: url("../assets/mobile/rectangle-5.svg"); } }
-
-.events-img {
-  width: 100%; }
-
-.event-top-title {
-  width: 46.94805vw;
-  height: 3.22266vh;
-  top: 1.26953vh;
-  font-family: TimesNewRomanPSMT;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.9px;
-  text-align: left;
-  color: #01df36; }
-
-.ddevent-top-title {
-  width: 46.94805vw;
-  height: 3.22266vh;
-  top: 1.26953vh;
-  font-family: TimesNewRomanPSMT;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.9px;
-  text-align: left;
-  color: #ff4819; }
