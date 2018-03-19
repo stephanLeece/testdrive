@@ -37,7 +37,7 @@
     left: get-vw(195px);
     // bottom: get-vh(335px);
     width: get-vw(245px);
-    height: get-vh(322px);
+    height: get-vh(222px);
     margin-top: get-vh(367px);
     margin-bottom: get-vh(335px);
     font-size: get-vh(20px);
@@ -79,7 +79,7 @@
     	letter-spacing: get-vw(-0.9px);
     	text-align: left;
     	color: #222222;
-        text-shadow: 3px 3px black;
+        text-shadow: 1px 1px black;
     }
 
 
@@ -89,7 +89,7 @@
     border: none;
     outline: none;
     font-family: TimesNewRomanPSMT;
-    text-shadow: 3px 3px black;
+    text-shadow: 1px 1px black;
 
     &[type="email"] {
       width: get-vw(221px);

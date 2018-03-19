@@ -12,7 +12,7 @@
   position: absolute;
   left: 12.66234vw;
   width: 15.90909vw;
-  height: 31.44531vh;
+  height: 21.67969vh;
   margin-top: 35.83984vh;
   margin-bottom: 32.71484vh;
   font-size: 1.95312vh;
@@ -49,7 +49,7 @@ form {
   letter-spacing: -0.05844vw;
   text-align: left;
   color: #222222;
-  text-shadow: 3px 3px black; }
+  text-shadow: 1px 1px black; }
 
 input {
   font-size: 1.2987vw;
@@ -57,7 +57,7 @@ input {
   border: none;
   outline: none;
   font-family: TimesNewRomanPSMT;
-  text-shadow: 3px 3px black; }
+  text-shadow: 1px 1px black; }
   input[type="email"] {
     width: 14.35065vw;
     height: 3.90625vh;
