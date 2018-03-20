@@ -101,29 +101,99 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: space-between;
+    position: absolute;
     min-height: 44.97751vh;
     width: 100%;
+    top: 21.28906vh;
+    margin-left: -0.83333vw;
     overflow-y: scroll;
-    overflow-x: hidden;
-    margin-top: 14.9925vh; }
-  .eventDetails div p {
+    overflow-x: hidden; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: margin-left;
+    align-items: margin-left;
     font-family: TimesNewRomanPSMT;
+    font-size: 5.55556vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: -0.25vw;
     text-align: left;
-    color: #222222; }
+    color: #222222;
+    width: 85.55556vw;
+    height: 16.17691vh;
+    margin: 50px;
+    margin-left: 0px;
+    padding: 25px; }
     .eventDetails div p:first-child {
-      font-size: 4.72222vw;
-      letter-spacing: -0.25vw;
-      line-height: 2.18; }
+      height: 3.22266vh;
+      margin-left: 3.2013vw;
+      font-family: TimesNewRomanPSMT;
+      font-size: 17px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.18;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222; }
     .eventDetails div p:nth-child(2) {
-      font-size: 5.55556vw;
-      letter-spacing: -0.25vw;
-      line-height: 1.05; }
+      height: 3.22266vh;
+      margin-left: 3.2013vw;
+      font-family: TimesNewRomanPSMT;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.85;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222; }
   .eventsInfoBox {
-    position: initial;
+    display: flex;
+    justify-content: center;
+    position: absolute;
     width: 100%;
     height: auto;
-    background: url("../assets/mobile/rectangle-5.svg"); } }
+    top: 56.52174vh;
+    left: 0vw;
+    width: 104.16667vw;
+    height: 110.1949vh;
+    background: url("../assets/mobile/rectangle-5.svg");
+    background-repeat: no-repeat;
+    overflow-y: scroll; }
+    .eventsInfoBox div {
+      width: 94%; }
+  .events-img {
+    width: 85%;
+    margin-left: 2.5974vw;
+    margin-right: 0.06494vw; }
+  .event-top-title {
+    width: 46.94805vw;
+    height: 3.22266vh;
+    top: 1.26953vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.9px;
+    text-align: left;
+    color: #01df36; }
+  .ddevent-top-title {
+    width: 46.94805vw;
+    height: 3.22266vh;
+    top: 1.26953vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.9px;
+    text-align: left;
+    color: #ff4819; } }
