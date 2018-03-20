@@ -23,7 +23,7 @@ $(".shadowfilter").on('click', function() {
 
 });
 
-// HIDE MODAL -- MOBILE & DESKTOP 
+// HIDE MODAL -- MOBILE & DESKTOP
 $("#modal").on('click', function() {
     hideMobileModal();
 });
@@ -72,7 +72,7 @@ function hideMobileModal() {
 // FADE OUT HULK IMAGE & FADE IN HOME PAGE
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
-    $('#halk').fadeOut(5000);
+    $('#halk').fadeOut(2000);
 
     // setTimeout(function() {
     $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
@@ -80,13 +80,6 @@ function fadeIntoImg() {
 }
 
 fadeIntoImg();
-
-
-
-
-
-
-
 
 
 
@@ -171,43 +164,6 @@ $(".x").on('click', function() {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ------------------------------- testdrive/events functions ------------------
-
-// $(parentSelector).find(childSelector)
-//
-
-
-
-//trying to work this out
-// $(document).ready(function(){
-//     $("ddEventsList").trigger("click");
-// });
-
-// $( "p span" ).first().addClass( "highlight" );
 
 
 
