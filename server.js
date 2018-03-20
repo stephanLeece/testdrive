@@ -40,8 +40,11 @@ app.use(express.static(__dirname + `/public`));
 
 app.get('/', function(req, res) {
     let video = {};
+
     client.getEntries().then((entries) => {
+        // console.log(entry.fields.files.url);
         entries.items.forEach(entry => {
+            
             if (entry.fields.videoFiles) {
                 video = entry.fields.videoFiles[1].fields.file;
             }

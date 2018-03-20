@@ -3,10 +3,8 @@
 	padding: 0;
 }
 
-
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 /* MOBILE DESIGN  */
-
-
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
     $vw: (360 * 0.01) * 1px;

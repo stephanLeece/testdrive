@@ -9,9 +9,6 @@
 }
 
 
-
-
-
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
 width: get-vw(354px);
@@ -242,37 +239,10 @@ width: get-vw(354px);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-
 
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
@@ -426,20 +396,6 @@ width: get-vw(354px);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* STYLING FOR TESTDRIVE LOGO */
     .tdLogo {
         position: absolute;
@@ -448,9 +404,6 @@ width: get-vw(354px);
         left: get-vw-mob(42px);
         top: get-vh-mob(597px);
     }
-
-
-
 
 
 
@@ -553,12 +506,6 @@ width: get-vw(354px);
         left: 3.46667vw;
         cursor: pointer;
     }
-
-
-
-
-
-
 
 
 } /* CLOSES MEDIA QUERIES */

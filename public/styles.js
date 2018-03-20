@@ -21,6 +21,21 @@ $(".eventDetails").click(function() {
   $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
 });
 
+
+
+// i must be doing something wrong here: 
+// if ($(window).width() < 600 && window.location.pathname == '/catalogue') {
+//   $("#h1-catalogue-mobile").show();
+// } else if (window.location.pathname == '/catalogue'){
+//       $("#h1-catalogue-mobile").hide();
+// }
+
+
+
+
+
+
+
 // -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
     $('body').css({

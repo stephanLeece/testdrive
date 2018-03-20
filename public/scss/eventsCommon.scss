@@ -6,14 +6,7 @@
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-@function get-vw-mob($object) {
-  $vw: (360 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-@function get-vh-mob($object) {
-  $vh: (667 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
+
 
 .eventList {
   display: flex;
@@ -140,8 +133,17 @@ color: #ff4819;
 
 
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MEDIA Q HERE STOP TYPING HERE EXPECTIGN THING TO CHANGE ON WEB ELENA!
+
+@function get-vw-mob($object) {
+  $vw: (360 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh-mob($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
 
 @media screen and (min-width:360px) and (max-width:600px) and (orientation: portrait){
   .eventList {

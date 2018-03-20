@@ -1,16 +1,10 @@
 // ---------------------------------- homepage functions -----------------
 
-
-
-
 let backButton = $("#backButton");
 
 backButton.on('click', () => {
     window.history.back();
 });
-
-
-
 
 // SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
 $(".shadowfilter").on('click', function() {
@@ -23,12 +17,12 @@ $(".shadowfilter").on('click', function() {
 
 });
 
+
+
 // HIDE MODAL -- MOBILE & DESKTOP
 $("#modal").on('click', function() {
     hideMobileModal();
 });
-
-
 
 
 
@@ -61,14 +55,6 @@ function hideMobileModal() {
 
 
 
-
-
-
-
-
-
-
-
 // FADE OUT HULK IMAGE & FADE IN HOME PAGE
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
@@ -78,7 +64,6 @@ function fadeIntoImg() {
     $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
     // }, 5000);
 }
-
 fadeIntoImg();
 
 

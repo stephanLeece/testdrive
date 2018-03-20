@@ -145,7 +145,7 @@
 
 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
@@ -310,6 +310,25 @@
     .pdf:hover {
         color: #ff4819;
     }
+
+
+    // #h1-catalogue-mobile{
+    // width: 157px;
+    // height: 46px;
+    // font-family: TimesNewRomanPSMT;
+    // font-size: 41px;
+    // font-weight: normal;
+    // font-style: normal;
+    // font-stretch: normal;
+    // line-height: normal;
+    // letter-spacing: -2.4px;
+    // text-align: center;
+    // color: #ffb760;
+    // -webkit-text-stroke: 0 #979797;
+    //
+    // }
+
+
 
 
 } /* CLOSES MEDIA QUERIES */
