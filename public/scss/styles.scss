@@ -261,6 +261,23 @@ body {
   }
 }
 
+#testdriveLogoBR {
+    position: absolute;
+    border: 1px solid red;
+    width: get-vw-mob(290px);
+    height: get-vh-mob(30px);
+    bottom: 0%;
+    left: get-vw-mob(42px);
+    z-index: 20;
+}
+
+#testdriveLogoTL {
+  position: absolute;
+  top: get-vh-mob(47px);
+  right: get-vw-mob(38px);
+  width: get-vw-mob(290px);
+  height: get-vh-mob(30px);
+}
 
 
 

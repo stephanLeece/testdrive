@@ -1,6 +1,4 @@
-
-{{>testdriveInfoTL}} {{> backLink}}
-{{> infoLink}} {{> big-mac}}
+{{>testdriveInfoTL}} {{> backLink}} {{> infoLink}} {{> big-mac}}
 
 <div class="events-menu">
   <div class="eventList" id="tdEventsList">
@@ -14,12 +12,9 @@
     {{/eventList}}
   </div>
   <div class="eventsInfoBox" id="tdEventsInfobox">
-
     {{#eventList}}
-
-    <div class='eventInfo'>
+      <div class='eventInfo'>
         <h1 class="event-top-title">{{eventTitle}}</h1>
-
         {{#eventContent}}
           <br></br>
           <img class="events-img" src= {{image}} alt="">
