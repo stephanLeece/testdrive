@@ -31,6 +31,9 @@
     color: #222222;
     z-index: 3000; }
 
+#cat-disp {
+  display: none; }
+
 #catalogue-line-green {
   position: absolute;
   width: 10.57792vw;
@@ -117,6 +120,19 @@
     left: 11.11111vw;
     top: 32.53373vh;
     z-index: -2000; }
+  #cat-disp {
+    display: block;
+    position: absolute;
+    height: 6.89655vh;
+    width: 43.61111vw;
+    top: 19.04048vh;
+    left: 30.55556vw; }
+    #cat-disp p {
+      color: orange;
+      font-size: 41px;
+      text-align: center; }
+  #backButton {
+    display: none; }
   #artist-container {
     position: absolute;
     top: 37.03148vh;

@@ -53,6 +53,9 @@
 
 }
 
+#cat-disp {
+  display: none;
+}
 
 #catalogue-line-green {
   position: absolute;
@@ -168,6 +171,24 @@
         left: get-vw-mob(40px);
         top: get-vh-mob(217px);
         z-index: -2000;
+    }
+
+    #cat-disp {
+      display: block;
+      position: absolute;
+      height: get-vh-mob(46px);
+      width: get-vw-mob(157px);
+      top: get-vh-mob(127px);
+      left: get-vw-mob(110px);
+        p {
+          color: orange;
+          font-size: 41px;
+          text-align: center;
+        }
+    }
+
+    #backButton  {
+      display: none;
     }
 
 

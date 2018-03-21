@@ -50,6 +50,9 @@
     text-align: left;
     color: #222222; }
 
+#eve-disp {
+  display: none; }
+
 .eventsInfoBox {
   display: flex;
   justify-content: center;
@@ -96,6 +99,17 @@
   color: #ff4819; }
 
 @media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
+  #eve-disp {
+    display: block;
+    position: absolute;
+    height: 6.89655vh;
+    width: 31.11111vw;
+    top: 19.04048vh;
+    left: 36.94444vw; }
+    #eve-disp p {
+      color: orange;
+      font-size: 41px;
+      text-align: center; }
   .eventList {
     position: initial;
     display: flex;
