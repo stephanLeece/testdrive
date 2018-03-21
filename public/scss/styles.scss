@@ -121,7 +121,8 @@ body {
 .mob-container {
     // opacity: 0;
     position: absolute;
-    left: 100%;
+    // left: 100%;
+    left: -5000px;
 }
 
 
@@ -147,12 +148,14 @@ body {
     /* STYLING FOR NAV MENU - MOBILE */
     .mob-container {
         position: fixed;
+        // position:absolute;
         min-width: 100%;
         top: get-vh-mob(0px);
-        left: 100%;
+        // left: 500%;
+        left: -600px;
         height: 100%;
         background-color: white;
-        z-index: 4000;
+        z-index: 40000;
     }
 
 
