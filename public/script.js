@@ -1,3 +1,7 @@
+
+// stops loading message apperaing.
+$.mobile.loading().hide();
+
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
