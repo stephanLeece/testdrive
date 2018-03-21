@@ -128,28 +128,28 @@
     margin: 50px;
     margin-left: 0px;
     padding: 25px; }
-    .eventDetails div p:first-child {
-      margin-left: 10.91667vw;
-      margin-top: 4.16792vh;
-      font-family: TimesNewRomanPSMT;
-      font-size: 17px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 2.18;
-      letter-spacing: -0.9px;
-      color: #222222; }
-    .eventDetails div p:nth-child(2) {
-      margin-left: 10.91667vw;
-      margin-bottom: 4.52774vh;
-      font-family: TimesNewRomanPSMT;
-      font-size: 20px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.85;
-      letter-spacing: -0.9px;
-      color: #222222; }
+  .eventDetails div p:first-child {
+    margin-left: 10.91667vw;
+    margin-top: 4.16792vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: -0.9px;
+    color: #222222; }
+  .eventDetails div p:nth-child(2) {
+    margin-left: 10.91667vw;
+    margin-bottom: 4.52774vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.85;
+    letter-spacing: -0.9px;
+    color: #222222; }
   .eventsInfoBox {
     position: absolute;
     display: flex;
@@ -163,10 +163,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: scroll; }
-    .eventsInfoBox div {
-      width: 94%; }
+  .eventsInfoBox div {
+    width: 94%; }
   .events-img {
-    width: 100%;
+    width: 99%;
     margin-left: 0.77922vw;
     margin-right: 0.77922vw; }
   .event-top-title {

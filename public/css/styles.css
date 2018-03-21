@@ -89,22 +89,46 @@ body {
   .mob-container {
     position: fixed;
     min-width: 100%;
-    top: 12.5937vh;
+    top: 0vh;
     left: 100%;
     height: 100%;
     background-color: white;
     z-index: 4000; }
+  #mob-dd-menu {
+    position: absolute;
+    width: 78.88889vw;
+    height: 6.74663vh;
+    top: 4.04798vh;
+    left: 12.77778vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    text-align: center;
+    color: #000000; }
   .x {
     position: absolute;
     width: 3.88889vw;
     height: 2.09895vh;
-    top: 0.74963vh;
-    left: 50vw; }
+    top: 13.34333vh;
+    left: 50vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    text-align: center;
+    color: #000000; }
   #mob-cat {
     position: absolute;
     width: 43.61111vw;
     height: 6.89655vh;
-    top: 6.44678vh;
+    top: 19.04048vh;
     left: 30.41667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
@@ -121,7 +145,7 @@ body {
     position: absolute;
     width: 31.38889vw;
     height: 6.89655vh;
-    top: 13.1934vh;
+    top: 25.78711vh;
     left: 36.52778vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
@@ -137,7 +161,7 @@ body {
     position: absolute;
     width: 16.11111vw;
     height: 6.89655vh;
-    top: 23.68816vh;
+    top: 36.28186vh;
     left: 44.16667vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
@@ -153,14 +177,48 @@ body {
     position: absolute;
     width: 10.83333vw;
     height: 8.09595vh;
-    top: 29.08546vh;
-    left: 46.94444vw; }
+    top: 41.67916vh;
+    left: 46.94444vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    text-align: center;
+    color: #000000; }
   #mob-testdriveLogo {
     position: absolute;
     width: 80.55556vw;
     height: 4.49775vh;
-    top: 61.91904vh;
-    left: 11.66667vw; }
+    top: 74.51274vh;
+    left: 11.66667vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    text-align: center;
+    color: #000000; }
+  #mob-test-eve {
+    position: absolute;
+    width: 31.38889vw;
+    height: 6.89655vh;
+    top: 81.10945vh;
+    left: 36.25vw;
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.2px;
+    text-align: center;
+    color: #000000; }
+  /* END OF STYLING FOR NAV MENU - MOBILE ***********/
   a {
     text-decoration: none; }
   #testdriveLogoBR {
