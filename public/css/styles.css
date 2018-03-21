@@ -50,6 +50,14 @@ body {
   right: 2.20779vw;
   z-index: 20; }
 
+#testdriveLogoInfo {
+  position: absolute;
+  width: 18.83117vw;
+  height: 2.92969vh;
+  bottom: 8.39844vh;
+  right: 2.20779vw;
+  z-index: 20; }
+
 #testdriveLogoTL {
   position: absolute;
   top: 6.93359vh;
@@ -225,15 +233,22 @@ body {
     position: absolute;
     width: 80.55556vw;
     height: 4.49775vh;
-    bottom: 0%;
-    left: 11.66667vw;
+    bottom: 2.9985vh;
+    right: 11.94444vw;
     z-index: 20; }
   #testdriveLogoTL {
     position: absolute;
     top: 7.04648vh;
     right: 10.55556vw;
     width: 80.55556vw;
-    height: 4.49775vh; } }
+    height: 4.49775vh; }
+  #testdriveLogoInfo {
+    position: absolute;
+    width: 80.55556vw;
+    height: 4.49775vh;
+    top: 179.46027vh;
+    right: 9.44444vw;
+    z-index: 20; } }
 
 #cat:hover, #eve:hover {
   color: #ffc278; }

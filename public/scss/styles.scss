@@ -81,6 +81,15 @@ body {
     z-index: 20;
 }
 
+#testdriveLogoInfo {
+    position: absolute;
+    width: get-vw(290px);
+    height: get-vh(30px);
+    bottom: get-vh(86px);
+    right: get-vw(34px);
+    z-index: 20;
+}
+
 #testdriveLogoTL {
   position: absolute;
   top: get-vh(71px);
@@ -321,8 +330,8 @@ body {
         position: absolute;
         width: get-vw-mob(290px);
         height: get-vh-mob(30px);
-        bottom: 0%;
-        left: get-vw-mob(42px);
+        bottom: get-vh-mob(20px);
+        right: get-vw-mob(43px);
         z-index: 20;
     }
 
@@ -332,6 +341,15 @@ body {
       right: get-vw-mob(38px);
       width: get-vw-mob(290px);
       height: get-vh-mob(30px);
+    }
+
+    #testdriveLogoInfo {
+        position: absolute;
+        width: get-vw-mob(290px);
+        height: get-vh-mob(30px);
+        top: get-vh-mob(1197px);
+        right: get-vw-mob(34px);
+        z-index: 20;
     }
 }
 
