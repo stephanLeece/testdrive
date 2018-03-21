@@ -129,8 +129,8 @@
     margin-left: 0px;
     padding: 25px; }
     .eventDetails div p:first-child {
-      height: 3.22266vh;
-      margin-left: 3.2013vw;
+      margin-left: 10.91667vw;
+      margin-top: 4.16792vh;
       font-family: TimesNewRomanPSMT;
       font-size: 17px;
       font-weight: normal;
@@ -138,11 +138,10 @@
       font-stretch: normal;
       line-height: 2.18;
       letter-spacing: -0.9px;
-      text-align: left;
       color: #222222; }
     .eventDetails div p:nth-child(2) {
-      height: 3.22266vh;
-      margin-left: 3.2013vw;
+      margin-left: 10.91667vw;
+      margin-bottom: 4.52774vh;
       font-family: TimesNewRomanPSMT;
       font-size: 20px;
       font-weight: normal;
@@ -150,31 +149,30 @@
       font-stretch: normal;
       line-height: 1.85;
       letter-spacing: -0.9px;
-      text-align: left;
       color: #222222; }
   .eventsInfoBox {
+    position: absolute;
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 100%;
-    height: auto;
     top: 56.52174vh;
     left: 0vw;
     width: 104.16667vw;
     height: 110.1949vh;
-    background: url("../assets/mobile/rectangle-5.svg");
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    background-size: cover;
     background-repeat: no-repeat;
     overflow-y: scroll; }
     .eventsInfoBox div {
       width: 94%; }
   .events-img {
-    width: 85%;
-    margin-left: 2.5974vw;
-    margin-right: 0.06494vw; }
+    width: 100%;
+    margin-left: 0.77922vw;
+    margin-right: 0.77922vw; }
   .event-top-title {
-    width: 46.94805vw;
-    height: 3.22266vh;
-    top: 1.26953vh;
+    width: 101.94444vw;
+    height: 5.24738vh;
+    top: 1.94903vh;
     font-family: TimesNewRomanPSMT;
     font-size: 30px;
     font-weight: normal;
@@ -185,9 +183,9 @@
     text-align: left;
     color: #01df36; }
   .ddevent-top-title {
-    width: 46.94805vw;
-    height: 3.22266vh;
-    top: 1.26953vh;
+    width: 101.94444vw;
+    height: 5.24738vh;
+    top: 1.94903vh;
     font-family: TimesNewRomanPSMT;
     font-size: 30px;
     font-weight: normal;

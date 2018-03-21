@@ -96,7 +96,7 @@ input {
 @media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
-    background-size: 111.11111vw 190.25487vh;
+    background-size: 104.16667vw 190.25487vh;
     width: 104.16667vw;
     height: 190.25487vh;
     top: 100.74963vh;
@@ -151,7 +151,7 @@ input {
     line-height: 1.05;
     letter-spacing: -0.9px;
     text-align: left;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
     color: #222222; }
   /* STYLING FOR THE MAILING FORM & INPUT FIELD */
   form {

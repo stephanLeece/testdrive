@@ -190,8 +190,11 @@ color: #ff4819;
     p {
       &:first-child {
         // width: get-vw(210px);
-  	    height: get-vh(33px);
-        margin-left: get-vw(49.3px);
+  	    // height: get-vh-mob(33px);
+        // top: get-vh-mob(263px);
+        margin-left: get-vw-mob(39.3px);
+        margin-top: get-vh-mob(27.8px);
+        // margin-bottom: get-vh-mob(42.2px);
         font-family: TimesNewRomanPSMT;
         font-size: 17px;
         font-weight: normal;
@@ -199,13 +202,15 @@ color: #ff4819;
         font-stretch: normal;
         line-height: 2.18;
         letter-spacing: -0.9px;
-        text-align: left;
+        // text-align: center;
         color: #222222;
       }
       &:nth-child(2) {
         // width: get-vw(220px);
-  	    height: get-vh(33px);
-        margin-left: get-vw(49.3px);
+  	    // height: get-vh(33px);
+        margin-left: get-vw-mob(39.3px);
+        // margin-top: get-vh-mob(44.4px);
+        margin-bottom: get-vh-mob(30.2px);
         font-family: TimesNewRomanPSMT;
         font-size: 20px;
         font-weight: normal;
@@ -213,7 +218,7 @@ color: #ff4819;
         font-stretch: normal;
         line-height: 1.85;
         letter-spacing: -0.9px;
-        text-align: left;
+    // text-align: center;
         color: #222222;
       }
     }
@@ -222,17 +227,16 @@ color: #ff4819;
 }
 
 .eventsInfoBox {
-  // position: initial;
+  position: absolute;
   display: flex;
   justify-content: center;
   position: absolute;
-        width: 100%;
-      height: auto;
   top: get-vh-mob(377px);
   left: get-vw-mob(0px);
   width: get-vw-mob(375px);
   height: get-vh-mob(735px);
- background: url("../assets/mobile/rectangle-5.svg");
+  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  background-size: cover;
  background-repeat: no-repeat;
   // background-size: get-vw(740px) get-vh(1021px);
   overflow-y: scroll;
@@ -245,17 +249,17 @@ color: #ff4819;
 
 
 .events-img {
-    width:85%;
+    width:100%;
     // left: get-vw(620px);
-    margin-left: get-vw(40px);
-    margin-right: get-vw(1px);
+    margin-left: get-vw(12px);
+    margin-right: get-vw(12px);
 
 }
 
 .event-top-title {
-width: get-vw(723px);
-height: get-vh(33px);
-top: get-vh(13px);
+width: get-vw-mob(367px);
+height: get-vh-mob(35px);
+top: get-vh-mob(13px);
 font-family: TimesNewRomanPSMT;
 font-size: 30px;
 font-weight: normal;
@@ -269,9 +273,9 @@ color: #01df36;
 }
 
 .ddevent-top-title {
-width: get-vw(723px);
-height: get-vh(33px);
-top: get-vh(13px);
+width: get-vw-mob(367px);
+height: get-vh-mob(35px);
+top: get-vh-mob(13px);
 font-family: TimesNewRomanPSMT;
 font-size: 30px;
 font-weight: normal;

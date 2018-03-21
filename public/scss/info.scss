@@ -161,7 +161,7 @@
 
     #mobile-background-img {
         background: url(../assets/mobile/Info-mobile.png);
-        background-size: get-vw-mob(400px) get-vh-mob(1269px);
+        background-size: get-vw-mob(375px) get-vh-mob(1269px);
         width: get-vw-mob(375px);
         height: get-vh-mob(1269px);
         top: get-vh-mob(672px);
@@ -232,7 +232,7 @@
         line-height: 1.05;
         letter-spacing: -0.9px;
         text-align: left;
-            text-shadow: 2px 2px black;
+        text-shadow: 1px 1px black;
         color: #222222;
     }
 
@@ -292,6 +292,13 @@
     #credits {
         display: none;
     }
+
+
+//info white img bottom not ready yet
+
+// width: 374px;
+// height: 137px;
+// background-color: #ffffff;
 
 
 
