@@ -31,6 +31,25 @@ $("#modal").on('click', function() {
   });
 
 
+  // UP DOWN EXTENSION. POSSIBLY FUCKED
+  // $(function () {
+  //     // Bind the swipeHandler callback function to the swipe event on div.box
+  //     $("div.box").on("swipe", swipeHandler);
+  //
+  //     // Callback function references the event target and adds the 'swipe' class to it
+  //     function swipeHandler(event) {
+  //         console.log("Swipe Start: " + event.swipestart.coords[0] + ", " + event.swipestart.coords[1]);
+  //         console.log("Swipe Stop: " + event.swipestop.coords[0] + ", " + event.swipestop.coords[1]);
+  //         var ydiff = event.swipestart.coords[1] - event.swipestop.coords[1];
+  //         console.log("Y Diff: " + ydiff);
+  //         if (ydiff < 0) {
+  //             $(".result").html("Swipe Down.");
+  //         } else {
+  //             $(".result").html("Swipe Up.");
+  //         }
+  //     }
+  // });
+
 // FUNCTION TO SHOW MODAL ON HOME PAGE
 // ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
 function showModal() {
@@ -42,6 +61,23 @@ function showModal() {
 }
 
 
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("div.box").on("swipe", swipeHandler);
+
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swipeHandler(event) {
+        console.log("Swipe Start: " + event.swipestart.coords[0] + ", " + event.swipestart.coords[1]);
+        console.log("Swipe Stop: " + event.swipestop.coords[0] + ", " + event.swipestop.coords[1]);
+        var ydiff = event.swipestart.coords[1] - event.swipestop.coords[1];
+        console.log("Y Diff: " + ydiff);
+        if (ydiff < 0) {
+            $(".result").html("Swipe Down.");
+        } else {
+            $(".result").html("Swipe Up.");
+        }
+    }
+});
 
 
 // SHOW / HIDE MODAL - MOBILE ONLY
