@@ -1,7 +1,7 @@
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
-
+let swiped = false;
 backButton.on('click', () => {
     window.history.back();
 });
@@ -24,8 +24,11 @@ $("#modal").on('click', function() {
     hideMobileModal();
 });
 
-
-
+// ---- touch events. switch out the logs for your open and close modal code
+  $("#gallery-space-img").on( 'swipe', function ( ) {
+    !swiped? console.log('open!!') : console.log('close!!');
+    swiped = !swiped
+  });
 
 
 // FUNCTION TO SHOW MODAL ON HOME PAGE
