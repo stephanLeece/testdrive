@@ -23,19 +23,6 @@ $(".eventDetails").click(function() {
 
 
 
-// i must be doing something wrong here: 
-// if ($(window).width() < 600 && window.location.pathname == '/catalogue') {
-//   $("#h1-catalogue-mobile").show();
-// } else if (window.location.pathname == '/catalogue'){
-//       $("#h1-catalogue-mobile").hide();
-// }
-
-
-
-
-
-
-
 // -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
     $('body').css({
@@ -63,7 +50,7 @@ if (window.location.pathname == '/events') {
   $('.eventDetails:first-child').addClass('ddEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
   // eventHover('ddEventActive');
-}
+} 
 
 if (window.location.pathname == '/testdrive') {
   $('.eventDetails:first-child').addClass('tdEventActive');
