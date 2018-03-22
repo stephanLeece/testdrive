@@ -40,10 +40,12 @@ $(function() {
     $('#gallery-space-img').swipe( {
       //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        if (direction == "up") {
-          console.log('up!');
-        } else if (direction == "down") {
+        if (direction == "down") {
           console.log('down!');
+          showMobileModal();
+      } else if (direction == "up") {
+          console.log('up!');
+          hideMobileModal();
         }
       },
       //Default is 75px, set to 0 for demo so any distance triggers swipe
