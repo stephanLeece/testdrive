@@ -1,7 +1,4 @@
 
-// stops loading message apperaing.
-$.mobile.loading().hide();
-
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
@@ -22,38 +19,10 @@ $(".shadowfilter").on('click', function() {
 });
 
 
-
 // HIDE MODAL -- MOBILE & DESKTOP
 $("#modal").on('click', function() {
     hideMobileModal();
 });
-
-// ---- touch events. switch out the logs for your open and close modal code
-  // $("#gallery-space-img").on( 'swipe', function ( ) {
-  //     showMobileModal();
-  //   !swiped? console.log('open!!') : console.log('close!!');
-  //   swiped = !swiped
-  // });
-
-
-  // UP DOWN EXTENSION. POSSIBLY FUCKED
-  // $(function () {
-  //     // Bind the swipeHandler callback function to the swipe event on div.box
-  //     $("div.box").on("swipe", swipeHandler);
-  //
-  //     // Callback function references the event target and adds the 'swipe' class to it
-  //     function swipeHandler(event) {
-  //         console.log("Swipe Start: " + event.swipestart.coords[0] + ", " + event.swipestart.coords[1]);
-  //         console.log("Swipe Stop: " + event.swipestop.coords[0] + ", " + event.swipestop.coords[1]);
-  //         var ydiff = event.swipestart.coords[1] - event.swipestop.coords[1];
-  //         console.log("Y Diff: " + ydiff);
-  //         if (ydiff < 0) {
-  //             $(".result").html("Swipe Down.");
-  //         } else {
-  //             $(".result").html("Swipe Up.");
-  //         }
-  //     }
-  // });
 
 // FUNCTION TO SHOW MODAL ON HOME PAGE
 // ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
