@@ -11,29 +11,29 @@ backButton.on('click', () => {
 });
 
 // SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
-// $(".shadowfilter").on('click', function() {
-//
-//     if ($(window).width() < 600) {
-//         showMobileModal();
-//     } else {
-//         showModal();
-//     }
-//
-// });
+$(".shadowfilter").on('click', function() {
+
+    if ($(window).width() < 600) {
+        showMobileModal();
+    } else {
+        showModal();
+    }
+
+});
 
 
 
 // HIDE MODAL -- MOBILE & DESKTOP
-// $("#modal").on('click', function() {
-//     hideMobileModal();
-// });
+$("#modal").on('click', function() {
+    hideMobileModal();
+});
 
 // ---- touch events. switch out the logs for your open and close modal code
-  $("#gallery-space-img").on( 'swipe', function ( ) {
-      showMobileModal();
-    !swiped? console.log('open!!') : console.log('close!!');
-    swiped = !swiped
-  });
+  // $("#gallery-space-img").on( 'swipe', function ( ) {
+  //     showMobileModal();
+  //   !swiped? console.log('open!!') : console.log('close!!');
+  //   swiped = !swiped
+  // });
 
 
   // UP DOWN EXTENSION. POSSIBLY FUCKED
