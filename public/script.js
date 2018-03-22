@@ -35,23 +35,17 @@ function showModal() {
 }
 
 
-$(function () {
-    // Bind the swipeHandler callback function to the swipe event on div.box
-    $("div.box").on("swipe", swipeHandler);
-
-    // Callback function references the event target and adds the 'swipe' class to it
-    function swipeHandler(event) {
-        console.log("Swipe Start: " + event.swipestart.coords[0] + ", " + event.swipestart.coords[1]);
-        console.log("Swipe Stop: " + event.swipestop.coords[0] + ", " + event.swipestop.coords[1]);
-        var ydiff = event.swipestart.coords[1] - event.swipestop.coords[1];
-        console.log("Y Diff: " + ydiff);
-        if (ydiff < 0) {
-            $(".result").html("Swipe Down.");
-        } else {
-            $(".result").html("Swipe Up.");
-        }
-    }
-});
+$(function() {
+    //Enable swiping...
+    $(window).swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        console.log("You swiped " + direction );
+      },
+      //Default is 75px, set to 0 for demo so any distance triggers swipe
+       threshold:0
+    });
+  });
 
 
 // SHOW / HIDE MODAL - MOBILE ONLY
