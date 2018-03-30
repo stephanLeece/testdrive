@@ -7,6 +7,19 @@ backButton.on('click', () => {
     window.history.back();
 });
 
+// SHOW MODAL ON HOVER -- DESKTOP ONLY
+$("#modal").hover(function() {
+    $('#modal').css({"opacity": "1"});
+})
+
+// HIDE MODAL ON HOVER -- DESKTOP ONLY 
+$("#modal").on('mouseleave', function() {
+    hideMobileModal();
+});
+
+
+
+
 // SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
 $(".shadowfilter").on('click', function() {
 
@@ -18,11 +31,6 @@ $(".shadowfilter").on('click', function() {
 
 });
 
-
-// HIDE MODAL -- MOBILE & DESKTOP
-$("#modal").on('click', function() {
-    hideMobileModal();
-});
 
 // FUNCTION TO SHOW MODAL ON HOME PAGE
 // ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
@@ -42,7 +50,7 @@ $(function() {
           showMobileModal();
         }
       },
-       threshold:50
+       threshold: 50
     });
 
     $('#modal').swipe( {
@@ -63,7 +71,7 @@ function showMobileModal() {
 }
 
 function hideMobileModal() {
-    $('#modal').css({ "visibility": "hidden" });
+    $('#modal').css({ "opacity": "0" });
     $(".shadowfilter").attr('id', "gallery-space-img").removeClass("clicked-gallery-img");
 }
 
