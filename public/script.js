@@ -36,19 +36,21 @@ function showModal() {
 
 
 $(function() {
-    //Enable swiping...
     $('#gallery-space-img').swipe( {
-      //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        if (direction == "down") {
-          console.log('down!');
+        if (direction == "left") {
           showMobileModal();
-      } else if (direction == "up") {
-          console.log('up!');
+        }
+      },
+       threshold:50
+    });
+
+    $('#modal').swipe( {
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      if (direction == "right") {
           hideMobileModal();
         }
       },
-      //Default is 75px, set to 0 for demo so any distance triggers swipe
        threshold:50
     });
   });
