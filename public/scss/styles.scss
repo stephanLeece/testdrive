@@ -13,19 +13,10 @@ html {
 }
 
 body {
-  // can only use get-vw on direct width assignments.
   height: inherit;
-  // display: grid;
-  // grid-template-columns: repeat(12, 6.363636363636363vw);
-  // grid-column-gap: 1.948051948051948vw;
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
-// trying the rainbow scroll
-// body::-webkit-scrollbar-track { background-color: transparent; }
-// body::-webkit-scrollbar       { width: 8px; background: #e0ebe8; }
-// body::-webkit-scrollbar-thumb { background: #e0ebe8; }
 
 .hidden {
   display: none;
@@ -128,9 +119,7 @@ body {
 
 /* STYLING FOR NAV MENU - MOBILE */
 .mob-container {
-    // opacity: 0;
     position: absolute;
-    // left: 100%;
     left: -5000px;
 }
 
@@ -157,10 +146,8 @@ body {
     /* STYLING FOR NAV MENU - MOBILE */
     .mob-container {
         position: fixed;
-        // position:absolute;
         min-width: 100%;
         top: get-vh-mob(0px);
-        // left: 500%;
         left: -600px;
         height: 100%;
         background-color: white;
