@@ -15,7 +15,7 @@
   height: 21.67969vh;
   margin-top: 35.83984vh;
   margin-bottom: 32.71484vh;
-  font-size: 1.95312vh;
+  font-size: 1.95313vh;
   font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
@@ -32,7 +32,7 @@ form {
   border: 1px solid black;
   width: 21.36364vw;
   height: 3.90625vh;
-  margin-top: 0.39062vh;
+  margin-top: 0.39063vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -93,7 +93,7 @@ input {
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
     background-size: 104.16667vw 190.25487vh;

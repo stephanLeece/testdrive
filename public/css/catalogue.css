@@ -11,12 +11,12 @@
   position: absolute;
   top: 32.05078vh;
   left: 12.15584vw;
-  height: 78.20312vh;
+  height: 78.20313vh;
   width: 17.99351vw;
   z-index: 3000;
   background-repeat: no-repeat; }
   #artist-container .artists {
-    height: 61.32812vh;
+    height: 61.32813vh;
     width: 9.67532vw;
     left: 13.50649vw;
     top: 29.10156vh;
@@ -37,7 +37,7 @@
 #catalogue-line-green {
   position: absolute;
   width: 10.57792vw;
-  height: 21.64062vh;
+  height: 21.64063vh;
   object-fit: contain;
   top: 76.24023vh;
   left: 2.13636vw;
@@ -111,7 +111,7 @@
   margin-top: 5.84961vh; }
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   .artistbackground {
     position: absolute;
     width: 76.97222vw;

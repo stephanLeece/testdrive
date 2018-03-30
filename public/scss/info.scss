@@ -139,10 +139,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 
 
-
-
-
-@media screen and (min-width:360px) and (max-width:600px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 
 
     #mobile-background-img {

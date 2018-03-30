@@ -88,8 +88,6 @@
   }
 }
 
-
-
 .events-img {
     width:85%;
     margin-left: get-vw(40px);
@@ -143,7 +141,7 @@ color: #ff4819;
   @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 
   #eve-disp {
     display: block;

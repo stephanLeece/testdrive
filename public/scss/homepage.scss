@@ -259,7 +259,7 @@
 
 
 
-@media screen and (min-width:360px) and (max-width:800px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
 
 
     /* STYLING FOR MENU - MOBILE */
@@ -481,8 +481,6 @@
             width: get-vw-mob(289px);
             height: get-vh-mob(437px);
             left: get-vw-mob(44px);
-
-            /* FONT STYLING */
             font-family: TimesNewRomanPSMT;
             font-size: get-vh-mob(18px);
             font-weight: normal;

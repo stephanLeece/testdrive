@@ -92,7 +92,7 @@ body {
 
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 360px) and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   /* STYLING FOR NAV MENU - MOBILE */
   .mob-container {
     position: fixed;

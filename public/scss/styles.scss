@@ -140,8 +140,7 @@ body {
     @return ($object / $vh) * 1vh;
 }
 
-@media screen and (min-width:360px) and (max-width:600px) and (orientation: portrait){
-
+@media only screen and (orientation: portrait) {
 
     /* STYLING FOR NAV MENU - MOBILE */
     .mob-container {

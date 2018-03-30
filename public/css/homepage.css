@@ -128,7 +128,7 @@
   background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: 29.02597vw 26.95312vh;
+  background-size: 29.02597vw 26.95313vh;
   width: 34.93506vw;
   top: 58.98438vh;
   height: 32.51953vh;
@@ -170,7 +170,7 @@
     top: 18.16406vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 1.95313vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -190,7 +190,7 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@media screen and (min-width: 360px) and (max-width: 800px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   /* STYLING FOR MENU - MOBILE */
   /* STYLING FOR HAMBURGER MENU ICON */
   .burger {
@@ -351,7 +351,6 @@
       width: 80.27778vw;
       height: 65.51724vh;
       left: 12.22222vw;
-      /* FONT STYLING */
       font-family: TimesNewRomanPSMT;
       font-size: 2.69865vh;
       font-weight: normal;
