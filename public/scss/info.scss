@@ -9,20 +9,9 @@
 }
 
 
-// #desktop-background-img {
-//     background: url(../assets/Elements/Info/Info-bgA.png) no-repeat center fixed;
-//     background-size: cover;
-//     position: fixed;
-//     width: get-vw(1540px);
-//     height: 100%;
-//
-// }
-
-
 #infoContactBg {
     width: get-vw(446.4px);
     height: get-vh(515.3px);
-    // object-fit: contain;
     position: absolute;
     left: get-vw(141px);
     top: get-vh(335px);
@@ -35,7 +24,6 @@
   #infoContactInfo {
     position: absolute;
     left: get-vw(195px);
-    // bottom: get-vh(335px);
     width: get-vw(245px);
     height: get-vh(222px);
     margin-top: get-vh(367px);
@@ -66,8 +54,6 @@
     }
 
     .sign-up-to-our-maili {
-    	// width: get-vw(245px);
-    	// height: get-vh(20px);
         margin-bottom:get-vh(398px);
         margin-top: get-vh(-15px);
     	font-family: TimesNewRomanPSMT;
@@ -267,8 +253,6 @@
         width: get-vw-mob(221px);
         height: get-vh-mob(40px);
         outline: none;
-        // padding-left: get-vw-mob(140px);
-        // left: get-vw-mob(50px);
       }
 
       &[type="submit"] {

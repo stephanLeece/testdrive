@@ -11,12 +11,7 @@
 
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-width: get-vw(354px);
-// height: get-vh(55px);
-// position: absolute;
-// top: get-vh(54px);
-// left: get-vw(143px);
-// z-index: 10;
+    width: get-vw(354px);
 }
 
 .burger {
@@ -140,10 +135,16 @@ width: get-vw(354px);
     left: get-vw(1252.9px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
+
+
+
 /* STYLING FOR MODAL */
 #modal {
     visibility: hidden;
 }
+
+
+
 /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
 #halk {
   position: absolute;
@@ -287,7 +288,6 @@ width: get-vw(354px);
         #cat, #eve {
             display: none;
         }
-          // display: none;
         position: absolute;
         display: flex;
         flex-direction: column;
