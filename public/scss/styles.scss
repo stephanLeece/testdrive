@@ -65,8 +65,8 @@ body {
 
 #testdriveLogoBR {
     position: absolute;
-    width: get-vw(290px);
-    height: get-vh(30px);
+    width: get-vw(387px);
+    height: get-vh(40px);
     bottom: get-vh(86px);
     right: get-vw(34px);
     z-index: 20;
@@ -74,8 +74,8 @@ body {
 
 #testdriveLogoInfo {
     position: absolute;
-    width: get-vw(290px);
-    height: get-vh(30px);
+    width: get-vw(387px);
+    height: get-vh(40px);
     bottom: get-vh(86px);
     right: get-vw(34px);
     z-index: 20;
@@ -85,8 +85,8 @@ body {
   position: absolute;
   top: get-vh(71px);
   left: get-vw(143px);
-  width: get-vw(338px);
-  height: get-vh(35px);
+  width: get-vw(387px);
+  height: get-vh(40px);
 }
 
 #backButton {
@@ -270,24 +270,6 @@ body {
     }
 
 
-
-    #mob-testdriveLogo {
-        position: absolute;
-        width: get-vw-mob(290px);
-        height: get-vh-mob(30px);
-        top: get-vh-mob(497px);
-        left: get-vw-mob(42px);
-        font-family: TimesNewRomanPSMT;
-        font-size: 41px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: -2.2px;
-        text-align: center;
-        color: #000000;
-
-    }
 
     #mob-test-eve {
     position: absolute;

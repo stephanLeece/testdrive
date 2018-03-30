@@ -44,16 +44,16 @@ body {
 
 #testdriveLogoBR {
   position: absolute;
-  width: 18.83117vw;
-  height: 2.92969vh;
+  width: 25.12987vw;
+  height: 3.90625vh;
   bottom: 8.39844vh;
   right: 2.20779vw;
   z-index: 20; }
 
 #testdriveLogoInfo {
   position: absolute;
-  width: 18.83117vw;
-  height: 2.92969vh;
+  width: 25.12987vw;
+  height: 3.90625vh;
   bottom: 8.39844vh;
   right: 2.20779vw;
   z-index: 20; }
@@ -62,8 +62,8 @@ body {
   position: absolute;
   top: 6.93359vh;
   left: 9.28571vw;
-  width: 21.94805vw;
-  height: 3.41797vh; }
+  width: 25.12987vw;
+  height: 3.90625vh; }
 
 #backButton {
   position: absolute;
@@ -187,21 +187,6 @@ body {
     height: 8.09595vh;
     top: 41.67916vh;
     left: 46.94444vw;
-    font-family: TimesNewRomanPSMT;
-    font-size: 41px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -2.2px;
-    text-align: center;
-    color: #000000; }
-  #mob-testdriveLogo {
-    position: absolute;
-    width: 80.55556vw;
-    height: 4.49775vh;
-    top: 74.51274vh;
-    left: 11.66667vw;
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
     font-weight: normal;
