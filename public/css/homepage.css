@@ -105,7 +105,7 @@
 
 /* STYLING FOR MODAL */
 #modal {
-  visibility: hidden; }
+  opacity: 0; }
 
 /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
 #halk {
@@ -128,7 +128,7 @@
   background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: 29.02597vw 26.95313vh;
+  background-size: 29.02597vw 26.95312vh;
   width: 34.93506vw;
   top: 58.98438vh;
   height: 32.51953vh;
@@ -170,7 +170,7 @@
     top: 18.16406vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95313vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
