@@ -74,10 +74,7 @@ function hideMobileModal() {
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
     $('#halk').fadeOut(2000);
-
-    // setTimeout(function() {
     $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
-    // }, 5000);
 }
 fadeIntoImg();
 
@@ -114,11 +111,6 @@ $(".burger").on("click", function() {
         "visibility": "hidden"
     });
 
-    // $("#home-container").css({
-    //     "display": "none",
-    //     "transition": "0s"
-    // });
-
     $('.burger').hide();
 
     $("body").css({
@@ -154,11 +146,7 @@ $(".x").on('click', function() {
     $(".tdLogo").css({
         "visibility": "visible"
     });
-    //
-    // $("#home-container").css({
-    //     "display": "block   ",
-    //     "transition": "0s"
-    // });
+
 
     $('.burger').show();
 

@@ -49,11 +49,9 @@ if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
   $('.eventDetails:first-child').addClass('ddEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
-  // eventHover('ddEventActive');
-} 
+}
 
 if (window.location.pathname == '/testdrive') {
   $('.eventDetails:first-child').addClass('tdEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
-  // eventHover('tdEventActive');
 }
