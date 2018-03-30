@@ -203,25 +203,6 @@
     background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg");
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5); }
-  .pds {
-    position: absolute;
-    top: 1.26953vh;
-    width: 29.87013vw;
-    height: 98.73047vh;
-    list-style-type: none;
-    display: block;
-    margin-left: 0.64935vw;
-    font-family: TimesNewRomanPSMT;
-    font-size: 30px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -1.9px;
-    text-align: left;
-    color: #222222; }
-  .pds li {
-    padding-bottom: 0.97403vw; }
   .pdf {
     text-decoration: none;
     color: black;

@@ -16,8 +16,6 @@
   position: absolute;
   top: get-vh(405px);
   left: get-vw(54.7px);
-  // left: get-vw(64.7px);
-
 }
 
 .eventDetails {
@@ -41,7 +39,6 @@
   div {
     p {
       &:first-child {
-        // width: get-vw(210px);
   	    height: get-vh(33px);
         margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
@@ -55,7 +52,6 @@
         color: #222222;
       }
       &:nth-child(2) {
-        // width: get-vw(220px);
   	    height: get-vh(33px);
         margin-left: get-vw(49.3px);
         font-family: TimesNewRomanPSMT;
@@ -96,10 +92,8 @@
 
 .events-img {
     width:85%;
-    // left: get-vw(620px);
     margin-left: get-vw(40px);
     margin-right: get-vw(1px);
-
 }
 
 .event-top-title {
