@@ -81,8 +81,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -1.9px;
-  text-align: left;
-  color: #01df36; }
+  text-align: left; }
 
 .ddevent-top-title {
   width: 46.94805vw;
@@ -95,8 +94,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -1.9px;
-  text-align: left;
-  color: #ff4819; }
+  text-align: left; }
 
 @media only screen and (orientation: portrait) {
   #eve-disp {
@@ -194,8 +192,7 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: -1.9px;
-    text-align: left;
-    color: #01df36; }
+    text-align: left; }
   .ddevent-top-title {
     width: 101.94444vw;
     height: 5.24738vh;
@@ -207,5 +204,4 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: -1.9px;
-    text-align: left;
-    color: #ff4819; } }
+    text-align: left; } }
