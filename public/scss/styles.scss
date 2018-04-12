@@ -66,7 +66,6 @@ body {
 #testdriveLogoBR {
     position: absolute;
     width: get-vw(387px);
-    height: get-vh(40px);
     bottom: get-vh(86px);
     right: get-vw(34px);
     z-index: 20;
@@ -75,7 +74,6 @@ body {
 #testdriveLogoInfo {
     position: absolute;
     width: get-vw(387px);
-    height: get-vh(40px);
     bottom: get-vh(86px);
     right: get-vw(34px);
     z-index: 20;
@@ -86,7 +84,6 @@ body {
   top: get-vh(71px);
   left: get-vw(143px);
   width: get-vw(387px);
-  height: get-vh(40px);
 }
 
 #backButton {
