@@ -285,6 +285,12 @@ body {
 	color: #000000;
     }
 
+    #mob-testdriveLogo {
+        position: absolute;
+        top: get-vh-mob(597px);
+        left: get-vw-mob(42px);
+    }
+
 /* END OF STYLING FOR NAV MENU - MOBILE ***********/
 
     a {

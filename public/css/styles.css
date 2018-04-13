@@ -208,6 +208,10 @@ body {
     letter-spacing: -2.2px;
     text-align: center;
     color: #000000; }
+  #mob-testdriveLogo {
+    position: absolute;
+    top: 89.50525vh;
+    left: 11.66667vw; }
   /* END OF STYLING FOR NAV MENU - MOBILE ***********/
   a {
     text-decoration: none; }
