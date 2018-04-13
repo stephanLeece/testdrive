@@ -188,6 +188,25 @@
     align-content: center;
     cursor: pointer; }
 
+.homepage-tdevents {
+  width: 166px;
+  height: 46px;
+  position: absolute;
+  width: 25.12987vw;
+  bottom: 16.60156vh;
+  right: -7.79221vw;
+  font-family: TimesNewRomanPSMT;
+  font-size: 41px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -2.4px;
+  text-align: left;
+  z-index: 20;
+  text-decoration: none;
+  color: black; }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media only screen and (orientation: portrait) {

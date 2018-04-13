@@ -59,7 +59,7 @@ body {
 #testdriveLogoTL {
   position: absolute;
   top: 6.93359vh;
-  left: 9.28571vw;
+  left: 4.54545vw;
   width: 25.12987vw; }
 
 #backButton {
@@ -67,7 +67,7 @@ body {
   bottom: 4.39453vh;
   right: 7.79221vw;
   width: 8.50649vw;
-  height: 6.44531vh;
+  height: 6.83594vh;
   cursor: pointer; }
   #backButton h1 {
     font-size: 3.24675vw;

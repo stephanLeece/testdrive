@@ -238,6 +238,27 @@
         }
 }
 
+.homepage-tdevents {
+    width: 166px;
+    height: 46px;
+    position: absolute;
+    width: get-vw(387px);
+    bottom: get-vh(170px);
+    right: get-vw(-120px);
+    font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.4px;
+    text-align: left;
+    z-index: 20;
+    text-decoration: none;
+    color: black;
+
+}
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////

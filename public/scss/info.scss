@@ -22,12 +22,11 @@
 
 
   #infoContactInfo {
-    position: absolute;
+    width: get-vw(446.4px);
+    height: get-vh(415.3px);
     left: get-vw(195px);
-    width: get-vw(245px);
-    height: get-vh(222px);
-    margin-top: get-vh(367px);
-    margin-bottom: get-vh(335px);
+    bottom: get-vh(250px);
+    position: absolute;
     font-size: get-vh(20px);
     font-family: TimesNewRomanPSMT;
     font-weight: normal;
@@ -54,7 +53,7 @@
     }
 
     .sign-up-to-our-maili {
-        margin-bottom:get-vh(398px);
+        // margin-bottom:get-vh(398px);
         margin-top: get-vh(-15px);
     	font-family: TimesNewRomanPSMT;
     	font-size: get-vw(20px);
