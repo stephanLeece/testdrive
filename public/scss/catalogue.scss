@@ -159,9 +159,9 @@
 
     .artistbackground {
         position: absolute;
-        width: get-vw-mob(277.1px);
+        width: get-vw-mob(300px);
     	height: get-vh-mob(687.8px);
-        object-fit: contain;
+        // object-fit: contain;
         left: get-vw-mob(40px);
         top: get-vh-mob(217px);
         z-index: -2000;
@@ -178,6 +178,16 @@
           color: orange;
           font-size: 41px;
           text-align: center;
+          width: 157px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #ffb760;
+          -webkit-text-stroke: 0 #979797;
         }
     }
 
@@ -189,26 +199,35 @@
     #artist-container {
       position: absolute;
       top: get-vh-mob(247px);
-      left: get-vw-mob(131px);
-      height: get-vh-mob(687.8px);
-      width: get-vw-mob(200px);
-      margin-right: get-vw-mob(13px);
+      // left: get-vw-mob(131px);
+      // height: get-vh-mob(687.8px);
+      // width: get-vw-mob(200px);
+      // margin-right: get-vw-mob(13px);
       z-index: 3000;
       background-repeat: no-repeat;
+
+      position: absolute;
+      width: get-vw-mob(300px);
+      height: get-vh-mob(687.8px);
+      // object-fit: contain;
+      left: get-vw-mob(40px);
+      top: get-vh-mob(217px);
+      // z-index: -2000;
 
 
       .artists {
       position: absolute;
       height: get-vh-mob(247px);
-      width: get-vw-mob(149px);
-      left: get-vw-mob(-13px);
+      width: get-vw-mob(249px);
+      left: get-vw-mob(83px);
       top: get-vh-mob(47px);
       font-family: TimesNewRomanPSMT;
       font-size: get-vw-mob(20px);
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: get-vh(28px);
+      line-height: get-vh-mob(28px);
+      	// line-height: 1.6;
       text-align: left;
       color: #222222;
       z-index: 3000;
@@ -221,8 +240,8 @@
       width: get-vw-mob(163px);
       height: get-vh-mob(240px);
       object-fit: contain;
-      top: get-vh-mob(635px);
-      left: get-vw-mob(30px);
+      top: get-vh-mob(735px);
+      left: get-vw-mob(10px);
       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
       z-index: -2001;
     }
