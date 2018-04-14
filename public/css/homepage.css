@@ -214,14 +214,14 @@
   /* STYLING FOR HAMBURGER MENU ICON */
   .burger {
     display: block;
-    width: 6.66667vw;
+    width: 7.22222vw;
     height: 3.5982vh;
     position: absolute;
     top: 12.5937vh;
-    left: 48.88889vw; }
+    left: 47.22222vw; }
   #DriveDrive {
-    top: 0vh;
-    left: 7.5vw;
+    top: -1.49925vh;
+    left: 6.94444vw;
     width: 78.88889vw;
     height: 6.74663vh;
     position: absolute; }
@@ -277,7 +277,7 @@
     height: 48.42579vh;
     position: absolute;
     top: 20.68966vh;
-    left: 3.61111vw;
+    left: 1.38889vw;
     cursor: pointer; }
   .shadowfilter {
     -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
@@ -293,15 +293,15 @@
     object-fit: contain;
     position: absolute;
     top: 57.57121vh;
-    left: 3.88889vw;
+    left: 3.61111vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
   #home-green-line {
     width: 48.61111vw;
     height: 15.26237vh;
     object-fit: contain;
     position: absolute;
-    top: 72.41379vh;
-    left: 52.77778vw;
+    top: 73.16342vh;
+    left: 51.11111vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: 10; }
   /* STYLING FOR TESTDRIVE LOGO */
@@ -310,7 +310,7 @@
     width: 80.55556vw;
     height: 4.49775vh;
     left: 11.66667vw;
-    top: 89.50525vh; }
+    top: 89.35532vh; }
   #home-blue-line {
     width: 28.69444vw;
     height: 15.5922vh;
@@ -339,29 +339,25 @@
     transition: opacity 1s ease-in; }
   .home-video {
     position: absolute;
-    background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 61.11111vw;
-    height: 20.38981vh;
-    object-fit: contain;
     top: 63.41829vh;
-    left: 36.66667vw; }
+    left: 33.33333vw; }
   #home-v {
     position: absolute;
     width: 40.44444vw;
     height: 12.23388vh;
     top: 67.49625vh;
-    left: 42.55556vw; }
+    left: 42.5vw; }
   .fadeIn {
     opacity: 1; }
   #modal {
     position: absolute;
-    top: 7.64618vh;
+    top: 6.14693vh;
     left: 0;
-    width: 104.16667vw;
-    height: 91.90405vh;
-    background-image: url("/assets/Elements/Home/Home-infobox-blue-02.svg");
+    width: 83.33333vw;
+    height: 74.96252vh;
     background-repeat: no-repeat;
     z-index: 3000; }
     #modal .words {

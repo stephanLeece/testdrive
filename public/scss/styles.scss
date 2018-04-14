@@ -170,10 +170,10 @@ body {
 
     .x {
         position: absolute;
-        width: get-vw-mob(14px);
-        height: get-vh-mob(14px);
-        top: get-vh-mob(89px);
-        left: get-vw-mob(180px);
+        width: get-vw-mob(10px);
+        height: get-vh-mob(10px);
+        top: get-vh-mob(84px);
+        left: get-vw-mob(170px);
         font-family: TimesNewRomanPSMT;
         font-size: 41px;
         font-weight: normal;
@@ -190,7 +190,7 @@ body {
         width: get-vw-mob(157px);
         height: get-vh-mob(46px);
         top: get-vh-mob(127px);
-        left: get-vw-mob(109.5px);
+        left: get-vw-mob(106px);
 
         /* STYLING FOR FONTS */
         font-family: TimesNewRomanPSMT;
@@ -212,7 +212,7 @@ body {
         width: get-vw-mob(113px);
         height: get-vh-mob(46px);
         top: get-vh-mob(172px);
-        left: get-vw-mob(131.5px);
+        left: get-vw-mob(131px);
 
         /* STYLING FOR FONTS */
         font-family: TimesNewRomanPSMT;
@@ -233,7 +233,7 @@ body {
         width: get-vw-mob(58px);
         height: get-vh-mob(46px);
         top: get-vh-mob(242px);
-        left: get-vw-mob(159px);
+        left: get-vw-mob(157px);
 
         /* STYLING FOR FONTS */
         font-family: TimesNewRomanPSMT;
@@ -253,8 +253,8 @@ body {
         position: absolute;
         width: get-vw-mob(39px);
         height: get-vh-mob(54px);
-        top: get-vh-mob(278px);
-        left: get-vw-mob(169px);
+        top: get-vh-mob(280px);
+        left: get-vw-mob(167px);
         font-family: TimesNewRomanPSMT;
         font-size: 41px;
         font-weight: normal;
@@ -273,7 +273,7 @@ body {
     width: get-vw-mob(113px);
 	height: get-vh-mob(46px);
     top: get-vh-mob(541px);
-    left: get-vw-mob(130.5px);
+    left: get-vw-mob(131px);
 	font-family: TimesNewRomanPSMT;
 	font-size: 41px;
 	font-weight: normal;
@@ -287,7 +287,7 @@ body {
 
     #mob-testdriveLogo {
         position: absolute;
-        top: get-vh-mob(597px);
+        top: get-vh-mob(497px);
         left: get-vw-mob(42px);
     }
 
@@ -300,9 +300,9 @@ body {
     #testdriveLogoBR {
         position: absolute;
         width: get-vw-mob(290px);
-        height: get-vh-mob(30px);
-        bottom: get-vh-mob(20px);
-        right: get-vw-mob(43px);
+        // height: get-vh-mob(30px);
+        bottom: get-vh-mob(30px);
+        right: get-vw-mob(38px);
         z-index: 20;
     }
 

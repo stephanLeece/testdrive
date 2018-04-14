@@ -12,7 +12,7 @@ $("#modal").hover(function() {
     $('#modal').css({"opacity": "1"});
 })
 
-// HIDE MODAL ON HOVER -- DESKTOP ONLY 
+// HIDE MODAL ON HOVER -- DESKTOP ONLY
 $("#modal").on('mouseleave', function() {
     hideMobileModal();
 });

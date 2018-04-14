@@ -116,10 +116,10 @@ body {
     color: #000000; }
   .x {
     position: absolute;
-    width: 3.88889vw;
-    height: 2.09895vh;
-    top: 13.34333vh;
-    left: 50vw;
+    width: 2.77778vw;
+    height: 1.49925vh;
+    top: 12.5937vh;
+    left: 47.22222vw;
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
     font-weight: normal;
@@ -134,7 +134,7 @@ body {
     width: 43.61111vw;
     height: 6.89655vh;
     top: 19.04048vh;
-    left: 30.41667vw;
+    left: 29.44444vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -151,7 +151,7 @@ body {
     width: 31.38889vw;
     height: 6.89655vh;
     top: 25.78711vh;
-    left: 36.52778vw;
+    left: 36.38889vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -167,7 +167,7 @@ body {
     width: 16.11111vw;
     height: 6.89655vh;
     top: 36.28186vh;
-    left: 44.16667vw;
+    left: 43.61111vw;
     /* STYLING FOR FONTS */
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
@@ -182,8 +182,8 @@ body {
     position: absolute;
     width: 10.83333vw;
     height: 8.09595vh;
-    top: 41.67916vh;
-    left: 46.94444vw;
+    top: 41.97901vh;
+    left: 46.38889vw;
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
     font-weight: normal;
@@ -198,7 +198,7 @@ body {
     width: 31.38889vw;
     height: 6.89655vh;
     top: 81.10945vh;
-    left: 36.25vw;
+    left: 36.38889vw;
     font-family: TimesNewRomanPSMT;
     font-size: 41px;
     font-weight: normal;
@@ -210,7 +210,7 @@ body {
     color: #000000; }
   #mob-testdriveLogo {
     position: absolute;
-    top: 89.50525vh;
+    top: 74.51274vh;
     left: 11.66667vw; }
   /* END OF STYLING FOR NAV MENU - MOBILE ***********/
   a {
@@ -218,9 +218,8 @@ body {
   #testdriveLogoBR {
     position: absolute;
     width: 80.55556vw;
-    height: 4.49775vh;
-    bottom: 2.9985vh;
-    right: 11.94444vw;
+    bottom: 4.49775vh;
+    right: 10.55556vw;
     z-index: 20; }
   #testdriveLogoTL {
     position: absolute;

@@ -50,14 +50,11 @@
   object-fit: contain;
   top: 0vh;
   left: 34.28571vw;
-  background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg");
-  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-  box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5); }
+  background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg"); }
 
 .pds {
   position: absolute;
   top: 1.26953vh;
-  width: 29.87013vw;
   height: 98.73047vh;
   list-style-type: none;
   display: block;
@@ -114,9 +111,8 @@
 @media only screen and (orientation: portrait) {
   .artistbackground {
     position: absolute;
-    width: 76.97222vw;
+    width: 83.33333vw;
     height: 103.11844vh;
-    object-fit: contain;
     left: 11.11111vw;
     top: 32.53373vh;
     z-index: -2000; }
@@ -130,30 +126,37 @@
     #cat-disp p {
       color: orange;
       font-size: 41px;
-      text-align: center; }
+      text-align: center;
+      width: 157px;
+      font-family: TimesNewRomanPSMT;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.4px;
+      text-align: center;
+      color: #ffb760;
+      -webkit-text-stroke: 0 #979797; }
   #backButton {
     display: none; }
   #artist-container {
     position: absolute;
     top: 37.03148vh;
-    left: 36.38889vw;
-    height: 103.11844vh;
-    width: 55.55556vw;
-    margin-right: 3.61111vw;
     z-index: 3000;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    width: 83.33333vw;
+    height: 103.11844vh;
+    left: 11.11111vw;
+    top: 32.53373vh; }
     #artist-container .artists {
       position: absolute;
       height: 37.03148vh;
-      width: 41.38889vw;
-      left: -3.61111vw;
+      width: 66.66667vw;
+      left: 23.05556vw;
       top: 7.04648vh;
       font-family: TimesNewRomanPSMT;
       font-size: 5.55556vw;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 2.73438vh;
+      line-height: 4.1979vh;
       text-align: left;
       color: #222222;
       z-index: 3000; }
@@ -162,8 +165,8 @@
     width: 45.27778vw;
     height: 35.98201vh;
     object-fit: contain;
-    top: 95.2024vh;
-    left: 8.33333vw;
+    top: 110.1949vh;
+    left: 2.77778vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -2001; }
   #catalogue-line-blue {
@@ -177,10 +180,9 @@
     z-index: -2001; }
   #video-container {
     position: absolute;
-    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 96.66667vw;
+    width: 83.33333vw;
     height: 33.43328vh;
     object-fit: contain;
     margin-top: 157.42129vh;
@@ -198,16 +200,21 @@
     position: absolute;
     width: 100%;
     object-fit: contain;
+    background-size: contain;
     top: 141.67916vh;
     left: 0vw;
-    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg");
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-    box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5); }
+    background-repeat: no-repeat; }
   .pdf {
+    width: 101.94444vw;
+    height: 29.83508vh;
+    margin-left: 2.22222vw;
     text-decoration: none;
     color: black;
     text-align: left;
-    font-size: 8.33333vw; }
+    font-size: 8.33333vw;
+    font-family: TimesNewRomanPSMT;
+    letter-spacing: -1.9px; }
   .pdf:hover {
     color: #ff4819; } }
 

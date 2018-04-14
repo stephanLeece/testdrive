@@ -55,3 +55,7 @@ if (window.location.pathname == '/testdrive') {
   $('.eventDetails:first-child').addClass('tdEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
 }
+
+if ($(window).width() < 670 && window.location.pathname == '/') {
+    $(".homepage-tdevents").hide();
+}

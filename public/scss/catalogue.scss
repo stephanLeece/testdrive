@@ -72,14 +72,14 @@
   top: get-vh(0px);
   left: get-vw(528px);
   background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
-  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-  box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+  // background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
 }
 
 .pds {
   position: absolute;
   top: get-vh(13px);
-  width: get-vw(460px);
+  // width: get-vw(460px);
   height: get-vh(1011px);
   list-style-type: none;
   display: block;
@@ -159,9 +159,8 @@
 
     .artistbackground {
         position: absolute;
-        width: get-vw-mob(277.1px);
+        width: get-vw-mob(300px);
     	height: get-vh-mob(687.8px);
-        object-fit: contain;
         left: get-vw-mob(40px);
         top: get-vh-mob(217px);
         z-index: -2000;
@@ -178,6 +177,16 @@
           color: orange;
           font-size: 41px;
           text-align: center;
+          width: 157px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #ffb760;
+          -webkit-text-stroke: 0 #979797;
         }
     }
 
@@ -189,26 +198,29 @@
     #artist-container {
       position: absolute;
       top: get-vh-mob(247px);
-      left: get-vw-mob(131px);
-      height: get-vh-mob(687.8px);
-      width: get-vw-mob(200px);
-      margin-right: get-vw-mob(13px);
+      // left: get-vw-mob(131px);
+      // height: get-vh-mob(687.8px);
+      // width: get-vw-mob(200px);
+      // margin-right: get-vw-mob(13px);
       z-index: 3000;
       background-repeat: no-repeat;
+      width: get-vw-mob(300px);
+      height: get-vh-mob(687.8px);
+      left: get-vw-mob(40px);
+      top: get-vh-mob(217px);
+      // z-index: -2000;
 
 
       .artists {
       position: absolute;
       height: get-vh-mob(247px);
-      width: get-vw-mob(149px);
-      left: get-vw-mob(-13px);
+      width: get-vw-mob(240px);
+      left: get-vw-mob(83px);
       top: get-vh-mob(47px);
       font-family: TimesNewRomanPSMT;
       font-size: get-vw-mob(20px);
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: get-vh(28px);
+      line-height: get-vh-mob(28px);
+      	// line-height: 1.6;
       text-align: left;
       color: #222222;
       z-index: 3000;
@@ -221,8 +233,8 @@
       width: get-vw-mob(163px);
       height: get-vh-mob(240px);
       object-fit: contain;
-      top: get-vh-mob(635px);
-      left: get-vw-mob(30px);
+      top: get-vh-mob(735px);
+      left: get-vw-mob(10px);
       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
       z-index: -2001;
     }
@@ -243,10 +255,10 @@
 
     #video-container {
       position: absolute;
-      background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+      // background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      width: get-vw-mob(348px);
+      width: get-vw-mob(300px);
       height:get-vh-mob(223px);
       object-fit: contain;
       margin-top: get-vh-mob(1050px);
@@ -270,19 +282,26 @@
       position: absolute;
       width: 100%;
       object-fit: contain;
+      background-size:contain;
       top: get-vh-mob(945px);
       left: get-vw-mob(0px);
-      background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
+      // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
       background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-      box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+      background-repeat: no-repeat;
+      // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
     }
 
 
     .pdf {
+      width: get-vw-mob(367px);
+	  height: get-vh-mob(199px);
+      margin-left: get-vw-mob(8px);
       text-decoration: none;
       color: black;
       text-align: left;
       font-size: get-vw-mob(30px);
+      font-family: TimesNewRomanPSMT;
+      letter-spacing: -1.9px;
     }
 
     .pdf:hover {
