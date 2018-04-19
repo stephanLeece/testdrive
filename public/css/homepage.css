@@ -149,25 +149,24 @@
 #modal {
   position: absolute;
   top: 12.5vh;
-  left: 43.24675vw;
-  width: 30.53247vw;
-  height: 65.47852vh;
+  left: 36.75325vw;
+  width: 51.96104vw;
+  height: 78.17383vh;
   object-fit: contain;
-  background-image: url("/assets/Elements/Home/Home-infobox-blue-02.svg");
+  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  z-index: 40;
+  z-index: 1000;
   cursor: pointer; }
   #modal .words {
     width: 18.76623vw;
-    height: 44.53125vh;
+    height: 54.00391vh;
     left: 51.94805vw;
-    right: 28.8961vw;
-    top: 18.16406vh;
+    top: 17.57812vh;
     word-wrap: normal;
     font-family: TimesNewRomanPSMT;
     font-size: 1.95312vh;
@@ -179,22 +178,21 @@
     text-align: left;
     color: #222222;
     z-index: 1000;
-    margin-top: 6.73828vh;
-    margin-left: 5.06494vw;
+    margin-top: 3.80859vh;
+    margin-left: 5.19481vw;
     margin-right: 2.85714vw;
-    margin-bottom: 8.59375vh;
+    margin-bottom: 7.8125vh;
     letter-spacing: normal;
     justify-content: center;
     align-content: center;
     cursor: pointer; }
 
 .homepage-tdevents {
-  width: 166px;
-  height: 46px;
+  height: 4.49219vh;
   position: absolute;
-  width: 25.12987vw;
+  width: 9.74026vw;
   bottom: 16.60156vh;
-  right: -7.79221vw;
+  right: 7.46753vw;
   font-family: TimesNewRomanPSMT;
   font-size: 41px;
   font-weight: normal;

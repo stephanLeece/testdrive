@@ -31,6 +31,18 @@ if (window.location.pathname == '/info') {
     });
 }
 
+// if ($(window).height() > 200 && window.location.pathname == '/info') {
+//     $('body').css({
+//         'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed'
+//
+// }).hide();
+//
+// } else {
+//     $('body').css({
+//         'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed'
+// }).show();
+// });
+
 
 
 function eventHover(view) {
@@ -59,3 +71,8 @@ if (window.location.pathname == '/testdrive') {
 if ($(window).width() < 670 && window.location.pathname == '/') {
     $(".homepage-tdevents").hide();
 }
+
+
+// if ($(window).width() < 670 && window.location.pathname == '/info') {
+//     $(".homepage-tdevents").hide();
+// }

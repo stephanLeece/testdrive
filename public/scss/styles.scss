@@ -67,7 +67,7 @@ body {
     position: absolute;
     width: get-vw(387px);
     bottom: get-vh(86px);
-    right: get-vw(34px);
+    right: get-vw(120px);
     z-index: 20;
 }
 
@@ -89,24 +89,15 @@ body {
 #backButton {
   position: absolute;
   bottom: get-vh(45px);
-  right: get-vw(120px);
+  right: get-vw(50px);
   width: get-vw(131px);
   height: get-vh(70px);
   cursor: pointer;
 
-  h1 {
-    font-size: get-vw(50px);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -1.4px;
-    text-align: left;
-    color: #222222;
-  }
+    img {
+      width: get-vw(50px);
+    }
 }
-
-
 
 
 .home {
@@ -170,19 +161,10 @@ body {
 
     .x {
         position: absolute;
-        width: get-vw-mob(10px);
-        height: get-vh-mob(10px);
-        top: get-vh-mob(84px);
+        width: get-vw-mob(20px);
+        height: get-vh-mob(20px);
+        top: get-vh-mob(88px);
         left: get-vw-mob(170px);
-        font-family: TimesNewRomanPSMT;
-        font-size: 41px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: -2.2px;
-        text-align: center;
-        color: #000000;
     }
 
     #mob-cat {

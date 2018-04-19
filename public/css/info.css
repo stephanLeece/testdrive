@@ -97,7 +97,8 @@ a:hover {
 @media only screen and (orientation: portrait) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
-    background-size: 104.16667vw 190.25487vh;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 104.16667vw;
     height: 190.25487vh;
     top: 100.74963vh;
@@ -105,23 +106,22 @@ a:hover {
     background-repeat: repeat-y; }
   #infoMap {
     position: absolute;
-    width: 96.66667vw;
-    height: 62.21889vh;
+    width: 95.83333vw;
+    height: 61.76912vh;
     top: 18.44078vh;
     right: 1.66667vw; }
   #infoContactBg {
     position: absolute;
-    width: 104.16667vw;
-    height: 77.25637vh;
+    width: 104.44444vw;
+    height: 78.26087vh;
     top: 86.65667vh;
-    left: 0vw; }
+    left: -4.16667vw; }
   #infoContactInfo {
     position: absolute;
     width: 68.05556vw;
     height: 48.27586vh;
     top: 92.50375vh;
-    left: 6.66667vw;
-    margin: 1.49925vh 29.44444vw 23.13343vh 3.88889vw;
+    left: 5.55556vw;
     /* STYLING FOR FONT */
     font-family: TimesNewRomanPSMT;
     font-size: 2.9985vh;
@@ -158,7 +158,7 @@ a:hover {
   form {
     position: absolute;
     width: 87.5vw;
-    left: 10.55556vw;
+    left: 5.55556vw;
     text-align: center; }
   input {
     font-size: 1.2987vw;

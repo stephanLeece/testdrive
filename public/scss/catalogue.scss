@@ -12,30 +12,28 @@
 
 .artistbackground {
     position: absolute;
-    width: get-vw(290.1px);
-	height: get-vh(690.8px);
+    width: get-vw(500px);
+	height: get-vh(900px);
     object-fit: contain;
-    left: get-vw(98px);
+    left: get-vw(33px);
     top: get-vh(300px);
     z-index: -2000;
 }
 
 #artist-container {
-  position: absolute;
-  top: get-vh(328.2px);
-  left: get-vw(187.2px);
-  height: get-vh(800.8px);
-  width: get-vw(277.1px);
+    // background-size: contain;
+    position: absolute;
+    height: get-vh(828px);
+    width: get-vw(600px);
+    left: get-vw(225px);
+    top: get-vh(360px);
+  // top: get-vh(360px);
+  // left: get-vw(123px);
+  // height: get-vh(800.8px);
+  // width: get-vw(277.1px);
   z-index: 3000;
   background-repeat: no-repeat;
 
-
-
-  .artists {
-  height: get-vh(628px);
-  width: get-vw(149px);
-  left: get-vw(208px);
-  top: get-vh(298px);
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
   font-weight: normal;
@@ -45,10 +43,26 @@
   letter-spacing: get-vw(-1.9px);
   text-align: left;
   color: #222222;
-  z-index: 3000;
-  }
+  z-index: 4000;
 
 }
+
+// .artists {
+// height: get-vh(628px);
+// width: get-vw(300px);
+// left: get-vw(308px);
+// top: get-vh(460px);
+// font-family: TimesNewRomanPSMT;
+// font-size: get-vw(20px);
+// font-weight: normal;
+// font-style: normal;
+// font-stretch: normal;
+// line-height: get-vh(28px);
+// letter-spacing: get-vw(-1.9px);
+// text-align: left;
+// color: #222222;
+// z-index: 4000;
+// }
 
 #cat-disp {
   display: none;
@@ -74,6 +88,8 @@
   // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
   background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
   // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+   overflow-y: scroll;
+   background-image: repeating-linear-gradient();
 }
 
 .pds {
@@ -93,11 +109,11 @@
   letter-spacing: -1.9px;
   text-align: left;
   color: #222222;
+
 }
 
 .pds li {
   padding-bottom: get-vw(15px);
-
 }
 
 .pdf {
@@ -105,6 +121,7 @@
   color: black;
   text-align: left;
   font-size: get-vw(30px);
+
 }
 
 .pdf:hover {
@@ -159,9 +176,10 @@
 
     .artistbackground {
         position: absolute;
-        width: get-vw-mob(300px);
-    	height: get-vh-mob(687.8px);
-        left: get-vw-mob(40px);
+        width: 95%;
+    	  height: get-vh-mob(750px);
+         // height: 120%;
+        left: get-vw-mob(15px);
         top: get-vh-mob(217px);
         z-index: -2000;
     }
@@ -196,6 +214,8 @@
 
 
     #artist-container {
+     // background-image: url("/assets/mobile/artist-list-mobile.svg");
+     // background-size: contain;
       position: absolute;
       top: get-vh-mob(247px);
       // left: get-vw-mob(131px);
@@ -255,14 +275,14 @@
 
     #video-container {
       position: absolute;
-      // background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+      background-image: url("/assets/mobile/cloud-video-02.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      width: get-vw-mob(300px);
+      width: get-vw-mob(200px);
       height:get-vh-mob(223px);
       object-fit: contain;
-      margin-top: get-vh-mob(1050px);
-      left: get-vw-mob(30px);
+      margin-top: get-vh-mob(1190px);
+      left: get-vw-mob(95px);
       bottom: get-vh-mob(12px);
       margin-bottom: get-vh-mob(0px);
     }
@@ -271,7 +291,7 @@
     #video {
       position: absolute;
       height: get-vh-mob(149px);
-      left: get-vw-mob(57.4px);
+      left: get-vw-mob(0px);
       margin-left: get-vw-mob(42.4px);
       margin-right: get-vw-mob(0px);
       margin-bottom: get-vh-mob(40px);
@@ -283,18 +303,19 @@
       width: 100%;
       object-fit: contain;
       background-size:contain;
-      top: get-vh-mob(945px);
+      top: get-vh-mob(1000px);
       left: get-vw-mob(0px);
       // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
       background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-      background-repeat: no-repeat;
+      // background-repeat: no-repeat;
+      background-repeat: repeat-y;
       // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
     }
 
 
     .pdf {
       width: get-vw-mob(367px);
-	  height: get-vh-mob(199px);
+	    height: get-vh-mob(199px);
       margin-left: get-vw-mob(8px);
       text-decoration: none;
       color: black;
@@ -307,8 +328,5 @@
     .pdf:hover {
         color: #ff4819;
     }
-
-
-
 
 } /* CLOSES MEDIA QUERIES */

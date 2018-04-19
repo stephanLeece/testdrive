@@ -1,35 +1,30 @@
 .artistbackground {
   position: absolute;
-  width: 18.83766vw;
-  height: 67.46094vh;
+  width: 32.46753vw;
+  height: 87.89062vh;
   object-fit: contain;
-  left: 6.36364vw;
+  left: 2.14286vw;
   top: 29.29688vh;
   z-index: -2000; }
 
 #artist-container {
   position: absolute;
-  top: 32.05078vh;
-  left: 12.15584vw;
-  height: 78.20312vh;
-  width: 17.99351vw;
+  height: 80.85938vh;
+  width: 38.96104vw;
+  left: 14.61039vw;
+  top: 35.15625vh;
   z-index: 3000;
-  background-repeat: no-repeat; }
-  #artist-container .artists {
-    height: 61.32812vh;
-    width: 9.67532vw;
-    left: 13.50649vw;
-    top: 29.10156vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 1.2987vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.73438vh;
-    letter-spacing: -0.12338vw;
-    text-align: left;
-    color: #222222;
-    z-index: 3000; }
+  background-repeat: no-repeat;
+  font-family: TimesNewRomanPSMT;
+  font-size: 1.2987vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.73438vh;
+  letter-spacing: -0.12338vw;
+  text-align: left;
+  color: #222222;
+  z-index: 4000; }
 
 #cat-disp {
   display: none; }
@@ -50,7 +45,9 @@
   object-fit: contain;
   top: 0vh;
   left: 34.28571vw;
-  background-image: linear-gradient(to bottom, #fbcaca, #ffffff); }
+  background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  overflow-y: scroll;
+  background-image: repeating-linear-gradient(); }
 
 .pds {
   position: absolute;
@@ -111,9 +108,9 @@
 @media only screen and (orientation: portrait) {
   .artistbackground {
     position: absolute;
-    width: 83.33333vw;
-    height: 103.11844vh;
-    left: 11.11111vw;
+    width: 95%;
+    height: 112.44378vh;
+    left: 4.16667vw;
     top: 32.53373vh;
     z-index: -2000; }
   #cat-disp {
@@ -180,19 +177,20 @@
     z-index: -2001; }
   #video-container {
     position: absolute;
+    background-image: url("/assets/mobile/cloud-video-02.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 83.33333vw;
+    width: 55.55556vw;
     height: 33.43328vh;
     object-fit: contain;
-    margin-top: 157.42129vh;
-    left: 8.33333vw;
+    margin-top: 178.41079vh;
+    left: 26.38889vw;
     bottom: 1.7991vh;
     margin-bottom: 0vh; }
   #video {
     position: absolute;
     height: 22.33883vh;
-    left: 15.94444vw;
+    left: 0vw;
     margin-left: 11.77778vw;
     margin-right: 0vw;
     margin-bottom: 5.997vh; }
@@ -201,10 +199,10 @@
     width: 100%;
     object-fit: contain;
     background-size: contain;
-    top: 141.67916vh;
+    top: 149.92504vh;
     left: 0vw;
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-    background-repeat: no-repeat; }
+    background-repeat: repeat-y; }
   .pdf {
     width: 101.94444vw;
     height: 29.83508vh;

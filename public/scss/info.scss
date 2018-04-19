@@ -144,7 +144,11 @@ a:hover {
 
     #mobile-background-img {
         background: url(../assets/mobile/Info-mobile.png);
-        background-size: get-vw-mob(375px) get-vh-mob(1269px);
+        // background-size: get-vw-mob(375px) get-vh-mob(1269px);
+        // background-position:center;
+        background-repeat:no-repeat;
+        background-size:contain;
+        // background-size: 100%;
         width: get-vw-mob(375px);
         height: get-vh-mob(1269px);
         top: get-vh-mob(672px);
@@ -156,8 +160,8 @@ a:hover {
 
     #infoMap {
         position: absolute;
-        width: get-vw-mob(348px);
-        height: get-vh-mob(415px);
+        width: get-vw-mob(345px);
+        height: get-vh-mob(412px);
         top: get-vh-mob(123px);
         right: get-vw-mob(6px);
     }
@@ -165,10 +169,11 @@ a:hover {
 
     #infoContactBg {
         position: absolute;
-        width: get-vw-mob(375px);
-        height: get-vh-mob(515.3px);
+        width: get-vw-mob(376px);
+        // height: get-vh-mob(515.3px);
+        height: get-vh-mob(522px);
         top: get-vh-mob(578px);
-        left: get-vw-mob(0px);
+        left: get-vw-mob(-15px);
     }
 
 
@@ -177,8 +182,8 @@ a:hover {
         width: get-vw-mob(245px);
         height: get-vh-mob(322px);
         top: get-vh-mob(617px);
-        left: get-vw-mob(24px);
-        margin: get-vh-mob(10px) get-vw-mob(106px) get-vh-mob(154.3px) get-vw-mob(14px);
+        left: get-vw-mob(20px);
+        // margin: get-vh-mob(10px) get-vw-mob(106px) get-vh-mob(154.3px) get-vw-mob(14px);
 
         /* STYLING FOR FONT */
         font-family: TimesNewRomanPSMT;
@@ -224,7 +229,7 @@ a:hover {
     form {
         position: absolute;
         width: get-vw-mob(315px);
-        left: get-vw-mob(38px);
+        left: get-vw-mob(20px);
         text-align: center;
     }
 
