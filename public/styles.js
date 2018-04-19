@@ -31,19 +31,6 @@ if (window.location.pathname == '/info') {
     });
 }
 
-// if ($(window).height() > 200 && window.location.pathname == '/info') {
-//     $('body').css({
-//         'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed'
-//
-// }).hide();
-//
-// } else {
-//     $('body').css({
-//         'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed'
-// }).show();
-// });
-
-
 
 function eventHover(view) {
   $(".eventDetails").hover(function(){

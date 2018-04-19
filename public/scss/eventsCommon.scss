@@ -14,6 +14,8 @@
   justify-content: flex-start;
   align-items: space-between;
   position: absolute;
+  // height: 100%;
+  // width: 100%;
   top: get-vh(405px);
   left: get-vw(54.7px);
 }
@@ -32,10 +34,10 @@
   letter-spacing: get-vw(-0.9px);
   text-align: left;
   color: #222222;
-  width: get-vw(445px);
-  height: get-vh(107.9px);
-  padding: 35px;
-  margin: -50px;
+  width: get-vw(435px);
+  height: get-vh(100.9px);
+  padding: 30px;
+  margin: -22px;
   div {
     p {
       &:first-child {
