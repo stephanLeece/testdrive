@@ -166,9 +166,11 @@ text-align: left;
     justify-content: flex-start;
     align-items: space-between;
     position: absolute;
-    min-height: 44.97751vh;
+    // min-height: 44.97751vh;
+    // height: 250px;
+        height: 50%;
     width: 100%;
-    top: 21.28906vh;
+    top: 23vh;
     margin-left: -0.83333vw;
     overflow-y: scroll;
     overflow-x: hidden; }
@@ -188,7 +190,7 @@ text-align: left;
     color: #222222;
     width: 85.55556vw;
     height: 16.17691vh;
-    margin: 50px;
+    // margin: 0px;
     margin-left: 0px;
     padding: 25px; }
     .eventDetails div p:first-child {
