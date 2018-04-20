@@ -132,6 +132,32 @@ app.get('/events', function(req, res) {
     });
   });
 });
+
+//ddevents mobile only////////////////////////////////
+app.get('/driveevents', function(req, res) {
+  client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
+    const eventList = entries.items
+      ? entries.items.map((entry) => {
+        let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse()) || null;
+        return {
+          eventTitle: entry.fields.ddEventTitle,
+          eventDate: ddEventDate,
+          eventInfo: entry.fields.ddEventInfo,
+          eventContent: entry.fields.ddEventContent
+            ? entry.fields.ddEventContent.map((image) => {
+              return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
+            })
+            : null
+        };
+      })
+      : null;
+    res.render('ddeventsmobile', {
+      layout: 'layout',
+      eventList: eventList
+    });
+  });
+});
+//////////////////////////////////////////////////////
 app.get('/testdrive', function(req, res) {
   client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
     const eventList = entries.items
@@ -155,6 +181,32 @@ app.get('/testdrive', function(req, res) {
     });
   });
 });
+
+// tdevents mobile only /////////////////////////
+app.get('/testdriveevents', function(req, res) {
+  client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
+    const eventList = entries.items
+      ? entries.items.map((entry) => {
+        let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse()) || null;
+        return {
+          eventTitle: entry.fields.tdEventTitle,
+          eventDate: tdEventDate,
+          eventInfo: entry.fields.tdEventInfo,
+          eventContent: entry.fields.tdEventContent
+            ? entry.fields.tdEventContent.map((image) => {
+              return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
+            })
+            : null
+        };
+      })
+      : null;
+    res.render('tdeventsmobile', {
+      layout: 'layout',
+      eventList: eventList
+    });
+  });
+});
+/////////////////////////////////////////////////
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
 });

@@ -1,23 +1,19 @@
 @function get-vw($object) {
-    $vw: (1540 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
+  $vw: (1540 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
 }
-
 @function get-vh($object) {
-    $vh: (1024 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
+  $vh: (1024 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
 }
-
-
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 #DriveDrive {
-    width: get-vw(354px);
+  width: get-vw(354px);
 }
 
 .burger {
-    display: none;
+  display: none;
 }
-
 
 .drivedrive-menu {
   ul {
@@ -27,12 +23,264 @@
     top: get-vh(54px);
     left: get-vw(92px);
   }
-
 }
 
-
 .cat {
+  margin-top: get-vh(24px);
+  width: get-vw(210px);
+  height: get-vh(56px);
+  text-decoration: none;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  font-size: get-vw(50px);
+  font-family: TimesNewRomanPSMT;
+  letter-spacing: get-vw(-2.1px);
+  text-align: left;
+  -webkit-text-stroke: 0 #979797;
+}
 
+.active {
+  color: rgb(255, 194, 120);
+}
+
+.events {
+  margin-top: get-vh(1px);
+  width: get-vw(150px);
+  height: get-vh(56px);
+  text-decoration: none;
+  font-family: TimesNewRomanPSMT;
+  font-size: get-vw(50px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: get-vw(-2.1px);
+  text-align: left;
+  color: #000000;
+}
+
+.act {
+  color: rgb(255, 194, 120);
+}
+
+.active-color-home {
+  color: #000000;
+}
+/* END STYLING FOR BIG MAC */
+/* BEGIN STYLING FOR HOMEPAGE
+
+/* STYLING FOR THE GALLERY SPACE IMAGE */
+#gallery-space-img {
+  width: get-vw(933px);
+  height: get-vh(863px);
+  position: absolute;
+  top: get-vw(46px);
+  left: get-vw(400px);
+  cursor: pointer;
+  z-index: 40px;
+}
+
+.shadowfilter {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.shadowfilter:hover {
+  -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
+}
+/* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+#home-red-line {
+  width: get-vw(401.8px);
+  height: get-vh(217.3px);
+  object-fit: contain;
+  position: absolute;
+  top: get-vh(313px);
+  left: get-vw(172px);
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
+
+#home-green-line {
+  width: get-vw(250px);
+  height: get-vh(160px);
+  object-fit: contain;
+  position: absolute;
+  top: get-vh(700px);
+  left: get-vw(1020px);
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  z-index: 10;
+}
+
+#home-blue-line {
+  width: get-vw(299px);
+  height: get-vh(203.5px);
+  object-fit: contain;
+  position: absolute;
+  top: get-vh(109.9px);
+  left: get-vw(1252.9px);
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
+/* STYLING FOR MODAL */
+#modal {
+  opacity: 0;
+}
+/* STYLING FOR THE HULK IMAGE THAT FADES OUT */
+#halk {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+}
+
+#home-container {
+  opacity: 0;
+  transition: 5s;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.home-video {
+  position: absolute;
+  background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: get-vw(447px) get-vh(276px);
+  width: get-vw(538px);
+  top: get-vh(604px);
+  height: get-vh(333px);
+  bottom: get-vh(87px);
+  left: get-vw(65px);
+  object-fit: contain;
+}
+
+#home-v {
+  position: absolute;
+  width: 17.46753vw;
+  height: 16.21094vh;
+  left: 9.07792vw;
+  top: 65.28906vh;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+#modal {
+  position: absolute;
+  top: get-vh(128px);
+  left: get-vw(566px);
+  width: get-vw(800.2px);
+  height: get-vh(800.5px);
+  object-fit: contain;
+  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  z-index: 1000;
+  cursor: pointer;
+
+  .words {
+    width: get-vw(289px);
+    height: get-vh(553px);
+    left: get-vw(800px);
+    // right: get-vw(245px);
+    top: get-vh(180px);
+    word-wrap: normal;
+    font-family: TimesNewRomanPSMT;
+    font-size: get-vh(20px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: get-vh(22px);
+    letter-spacing: get-vw(-0.9px);
+    text-align: left;
+    color: #222222;
+    z-index: 1000;
+    margin: get-vh(39px) get-vw(44px) get-vh(80px) get-vw(80px);
+    letter-spacing: normal;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+}
+
+.homepage-tdevents {
+  // width: get-vw(66px);
+  height: get-vh(46px);
+  position: absolute;
+  width: get-vw(150px);
+  bottom: get-vh(170px);
+  right: get-vw(115px);
+  font-family: TimesNewRomanPSMT;
+  font-size: 41px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -2.4px;
+  text-align: left;
+  z-index: 20;
+  text-decoration: none;
+  color: black;
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+@function get-vw-mob($object) {
+  $vw: (360 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh-mob($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+@media only screen and (orientation: portrait) {
+  /* STYLING FOR MENU - MOBILE */
+  /* STYLING FOR HAMBURGER MENU ICON */
+  .burger {
+    display: block;
+    width: get-vw-mob(26px);
+    height: get-vh-mob(24px);
+    position: absolute;
+    top: get-vh-mob(84px);
+    left: get-vw-mob(170px);
+  }
+
+  #DriveDrive {
+    top: get-vh-mob(-10px);
+    left: get-vw-mob(25px);
+    width: get-vw-mob(284px);
+    height: get-vh-mob(45px);
+    position: absolute;
+  }
+
+  .drivedrive-menu {
+    ul {
+      #cat,
+      #eve {
+        display: none;
+      }
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #infoLink {
+    display: none;
+  }
+
+  .cat {
     margin-top: get-vh(24px);
     width: get-vw(210px);
     height: get-vh(56px);
@@ -47,486 +295,411 @@
     letter-spacing: get-vw(-2.1px);
     text-align: left;
     -webkit-text-stroke: 0 #979797;
+  }
 
-}
+  .active {
+    color: rgb(255, 194, 120);
+  }
 
-.active {
-        color:rgb(255, 194, 120);
-    }
-
-.events {
+  .events {
     margin-top: get-vh(1px);
-	width: get-vw(150px);
-	height: get-vh(56px);
-    text-decoration: none;
-	font-family: TimesNewRomanPSMT;
-	font-size: get-vw(50px);
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: get-vw(-2.1px);
-	text-align: left;
-	color: #000000;
-}
-
-.act {
-    color:rgb(255, 194, 120);
-}
-
-
-.active-color-home {
-    color: #000000;
-}
-
-
-/* END STYLING FOR BIG MAC */
-/* BEGIN STYLING FOR HOMEPAGE
-
-/* STYLING FOR THE GALLERY SPACE IMAGE */
-#gallery-space-img {
-    width: get-vw(933px);
-    height: get-vh(863px);
-    position: absolute;
-    top: get-vw(46px);
-    left: get-vw(400px);
-    cursor: pointer;
-    z-index: 40px;
-}
-
-.shadowfilter {
-	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
-	-webkit-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	transition: all 0.5s linear;
-
-}.shadowfilter:hover {
-	-webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
-}
-
-/* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-#home-red-line {
-    width: get-vw(401.8px);
-    height: get-vh(217.3px);
-    object-fit: contain;
-    position: absolute;
-    top: get-vh(313px);
-    left: get-vw(172px);
-    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-}
-
-#home-green-line {
-    width: get-vw(250px);
-    height: get-vh(160px);
-    object-fit: contain;
-    position: absolute;
-    top: get-vh(700px);
-    left: get-vw(1020px);
-    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-    z-index: 10;
-}
-
-#home-blue-line {
-    width: get-vw(299px);
-    height: get-vh(203.5px);
-    object-fit: contain;
-    position: absolute;
-    top: get-vh(109.9px);
-    left: get-vw(1252.9px);
-    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-}
-
-
-
-/* STYLING FOR MODAL */
-#modal {
-    opacity: 0;
-}
-
-
-
-/* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-#halk {
-  position: absolute;
-  z-index: 99;
-    height: 100vh;
-    width: 100vw;
-}
-
-#home-container {
-    opacity: 0;
-    transition: 5s;
-    -webkit-transition: opacity 2s ease-in;
-    -moz-transition: opacity 2s ease-in;
-    -ms-transition: opacity 2s ease-in;
-    -o-transition: opacity 2s ease-in;
-    transition: opacity 2s ease-in;
-}
-
-.home-video {
-    position: absolute;
-    background-image: url(/assets/Elements/Home/Home-video-cloud-grey.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: get-vw(447px) get-vh(276px);
-    width: get-vw(538px);
-    top: get-vh(604px);
-    height: get-vh(333px);
-    bottom: get-vh(87px);
-    left: get-vw(65px);
-    object-fit: contain;
-
-}
-
-#home-v {
-    position: absolute;
-    width: 17.46753vw;
-    height: 16.21094vh;
-    left: 9.07792vw;
-    top: 65.28906vh;
-}
-
-.fadeIn {
-    opacity: 1;
-}
-
-
-#modal{
-    position:absolute;
-    top:get-vh(128px);
-    left:get-vw(566px);
-    width: get-vw(800.2px);
-	  height: get-vh(800.5px);
-    object-fit: contain;
-    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    z-index: 1000;
-    cursor: pointer;
-
-    .words {
-
-        width: get-vw(289px);
-        height: get-vh(553px);
-        left:get-vw(800px);
-        // right: get-vw(245px);
-        top:get-vh(180px);
-        word-wrap: normal;
-        font-family: TimesNewRomanPSMT;
-        font-size: get-vh(20px);
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: get-vh(22px);
-        letter-spacing: get-vw(-0.9px);
-        text-align: left;
-        color: #222222;
-        z-index: 1000;
-        margin-top: get-vh(39px);
-        margin-left: get-vw(80px);
-        margin-right: get-vw(44px);
-        margin-bottom: get-vh(80px);
-        letter-spacing: normal;
-        justify-content: center;
-        align-content: center;
-        cursor: pointer;
-
-        }
-}
-
-
-
-.homepage-tdevents {
-    // width: get-vw(66px);
-    height: get-vh(46px);
-    position: absolute;
     width: get-vw(150px);
-    bottom: get-vh(170px);
-    right: get-vw(115px);
+    height: get-vh(56px);
+    text-decoration: none;
     font-family: TimesNewRomanPSMT;
-    font-size: 41px;
+    font-size: get-vw(50px);
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: -2.4px;
+    letter-spacing: get-vw(-2.1px);
     text-align: left;
-    z-index: 20;
-    text-decoration: none;
-    color: black;
+    color: #000000;
+  }
 
-}
+  .act {
+    color: rgb(255, 194, 120);
+  }
 
-
-
-//////////////////////////////////////////////////////////////////////////////////////////
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
-
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (360 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-
-
-@media only screen and (orientation: portrait) {
-
-
-    /* STYLING FOR MENU - MOBILE */
-    /* STYLING FOR HAMBURGER MENU ICON */
-    .burger {
-        display: block;
-        width: get-vw-mob(26px);
-        height: get-vh-mob(24px);
-        position: absolute;
-        top: get-vh-mob(84px);
-        left: get-vw-mob(170px);
-    }
-
-
-    #DriveDrive {
-        top: get-vh-mob(-10px);
-        left: get-vw-mob(25px);
-        width: get-vw-mob(284px);
-        height: get-vh-mob(45px);
-        position: absolute;
-    }
-
-
-    .drivedrive-menu {
-      ul {
-        #cat, #eve {
-            display: none;
-        }
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-      }
-
-    }
-
-    #infoLink {
-        display: none;
-    }
-
-
-    .cat {
-
-        margin-top: get-vh(24px);
-        width: get-vw(210px);
-        height: get-vh(56px);
-        text-decoration: none;
-        color: #000000;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        font-size: get-vw(50px);
-        font-family: TimesNewRomanPSMT;
-        letter-spacing: get-vw(-2.1px);
-        text-align: left;
-        -webkit-text-stroke: 0 #979797;
-
-    }
-
-    .active {
-            color:rgb(255, 194, 120);
-        }
-
-    .events {
-        margin-top: get-vh(1px);
-    	width: get-vw(150px);
-    	height: get-vh(56px);
-        text-decoration: none;
-    	font-family: TimesNewRomanPSMT;
-    	font-size: get-vw(50px);
-    	font-weight: normal;
-    	font-style: normal;
-    	font-stretch: normal;
-    	line-height: normal;
-    	letter-spacing: get-vw(-2.1px);
-    	text-align: left;
-    	color: #000000;
-    }
-
-    .act {
-        color:rgb(255, 194, 120);
-    }
-
-
-    .active-color-home {
-        color: #000000;
-    }
-
-
-    /* END STYLING FOR BIG MAC */
-    /* BEGIN STYLING FOR HOMEPAGE
+  .active-color-home {
+    color: #000000;
+  }
+  /* END STYLING FOR BIG MAC */
+  /* BEGIN STYLING FOR HOMEPAGE
 
     /* STYLING FOR THE GALLERY SPACE IMAGE */
-    #gallery-space-img {
-        width: get-vw-mob(349px);
-        height: get-vh-mob(323px);
-        position: absolute;
-        top: get-vh-mob(138px);
-        left: get-vw-mob(5px);
-        cursor: pointer;
-    }
+  #gallery-space-img {
+    width: get-vw-mob(349px);
+    height: get-vh-mob(323px);
+    position: absolute;
+    top: get-vh-mob(138px);
+    left: get-vw-mob(5px);
+    cursor: pointer;
+  }
 
-    .shadowfilter {
-    	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
-    	-webkit-transition: all 0.5s linear;
-    	-o-transition: all 0.5s linear;
-    	transition: all 0.5s linear;
+  .shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
 
-    }.shadowfilter:hover {
-    	-webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
-    }
+  .shadowfilter:hover {
+    -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
+  }
+  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+  #home-red-line {
+    width: get-vw-mob(155.3px);
+    height: get-vh-mob(84px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(384px);
+    left: get-vw-mob(13px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  }
 
-    /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-    #home-red-line {
-        width: get-vw-mob(155.3px);
-        height: get-vh-mob(84px);
-        object-fit: contain;
-        position: absolute;
-        top: get-vh-mob(384px);
-        left: get-vw-mob(13px);
-        cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-    }
+  #home-green-line {
+    width: get-vw-mob(175px);
+    height: get-vh-mob(101.8px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(488px);
+    left: get-vw-mob(184px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10;
+  }
+  /* STYLING FOR TESTDRIVE LOGO */
+  .tdLogo {
+    position: absolute;
+    width: get-vw-mob(290px);
+    height: get-vh-mob(30px);
+    left: get-vw-mob(42px);
+    top: get-vh-mob(596px);
+  }
 
-    #home-green-line {
-        width: get-vw-mob(175px);
-        height: get-vh-mob(101.8px);
-        object-fit: contain;
-        position: absolute;
-        top: get-vh-mob(488px);
-        left: get-vw-mob(184px);
-        cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-        z-index: 10;
-    }
+  #home-blue-line {
+    width: get-vw-mob(103.3px);
+    height: get-vh-mob(104px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(104px);
+    left: get-vw-mob(256px);
+    z-index: 3000;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  }
+  /* STYLING FOR MODAL */
+  #modal {
+    visibility: hidden;
+  }
+  /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
+  #halk {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+  }
 
+  #home-container {
+    opacity: 0;
+    transition: 5s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+  }
 
+  .home-video {
+    position: absolute;
+    // background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: get-vw-mob(220px);
+    // height: get-vh-mob(136px);
+    // object-fit: contain;
+    top: get-vh-mob(423px);
+    left: get-vw-mob(120px);
+  }
 
-    /* STYLING FOR TESTDRIVE LOGO */
-    .tdLogo {
-        position: absolute;
-        width: get-vw-mob(290px);
-        height: get-vh-mob(30px);
-        left: get-vw-mob(42px);
-        top: get-vh-mob(596px);
-    }
+  #home-v {
+    position: absolute;
+    width: get-vw-mob(145.6px);
+    height: get-vh-mob(81.6px);
+    top: get-vh-mob(450.2px);
+    left: get-vw-mob(153px);
+  }
 
+  .fadeIn {
+    opacity: 1;
+  }
 
+  #modal {
+    position: absolute;
+    top: get-vh-mob(-5px);
+    width: 110%;
+    height: 100%;
+    // background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3000;
 
-    #home-blue-line {
-        width: get-vw-mob(103.3px);
-        height: get-vh-mob(104px);
-        object-fit: contain;
-        position: absolute;
-        top: get-vh-mob(104px);
-        left: get-vw-mob(256px);
-        z-index: 3000;
-        cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-    }
-    /* STYLING FOR MODAL */
-    #modal {
-        visibility: hidden;
-    }
-    /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-    #halk {
+    .words {
+      // position: absolute;
+      // top: get-vh-mob(58px);
+      // // background-size: contain;
+      // width: get-vw-mob(195px);
+      // height: get-vh-mob(517px);
+      // margin-right: get-vw-mob(100px);
+      // left: get-vw-mob(54px);
+      //
+
       position: absolute;
-      z-index: 99;
-        height: 100vh;
-        width: 100vw;
+      top: get-vh-mob(48px);
+      width: get-vw-mob(280px);
+      // height: get-vh-mob(437px);
+      left: get-vw-mob(44px);
+      font-family: TimesNewRomanPSMT;
+      font-size: get-vh-mob(18px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.06;
+      letter-spacing: get-vw-mob(-0.8px);
+      text-align: left;
+      color: #222222;
     }
+  }
 
-    #home-container {
-        opacity: 0;
-        transition: 5s;
-        -webkit-transition: opacity 1s ease-in;
-        -moz-transition: opacity 1s ease-in;
-        -ms-transition: opacity 1s ease-in;
-        -o-transition: opacity 1s ease-in;
-        transition: opacity 1s ease-in;
+  .clicked-gallery-img {
+    width: 125.06667vw;
+    height: 85.42579vh;
+    position: fixed;
+    top: 32.68966vh;
+    left: 3.46667vw;
+    cursor: pointer;
+  }
+}
+/* CLOSES MEDIA QUERIES */
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .burger {
+    display: block;
+    width: get-vw-mob(26px);
+    height: get-vh-mob(24px);
+    position: absolute;
+    top: get-vh-mob(84px);
+    left: get-vw-mob(170px);
+  }
+
+  #DriveDrive {
+    top: get-vh-mob(-10px);
+    left: get-vw-mob(25px);
+    width: get-vw-mob(284px);
+    height: get-vh-mob(45px);
+    position: absolute;
+  }
+
+  .drivedrive-menu {
+    ul {
+      #cat,
+      #eve {
+        display: none;
+      }
+      position: absolute;
+      display: flex;
+      flex-direction: column;
     }
+  }
 
-    .home-video {
-        position: absolute;
-        // background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: get-vw-mob(220px);
-        // height: get-vh-mob(136px);
-        // object-fit: contain;
-        top: get-vh-mob(423px);
-        left: get-vw-mob(120px);
+  #infoLink {
+    display: none;
+  }
 
+  .cat {
+    margin-top: get-vh(24px);
+    width: get-vw(210px);
+    height: get-vh(56px);
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-size: get-vw(50px);
+    font-family: TimesNewRomanPSMT;
+    letter-spacing: get-vw(-2.1px);
+    text-align: left;
+    -webkit-text-stroke: 0 #979797;
+  }
+
+  .active {
+    color: rgb(255, 194, 120);
+  }
+
+  .events {
+    margin-top: get-vh(1px);
+    width: get-vw(150px);
+    height: get-vh(56px);
+    text-decoration: none;
+    font-family: TimesNewRomanPSMT;
+    font-size: get-vw(50px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: get-vw(-2.1px);
+    text-align: left;
+    color: #000000;
+  }
+
+  .act {
+    color: rgb(255, 194, 120);
+  }
+
+  .active-color-home {
+    color: #000000;
+  }
+  /* END STYLING FOR BIG MAC */
+  /* BEGIN STYLING FOR HOMEPAGE
+
+          /* STYLING FOR THE GALLERY SPACE IMAGE */
+  #gallery-space-img {
+    width: get-vw-mob(325px);
+    height: get-vh-mob(320px);
+    position: absolute;
+    top: get-vh-mob(138px);
+    left: get-vw-mob(19px);
+    cursor: pointer;
+  }
+
+  .shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+
+  .shadowfilter:hover {
+    -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
+  }
+  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+  #home-red-line {
+    width: get-vw-mob(155.3px);
+    height: get-vh-mob(84px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(384px);
+    left: get-vw-mob(13px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  }
+
+  #home-green-line {
+    width: get-vw-mob(175px);
+    height: get-vh-mob(101.8px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(488px);
+    left: get-vw-mob(184px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10;
+  }
+  /* STYLING FOR TESTDRIVE LOGO */
+  .tdLogo {
+    position: absolute;
+    width: get-vw-mob(290px);
+    height: get-vh-mob(30px);
+    left: get-vw-mob(42px);
+    top: get-vh-mob(596px);
+  }
+
+  #home-blue-line {
+    width: get-vw-mob(103.3px);
+    height: get-vh-mob(104px);
+    object-fit: contain;
+    position: absolute;
+    top: get-vh-mob(104px);
+    left: get-vw-mob(256px);
+    z-index: 3000;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  }
+  /* STYLING FOR MODAL */
+  #modal {
+    visibility: hidden;
+  }
+  /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
+  #halk {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #home-container {
+    opacity: 0;
+    transition: 5s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+  }
+
+  .home-video {
+    position: absolute;
+    // background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: get-vw-mob(180px);
+    top: get-vh-mob(425px);
+    left: get-vw-mob(120px);
+  }
+
+  #home-v {
+    position: absolute;
+    width: get-vw-mob(149.6px);
+    height: get-vh-mob(81.6px);
+    top: get-vh-mob(455.2px);
+    left: get-vw-mob(133px);
+  }
+
+  .fadeIn {
+    opacity: 1;
+  }
+
+  #modal {
+    position: absolute;
+    top: get-vh-mob(0px);
+    left: 0;
+    width: 100%;
+    height: get-vh-mob(680px);
+    // background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3000;
+
+    .words {
+      position: absolute;
+      top: get-vh-mob(58px);
+      // background-size: contain;
+      width: get-vw-mob(195px);
+      height: get-vh-mob(517px);
+      margin-right: get-vw-mob(100px);
+      left: get-vw-mob(54px);
+      font-family: TimesNewRomanPSMT;
+      font-size: get-vh-mob(18px);
+      line-height: 1.06;
+      letter-spacing: get-vw-mob(-0.8px);
+      text-align: left;
+      color: #222222;
     }
+  }
 
-    #home-v {
-        position: absolute;
-        width: get-vw-mob(145.6px);
-        height: get-vh-mob(81.6px);
-        top: get-vh-mob(450.2px);
-        left: get-vw-mob(153px);
-    }
-
-    .fadeIn {
-        opacity: 1;
-    }
-
-
-    #modal{
-        position: absolute;
-        top: get-vh-mob(41px);
-        left: 0;
-        width: get-vw-mob(300px);
-    	height: get-vh-mob(500px);
-        // background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
-        background-repeat: no-repeat;
-        z-index: 3000;
-
-        .words {
-            position: absolute;
-            top: get-vh-mob(58px);
-            width: get-vw-mob(289px);
-            height: get-vh-mob(437px);
-            left: get-vw-mob(44px);
-            font-family: TimesNewRomanPSMT;
-            font-size: get-vh-mob(18px);
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.06;
-            letter-spacing: get-vw-mob(-0.8px);
-            text-align: left;
-            color: #222222;
-        }
-
-
-    }
-
-
-    .clicked-gallery-img {
-        width: 125.06667vw;
-        height: 85.42579vh;
-        position: fixed;
-        top: 32.68966vh;
-        left: 3.46667vw;
-        cursor: pointer;
-    }
-
-
-} /* CLOSES MEDIA QUERIES */
+  // .clicked-gallery-img {
+  //   width: 125.06667vw;
+  //   height: 85.42579vh;
+  //   position: fixed;
+  //   top: 32.68966vh;
+  //   left: 3.46667vw;
+  //   cursor: pointer;
+  // }
+}

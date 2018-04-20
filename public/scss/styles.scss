@@ -311,3 +311,139 @@ body {
     color: rgb(255, 194, 120);
   }
 }
+
+
+
+
+
+
+/// IPAD EY OOOOH /////////////////////////  IPAD EY OOOOH //////////////////  IPAD EY OOOOH ///////////
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+  .mob-container {
+      position: fixed;
+      min-width: 100%;
+      top: get-vh-mob(0px);
+      left: -800px;
+      height: 100%;
+      background-color: white;
+      z-index: 40000;
+  }
+
+  #mob-dd-menu{
+      position: absolute;
+      width: get-vw-mob(288px);
+      height: get-vh-mob(45px);
+      top: get-vh-mob(27px);
+      left: get-vw-mob(46px);
+  }
+
+  .x {
+      position: absolute;
+      width: get-vw-mob(20px);
+      height: get-vh-mob(20px);
+      top: get-vh-mob(88px);
+      left: get-vw-mob(170px);
+  }
+
+  #mob-cat {
+      position: absolute;
+      width: get-vw-mob(157px);
+      height: get-vh-mob(46px);
+      top: get-vh-mob(127px);
+      left: get-vw-mob(106px);
+
+      /* STYLING FOR FONTS */
+      font-family: TimesNewRomanPSMT;
+      font-size: 61px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.4px;
+      text-align: center;
+      color: #000000;
+      -webkit-text-stroke: 0 #979797;
+
+  }
+
+
+  #mob-eve {
+      position: absolute;
+      width: get-vw-mob(113px);
+      height: get-vh-mob(46px);
+      top: get-vh-mob(172px);
+      left: get-vw-mob(131px);
+
+      /* STYLING FOR FONTS */
+      font-family: TimesNewRomanPSMT;
+      font-size: 61px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.2px;
+      text-align: center;
+      color: #000000;
+
+  }
+
+
+  #mob-info {
+      position: absolute;
+      width: get-vw-mob(58px);
+      height: get-vh-mob(46px);
+      top: get-vh-mob(242px);
+      left: get-vw-mob(157px);
+
+      /* STYLING FOR FONTS */
+      font-family: TimesNewRomanPSMT;
+      font-size: 61px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.2px;
+      text-align: center;
+      color: #000000;
+
+  }
+
+
+  #mob-bike {
+      position: absolute;
+      top: get-vh-mob(280px);
+      left: get-vw-mob(167px);
+  }
+
+
+
+  #mob-test-eve {
+  position: absolute;
+  width: get-vw-mob(113px);
+  height: get-vh-mob(46px);
+  top: get-vh-mob(541px);
+  left: get-vw-mob(131px);
+  font-family: TimesNewRomanPSMT;
+  font-size: 61px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -2.2px;
+  text-align: center;
+  color: #000000;
+  }
+
+  #mob-testdriveLogo {
+      width: get-vw-mob(284px);
+      height: get-vh-mob(45px);
+      position: absolute;
+      top: get-vh-mob(497px);
+      left: get-vw-mob(42px);
+  }
+
+}
