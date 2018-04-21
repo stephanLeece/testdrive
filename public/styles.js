@@ -1,7 +1,9 @@
 if ($(window).width() > 600) {
     $(".mob-container").hide();
+    showDesktopEvents();
 } else {
     $(".mob-container").show();
+    showMobileEvents();
 }
 
 if ($(window).width() < 600 && window.location.pathname == '/testdrive') {
@@ -14,13 +16,41 @@ else if (window.location.pathname == '/testdrive'){
   $("#makeitblack").hide();
 }
 
-$('.eventsInfoBox').find('div').addClass('hidden');
-$(".eventDetails").click(function() {
-  let eventIndex = $(this).index();
+function showDesktopEvents() {
   $('.eventsInfoBox').find('div').addClass('hidden');
-  $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
-});
+  $(".eventDetails").click(function() {
+    let eventIndex = $(this).index();
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+  });
+};
 
+function showMobileEvents() {
+  // hides the infobox and all of the divs within it
+  $('.eventsInfoBox').find('div').addClass('hidden');
+  $('.eventsInfoBox').css({ 'display': 'none' });
+  let highlightedEvent = $('.eventList').children('.ddEventActive');
+  $(".eventDetails").click(function(e) {
+    if (highlightedEvent !== e.target) {
+      highlightedEvent.removeClass('.ddEventActive');
+    }
+    // trying to put the background image behind the selected event
+    $(e.target).addClass('ddEventActive');
+    let eventIndex = $(this).index();
+    $('.eventList').children().css({ 'display': 'none' });
+    $('.eventList').children('.ddEventActive').css({ 'display': 'block' });
+    $('.eventsInfoBox').css({ 'display': 'flex' });
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    // w/o this the infobox will never appear
+    e.stopPropagation();
+  });
+  $('body').click(function() {
+    // returns the infobox to hidden -- the 'exit' functionality 
+    $('.eventsInfoBox').css({ 'display': 'none' });
+    $('.eventList').children('.ddEventActive').removeClass('.ddEventActive')
+  })
+}
 
 
 // -------- view dependent styling --------------
