@@ -217,3 +217,55 @@
     color: #ff4819; } }
 
 /* CLOSES MEDIA QUERIES */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .artistbackground {
+    position: absolute;
+    width: 31.16883vw;
+    height: 92.77344vh;
+    object-fit: contain;
+    left: 2.5974vw;
+    top: 3.90625vh;
+    z-index: -2000; }
+  #artist-container {
+    position: absolute;
+    height: 80.85938vh;
+    width: 38.96104vw;
+    left: 13.31169vw;
+    top: 29.29688vh;
+    z-index: 3000;
+    background-repeat: no-repeat;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.62338vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.95312vh;
+    letter-spacing: -0.12338vw;
+    text-align: left;
+    color: #222222;
+    z-index: 4000; }
+  #catalogue-line-green {
+    position: absolute;
+    width: 13.04545vw;
+    height: 21.64062vh;
+    object-fit: contain;
+    top: 68.42773vh;
+    left: 2.13636vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
+  #video-container {
+    position: absolute;
+    background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 28.8961vw;
+    height: 30.56641vh;
+    object-fit: contain;
+    top: 47.75391vh;
+    left: 68.96104vw; }
+  #video {
+    position: absolute;
+    height: 9.76562vh;
+    width: 9.11039vw;
+    margin-top: 2.92969vh;
+    margin-left: 9.74026vw;
+    margin-bottom: 19.53125vh; } }
