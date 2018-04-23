@@ -228,7 +228,7 @@
     z-index: -2000; }
   #artist-container {
     position: absolute;
-    height: 80.85938vh;
+    height: 49.60938vh;
     width: 38.96104vw;
     left: 13.31169vw;
     top: 29.29688vh;
@@ -249,7 +249,7 @@
     width: 13.04545vw;
     height: 21.64062vh;
     object-fit: contain;
-    top: 68.42773vh;
+    top: 76.72852vh;
     left: 2.13636vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
   #video-container {
