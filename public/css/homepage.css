@@ -400,7 +400,7 @@
     left: 4.54545vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
   #home-green-line {
-    width: 16.23377vw;
+    width: 22.72727vw;
     height: 15.625vh;
     object-fit: contain;
     position: absolute;
@@ -414,5 +414,77 @@
     object-fit: contain;
     position: absolute;
     top: 10.73242vh;
-    left: 81.35714vw;
-    cursor: url(/public/assets/Elements/Nav/bike.svg), auto; } }
+    left: 81.16883vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
+  .homepage-tdevents {
+    z-index: 20;
+    bottom: 10.60156vh;
+    right: 8.46753vw;
+    position: absolute;
+    width: 9.74026vw;
+    height: 5.46875vh;
+    text-decoration: none;
+    font-family: TimesNewRomanPSMT;
+    font-size: 3.24675vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.13636vw;
+    text-align: left;
+    color: #000000; }
+  .home-video {
+    position: absolute;
+    background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: 29.02597vw 26.95312vh;
+    width: 34.93506vw;
+    top: 58.98438vh;
+    height: 32.51953vh;
+    bottom: 8.49609vh;
+    left: 5.51948vw;
+    object-fit: contain; }
+  #home-v {
+    position: absolute;
+    width: 17.46753vw;
+    height: 16.21094vh;
+    left: 10.07792vw;
+    top: 64.28906vh; }
+  #modal {
+    position: absolute;
+    top: 12.5vh;
+    left: 24.02597vw;
+    width: 66.49351vw;
+    height: 78.17383vh;
+    object-fit: contain;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    z-index: 1000;
+    cursor: pointer; }
+    #modal .words {
+      width: 44.15584vw;
+      left: 48.7013vw;
+      right: 15.90909vw;
+      top: 15.625vh;
+      word-wrap: normal;
+      font-family: TimesNewRomanPSMT;
+      font-size: 1.95312vh;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.14844vh;
+      letter-spacing: -0.05844vw;
+      text-align: left;
+      color: #222222;
+      z-index: 1000;
+      margin: 0.87891vh 2.5974vw 8.78906vh 5.19481vw;
+      letter-spacing: normal;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer; } }

@@ -516,7 +516,7 @@
   }
 
   #home-green-line {
-    width: get-vw(250px);
+    width: get-vw(350px);
     height: get-vh(160px);
     object-fit: contain;
     position: absolute;
@@ -532,8 +532,95 @@
     object-fit: contain;
     position: absolute;
     top: get-vh(109.9px);
-    left: get-vw(1252.9px);
+    left: get-vw(1250px);
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
   }
+
+
+    .homepage-tdevents {
+    z-index: 20;
+    bottom: 10.60156vh;
+    right: 8.46753vw;
+    position: absolute;
+    width: 9.74026vw;
+    height: 5.46875vh;
+    text-decoration: none;
+    font-family: TimesNewRomanPSMT;
+    font-size: 3.24675vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.13636vw;
+    text-align: left;
+    color: #000000;
+}
+
+
+.home-video {
+  position: absolute;
+  background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: get-vw(447px) get-vh(276px);
+  width: get-vw(538px);
+  top: get-vh(604px);
+  height: get-vh(333px);
+  bottom: get-vh(87px);
+  left: get-vw(85px);
+  object-fit: contain;
+}
+
+#home-v {
+  position: absolute;
+  width: 17.46753vw;
+  height: 16.21094vh;
+  left: 10.07792vw;
+  top: 64.28906vh;
+}
+
+
+#modal {
+  position: absolute;
+  top: get-vh(128px);
+  left: get-vw(370px);
+  width: get-vw(1024px);
+  height: get-vh(800.5px);
+  object-fit: contain;
+  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  z-index: 1000;
+  cursor: pointer;
+
+  .words {
+    width: get-vw(680px);
+    // height: get-vh(553px);
+    left: get-vw(750px);
+    right: get-vw(245px);
+    top: get-vh(160px);
+    word-wrap: normal;
+    font-family: TimesNewRomanPSMT;
+    font-size: get-vh(20px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: get-vh(22px);
+    letter-spacing: get-vw(-0.9px);
+    text-align: left;
+    color: #222222;
+    z-index: 1000;
+    margin: get-vh(9px) get-vw(40px) get-vh(90px) get-vw(80px);
+    letter-spacing: normal;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+  }
+}
+
 
 }
