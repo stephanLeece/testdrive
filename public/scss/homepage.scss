@@ -235,7 +235,7 @@
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+
 @function get-vw-mob($object) {
   $vw: (360 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
@@ -245,8 +245,7 @@
   @return ($object / $vh) * 1vh;
 }
 @media only screen and (orientation: portrait) {
-  /* STYLING FOR MENU - MOBILE */
-  /* STYLING FOR HAMBURGER MENU ICON */
+
   .burger {
     display: block;
     width: get-vw-mob(26px);
@@ -435,29 +434,25 @@
 
   #modal {
     position: absolute;
-    top: get-vh-mob(-5px);
-    width: 110%;
+    top: get-vh-mob(-3px);
+    width: 100%;
     height: 100%;
-    // background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
+    left: get-vw-mob(0px);
+    right: get-vw-mob(10px);
+    background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 3000;
 
     .words {
-      // position: absolute;
-      // top: get-vh-mob(58px);
-      // // background-size: contain;
-      // width: get-vw-mob(195px);
-      // height: get-vh-mob(517px);
-      // margin-right: get-vw-mob(100px);
-      // left: get-vw-mob(54px);
-      //
 
       position: absolute;
-      top: get-vh-mob(48px);
-      width: get-vw-mob(280px);
-      // height: get-vh-mob(437px);
-      left: get-vw-mob(44px);
+      top: get-vh-mob(60px);
+      padding-left: get-vw-mob(0px);
+      width: get-vw-mob(270px);
+      background-size: contain;
+      height: get-vh-mob(437px);
+      left: get-vw-mob(45px);
       font-family: TimesNewRomanPSMT;
       font-size: get-vh-mob(18px);
       font-weight: normal;

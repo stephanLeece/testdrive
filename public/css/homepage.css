@@ -203,10 +203,7 @@
   color: black; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @media only screen and (orientation: portrait) {
-  /* STYLING FOR MENU - MOBILE */
-  /* STYLING FOR HAMBURGER MENU ICON */
   .burger {
     display: block;
     width: 7.22222vw;
@@ -350,17 +347,23 @@
     opacity: 1; }
   #modal {
     position: absolute;
-    top: -0.74963vh;
-    width: 110%;
+    top: -0.44978vh;
+    width: 100%;
     height: 100%;
+    left: 0vw;
+    right: 2.77778vw;
+    background-image: url("/assets/Elements/Home/Home-infobox-blue-02.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 3000; }
     #modal .words {
       position: absolute;
-      top: 7.1964vh;
-      width: 77.77778vw;
-      left: 12.22222vw;
+      top: 8.9955vh;
+      padding-left: 0vw;
+      width: 75vw;
+      background-size: contain;
+      height: 65.51724vh;
+      left: 12.5vw;
       font-family: TimesNewRomanPSMT;
       font-size: 2.69865vh;
       font-weight: normal;
