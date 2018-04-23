@@ -139,8 +139,14 @@ a:hover {
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 
 
-@media only screen and (orientation: portrait) {
+// @media only screen and (orientation: portrait) {
 
+
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
     #mobile-background-img {
         background: url(../assets/mobile/Info-mobile.png);
