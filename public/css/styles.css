@@ -317,3 +317,37 @@ body {
     position: absolute;
     top: 74.51274vh;
     left: 11.66667vw; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #infoLink {
+    position: absolute;
+    right: 7.79221vw;
+    width: 8.50649vw;
+    height: 6.44531vh;
+    top: 5.56641vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    width: 8.96104vw;
+    height: 5.46875vh;
+    font-family: TimesNewRomanPSMT; }
+    #infoLink a {
+      text-decoration: none;
+      color: #222222; }
+    #infoLink img {
+      position: absolute;
+      width: 3.24675vw;
+      height: 3.80859vh;
+      margin-top: 0.19531vh;
+      margin-left: 6.49351vw;
+      z-index: 80; }
+    #infoLink h1 {
+      font-size: 3.24675vw;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -1.4px;
+      text-align: left;
+      color: #222222; } }
