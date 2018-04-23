@@ -383,6 +383,11 @@
 
 /* CLOSES MEDIA QUERIES */
 /* iPad Portrait */
+/* iPad Portrait */
+/* iPad Portrait */
+/* iPad Portrait */
+/* iPad Portrait */
+/* iPad Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   #gallery-space-img {
     height: 55.66406vh;
@@ -512,6 +517,45 @@
     top: 12.5vh;
     left: 36.75325vw;
     width: 51.96104vw;
+    height: 78.17383vh;
+    object-fit: contain;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    z-index: 1000;
+    cursor: pointer; }
+    #modal .words {
+      width: 25.97403vw;
+      height: 54.00391vh;
+      left: 55.19481vw;
+      top: 17.57812vh;
+      word-wrap: normal;
+      font-family: TimesNewRomanPSMT;
+      font-size: 1.95312vh;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.14844vh;
+      letter-spacing: -0.05844vw;
+      text-align: left;
+      color: #222222;
+      z-index: 1000;
+      margin: 5.76172vh 6.75325vw 7.8125vh 7.79221vw;
+      letter-spacing: normal;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer; } }
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #modal {
+    position: absolute;
+    top: 12.5vh;
+    left: 36.75325vw;
+    width: 58.45455vw;
     height: 78.17383vh;
     object-fit: contain;
     background-image: url("/assets/Elements/Home/Modal-infobox.svg");

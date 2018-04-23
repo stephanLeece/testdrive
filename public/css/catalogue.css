@@ -322,3 +322,31 @@
     margin-top: 4.88281vh;
     margin-right: 0.64935vw;
     right: 2.53247vw; } }
+
+@media only screen and (max-device-width: 1366px) and (min-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .artistbackground {
+    position: absolute;
+    width: 25.97403vw;
+    height: 87.89062vh;
+    object-fit: contain;
+    left: 5.84416vw;
+    top: 19.53125vh;
+    z-index: -2000; }
+  #artist-container {
+    position: absolute;
+    height: 80.85938vh;
+    width: 38.96104vw;
+    left: 14.61039vw;
+    top: 32.22656vh;
+    z-index: 3000;
+    background-repeat: no-repeat;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.2987vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.73438vh;
+    letter-spacing: -0.12338vw;
+    text-align: left;
+    color: #222222;
+    z-index: 4000; } }
