@@ -25,6 +25,10 @@ function showDesktopEvents() {
   });
 };
 
+
+$('.trigger, .slider,eventsInfoBox').click(function() {
+  $('.slider, .eventsInfoBox').toggleClass('close');
+});
 function showMobileEvents() {
   // hides the infobox and all of the divs within it
   $('.eventsInfoBox').find('div').addClass('hidden');
@@ -35,7 +39,7 @@ function showMobileEvents() {
       highlightedEvent.removeClass('.ddEventActive');
     }
     // trying to put the background image behind the selected event
-    $(e.target).addClass('ddEventActive');
+    // $(e.target).addClass('ddEventActive');
     let eventIndex = $(this).index();
     $('.eventList').children().css({ 'display': 'none' });
     $('.eventList').children('.ddEventActive').css({ 'display': 'block' });
@@ -43,13 +47,13 @@ function showMobileEvents() {
     $('.eventsInfoBox').find('div').addClass('hidden');
     $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
     // w/o this the infobox will never appear
-    e.stopPropagation();
+    // e.stopPropagation();
   });
-  $('body').click(function() {
-    // returns the infobox to hidden -- the 'exit' functionality 
-    $('.eventsInfoBox').css({ 'display': 'none' });
-    $('.eventList').children('.ddEventActive').removeClass('.ddEventActive')
-  })
+  // $('#eve-disp').click(function() {
+  //   // returns the infobox to hidden -- the 'exit' functionality
+  //   $('.eventsInfoBox').css({ 'display': 'none' });
+  //   $('.eventList').children('.ddEventActive').removeClass('.ddEventActive')
+  // })
 }
 
 
