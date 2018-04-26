@@ -206,11 +206,11 @@
     text-align: left; } }
 
 @media only screen and (orientation: portrait) {
-  .eventsInfoBox {
+  .slider .eventsInfoBox {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    top: 200px;
+    top: 180px;
     overflow: hidden;
     transition: all 1s;
     transform: translateY(0%);

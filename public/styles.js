@@ -26,12 +26,17 @@ function showDesktopEvents() {
 };
 
 
-$('.trigger, .slider,eventsInfoBox').click(function() {
-  $('.slider, .eventsInfoBox').toggleClass('close');
-});
+
+
 function showMobileEvents() {
-  // hides the infobox and all of the divs within it
   $('.eventsInfoBox').find('div').addClass('hidden');
+  $(".eventDetails").click(function() {
+    let eventIndex = $(this).index();
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+  });
+  // hides the infobox and all of the divs within it
+  // $('.eventsInfoBox').find('div').addClass('hidden');
   $('.eventsInfoBox').css({ 'display': 'none' });
   let highlightedEvent = $('.eventList').children('.ddEventActive');
   $(".eventDetails").click(function(e) {
@@ -40,11 +45,11 @@ function showMobileEvents() {
     }
     // trying to put the background image behind the selected event
     // $(e.target).addClass('ddEventActive');
-    let eventIndex = $(this).index();
-    $('.eventList').children().css({ 'display': 'none' });
+    // let eventIndex = $(this).index();
+    // $('.eventList').children().css({ 'display': 'none' });
     $('.eventList').children('.ddEventActive').css({ 'display': 'block' });
     $('.eventsInfoBox').css({ 'display': 'flex' });
-    $('.eventsInfoBox').find('div').addClass('hidden');
+    // $('.eventsInfoBox').find('div').addClass('hidden');
     $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
     // w/o this the infobox will never appear
     // e.stopPropagation();
@@ -54,6 +59,11 @@ function showMobileEvents() {
   //   $('.eventsInfoBox').css({ 'display': 'none' });
   //   $('.eventList').children('.ddEventActive').removeClass('.ddEventActive')
   // })
+
+  $('.trigger, .slider').click(function() {
+    $('.eventsInfoBox').toggleClass('close');
+  });
+
 }
 
 
