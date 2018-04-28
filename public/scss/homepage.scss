@@ -243,11 +243,11 @@
   $vh: (667 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-// @media only screen and (min-width:320px) and (max-width:768px) and (orientation: portrait) {
+
 
   @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 667px)
+
+  and (max-device-width: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
@@ -482,6 +482,8 @@
 
 /* CLOSES MEDIA QUERIES */
 
+
+////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
 /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */
 
   @media only screen
@@ -622,6 +624,7 @@
 
 }
 
+////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
  /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE
 @media only screen
   and (min-device-width: 768px)
@@ -693,7 +696,7 @@
 
 }
 
-//////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO
+//////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO MODAL SPECIFIC
 
 // @media only screen
 //   and (max-device-width: 1366px)

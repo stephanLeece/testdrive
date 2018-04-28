@@ -11,7 +11,7 @@ function eventHover(view) {
 
 // -------- view dependent styling --------------
 
-if ($(window).width() > 600) {
+if ($(window).width() > 700) {
   $(".mob-container").hide();
   showDesktopEvents();
 } else {
@@ -19,11 +19,11 @@ if ($(window).width() > 600) {
   showMobileEvents();
 }
 
-if ($(window).width() < 670 && window.location.pathname == '/') {
+if ($(window).width() < 700 && window.location.pathname == '/') {
   $(".homepage-tdevents").hide();
 }
 
-if ($(window).width() < 600 && window.location.pathname == '/testdrive') {
+if ($(window).width() < 700 && window.location.pathname == '/testdrive') {
   $(".mob-container").show();
   $("#makeitblack").hide();
   $("#backButton").hide();
@@ -99,14 +99,3 @@ function showMobileEvents() {
   });
 
 };
-
-
-
-
-
-
-
-
-// if ($(window).width() < 670 && window.location.pathname == '/info') {
-//     $(".homepage-tdevents").hide();
-// }

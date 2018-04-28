@@ -126,8 +126,8 @@
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//MEDIA Q HERE STOP TYPING HERE EXPECTIGN THING TO CHANGE ON WEB ELENA!
+/////////////MOBILE /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE
+
 @function get-vw-mob($object) {
   $vw: (360 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
@@ -137,8 +137,8 @@
   @return ($object / $vh) * 1vh;
 }
 
-  @media only screen and (min-device-width: 320px)
-  and (max-device-width: 480px)
+  @media only screen
+  and (max-device-width: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
@@ -308,22 +308,12 @@
 
 
 
+/// PLEASE Leave this here :) // Working on this section
 
+  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
+  /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/// PLEASE Leave this here :)
 //
 //      @media only screen
 //        and (min-device-width: 768px)

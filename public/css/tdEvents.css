@@ -8,7 +8,7 @@
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5)); }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .testdr-title {
     height: 4.49775vh;
     width: 80.55556vw;

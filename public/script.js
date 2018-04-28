@@ -23,7 +23,7 @@ $("#modal").on('mouseleave', function() {
 // SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
 $(".shadowfilter").on('click', function() {
 
-    if ($(window).width() < 600) {
+    if ($(window).width() < 700) {
         showMobileModal();
     } else {
         showModal();

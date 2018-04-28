@@ -92,9 +92,14 @@ a:hover {
   color: orange; }
 
 /* MOBILE DESIGN  */
+/* MOBILE DESIGN  */
+/* MOBILE DESIGN  */
+/* MOBILE DESIGN  */
+/* MOBILE DESIGN  */
+/* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #mobile-background-img {
     background: url(../assets/mobile/Info-mobile.png);
     background-repeat: no-repeat;
