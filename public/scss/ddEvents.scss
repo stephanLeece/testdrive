@@ -33,6 +33,25 @@
 //MOBILE
 @media only screen
 and (min-device-width: 320px)
-and (max-device-width: 480px)
+// and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {}
+and (orientation: portrait) {
+
+
+
+  .ddEventActive {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px;
+    margin: -50px;
+  }
+
+  #ddEventsInfobox {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
+    filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
+  }
+
+
+}

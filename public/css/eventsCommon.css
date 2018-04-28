@@ -96,7 +96,7 @@
   letter-spacing: -1.9px;
   text-align: left; }
 
-@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #eve-disp {
     display: block;
     position: absolute;
@@ -105,9 +105,17 @@
     top: 19.04048vh;
     left: 36.94444vw; }
     #eve-disp p {
-      color: orange;
       font-size: 41px;
-      text-align: center; }
+      text-align: center;
+      font-family: TimesNewRomanPSMT;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.4px;
+      text-align: center;
+      color: #ffb760;
+      -webkit-text-stroke: 0 #979797; }
   .eventList {
     position: initial;
     display: flex;
@@ -115,12 +123,10 @@
     justify-content: flex-start;
     align-items: space-between;
     position: absolute;
-    height: 50%;
+    height: 70%;
     width: 100%;
-    top: 23vh;
-    margin-left: -0.83333vw;
-    overflow-y: scroll;
-    overflow-x: hidden; }
+    top: 33vh;
+    margin-left: -0.83333vw; }
   .eventDetails {
     display: flex;
     flex-direction: column;
@@ -137,7 +143,7 @@
     color: #222222;
     width: 85.55556vw;
     height: 16.17691vh;
-    margin-left: 0px;
+    margin-left: 0;
     padding: 25px; }
   .eventDetails div p:first-child {
     margin-left: 10.91667vw;
@@ -162,22 +168,30 @@
     letter-spacing: -0.9px;
     color: #222222; }
   .eventsInfoBox {
-    position: absolute;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 56.52174vh;
-    left: 0vw;
+    left: 0;
     width: 104.16667vw;
     height: 110.1949vh;
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-y: scroll; }
+    overflow: scroll; }
+  .slider .eventsInfoBox {
+    position: absolute;
+    height: 100vh;
+    top: 180px;
+    transform: translateY(0%);
+    transition: 0.6s ease-in-out; }
+  .slider .close {
+    top: 100vh;
+    height: 0;
+    width: 100%; }
   .eventsInfoBox div {
     width: 94%; }
   .events-img {
-    width: 99%;
+    width: 98%;
     margin-left: 0.77922vw;
     margin-right: 0.77922vw; }
   .event-top-title {
@@ -204,18 +218,3 @@
     line-height: normal;
     letter-spacing: -1.9px;
     text-align: left; } }
-
-@media only screen and (orientation: portrait) {
-  .slider .eventsInfoBox {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 180px;
-    overflow: hidden;
-    transition: all 1s;
-    transform: translateY(0%);
-    transition: .6s ease-in-out; }
-  .slider .close {
-    transition: all 1s;
-    top: 100vh;
-    height: 0; } }
