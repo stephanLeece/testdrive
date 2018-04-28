@@ -1,3 +1,16 @@
+// hover function for desktop. used on TD and DD event pages
+function eventHover(view) {
+  $('.eventDetails:first-child').addClass(view);
+  $(".eventDetails").hover(function() {
+    $(this).addClass(view);
+  }, function() {
+    $(this).removeClass(view);
+  });
+}
+
+
+// -------- view dependent styling --------------
+
 if ($(window).width() > 600) {
   $(".mob-container").hide();
   showDesktopEvents();
@@ -6,84 +19,20 @@ if ($(window).width() > 600) {
   showMobileEvents();
 }
 
+if ($(window).width() < 670 && window.location.pathname == '/') {
+  $(".homepage-tdevents").hide();
+}
+
 if ($(window).width() < 600 && window.location.pathname == '/testdrive') {
   $(".mob-container").show();
   $("#makeitblack").hide();
   $("#backButton").hide();
-} else if (window.location.pathname == '/testdrive') {
-  $(".drivedrive-menu").hide();
-  $("#makeitblack").hide();
 }
 
-function showDesktopEvents() {
-  $('.eventsInfoBox').find('div').addClass('hidden');
-  $(".eventDetails").click(function() {
-    let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
-  });
-};
-
-
-
-///// MOBILE EVENTS PAGE ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS /////
-
-
-function showMobileEvents() {
-  $('.eventsInfoBox').find('div').addClass('hidden');
-  $(".eventDetails").click(function() {
-    let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
-  });
-  // hides the infobox and all of the divs within it
-  // $('.eventsInfoBox').find('div').addClass('hidden');
-  $('.eventsInfoBox').css({'display': 'none'});
-  let highlightedEvent = $('.eventList').children('.ddEventActive');
-
-  $(".eventDetails").click(function(e) {
-    if (highlightedEvent !== e.target) {
-      highlightedEvent.removeClass('.ddEventActive');
-    }
-    // trying to put the background image behind the selected event
-    $(e.target).addClass('ddEventActive');
-
-
-
-    let eventIndex = $(this).index();
-    // $('.eventList').children().css({ 'display': 'none' });
-    $('.eventList').children('.ddEventActive').css({'display': 'block'});
-    $('.eventsInfoBox').css({'display': 'flex'});
-    // $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
-    // w/o this the infobox will never appear
-    // e.stopPropagation();
-  });
-
-  $('.eventDetails').click(function() {
-  //    returns the infobox to hidden -- the 'exit' functionality
-  //   $('.eventsInfoBox').css({ 'display': 'none' });
-    $('.eventDetails').children('.ddEventActive').removeClass('.ddEventActive')
-  })
-
-  $('.trigger, .slider').click(function() {
-    $('.slider, .eventsInfoBox').toggleClass('close');
-  });
-
-}
-
-// -------- view dependent styling --------------
 if (window.location.pathname == '/info') {
-  $('body').css({'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed', 'background-size': '100vw 100vh'});
-}
-
-
-function eventHover(view) {
-  $('.eventDetails:first-child').addClass(view);
-  $(".eventDetails").hover(function(){
-      $(this).addClass(view);
-      }, function(){
-      $(this).removeClass(view);
+  $('body').css({
+    'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed',
+    'background-size': '100vw 100vh'
   });
 }
 
@@ -95,17 +44,67 @@ if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
   eventHover('ddEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
-  eventHover
 }
 
+
 if (window.location.pathname == '/testdrive') {
+  $(".drivedrive-menu").hide();
+  $("#makeitblack").hide();
   eventHover('tdEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
 }
 
-if ($(window).width() < 670 && window.location.pathname == '/') {
-    $(".homepage-tdevents").hide();
-}
+
+
+// desktop only functions
+
+function showDesktopEvents() {
+  // initial events to trigger on load
+  console.log('DESKTOP EVENTS LOADED');
+  $('.eventsInfoBox').find('div').addClass('hidden');
+
+  // events to trigger on user interaction
+  $(".eventDetails").click(function() {
+    let eventIndex = $(this).index();
+    $('.eventsInfoBox').find('div').addClass('hidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+  });
+};
+
+///// MOBILE EVENTS PAGE ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS /////
+
+function showMobileEvents() {
+    // initial events to trigger on load
+  console.log('MOBILE EVENTS LOADED');
+
+
+    $('.eventsInfoBox').css({'display': 'none'});
+    $('.eventsInfoBox').css({'display': 'flex'}); // which one of these is correct?
+
+
+  $('.eventsInfoBox').find('div').addClass('hidden');
+  $('.eventList').children('.ddEventActive').css({'display': 'block'}); // when should this be triggered?
+
+  // events to trigger on user interaction
+  $(".eventDetails").click(function(e) {
+    let eventIndex = $(this).index();
+    $('.eventDetails').children('.ddEventActive').removeClass('.ddEventActive')
+    $(e.target).addClass('ddEventActive');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+  });
+
+
+  $('.trigger, .slider').click(function() {
+    $('.slider, .eventsInfoBox').toggleClass('close');
+  });
+
+};
+
+
+
+
+
+
 
 
 // if ($(window).width() < 670 && window.location.pathname == '/info') {
