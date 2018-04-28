@@ -79,6 +79,7 @@ if (window.location.pathname == '/info') {
 
 
 function eventHover(view) {
+  $('.eventDetails:first-child').addClass(view);
   $(".eventDetails").hover(function(){
       $(this).addClass(view);
       }, function(){
@@ -92,12 +93,13 @@ if (window.location.pathname == '/catalogue') {
 
 if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
-  $('.eventDetails:first-child').addClass('ddEventActive');
+  eventHover('ddEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
+  eventHover
 }
 
 if (window.location.pathname == '/testdrive') {
-  $('.eventDetails:first-child').addClass('tdEventActive');
+  eventHover('tdEventActive');
   $('.eventsInfoBox div:first-child').removeClass('hidden');
 }
 
