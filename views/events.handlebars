@@ -5,7 +5,6 @@
 </div>
 
 <div class="events-menu">
-  <div class="trigger">
     <div class="eventList" id="ddEventsList">
       {{#eventList}}
         <div class="eventDetails">
@@ -16,9 +15,7 @@
         </div>
       {{/eventList}}
     </div>
-  </div>
-  <div class="slider close">
-    <div class="eventsInfoBox" id="ddEventsInfobox">
+    <div class="eventsInfoBox eventsInfoBoxClosed" id="ddEventsInfobox">
       {{#eventList}}
         <div class='eventInfo'>
           <h1 class="ddevent-top-title">{{eventTitle}}</h1>
@@ -31,5 +28,4 @@
         </div>
       {{/eventList}}
     </div>
-  </div>
 </div>

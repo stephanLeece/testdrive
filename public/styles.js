@@ -76,26 +76,19 @@ function showDesktopEvents() {
 function showMobileEvents() {
     // initial events to trigger on load
   console.log('MOBILE EVENTS LOADED');
-
-
-    $('.eventsInfoBox').css({'display': 'none'});
-    $('.eventsInfoBox').css({'display': 'flex'}); // which one of these is correct?
-
-
   $('.eventsInfoBox').find('div').addClass('hidden');
-  $('.eventList').children('.ddEventActive').css({'display': 'block'}); // when should this be triggered?
 
   // events to trigger on user interaction
-  $(".eventDetails").click(function(e) {
+  $(".eventDetails").click(function() {
     let eventIndex = $(this).index();
-    $('.eventDetails').children('.ddEventActive').removeClass('.ddEventActive')
-    $(e.target).addClass('ddEventActive');
+    $('.eventsInfoBox').find('div').addClass('hidden');
     $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    $('.eventsInfoBox').removeClass('eventsInfoBoxClosed');
   });
 
-
-  $('.trigger, .slider').click(function() {
-    $('.slider, .eventsInfoBox').toggleClass('close');
+// shrink/grow infoBox
+  $('.eventsInfoBox').click(function(event) {
+    $('.eventsInfoBox').addClass('eventsInfoBoxClosed');
   });
 
-};
+}
