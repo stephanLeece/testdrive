@@ -36,7 +36,8 @@
   line-height: get-vh(28px);
   letter-spacing: get-vw(-1.9px);
   text-align: left;
-  color: #222222;
+  // color: #222222;
+  color: red;
   z-index: 4000;
 
 }
@@ -141,7 +142,7 @@
 
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
-    $vw: (360 * 0.01) * 1px;
+    $vw: (320 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
 }
 
@@ -197,21 +198,14 @@
 
 
     #artist-container {
-     // background-image: url("/assets/mobile/artist-list-mobile.svg");
-     // background-size: contain;
       position: absolute;
       top: get-vh-mob(247px);
-      // left: get-vw-mob(131px);
-      // height: get-vh-mob(687.8px);
-      // width: get-vw-mob(200px);
-      // margin-right: get-vw-mob(13px);
       z-index: 3000;
       background-repeat: no-repeat;
       width: get-vw-mob(290px);
       height: get-vh-mob(687.8px);
       left: get-vw-mob(40px);
       top: get-vh-mob(217px);
-      // z-index: -2000;
 
 
       .artists {

@@ -23,7 +23,7 @@
   line-height: 2.73438vh;
   letter-spacing: -0.12338vw;
   text-align: left;
-  color: #222222;
+  color: red;
   z-index: 4000; }
 
 #cat-disp {
@@ -110,16 +110,16 @@
     position: absolute;
     width: 95%;
     height: 112.44378vh;
-    left: 4.16667vw;
+    left: 4.6875vw;
     top: 32.53373vh;
     z-index: -2000; }
   #cat-disp {
     display: block;
     position: absolute;
     height: 6.89655vh;
-    width: 43.61111vw;
+    width: 49.0625vw;
     top: 19.04048vh;
-    left: 30.55556vw; }
+    left: 34.375vw; }
     #cat-disp p {
       color: orange;
       font-size: 41px;
@@ -141,38 +141,38 @@
     top: 37.03148vh;
     z-index: 3000;
     background-repeat: no-repeat;
-    width: 80.55556vw;
+    width: 90.625vw;
     height: 103.11844vh;
-    left: 11.11111vw;
+    left: 12.5vw;
     top: 32.53373vh; }
     #artist-container .artists {
       position: absolute;
       height: 37.03148vh;
-      width: 63.33333vw;
-      left: 22.22222vw;
+      width: 71.25vw;
+      left: 25vw;
       top: 7.04648vh;
       font-family: TimesNewRomanPSMT;
-      font-size: 5.55556vw;
+      font-size: 6.25vw;
       line-height: 4.1979vh;
       text-align: left;
       color: #222222;
       z-index: 3000; }
   #catalogue-line-green {
     position: absolute;
-    width: 45.27778vw;
+    width: 50.9375vw;
     height: 35.98201vh;
     object-fit: contain;
     top: 110.1949vh;
-    left: 2.77778vw;
+    left: 3.125vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -2001; }
   #catalogue-line-blue {
     height: 29.38531vh;
-    width: 69.16667vw;
+    width: 77.8125vw;
     object-fit: contain;
     position: absolute;
     top: 30.43478vh;
-    left: 30.27778vw;
+    left: 34.0625vw;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -2001; }
   #video-container {
@@ -180,18 +180,18 @@
     background-image: url("/assets/mobile/cloud-video-02.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 55.55556vw;
+    width: 62.5vw;
     height: 33.43328vh;
     object-fit: contain;
     margin-top: 178.41079vh;
-    left: 26.38889vw;
+    left: 29.6875vw;
     bottom: 1.7991vh;
     margin-bottom: 0vh; }
   #video {
     position: absolute;
     height: 22.33883vh;
     left: 0vw;
-    margin-left: 11.77778vw;
+    margin-left: 13.25vw;
     margin-right: 0vw;
     margin-bottom: 5.997vh; }
   #pdfs-container {
@@ -204,13 +204,13 @@
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     background-repeat: repeat-y; }
   .pdf {
-    width: 101.94444vw;
+    width: 114.6875vw;
     height: 29.83508vh;
-    margin-left: 2.22222vw;
+    margin-left: 2.5vw;
     text-decoration: none;
     color: black;
     text-align: left;
-    font-size: 8.33333vw;
+    font-size: 9.375vw;
     font-family: TimesNewRomanPSMT;
     letter-spacing: -1.9px; }
   .pdf:hover {
