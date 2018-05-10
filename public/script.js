@@ -2,6 +2,7 @@
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
+console.log('hey girl')
 let swiped = false;
 backButton.on('click', () => {
     window.history.back();
@@ -50,7 +51,7 @@ $(function() {
           showMobileModal();
         }
       },
-       threshold: 50
+       threshold: 20
     });
 
     $('#modal').swipe( {
@@ -59,7 +60,7 @@ $(function() {
           hideMobileModal();
         }
       },
-       threshold:50
+       threshold:20
     });
   });
 
