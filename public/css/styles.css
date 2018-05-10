@@ -1,7 +1,5 @@
 body {
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 8.3333333%);
-  grid-template-rows: repeat(12, 8.333333%); 
-  grid-column-gap: auto;
-}
+  width: 100vw;
+  margin: 0px;
+  display: block; }
