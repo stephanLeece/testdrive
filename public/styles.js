@@ -8,7 +8,6 @@ function eventHover(view) {
   });
 }
 
-
 // -------- view dependent styling --------------
 
 if ($(window).width() > 700) {
@@ -43,7 +42,7 @@ if (window.location.pathname == '/catalogue') {
 if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
   eventHover('ddEventActive');
-  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  $('.eventsInfoBox div:first-child').removeClass('eventsInfoBoxHidden');
 }
 
 
@@ -51,7 +50,7 @@ if (window.location.pathname == '/testdrive') {
   $(".drivedrive-menu").hide();
   $("#makeitblack").hide();
   eventHover('tdEventActive');
-  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  $('.eventsInfoBox div:first-child').removeClass('eventsInfoBoxHidden');
 }
 
 
@@ -59,15 +58,17 @@ if (window.location.pathname == '/testdrive') {
 // desktop only functions
 
 function showDesktopEvents() {
+  console.log("desktop events loaded");
   // initial events to trigger on load
-  console.log('DESKTOP EVENTS LOADED');
-  $('.eventsInfoBox').find('div').addClass('hidden');
+  $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
+
 
   // events to trigger on user interaction
   $(".eventDetails").click(function() {
+    console.log('clicked');
     let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('eventsInfoBoxHidden');
   });
 };
 
@@ -76,13 +77,13 @@ function showDesktopEvents() {
 function showMobileEvents() {
     // initial events to trigger on load
   console.log('MOBILE EVENTS LOADED');
-  $('.eventsInfoBox').find('div').addClass('hidden');
+  $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
 
   // events to trigger on user interaction
   $(".eventDetails").click(function() {
     let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('eventsInfoBoxHidden');
     $('.eventsInfoBox').removeClass('eventsInfoBoxClosed');
   });
 

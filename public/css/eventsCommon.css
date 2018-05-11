@@ -1,17 +1,34 @@
+.eventsInfoBox {
+  border: 1px solid red;
+  grid-column: 5 / span 6;
+  grid-row: 1 / span 12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48.05195vw;
+  height: 99.70703vh;
+  background-size: 48.05195vw 99.70703vh;
+  overflow-y: scroll; }
+  .eventsInfoBox div {
+    width: 94%; }
+
+.eventsInfoBoxHidden {
+  visibility: hidden; }
+
 .eventList {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 4;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: space-between;
-  position: absolute;
-  top: 39.55078vh;
-  left: 3.55195vw; }
+  align-items: space-between; }
 
 .eventDetails {
   display: flex;
   flex-direction: column;
-  justify-content: margin-left;
-  align-items: margin-left;
+  justify-content: center;
+  align-items: center;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
@@ -24,7 +41,7 @@
   width: 28.24675vw;
   height: 9.85352vh;
   padding: 30px;
-  margin: -22px; }
+  margin: 22px; }
   .eventDetails div p:first-child {
     height: 3.22266vh;
     margin-left: 3.2013vw;
@@ -53,18 +70,6 @@
 #eve-disp {
   display: none; }
 
-.eventsInfoBox {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 34.28571vw;
-  width: 48.05195vw;
-  height: 99.70703vh;
-  background-size: 48.05195vw 99.70703vh;
-  overflow-y: scroll; }
-  .eventsInfoBox div {
-    width: 94%; }
-
 .events-img {
   width: 85%;
   margin-left: 2.5974vw;
@@ -73,7 +78,6 @@
 .event-top-title {
   width: 46.94805vw;
   height: 3.22266vh;
-  top: 1.26953vh;
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -86,7 +90,6 @@
 .ddevent-top-title {
   width: 46.94805vw;
   height: 3.22266vh;
-  top: 1.26953vh;
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -99,11 +102,8 @@
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #eve-disp {
     display: block;
-    position: absolute;
     height: 6.89655vh;
-    width: 31.11111vw;
-    top: 19.04048vh;
-    left: 36.94444vw; }
+    width: 31.11111vw; }
     #eve-disp p {
       font-size: 41px;
       text-align: center;
@@ -122,10 +122,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
-    position: absolute;
     height: 70%;
     width: 100%;
-    top: 33vh;
     margin-left: -0.83333vw; }
   .eventDetails {
     display: flex;
@@ -170,9 +168,6 @@
   .eventsInfoBox {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: auto;
     height: 72vh;
     background-size: cover;

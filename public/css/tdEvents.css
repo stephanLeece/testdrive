@@ -1,3 +1,7 @@
+#testdriveLogoTL {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2; }
+
 .tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
   background-size: contain;
@@ -12,7 +16,4 @@
   .testdr-title {
     height: 4.49775vh;
     width: 80.55556vw;
-    position: absolute;
-    top: 5.997vh;
-    left: 13.05556vw;
     z-index: 10; } }

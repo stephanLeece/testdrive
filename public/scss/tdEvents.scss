@@ -16,7 +16,10 @@
   @return ($object / $vh) * 1vh;
 }
 
-
+#testdriveLogoTL {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
 
 .tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
@@ -59,9 +62,6 @@
   .testdr-title {
     height: get-vh-mob(30px);
     width: get-vw-mob(290px);
-    position: absolute;
-    top: get-vh-mob(40px);
-    left: get-vw-mob(47px);
     z-index: 10;
   }
 

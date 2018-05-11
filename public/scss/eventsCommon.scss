@@ -7,23 +7,46 @@
   @return ($object / $vh) * 1vh;
 }
 
+.eventInfo {
+
+}
+
+.eventsInfoBox {
+    border: 1px solid red;
+  grid-column: 5 / span 6;
+  grid-row: 1 / span 12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: get-vw(740px);
+  height: get-vh(1021px);
+  background-size: get-vw(740px) get-vh(1021px);
+  overflow-y: scroll;
+
+  div {
+    width: 94%;
+  }
+}
+
+.eventsInfoBoxHidden {
+  visibility: hidden;
+}
+
 .eventList {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 4;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: space-between;
-  position: absolute;
-  // height: 100%;
-  // width: 100%;
-  top: get-vh(405px);
-  left: get-vw(54.7px);
 }
 
 .eventDetails {
   display: flex;
   flex-direction: column;
-  justify-content: margin-left;
-  align-items: margin-left;
+  justify-content: center;
+  align-items: center;
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
   font-weight: normal;
@@ -36,7 +59,7 @@
   width: get-vw(435px);
   height: get-vh(100.9px);
   padding: 30px;
-  margin: -22px;
+  margin: 22px;
 
   div {
     p {
@@ -75,20 +98,6 @@
   display: none;
 }
 
-.eventsInfoBox {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: get-vw(528px);
-  width: get-vw(740px);
-  height: get-vh(1021px);
-  background-size: get-vw(740px) get-vh(1021px);
-  overflow-y: scroll;
-
-  div {
-    width: 94%;
-  }
-}
 
 .events-img {
   width: 85%;
@@ -99,7 +108,6 @@
 .event-top-title {
   width: get-vw(723px);
   height: get-vh(33px);
-  top: get-vh(13px);
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -113,7 +121,6 @@
 .ddevent-top-title {
   width: get-vw(723px);
   height: get-vh(33px);
-  top: get-vh(13px);
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -135,11 +142,8 @@
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #eve-disp {
     display: block;
-    position: absolute;
     height: get-vh-mob(46px);
     width: get-vw-mob(112px);
-    top: get-vh-mob(127px);
-    left: get-vw-mob(133px);
 
     p {
       font-size: 41px;
@@ -162,12 +166,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
-    position: absolute;
     // min-height: 44.97751vh;
     // height: 250px;
     height: 70%;
     width: 100%;
-    top: 33vh;
     margin-left: -0.83333vw;
     // overflow-y: scroll;
     // overflow-x: hidden;
@@ -223,9 +225,6 @@
   .eventsInfoBox {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: auto;
     height: 72vh;
     background-size: cover;
