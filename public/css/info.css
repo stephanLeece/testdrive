@@ -1,11 +1,18 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 76.7px);
+  grid-template-rows: repeat(12, 8.33333%);
+  grid-column-gap: 30px;
+  overflow: hidden;
+  margin: 0px; }
+
 #infoContactBg {
+  grid-column: 2 / span 5;
+  grid-row: 5/ span 7;
   width: 28.98701vw;
   height: 50.32227vh;
-  position: absolute;
-  left: 9.15584vw;
-  top: 32.71484vh;
-  top: 32.03125vh;
-  bottom: 17.64648vh;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
 
 #infoContactInfo {
@@ -77,6 +84,7 @@ input {
   text-align: left; }
 
 #infoMap {
+  grid-column: 6 / span 9;
   position: absolute;
   top: 16.69922vh;
   right: 25.97403vw;

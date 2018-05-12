@@ -2,45 +2,55 @@
   $vw: (1540 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
-
-
 @function get-vh($object) {
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
 
 
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 76.7px);
+  grid-template-rows: repeat(12, 8.33333333%);
+  grid-column-gap: 30px;
+  overflow: visible;
+  margin: 0px;
+}
+
 .artistbackground {
-    position: absolute;
-    width: get-vw(500px);
-	  height: get-vh(900px);
-    object-fit: contain;
-    left: get-vw(33px);
-    top: get-vh(300px);
-    z-index: -2000;
+  grid-row: 5 / span 6;
+  grid-column: 2 /span 4;
+  width: get-vw(300px);
+  // height: get-vh(900px);
+  height: auto;
+  object-fit: contain;
+  // left: get-vw(33px);
+  // top: get-vh(300px);
+  // z-index: -2000;
 }
 
 #artist-container {
-  position: absolute;
-  height: get-vh(828px);
+  grid-row: 6/ span 12;
+  grid-column: 2 / span 4;
+  justify-content: space-around;
+  justify-self: center;
+  height: auto;
+  // height: get-vh(828px);
   width: get-vw(600px);
-  left: get-vw(225px);
+  // left: get-vw(305px);
   top: get-vh(360px);
-  z-index: 3000;
+  margin-left: 100px;
   background-repeat: no-repeat;
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: get-vh(28px);
   letter-spacing: get-vw(-1.9px);
   text-align: left;
   color: #222222;
   z-index: 4000;
-
 }
-
 
 #cat-disp {
   display: none;
@@ -57,27 +67,38 @@
 }
 
 #pdfs-container {
-  position: absolute;
+  //
+  //
+  // height: 100vh;
+  width: 100%;
+  // width: 31.36364vw;
+  grid-column: 5/ span 8;
+  grid-row: 1 / span 12;
+  // justify-content: center;
   height: get-vh(1024px);
   width: get-vw(483px);
+  // width: 31.36364vw;
   object-fit: contain;
   top: get-vh(0px);
-  left: get-vw(528px);
   // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
   background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
   // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
-   overflow-y: scroll;
-   background-image: repeating-linear-gradient();
+  overflow-y: scroll;
+  // background-repeat: no-repeat;
+  // background-image: repeating-linear-gradient();
 }
 
 .pds {
-  position: absolute;
-  top: get-vh(13px);
-  // width: get-vw(460px);
+  grid-row: 1 / span 12;
+  grid-column: 3 / span 6;
+  justify-content: flex-start;
   height: get-vh(1011px);
   list-style-type: none;
-  display: block;
-  margin-left: get-vw(10px);
+  margin:0px;
+  padding: 12px;
+  margin-left: get-vw(0px);
+
+  //styling
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -87,7 +108,6 @@
   letter-spacing: -1.9px;
   text-align: left;
   color: #222222;
-
 }
 
 .pds li {
@@ -99,33 +119,34 @@
   color: black;
   text-align: left;
   font-size: get-vw(30px);
-
 }
 
 .pdf:hover {
-    color: #ff4819;
+  color: #ff4819;
 }
 
 #catalogue-line-blue {
+  grid-column: 10 / span 12;
+  grid-row: 4 / span 12;
   height: get-vh(196.3px);
   width: get-vw(248.6px);
-  object-fit: contain;
-  position: absolute;
+  // object-fit: contain;
+  // position: absolute;
   top: get-vh(194px);
-  left: get-vw(1183.1px);
+  // left: get-vw(1183.1px);
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
 #video-container {
-  position: absolute;
+  grid-column: 9 / span 12;
+  grid-row: 8 / span 12;
+  // position: absolute;
   background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width:get-vw(445px);
-  height:get-vh(313px);
-  object-fit: contain;
-  top: get-vh(489px);
-  left: get-vw(1062px);
+  // width:get-vw(445px);
+  height: get-vh(300px);
+
 }
 
 #video {
@@ -136,326 +157,326 @@
 }
 
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-    $vw: (320 * 0.01) * 1px;
-    @return ($object / $vw) * 1vw;
-}
-
-@function get-vh-mob($object) {
-    $vh: (667 * 0.01) * 1px;
-    @return ($object / $vh) * 1vh;
-}
-
-// @media only screen and (orientation: portrait) {
-
-  @media only screen
-  and (max-device-width: 700px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    .artistbackground {
-        position: absolute;
-        width: 95%;
-    	  height: get-vh-mob(750px);
-         // height: 120%;
-        left: get-vw-mob(15px);
-        top: get-vh-mob(217px);
-        z-index: -2000;
-    }
-
-    #cat-disp {
-      display: block;
-      position: absolute;
-      height: get-vh-mob(46px);
-      width: get-vw-mob(157px);
-      top: get-vh-mob(127px);
-      left: get-vw-mob(110px);
-        p {
-          color: orange;
-          font-size: 41px;
-          text-align: center;
-          width: 157px;
-          font-family: TimesNewRomanPSMT;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: normal;
-          letter-spacing: -2.4px;
-          text-align: center;
-          color: #ffb760;
-          -webkit-text-stroke: 0 #979797;
-        }
-    }
-
-    #backButton  {
-      display: none;
-    }
-
-
-    #artist-container {
-      position: absolute;
-      top: get-vh-mob(247px);
-      z-index: 3000;
-      background-repeat: no-repeat;
-      width: get-vw-mob(290px);
-      height: get-vh-mob(687.8px);
-      left: get-vw-mob(40px);
-      top: get-vh-mob(217px);
-
-
-      .artists {
-      position: absolute;
-      height: get-vh-mob(247px);
-      width: get-vw-mob(228px);
-      left: get-vw-mob(80px);
-      top: get-vh-mob(47px);
-      font-family: TimesNewRomanPSMT;
-      font-size: get-vw-mob(20px);
-      line-height: get-vh-mob(28px);
-      	// line-height: 1.6;
-      text-align: left;
-      color: #222222;
-      z-index: 3000;
-      }
-
-    }
-
-    #catalogue-line-green {
-      position: absolute;
-      width: get-vw-mob(163px);
-      height: get-vh-mob(240px);
-      object-fit: contain;
-      top: get-vh-mob(735px);
-      left: get-vw-mob(10px);
-      cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-      z-index: -2001;
-    }
-
-
-    #catalogue-line-blue {
-      height: get-vh-mob(196px);
-      width: get-vw-mob(249px);
-      object-fit: contain;
-      position: absolute;
-      top: get-vh-mob(203px);
-      left: get-vw-mob(109px);
-      cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-      z-index: -2001;
-    }
-
-
-
-    #video-container {
-      position: absolute;
-      background-image: url("/assets/mobile/cloud-video-02.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: get-vw-mob(200px);
-      height:get-vh-mob(223px);
-      object-fit: contain;
-      margin-top: get-vh-mob(1190px);
-      left: get-vw-mob(95px);
-      bottom: get-vh-mob(12px);
-      margin-bottom: get-vh-mob(0px);
-    }
-
-
-    #video {
-      position: absolute;
-      height: get-vh-mob(149px);
-      left: get-vw-mob(0px);
-      margin-left: get-vw-mob(42.4px);
-      margin-right: get-vw-mob(0px);
-      margin-bottom: get-vh-mob(40px);
-
-    }
-
-    #pdfs-container {
-      position: absolute;
-      width: 100%;
-      object-fit: contain;
-      background-size:contain;
-      top: get-vh-mob(1000px);
-      left: get-vw-mob(0px);
-      // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
-      background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-      // background-repeat: no-repeat;
-      background-repeat: repeat-y;
-      // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
-    }
-
-
-    .pdf {
-      width: get-vw-mob(367px);
-	    height: get-vh-mob(199px);
-      margin-left: get-vw-mob(8px);
-      text-decoration: none;
-      color: black;
-      text-align: left;
-      font-size: get-vw-mob(30px);
-      font-family: TimesNewRomanPSMT;
-      letter-spacing: -1.9px;
-    }
-
-    .pdf:hover {
-        color: #ff4819;
-    }
-
-} /* CLOSES MEDIA QUERIES */
-
-
-
-
-////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-
-
-    .artistbackground {
-        position: absolute;
-        width: get-vw(480px);
-    	  height: get-vh(950px);
-        object-fit: contain;
-        left: get-vw(40px);
-        top: get-vh(40px);
-        z-index: -2000;
-    }
-
-
-
-    #artist-container {
-
-      position: absolute;
-      height: get-vh(508px);
-      width: get-vw(600px);
-      left: get-vw(205px);
-      top: get-vh(300px);
-      z-index: 3000;
-      background-repeat: no-repeat;
-      font-family: TimesNewRomanPSMT;
-      font-size: get-vw(25px);
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: get-vh(20px);
-      letter-spacing: get-vw(-1.9px);
-      text-align: left;
-      color: #222222;
-      z-index: 4000;
-
-    }
-
-    #catalogue-line-green {
-      position: absolute;
-      width: get-vw(200.9px);
-      height: get-vh(221.6px);
-      object-fit: contain;
-      top: get-vh(785.7px);
-      left: get-vw(32.9px);
-      cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-    }
-
-    #video-container {
-      position: absolute;
-      background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width:get-vw(445px);
-      height:get-vh(313px);
-      object-fit: contain;
-      top: get-vh(489px);
-      left: get-vw(1062px);
-    }
-
-    #video {
-      position: absolute;
-      height: get-vh(100px);
-      width: get-vw(140.3px);
-      margin-top: get-vh(30px);
-      margin-left: get-vw(150px);
-      margin-bottom: get-vh(200px);
-    }
-
-  }
-
-  @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 1) {
-      .artistbackground {
-          position: absolute;
-          width: get-vw(400px);
-        height: get-vh(800px);
-          object-fit: contain;
-          left: get-vw(83px);
-          top: get-vh(280px);
-          z-index: -2000;
-      }
-
-      #artist-container {
-        position: absolute;
-        height: get-vh(828px);
-        width: get-vw(600px);
-        left: get-vw(225px);
-        top: get-vh(360px);
-        z-index: 3000;
-        background-repeat: no-repeat;
-        font-family: TimesNewRomanPSMT;
-        font-size: get-vw(20px);
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: get-vh(28px);
-        letter-spacing: get-vw(-1.9px);
-        text-align: left;
-        color: #222222;
-        z-index: 4000;
-
-      }
-
-      #catalogue-line-green {
-        position: absolute;
-        width: get-vw(162.9px);
-        height: get-vh(221.6px);
-        object-fit: contain;
-        top: get-vh(970px);
-        left: get-vw(32.9px);
-        cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-      }
-
-      #video-container {
-        position: absolute;
-        background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width:get-vw(445px);
-        height:get-vh(313px);
-        object-fit: contain;
-        top: get-vh(489px);
-        left: get-vw(1062px);
-      }
-
-      #video {
-        position: absolute;
-        height: get-vh(200px);
-        width: get-vw(340.3px);
-        margin-top: get-vh(50px);
-        margin-right: get-vw(10px);
-        right: get-vw(39px);
-      }
-
-    }
+//
+// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+// @function get-vw-mob($object) {
+//     $vw: (320 * 0.01) * 1px;
+//     @return ($object / $vw) * 1vw;
+// }
+//
+// @function get-vh-mob($object) {
+//     $vh: (667 * 0.01) * 1px;
+//     @return ($object / $vh) * 1vh;
+// }
+//
+// // @media only screen and (orientation: portrait) {
+//
+//   @media only screen
+//   and (max-device-width: 700px)
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (orientation: portrait) {
+//
+//     .artistbackground {
+//         position: absolute;
+//         width: 95%;
+//     	  height: get-vh-mob(750px);
+//          // height: 120%;
+//         left: get-vw-mob(15px);
+//         top: get-vh-mob(217px);
+//         z-index: -2000;
+//     }
+//
+//     #cat-disp {
+//       display: block;
+//       position: absolute;
+//       height: get-vh-mob(46px);
+//       width: get-vw-mob(157px);
+//       top: get-vh-mob(127px);
+//       left: get-vw-mob(110px);
+//         p {
+//           color: orange;
+//           font-size: 41px;
+//           text-align: center;
+//           width: 157px;
+//           font-family: TimesNewRomanPSMT;
+//           font-weight: normal;
+//           font-style: normal;
+//           font-stretch: normal;
+//           line-height: normal;
+//           letter-spacing: -2.4px;
+//           text-align: center;
+//           color: #ffb760;
+//           -webkit-text-stroke: 0 #979797;
+//         }
+//     }
+//
+//     #backButton  {
+//       display: none;
+//     }
+//
+//
+//     #artist-container {
+//       position: absolute;
+//       top: get-vh-mob(247px);
+//       z-index: 3000;
+//       background-repeat: no-repeat;
+//       width: get-vw-mob(290px);
+//       height: get-vh-mob(687.8px);
+//       left: get-vw-mob(40px);
+//       top: get-vh-mob(217px);
+//
+//
+//       .artists {
+//       position: absolute;
+//       height: get-vh-mob(247px);
+//       width: get-vw-mob(228px);
+//       left: get-vw-mob(80px);
+//       top: get-vh-mob(47px);
+//       font-family: TimesNewRomanPSMT;
+//       font-size: get-vw-mob(20px);
+//       line-height: get-vh-mob(28px);
+//       	// line-height: 1.6;
+//       text-align: left;
+//       color: #222222;
+//       z-index: 3000;
+//       }
+//
+//     }
+//
+//     #catalogue-line-green {
+//       position: absolute;
+//       width: get-vw-mob(163px);
+//       height: get-vh-mob(240px);
+//       object-fit: contain;
+//       top: get-vh-mob(735px);
+//       left: get-vw-mob(10px);
+//       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+//       z-index: -2001;
+//     }
+//
+//
+//     #catalogue-line-blue {
+//       height: get-vh-mob(196px);
+//       width: get-vw-mob(249px);
+//       object-fit: contain;
+//       position: absolute;
+//       top: get-vh-mob(203px);
+//       left: get-vw-mob(109px);
+//       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+//       z-index: -2001;
+//     }
+//
+//
+//
+//     #video-container {
+//       position: absolute;
+//       background-image: url("/assets/mobile/cloud-video-02.svg");
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//       width: get-vw-mob(200px);
+//       height:get-vh-mob(223px);
+//       object-fit: contain;
+//       margin-top: get-vh-mob(1190px);
+//       left: get-vw-mob(95px);
+//       bottom: get-vh-mob(12px);
+//       margin-bottom: get-vh-mob(0px);
+//     }
+//
+//
+//     #video {
+//       position: absolute;
+//       height: get-vh-mob(149px);
+//       left: get-vw-mob(0px);
+//       margin-left: get-vw-mob(42.4px);
+//       margin-right: get-vw-mob(0px);
+//       margin-bottom: get-vh-mob(40px);
+//
+//     }
+//
+//     #pdfs-container {
+//       position: absolute;
+//       width: 100%;
+//       object-fit: contain;
+//       background-size:contain;
+//       top: get-vh-mob(1000px);
+//       left: get-vw-mob(0px);
+//       // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
+//       background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+//       // background-repeat: no-repeat;
+//       background-repeat: repeat-y;
+//       // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+//     }
+//
+//
+//     .pdf {
+//       width: get-vw-mob(367px);
+// 	    height: get-vh-mob(199px);
+//       margin-left: get-vw-mob(8px);
+//       text-decoration: none;
+//       color: black;
+//       text-align: left;
+//       font-size: get-vw-mob(30px);
+//       font-family: TimesNewRomanPSMT;
+//       letter-spacing: -1.9px;
+//     }
+//
+//     .pdf:hover {
+//         color: #ff4819;
+//     }
+//
+// } /* CLOSES MEDIA QUERIES */
+//
+//
+//
+//
+// ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
+//
+// @media only screen
+//   and (min-device-width: 768px)
+//   and (max-device-width: 1024px)
+//   and (orientation: portrait)
+//   and (-webkit-min-device-pixel-ratio: 1) {
+//
+//
+//
+//
+//     .artistbackground {
+//         position: absolute;
+//         width: get-vw(480px);
+//     	  height: get-vh(950px);
+//         object-fit: contain;
+//         left: get-vw(40px);
+//         top: get-vh(40px);
+//         z-index: -2000;
+//     }
+//
+//
+//
+//     #artist-container {
+//
+//       position: absolute;
+//       height: get-vh(508px);
+//       width: get-vw(600px);
+//       left: get-vw(205px);
+//       top: get-vh(300px);
+//       z-index: 3000;
+//       background-repeat: no-repeat;
+//       font-family: TimesNewRomanPSMT;
+//       font-size: get-vw(25px);
+//       font-weight: normal;
+//       font-style: normal;
+//       font-stretch: normal;
+//       line-height: get-vh(20px);
+//       letter-spacing: get-vw(-1.9px);
+//       text-align: left;
+//       color: #222222;
+//       z-index: 4000;
+//
+//     }
+//
+//     #catalogue-line-green {
+//       position: absolute;
+//       width: get-vw(200.9px);
+//       height: get-vh(221.6px);
+//       object-fit: contain;
+//       top: get-vh(785.7px);
+//       left: get-vw(32.9px);
+//       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+//     }
+//
+//     #video-container {
+//       position: absolute;
+//       background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+//       background-repeat: no-repeat;
+//       background-size: contain;
+//       width:get-vw(445px);
+//       height:get-vh(313px);
+//       object-fit: contain;
+//       top: get-vh(489px);
+//       left: get-vw(1062px);
+//     }
+//
+//     #video {
+//       position: absolute;
+//       height: get-vh(100px);
+//       width: get-vw(140.3px);
+//       margin-top: get-vh(30px);
+//       margin-left: get-vw(150px);
+//       margin-bottom: get-vh(200px);
+//     }
+//
+//   }
+  //
+  // @media only screen
+  //   and (min-device-width: 768px)
+  //   and (max-device-width: 1024px)
+  //   and (orientation: landscape)
+  //   and (-webkit-min-device-pixel-ratio: 1) {
+  //     .artistbackground {
+  //         position: absolute;
+  //         width: get-vw(400px);
+  //       height: get-vh(800px);
+  //         object-fit: contain;
+  //         left: get-vw(83px);
+  //         top: get-vh(280px);
+  //         z-index: -2000;
+  //     }
+  //
+  //     #artist-container {
+  //       position: absolute;
+  //       height: get-vh(828px);
+  //       width: get-vw(600px);
+  //       left: get-vw(225px);
+  //       top: get-vh(360px);
+  //       z-index: 3000;
+  //       background-repeat: no-repeat;
+  //       font-family: TimesNewRomanPSMT;
+  //       font-size: get-vw(20px);
+  //       font-weight: normal;
+  //       font-style: normal;
+  //       font-stretch: normal;
+  //       line-height: get-vh(28px);
+  //       letter-spacing: get-vw(-1.9px);
+  //       text-align: left;
+  //       color: #222222;
+  //       z-index: 4000;
+  //
+  //     }
+  //
+  //     #catalogue-line-green {
+  //       position: absolute;
+  //       width: get-vw(162.9px);
+  //       height: get-vh(221.6px);
+  //       object-fit: contain;
+  //       top: get-vh(970px);
+  //       left: get-vw(32.9px);
+  //       cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  //     }
+  //
+  //     #video-container {
+  //       position: absolute;
+  //       background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+  //       background-repeat: no-repeat;
+  //       background-size: contain;
+  //       width:get-vw(445px);
+  //       height:get-vh(313px);
+  //       object-fit: contain;
+  //       top: get-vh(489px);
+  //       left: get-vw(1062px);
+  //     }
+  //
+  //     #video {
+  //       position: absolute;
+  //       height: get-vh(200px);
+  //       width: get-vw(340.3px);
+  //       margin-top: get-vh(50px);
+  //       margin-right: get-vw(10px);
+  //       right: get-vw(39px);
+  //     }
+  //
+  //   }
 
     // @media only screen
     //   and (max-device-width: 1366px)

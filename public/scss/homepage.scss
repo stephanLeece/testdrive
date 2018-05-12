@@ -15,30 +15,46 @@
   display: none;
 }
 
+.container {
+  // height: auto;
+  // width: auto;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 76.7px);
+  grid-template-rows: repeat(12, 8.33333333%);
+  grid-column-gap: 30px;
+  overflow: hidden;
+  margin: 0px;
+}
+
 .drivedrive-menu {
   display: grid;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  position: absolute;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+  justify-self: start;
   top: 5vh;
-  left: 6vw;
+  left: 10vw;
   height: get-vh(144.84px);
   width: get-vw(294.22px);
   ul {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     position: absolute;
     display: flex;
     flex-direction: column;
+    top: get-vh(20px);
+    left:get-vw(20px);
   }
 }
 
 .home-video {
-  display: grid;
-  grid-column: 1 / span 2;
-  grid-row: 4 / span 6;
+  grid-column: 1 / span 4;
+  grid-row: 8 / 12;
   height: 100%;
   width: 100%;
+  justify-self: center;
+  align-self: end;
 
   div {
     height: get-vh(276px);
@@ -56,8 +72,8 @@
       align-self: center;
       width: get-vw(300px);
       height: get-vh(150px);
-      z-index: 333333;      margin-left: -2vw;
-      margin-top: -5vh;
+      z-index: 333333;
+      margin-left: -2vw;
       source {
         height: 100%;
         width: 100%;
@@ -66,10 +82,108 @@
   }
 }
 
+//why is this image not moving with the grid?
+//have been trying all day
+#gallery-space-img {
+  display: flex;
+  width: 80%;
+  height: 90vh;
+  // margin-left: 3vw;
+  // margin-right: 3vw;
+  // left: 50%;
+  // top: get
+  grid-column: 3 / span 9;
+  grid-row: 2 / span 12;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  z-index: 4px;
+
+}
+
+#eve {
+  grid-column: 11;
+  grid-row: 10;
+  width: 100%;
+  justify-self: center;
+  align-self: end;
+}
+
+.homepage-tdevents {
+  font-family: TimesNewRomanPSMT;
+  font-size: 41px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -2.4px;
+  text-align: left;
+  z-index: 20;
+  text-decoration: none;
+  color: black;
+}
+
+#modal {
+  grid-column: 6 / 10;
+  grid-row: 2 / span 11;
+  justify-self: start;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  .words {
+    height: 100%;
+    width: 60%;
+    font-family: TimesNewRomanPSMT;
+    font-size: get-vh(20px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #222222;
+    letter-spacing: normal;
+    align-self: center;
+    margin-top: 11vh;
+    cursor: pointer;
+  }
+}
+
+#testdriveLogoBR {
+  grid-column: 8 / span 12;
+  grid-row: 11;
+  justify-self: center;
+  height: 100%;
+  img {
+    width: 22.98701vw;
+  }
+}
+
+#home-blue-line {
+  height: get-vh(203.5px);
+  width: get-vw(299px);
+  grid-column: 10 / 12;
+  grid-row: 1 / span 5;
+  justify-self: center;
+  align-self: center;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
+
 .cat {
+  height: auto;
+  width: auto;
   margin-top: get-vh(24px);
-  width: get-vw(210px);
-  height: get-vh(56px);
+  // width: get-vw(210px);
+  // height: get-vh(56px);
   text-decoration: none;
   color: #000000;
   font-weight: normal;
@@ -88,7 +202,7 @@
 }
 
 .events {
-  margin-top: get-vh(1px);
+  margin-top: -1vh;
   width: get-vw(150px);
   height: get-vh(56px);
   text-decoration: none;
@@ -103,25 +217,36 @@
   color: #000000;
 }
 
+
+
+#infoLink {
+    grid-column: 10/ 12;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self:center;
+
+  a {
+    text-decoration: none;
+    h1 {
+      font-size: 3.24675vw;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -1.4px;
+      text-align: left;
+      color: #222222;
+    }
+  }
+
+}
+
 .act {
   color: rgb(255, 194, 120);
 }
 
 .active-color-home {
   color: #000000;
-}
-/* END STYLING FOR BIG MAC */
-/* BEGIN STYLING FOR HOMEPAGE
-
-/* STYLING FOR THE GALLERY SPACE IMAGE */
-#gallery-space-img {
-  width: get-vw(933px);
-  height: get-vh(863px);
-  position: absolute;
-  top: get-vw(46px);
-  left: get-vw(400px);
-  cursor: pointer;
-  z-index: 40px;
 }
 
 .shadowfilter {
@@ -148,22 +273,12 @@
 #home-green-line {
   width: get-vw(250px);
   height: get-vh(160px);
-  object-fit: contain;
-  position: absolute;
-  top: get-vh(700px);
-  left: get-vw(1020px);
+  grid-row: 9 / span 12;
+  grid-column: 9 / 11;
+  justify-self: center;
+  align-self: center;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
   z-index: 10;
-}
-
-#home-blue-line {
-  width: get-vw(299px);
-  height: get-vh(203.5px);
-  object-fit: contain;
-  position: absolute;
-  top: get-vh(109.9px);
-  left: get-vw(1252.9px);
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 /* STYLING FOR MODAL */
 #modal {
@@ -181,82 +296,114 @@
   opacity: 1;
 }
 
-#modal {
-  position: absolute;
-  top: get-vh(128px);
-  left: get-vw(566px);
-  width: get-vw(800.2px);
-  height: get-vh(800.5px);
-  object-fit: contain;
-  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  z-index: 1000;
-  cursor: pointer;
-
-  .words {
-    width: get-vw(289px);
-    height: get-vh(553px);
-    left: get-vw(800px);
-    top: get-vh(180px);
-    word-wrap: normal;
-    font-family: TimesNewRomanPSMT;
-    font-size: get-vh(20px);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: get-vh(22px);
-    letter-spacing: get-vw(-0.9px);
-    text-align: left;
-    color: #222222;
-    z-index: 1000;
-    margin: get-vh(39px) get-vw(44px) get-vh(80px) get-vw(80px);
-    letter-spacing: normal;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-  }
-}
-
-.homepage-tdevents {
-  // width: get-vw(66px);
-  height: get-vh(46px);
-  position: absolute;
-  width: get-vw(150px);
-  bottom: get-vh(170px);
-  right: get-vw(115px);
-  font-family: TimesNewRomanPSMT;
-  font-size: 41px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -2.4px;
-  text-align: left;
-  z-index: 20;
-  text-decoration: none;
-  color: black;
-}
-
 @media only screen
+and (min-device-width: 300px)
 and (max-device-width: 700px)
-and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 
 
-@function get-ipad-vw($object) {
-  $vw: (768 * 0.01) * 1px;
+@function get-mob-vw($object) {
+  $vw: (320 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
-@function get-ipad-vh($object) {
-  $vh: (1024 * 0.01) * 1px;
+@function get-mob-vh($object) {
+  $vh: (667 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
 
+#infoLink {
+  display: none;
+}
+
+#testdriveLogoBR {
+  display: none;
+}
+
+.container {
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 15% 70% 20%;
+  grid-column-gap: 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.mob-container {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: get-mob-vh(45px);
+  width: get-mob-vw(284px);
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: start;
+}
+
+.drivedrive-menu {
+  display: none;
+}
+
+.burger {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  justify-self: center;
+  align-self: start;
+  height: 100%;
+  width: 100%;
+}
+
+.home-video {
+  grid-column: 2 / span 4;
+  grid-row: 2;
+  justify-self: center;
+  align-self: end;
+  height: 400px;
+  width: 200px;
+  margin-top: 20vh;
+  div {
+    height: get-mob-vh(276px);
+    width: get-mob-vw(106px);
+    video {
+      height: 100%;
+      width: 100%;
+      source {
+        z-index: 1000;
+      }
+    }
+  }
+}
+
+#home-green-line {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  justify-self: end;
+  align-self: end;
+  height: get-mob-vh(101.8px);
+  width: get-mob-vw(175.7px);
+}
+
+#home-blue-line {
+  grid-area: blue-line;
+  height: 100%;
+  width: 100%;
+}
+
+#gallery-space-img {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  margin-top: 10vh;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#mob-testdriveLogo {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+}
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////
