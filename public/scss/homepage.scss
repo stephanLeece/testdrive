@@ -92,7 +92,7 @@
   align-self: center;
   cursor: pointer;
   z-index: 40px;
-
+}
 //why is this image not moving with the grid?
 //have been trying all day
 #gallery-space-img {
@@ -428,7 +428,7 @@ and (orientation: portrait) {
   height: 100%;
 }
 }
-}
+
 
 //   $vw: (360 * 0.01) * 1px;
 //   @return ($object / $vw) * 1vw;
