@@ -1,47 +1,63 @@
-.container {
+.info {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 76.7px);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 8.33333%);
-  grid-column-gap: 30px;
+  grid-column-gap: 1.94805vw;
   overflow: hidden;
   margin: 0px; }
 
 #infoContactBg {
-  grid-column: 2 / span 5;
-  grid-row: 5/ span 7;
   width: 28.98701vw;
-  height: 50.32227vh;
+  height: auto;
+  position: fixed;
+  z-index: -20;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
 
 #infoContactInfo {
-  width: 28.98701vw;
-  height: 40.55664vh;
-  left: 12.66234vw;
-  bottom: 24.41406vh;
-  position: absolute;
-  font-size: 1.95312vh;
-  font-family: TimesNewRomanPSMT;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.05;
-  letter-spacing: -0.05844vw;
-  text-align: left;
-  color: #222222; }
-
-form {
-  position: absolute;
-  left: 12.66234vw;
-  bottom: 24.21875vh;
-  border: 1px solid black;
-  width: 21.36364vw;
-  height: 3.90625vh;
-  margin-top: 0.39062vh;
+  width: 32.23377vw;
+  height: 90%;
+  grid-column: 2 / span 5;
+  grid-row: 5 / span 9;
+  justify-self: start;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  justify-content: start;
+  color: #222222;
+  background-image: url("/assets/Elements/Info/Info-contact-outline.png");
+  background-size: 50.3vh;
+  background-repeat: no-repeat;
+  align-self: start; }
+  #infoContactInfo .info-contact {
+    z-index: 200;
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3vh; }
+    #infoContactInfo .info-contact p {
+      font-size: 1.95312vh;
+      font-family: TimesNewRomanPSMT;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.05;
+      letter-spacing: -0.05844vw;
+      text-align: left;
+      margin-left: 4vw; }
+    #infoContactInfo .info-contact form {
+      border: 1px solid black;
+      width: 21.36364vw;
+      height: 3.90625vh;
+      margin-top: 0.39062vh;
+      margin-left: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .sign-up-to-our-maili {
   margin-top: -1.46484vh;
@@ -73,9 +89,10 @@ input {
     height: 3.90625vh; }
 
 #credits {
-  position: absolute;
-  bottom: 3.71094vh;
-  left: 9.28571vw;
+  grid-column: 2 / 5;
+  grid-row: 12;
+  justify-self: start;
+  align-self: center;
   white-space: nowrap;
   background-color: black;
   font-family: TimesNewRomanPSMT;
@@ -84,17 +101,23 @@ input {
   text-align: left; }
 
 #infoMap {
-  grid-column: 6 / span 9;
-  position: absolute;
-  top: 16.69922vh;
-  right: 25.97403vw;
-  align-self: center;
-  width: 31.36364vw;
-  height: 37.46753vw;
+  grid-column: 6 / 10;
+  grid-row: 3 / 11;
+  width: 100%;
+  height: 100%;
   border: 1px solid black;
   -moz-box-shadow: 0 0 50px #8315a8;
   -webkit-box-shadow: 0 0 50px #8315a8;
   box-shadow: 0 0 50px #8315a8; }
+
+#testdriveLogoInfo {
+  grid-column: 10 / 12;
+  grid-row: 11 / span 12;
+  justify-self: end;
+  align-self: center; }
+  #testdriveLogoInfo img {
+    height: 2.92969vh;
+    width: 18.83117vw; }
 
 a:hover {
   color: orange; }
@@ -107,292 +130,13 @@ a:hover {
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  #mobile-background-img {
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+  .info {
+    grid-template-areas: 'menu menu menu' 'aaaa ham aaaa' 'map map map' 'map map map' 'map map map' 'info info info' 'info info info' 'info info info' 'td td td';
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background: url(../assets/mobile/Info-mobile.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 104.16667vw;
-    height: 190.25487vh;
-    top: 100.74963vh;
-    left: 0vw;
-    background-repeat: repeat-y; }
-  #infoMap {
-    position: absolute;
-    width: 95.83333vw;
-    height: 61.76912vh;
-    top: 18.44078vh;
-    right: 1.66667vw; }
-  #infoContactBg {
-    position: absolute;
-    width: 104.44444vw;
-    height: 78.26087vh;
-    top: 86.65667vh;
-    left: -4.16667vw; }
-  #infoContactInfo {
-    position: absolute;
-    width: 68.05556vw;
-    height: 48.27586vh;
-    top: 92.50375vh;
-    left: 5.55556vw;
-    /* STYLING FOR FONT */
-    font-family: TimesNewRomanPSMT;
-    font-size: 2.9985vh;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #222222; }
-  form {
-    position: absolute;
-    width: 61.38889vw;
-    height: 5.997vh;
-    top: 147.82609vh;
-    left: 6.94444vw; }
-  .sign-up-to-our-maili {
-    position: absolute;
-    width: 68.05556vw;
-    height: 3.44828vh;
-    top: 50.22489vh;
-    /* STYLING FOR FONT */
-    font-family: TimesNewRomanPSMT;
-    font-size: 2.9985vh;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.9px;
-    text-align: left;
-    text-shadow: 1px 1px black;
-    color: #222222; }
-  /* STYLING FOR THE MAILING FORM & INPUT FIELD */
-  form {
-    position: absolute;
-    width: 87.5vw;
-    left: 5.55556vw;
-    text-align: center; }
-  input {
-    font-size: 1.2987vw;
-    background: none;
-    border: none;
-    outline: none;
-    /* STYLING FOR FONT */
-    font-family: TimesNewRomanPSMT;
-    font-size: 2.9985vh;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    text-align: center;
-    color: #222222; }
-    input[type="email"] {
-      width: 61.38889vw;
-      height: 5.997vh;
-      outline: none; }
-    input[type="submit"] {
-      border-left: 2px solid black;
-      width: 27.77778vw;
-      height: 5.997vh; }
-  #testdriveInfo {
-    position: absolute;
-    width: 80.55556vw;
-    height: 4.49775vh;
-    top: 179.46027vh;
-    left: 11.66667vw; }
-  #credits {
-    display: none; } }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  #infoContactBg {
-    width: 48.72727vw;
-    height: 48.85742vh;
-    position: absolute;
-    left: 6.49351vw;
-    top: 32.71484vh;
-    top: 32.03125vh;
-    bottom: 17.64648vh;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
-  #infoContactInfo {
-    width: 28.98701vw;
-    height: 40.55664vh;
-    left: 11.68831vw;
-    bottom: 24.41406vh;
-    position: absolute;
-    font-size: 1.95312vh;
-    font-family: TimesNewRomanPSMT;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222; }
-  form {
-    position: absolute;
-    left: 11.68831vw;
-    bottom: 24.21875vh;
-    border: 1px solid black;
-    width: 38.96104vw;
-    height: 3.90625vh;
-    margin-top: 0.39062vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .sign-up-to-our-maili {
-    margin-top: -1.46484vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 2.5974vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222;
-    text-shadow: 1px 1px black; }
-  input {
-    font-size: 2.5974vw;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: TimesNewRomanPSMT;
-    text-shadow: 1px 1px black; }
-    input[type="email"] {
-      width: 21.42857vw;
-      height: 4.39453vh;
-      outline: none; }
-    input[type="submit"] {
-      border-left: 2px solid black;
-      width: 11.03896vw;
-      height: 4.39453vh; } }
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1336px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  #infoContactBg {
-    width: 48.72727vw;
-    height: 48.85742vh;
-    position: absolute;
-    left: 6.49351vw;
-    top: 32.71484vh;
-    top: 32.03125vh;
-    bottom: 17.64648vh;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
-  #infoContactInfo {
-    width: 28.98701vw;
-    height: 40.55664vh;
-    left: 11.68831vw;
-    bottom: 24.41406vh;
-    position: absolute;
-    font-size: 1.95312vh;
-    font-family: TimesNewRomanPSMT;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222; }
-  form {
-    position: absolute;
-    left: 11.68831vw;
-    bottom: 23.4375vh;
-    border: 1px solid black;
-    width: 38.96104vw;
-    height: 3.90625vh;
-    margin-top: 0.39062vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .sign-up-to-our-maili {
-    margin-top: -2.44141vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 2.5974vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222;
-    text-shadow: 1px 1px black; }
-  input {
-    font-size: 3.11688vw;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: TimesNewRomanPSMT;
-    text-shadow: 1px 1px black; }
-    input[type="email"] {
-      width: 21.42857vw;
-      height: 4.39453vh;
-      outline: none; }
-    input[type="submit"] {
-      border-left: 2px solid black;
-      width: 11.03896vw;
-      height: 4.39453vh; } }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  #infoContactBg {
-    width: 38.96104vw;
-    height: 48.85742vh;
-    position: absolute;
-    left: 6.49351vw;
-    top: 32.71484vh;
-    top: 32.03125vh;
-    bottom: 17.64648vh;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
-  #infoContactInfo {
-    width: 28.98701vw;
-    height: 40.55664vh;
-    left: 11.68831vw;
-    bottom: 24.41406vh;
-    position: absolute;
-    font-size: 1.95312vh;
-    font-family: TimesNewRomanPSMT;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222; }
-  form {
-    position: absolute;
-    left: 11.68831vw;
-    bottom: 23.4375vh;
-    border: 1px solid black;
-    width: 25.97403vw;
-    height: 3.90625vh;
-    margin-top: 0.39062vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .sign-up-to-our-maili {
-    margin-top: -1.46484vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 1.94805vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.05;
-    letter-spacing: -0.05844vw;
-    text-align: left;
-    color: #222222;
-    text-shadow: 1px 1px black; }
-  input {
-    font-size: 1.81818vw;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: TimesNewRomanPSMT;
-    text-shadow: 1px 1px black; }
-    input[type="email"] {
-      width: 13.63636vw;
-      height: 4.39453vh;
-      outline: none; }
-    input[type="submit"] {
-      border-left: 2px solid black;
-      width: 6.49351vw;
-      height: 4.39453vh; } }
+    background-size: 100%;
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 100%; } }
