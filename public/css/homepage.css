@@ -9,9 +9,9 @@
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 5.9375vw);
   grid-template-rows: repeat(12, 8.33333%);
-  grid-column-gap: 1.94805vw;
+  grid-column-gap: 2.34375vw;
   overflow: hidden;
   margin: 0px; }
 
