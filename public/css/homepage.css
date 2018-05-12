@@ -21,15 +21,17 @@
   grid-row: 1 / span 4;
   justify-self: start;
   top: 5vh;
-  left: 6vw;
+  left: 10vw;
   height: 14.14453vh;
   width: 19.10519vw; }
   .drivedrive-menu ul {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     position: absolute;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    top: 1.95312vh;
+    left: 1.2987vw; }
 
 .home-video {
   grid-column: 1 / span 4;
@@ -130,6 +132,7 @@
   #testdriveLogoBR img {
     width: 22.98701vw; }
 
+<<<<<<< HEAD
 #infoLink {
   grid-column: 10 / 12;
   grid-row: 1 / span 2;
@@ -140,6 +143,8 @@
   justify-content: center;
   align-content: center; }
 
+=======
+>>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
 #home-blue-line {
   height: 19.87305vh;
   width: 19.41558vw;
@@ -150,9 +155,9 @@
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 .cat {
+  height: auto;
+  width: auto;
   margin-top: 2.34375vh;
-  width: 13.63636vw;
-  height: 5.46875vh;
   text-decoration: none;
   color: #000000;
   font-weight: normal;
@@ -169,7 +174,7 @@
   color: #ffc278; }
 
 .events {
-  margin-top: 0.09766vh;
+  margin-top: -1vh;
   width: 9.74026vw;
   height: 5.46875vh;
   text-decoration: none;
@@ -182,6 +187,23 @@
   letter-spacing: -0.13636vw;
   text-align: left;
   color: #000000; }
+
+#infoLink {
+  grid-column: 10/ 12;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  align-self: center; }
+  #infoLink a {
+    text-decoration: none; }
+    #infoLink a h1 {
+      font-size: 3.24675vw;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -1.4px;
+      text-align: left;
+      color: #222222; }
 
 .act {
   color: #ffc278; }
@@ -232,7 +254,11 @@
 .fadeIn {
   opacity: 1; }
 
+<<<<<<< HEAD
 @media only screen and (max-device-width: 700px) and (min-device-width: 300px) and (orientation: portrait) {
+=======
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+>>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
   #infoLink {
     display: none; }
   #testdriveLogoBR {

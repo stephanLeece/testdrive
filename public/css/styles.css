@@ -1,5 +1,9 @@
 body {
+  margin: 0px;
   height: 100vh;
   width: 100vw;
+<<<<<<< HEAD
   margin: 0px;
+=======
+>>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
   display: block; }

@@ -9,14 +9,27 @@
 }
 
 
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 76.7px);
+  grid-template-rows: repeat(12, 8.33333333%);
+  grid-column-gap: 30px;
+  overflow: hidden;
+  margin: 0px;
+}
+
 #infoContactBg {
+  grid-column: 2 / span 5;
+   grid-row: 5/ span 7 ;
     width: get-vw(446.4px);
     height: get-vh(515.3px);
-    position: absolute;
-    left: get-vw(141px);
-    top: get-vh(335px);
-    top: get-vh(328px);
-    bottom: get-vh(180.7px);
+    // position: absolute;
+    // left: get-vw(141px);
+    // top: get-vh(335px);
+    // top: get-vh(328px);
+    // bottom: get-vh(180.7px);
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
 }
 
@@ -103,6 +116,7 @@
 
 
 #infoMap {
+  grid-column: 6 / span 9;
   position: absolute;
   top: get-vh(171px);
   right: get-vw(400px);
