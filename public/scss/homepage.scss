@@ -26,6 +26,8 @@
   margin: 0px;
 }
 
+
+
 .drivedrive-menu {
   display: grid;
   grid-column: 1 / span 4;
@@ -70,11 +72,8 @@
       align-self: center;
       width: get-vw(300px);
       height: get-vh(150px);
-<<<<<<< HEAD
       z-index: 333333;
-=======
       z-index: 333333;
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
       margin-left: -2vw;
       source {
         height: 100%;
@@ -84,7 +83,6 @@
   }
 }
 
-<<<<<<< HEAD
 #gallery-space-img {
   width: 90%;
   height: 90vh;
@@ -95,7 +93,7 @@
   align-self: center;
   cursor: pointer;
   z-index: 40px;
-=======
+
 //why is this image not moving with the grid?
 //have been trying all day
 #gallery-space-img {
@@ -113,7 +111,6 @@
   cursor: pointer;
   z-index: 4px;
 
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
 }
 
 #eve {
@@ -183,7 +180,6 @@
   }
 }
 
-<<<<<<< HEAD
 #infoLink {
   grid-column: 10 / 12;
   grid-row: 1 / span 2;
@@ -195,8 +191,6 @@
   align-content: center;
 }
 
-=======
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
 #home-blue-line {
   height: get-vh(203.5px);
   width: get-vw(299px);
@@ -326,13 +320,8 @@
 }
 
 @media only screen
-<<<<<<< HEAD
-and (max-device-width: 700px)
-and (min-device-width: 300px)
-=======
 and (min-device-width: 300px)
 and (max-device-width: 700px)
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
 and (orientation: portrait) {
 
 
@@ -414,6 +403,7 @@ and (orientation: portrait) {
   align-self: end;
   height: get-mob-vh(101.8px);
   width: get-mob-vw(175.7px);
+
 }
 
 #home-blue-line {
@@ -438,12 +428,9 @@ and (orientation: portrait) {
   width: 100%;
   height: 100%;
 }
-
 }
-//////////////////////////////////////////////////////////////////////////////////////////
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+}
 
-// @function get-vw-mob($object) {
 //   $vw: (360 * 0.01) * 1px;
 //   @return ($object / $vw) * 1vw;
 // }
@@ -688,12 +675,10 @@ and (orientation: portrait) {
 //   }
 // }
 
-/* CLOSES MEDIA QUERIES */
+
 
 
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-/* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */
-
 //   @media only screen
 //     and (min-device-width: 768px)
 //     and (max-device-width: 1024px)

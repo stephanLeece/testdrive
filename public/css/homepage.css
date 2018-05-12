@@ -30,7 +30,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 1.95312vh;
+    top: 1.95313vh;
     left: 1.2987vw; }
 
 .home-video {
@@ -41,7 +41,7 @@
   justify-self: center;
   align-self: end; }
   .home-video div {
-    height: 26.95312vh;
+    height: 26.95313vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;
@@ -55,6 +55,7 @@
       align-self: center;
       width: 19.48052vw;
       height: 14.64844vh;
+      z-index: 333333;
       z-index: 333333;
       margin-left: -2vw; }
       .home-video div #home-v source {
@@ -70,268 +71,242 @@
   justify-self: center;
   align-self: center;
   cursor: pointer;
-  z-index: 40px; }
-
-#eve {
-  grid-column: 11;
-  grid-row: 10;
-  width: 100%;
-  justify-self: center;
-  align-self: end; }
-
-.homepage-tdevents {
-  font-family: TimesNewRomanPSMT;
-  font-size: 41px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -2.4px;
-  text-align: left;
-  z-index: 20;
-  text-decoration: none;
-  color: black; }
-
-#modal {
-  grid-column: 6 / 10;
-  grid-row: 2 / span 11;
-  justify-self: start;
-  align-self: center;
-  height: 100%;
-  width: 100%;
-  align-self: center;
-  background-image: url("/assets/Elements/Home/Modal-infobox.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 1000;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center; }
-  #modal .words {
-    height: 100%;
-    width: 60%;
+  z-index: 40px;
+  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+  /* STYLING FOR MODAL */
+  /* STYLING FOR THE HULK IMAGE THAT FADES OUT */ }
+  #gallery-space-img #gallery-space-img {
+    display: flex;
+    width: 80%;
+    height: 90vh;
+    grid-column: 3 / span 9;
+    grid-row: 2 / span 12;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    z-index: 4px; }
+  #gallery-space-img #eve {
+    grid-column: 11;
+    grid-row: 10;
+    width: 100%;
+    justify-self: center;
+    align-self: end; }
+  #gallery-space-img .homepage-tdevents {
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 41px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.4px;
     text-align: left;
-    color: #222222;
-    letter-spacing: normal;
-    align-self: center;
-    margin-top: 11vh;
-    cursor: pointer; }
-
-#testdriveLogoBR {
-  grid-column: 8 / span 12;
-  grid-row: 11;
-  justify-self: center;
-  height: 100%; }
-  #testdriveLogoBR img {
-    width: 22.98701vw; }
-
-<<<<<<< HEAD
-#infoLink {
-  grid-column: 10 / 12;
-  grid-row: 1 / span 2;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center; }
-
-=======
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
-#home-blue-line {
-  height: 19.87305vh;
-  width: 19.41558vw;
-  grid-column: 10 / 12;
-  grid-row: 1 / span 5;
-  justify-self: center;
-  align-self: center;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
-
-.cat {
-  height: auto;
-  width: auto;
-  margin-top: 2.34375vh;
-  text-decoration: none;
-  color: #000000;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  font-size: 3.24675vw;
-  font-family: TimesNewRomanPSMT;
-  letter-spacing: -0.13636vw;
-  text-align: left;
-  -webkit-text-stroke: 0 #979797; }
-
-.active {
-  color: #ffc278; }
-
-.events {
-  margin-top: -1vh;
-  width: 9.74026vw;
-  height: 5.46875vh;
-  text-decoration: none;
-  font-family: TimesNewRomanPSMT;
-  font-size: 3.24675vw;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -0.13636vw;
-  text-align: left;
-  color: #000000; }
-
-#infoLink {
-  grid-column: 10/ 12;
-  grid-row: 1 / span 2;
-  justify-self: center;
-  align-self: center; }
-  #infoLink a {
-    text-decoration: none; }
-    #infoLink a h1 {
-      font-size: 3.24675vw;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -1.4px;
-      text-align: left;
-      color: #222222; }
-
-.act {
-  color: #ffc278; }
-
-.active-color-home {
-  color: #000000; }
-
-.shadowfilter {
-  -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear; }
-
-.shadowfilter:hover {
-  -webkit-filter: drop-shadow(10px 10px 18px #ffc278); }
-
-/* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-#home-red-line {
-  width: 26.09091vw;
-  height: 21.2207vh;
-  object-fit: contain;
-  position: absolute;
-  top: 30.56641vh;
-  left: 11.16883vw;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
-
-#home-green-line {
-  width: 16.23377vw;
-  height: 15.625vh;
-  grid-row: 9 / span 12;
-  grid-column: 9 / 11;
-  justify-self: center;
-  align-self: center;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-  z-index: 10; }
-
-/* STYLING FOR MODAL */
-#modal {
-  opacity: 0; }
-
-/* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-#halk {
-  position: absolute;
-  z-index: 99;
-  height: 100vh;
-  width: 100vw; }
-
-.fadeIn {
-  opacity: 1; }
-
-<<<<<<< HEAD
-@media only screen and (max-device-width: 700px) and (min-device-width: 300px) and (orientation: portrait) {
-=======
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
->>>>>>> e74a5364f270db7fb9594b5710462ed871073d14
-  #infoLink {
-    display: none; }
-  #testdriveLogoBR {
-    display: none; }
-  .container {
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: 15% 70% 20%;
-    grid-column-gap: 1fr;
-    width: 100%;
-    height: 100%; }
-  .mob-container {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    height: 6.74663vh;
-    width: 88.75vw;
+    z-index: 20;
+    text-decoration: none;
+    color: black; }
+  #gallery-space-img #modal {
+    grid-column: 6 / 10;
+    grid-row: 2 / span 11;
     justify-self: start;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: start; }
-  .drivedrive-menu {
-    display: none; }
-  .burger {
-    grid-column: 1 / span 4;
-    grid-row: 1;
+    align-content: center; }
+    #gallery-space-img #modal .words {
+      height: 100%;
+      width: 60%;
+      font-family: TimesNewRomanPSMT;
+      font-size: 1.95313vh;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: left;
+      color: #222222;
+      letter-spacing: normal;
+      align-self: center;
+      margin-top: 11vh;
+      cursor: pointer; }
+  #gallery-space-img #testdriveLogoBR {
+    grid-column: 8 / span 12;
+    grid-row: 11;
     justify-self: center;
-    align-self: start;
-    height: 100%;
-    width: 100%; }
-  .home-video {
-    grid-column: 2 / span 4;
-    grid-row: 2;
+    height: 100%; }
+    #gallery-space-img #testdriveLogoBR img {
+      width: 22.98701vw; }
+  #gallery-space-img #infoLink {
+    grid-column: 10 / 12;
+    grid-row: 1 / span 2;
     justify-self: center;
-    align-self: end;
-    height: 400px;
-    width: 200px;
-    margin-top: 20vh; }
-    .home-video div {
-      height: 41.37931vh;
-      width: 33.125vw; }
-      .home-video div video {
-        height: 100%;
-        width: 100%; }
-        .home-video div video source {
-          z-index: 1000; }
-  #home-green-line {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-    justify-self: end;
-    align-self: end;
-    height: 15.26237vh;
-    width: 54.90625vw; }
-  #home-blue-line {
-    grid-area: blue-line;
-    height: 100%;
-    width: 100%; }
-  #gallery-space-img {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    margin-top: 10vh;
-    height: 100%;
-    width: 100%; }
-  #mob-testdriveLogo {
-    grid-column: 1 / 4;
-    grid-row: 3;
+    align-self: center;
     width: 100%;
-    height: 100%; } }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
-/* CLOSES MEDIA QUERIES */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+  #gallery-space-img #home-blue-line {
+    height: 19.87305vh;
+    width: 19.41558vw;
+    grid-column: 10 / 12;
+    grid-row: 1 / span 5;
+    justify-self: center;
+    align-self: center;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
+  #gallery-space-img .cat {
+    height: auto;
+    width: auto;
+    margin-top: 2.34375vh;
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-size: 3.24675vw;
+    font-family: TimesNewRomanPSMT;
+    letter-spacing: -0.13636vw;
+    text-align: left;
+    -webkit-text-stroke: 0 #979797; }
+  #gallery-space-img .active {
+    color: #ffc278; }
+  #gallery-space-img .events {
+    margin-top: -1vh;
+    width: 9.74026vw;
+    height: 5.46875vh;
+    text-decoration: none;
+    font-family: TimesNewRomanPSMT;
+    font-size: 3.24675vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.13636vw;
+    text-align: left;
+    color: #000000; }
+  #gallery-space-img #infoLink {
+    grid-column: 10/ 12;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center; }
+    #gallery-space-img #infoLink a {
+      text-decoration: none; }
+      #gallery-space-img #infoLink a h1 {
+        font-size: 3.24675vw;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -1.4px;
+        text-align: left;
+        color: #222222; }
+  #gallery-space-img .act {
+    color: #ffc278; }
+  #gallery-space-img .active-color-home {
+    color: #000000; }
+  #gallery-space-img .shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
+  #gallery-space-img .shadowfilter:hover {
+    -webkit-filter: drop-shadow(10px 10px 18px #ffc278); }
+  #gallery-space-img #home-red-line {
+    width: 26.09091vw;
+    height: 21.2207vh;
+    object-fit: contain;
+    position: absolute;
+    top: 30.56641vh;
+    left: 11.16883vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
+  #gallery-space-img #home-green-line {
+    width: 16.23377vw;
+    height: 15.625vh;
+    grid-row: 9 / span 12;
+    grid-column: 9 / 11;
+    justify-self: center;
+    align-self: center;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10; }
+  #gallery-space-img #modal {
+    opacity: 0; }
+  #gallery-space-img #halk {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw; }
+  #gallery-space-img .fadeIn {
+    opacity: 1; }
+  @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+    #gallery-space-img #infoLink {
+      display: none; }
+    #gallery-space-img #testdriveLogoBR {
+      display: none; }
+    #gallery-space-img .container {
+      grid-template-columns: repeat(4, 20%);
+      grid-template-rows: 15% 70% 20%;
+      grid-column-gap: 1fr;
+      width: 100%;
+      height: 100%; }
+    #gallery-space-img .mob-container {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      height: 6.74663vh;
+      width: 88.75vw;
+      justify-self: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: start; }
+    #gallery-space-img .drivedrive-menu {
+      display: none; }
+    #gallery-space-img .burger {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+      justify-self: center;
+      align-self: start;
+      height: 100%;
+      width: 100%; }
+    #gallery-space-img .home-video {
+      grid-column: 2 / span 4;
+      grid-row: 2;
+      justify-self: center;
+      align-self: end;
+      height: 400px;
+      width: 200px;
+      margin-top: 20vh; }
+      #gallery-space-img .home-video div {
+        height: 41.37931vh;
+        width: 33.125vw; }
+        #gallery-space-img .home-video div video {
+          height: 100%;
+          width: 100%; }
+          #gallery-space-img .home-video div video source {
+            z-index: 1000; }
+    #gallery-space-img #home-green-line {
+      grid-column: 2 / span 3;
+      grid-row: 2;
+      justify-self: end;
+      align-self: end;
+      height: 15.26237vh;
+      width: 54.90625vw; }
+    #gallery-space-img #home-blue-line {
+      grid-area: blue-line;
+      height: 100%;
+      width: 100%; }
+    #gallery-space-img #gallery-space-img {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      margin-top: 10vh;
+      height: 100%;
+      width: 100%; }
+    #gallery-space-img #mob-testdriveLogo {
+      grid-column: 1 / 4;
+      grid-row: 3;
+      width: 100%;
+      height: 100%; } }
