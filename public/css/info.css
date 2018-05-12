@@ -6,7 +6,10 @@
   grid-template-rows: repeat(12, 8.33333%);
   grid-column-gap: 1.94805vw;
   overflow: hidden;
-  margin: 0px; }
+  margin: 0;
+  background-image: url("/assets/Elements/Info/Info-bgA.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
 
 #infoContactBg {
   width: 28.98701vw;
@@ -132,11 +135,78 @@ a:hover {
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   .info {
-    grid-template-areas: 'menu menu menu' 'aaaa ham aaaa' 'map map map' 'map map map' 'map map map' 'info info info' 'info info info' 'info info info' 'td td td';
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    background: url(../assets/mobile/Info-mobile.png);
-    background-size: 100%;
-    background-repeat: repeat-y;
-    height: 100%;
-    width: 100%; } }
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(12, 25%);
+    grid-template-rows: repeat(12, 10%);
+    grid-column-gap: 1.94805vw;
+    background-image: url("/assets/mobile/Info-mobile.png");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 190.25487vh; }
+  #infoMap {
+    grid-column: 1/ span 4;
+    grid-row: 2 / span 4;
+    width: 96.66667vw;
+    height: 62.21889vh;
+    margin-left: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    -moz-box-shadow: 0 0 50px #8315a8;
+    -webkit-box-shadow: 0 0 50px #8315a8;
+    box-shadow: 0 0 50px #8315a8; }
+  #infoContactBg {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 9;
+    object-fit: contain;
+    background-color: #ffffff;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    background-image: url("/assets/Elements/Info/Info-contact-outline.png");
+    background-size: 100vh;
+    background-repeat: no-repeat; }
+  #infoContactInfo {
+    width: 10000000vw;
+    height: 200vh;
+    margin-top: -10vh;
+    grid-column: 1 / span 5;
+    grid-row: 6/ span 9;
+    align-self: center;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: #222222;
+    align-self: start; }
+    #infoContactInfo .info-contact {
+      z-index: 200;
+      height: 50%;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-top: 3vh; }
+      #infoContactInfo .info-contact p {
+        font-size: 1.95312vh;
+        font-family: TimesNewRomanPSMT;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.05;
+        letter-spacing: -0.05844vw;
+        text-align: left;
+        margin-left: 4vw; }
+      #infoContactInfo .info-contact form {
+        border: 1px solid black;
+        width: 21.36364vw;
+        height: 3.90625vh;
+        margin-top: 0.39062vh;
+        margin-left: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
