@@ -29,7 +29,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 1.95312vh;
+    top: 1.95313vh;
     left: 1.2987vw; }
 
 .home-video {
@@ -40,7 +40,7 @@
   justify-self: center;
   align-self: end; }
   .home-video div {
-    height: 26.95312vh;
+    height: 26.95313vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;
@@ -124,7 +124,7 @@
     height: 100%;
     width: 60%;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 1.95313vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
