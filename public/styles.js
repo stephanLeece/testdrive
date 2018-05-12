@@ -5,26 +5,20 @@ if ($(window).width() > 700) {
   $(".mob-container").hide();
   showDesktopEvents();
 } else {
-  $(".mob-container").show();
   showMobileEvents();
 }
 
-if ($(window).width() < 700 && window.location.pathname == '/') {
-  $(".homepage-tdevents").hide();
-}
-
 if ($(window).width() < 700 && window.location.pathname == '/testdrive') {
-  $(".mob-container").show();
   $("#makeitblack").hide();
   $("#backButton").hide();
 }
 
-if (window.location.pathname == '/info') {
-  $('body').css({
-    'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed',
-    'background-size': '100vw 100vh'
-  });
-}
+// if (window.location.pathname == '/info') {
+//   $('body').css({
+//     'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed',
+//     'background-size': '100vw 100vh'
+//   });
+// }
 
 if (window.location.pathname == '/catalogue') {
   $('#cat').css({'color': 'rgb(255, 194, 120)'});

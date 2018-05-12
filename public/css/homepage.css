@@ -5,7 +5,7 @@
 .burger {
   display: none; }
 
-.container {
+.home {
   height: 100vh;
   width: 100%;
   display: grid;
@@ -263,70 +263,145 @@
   opacity: 1; }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+  .home {
+    display: grid;
+    grid-template-rows: 15vh 5vh 40vh 30vh 15vh;
+    grid-template-columns: repeat(3, 33vw);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; }
   #infoLink {
     display: none; }
   #testdriveLogoBR {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    justify-self: center;
+    align-self: center;
+    width: 100%; }
+    #testdriveLogoBR img {
+      height: 100%;
+      width: 100%; }
+  .homepage-tdevents {
     display: none; }
-  .container {
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: 15% 70% 20%;
-    grid-column-gap: 1fr;
-    width: 100%;
-    height: 100%; }
-  .mob-container {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    height: 6.74663vh;
-    width: 88.75vw;
-    justify-self: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: start; }
   .drivedrive-menu {
-    display: none; }
-  .burger {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
     grid-row: 1;
     justify-self: center;
     align-self: start;
-    height: 100%;
     width: 100%; }
-  .home-video {
-    grid-column: 2 / span 4;
+    .drivedrive-menu ul #DriveDrive {
+      width: 100%;
+      height: 100%;
+      margin-left: -5vw; }
+    .drivedrive-menu ul #cat {
+      display: none; }
+    .drivedrive-menu ul #eve {
+      display: none; }
+  .burger {
+    display: inline-block;
+    grid-column: 1 / span 3;
     grid-row: 2;
     justify-self: center;
-    align-self: end;
-    height: 400px;
-    width: 200px;
-    margin-top: 20vh; }
+    align-self: center;
+    margin-top: 7vh; }
+  .mob-container {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    z-index: 300000; }
+    .mob-container #mob-dd-menu {
+      height: 65%;
+      width: 100%;
+      margin-top: 4vh; }
+    .mob-container .mob-con {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .mob-container .mob-con .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 41px; }
+        .mob-container .mob-con .links #mob-eve {
+          margin-bottom: 4vh; }
+      .mob-container .mob-con #td-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .mob-container .mob-con #td-mob #mob-test-eve {
+          font-size: 41px; }
+  #modal {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    height: 106.89655vh;
+    width: 100%;
+    padding: 15px;
+    top: 5vh;
+    left: 0px; }
+    #modal .words {
+      width: 43.32834vh;
+      height: 65.51724vh;
+      font-size: 2.69865vh; }
+  #gallery-space-img {
+    margin-top: 10vh;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    height: 78.41079vh;
+    width: 116.33333vw; }
+  .home-video {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: get-vh-mob(423px);
+    left: get-vw-mob(120px); }
     .home-video div {
-      height: 41.37931vh;
-      width: 33.125vw; }
-      .home-video div video {
-        height: 100%;
-        width: 100%; }
-        .home-video div video source {
-          z-index: 1000; }
+      width: get-vw-mob(220px); }
+  #home-v {
+    position: absolute;
+    width: get-vw-mob(145.6px);
+    height: get-vh-mob(81.6px);
+    top: get-vh-mob(450.2px);
+    left: get-vw-mob(153px); }
   #home-green-line {
-    grid-column: 2 / span 3;
     grid-row: 2;
     justify-self: end;
     align-self: end;
     height: 15.26237vh;
-    width: 54.90625vw; }
+    width: 58.56667vw; }
   #home-blue-line {
-    grid-area: blue-line;
-    height: 100%;
-    width: 100%; }
+    position: absolute;
+    top: 15.5922vh;
+    left: 85.33333vw; }
   #gallery-space-img {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    margin-top: 10vh;
+    grid-row: 3;
     height: 100%;
     width: 100%; }
-  #mob-testdriveLogo {
-    grid-column: 1 / 4;
-    grid-row: 3;
-    width: 100%;
-    height: 100%; } }
+  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+  #home-red-line {
+    width: get-vw-mob(155.3px);
+    height: get-vh-mob(84px);
+    object-fit: contain;
+    position: absolute;
+    top: 57.57121vh;
+    left: 4.66667vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg) auto; }
+  #home-green-line {
+    width: get-vw-mob(175px);
+    height: get-vh-mob(101.8px);
+    object-fit: contain;
+    position: absolute;
+    top: 73.16342vh;
+    left: 61.33333vw;
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10; } }
