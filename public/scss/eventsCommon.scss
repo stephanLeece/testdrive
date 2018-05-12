@@ -7,99 +7,33 @@
   @return ($object / $vh) * 1vh;
 }
 
-.eventList {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: space-between;
-  position: absolute;
-  // height: 100%;
-  // width: 100%;
-  top: get-vh(405px);
-  left: get-vw(54.7px);
-}
-
-.eventDetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: margin-left;
-  align-items: margin-left;
-  font-family: TimesNewRomanPSMT;
-  font-size: get-vw(20px);
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.85;
-  letter-spacing: get-vw(-0.9px);
-  text-align: left;
-  color: #222222;
-  width: get-vw(435px);
-  height: get-vh(100.9px);
-  padding: 30px;
-  margin: -22px;
-
-  div {
-    p {
-      &:first-child {
-        height: get-vh(33px);
-        margin-left: get-vw(49.3px);
-        font-family: TimesNewRomanPSMT;
-        font-size: 17px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 2.18;
-        letter-spacing: -0.9px;
-        text-align: left;
-        color: #222222;
-      }
-
-      &:nth-child(2) {
-        height: get-vh(33px);
-        margin-left: get-vw(49.3px);
-        font-family: TimesNewRomanPSMT;
-        font-size: 20px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.85;
-        letter-spacing: -0.9px;
-        text-align: left;
-        color: #222222;
-      }
-    }
-  }
-}
-
-#eve-disp {
-  display: none;
-}
-
 .eventsInfoBox {
+  grid-column: 6 / 11;
+  grid-row: 1 / 12;
   display: flex;
-  justify-content: center;
-  position: absolute;
-  left: get-vw(528px);
-  width: get-vw(740px);
-  height: get-vh(1021px);
+  flex-direction: column;
+  align-items: center;
+  width: 48.05195vw;
+  height: 99.70703vh;
   background-size: get-vw(740px) get-vh(1021px);
   overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-  div {
-    width: 94%;
-  }
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .events-img {
-  width: 85%;
-  margin-left: get-vw(40px);
-  margin-right: get-vw(1px);
+  width: 100%;
+  height: auto;
 }
 
 .event-top-title {
   width: get-vw(723px);
   height: get-vh(33px);
-  top: get-vh(13px);
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
   font-weight: normal;
@@ -110,19 +44,67 @@
   text-align: left;
 }
 
-.ddevent-top-title {
-  width: get-vw(723px);
-  height: get-vh(33px);
-  top: get-vh(13px);
-  font-family: TimesNewRomanPSMT;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.9px;
-  text-align: left;
+
+
+.eventsInfoBoxHidden {
+  display: none;
 }
+
+.eventList {
+  grid-column: 2 /  5;
+  grid-row: 3 / span 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: get-vw(56px);
+}
+
+.eventDetails {
+      display: flex;
+      flex-direction: column;
+justify-content: center;
+      width: 28.24675vw;
+      height: 9.85352vh;
+      padding: 30px;
+      margin: -22px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .eventsDetailDate {
+        margin-left: 50px;
+        font-family: TimesNewRomanPSMT;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222;
+      }
+    .eventsDetailTitle {
+        margin-left: 50px;
+        font-family: TimesNewRomanPSMT;
+   font-size: 20px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   letter-spacing: -0.9px;
+   text-align: left;
+   color: #222222;
+      }
+    }
+
+
+#eve-disp {
+  display: none;
+}
+
+
+
+
+
 /////////////MOBILE /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE
 @function get-vw-mob($object) {
   $vw: (360 * 0.01) * 1px;
@@ -135,11 +117,8 @@
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #eve-disp {
     display: block;
-    position: absolute;
     height: get-vh-mob(46px);
     width: get-vw-mob(112px);
-    top: get-vh-mob(127px);
-    left: get-vw-mob(133px);
 
     p {
       font-size: 41px;
@@ -162,12 +141,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
-    position: absolute;
     // min-height: 44.97751vh;
     // height: 250px;
     height: 70%;
     width: 100%;
-    top: 33vh;
     margin-left: -0.83333vw;
     // overflow-y: scroll;
     // overflow-x: hidden;
@@ -223,9 +200,6 @@
   .eventsInfoBox {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: auto;
     height: 72vh;
     background-size: cover;

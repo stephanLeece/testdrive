@@ -26,6 +26,8 @@
   margin: 0px;
 }
 
+
+
 .drivedrive-menu {
   grid-column: 1 / span 4;
   grid-row: 1 / span 4;
@@ -70,6 +72,7 @@
       width: get-vw(300px);
       height: get-vh(150px);
       z-index: 333333;
+      z-index: 333333;
       margin-left: -2vw;
       source {
         height: 100%;
@@ -78,6 +81,17 @@
     }
   }
 }
+
+#gallery-space-img {
+  width: 90%;
+  height: 90vh;
+  margin-left: 3vw;
+  grid-column: 3 / span 9;
+  grid-row: 1 / span 12;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  z-index: 40px;
 
 //why is this image not moving with the grid?
 //have been trying all day
@@ -163,6 +177,17 @@
   img {
     width: 22.98701vw;
   }
+}
+
+#infoLink {
+  grid-column: 10 / 12;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 #home-blue-line {
@@ -377,6 +402,7 @@ and (orientation: portrait) {
   align-self: end;
   height: get-mob-vh(101.8px);
   width: get-mob-vw(175.7px);
+
 }
 
 #home-blue-line {
@@ -401,12 +427,9 @@ and (orientation: portrait) {
   width: 100%;
   height: 100%;
 }
-
 }
-//////////////////////////////////////////////////////////////////////////////////////////
-/* ~~~~~~~~~~~~~~~~~~~~~~ MOBILE DESIGN FOR HOMEPAGE PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+}
 
-// @function get-vw-mob($object) {
 //   $vw: (360 * 0.01) * 1px;
 //   @return ($object / $vw) * 1vw;
 // }
@@ -651,12 +674,10 @@ and (orientation: portrait) {
 //   }
 // }
 
-/* CLOSES MEDIA QUERIES */
+
 
 
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-/* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */ /* iPad Portrait */
-
 //   @media only screen
 //     and (min-device-width: 768px)
 //     and (max-device-width: 1024px)

@@ -16,7 +16,17 @@
   @return ($object / $vh) * 1vh;
 }
 
-
+#testdriveLogoTL {
+  border: 1px solid red;
+  grid-column: 2 / 5;
+  grid-row: 2 / span 2;
+  margin-left: 4.54545vw;
+  width: get-vw(290px);
+  height: get-vh(30px);
+  img {
+    object-fit: contain;
+  }
+}
 
 .tdEventActive {
   background-image: url("./../assets/Elements/Testdrive Events/TD-Events-Hover-Active-state-green.svg");
@@ -59,9 +69,6 @@
   .testdr-title {
     height: get-vh-mob(30px);
     width: get-vw-mob(290px);
-    position: absolute;
-    top: get-vh-mob(40px);
-    left: get-vw-mob(47px);
     z-index: 10;
   }
 

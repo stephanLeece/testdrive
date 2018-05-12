@@ -1,16 +1,20 @@
+<div class="container">
 {{> backLink}} {{> infoLink}} {{> big-mac}}
 
-<div class="events-menu">
+
+
+
+
+
   <div class="eventList" id="tdEventsList">
     {{#eventList}}
       <div class="eventDetails">
-        <div>
-          <p>{{eventDate}}</p>
-          <p>{{eventTitle}}</p>
-        </div>
+          <p class="eventsDetailDate" >{{eventDate}}</p>
+          <p class="eventsDetailTitle">{{eventTitle}}</p>
       </div>
     {{/eventList}}
   </div>
+
   <div class="eventsInfoBox eventsInfoBoxClosed" id="tdEventsInfobox">
     {{#eventList}}
       <div class='eventInfo'>
@@ -24,9 +28,11 @@
       </div>
     {{/eventList}}
   </div>
+
+<div id="testdriveLogoTL">
+  <a  href="/testdrive"><img  src="/assets/Logo-SVG/Testdrive.svg"></a>
 </div>
 
-<a  href="/testdrive"><img id="testdriveLogoTL" src="/assets/Logo-SVG/Testdrive.svg"></a>
-
+</div>
 <!-- keep this here for now please -->
 <!-- <p  class="testdr-events" > +Events </p> -->

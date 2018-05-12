@@ -1,51 +1,76 @@
-.eventList {
+.eventsInfoBox {
+  grid-column: 6 / 11;
+  grid-row: 1 / 12;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: space-between;
-  position: absolute;
-  top: 39.55078vh;
-  left: 3.55195vw; }
+  align-items: center;
+  width: 48.05195vw;
+  height: 99.70703vh;
+  background-size: 48.05195vw 99.70703vh;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%; }
+
+.events-img {
+  width: 100%;
+  height: auto; }
+
+.event-top-title {
+  width: 46.94805vw;
+  height: 3.22266vh;
+  font-family: TimesNewRomanPSMT;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.9px;
+  text-align: left; }
+
+.eventsInfoBoxHidden {
+  display: none; }
+
+.eventList {
+  grid-column: 2 /  5;
+  grid-row: 3 / span 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3.63636vw; }
 
 .eventDetails {
   display: flex;
   flex-direction: column;
-  justify-content: margin-left;
-  align-items: margin-left;
-  font-family: TimesNewRomanPSMT;
-  font-size: 1.2987vw;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.85;
-  letter-spacing: -0.05844vw;
-  text-align: left;
-  color: #222222;
+  justify-content: center;
   width: 28.24675vw;
   height: 9.85352vh;
   padding: 30px;
   margin: -22px; }
-  .eventDetails div p:first-child {
-    height: 3.22266vh;
-    margin-left: 3.2013vw;
+  .eventDetails p {
+    margin: 0;
+    padding: 0; }
+  .eventDetails .eventsDetailDate {
+    margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 2.18;
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222; }
-  .eventDetails div p:nth-child(2) {
-    height: 3.22266vh;
-    margin-left: 3.2013vw;
+  .eventDetails .eventsDetailTitle {
+    margin-left: 50px;
     font-family: TimesNewRomanPSMT;
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.85;
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222; }
@@ -53,57 +78,11 @@
 #eve-disp {
   display: none; }
 
-.eventsInfoBox {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 34.28571vw;
-  width: 48.05195vw;
-  height: 99.70703vh;
-  background-size: 48.05195vw 99.70703vh;
-  overflow-y: scroll; }
-  .eventsInfoBox div {
-    width: 94%; }
-
-.events-img {
-  width: 85%;
-  margin-left: 2.5974vw;
-  margin-right: 0.06494vw; }
-
-.event-top-title {
-  width: 46.94805vw;
-  height: 3.22266vh;
-  top: 1.26953vh;
-  font-family: TimesNewRomanPSMT;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.9px;
-  text-align: left; }
-
-.ddevent-top-title {
-  width: 46.94805vw;
-  height: 3.22266vh;
-  top: 1.26953vh;
-  font-family: TimesNewRomanPSMT;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.9px;
-  text-align: left; }
-
 @media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   #eve-disp {
     display: block;
-    position: absolute;
     height: 6.89655vh;
-    width: 31.11111vw;
-    top: 19.04048vh;
-    left: 36.94444vw; }
+    width: 31.11111vw; }
     #eve-disp p {
       font-size: 41px;
       text-align: center;
@@ -122,10 +101,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
-    position: absolute;
     height: 70%;
     width: 100%;
-    top: 33vh;
     margin-left: -0.83333vw; }
   .eventDetails {
     display: flex;
@@ -170,9 +147,6 @@
   .eventsInfoBox {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: auto;
     height: 72vh;
     background-size: cover;

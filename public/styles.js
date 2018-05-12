@@ -1,13 +1,3 @@
-// hover function for desktop. used on TD and DD event pages
-function eventHover(view) {
-  $('.eventDetails:first-child').addClass(view);
-  $(".eventDetails").hover(function() {
-    $(this).addClass(view);
-  }, function() {
-    $(this).removeClass(view);
-  });
-}
-
 
 // -------- view dependent styling --------------
 
@@ -42,16 +32,15 @@ if (window.location.pathname == '/catalogue') {
 
 if (window.location.pathname == '/events') {
   $('#eve').css({'color': 'rgb(255, 194, 120)'});
-  eventHover('ddEventActive');
-  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  $('.eventDetails:first-child').addClass('ddEventActive');
+  $('.eventsInfoBox div:first-child').removeClass('eventsInfoBoxHidden');
 }
 
 
 if (window.location.pathname == '/testdrive') {
   $(".drivedrive-menu").hide();
   $("#makeitblack").hide();
-  eventHover('tdEventActive');
-  $('.eventsInfoBox div:first-child').removeClass('hidden');
+  $('.eventsInfoBox div:first-child').removeClass('eventsInfoBoxHidden');
 }
 
 
@@ -59,30 +48,49 @@ if (window.location.pathname == '/testdrive') {
 // desktop only functions
 
 function showDesktopEvents() {
-  // initial events to trigger on load
-  console.log('DESKTOP EVENTS LOADED');
-  $('.eventsInfoBox').find('div').addClass('hidden');
-
+  console.log("desktop events loaded");
+  $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
   // events to trigger on user interaction
   $(".eventDetails").click(function() {
     let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('eventsInfoBoxHidden');
+    if (window.location.pathname == '/events') {
+      $(".eventDetails").removeClass('ddEventActive');
+      $(this).addClass('ddEventActive');
+    }
+
+    if (window.location.pathname == '/testdrive') {
+      $(".eventDetails").removeClass('tdEventActive');
+      $(this).addClass('tdEventActive');
+    }
   });
-};
+
+$(".eventDetails").mouseover(function() {
+  if (window.location.pathname == '/events') {
+    $(".eventDetails").removeClass('ddEventActive');
+    $(this).addClass('ddEventActive');
+  }
+
+  if (window.location.pathname == '/testdrive') {
+    $(".eventDetails").removeClass('tdEventActive');
+    $(this).addClass('tdEventActive');
+  }
+});
+}
 
 ///// MOBILE EVENTS PAGE ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS /////
 
 function showMobileEvents() {
     // initial events to trigger on load
   console.log('MOBILE EVENTS LOADED');
-  $('.eventsInfoBox').find('div').addClass('hidden');
+  $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
 
   // events to trigger on user interaction
   $(".eventDetails").click(function() {
     let eventIndex = $(this).index();
-    $('.eventsInfoBox').find('div').addClass('hidden');
-    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('hidden');
+    $('.eventsInfoBox').find('div').addClass('eventsInfoBoxHidden');
+    $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('eventsInfoBoxHidden');
     $('.eventsInfoBox').removeClass('eventsInfoBoxClosed');
   });
 
