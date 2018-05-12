@@ -19,9 +19,9 @@
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 76.7px);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 8.33333333%);
-  grid-column-gap: 30px;
+  grid-column-gap: get-vw(30px);
   overflow: hidden;
   margin: 0px;
 }
@@ -29,7 +29,6 @@
 
 
 .drivedrive-menu {
-  display: grid;
   grid-column: 1 / span 4;
   grid-row: 1 / span 4;
   justify-self: start;
