@@ -27,6 +27,8 @@
   width: 23.5vw; }
 
 .artists {
+  margin-top: 5.5vh;
+  height: inherit;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
   font-weight: normal;
@@ -34,8 +36,7 @@
   font-stretch: normal;
   letter-spacing: -0.12338vw;
   text-align: left;
-  color: red;
-  line-height: 2.73438vh; }
+  color: red; }
   .artists ul {
     margin: 0;
     padding: 0; }
@@ -43,10 +44,21 @@
 .cat-disp {
   display: none; }
 
-.catalogue-line-green {
-  width: 10.57792vw;
-  height: 21.64063vh;
-  object-fit: contain;
+#catalogue-line-green {
+  width: 14.5vw;
+  height: auto;
+  grid-column: 1 / 3;
+  grid-row: 12 / 13;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  z-index: 1000;
+  margin-left: 2.34375vw; }
+
+#catalogue-line-blue {
+  grid-column: 10 / span 12;
+  grid-row: 1 / span 12;
+  margin-top: 21.2890625vh;
+  height: auto;
+  width: 19.453125vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
 
 #pdfs-container {
@@ -92,25 +104,16 @@
 .pdf:hover {
   color: #ff4819; }
 
-.catalogue-line-blue {
-  grid-column: 10 / span 12;
-  grid-row: 4 / span 12;
-  height: 19.16992vh;
-  width: 16.14286vw;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto; }
-
-.video-container {
-  grid-column: 7 / span 12;
-  grid-row: 8 / span 12;
+#video-container {
+  grid-column: 9 /  13;
+  grid-row: 8 / 13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("/assets/mobile/cloud-video-02.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 28.8961vw;
-  height: 32.03125vh; }
-
-#video {
-  grid-column: 7 / span 12;
-  grid-row: 8/ span 12;
-  height: 21.48438vh;
-  width: 22.0974vw;
-  top: 54.78516vh; }
+  background-position: center;
+  background-size: contain; }
+  #video-container video {
+    width: 38vw;
+    height: 33vh; }
