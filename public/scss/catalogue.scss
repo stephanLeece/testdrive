@@ -7,16 +7,14 @@
   @return ($object / $vh) * 1vh;
 }
 
-
-.container {
+.container-catalogue {
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 76.7px);
   grid-template-rows: repeat(12, 8.33333333%);
   grid-column-gap: 30px;
-  overflow: visible;
-  margin: 0px;
+  margin: 0;
 }
 
 .artistbackground {
@@ -24,24 +22,27 @@
   grid-column: 2 /span 4;
   width: get-vw(300px);
   // height: get-vh(900px);
-  height: auto;
+  // height: auto;
   object-fit: contain;
   // left: get-vw(33px);
   // top: get-vh(300px);
   // z-index: -2000;
 }
 
-#artist-container {
+artist-container {
+  display: flex;
+  flex-direction: column;
   grid-row: 6/ span 12;
   grid-column: 2 / span 4;
-  justify-content: space-around;
-  justify-self: center;
-  height: auto;
-  // height: get-vh(828px);
+  // justify-content: space-around;
+  // justify-self: center;
+  // height: auto;
+  // width:auto;
+  height: get-vh(828px);
   width: get-vw(600px);
   // left: get-vw(305px);
   top: get-vh(360px);
-  margin-left: 100px;
+  // margin-left: 100px;
   background-repeat: no-repeat;
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
@@ -52,11 +53,11 @@
   z-index: 4000;
 }
 
-#cat-disp {
+cat-disp {
   display: none;
 }
 
-#catalogue-line-green {
+catalogue-line-green {
   position: absolute;
   width: get-vw(162.9px);
   height: get-vh(221.6px);
@@ -66,38 +67,38 @@
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
-#pdfs-container {
-  //
-  //
-  // height: 100vh;
-  width: 100%;
-  // width: 31.36364vw;
-  grid-column: 5/ span 8;
-  grid-row: 1 / span 12;
-  // justify-content: center;
-  height: get-vh(1024px);
+pdfs-container {
   width: get-vw(483px);
-  // width: 31.36364vw;
+  height: 100vh;
+  // width: auto;
+  // justify-content: space-around;
+  grid-column: 5 / span 8;
+  grid-row: 1 / span 12;
+  justify-content: center;
   object-fit: contain;
   top: get-vh(0px);
+  margin-left: get-vw(0px);
+  left: get-vw(0px);
+  right: get-vw(0px);
   // background-image: url('/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-pdfbox-red-gradient.svg');
   background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
-  // box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+  box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
   overflow-y: scroll;
-  // background-repeat: no-repeat;
-  // background-image: repeating-linear-gradient();
+  background-repeat: no-repeat;
+  background-image: repeating-linear-gradient();
 }
 
 .pds {
   grid-row: 1 / span 12;
   grid-column: 3 / span 6;
   justify-content: flex-start;
-  height: get-vh(1011px);
+  height: auto;
+  // height: get-vh(1011px);
   list-style-type: none;
-  margin:0px;
+  margin: 0;
   padding: 12px;
   margin-left: get-vw(0px);
-
+  left: get-vw(0px);
   //styling
   font-family: TimesNewRomanPSMT;
   font-size: 30px;
@@ -125,7 +126,7 @@
   color: #ff4819;
 }
 
-#catalogue-line-blue {
+catalogue-line-blue {
   grid-column: 10 / span 12;
   grid-row: 4 / span 12;
   height: get-vh(196.3px);
@@ -137,25 +138,26 @@
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
-#video-container {
-  grid-column: 9 / span 12;
+video-container {
+  grid-column: 7 / span 12;
   grid-row: 8 / span 12;
-  // position: absolute;
-  background-image: url("/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg");
+  background-image: url("/assets/mobile/cloud-video-02.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  // width:get-vw(445px);
-  height: get-vh(300px);
-
+  width: get-vw(445px);
+  height: get-vh(328px);
 }
 
-#video {
-  position: absolute;
-  height: get-vh(200px);
+video {
+  grid-column: 7 / span 12;
+  grid-row: 8/ span 12;
+  height: get-vh(220px);
   width: get-vw(340.3px);
-  margin-top: get-vh(59.9px);
+  top: get-vh(561px);
+  // margin-left: get-vw(59.9px);
+  // margin-bottom: get-vh(59.9px);
+  // margin-right: get-vw(59.9px);
 }
-
 
 //
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////
