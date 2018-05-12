@@ -94,7 +94,13 @@ fadeIntoImg();
 // ~~~~~~~~ MOBILE ~~~~~~~~
 $(".burger").on("click", function() {
 
-    $(".mob-container").show();
+    $(".mob-container").css({
+        'display': 'flex',
+    });
+
+    $('#gallery-space-img').css({
+        'display': 'none'
+    })
 
     if (location.pathname == "/info") {
 
@@ -149,8 +155,12 @@ $(".x").on('click', function() {
     }
 
     $(".mob-container").css({
-        "left": "100%"
+        'display': 'none'
     });
+
+    $('#gallery-space-img').css({
+        'display': 'block'
+    })
 
     $(".tdLogo").css({
         "visibility": "visible"

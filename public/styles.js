@@ -5,16 +5,10 @@ if ($(window).width() > 700) {
   $(".mob-container").hide();
   showDesktopEvents();
 } else {
-  $(".mob-container").show();
   showMobileEvents();
 }
 
-if ($(window).width() < 700 && window.location.pathname == '/') {
-  $(".homepage-tdevents").hide();
-}
-
 if ($(window).width() < 700 && window.location.pathname == '/testdrive') {
-  $(".mob-container").show();
   $("#makeitblack").hide();
   $("#backButton").hide();
 }

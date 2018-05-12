@@ -15,7 +15,7 @@
   display: none;
 }
 
-.container {
+.home {
   height: 100vh;
   width: 100%;
   display: grid;
@@ -65,7 +65,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     #home-v {
       justify-self: center;
       align-self: center;
@@ -325,7 +324,7 @@ and (orientation: portrait) {
 
 
 @function get-mob-vw($object) {
-  $vw: (320 * 0.01) * 1px;
+  $vw: (300 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
 @function get-mob-vh($object) {
@@ -333,99 +332,191 @@ and (orientation: portrait) {
   @return ($object / $vh) * 1vh;
 }
 
+.home {
+  display: grid;
+  grid-template-rows: 15vh 5vh 40vh 30vh 15vh;
+  grid-template-columns: repeat(3, 33vw);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 #infoLink {
   display: none;
 }
 
 #testdriveLogoBR {
-  display: none;
-}
-
-.container {
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 15% 70% 20%;
-  grid-column-gap: 1fr;
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  justify-self: center;
+  align-self: center;
   width: 100%;
-  height: 100%;
+  img{
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.mob-container {
-  grid-column: 1 / 4;
-  grid-row: 1;
-  height: get-mob-vh(45px);
-  width: get-mob-vw(284px);
-  justify-self: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: start;
+.homepage-tdevents {
+  display: none;
 }
 
 .drivedrive-menu {
-  display: none;
-}
-
-.burger {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
   grid-row: 1;
   justify-self: center;
   align-self: start;
-  height: 100%;
   width: 100%;
+  ul {
+    #DriveDrive {
+      width: 100%;
+      height: 100%;
+      margin-left: -5vw;
+    }
+    #cat {
+      display: none;
+    }
+    #eve {
+      display: none;
+    }
+  }
 }
 
-.home-video {
-  grid-column: 2 / span 4;
+.burger {
+  display: inline-block;
+  grid-column: 1 / span 3;
   grid-row: 2;
   justify-self: center;
-  align-self: end;
-  height: 400px;
-  width: 200px;
-  margin-top: 20vh;
-  div {
-    height: get-mob-vh(276px);
-    width: get-mob-vw(106px);
-    video {
-      height: 100%;
-      width: 100%;
-      source {
-        z-index: 1000;
+  align-self: center;
+  margin-top: 7vh;
+}
+
+.mob-container {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: start;
+  z-index: 300000;
+  #mob-dd-menu {
+    height: 65%;
+    width: 100%;
+    margin-top: 4vh;
+  }
+  .mob-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size:41px;
+      #mob-eve{
+        margin-bottom: 4vh;
+      }
+    }
+    #td-mob{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #mob-test-eve {
+        font-size: 41px;
       }
     }
   }
 }
 
+#modal {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  height: get-mob-vh(713px);
+  width: 100%;
+  padding: 15px;
+  top: 5vh;
+  left: 0px;
+  .words {
+    width: get-mob-vh(289px);
+    height: get-mob-vh(437px);
+    font-size: get-mob-vh(18px);
+  }
+}
+
+#gallery-space-img {
+  margin-top: 10vh;
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  height: get-mob-vh(523px);
+  width: get-mob-vw(349px);
+}
+
+.home-video {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: get-vh-mob(423px);
+  left: get-vw-mob(120px);
+  div {
+    width: get-vw-mob(220px);
+  }
+}
+
+#home-v {
+  position: absolute;
+  width: get-vw-mob(145.6px);
+  height: get-vh-mob(81.6px);
+  top: get-vh-mob(450.2px);
+  left: get-vw-mob(153px);
+}
+
 #home-green-line {
-  grid-column: 2 / span 3;
   grid-row: 2;
   justify-self: end;
   align-self: end;
   height: get-mob-vh(101.8px);
   width: get-mob-vw(175.7px);
-
 }
 
 #home-blue-line {
-  grid-area: blue-line;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  top: get-mob-vh(104px);
+  left: get-mob-vw(256px);
 }
 
 #gallery-space-img {
-  grid-column: 1 / span 3;
-  grid-row: 2;
-  margin-top: 10vh;
+  grid-row: 3;
   height: 100%;
   width: 100%;
 }
+  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
+#home-red-line {
+  width: get-vw-mob(155.3px);
+  height: get-vh-mob(84px);
+  object-fit: contain;
+  position: absolute;
+  top: get-mob-vh(384px);
+  left: get-mob-vw(14px);
+  cursor: url(/public/assets/Elements/Nav/bike.svg) auto;
+}
 
-
-
-#mob-testdriveLogo {
-  grid-column: 1 / 4;
-  grid-row: 3;
-  width: 100%;
-  height: 100%;
+#home-green-line {
+  width: get-vw-mob(175px);
+  height: get-vh-mob(101.8px);
+  object-fit: contain;
+  position: absolute;
+  top: get-mob-vh(488px);
+  left: get-mob-vw(184px);
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  z-index: 10;
 }
 }
 
@@ -544,28 +635,7 @@ and (orientation: portrait) {
 
 //   .shadowfilter:hover {
 //     -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
-//   }
-//   /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-//   #home-red-line {
-//     width: get-vw-mob(155.3px);
-//     height: get-vh-mob(84px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh-mob(384px);
-//     left: get-vw-mob(13px);
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//   }
-
-//   #home-green-line {
-//     width: get-vw-mob(175px);
-//     height: get-vh-mob(101.8px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh-mob(488px);
-//     left: get-vw-mob(184px);
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//     z-index: 10;
-//   }
+//   
 //   /* STYLING FOR TESTDRIVE LOGO */
 //   .tdLogo {
 //     position: absolute;
@@ -617,15 +687,16 @@ and (orientation: portrait) {
 //     // object-fit: contain;
 //     top: get-vh-mob(423px);
 //     left: get-vw-mob(120px);
+        // #home-v {
+  //     position: absolute;
+  //     width: get-vw-mob(145.6px);
+  //     height: get-vh-mob(81.6px);
+  //     top: get-vh-mob(450.2px);
+  //     left: get-vw-mob(153px);
+  //   }
 //   }
 
-//   #home-v {
-//     position: absolute;
-//     width: get-vw-mob(145.6px);
-//     height: get-vh-mob(81.6px);
-//     top: get-vh-mob(450.2px);
-//     left: get-vw-mob(153px);
-//   }
+//   
 
 //   .fadeIn {
 //     opacity: 1;
