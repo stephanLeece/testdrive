@@ -65,7 +65,6 @@
   grid-row: 1 / span 12;
   justify-content: center;
   object-fit: contain;
-  margin-left: 0vw;
   background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
   box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
   overflow-y: scroll; }
@@ -151,7 +150,7 @@
       padding: 0;
       color: black; }
   #pdfs-container {
-    width: 100%;
+    width: 100vw;
     height: 41.77vh;
     grid-column: 1 / 5;
     grid-row: 3 / 4;
@@ -161,6 +160,7 @@
     box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
     overflow-y: scroll; }
   #video-container {
+    margin: 2%;
     width: 100%;
     grid-column: 1 / 5;
     grid-row: 4 / 5; }
