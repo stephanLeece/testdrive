@@ -41,11 +41,20 @@
 }
 
 
-//MOBILE
 @media only screen
+and (min-device-width: 300px)
 and (max-device-width: 700px)
-and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
+
+
+@function get-mob-vw($object) {
+  $vw: (300 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-mob-vh($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
 
 
 
@@ -54,12 +63,10 @@ and (orientation: portrait) {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 50px;
-    margin: -50px;
   }
 
   #ddEventsInfobox {
-    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-infobox-red-gradient.png");
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
   }
 

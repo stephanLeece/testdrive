@@ -71,4 +71,9 @@
     z-index: 10;
   }
 
+  #tdEventsInfobox {
+    background-image: linear-gradient(to bottom, #d1fbca, #ffffff);
+    filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
+  }
+
 }
