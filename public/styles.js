@@ -1,12 +1,19 @@
 
 // -------- view dependent styling --------------
-
-if ($(window).width() > 700) {
-  $(".mob-container").hide();
-  showDesktopEvents();
+if(window.innerHeight > window.innerWidth){
+      showMobileEvents();
 } else {
-  showMobileEvents();
+  showDesktopEvents();
 }
+
+window.addEventListener("resize", function() {
+  if(window.innerHeight > window.innerWidth){
+        showMobileEvents();
+  } else {
+    showDesktopEvents();
+  }
+
+}, false);
 
 if ($(window).width() < 700 && window.location.pathname == '/testdrive') {
   $("#makeitblack").hide();
@@ -41,6 +48,19 @@ if (window.location.pathname == '/testdrive') {
 // desktop only functions
 
 function showDesktopEvents() {
+  console.log('showing desktop');
+  $(".eventsInfoBox").css({
+    '-webkit-transform': 'scale(1 , 1)',
+    '-moz-transform': 'scale(1 , 1)',
+    '-o-transform': 'scale(1 , 1)',
+    '-ms-transform': 'scale(1 , 1)',
+    'transform': 'scale(1 , 1)',
+    '-webkit-transform-origin': '50% 100%',
+    '-moz-transform-origin': '50% 100%',
+    '-o-transform-origin': '50% 100%',
+    '-ms-transform-origin': '50% 100%',
+    'transform-origin': '50% 100%',
+  });
   $('.eventsInfoBox').find('div').addClass('eventsInfoHidden');
     $('.eventsInfoBox div:first-child').removeClass('eventsInfoHidden');
   // events to trigger on user interaction
@@ -65,7 +85,7 @@ function showDesktopEvents() {
 
 function showMobileEvents() {
 // testdrive and events - set eventsinfo height to 0 on page loaded  if (window.location.pathname == '/events') {
-
+console.log('showing mobile');
     $(".eventsInfoBox").css({
       '-webkit-transform': 'scale(1 , 0)',
       '-moz-transform': 'scale(1 , 0)',
@@ -79,9 +99,11 @@ function showMobileEvents() {
       'transform-origin': '50% 100%',
     });
     $('.eventsInfoBox').find('div').addClass('eventsInfoHidden');
+    $('.eventsInfoBox div:first-child').removeClass('eventsInfoHidden');
 
   // events to trigger on mobile user interaction
   $(".eventDetails").click(function() {
+    $('.eventsInfoBox').find('div').addClass('eventsInfoHidden');
     let eventIndex = $(this).index();
     $(`.eventInfo:nth-child(${eventIndex + 1})`).removeClass('eventsInfoHidden');
     $(".eventDetails").addClass('eventDetailsHidden')
