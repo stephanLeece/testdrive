@@ -34,27 +34,25 @@
   height: 90%;
   grid-column: 2 / span 5;
   grid-row: 5 / span 9;
-  justify-self: start;
+  justify-self: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   color: #222222;
   background-image: url("/assets/Elements/Info/Info-contact-outline.png");
   background-size: 50.3vh;
   background-repeat: no-repeat;
-  align-self: start;
 
   .info-contact {
     z-index: 200;
-    height: 50%;
+    height: 90%;
     width: 100%;
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 3vh;
-
+    margin-top: -3vh;
     p {
       font-size: get-vh(20px);
       font-family: TimesNewRomanPSMT;
@@ -68,20 +66,38 @@
     }
 
     form {
-      border: 1px solid black;
       width: get-vw(329px);
       height: get-vh(40px);
       margin-top: get-vh(4px);
       margin-left: 3vw;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
+      border: 2px solid black;
+      input {
+        height: 100%;
+        font-size: get-vw(20px);
+        background: none;
+        border: none;
+        outline: none;
+        font-family: TimesNewRomanPSMT;
+        text-shadow: 1px 1px black;
+      }
+      
+      button {
+        height: 110%;
+        width: 25vw;
+        border: inherit;
+        background: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 1px 1px black;
+      }
     }
   }
 }
 
 .sign-up-to-our-maili {
-  // margin-bottom:get-vh(398px);
   margin-top: get-vh(-15px);
   font-family: TimesNewRomanPSMT;
   font-size: get-vw(20px);
@@ -93,27 +109,6 @@
   text-align: left;
   color: #222222;
   text-shadow: 1px 1px black;
-}
-
-input {
-  font-size: get-vw(20px);
-  background: none;
-  border: none;
-  outline: none;
-  font-family: TimesNewRomanPSMT;
-  text-shadow: 1px 1px black;
-
-  &[type="email"] {
-    width: get-vw(221px);
-    height: get-vh(40px);
-    outline: none;
-  }
-
-  &[type="submit"] {
-    border-left: 2px solid black;
-    width: get-vw(108px);
-    height: get-vh(40px);
-  }
 }
 
 #credits {
@@ -157,11 +152,6 @@ a:hover {
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
 /* MOBILE DESIGN  */
-/* MOBILE DESIGN  */
-/* MOBILE DESIGN  */
-/* MOBILE DESIGN  */
-/* MOBILE DESIGN  */
-/* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
   $vw: (360 * 0.01) * 1px;
@@ -177,16 +167,23 @@ a:hover {
   .info {
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: repeat(12, 25%);
-    grid-template-rows: repeat(12, 10%);
-    grid-column-gap: get-vw(30px);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 10%);
     background-image: url("/assets/mobile/Info-mobile.png");
     margin: 0;
-    // background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100vw;
+    width: get-vw-mob(375px);
     height: 190.25487vh;
+  }
+
+  #mobile-menu-info {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: end;
+    margin-right: 5vw;
+    z-index: 30000;
   }
 
   #infoMap {
@@ -204,8 +201,6 @@ a:hover {
   }
 
   #infoContactBg {
-    //     width: 375px;
-    // height: 515.3px;
     grid-column: 1 / span 4;
     grid-row: 4 / span 9;
     object-fit: contain;
@@ -215,38 +210,28 @@ a:hover {
     background-image: url("/assets/Elements/Info/Info-contact-outline.png");
     background-size: 100vh;
     background-repeat: no-repeat;
-    // width: get-vw(446.4px);
-    // height: auto;
-    // position: fixed;
-    // z-index: -20;
-    // filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
   }
 
   #infoContactInfo {
-    width: 10000000vw;
-    height: 200vh;
-    margin-top: -10vh;
-    grid-column: 1 / span 5;
-    grid-row: 6/ span 9;
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 9;
+    margin-top: 8vh;
+    height: get-vh-mob(515.3px);
+    width: get-vw-mob(375px);
+    justify-self: center;
     align-self: center;
-    justify-self: start;
     display: flex;
     flex-direction: column;
     justify-content: start;
     color: #222222;
     align-self: start;
-    // background-image: url("/assets/Elements/Info/Info-contact-outline.png");
-    // background-size: 50.3vh;
-    // background-repeat: no-repeat;
+    padding-left: 5vw;
     .info-contact {
-      z-index: 200;
-      height: 50%;
+      height: 100%;
       width: 100%;
-      position: fixed;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      justify-content: start;
       margin-top: 3vh;
 
       p {
@@ -262,16 +247,61 @@ a:hover {
       }
 
       form {
-        border: 1px solid black;
-        width: get-vw(329px);
-        height: get-vh(40px);
+        width: get-vw-mob(319px);
+        height: get-vh-mob(30px);
         margin-top: get-vh(4px);
         margin-left: 3vw;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        input {
+          width: get-vw-mob(192px);
+          height: 100%;
+          border: 2px solid black;
+        }
       }
     }
+  }
+
+  #credits {
+    grid-row: 10;
+    grid-column: 1 / span 4;
+    justify-self: start;
+    align-self: end;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 9.5px;
+    z-index: 3000;
+  }
+
+    #testdriveLogoInfo {
+      grid-column: 1 / span 4;
+      grid-row: 9 / span 10;
+      align-self: end;
+      justify-self: end;
+      height: 100%;
+      width: 100%;
+      background-image: url(/assets/mobile/info-testdrive-box-02.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      img {
+        height: 100%;
+        width: 90%;
+        margin-top: 10vh;
+      }
+    }
+
+    button {
+      height: 36px;
+      width: 25vw;
+      border: 2px solid black;
+      background: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 1px 1px black;
+    }
+
   }
   //
   //   #mobile-background-img {
@@ -284,7 +314,6 @@ a:hover {
   //     left: 0vw;
   //     background-repeat: repeat-y;
   // }
-}
 // ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD
 // @media only screen
 //   and (min-device-width: 768px)
