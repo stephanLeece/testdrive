@@ -1,6 +1,6 @@
 
 // -------- view dependent styling --------------
-if(window.innerHeight > window.innerWidth){
+if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
       showMobileEvents();
 } else {
   showDesktopEvents();
