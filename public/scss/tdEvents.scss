@@ -76,4 +76,15 @@
     filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5));
   }
 
+  #testdriveLogoTL {
+    grid-column: 1 / 5;
+    grid-row: 1 /  2;
+
+    img {
+      margin-top: 5.25vh;
+          margin-left: 9.5vw;
+      object-fit: contain;
+    }
+  }
+
 }
