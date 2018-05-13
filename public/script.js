@@ -1,4 +1,3 @@
-
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
@@ -93,13 +92,7 @@ fadeIntoImg();
 // ~~~~~~~~ MOBILE ~~~~~~~~
 $(".burger").on("click", function() {
 
-    $(".mob-container").css({
-        'display': 'flex',
-    });
-
-    $('#gallery-space-img').css({
-        'display': 'none'
-    })
+    $(".mob-container").show();
 
     if (location.pathname == "/info") {
 
@@ -154,12 +147,8 @@ $(".x").on('click', function() {
     }
 
     $(".mob-container").css({
-        'display': 'none'
+        "left": "100%"
     });
-
-    $('#gallery-space-img').css({
-        'display': 'block'
-    })
 
     $(".tdLogo").css({
         "visibility": "visible"

@@ -15,6 +15,10 @@
   display: none;
 }
 
+.mob-container {
+  display: none;
+}
+
 .home {
   height: 100vh;
   width: 100%;
@@ -23,19 +27,18 @@
   grid-template-rows: repeat(12, 8.33333333%);
   grid-column-gap: 2.34375vw;
   overflow: hidden;
-  margin: 0px;
+  margin: 0;
 }
-
-
 
 .drivedrive-menu {
   grid-column: 1 / span 4;
   grid-row: 1 / span 4;
   justify-self: start;
-  top: 5vh;
+  // top: 5vh;
   left: 10vw;
   height: get-vh(144.84px);
   width: get-vw(294.22px);
+
   ul {
     height: auto;
     width: auto;
@@ -43,7 +46,7 @@
     display: flex;
     flex-direction: column;
     top: get-vh(20px);
-    left:get-vw(20px);
+    left: get-vw(20px);
   }
 }
 
@@ -60,11 +63,15 @@
     width: get-vw(377px);
     justify-self: center;
     align-self: center;
-    background: url('/assets/Elements/Home/Home-video-cloud-grey.svg') no-repeat;
+    background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
     background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8vh;
+    margin-left: 4vw;
+    padding: 1vh;
+
     #home-v {
       justify-self: center;
       align-self: center;
@@ -73,6 +80,7 @@
       z-index: 333333;
       z-index: 333333;
       margin-left: -2vw;
+
       source {
         height: 100%;
         width: 100%;
@@ -82,59 +90,20 @@
 }
 
 #gallery-space-img {
-  width: 90%;
-  height: 90vh;
+  width: 79%;
+  height: 80vh;
   margin-left: 3vw;
-  grid-column: 3 / span 9;
-  grid-row: 1 / span 12;
-  justify-self: center;
-  align-self: center;
-  cursor: pointer;
-  z-index: 40px;
-}
-//why is this image not moving with the grid?
-//have been trying all day
-#gallery-space-img {
-  display: flex;
-  width: 80%;
-  height: 90vh;
-  // margin-left: 3vw;
-  // margin-right: 3vw;
-  // left: 50%;
-  // top: get
+  margin-right: 3vw;
   grid-column: 3 / span 9;
   grid-row: 2 / span 12;
   justify-self: center;
   align-self: center;
   cursor: pointer;
-  z-index: 4px;
-
-}
-
-#eve {
-  grid-column: 11;
-  grid-row: 10;
-  width: 100%;
-  justify-self: center;
-  align-self: end;
-}
-
-.homepage-tdevents {
-  font-family: TimesNewRomanPSMT;
-  font-size: 41px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -2.4px;
-  text-align: left;
-  z-index: 20;
-  text-decoration: none;
-  color: black;
+  z-index: 40px;
 }
 
 #modal {
-  grid-column: 6 / 10;
+  grid-column: 5 / 9;
   grid-row: 2 / span 11;
   justify-self: start;
   align-self: center;
@@ -152,8 +121,8 @@
   align-content: center;
 
   .words {
-    height: 100%;
-    width: 60%;
+    // height: 50%;
+    // width: 40%;
     font-family: TimesNewRomanPSMT;
     font-size: get-vh(20px);
     font-weight: normal;
@@ -170,10 +139,12 @@
 
 #testdriveLogoBR {
   grid-column: 8 / span 12;
-  grid-row: 11;
+  grid-row: 11/ span 12;
   justify-self: center;
-  height: 100%;
+  align-self: center;
+
   img {
+    margin-right: 10vw;
     width: 22.98701vw;
   }
 }
@@ -196,7 +167,30 @@
   grid-row: 1 / span 5;
   justify-self: center;
   align-self: center;
+  margin-right: 12vw;
+  margin-top: 10vh;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
+
+#home-red-line {
+  width: get-vw(401.8px);
+  height: get-vh(217.3px);
+  margin-left: -5vw;
+  grid-column: 2 / 12;
+  grid-row: 5 / span 7;
+  object-fit: contain;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+}
+
+#home-green-line {
+  width: get-vw(260px);
+  height: get-vh(160px);
+  grid-row: 8 / span 12;
+  grid-column: 10 / 11;
+  justify-self: center;
+  align-self: center;
+  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+  z-index: 10;
 }
 
 .cat {
@@ -238,16 +232,40 @@
   color: #000000;
 }
 
-
+#eve {
+  grid-column: 11;
+  grid-row: 10 /span 11;
+  margin-bottom: 10vh;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  font-size: get-vw(50px);
+  font-family: TimesNewRomanPSMT;
+  letter-spacing: get-vw(-2.1px);
+  text-align: left;
+  -webkit-text-stroke: 0 #979797;
+}
 
 #infoLink {
-    grid-column: 10/ 12;
-    grid-row: 1 / span 2;
-    justify-self: center;
-    align-self:center;
+  grid-column: 11/ 12;
+  grid-row: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+
+  .bike {
+    padding: 3vh;
+    margin-right: -10vh;
+  }
 
   a {
     text-decoration: none;
+
     h1 {
       font-size: 3.24675vw;
       font-weight: normal;
@@ -259,7 +277,6 @@
       color: #222222;
     }
   }
-
 }
 
 .act {
@@ -280,27 +297,6 @@
 .shadowfilter:hover {
   -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
 }
-/* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-#home-red-line {
-  width: get-vw(401.8px);
-  height: get-vh(217.3px);
-  object-fit: contain;
-  position: absolute;
-  top: get-vh(313px);
-  left: get-vw(172px);
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-}
-
-#home-green-line {
-  width: get-vw(250px);
-  height: get-vh(160px);
-  grid-row: 9 / span 12;
-  grid-column: 9 / 11;
-  justify-self: center;
-  align-self: center;
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-  z-index: 10;
-}
 /* STYLING FOR MODAL */
 #modal {
   opacity: 0;
@@ -316,436 +312,312 @@
 .fadeIn {
   opacity: 1;
 }
+/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
+//
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+  @function get-mob-vw($object) {
+    $vw: (300 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
+  }
+  @function get-mob-vh($object) {
+    $vh: (667 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+  }
 
-@media only screen
-and (min-device-width: 300px)
-and (max-device-width: 700px)
-and (orientation: portrait) {
-
-
-@function get-mob-vw($object) {
-  $vw: (300 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-@function get-mob-vh($object) {
-  $vh: (667 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-
-.home {
-  display: grid;
-  grid-template-rows: 15vh 5vh 40vh 30vh 15vh;
-  grid-template-columns: repeat(3, 33vw);
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-#infoLink {
-  display: none;
-}
-
-#testdriveLogoBR {
-  grid-column: 1 / span 3;
-  grid-row: 5;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-  img{
+  .home {
+    display: grid;
+    grid-template-rows: 15vh 5vh 40vh 20vh 10vh 10vh;
+    grid-template-columns: repeat(3, 33vw);
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-}
 
-.homepage-tdevents {
-  display: none;
-}
+  #infoLink {
+    display: none;
+  }
 
-.drivedrive-menu {
-  grid-column: 1 / span 3;
-  grid-row: 1;
-  justify-self: center;
-  align-self: start;
-  width: 100%;
-  ul {
-    #DriveDrive {
-      width: 100%;
-      height: 100%;
-      margin-left: -5vw;
-    }
-    #cat {
-      display: none;
-    }
-    #eve {
-      display: none;
+  #testdriveLogoBR {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    justify-self: center;
+    img {
+      height: 20vh;
+      width: 95%;
+      margin-bottom: -10vh;
     }
   }
-}
 
-.burger {
-  display: inline-block;
-  grid-column: 1 / span 3;
-  grid-row: 2;
-  justify-self: center;
-  align-self: center;
-  margin-top: 7vh;
-}
+  .homepage-tdevents {
+    display: none;
+  }
 
-.mob-container {
-  grid-row: 1;
-  grid-column: 1 / span 3;
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: start;
-  z-index: 300000;
-  #mob-dd-menu {
-    height: 65%;
+  .drivedrive-menu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
     width: 100%;
-    margin-top: 4vh;
+
+    ul {
+      #DriveDrive {
+        width: 90%;
+        height: 100%;
+        margin-left: 0;
+      }
+
+      #cat {
+        display: none;
+      }
+
+      #eve {
+        display: none;
+      }
+    }
   }
-  .mob-con {
-    display: flex;
+
+  .burger {
+    display: inline-block;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    margin-top: -1vh;
+    margin-left: -5vw;
+  }
+  //Inside Burger menu //Inside Burger menu //Inside Burger menu
+  .mob-container {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size:41px;
-      #mob-eve{
-        margin-bottom: 4vh;
-      }
+    align-content: center;
+    justify-content: start;
+    z-index: 300000;
+
+    #mob-dd-menu {
+      width: 75%;
+      height: 90%;
+      margin-left: 13vw;
+      // margin-left: 0;
+      margin-top: 4.5vh;
     }
-    #td-mob{
+
+    .x {
+      display: inline-block;
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      justify-self: center;
+      align-self: center;
+      margin-top: 4vh;
+      margin-left: -4vw;
+    }
+
+    .mob-con {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      #mob-test-eve {
-        font-size: 41px;
+      height: 100%;
+      width: 100%;
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+
+        #mob-eve {
+          margin-bottom: 4vh;
+          font-size: 41px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #000000;
+          -webkit-text-stroke: 0 #979797;
+          text-decoration: none;
+        }
+
+        #mob-cat {
+          font-size: 41px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #000000;
+          -webkit-text-stroke: 0 #979797;
+          text-decoration: none;
+        }
+
+        #mob-info {
+          font-size: 41px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #000000;
+          -webkit-text-stroke: 0 #979797;
+          text-decoration: none;
+        }
+      }
+
+      #td-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        #mob-test-eve {
+          text-decoration: none;
+          margin-top: 2vh;
+          margin-bottom: 12vh;
+          font-size: 41px;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: -2.4px;
+          text-align: center;
+          color: #000000;
+          -webkit-text-stroke: 0 #979797;
+        }
       }
     }
   }
-}
+  //mob container aka x-button fiishes here
+  #gallery-space-img {
+    margin-top: 7vh;
+    margin-left: -3vw;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    height: 100%;
+    width: 85%;
+  }
+
+  #home-blue-line {
+    position: absolute;
+    top: 5vh;
+    left: 67vw;
+    width: 27%;
+    height: 22%;
+    cursor: url("/public/assets/Elements/Nav/bike.svg"), auto;
+  }
+
+  #home-red-line {
+    position: absolute;
+    width: 40%;
+    height: 22%;
+    object-fit: contain;
+    top: 50vh;
+    left: get-mob-vw(14px);
+    cursor: url("/public/assets/Elements/Nav/bike.svg") auto;
+  }
+
+  #home-green-line {
+    position: absolute;
+    width: 40%;
+    height: 22%;
+    object-fit: contain;
+    top: 68vh;
+    left: get-mob-vw(165px);
+    cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
+    z-index: 10;
+  }
 
 #modal {
-  position: absolute;
+  grid-row: 2 / span 4;
+  grid-column: 1 / span 3;
+  height: 90vh;
+  width: 100%;
   display: flex;
   justify-content: start;
-  height: get-mob-vh(713px);
-  width: 100%;
-  padding: 15px;
-  top: 5vh;
-  left: 0px;
+  padding: 2vh 2vh 2vh 3vh;
+  margin-left: -5vh;
+
   .words {
     width: get-mob-vh(289px);
     height: get-mob-vh(437px);
     font-size: get-mob-vh(18px);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #222222;
   }
 }
-
-#gallery-space-img {
-  margin-top: 10vh;
-  grid-column: 1 / span 3;
-  grid-row: 3;
-  height: get-mob-vh(523px);
-  width: get-mob-vw(349px);
-}
-
-.home-video {
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: get-vh-mob(423px);
-  left: get-vw-mob(120px);
-  div {
-    width: get-vw-mob(220px);
-  }
-}
-
-#home-v {
-  position: absolute;
-  width: get-vw-mob(145.6px);
-  height: get-vh-mob(81.6px);
-  top: get-vh-mob(450.2px);
-  left: get-vw-mob(153px);
-}
-
-#home-green-line {
-  grid-row: 2;
-  justify-self: end;
-  align-self: end;
-  height: get-mob-vh(101.8px);
-  width: get-mob-vw(175.7px);
-}
-
-#home-blue-line {
-  position: absolute;
-  top: get-mob-vh(104px);
-  left: get-mob-vw(256px);
-}
-
-#gallery-space-img {
-  grid-row: 3;
-  height: 100%;
-  width: 100%;
-}
-  /* STYLING FOR THE RED, GREEN, AND BLUE LINES */
-#home-red-line {
-  width: get-vw-mob(155.3px);
-  height: get-vh-mob(84px);
-  object-fit: contain;
-  position: absolute;
-  top: get-mob-vh(384px);
-  left: get-mob-vw(14px);
-  cursor: url(/public/assets/Elements/Nav/bike.svg) auto;
-}
-
-#home-green-line {
-  width: get-vw-mob(175px);
-  height: get-vh-mob(101.8px);
-  object-fit: contain;
-  position: absolute;
-  top: get-mob-vh(488px);
-  left: get-mob-vw(184px);
-  cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-  z-index: 10;
-}
-}
-
-
-//   $vw: (360 * 0.01) * 1px;
-//   @return ($object / $vw) * 1vw;
-// }
-// @function get-vh-mob($object) {
-//   $vh: (667 * 0.01) * 1px;
-//   @return ($object / $vh) * 1vh;
-// }
-
-
-//   @media only screen
-
-//   and (max-device-width: 700px)
-//   and (-webkit-min-device-pixel-ratio: 2)
-//   and (orientation: portrait) {
-
-//   .burger {
-//     display: block;
-//     width: get-vw-mob(26px);
-//     height: get-vh-mob(24px);
-//     position: absolute;
-//     top: get-vh-mob(84px);
-//     left: get-vw-mob(170px);
-//   }
-
-//   #DriveDrive {
-//     top: get-vh-mob(-10px);
-//     left: get-vw-mob(25px);
-//     width: get-vw-mob(284px);
-//     height: get-vh-mob(45px);
-//     position: absolute;
-//   }
-
-//   .drivedrive-menu {
-//     ul {
-//       #cat,
-//       #eve {
-//         display: none;
-//       }
-//       position: absolute;
-//       display: flex;
-//       flex-direction: column;
-//     }
-//   }
-
-//   #infoLink {
-//     display: none;
-//   }
-
-//   .cat {
-//     margin-top: get-vh(24px);
-//     width: get-vw(210px);
-//     height: get-vh(56px);
-//     text-decoration: none;
-//     color: #000000;
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: normal;
-//     font-size: get-vw(50px);
-//     font-family: TimesNewRomanPSMT;
-//     letter-spacing: get-vw(-2.1px);
-//     text-align: left;
-//     -webkit-text-stroke: 0 #979797;
-//   }
-
-//   .active {
-//     color: rgb(255, 194, 120);
-//   }
-
-//   .events {
-//     margin-top: get-vh(1px);
-//     width: get-vw(150px);
-//     height: get-vh(56px);
-//     text-decoration: none;
-//     font-family: TimesNewRomanPSMT;
-//     font-size: get-vw(50px);
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: normal;
-//     letter-spacing: get-vw(-2.1px);
-//     text-align: left;
-//     color: #000000;
-//   }
-
-//   .act {
-//     color: rgb(255, 194, 120);
-//   }
-
-//   .active-color-home {
-//     color: #000000;
-//   }
-//   /* END STYLING FOR BIG MAC */
-//   /* BEGIN STYLING FOR HOMEPAGE
-
-//     /* STYLING FOR THE GALLERY SPACE IMAGE */
-//   #gallery-space-img {
-//     width: get-vw-mob(349px);
-//     height: get-vh-mob(323px);
-//     position: absolute;
-//     top: get-vh-mob(138px);
-//     left: get-vw-mob(5px);
-//     cursor: pointer;
-//   }
-
-//   .shadowfilter {
-//     -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
-//     -webkit-transition: all 0.5s linear;
-//     -o-transition: all 0.5s linear;
-//     transition: all 0.5s linear;
-//   }
-
-//   .shadowfilter:hover {
-//     -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
-//   
-//   /* STYLING FOR TESTDRIVE LOGO */
-//   .tdLogo {
-//     position: absolute;
-//     width: get-vw-mob(290px);
-//     height: get-vh-mob(30px);
-//     left: get-vw-mob(42px);
-//     top: get-vh-mob(596px);
-//   }
-
-//   #home-blue-line {
-//     width: get-vw-mob(103.3px);
-//     height: get-vh-mob(104px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh-mob(104px);
-//     left: get-vw-mob(256px);
-//     z-index: 3000;
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//   }
-//   /* STYLING FOR MODAL */
-//   #modal {
-//     visibility: hidden;
-//   }
-//   /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-//   #halk {
-//     position: absolute;
-//     z-index: 99;
-//     height: 100vh;
-//     width: 100vw;
-//   }
-
-//   #home-container {
-//     opacity: 0;
-//     transition: 5s;
-//     -webkit-transition: opacity 1s ease-in;
-//     -moz-transition: opacity 1s ease-in;
-//     -ms-transition: opacity 1s ease-in;
-//     -o-transition: opacity 1s ease-in;
-//     transition: opacity 1s ease-in;
-//   }
-
-//   .home-video {
-//     position: absolute;
-//     // background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     width: get-vw-mob(220px);
-//     // height: get-vh-mob(136px);
-//     // object-fit: contain;
-//     top: get-vh-mob(423px);
-//     left: get-vw-mob(120px);
-        // #home-v {
-  //     position: absolute;
-  //     width: get-vw-mob(145.6px);
-  //     height: get-vh-mob(81.6px);
-  //     top: get-vh-mob(450.2px);
-  //     left: get-vw-mob(153px);
+  //VIDEO
+  // .home-video {
+  //   position: absolute;
+  //   background-repeat: no-repeat;
+  //   // background-size: contain;
+  //   top: get-vh-mob(423px);
+  //   left: get-vw-mob(120px);
+  //     width: get-vw-mob(20px);
+  //   // div {
+  //   //   width: get-vw-mob(20px);
+  //   // }
+  // }
+  //
+  // #home-v {
+  //   position: absolute;
+  //   width: get-vw-mob(145.6px);
+  //   height: get-vh-mob(81.6px);
+  //   top: get-vh-mob(450.2px);
+  //   left: get-vw-mob(153px);
+  // }
+  // .home-video {
+  //   position: absolute;
+  //   background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
+  //   background-repeat: no-repeat;
+  //   // background-size: contain;
+  //   width: 20%;
+  //   height: 80%;
+  //   // height: get-vh-mob(136px);
+  //   // object-fit: contain;
+  //   top: get-vh-mob(423px);
+  //   left: get-vw-mob(120px);
+  //     #home-v {
+  //   position: absolute;
+  //   width: 50%;
+  //   height: 10%;
+  //   // width: get-vw-mob(145.6px);
+  //   // height: get-vh-mob(81.6px);
+  //   top: get-vh-mob(450.2px);
+  //   left: get-vw-mob(153px);
   //   }
-//   }
+  //
+  // }
+  .fadeIn {
+    opacity: 1;
+  }
 
-//   
-
-//   .fadeIn {
-//     opacity: 1;
-//   }
-
-//   #modal {
-//     position: absolute;
-//     top: get-vh-mob(-3px);
-//     width: 100%;
-//     height: 100%;
-//     left: get-vw-mob(0px);
-//     right: get-vw-mob(10px);
-//     background-image: url('/assets/Elements/Home/Home-infobox-blue-02.svg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     z-index: 3000;
-
-//     .words {
-
-//       position: absolute;
-//       top: get-vh-mob(60px);
-//       padding-left: get-vw-mob(0px);
-//       width: get-vw-mob(270px);
-//       background-size: contain;
-//       height: get-vh-mob(437px);
-//       left: get-vw-mob(45px);
-//       font-family: TimesNewRomanPSMT;
-//       font-size: get-vh-mob(18px);
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 1.06;
-//       letter-spacing: get-vw-mob(-0.8px);
-//       text-align: left;
-//       color: #222222;
-//     }
-//   }
-
-//   .clicked-gallery-img {
-//     width: 125.06667vw;
-//     height: 85.42579vh;
-//     position: fixed;
-//     top: 32.68966vh;
-//     left: 3.46667vw;
-//     cursor: pointer;
-//   }
-// }
-
-
+  //   .clicked-gallery-img {
+  //     width: 125.06667vw;
+  //     height: 85.42579vh;
+  //     position: fixed;
+  //     top: 32.68966vh;
+  //     left: 3.46667vw;
+  //     cursor: pointer;
+  //   }
+}
+//closing media //
 
 
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
@@ -754,9 +626,6 @@ and (orientation: portrait) {
 //     and (max-device-width: 1024px)
 //     and (orientation: portrait)
 //     and (-webkit-min-device-pixel-ratio: 1) {
-
-
-
 //   #gallery-space-img {
 //     // width: get-vw(750px);
 //     height: get-vh(570px);
@@ -766,8 +635,6 @@ and (orientation: portrait) {
 //     cursor: pointer;
 //     z-index: 40px;
 //   }
-
-
 //   #home-red-line {
 //     width: get-vw(401.8px);
 //     height: get-vh(217.3px);
@@ -777,7 +644,6 @@ and (orientation: portrait) {
 //     left: get-vw(70px);
 //     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 //   }
-
 //   #home-green-line {
 //     width: get-vw(350px);
 //     height: get-vh(160px);
@@ -788,7 +654,6 @@ and (orientation: portrait) {
 //     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 //     z-index: 10;
 //   }
-
 //   #home-blue-line {
 //     width: get-vw(299px);
 //     height: get-vh(203.5px);
@@ -798,8 +663,6 @@ and (orientation: portrait) {
 //     left: get-vw(1250px);
 //     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 //   }
-
-
 //     .homepage-tdevents {
 //     z-index: 20;
 //     bottom: 10.60156vh;
@@ -818,8 +681,6 @@ and (orientation: portrait) {
 //     text-align: left;
 //     color: #000000;
 // }
-
-
 // .home-video {
 //   position: absolute;
 //   background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
@@ -833,7 +694,6 @@ and (orientation: portrait) {
 //   left: get-vw(85px);
 //   object-fit: contain;
 // }
-
 // #home-v {
 //   position: absolute;
 //   width: 17.46753vw;
@@ -841,8 +701,6 @@ and (orientation: portrait) {
 //   left: 10.07792vw;
 //   top: 64.28906vh;
 // }
-
-
 // #modal {
 //   position: absolute;
 //   top: get-vh(128px);
@@ -859,7 +717,6 @@ and (orientation: portrait) {
 //   align-content: center;
 //   z-index: 1000;
 //   cursor: pointer;
-
 //   .words {
 //     width: get-vw(680px);
 //     // height: get-vh(553px);
@@ -884,9 +741,7 @@ and (orientation: portrait) {
 //     cursor: pointer;
 //   }
 // }
-
 // }
-
 // ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
 //  /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE
 // @media only screen
@@ -894,7 +749,6 @@ and (orientation: portrait) {
 //   and (max-device-width: 1024px)
 //   and (orientation: landscape)
 //   and (-webkit-min-device-pixel-ratio: 1) {
-
 //     .homepage-tdevents {
 //       // width: get-vw(66px);
 //       height: get-vh(46px);
@@ -914,7 +768,6 @@ and (orientation: portrait) {
 //       text-decoration: none;
 //       color: black;
 //     }
-
 //     #modal {
 //       position: absolute;
 //       top: get-vh(128px);
@@ -931,7 +784,6 @@ and (orientation: portrait) {
 //       align-content: center;
 //       z-index: 1000;
 //       cursor: pointer;
-
 //       .words {
 //         width: get-vw(400px);
 //         height: get-vh(553px);
@@ -956,11 +808,8 @@ and (orientation: portrait) {
 //         cursor: pointer;
 //       }
 //     }
-
 // }
-
 //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO //////// IPAD PRO MODAL SPECIFIC
-
 // @media only screen
 //   and (max-device-width: 1366px)
 //   and (min-device-width: 1024px)
