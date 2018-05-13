@@ -59,17 +59,6 @@ function showDesktopEvents() {
     }
   });
 
-$(".eventDetails").mouseover(function() {
-  if (window.location.pathname == '/events') {
-    $(".eventDetails").removeClass('ddEventActive');
-    $(this).addClass('ddEventActive');
-  }
-
-  if (window.location.pathname == '/testdrive') {
-    $(".eventDetails").removeClass('tdEventActive');
-    $(this).addClass('tdEventActive');
-  }
-});
 }
 
 ///// MOBILE EVENTS PAGE ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS ///// ///// MOBILE EVENTS /////
