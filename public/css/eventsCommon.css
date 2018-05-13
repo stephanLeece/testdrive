@@ -1,5 +1,15 @@
+.eventsContainer {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 5.9375vw);
+  grid-template-rows: repeat(12, 8.33333%);
+  grid-column-gap: 2.34375vw;
+  margin: 0px;
+  overflow-x: hidden; }
+
 .eventsInfoBox {
-  grid-column: 6 / 11;
+  grid-column: 5 / 10;
   grid-row: 1 / 12;
   display: flex;
   flex-direction: column;
@@ -35,13 +45,13 @@
   display: none; }
 
 .eventList {
-  grid-column: 2 /  5;
+  grid-column: 1 / 4;
   grid-row: 3 / span 9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 3.63636vw; }
+  margin-left: 9.375vw; }
 
 .eventDetails {
   display: flex;
