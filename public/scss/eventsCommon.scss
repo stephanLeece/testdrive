@@ -136,6 +136,34 @@ and (orientation: portrait) {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    .pageBreadCrumb {
+      grid-column: 1 / 5;
+      grid-row: 1 / 2;
+      margin-top: 18.814814814814813vh;
+      display: inline;
+      font-family: TimesNewRomanPSMT;
+    font-size: 41px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -2.4px;
+    text-align: center;
+    color: #ffb760;
+    -webkit-text-stroke: 0 #979797;
+    }
+    .burger {
+      display: inline-block;
+      grid-column: 1 / 5;
+      grid-row: 1 / 1;
+      align-self: center;
+      margin: auto;
+      z-index: 99999;
+    }
+
+    #backButton {
+      display: none;
+    }
    }
 
    .eventList {
