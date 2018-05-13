@@ -54,7 +54,7 @@
   text-align: left;
 }
 
-.eventsInfoBoxHidden {
+.eventsInfoHidden {
   display: none;
 }
 
@@ -114,129 +114,115 @@
 
 
 
-/////////////MOBILE /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE  /////////////MOBILE
-@function get-vw-mob($object) {
-  $vw: (360 * 0.01) * 1px;
+@media only screen
+and (min-device-width: 300px)
+and (max-device-width: 700px)
+and (orientation: portrait) {
+
+
+@function get-mob-vw($object) {
+  $vw: (300 * 0.01) * 1px;
   @return ($object / $vw) * 1vw;
 }
-@function get-vh-mob($object) {
+@function get-mob-vh($object) {
   $vh: (667 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  #eve-disp {
-    display: block;
-    height: get-vh-mob(46px);
-    width: get-vw-mob(112px);
-
-    p {
-      font-size: 41px;
-      text-align: center;
-      font-family: TimesNewRomanPSMT;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -2.4px;
-      text-align: center;
-      color: #ffb760;
-      -webkit-text-stroke: 0 #979797;
-    }
-  }
-
-  .eventList {
-    position: initial;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-between;
-    // min-height: 44.97751vh;
-    // height: 250px;
-    height: 70%;
+  .eventsContainer {
+    display: grid;
+    grid-template-rows: 32.2962962962963vh 1fr 1fr;
+    grid-template-columns: repeat(4, 22.22222222222222vw);
+    grid-column-gap: 2.7777777777777777vw;
+    height: 100%;
     width: 100%;
-    margin-left: -0.83333vw;
-    // overflow-y: scroll;
-    // overflow-x: hidden;
-  }
+    overflow-x: hidden;
+   }
 
-  .eventDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: margin-left;
-    align-items: margin-left;
-    font-family: TimesNewRomanPSMT;
-    font-size: 5.55556vw;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.85;
-    letter-spacing: -0.25vw;
-    text-align: left;
-    color: #222222;
-    width: 85.55556vw;
-    height: 16.17691vh;
-    // margin: 0px;
-    margin-left: 0;
-    padding: 25px;
-  }
+   .eventList {
+     grid-column: 1 / 4;
+     grid-row: 2 / 3;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     margin: 0;
+   }
 
-  .eventDetails div p:first-child {
-    margin-left: 10.91667vw;
-    margin-top: 4.16792vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.18;
-    letter-spacing: -0.9px;
-    color: #222222;
-  }
+   .eventDetails {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 92.26666666666667vw;
+     height: 16.041979010494753vh;
+      padding: 10px;
+      margin: 0;
+     p {
+       margin: 0;
+       padding: 0;
+     }
 
-  .eventDetails div p:nth-child(2) {
-    margin-left: 10.91667vw;
-    margin-bottom: 4.52774vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.85;
-    letter-spacing: -0.9px;
-    color: #222222;
-  }
+     .eventsDetailDate {
+       margin-left: 50px;
+       font-family: TimesNewRomanPSMT;
+       font-size: 14px;
+       font-weight: normal;
+       font-style: normal;
+       font-stretch: normal;
+       letter-spacing: -0.9px;
+       text-align: left;
+       color: #222222;
+     }
+
+     .eventsDetailTitle {
+       margin-left: 50px;
+       font-family: TimesNewRomanPSMT;
+       font-size: 20px;
+       font-weight: normal;
+       font-style: normal;
+       font-stretch: normal;
+       letter-spacing: -0.9px;
+       text-align: left;
+       color: #222222;
+     }
+   }
+
+.eventDetailsHidden {
+  display: none;
+}
 
   .eventsInfoBox {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
     display: flex;
-    justify-content: center;
-    width: auto;
-    height: 72vh;
-    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-size: contain;
     background-repeat: no-repeat;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    transition: height 0.4s ease-in-out;
-  }
-  // infobox slider /////
-
-  .eventsInfoBoxClosed {
-    height: 0;
+    align-self: flex-end;
+    transition: all 0.6s;
   }
 
-  .eventsInfoBox div {
-    width: 94%;
-  }
+
+.eventInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.eventsInfoHidden {
+  display: none;
+}
 
   .events-img {
-    width: 98%;
-    margin-left: 0.77922vw;
-    margin-right: 0.77922vw;
+    width: 100%;
+    height: auto;
   }
 
   .event-top-title {
-    width: 101.94444vw;
-    height: 5.24738vh;
-    top: 1.94903vh;
+    width: get-vw(723px);
+    height: get-vh(33px);
     font-family: TimesNewRomanPSMT;
     font-size: 30px;
     font-weight: normal;
@@ -247,19 +233,12 @@
     text-align: left;
   }
 
-  .ddevent-top-title {
-    width: 101.94444vw;
-    height: 5.24738vh;
-    top: 1.94903vh;
-    font-family: TimesNewRomanPSMT;
-    font-size: 30px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -1.9px;
-    text-align: left;
+  .eventsInfoBoxHidden {
+    display: none;
   }
+
+
+
 }
 /// PLEASE Leave this here :) // Working on this section
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
