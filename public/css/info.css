@@ -21,7 +21,7 @@
 #infoContactInfo {
   width: 32.23377vw;
   height: 90%;
-  grid-column: 2 / span 5;
+  grid-column: 1 / span 5;
   grid-row: 5 / span 9;
   justify-self: center;
   align-self: center;
@@ -39,8 +39,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin-top: -3vh; }
+    align-content: center; }
     #infoContactInfo .info-contact p {
       font-size: 1.95312vh;
       font-family: TimesNewRomanPSMT;
@@ -55,14 +54,15 @@
       width: 21.36364vw;
       height: 3.90625vh;
       margin-top: 0.39062vh;
-      margin-left: 3vw;
       display: flex;
       justify-content: start;
       align-items: center;
-      border: 2px solid black; }
+      border: 2px solid black;
+      margin-left: 3vw; }
       #infoContactInfo .info-contact form input {
         height: 100%;
-        font-size: 1.2987vw;
+        width: 66%;
+        font-size: 20px;
         background: none;
         border: none;
         outline: none;
@@ -70,12 +70,13 @@
         text-shadow: 1px 1px black; }
       #infoContactInfo .info-contact form button {
         height: 110%;
-        width: 25vw;
+        width: 33%;
         border: inherit;
         background: white;
         font-size: 16px;
         font-weight: bold;
-        text-shadow: 1px 1px black; }
+        text-shadow: 1px 1px black;
+        cursor: pointer; }
 
 .sign-up-to-our-maili {
   margin-top: -1.46484vh;
@@ -124,6 +125,95 @@
 a:hover {
   color: orange; }
 
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #infoMap {
+    grid-column: 6 / 11; }
+  #infoContactInfo {
+    grid-column: 2 / 5;
+    grid-row: 4 / span 7;
+    width: 38vw;
+    height: 60vh;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 1.05;
+    letter-spacing: -0.05844vw;
+    text-align: left;
+    color: #222222; }
+    #infoContactInfo .info-contact {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #infoContactInfo .info-contact form {
+        width: 80%;
+        height: 3.90625vh;
+        margin-top: 0.39062vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #infoContactInfo .info-contact form button {
+          width: 10vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        margin-top: -1.46484vh;
+        font-family: TimesNewRomanPSMT;
+        font-size: 1.94805vw;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.05;
+        letter-spacing: -0.05844vw;
+        text-align: left;
+        color: #222222;
+        text-shadow: 1px 1px black; }
+      #infoContactInfo .info-contact input {
+        width: 8.44156vw;
+        height: 4.39453vh;
+        font-size: 40px;
+        background: none;
+        border: none;
+        outline: none;
+        font-family: TimesNewRomanPSMT;
+        text-shadow: 1px 1px black; } }
+
+@media only screen and (min-device-width: 701px) and (orientation: portrait) {
+  #infoMap {
+    grid-column: 6 / 12;
+    grid-row: 2 / span 5; }
+  #infoContactInfo {
+    grid-column: 1 / 5;
+    grid-row: 4 / span 9;
+    justify-self: start;
+    align-self: center;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-size: 50vh; }
+    #infoContactInfo .info-contact {
+      margin-left: 6vw; }
+      #infoContactInfo .info-contact form {
+        width: 47.33766vw;
+        height: 3.90625vh; }
+        #infoContactInfo .info-contact form input {
+          width: 65%; }
+        #infoContactInfo .info-contact form button {
+          width: 35%; }
+  #testdriveLogoInfo {
+    grid-row: 11 / 12;
+    height: 100%;
+    justify-self: center;
+    align-self: center; }
+    #testdriveLogoInfo img {
+      height: 9.76562vh;
+      width: 18.83117vw; }
+  #credits {
+    font-size: 12px; } }
+
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
@@ -164,10 +254,7 @@ a:hover {
     object-fit: contain;
     background-color: #ffffff;
     box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
-    border: solid 1px #979797;
-    background-image: url("/assets/Elements/Info/Info-contact-outline.png");
-    background-size: 100vh;
-    background-repeat: no-repeat; }
+    border: solid 1px #979797; }
   #infoContactInfo {
     grid-column: 1 / span 4;
     grid-row: 5 / span 9;
@@ -180,8 +267,7 @@ a:hover {
     flex-direction: column;
     justify-content: start;
     color: #222222;
-    align-self: start;
-    padding-left: 5vw; }
+    align-self: start; }
     #infoContactInfo .info-contact {
       height: 100%;
       width: 100%;

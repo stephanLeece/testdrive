@@ -158,7 +158,12 @@ app.get('/testdrive', function(req, res) {
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
 });
-app.post('/info', function(req, res) {
+app.post('/new-contact', function(req, res) {
+  console.log('in it', req.body)
+  const { userEmail } = req.body;
+  if (!userEmail) {
+    res.send(400);
+  }
   let mailOptions = {
     from: 'drivedrive.testdrive@gmail.com', // sender address
     to: 'drivedrive.testdrive@gmail.com', // list of receivers

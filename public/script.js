@@ -2,7 +2,6 @@
 // ---------------------------------- homepage functions -----------------
 
 let backButton = $("#backButton");
-console.log('hey girl')
 let swiped = false;
 backButton.on('click', () => {
     window.history.back();

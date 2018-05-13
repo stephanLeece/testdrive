@@ -15,7 +15,6 @@ $(window).on('load', () => {
     }
     if (window.location.pathname == '/info') {
         initMap();
-        console.log('loading map');
     }
 
 
