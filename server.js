@@ -28,6 +28,7 @@ const app = express();
 // View engine setup
 app.engine('handlebars', expressHandlebars());
 app.set('view engine', 'handlebars');
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + `/public`));
@@ -159,16 +160,16 @@ app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
 });
 app.post('/new-contact', function(req, res) {
-  console.log('in it', req.body)
-  const { userEmail } = req.body;
-  if (!userEmail) {
+  const { email } = req.body;
+  if (!email) {
     res.send(400);
+    return;
   }
   let mailOptions = {
     from: 'drivedrive.testdrive@gmail.com', // sender address
     to: 'drivedrive.testdrive@gmail.com', // list of receivers
     subject: 'new user sign up:', // Subject line
-    text: req.body.userEmail, // plain text body
+    text: email, // plain text body
   };
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
@@ -176,7 +177,7 @@ app.post('/new-contact', function(req, res) {
       return console.log(error);
     }
   });
-  res.render('info', {layout: 'layout'});
+  res.send(201);
 });
 
 app.listen(process.env.PORT || 8080, () => console.log('Listening on port 8080'));

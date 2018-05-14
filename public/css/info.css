@@ -11,6 +11,15 @@
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
+#error {
+  display: none;
+  color: red;
+  height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+
 #infoContactBg {
   width: 28.98701vw;
   height: auto;
@@ -41,7 +50,7 @@
     justify-content: center;
     align-content: center; }
     #infoContactInfo .info-contact p {
-      font-size: 1.95313vh;
+      font-size: 1.95312vh;
       font-family: TimesNewRomanPSMT;
       font-weight: normal;
       font-style: normal;
@@ -53,7 +62,7 @@
     #infoContactInfo .info-contact form {
       width: 21.36364vw;
       height: 3.90625vh;
-      margin-top: 0.39063vh;
+      margin-top: 0.39062vh;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -151,7 +160,7 @@ a:hover {
       #infoContactInfo .info-contact form {
         width: 80%;
         height: 3.90625vh;
-        margin-top: 0.39063vh;
+        margin-top: 0.39062vh;
         display: flex;
         justify-content: center;
         align-items: center; }
@@ -209,7 +218,7 @@ a:hover {
     justify-self: center;
     align-self: center; }
     #testdriveLogoInfo img {
-      height: 9.76563vh;
+      height: 9.76562vh;
       width: 18.83117vw; }
   #credits {
     font-size: 12px; } }
@@ -276,7 +285,7 @@ a:hover {
       justify-content: start;
       margin-top: 3vh; }
       #infoContactInfo .info-contact p {
-        font-size: 1.95313vh;
+        font-size: 1.95312vh;
         font-family: TimesNewRomanPSMT;
         font-weight: normal;
         font-style: normal;
@@ -288,7 +297,7 @@ a:hover {
       #infoContactInfo .info-contact form {
         width: 88.61111vw;
         height: 4.49775vh;
-        margin-top: 0.39063vh;
+        margin-top: 0.39062vh;
         margin-left: 3vw;
         display: flex;
         justify-content: start;

@@ -62,19 +62,30 @@ $(function() {
     });
   });
 
-
-// // SHOW / HIDE MODAL - MOBILE ONLY
-// function showMobileModal() {
-//     $('#modal').css({ "visibility": "visible" });
-//     $(".shadowfilter").removeAttr('id').addClass("clicked-gallery-img");
-// }
-//
-// function hideMobileModal() {
-//     $('#modal').css({ "opacity": "0" });
-//     $(".shadowfilter").attr('id', "gallery-space-img").removeClass("clicked-gallery-img");
-// }
-//
-
+// Handles post from form
+$('#c-form').submit(((e) => {
+    e.preventDefault();
+    const email = e.target[0].value;
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    if (!email) {
+        $('#error').css({ 'display': 'block' })
+    }
+    return fetch(`/new-contact`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({email}),
+    }).then((res) => {
+        if (res.status === 201) {
+            alert('Thanks for subscribing!! ;)');
+            $('#error').css({ 'display': 'none' });
+            return;
+        }
+        $('#error').css({ 'display': 'block' })
+    }).catch((err) => {
+        $('#error').css({ 'display': 'block' })
+    })
+}))
 
 
 // FADE OUT HULK IMAGE & FADE IN HOME PAGE
@@ -99,38 +110,27 @@ $(".burger").on("click", function() {
     })
 
     if (location.pathname == "/info") {
-
         $('body').css({
             'background': 'none'
         });
-
         $("#hide-for-mobile").css({
             "display": "none"
         });
-
         $(".mob-container").animate({ opacity: 1 }).css({
             "z-index": "0"
         });
-
     }
-
     $(".mob-container").animate({ opacity: 1 }).css({
         "left": "0px"
     });
-
     $(".tdLogo").css({
         "visibility": "hidden"
     });
-
     $('.burger').hide();
-
     $("body").css({
         "background-color": "white"
     });
-
-
 });
-
 
 $(".x").on('click', function() {
 
