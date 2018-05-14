@@ -31,7 +31,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 1.95313vh;
+    top: 1.95312vh;
     left: 1.2987vw; }
 
 .home-video {
@@ -42,7 +42,7 @@
   justify-self: center;
   align-self: end; }
   .home-video div {
-    height: 26.95313vh;
+    height: 26.95312vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;
@@ -97,7 +97,7 @@
   align-content: center; }
   #modal .words {
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95313vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -306,38 +306,37 @@
     grid-row: 1;
     grid-column: 1 / span 3;
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     background-color: white;
     flex-direction: column;
     align-content: center;
     justify-content: start;
-    z-index: 300000; }
+    z-index: 300000;
+    overflow: hidden;
+    position: fixed; }
     .mob-container #mob-dd-menu {
-      width: 75%;
-      height: 90%;
-      margin-left: 13vw;
-      margin-top: 4.5vh; }
-    .mob-container .x {
-      display: inline-block;
+      grid-row: 1;
       grid-column: 1 / span 3;
-      grid-row: 2;
-      justify-self: center;
-      align-self: center;
-      margin-top: 4vh;
-      margin-left: -4vw; }
+      width: 44%;
+      margin-left: 12vw;
+      margin-top: 4.3vh; }
+    .mob-container .x {
+      display: flex;
+      margin: 8vh; }
     .mob-container .mob-con {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 100%; }
+      width: 50%; }
       .mob-container .mob-con .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh; }
+        margin-top: -5vh;
+        margin-left: 9vw; }
         .mob-container .mob-con .links #mob-eve {
           margin-bottom: 4vh;
           font-size: 41px;
@@ -379,7 +378,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        margin-left: 10vw; }
         .mob-container .mob-con #td-mob #mob-test-eve {
           text-decoration: none;
           margin-top: 2vh;
@@ -426,7 +426,7 @@
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: 10; }
   #modal {
-    grid-row: 2 / span 4;
+    grid-row: 5 / span 4;
     grid-column: 1 / span 3;
     height: 90vh;
     width: 100%;

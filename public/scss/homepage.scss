@@ -342,6 +342,7 @@
     grid-column: 1 / span 3;
     grid-row: 5;
     justify-self: center;
+
     img {
       height: 20vh;
       width: 95%;
@@ -391,29 +392,26 @@
     grid-row: 1;
     grid-column: 1 / span 3;
     height: 100vh;
-    width: 100%;
+    width: 100vh;
     background-color: white;
     flex-direction: column;
     align-content: center;
     justify-content: start;
     z-index: 300000;
+    overflow: hidden;
+    position:fixed;
 
     #mob-dd-menu {
-      width: 75%;
-      height: 90%;
-      margin-left: 13vw;
-      // margin-left: 0;
-      margin-top: 4.5vh;
+      grid-row: 1;
+      grid-column: 1 / span 3;
+      width: 44%;
+      margin-left: 12vw;
+      margin-top: 4.3vh;
     }
 
     .x {
-      display: inline-block;
-      grid-column: 1 / span 3;
-      grid-row: 2;
-      justify-self: center;
-      align-self: center;
-      margin-top: 4vh;
-      margin-left: -4vw;
+      display: flex;
+      margin: 8vh;
     }
 
     .mob-con {
@@ -422,14 +420,15 @@
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 100%;
+      width: 50%;
 
       .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh;
+        margin-top: -5vh;
+        margin-left: 9vw;
 
         #mob-eve {
           margin-bottom: 4vh;
@@ -480,6 +479,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-left: 10vw;
 
         #mob-test-eve {
           text-decoration: none;
@@ -539,29 +539,29 @@
     z-index: 10;
   }
 
-#modal {
-  grid-row: 2 / span 4;
-  grid-column: 1 / span 3;
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  justify-content: start;
-  padding: 2vh 2vh 2vh 3vh;
-  margin-left: -5vh;
+  #modal {
+    grid-row: 5 / span 4;
+    grid-column: 1 / span 3;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 2vh 2vh 2vh 3vh;
+    margin-left: -5vh;
 
-  .words {
-    width: get-mob-vh(289px);
-    height: get-mob-vh(437px);
-    font-size: get-mob-vh(18px);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.06;
-    letter-spacing: -0.8px;
-    text-align: left;
-    color: #222222;
+    .words {
+      width: get-mob-vh(289px);
+      height: get-mob-vh(437px);
+      font-size: get-mob-vh(18px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.06;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: #222222;
+    }
   }
-}
   //VIDEO
   // .home-video {
   //   position: absolute;

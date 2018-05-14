@@ -86,13 +86,17 @@ function fadeIntoImg() {
 fadeIntoImg();
 
 
-
-
 // HAMBURGER MENU FUNCTIONALITY
 // ~~~~~~~~ MOBILE ~~~~~~~~
 $(".burger").on("click", function() {
 
-    $(".mob-container").show();
+    $(".mob-container").css({
+        'display': 'flex',
+    });
+
+    $('#gallery-space-img').css({
+        'display': 'none'
+    })
 
     if (location.pathname == "/info") {
 
@@ -128,7 +132,6 @@ $(".burger").on("click", function() {
 });
 
 
-// CLOSE THE MENU - MOBILE ONLY
 $(".x").on('click', function() {
 
     if (location.pathname == "/info") {
@@ -147,8 +150,12 @@ $(".x").on('click', function() {
     }
 
     $(".mob-container").css({
-        "left": "100%"
+        'display': 'none'
     });
+
+    $('#gallery-space-img').css({
+        'display': 'block'
+    })
 
     $(".tdLogo").css({
         "visibility": "visible"
@@ -158,8 +165,6 @@ $(".x").on('click', function() {
     $('.burger').show();
 
 });
-
-
 
 
 // ------------------------------- video functions ----------
