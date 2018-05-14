@@ -115,6 +115,7 @@
   z-index: 1000;
   cursor: pointer;
   display: flex;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -297,9 +298,7 @@
   -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
 }
 /* STYLING FOR MODAL */
-#modal {
-  opacity: 0;
-}
+
 /* STYLING FOR THE HULK IMAGE THAT FADES OUT */
 #halk {
   position: absolute;
@@ -545,15 +544,16 @@
     grid-column: 1 / span 3;
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: none;
+    opacity: 1;
+    z-index: 333334;
     justify-content: start;
     padding: 8vh 5vh 14vh 8vh;
-    z-index: -30000;
     background-color: white;
     background-size: 100% 90%;
     margin-top: 15vh;
     margin-left: -18vw;
-
+    opacity: 1;
     .words {
       width: get-mob-vh(289px);
       height: get-mob-vh(437px);
@@ -575,7 +575,7 @@
       margin-top: 8vh;
     }
   }
-  
+
   .home-video {
     grid-column: 2;
     grid-row: 3 / span 5;
@@ -597,7 +597,7 @@
       #home-v {
         grid-column: 2;
         grid-row: 3;
-        z-index: 333333;
+        z-index: 1000;
         margin-bottom: 23vh;
         width: 25vh;
         object-fit: contain;

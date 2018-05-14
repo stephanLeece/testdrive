@@ -6,61 +6,66 @@ backButton.on('click', () => {
     window.history.back();
 });
 
-// SHOW MODAL ON HOVER -- DESKTOP ONLY
-$("#modal").hover(function() {
-    $('#modal').css({"opacity": "1"});
-})
+// activate function sets for either desktop or mobile
+if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
+      mobileHomepageFunctions();
+} else {
+    desktopHomepageFunctions();
+}
 
-// HIDE MODAL ON HOVER -- DESKTOP ONLY
-$("#modal").on('mouseleave', function() {
-    hideMobileModal();
-});
+window.addEventListener("resize", function() {
+  if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
+        mobileHomepageFunctions();
+  } else {
+
+      desktopHomepageFunctions();
+  }
+}, false);
+
+function desktopHomepageFunctions() {
+  $('#modal').css({'display': 'flex'});
+  $('#modal').css({'opacity': '0'});
+  $("#modal").hover(
+    function() {$('#modal').css({'opacity': '1'})},
+    function() {$('#modal').css({'opacity': '0'})}
+  );
+
+  $('#modal').on("click", function() {
+    $('#modal').css({'opacity': '0'})
+  });
+
+  $('#gallery-space-img').on("click", function() {
+    $('#modal').css({'opacity': '1'})
+  });
+
+};
 
 
 
 
-// SHOW MODAL -- WORKS FOR BOTH MOBILE AND DESKTOP
-$(".shadowfilter").on('click', function() {
-
-    if ($(window).width() < 700) {
-        showMobileModal();
-    } else {
-        showModal();
-    }
-
-});
-
-
-// FUNCTION TO SHOW MODAL ON HOME PAGE
-// ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
-// function showModal() {
-//
-//     $("#gallery-space-img").on('click', function() {
-//         $('#modal').css({"visibility": "visible"});
-//
-//     });
-// }
-
-
-$(function() {
+function mobileHomepageFunctions() {
+  $(function() {
     $('#gallery-space-img').swipe( {
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         if (direction == "left") {
-          showMobileModal();
+          $('#modal').css({'display': 'flex'});
+          $('#modal').css({'opacity': '1'});
         }
       },
-       threshold: 20
+      threshold: 20
     });
 
     $('#modal').swipe( {
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      if (direction == "right") {
-          hideMobileModal();
+        if (direction == "right") {
+          $('#modal').css({'display': 'none'});
         }
       },
-       threshold:20
+      threshold:20
     });
   });
+}
+
 
 // Handles post from form
 $('#c-form').submit(((e) => {
