@@ -145,9 +145,7 @@
       display: inline-block;
       grid-column: 1 / 5;
       grid-row: 1 / 1;
-      align-self: center;
-      margin: auto;
-      z-index: 99999; }
+      align-self: center; }
     .catalogueContainer #backButton {
       display: none; }
   #artist-container {

@@ -182,8 +182,8 @@ and (orientation: portrait) {
       grid-column: 1 / 5;
       grid-row: 1 / 1;
       align-self: center;
-      margin: auto;
-      z-index: 99999;
+      // margin: auto;
+      // z-index: 99999;
     }
 
     #backButton {

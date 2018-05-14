@@ -33,13 +33,13 @@ $(".shadowfilter").on('click', function() {
 
 // FUNCTION TO SHOW MODAL ON HOME PAGE
 // ~~~~~~~~ FULL-SCREEN - DESKTOP ~~~~~~~~
-function showModal() {
-
-    $("#gallery-space-img").on('click', function() {
-        $('#modal').css({"visibility": "visible"});
-
-    });
-}
+// function showModal() {
+//
+//     $("#gallery-space-img").on('click', function() {
+//         $('#modal').css({"visibility": "visible"});
+//
+//     });
+// }
 
 
 $(function() {
@@ -63,17 +63,17 @@ $(function() {
   });
 
 
-// SHOW / HIDE MODAL - MOBILE ONLY
-function showMobileModal() {
-    $('#modal').css({ "visibility": "visible" });
-    $(".shadowfilter").removeAttr('id').addClass("clicked-gallery-img");
-}
-
-function hideMobileModal() {
-    $('#modal').css({ "opacity": "0" });
-    $(".shadowfilter").attr('id', "gallery-space-img").removeClass("clicked-gallery-img");
-}
-
+// // SHOW / HIDE MODAL - MOBILE ONLY
+// function showMobileModal() {
+//     $('#modal').css({ "visibility": "visible" });
+//     $(".shadowfilter").removeAttr('id').addClass("clicked-gallery-img");
+// }
+//
+// function hideMobileModal() {
+//     $('#modal').css({ "opacity": "0" });
+//     $(".shadowfilter").attr('id', "gallery-space-img").removeClass("clicked-gallery-img");
+// }
+//
 
 
 
