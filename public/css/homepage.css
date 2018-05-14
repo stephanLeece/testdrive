@@ -315,7 +315,8 @@
     justify-content: start;
     z-index: 300000;
     overflow: hidden;
-    position: fixed; }
+    position: absolute;
+    top: 0px; }
     .mob-container #mob-dd-menu {
       grid-row: 1;
       grid-column: 1 / span 3;

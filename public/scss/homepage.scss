@@ -399,7 +399,8 @@
     justify-content: start;
     z-index: 300000;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
+    top: 0px;
 
     #mob-dd-menu {
       grid-row: 1;
