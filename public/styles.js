@@ -1,7 +1,7 @@
 
 // -------- view dependent styling --------------
 if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
-      showMobileEvents();
+  showMobileEvents();
 } else {
   showDesktopEvents();
 }
@@ -91,7 +91,6 @@ console.log('showing mobile');
       '-ms-transform-origin': '50% 100%',
       'transform-origin': '50% 100%',
     });
-    $('.eventsInfoBox').find('div').addClass('eventsInfoHidden');
     $('.eventsInfoBox div:first-child').removeClass('eventsInfoHidden');
 
   // events to trigger on mobile user interaction
@@ -102,6 +101,7 @@ console.log('showing mobile');
     $(".eventDetails").addClass('eventDetailsHidden')
     $(this).removeClass('eventDetailsHidden');
     $(".eventsInfoBox").css({
+      'display': 'flex',
       '-webkit-transform': 'scale(1 , 1)',
       '-moz-transform': 'scale(1 , 1)',
       '-o-transform': 'scale(1 , 1)',
