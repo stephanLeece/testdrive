@@ -32,21 +32,21 @@
 
 .drivedrive-menu {
   grid-column: 1 / span 4;
-  grid-row: 1 / span 4;
+  grid-row: 2 / span 4;
   justify-self: start;
-  // top: 5vh;
-  left: 10vw;
+  margin-top: -4vh;
+  margin-left: 2vw;
   height: get-vh(144.84px);
   width: get-vw(294.22px);
 
   ul {
     height: auto;
     width: auto;
-    position: absolute;
+    // position: absolute;
     display: flex;
     flex-direction: column;
-    top: get-vh(20px);
-    left: get-vw(20px);
+    // top: get-vh(54px);
+    // left: get-vw(92px);
   }
 }
 

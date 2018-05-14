@@ -20,19 +20,17 @@
 
 .drivedrive-menu {
   grid-column: 1 / span 4;
-  grid-row: 1 / span 4;
+  grid-row: 2 / span 4;
   justify-self: start;
-  left: 10vw;
+  margin-top: -4vh;
+  margin-left: 2vw;
   height: 14.14453vh;
   width: 19.10519vw; }
   .drivedrive-menu ul {
     height: auto;
     width: auto;
-    position: absolute;
     display: flex;
-    flex-direction: column;
-    top: 1.95312vh;
-    left: 1.2987vw; }
+    flex-direction: column; }
 
 .home-video {
   grid-column: 1 / span 4;

@@ -22,7 +22,7 @@
 }
 
 #artist-container {
-  grid-row: 4 / 8;
+  grid-row: 5 / 8;
   grid-column: 2 / 5;
   display: flex;
   flex-direction: column;
@@ -32,17 +32,21 @@
   z-index: 1000;
   height: 80.85938vh;
   width: 21.640625vw;
+  margin-left: -3vw;
+
 }
 
 #artist-containerBackground {
-  grid-row: 4 / 8;
+  grid-row: 5 / 8;
   grid-column: 2 / 5;
-  height: auto;
+  // height: 100vh;
   width: 23.5vw;
+  margin-left: -3vw;
+
 }
 
 .artists {
-  margin-top: 5.5vh;
+  margin-top: 6vh;
   height: inherit;
   font-family: TimesNewRomanPSMT;
   font-size: 1.2987vw;
@@ -51,7 +55,7 @@
   font-stretch: normal;
   letter-spacing: -0.12338vw;
   text-align: left;
-  color: red;
+  color: black;
   ul {
 
     margin: 0;
@@ -70,11 +74,11 @@
 }
 
 #catalogue-line-blue {
-  grid-column: 10 / span 12;
+  grid-column: 11 / span 12;
   grid-row: 1 / span 12;
   margin-top: 21.2890625vh;
-  height: auto;
-  width: 19.453125vw;
+  margin-left: -5vw;
+  width: 14vw;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
 }
 
@@ -119,7 +123,7 @@
   text-decoration: none;
   color: black;
   text-align: left;
-  font-size: 30px;
+  // font-size: 30px;
 }
 
 .pdf:hover {
@@ -130,7 +134,7 @@
 
 #video-container {
   grid-column: 9 /  13;
-  grid-row: 8 / 13;
+  grid-row: 7 / 11;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,8 +143,9 @@
   background-position: center;
   background-size: contain;
   video {
-    width: 38vw;
-      height: 33vh;
+    margin-right: 1vh;
+    width: 55%;
+    height: 75%;
   }
 }
 
