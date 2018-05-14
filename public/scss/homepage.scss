@@ -574,50 +574,39 @@
       margin-top: 8vh;
     }
   }
+  
+  .home-video {
+    grid-column: 2;
+    grid-row: 3 / span 5;
+    height: 70%;
+    width: 100%;
+    justify-self: center;
+    justify-content: center;
+
+    div {
+
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      margin-top: 15vh;
+      margin-left: -8vw;
+      padding: 10vh;
+      z-index: 333;
+
+      #home-v {
+        grid-column: 2;
+        grid-row: 3;
+        z-index: 333333;
+        margin-bottom: 23vh;
+        width: 25vh;
+        object-fit: contain;
+      }
+
+    }
 
 
-  //VIDEO
-  // .home-video {
-  //   position: absolute;
-  //   background-repeat: no-repeat;
-  //   // background-size: contain;
-  //   top: get-vh-mob(423px);
-  //   left: get-vw-mob(120px);
-  //     width: get-vw-mob(20px);
-  //   // div {
-  //   //   width: get-vw-mob(20px);
-  //   // }
-  // }
-  //
-  // #home-v {
-  //   position: absolute;
-  //   width: get-vw-mob(145.6px);
-  //   height: get-vh-mob(81.6px);
-  //   top: get-vh-mob(450.2px);
-  //   left: get-vw-mob(153px);
-  // }
-  // .home-video {
-  //   position: absolute;
-  //   background-image: url(/assets/Elements/DriveDrive/Catalogue/DD-Catalogue-video-grey.svg);
-  //   background-repeat: no-repeat;
-  //   // background-size: contain;
-  //   width: 20%;
-  //   height: 80%;
-  //   // height: get-vh-mob(136px);
-  //   // object-fit: contain;
-  //   top: get-vh-mob(423px);
-  //   left: get-vw-mob(120px);
-  //     #home-v {
-  //   position: absolute;
-  //   width: 50%;
-  //   height: 10%;
-  //   // width: get-vw-mob(145.6px);
-  //   // height: get-vh-mob(81.6px);
-  //   top: get-vh-mob(450.2px);
-  //   left: get-vw-mob(153px);
-  //   }
-  //
-  // }
+  }
+
   .fadeIn {
     opacity: 1;
   }
