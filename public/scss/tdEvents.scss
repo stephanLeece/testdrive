@@ -82,3 +82,12 @@
   }
 
 }
+
+
+//WHY IS THIS NOT WORKING?
+@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+#backButton {
+    visibility: visible;
+}
+
+}

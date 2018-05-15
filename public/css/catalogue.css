@@ -206,6 +206,21 @@
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -1000; } }
 
+@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+  .pdf {
+    font-size: 15px;
+    margin-top: -1vh; }
+  .pds {
+    font-size: 0px; } }
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .artists {
+    margin-top: 0vh;
+    height: 80vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.62338vw;
+    font-weight: normal; } }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   #video-container video {
     width: 38vw;

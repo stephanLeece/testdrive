@@ -29,3 +29,10 @@
   #ddEventsInfobox {
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); } }
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+  .ddEventActive {
+    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; } }

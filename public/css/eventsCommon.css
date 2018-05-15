@@ -223,9 +223,47 @@
   .eventsInfoBoxHidden {
     display: none; } }
 
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
-/* iPad Portrait */
+@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+  .eventList {
+    grid-column: 1 / 4;
+    grid-row: 3 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 17vw; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23.24675vw;
+    height: 9.85352vh;
+    padding: 30px;
+    margin: -20px;
+    margin-left: -8vw; }
+    .eventDetails .eventsDetailTitle {
+      margin-left: 15px;
+      font-family: TimesNewRomanPSMT;
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222; }
+    .eventDetails .eventsDetailDate {
+      margin-left: 15px;
+      font-family: TimesNewRomanPSMT;
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222; }
+  .ddevent-top-title {
+    margin-top: 1vh;
+    font-size: 3.24675vw; }
+  .event-top-title {
+    margin-top: 2vh;
+    font-size: 3.24675vw; } }

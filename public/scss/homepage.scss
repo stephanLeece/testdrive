@@ -145,7 +145,7 @@
   img {
     margin-right: 10vw;
     width: 22.98701vw;
-    z-index: 400px;
+    z-index: 1001px;
   }
 }
 
@@ -286,17 +286,6 @@
 .active-color-home {
   color: #000000;
   // color: rgb(255, 194, 120);
-}
-
-.shadowfilter {
-  -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-.shadowfilter:hover {
-  -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
 }
 
 
@@ -635,223 +624,226 @@ display: none;
   .halk {
     display:none;
   }
-}
-//closing media //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}//closing media //
 
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-//   @media only screen
-//     and (min-device-width: 768px)
-//     and (max-device-width: 1024px)
-//     and (orientation: portrait)
-//     and (-webkit-min-device-pixel-ratio: 1) {
-//   #gallery-space-img {
-//     // width: get-vw(750px);
-//     height: get-vh(570px);
-//     position: absolute;
-//     top: get-vw(400px);
-//     left: get-vw(400px);
-//     cursor: pointer;
-//     z-index: 40px;
-//   }
-//   #home-red-line {
-//     width: get-vw(401.8px);
-//     height: get-vh(217.3px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh(310px);
-//     left: get-vw(70px);
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//   }
-//   #home-green-line {
-//     width: get-vw(350px);
-//     height: get-vh(160px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh(700px);
-//     left: get-vw(1020px);
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//     z-index: 10;
-//   }
-//   #home-blue-line {
-//     width: get-vw(299px);
-//     height: get-vh(203.5px);
-//     object-fit: contain;
-//     position: absolute;
-//     top: get-vh(109.9px);
-//     left: get-vw(1250px);
-//     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
-//   }
-//     .homepage-tdevents {
-//     z-index: 20;
-//     bottom: 10.60156vh;
-//     right: 8.46753vw;
-//     position: absolute;
-//     width: 9.74026vw;
-//     height: 5.46875vh;
-//     text-decoration: none;
-//     font-family: TimesNewRomanPSMT;
-//     font-size: 3.24675vw;
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: normal;
-//     letter-spacing: -0.13636vw;
-//     text-align: left;
-//     color: #000000;
-// }
-// .home-video {
-//   position: absolute;
-//   background-image: url("/assets/Elements/Home/Home-video-cloud-grey.svg");
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   background-size: get-vw(447px) get-vh(276px);
-//   width: get-vw(538px);
-//   top: get-vh(604px);
-//   height: get-vh(333px);
-//   bottom: get-vh(87px);
-//   left: get-vw(85px);
-//   object-fit: contain;
-// }
-// #home-v {
-//   position: absolute;
-//   width: 17.46753vw;
-//   height: 16.21094vh;
-//   left: 10.07792vw;
-//   top: 64.28906vh;
-// }
-// #modal {
-//   position: absolute;
-//   top: get-vh(128px);
-//   left: get-vw(370px);
-//   width: get-vw(1024px);
-//   height: get-vh(800.5px);
-//   object-fit: contain;
-//   background-image: url("/assets/Elements/Home/Modal-infobox.svg");
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-content: center;
-//   z-index: 1000;
-//   cursor: pointer;
-//   .words {
-//     width: get-vw(680px);
-//     // height: get-vh(553px);
-//     left: get-vw(750px);
-//     right: get-vw(245px);
-//     top: get-vh(160px);
-//     word-wrap: normal;
-//     font-family: TimesNewRomanPSMT;
-//     font-size: get-vh(20px);
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: get-vh(22px);
-//     letter-spacing: get-vw(-0.9px);
-//     text-align: left;
-//     color: #222222;
-//     z-index: 1000;
-//     margin: get-vh(9px) get-vw(40px) get-vh(90px) get-vw(80px);
-//     letter-spacing: normal;
-//     justify-content: center;
-//     align-content: center;
-//     cursor: pointer;
-//   }
-// }
-// }
-// ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-//  /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE /////// IPAD LANDSCAPE
-// @media only screen
-//   and (min-device-width: 768px)
-//   and (max-device-width: 1024px)
-//   and (orientation: landscape)
-//   and (-webkit-min-device-pixel-ratio: 1) {
-//     .homepage-tdevents {
-//       // width: get-vw(66px);
-//       height: get-vh(46px);
-//       position: absolute;
-//       width: get-vw(150px);
-//       bottom: get-vh(170px);
-//       right: get-vw(115px);
-//       font-family: TimesNewRomanPSMT;
-//       font-size: 3.24675vw;
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: normal;
-//       letter-spacing: -2.4px;
-//       text-align: left;
-//       z-index: 20;
-//       text-decoration: none;
-//       color: black;
-//     }
-//     #modal {
-//       position: absolute;
-//       top: get-vh(128px);
-//       left: get-vw(566px);
-//       width: get-vw(800.2px);
-//       height: get-vh(800.5px);
-//       object-fit: contain;
-//       background-image: url("/assets/Elements/Home/Modal-infobox.svg");
-//       background-size: contain;
-//       background-repeat: no-repeat;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       align-content: center;
-//       z-index: 1000;
-//       cursor: pointer;
-//       .words {
-//         width: get-vw(400px);
-//         height: get-vh(553px);
-//         left: get-vw(850px);
-//         // right: get-vw(245px);
-//         top: get-vh(180px);
-//         word-wrap: normal;
-//         font-family: TimesNewRomanPSMT;
-//         font-size: get-vh(20px);
-//         font-weight: normal;
-//         font-style: normal;
-//         font-stretch: normal;
-//         line-height: get-vh(22px);
-//         letter-spacing: get-vw(-0.9px);
-//         text-align: left;
-//         color: #222222;
-//         z-index: 1000;
-//         margin: get-vh(59px) get-vw(104px) get-vh(80px) get-vw(120px);
-//         letter-spacing: normal;
-//         justify-content: center;
-//         align-content: center;
-//         cursor: pointer;
-//       }
-//     }
-// }
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .home-video {
+    grid-column: 1 / span 4;
+    grid-row: 8 / 12;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: end;
+
+    div {
+      height: get-vh(276px);
+      width: get-vw(377px);
+      justify-self: center;
+      align-self: center;
+      background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8vh;
+      margin-left: 4vw;
+      padding: 1vh;
+
+      #home-v {
+        justify-self: center;
+        align-self: center;
+        height: 15vh;
+        width: 17vw;
+        z-index: 1;
+        margin-left: -2vw;
+        margin-bottom: 7vh;
+        source {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #modal {
+    grid-column: 5 / 9;
+    grid-row: 2 / span 11;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+    width: 40vw;
+    align-self: center;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .words {
+      height: 90%;
+      width: 65%;
+      font-family: TimesNewRomanPSMT;
+      font-size: get-vh(20px);
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: left;
+      color: #222222;
+      letter-spacing: normal;
+      align-self: center;
+      margin-top: 11vh;
+      cursor: pointer;
+    }
+  }
+  }
+
+
+@media only screen and (min-device-width: 701px) and (orientation: portrait) {
+
+  #gallery-space-img {
+  width: 70vw;
+  height: 50vh;
+  margin-left: 3vw;
+  margin-right: -3vw;
+  margin-top: -10vh;
+  grid-column: 3 / span 9;
+  grid-row: 1 / span 12;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+    z-index: 2;
+  }
+
+  #modal {
+    grid-column: 3 / 9;
+      grid-row: 3 / span 8;
+      justify-self: start;
+      align-self: center;
+      width: 60vw;
+      height: 70vh;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      z-index: 1000;
+      cursor: pointer;
+      display: flex;
+      opacity: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin-left: 2vw;
+
+
+    .words {
+      height: 100vh;
+      width: 40vw;
+      font-family: TimesNewRomanPSMT;
+      font-size: 1.6vh;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: left;
+      color: #222222;
+      letter-spacing: normal;
+      align-self: center;
+      margin-top: 9vh;
+
+      cursor: pointer;
+    }
+
+  }
+
+  #testdriveLogoBR {
+    grid-column: 8 / span 12;
+    grid-row: 11/ span 12;
+    justify-self: center;
+    align-self: center;
+
+    img {
+      margin-right: 10vw;
+      width: 22.98701vw;
+      z-index: 1050;
+    }
+  }
+
+
+    .home-video {
+      grid-column: 1 / span 4;
+      grid-row: 8 / 12;
+      height: 100%;
+      width: 100%;
+      justify-self: center;
+      align-self: end;
+
+      div {
+        height: get-vh(276px);
+        width: get-vw(377px);
+        justify-self: center;
+        align-self: center;
+        background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8vh;
+        margin-left: 4vw;
+        padding: 1vh;
+
+        #home-v {
+          justify-self: center;
+          align-self: center;
+          width: get-vw(300px);
+          height: get-vh(150px);
+          z-index: 1;
+          margin-left: -2vw;
+          margin-bottom: 16vh;
+
+          source {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+#eve {
+grid-column: 11;
+grid-row: 11 /span 11;
+}
+
+.events {
+    margin-top: 1vh;
+}
+
+#home-green-line {
+    width: 25.18182vw;
+}
+
+
+#testdriveLogoBR {
+  img {
+    width: 25.98701vw;
+  }
+}
+
+#infoLink .bike {
+    padding: 2vh;
+    margin-right: -7vh;
+}
+
+#home-blue-line {
+    margin-top: -1vh;
+  }
+
+.pdf{
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+}//closing media q

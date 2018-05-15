@@ -180,6 +180,18 @@ a:hover {
 
 
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+
+/* MOBILE DESIGN  */
+/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
+@function get-vw-mob($object) {
+  $vw: (360 * 0.01) * 1px;
+  @return ($object / $vw) * 1vw;
+}
+@function get-vh-mob($object) {
+  $vh: (667 * 0.01) * 1px;
+  @return ($object / $vh) * 1vh;
+}
+
 // @media only screen and (orientation: portrait) {
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   .info {
@@ -363,6 +375,7 @@ a:hover {
 }
 
 
+//iphone X media q
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
 
@@ -382,7 +395,52 @@ a:hover {
   }
 
 
-  
+
+
+//mobile landscape
+  @media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+
+    .sign-up-to-our-maili {
+        font-size: 10px;
+      }
+
+      #infoContactInfo .info-contact form imput {
+          width: 17vw;
+          height: 3vh;
+          font-size: 8px;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: TimesNewRomanPSMT;
+
+
+      }
+
+      form{
+          width: 23.36364vw;
+        }
+
+      #infoContactInfo .info-contact button {
+    // margin-right: -20vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.5vh;
+    /* width: 50%; */
+    border: inherit;
+    background: white;
+    font-size: 9px;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+}
+}
+
+
+
 ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   #infoMap {
@@ -503,242 +561,3 @@ a:hover {
     font-size: 12px;
   }
 }
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////
-/* MOBILE DESIGN  */
-/* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-  $vw: (360 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-@function get-vh-mob($object) {
-  $vh: (667 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-
-
-// ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO
-//   @media only screen
-//     and (min-device-width: 1024px)
-//     and (max-device-width: 1336px)
-//     and (orientation: portrait)
-//     and (-webkit-min-device-pixel-ratio: 1) {
-//       #infoContactBg {
-//           width: get-vw(750.4px);
-//           height: get-vh(500.3px);
-//           position: absolute;
-//           left: get-vw(100px);
-//           top: get-vh(335px);
-//           top: get-vh(328px);
-//           bottom: get-vh(180.7px);
-//           filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
-//       }
-//         form {
-//           position: absolute;
-//           border: 1px solid black;
-//           width: get-vw(600px);
-//           height: get-vh(40px);
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//         }
-//         .sign-up-to-our-maili {
-//             // margin-bottom:get-vh(398px);
-//             margin-top: get-vh(-25px);
-//           font-family: TimesNewRomanPSMT;
-//           font-size: get-vw(40px);
-//           font-weight: normal;
-//           font-style: normal;
-//           font-stretch: normal;
-//           line-height: 1.05;
-//           letter-spacing: get-vw(-0.9px);
-//           text-align: left;
-//           color: #222222;
-//           text-shadow: 1px 1px black;
-//         }
-//         input {
-//           font-size: get-vw(48px);
-//           background: none;
-//           border: none;
-//           outline: none;
-//           font-family: TimesNewRomanPSMT;
-//           text-shadow: 1px 1px black;
-//           &[type="email"] {
-//             width: get-vw(330px);
-//             height: get-vh(45px);
-//             outline: none;
-//           }
-//           &[type="submit"] {
-//             border-left: 2px solid black;
-//             width: get-vw(170px);
-//             height: get-vh(45px);
-//           }
-//         }
-// }
-// ////////// IPAD LANDSCAPE ////////// IPAD LANDSCAPE ////////// IPAD LANDSCAPE ////////// IPAD LANDSCAPE
-// @media only screen
-//   and (min-device-width: 768px)
-//   and (max-device-width: 1024px)
-//   and (orientation: landscape)
-//   and (-webkit-min-device-pixel-ratio: 1) {
-//     #infoContactBg {
-//         width: get-vw(600px);
-//         height: get-vh(500.3px);
-//         position: absolute;
-//         left: get-vw(100px);
-//         top: get-vh(335px);
-//         top: get-vh(328px);
-//         bottom: get-vh(180.7px);
-//         filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
-//     }
-//     #infoContactInfo {
-//       width: get-vw(446.4px);
-//       height: get-vh(415.3px);
-//       left: get-vw(180px);
-//       bottom: get-vh(250px);
-//       position: absolute;
-//       font-size: get-vh(20px);
-//       font-family: TimesNewRomanPSMT;
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 1.05;
-//       letter-spacing: get-vw(-0.9px);
-//       text-align: left;
-//       color: #222222;
-//       }
-//       form {
-//         position: absolute;
-//         left: get-vw(180px);
-//         bottom: get-vh(240px);
-//         border: 1px solid black;
-//         width: get-vw(400px);
-//         height: get-vh(40px);
-//         margin-top: get-vh(4px);
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//       }
-//       .sign-up-to-our-maili {
-//           // margin-bottom:get-vh(398px);
-//           margin-top: get-vh(-15px);
-//         font-family: TimesNewRomanPSMT;
-//         font-size: get-vw(30px);
-//         font-weight: normal;
-//         font-style: normal;
-//         font-stretch: normal;
-//         line-height: 1.05;
-//         letter-spacing: get-vw(-0.9px);
-//         text-align: left;
-//         color: #222222;
-//         text-shadow: 1px 1px black;
-//       }
-//       input {
-//         font-size: get-vw(28px);
-//         background: none;
-//         border: none;
-//         outline: none;
-//         font-family: TimesNewRomanPSMT;
-//         text-shadow: 1px 1px black;
-//         &[type="email"] {
-//           width: get-vw(210px);
-//           height: get-vh(45px);
-//           outline: none;
-//         }
-//         &[type="submit"] {
-//           border-left: 2px solid black;
-//           width: get-vw(100px);
-//           height: get-vh(45px);
-//         }
-//       }
-// }
-// // ///// IPAD PRO LANDSCAPE ///// IPAD PRO LANDSCAPE ///// IPAD PRO LANDSCAPE ///// IPAD PRO LANDSCAPE ///// IPAD PRO LANDSCAPE
-// // @media only screen
-// //   and (max-device-width: 1366px)
-// //   and (min-device-width: 1024px)
-// //   and (orientation: landscape)
-// //   and (-webkit-min-device-pixel-ratio: 1) {
-// //
-// //     #infoContactBg {
-// //         width: get-vw(500px);
-// //         height: get-vh(500.3px);
-// //         position: absolute;
-// //         left: get-vw(100px);
-// //         top: get-vh(335px);
-// //         top: get-vh(328px);
-// //         bottom: get-vh(180.7px);
-// //         filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
-// //     }
-// //
-// //     #infoContactInfo {
-// //       width: get-vw(446.4px);
-// //       height: get-vh(415.3px);
-// //       left: get-vw(160px);
-// //       bottom: get-vh(250px);
-// //       position: absolute;
-// //       font-size: get-vh(20px);
-// //       font-family: TimesNewRomanPSMT;
-// //       font-weight: normal;
-// //       font-style: normal;
-// //       font-stretch: normal;
-// //       line-height: 1.05;
-// //       letter-spacing: get-vw(-0.9px);
-// //       text-align: left;
-// //       color: #222222;
-// //
-// //       }
-// //
-// //       form {
-// //         position: absolute;
-// //         left: get-vw(160px);
-// //         bottom: get-vh(240px);
-// //         border: 1px solid black;
-// //         width: get-vw(400px);
-// //         height: get-vh(40px);
-// //         margin-top: get-vh(4px);
-// //         display: flex;
-// //         justify-content: center;
-// //         align-items: center;
-// //
-// //       }
-// //
-// //       .sign-up-to-our-maili {
-// //           // margin-bottom:get-vh(398px);
-// //         margin-top: get-vh(-15px);
-// //         font-family: TimesNewRomanPSMT;
-// //         font-size: get-vw(30px);
-// //         font-weight: normal;
-// //         font-style: normal;
-// //         font-stretch: normal;
-// //         line-height: 1.05;
-// //         letter-spacing: get-vw(-0.9px);
-// //         text-align: left;
-// //         color: #222222;
-// //         text-shadow: 1px 1px black;
-// //       }
-// //
-// //       input {
-// //         font-size: get-vw(28px);
-// //         background: none;
-// //         border: none;
-// //         outline: none;
-// //         font-family: TimesNewRomanPSMT;
-// //         text-shadow: 1px 1px black;
-// //
-// //         &[type="email"] {
-// //           width: get-vw(210px);
-// //           height: get-vh(45px);
-// //           outline: none;
-// //         }
-// //
-// //         &[type="submit"] {
-// //           border-left: 2px solid black;
-// //           width: get-vw(100px);
-// //           height: get-vh(45px);
-// //         }
-// //       }
-// //   }
