@@ -97,8 +97,8 @@ $('#c-form').submit(((e) => {
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
     $('#halk').fadeOut(2000);
-    $("#home-container").delay(1000).animate({ opacity: 1 }, 700);
-}
+    $('#halk-mobile').fadeOut(2000);
+} console.log("hello I'm working");
 fadeIntoImg();
 
 

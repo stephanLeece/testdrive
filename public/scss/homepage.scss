@@ -76,8 +76,7 @@
       align-self: center;
       width: get-vw(300px);
       height: get-vh(150px);
-      z-index: 333333;
-      z-index: 333333;
+      z-index: 1;
       margin-left: -2vw;
 
       source {
@@ -299,19 +298,28 @@
 .shadowfilter:hover {
   -webkit-filter: drop-shadow(10px 10px 18px rgb(255, 194, 120));
 }
-/* STYLING FOR MODAL */
 
-/* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-#halk {
-  position: absolute;
-  z-index: 99;
+
+.halk {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 12;
+  z-index: 9000;
   height: 100vh;
   width: 100vw;
 }
 
-.fadeIn {
-  opacity: 1;
+#halk-mobile {
+display: none;
 }
+
+.fadeIn {
+  opacity: 0;
+}
+
+
+
+
+
 /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
 //
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
@@ -607,20 +615,24 @@
 
     }
 
-
   }
 
   .fadeIn {
     opacity: 1;
   }
 
-  .clicked-gallery-img {
-    width: 125.06667vw;
-    height: 85.42579vh;
-    position: fixed;
-    top: 32.68966vh;
-    left: 3.46667vw;
-    cursor: pointer;
+
+  #halk-mobile {
+    display:inline;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 12;
+    z-index: 900000000;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .halk {
+    display:none;
   }
 }
 //closing media //

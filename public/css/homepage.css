@@ -58,8 +58,7 @@
       align-self: center;
       width: 19.48052vw;
       height: 14.64844vh;
-      z-index: 333333;
-      z-index: 333333;
+      z-index: 1;
       margin-left: -2vw; }
       .home-video div #home-v source {
         height: 100%;
@@ -247,16 +246,18 @@
 .shadowfilter:hover {
   -webkit-filter: drop-shadow(10px 10px 18px #ffc278); }
 
-/* STYLING FOR MODAL */
-/* STYLING FOR THE HULK IMAGE THAT FADES OUT */
-#halk {
-  position: absolute;
-  z-index: 99;
+.halk {
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 12;
+  z-index: 9000;
   height: 100vh;
   width: 100vw; }
 
+#halk-mobile {
+  display: none; }
+
 .fadeIn {
-  opacity: 1; }
+  opacity: 0; }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   .home {
@@ -484,10 +485,12 @@
         object-fit: contain; }
   .fadeIn {
     opacity: 1; }
-  .clicked-gallery-img {
-    width: 125.06667vw;
-    height: 85.42579vh;
-    position: fixed;
-    top: 32.68966vh;
-    left: 3.46667vw;
-    cursor: pointer; } }
+  #halk-mobile {
+    display: inline;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 12;
+    z-index: 900000000;
+    height: 100vh;
+    width: 100vw; }
+  .halk {
+    display: none; } }
