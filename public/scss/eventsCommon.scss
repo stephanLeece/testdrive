@@ -37,12 +37,13 @@
 .eventInfo {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 93%;
 }
 
 .events-img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  padding-left: 2.3vw;
 }
 
 .event-top-title {
@@ -56,6 +57,7 @@
   line-height: normal;
   letter-spacing: -1.9px;
   text-align: left;
+  margin-left: -1vw;
 }
 
 .eventsInfoHidden {
@@ -89,7 +91,7 @@
   .eventsDetailDate {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -125,8 +127,8 @@
   display: flex;
   justify-content: center;
   align-content: center;
-
-      font-size: 3.24675vw;
+  margin-left: 3vw;
+    font-size: 3.24675vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -134,6 +136,7 @@
     letter-spacing: -1.4px;
     text-align: left;
     color: #222222;
+    cursor: pointer;
 }
 
 @media only screen
@@ -215,7 +218,7 @@ and (orientation: portrait) {
      .eventsDetailDate {
        margin-left: 50px;
        font-family: TimesNewRomanPSMT;
-       font-size: 14px;
+       font-size: 17px;
        font-weight: normal;
        font-style: normal;
        font-stretch: normal;
@@ -258,7 +261,7 @@ and (orientation: portrait) {
 .eventInfo {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
 }
 
 .eventsInfoHidden {
@@ -266,13 +269,14 @@ and (orientation: portrait) {
 }
 
   .events-img {
-    width: 100%;
+    width: 95%;
     height: auto;
+    padding-left: 2vw;
   }
 
   .event-top-title {
-    width: get-vw(723px);
-    height: get-vh(33px);
+    width: 100%;
+    padding-right: 5vw;
     font-family: TimesNewRomanPSMT;
     font-size: 30px;
     font-weight: normal;

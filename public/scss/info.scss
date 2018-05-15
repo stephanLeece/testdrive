@@ -17,7 +17,7 @@
   overflow: hidden;
   margin: 0;
   background-image: url("/assets/Elements/Info/Info-bgA.png");
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
 }
 
@@ -40,10 +40,10 @@
 }
 
 #infoContactInfo {
-  width: get-vw(496.4px);
+  width: 32.23377vw;
   height: 90%;
   grid-column: 1 / span 5;
-  grid-row: 5 / span 9;
+  grid-row: 4/ span 9;
   justify-self: center;
   align-self: center;
   display: flex;
@@ -51,8 +51,10 @@
   justify-content: center;
   color: #222222;
   background-image: url("/assets/Elements/Info/Info-contact-outline.png");
-  background-size: 50.3vh;
+  background-size: 30vw 58vh;
   background-repeat: no-repeat;
+  margin-top: 8vh;
+  margin-left: 8vw;
 
   .info-contact {
     z-index: 200;
@@ -62,8 +64,11 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-top: -13vh;
+
     p {
-      font-size: get-vh(20px);
+      // font-size: get-vh(20px);
+      font-size: 2vh;
       font-family: TimesNewRomanPSMT;
       font-weight: normal;
       font-style: normal;
@@ -74,51 +79,62 @@
       margin-left: 4vw;
     }
 
+    .facebook {
+      margin-top: -4vh;
+    }
+
     form {
-      width: get-vw(329px);
-      height: get-vh(40px);
-      margin-top: get-vh(4px);
+      width: 20.36364vw;
+      height: 4vh;
       display: flex;
       justify-content: start;
       align-items: center;
       border: 2px solid black;
-      margin-left: 3vw;
+      margin-left: 3.5vw;
+
       input {
         height: 100%;
-        width: 66%;
-        font-size: 20px;
+        font-size: 18px;
         background: none;
         border: none;
         outline: none;
         font-family: TimesNewRomanPSMT;
-        text-shadow: 1px 1px black;
       }
-      button {
-        height: 110%;
-        width: 33%;
-        border: inherit;
-        background: white;
-        font-size: 16px;
-        font-weight: bold;
-        text-shadow: 1px 1px black;
-        cursor: pointer;
-      }
+    }
+
+    button {
+      margin-right: -22vw;
+      font-family: TimesNewRomanPSMT;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      text-align: left;
+      color: #222222;
+      height: 4.5vh;
+      /* width: 50%; */
+      border: inherit;
+      background: white;
+      font-size: 20px;
+      text-shadow: 1px 1px black;
+      cursor: pointer;
     }
   }
 }
 
 .sign-up-to-our-maili {
-  margin-top: get-vh(-15px);
+  // font-size: get-vw(20px);
+  text-shadow: 1px 1px black;
+  margin-left: 7vh;
   font-family: TimesNewRomanPSMT;
-  font-size: get-vw(20px);
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.05;
-  letter-spacing: get-vw(-0.9px);
+  line-height: normal;
+  letter-spacing: -0.9px;
   text-align: left;
   color: #222222;
-  text-shadow: 1px 1px black;
 }
 
 #credits {
@@ -137,7 +153,7 @@
 #infoMap {
   grid-column: 6 / 10;
   grid-row: 3 / 11;
-  width: 100%;
+  width: 95%;
   height: 100%;
   border: 1px solid black;
   -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
@@ -152,8 +168,9 @@
   align-self: center;
 
   img {
-    height: get-vh(30px);
-    width: get-vw(290px);
+    margin-right: -6vh;
+    margin-top: -6vh;
+    width: 23vw;
   }
 }
 
@@ -161,12 +178,216 @@ a:hover {
   color: orange;
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
+// @media only screen and (orientation: portrait) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+  .info {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(10, 10%);
+    background-image: url("/assets/mobile/Info-mobile.png");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 190.25487vh;
+  }
+
+  #mobile-menu-info {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: end;
+    margin-right: 5vw;
+    z-index: 30000;
+  }
+
+  #infoMap {
+    grid-column: 1/ span 4;
+    grid-row: 2 / span 4;
+    margin-top: 2vh;
+    width: 85%;
+    height: 80%;
+    margin-left: 5vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
+    -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
+    box-shadow: 0 0 50px rgb(131, 21, 168);
+  }
+
+  #infoContactInfo {
+    width: 108vw;
+    height: 100vh;
+    grid-column: 1 / span 4;
+    grid-row: 5/ span 9;
+    object-fit: contain;
+    margin-right: 22vw;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222222;
+    background-image: url("/assets/Elements/Info/Info-contact-outline.png");
+    background-size: 109vw 75vh;
+    background-repeat: no-repeat;
+    margin-top: 8vh;
+    margin-left: 8vw;
+
+    .info-contact {
+      grid-column: 1 / span 3;
+      grid-row: 7/ span 9;
+      z-index: 200;
+      height: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      // margin-top: -30vh;
+      margin-bottom: 15vh;
+      margin-left: 10vw;
+
+      p {
+        // font-size: get-vh(20px);
+        font-size: 2vh;
+        font-family: TimesNewRomanPSMT;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.05;
+        letter-spacing: get-vw(-0.9px);
+        text-align: left;
+        margin-left: 4vw;
+        margin-bottom: 5vw;
+        // margin: 2vh;
+      }
+
+      .facebook {
+        margin-bottom: 6vh;
+      }
+
+      form {
+        width: 80vw;
+        height: 4vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border: 2px solid black;
+        margin-left: 3.5vw;
+
+        input {
+          height: 100%;
+          font-size: 15px;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: TimesNewRomanPSMT;
+        }
+      }
+
+      button {
+        margin-left: 11vw;
+        font-family: TimesNewRomanPSMT;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        text-align: left;
+        color: #222222;
+        height: 4.6vh;
+        /* width: 50%; */
+        border: inherit;
+        background: white;
+        font-size: 19px;
+        padding: 1px 3px 3px 9px;
+        text-shadow: 1px 1px black;
+        cursor: pointer;
+      }
+    }
+
+    .sign-up-to-our-maili {
+      // font-size: get-vw(20px);
+      text-shadow: 1px 1px black;
+      margin-left: 2vh;
+      margin-top: -1vh;
+      font-family: TimesNewRomanPSMT;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.9px;
+      text-align: left;
+      color: #222222;
+    }
+  }
+
+  #testdriveLogoInfo {
+    grid-column: 1 / span 4;
+    grid-row: 9 / span 10;
+    margin-bottom: -4vh;
+    align-self: end;
+    justify-self: end;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/mobile/info-testdrive-box-02.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    img {
+      height: 100%;
+      width: 90%;
+      margin-top: 7vh;
+    }
+  }
+
+  #credits {
+    grid-row: 10;
+    grid-column: 1 / span 4;
+    padding-left: 5vh;
+    margin-bottom: 0;
+    justify-self: start;
+    align-self: end;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 8px;
+    z-index: 3000;
+  }
+
+}
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+
+.info {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(10, 10%);
+  background-image: url("/assets/mobile/Info-mobile.png");
+  margin: 0;
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100%;
+  height: 200vh;
+}
+
+  }
+
+
+  
 ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
-
-    #infoMap {
-      grid-column: 6 / 11;
-    }
+  #infoMap {
+    grid-column: 6 / 11;
+  }
 
   #infoContactInfo {
     grid-column: 2 / 5;
@@ -182,12 +403,14 @@ a:hover {
     letter-spacing: get-vw(-0.9px);
     text-align: left;
     color: #222222;
+
     .info-contact {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
       form {
         width: 80%;
         height: get-vh(40px);
@@ -195,10 +418,12 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+
         button {
           width: 10vw;
-       }
+        }
       }
+
       .sign-up-to-our-maili {
         margin-top: get-vh(-15px);
         font-family: TimesNewRomanPSMT;
@@ -212,6 +437,7 @@ a:hover {
         color: #222222;
         text-shadow: 1px 1px black;
       }
+
       input {
         width: get-vw(130px);
         height: get-vh(45px);
@@ -224,9 +450,7 @@ a:hover {
       }
     }
   }
-
 }
-
 @media only screen and (min-device-width: 701px) and (orientation: portrait) {
   #infoMap {
     grid-column: 6 / 12;
@@ -244,36 +468,47 @@ a:hover {
     flex-direction: column;
     justify-content: start;
     background-size: 50vh;
+
     .info-contact {
       margin-left: 6vw;
+
       form {
         width: get-vw(729px);
         height: get-vh(40px);
+
         input {
           width: 65%;
         }
+
         button {
           width: 35%;
         }
       }
     }
   }
+
   #testdriveLogoInfo {
     grid-row: 11 / 12;
     height: 100%;
     justify-self: center;
     align-self: center;
+
     img {
       height: get-vh(100px);
       width: get-vw(290px);
     }
   }
+
   #credits {
     font-size: 12px;
   }
 }
 
-  //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
 @function get-vw-mob($object) {
@@ -284,144 +519,7 @@ a:hover {
   $vh: (667 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-/* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
-// @media only screen and (orientation: portrait) {
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
-  .info {
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(10, 10%);
-    background-image: url("/assets/mobile/Info-mobile.png");
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: get-vw-mob(375px);
-    height: 190.25487vh;
-  }
 
-  #mobile-menu-info {
-    grid-column: 2 / 4;
-    grid-row: 1;
-    justify-self: center;
-    align-self: end;
-    margin-right: 5vw;
-    z-index: 30000;
-  }
-
-  #infoMap {
-    grid-column: 1/ span 4;
-    grid-row: 2 / span 4;
-    width: get-vw-mob(348px);
-    height: get-vh-mob(415px);
-    margin-left: 1.5vw;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
-    -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
-    box-shadow: 0 0 50px rgb(131, 21, 168);
-  }
-
-  #infoContactBg {
-    grid-column: 1 / span 4;
-    grid-row: 4 / span 9;
-    object-fit: contain;
-    background-color: #ffffff;
-    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.5);
-    border: solid 1px #979797;
-  }
-
-  #infoContactInfo {
-    grid-column: 1 / span 4;
-    grid-row: 5 / span 9;
-    margin-top: 8vh;
-    height: get-vh-mob(515.3px);
-    width: get-vw-mob(375px);
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    color: #222222;
-    align-self: start;
-    .info-contact {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      margin-top: 3vh;
-
-      p {
-        font-size: get-vh(20px);
-        font-family: TimesNewRomanPSMT;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.05;
-        letter-spacing: get-vw(-0.9px);
-        text-align: left;
-        margin-left: 4vw;
-      }
-
-      form {
-        width: get-vw-mob(319px);
-        height: get-vh-mob(30px);
-        margin-top: get-vh(4px);
-        margin-left: 3vw;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        input {
-          width: get-vw-mob(192px);
-          height: 100%;
-          border: 2px solid black;
-        }
-      }
-    }
-  }
-
-  #credits {
-    grid-row: 10;
-    grid-column: 1 / span 4;
-    justify-self: start;
-    align-self: end;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 9.5px;
-    z-index: 3000;
-  }
-
-    #testdriveLogoInfo {
-      grid-column: 1 / span 4;
-      grid-row: 9 / span 10;
-      align-self: end;
-      justify-self: end;
-      height: 100%;
-      width: 100%;
-      background-image: url(/assets/mobile/info-testdrive-box-02.svg);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      img {
-        height: 100%;
-        width: 90%;
-        margin-top: 10vh;
-      }
-    }
-
-    button {
-      height: 36px;
-      width: 25vw;
-      border: 2px solid black;
-      background: white;
-      font-size: 18px;
-      font-weight: bold;
-      text-shadow: 1px 1px black;
-    }
-
-  }
 
 // ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO ////////// IPAD PRO
 //   @media only screen

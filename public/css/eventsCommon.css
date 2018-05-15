@@ -26,11 +26,12 @@
 .eventInfo {
   display: flex;
   flex-direction: column;
-  width: 90%; }
+  width: 93%; }
 
 .events-img {
-  width: 100%;
-  height: auto; }
+  width: 90%;
+  height: auto;
+  padding-left: 2.3vw; }
 
 .event-top-title {
   width: 46.94805vw;
@@ -42,7 +43,8 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -1.9px;
-  text-align: left; }
+  text-align: left;
+  margin-left: -1vw; }
 
 .eventsInfoHidden {
   display: none; }
@@ -70,7 +72,7 @@
   .eventDetails .eventsDetailDate {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -100,6 +102,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-left: 3vw;
   font-size: 3.24675vw;
   font-weight: normal;
   font-style: normal;
@@ -107,7 +110,8 @@
   line-height: normal;
   letter-spacing: -1.4px;
   text-align: left;
-  color: #222222; }
+  color: #222222;
+  cursor: pointer; }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   .eventsContainer {
@@ -165,7 +169,7 @@
     .eventDetails .eventsDetailDate {
       margin-left: 50px;
       font-family: TimesNewRomanPSMT;
-      font-size: 14px;
+      font-size: 17px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -198,15 +202,16 @@
   .eventInfo {
     display: flex;
     flex-direction: column;
-    width: 90%; }
+    width: 95%; }
   .eventsInfoHidden {
     display: none; }
   .events-img {
-    width: 100%;
-    height: auto; }
+    width: 95%;
+    height: auto;
+    padding-left: 2vw; }
   .event-top-title {
-    width: 46.94805vw;
-    height: 3.22266vh;
+    width: 100%;
+    padding-right: 5vw;
     font-family: TimesNewRomanPSMT;
     font-size: 30px;
     font-weight: normal;

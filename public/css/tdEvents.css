@@ -2,12 +2,12 @@
   display: none; }
 
 #testdriveLogoTL {
-  grid-column: 2 / 5;
+  grid-column: 1 / 5;
   grid-row: 2 / span 2;
-  margin-left: 4.54545vw;
-  width: 18.83117vw;
-  height: 2.92969vh; }
+  margin-left: 4.5vw; }
   #testdriveLogoTL img {
+    width: 90%;
+    height: 60%;
     object-fit: contain; }
 
 .tdEventActive {
@@ -34,7 +34,10 @@
     justify-self: center;
     align-self: start;
     margin-top: 3vh;
-    width: 75%; }
+    width: 100%; }
     #testdriveLogoTL img {
       margin: 0;
-      object-fit: contain; } }
+      object-fit: contain;
+      width: 90vw;
+      height: 10vh;
+      margin-left: 2vw; } }
