@@ -281,16 +281,16 @@
   .homepage-tdevents {
     display: none; }
   .drivedrive-menu {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 1;
     justify-self: center;
     align-self: start;
-    width: 90%; }
-    .drivedrive-menu ul #DriveDrive {
-      margin-top: 5vh;
-      width: 90%;
+    width: 100%; }
+    .drivedrive-menu #DriveDrive {
+      margin-top: 7vh;
+      width: 85%;
       height: 100%;
-      margin-left: 0; }
+      margin-left: 1vw; }
     .drivedrive-menu ul #cat {
       display: none; }
     .drivedrive-menu ul #eve {
@@ -319,7 +319,7 @@
     .mob-container #mob-dd-menu {
       grid-row: 1;
       grid-column: 1 / span 3;
-      width: 44%;
+      width: 43%;
       margin-left: 12vw;
       margin-top: 4.3vh; }
     .mob-container .x {
