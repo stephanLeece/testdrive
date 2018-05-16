@@ -306,7 +306,7 @@
     z-index: 300000;
     overflow: hidden;
     position: absolute;
-    top: 0px; }
+    top: 0; }
     .mob-container #mob-dd-menu {
       grid-row: 1;
       grid-column: 1 / span 3;
@@ -485,6 +485,26 @@
     width: 100vw; }
   .halk {
     display: none; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #modal {
+    grid-column: 7 / 10;
+    grid-row: 2 / span 9;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+    width: 28vw;
+    align-self: center;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    opacity: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; } }
 
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   .home-video {

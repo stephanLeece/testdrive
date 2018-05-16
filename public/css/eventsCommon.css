@@ -266,4 +266,9 @@
     font-size: 3.24675vw; }
   .event-top-title {
     margin-top: 2vh;
-    font-size: 3.24675vw; } }
+    font-size: 3.24675vw; }
+  #testdriveLogoTL img {
+    width: 90%;
+    height: 80%;
+    object-fit: contain;
+    margin-top: -5vh; } }

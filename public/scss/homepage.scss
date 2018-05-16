@@ -215,7 +215,6 @@
   color: rgb(255, 194, 120);
 }
 
-
 .events {
   margin-top: -1vh;
   width: get-vw(150px);
@@ -288,7 +287,6 @@
   // color: rgb(255, 194, 120);
 }
 
-
 .halk {
   grid-column: 1 / span 12;
   grid-row: 1 / span 12;
@@ -298,18 +296,13 @@
 }
 
 #halk-mobile {
-display: none;
+  display: none;
 }
 
 .fadeIn {
   opacity: 0;
 }
-
-
-
-
-
-/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
+/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
 //
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   @function get-mob-vw($object) {
@@ -366,7 +359,6 @@ display: none;
     }
 
     ul {
-
       #cat {
         display: none;
       }
@@ -399,7 +391,7 @@ display: none;
     z-index: 300000;
     overflow: hidden;
     position: absolute;
-    top: 0px;
+    top: 0;
 
     #mob-dd-menu {
       grid-row: 1;
@@ -554,6 +546,7 @@ display: none;
     margin-top: 15vh;
     margin-left: -18vw;
     opacity: 1;
+
     .words {
       width: get-mob-vh(289px);
       height: get-mob-vh(437px);
@@ -585,7 +578,6 @@ display: none;
     justify-content: center;
 
     div {
-
       width: 100%;
       justify-self: center;
       align-self: center;
@@ -602,18 +594,15 @@ display: none;
         width: 25vh;
         object-fit: contain;
       }
-
     }
-
   }
 
   .fadeIn {
     opacity: 1;
   }
 
-
   #halk-mobile {
-    display:inline;
+    display: inline;
     grid-column: 1 / span 4;
     grid-row: 1 / span 12;
     z-index: 900000000;
@@ -622,12 +611,54 @@ display: none;
   }
 
   .halk {
-    display:none;
+    display: none;
   }
-}//closing media //
-
+}
+//closing media //
+//iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #modal {
+    grid-column: 7 / 10;
+    grid-row: 2 / span 9;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+    width: 28vw;
+    align-self: center;
+    background-image: url("/assets/Elements/Home/Modal-infobox.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    opacity: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  // .words {
+  //   height: 80%;
+  //   width: 55%;
+  //   font-size: get-mob-vh(18px);
+  //   line-height: 1.06;
+  //   letter-spacing: -0.8px;
+  //   text-align: left;
+  //   color: #222222;
+  //   z-index: -30000;
+  //   height: auto;
+  //   font-family: TimesNewRomanPSMT;
+  //   font-weight: normal;
+  //   font-style: normal;
+  //   font-stretch: normal;
+  //   text-align: left;
+  //   color: #222222;
+  //   letter-spacing: normal;
+  //   align-self: center;
+  //   margin-top: 8vh;
+  // }
+}
+//closing landscape ipjoneX
 ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
-
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   .home-video {
     grid-column: 1 / span 4;
@@ -659,6 +690,7 @@ display: none;
         z-index: 1;
         margin-left: -2vw;
         margin-bottom: 7vh;
+
         source {
           height: 100%;
           width: 100%;
@@ -702,43 +734,39 @@ display: none;
       cursor: pointer;
     }
   }
-  }
-
-
+}
 @media only screen and (min-device-width: 701px) and (orientation: portrait) {
-
   #gallery-space-img {
-  width: 70vw;
-  height: 50vh;
-  margin-left: 3vw;
-  margin-right: -3vw;
-  margin-top: -10vh;
-  grid-column: 3 / span 9;
-  grid-row: 1 / span 12;
-  justify-self: center;
-  align-self: center;
-  cursor: pointer;
+    width: 70vw;
+    height: 50vh;
+    margin-left: 3vw;
+    margin-right: -3vw;
+    margin-top: -10vh;
+    grid-column: 3 / span 9;
+    grid-row: 1 / span 12;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
     z-index: 2;
   }
 
   #modal {
     grid-column: 3 / 9;
-      grid-row: 3 / span 8;
-      justify-self: start;
-      align-self: center;
-      width: 60vw;
-      height: 70vh;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      z-index: 1000;
-      cursor: pointer;
-      display: flex;
-      opacity: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      margin-left: 2vw;
-
+    grid-row: 3 / span 8;
+    justify-self: start;
+    align-self: center;
+    width: 60vw;
+    height: 70vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2vw;
 
     .words {
       height: 100vh;
@@ -753,10 +781,8 @@ display: none;
       letter-spacing: normal;
       align-self: center;
       margin-top: 9vh;
-
       cursor: pointer;
     }
-
   }
 
   #testdriveLogoBR {
@@ -772,78 +798,77 @@ display: none;
     }
   }
 
+  .home-video {
+    grid-column: 1 / span 4;
+    grid-row: 8 / 12;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: end;
 
-    .home-video {
-      grid-column: 1 / span 4;
-      grid-row: 8 / 12;
-      height: 100%;
-      width: 100%;
+    div {
+      height: get-vh(276px);
+      width: get-vw(377px);
       justify-self: center;
-      align-self: end;
+      align-self: center;
+      background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
+      background-size: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8vh;
+      margin-left: 4vw;
+      padding: 1vh;
 
-      div {
-        height: get-vh(276px);
-        width: get-vw(377px);
+      #home-v {
         justify-self: center;
         align-self: center;
-        background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
-        background-size: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 8vh;
-        margin-left: 4vw;
-        padding: 1vh;
+        width: get-vw(300px);
+        height: get-vh(150px);
+        z-index: 1;
+        margin-left: -2vw;
+        margin-bottom: 16vh;
 
-        #home-v {
-          justify-self: center;
-          align-self: center;
-          width: get-vw(300px);
-          height: get-vh(150px);
-          z-index: 1;
-          margin-left: -2vw;
-          margin-bottom: 16vh;
-
-          source {
-            height: 100%;
-            width: 100%;
-          }
+        source {
+          height: 100%;
+          width: 100%;
         }
       }
     }
-
-#eve {
-grid-column: 11;
-grid-row: 11 /span 11;
-}
-
-.events {
-    margin-top: 1vh;
-}
-
-#home-green-line {
-    width: 25.18182vw;
-}
-
-
-#testdriveLogoBR {
-  img {
-    width: 25.98701vw;
   }
-}
 
-#infoLink .bike {
+  #eve {
+    grid-column: 11;
+    grid-row: 11 /span 11;
+  }
+
+  .events {
+    margin-top: 1vh;
+  }
+
+  #home-green-line {
+    width: 25.18182vw;
+  }
+
+  #testdriveLogoBR {
+    img {
+      width: 25.98701vw;
+    }
+  }
+
+  #infoLink .bike {
     padding: 2vh;
     margin-right: -7vh;
-}
+  }
 
-#home-blue-line {
+  #home-blue-line {
     margin-top: -1vh;
   }
 
-.pdf{
-  text-decoration: none;
-  color: black;
-  text-align: left;
+  .pdf {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+  }
 }
-}//closing media q
+//closing media q
