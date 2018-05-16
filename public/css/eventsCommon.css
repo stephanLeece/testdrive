@@ -169,7 +169,7 @@
     .eventDetails .eventsDetailDate {
       margin-left: 50px;
       font-family: TimesNewRomanPSMT;
-      font-size: 17px;
+      font-size: get-vh-mob(17px);
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -179,7 +179,7 @@
     .eventDetails .eventsDetailTitle {
       margin-left: 50px;
       font-family: TimesNewRomanPSMT;
-      font-size: 20px;
+      font-size: get-vw-mob(20px);
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
