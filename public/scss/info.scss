@@ -431,6 +431,7 @@ a:hover {
 
 
 
+
 }//closing mobile landscape
 
 
@@ -463,6 +464,11 @@ a:hover {
       flex-direction: column;
       justify-content: center;
 
+      p {
+      font-size: 1.8vh;
+      margin-left: 3.5vw;
+      }
+
       form {
         width: 80%;
         height: get-vh(40px);
@@ -474,10 +480,17 @@ a:hover {
         button {
           width: 10vw;
         }
+
+
       }
 
+      .facebook {
+      margin-top: -3vh;
+        }
+
       .sign-up-to-our-maili {
-        margin-top: get-vh(-15px);
+        margin-top: 1.5vh;
+        margin-left: 3.5vw;
         font-family: TimesNewRomanPSMT;
         font-size: get-vw(30px);
         font-weight: normal;
@@ -562,7 +575,7 @@ justify-content: start;
     align-self: center;
 
     img {
-  
+
       height: 9.76562vh;
 width: 28.83117vw;
 margin-right: 1vh;

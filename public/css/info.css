@@ -349,6 +349,9 @@ a:hover {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      #infoContactInfo .info-contact p {
+        font-size: 1.8vh;
+        margin-left: 3.5vw; }
       #infoContactInfo .info-contact form {
         width: 80%;
         height: 3.90625vh;
@@ -358,8 +361,11 @@ a:hover {
         align-items: center; }
         #infoContactInfo .info-contact form button {
           width: 10vw; }
+      #infoContactInfo .info-contact .facebook {
+        margin-top: -3vh; }
       #infoContactInfo .info-contact .sign-up-to-our-maili {
-        margin-top: -1.46484vh;
+        margin-top: 1.5vh;
+        margin-left: 3.5vw;
         font-family: TimesNewRomanPSMT;
         font-size: 1.94805vw;
         font-weight: normal;
