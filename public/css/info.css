@@ -15,7 +15,7 @@
   display: none;
   color: red;
   height: 20px;
-  font-size: 18px;
+  font-size: 1.75781vh;
   font-weight: bold;
   margin: 0;
   padding: 0; }
@@ -33,13 +33,12 @@
   grid-column: 1 / span 5;
   grid-row: 4/ span 9;
   justify-self: center;
-  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #222222;
   background-image: url("/assets/Elements/Info/Info-contact-outline.png");
-  background-size: 30vw 58vh;
+  background-size: 90%;
   background-repeat: no-repeat;
   margin-top: 8vh;
   margin-left: 8vw; }
@@ -49,11 +48,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-top: -13vh; }
+    margin-top: -5vh; }
     #infoContactInfo .info-contact p {
-      font-size: 2vh;
+      font-size: 1.16883vw;
       font-family: TimesNewRomanPSMT;
       font-weight: normal;
       font-style: normal;
@@ -64,43 +61,47 @@
       margin-left: 4vw; }
     #infoContactInfo .info-contact .facebook {
       margin-top: -4vh; }
-    #infoContactInfo .info-contact form {
-      width: 20.36364vw;
-      height: 4vh;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      border: 2px solid black;
-      margin-left: 3.5vw; }
-      #infoContactInfo .info-contact form input {
-        height: 100%;
-        font-size: 18px;
-        background: none;
-        border: none;
-        outline: none;
-        font-family: TimesNewRomanPSMT; }
-    #infoContactInfo .info-contact button {
-      margin-right: -22vw;
-      font-family: TimesNewRomanPSMT;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      text-align: left;
-      color: #222222;
-      height: 4.5vh;
-      /* width: 50%; */
-      border: inherit;
-      background: white;
-      font-size: 20px;
-      text-shadow: 1px 1px black;
-      cursor: pointer; }
+    #infoContactInfo .info-contact .form-button {
+      grid-column: 2 / span 4;
+      grid-row: 10/ span 11; }
+      #infoContactInfo .info-contact .form-button form {
+        width: 20.36364vw;
+        height: 4vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border: 2px solid black;
+        margin-left: 3.5vw; }
+        #infoContactInfo .info-contact .form-button form input {
+          height: auto;
+          font-size: 1.75781vh;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact .form-button button {
+        grid-column: 3 / span 4;
+        margin-right: -22vw;
+        font-family: TimesNewRomanPSMT;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        text-align: left;
+        color: #222222;
+        height: 4.5vh;
+        /* width: 50%; */
+        border: inherit;
+        background: white;
+        font-size: 1.95312vh;
+        text-shadow: 1px 1px black;
+        cursor: pointer; }
 
 .sign-up-to-our-maili {
   text-shadow: 1px 1px black;
   margin-left: 7vh;
   font-family: TimesNewRomanPSMT;
-  font-size: 20px;
+  font-size: 1.2987vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -384,16 +385,20 @@ a:hover {
     grid-column: 6 / 11;
     grid-row: 3 / span 4; }
   #infoContactInfo {
-    grid-column: 1 / 5;
-    grid-row: 4 / span 9;
+    grid-column: 1 / 4;
+    grid-row: 5 / span 12;
     justify-self: start;
     align-self: center;
-    width: 100vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     justify-content: start; }
     #infoContactInfo .info-contact {
-      margin-left: 6vw; }
+      margin-left: 6vw;
+      margin-top: 2vh; }
+      #infoContactInfo .info-contact p {
+        font-size: 1.5vh;
+        margin-left: -1vw; }
       #infoContactInfo .info-contact form {
         width: 47.33766vw;
         height: 3.90625vh; }
@@ -401,6 +406,12 @@ a:hover {
           width: 65%; }
         #infoContactInfo .info-contact form button {
           width: 35%; }
+      #infoContactInfo .info-contact .facebook {
+        margin-top: -2vh; }
+  .sign-up-to-our-maili {
+    margin-left: -1.2vh;
+    margin-top: 1vh;
+    font-size: 2vh; }
   #testdriveLogoInfo {
     grid-row: 11 / 12;
     height: 100%;
@@ -408,6 +419,8 @@ a:hover {
     align-self: center; }
     #testdriveLogoInfo img {
       height: 9.76562vh;
-      width: 18.83117vw; }
+      width: 28.83117vw;
+      margin-right: 1vh;
+      margin-top: 2vh; }
   #credits {
     font-size: 12px; } }

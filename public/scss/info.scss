@@ -25,7 +25,7 @@
   display: none;
   color: red;
   height: 20px;
-  font-size: 18px;
+  font-size: get-vh(18px);
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -45,13 +45,14 @@
   grid-column: 1 / span 5;
   grid-row: 4/ span 9;
   justify-self: center;
-  align-self: center;
+  // align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #222222;
   background-image: url("/assets/Elements/Info/Info-contact-outline.png");
-  background-size: 30vw 58vh;
+  // background-size: 30vw 58vh;
+      background-size: 90%;
   background-repeat: no-repeat;
   margin-top: 8vh;
   margin-left: 8vw;
@@ -62,13 +63,14 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-top: -13vh;
+    // justify-content: center;
+    // align-content: center;
+    margin-top: -5vh;
 
     p {
-      // font-size: get-vh(20px);
-      font-size: 2vh;
+
+      font-size: get-vw(18px);
+      // font-size: 2vh;
       font-family: TimesNewRomanPSMT;
       font-weight: normal;
       font-style: normal;
@@ -83,42 +85,53 @@
       margin-top: -4vh;
     }
 
-    form {
-      width: 20.36364vw;
-      height: 4vh;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      border: 2px solid black;
-      margin-left: 3.5vw;
 
-      input {
-        height: 100%;
-        font-size: 18px;
-        background: none;
-        border: none;
-        outline: none;
-        font-family: TimesNewRomanPSMT;
-      }
-    }
+.form-button {
+  grid-column: 2 / span 4;
+  grid-row: 10/ span 11;
 
-    button {
-      margin-right: -22vw;
+  form {
+    width: 20.36364vw;
+    height: 4vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 3.5vw;
+
+    input {
+      // height: 100%;
+      height:auto;
+      font-size: get-vh(18px);
+      background: none;
+      border: none;
+      outline: none;
       font-family: TimesNewRomanPSMT;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      text-align: left;
-      color: #222222;
-      height: 4.5vh;
-      /* width: 50%; */
-      border: inherit;
-      background: white;
-      font-size: 20px;
-      text-shadow: 1px 1px black;
-      cursor: pointer;
     }
+  }
+
+  button {
+      grid-column: 3 / span 4;
+    margin-right: -22vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.5vh;
+    /* width: 50%; */
+    border: inherit;
+    background: white;
+    font-size: get-vh(20px);
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+  }
+
+
+}
+
   }//info-contact
 }//infoContactInfo
 
@@ -127,7 +140,7 @@
   text-shadow: 1px 1px black;
   margin-left: 7vh;
   font-family: TimesNewRomanPSMT;
-  font-size: 20px;
+  font-size: get-vw(20px);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -498,20 +511,26 @@ a:hover {
   }
 
   #infoContactInfo {
-    grid-column: 1 / 5;
-    grid-row: 4 / span 9;
-    justify-self: start;
-    align-self: center;
-    width: 100vw;
-    // height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    // background-size: 50vh;
+
+grid-column: 1 / 4;
+grid-row: 5 / span 12;
+justify-self: start;
+align-self: center;
+width: 55vw;
+display: flex;
+flex-direction: column;
+justify-content: start;
+
+
 
     .info-contact {
       margin-left: 6vw;
+      margin-top: 2vh;
 
+      p {
+      font-size: 1.5vh;
+      margin-left: -1vw;
+      }
       form {
         width: get-vw(729px);
         height: get-vh(40px);
@@ -524,8 +543,17 @@ a:hover {
           width: 35%;
         }
       }
+      .facebook {
+    margin-top: -2vh;
+        }
     }
   }
+
+  .sign-up-to-our-maili {
+      margin-left: -1.2vh;
+      margin-top: 1vh;
+      font-size: 2vh;
+      }
 
   #testdriveLogoInfo {
     grid-row: 11 / 12;
@@ -534,8 +562,11 @@ a:hover {
     align-self: center;
 
     img {
-      height: get-vh(100px);
-      width: get-vw(290px);
+  
+      height: 9.76562vh;
+width: 28.83117vw;
+margin-right: 1vh;
+margin-top: 2vh;
     }
   }
 
