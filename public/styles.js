@@ -52,7 +52,6 @@ $(".homepage-tdevents").hover(function(){
 // desktop only functions
 
 function showDesktopEvents() {
-  console.log('showing desktop');
   $(".eventsInfoBox").css({
     '-webkit-transform': 'scale(1 , 1)',
     '-moz-transform': 'scale(1 , 1)',
@@ -89,7 +88,6 @@ function showDesktopEvents() {
 
 function showMobileEvents() {
 // testdrive and events - set eventsinfo height to 0 on page loaded  if (window.location.pathname == '/events') {
-console.log('showing mobile');
     $(".eventsInfoBox").css({
       '-webkit-transform': 'scale(1 , 0)',
       '-moz-transform': 'scale(1 , 0)',
