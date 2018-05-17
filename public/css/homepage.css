@@ -39,30 +39,29 @@
   height: 100%;
   width: 100%;
   justify-self: center;
-  align-self: end; }
-  .home-video div {
-    height: 26.95313vh;
-    width: 24.48052vw;
+  align-self: end;
+  height: 26.95312vh;
+  width: 24.48052vw;
+  justify-self: center;
+  align-self: center;
+  background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  margin-left: 4vw;
+  padding: 1vh; }
+  .home-video #home-v {
     justify-self: center;
     align-self: center;
-    background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8vh;
-    margin-left: 4vw;
-    padding: 1vh; }
-    .home-video div #home-v {
-      justify-self: center;
-      align-self: center;
-      width: 19.48052vw;
-      height: 14.64844vh;
-      z-index: 1;
-      margin-left: -2vw; }
-      .home-video div #home-v source {
-        height: 100%;
-        width: 100%; }
+    width: 19.48052vw;
+    height: 14.64844vh;
+    z-index: 1;
+    margin-left: -2vw; }
+    .home-video #home-v source {
+      height: 100%;
+      width: 100%; }
 
 #gallery-space-img {
   width: 79%;
@@ -96,7 +95,7 @@
     height: 90%;
     width: 65%;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95313vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -522,7 +521,7 @@ a:hover {
     justify-self: center;
     align-self: end; }
     .home-video div {
-      height: 26.95313vh;
+      height: 26.95312vh;
       width: 24.48052vw;
       justify-self: center;
       align-self: center;
@@ -567,7 +566,7 @@ a:hover {
       height: 90%;
       width: 65%;
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95313vh;
+      font-size: 1.95312vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -639,7 +638,7 @@ a:hover {
     justify-self: center;
     align-self: end; }
     .home-video div {
-      height: 26.95313vh;
+      height: 26.95312vh;
       width: 24.48052vw;
       justify-self: center;
       align-self: center;
