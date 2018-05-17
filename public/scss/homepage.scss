@@ -42,7 +42,6 @@
   ul {
     height: auto;
     width: auto;
-    // position: absolute;
     margin-top: 1vh;
     display: flex;
     flex-direction: column;
@@ -373,6 +372,14 @@ a:hover {
     }
 
     ul {
+
+
+      // #DriveDrive {
+      //   margin-top: 7vh;
+      //   width: 85%;
+      //   height: 100%;
+      //   margin-left: 1vw;
+      // }
       #cat {
         display: none;
       }
@@ -404,7 +411,6 @@ a:hover {
     justify-content: start;
     z-index: 300000;
     overflow: hidden;
-    position: absolute;
     top: 0;
 
     #mob-dd-menu {
@@ -889,3 +895,32 @@ a:hover {
 
 }
 //closing media q
+
+
+
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) and (orientation: portrait){
+
+
+
+  .mob-container {
+      grid-row: 1;
+      grid-column: 1 / span 3;
+      height: 100vh;
+      width: 100vh;
+      background-color: white;
+      flex-direction: column;
+      align-content: center;
+      justify-content: start;
+      z-index: 300000;
+      overflow: hidden;
+      top: 0;
+  }
+
+
+
+}

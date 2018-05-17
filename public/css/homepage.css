@@ -312,7 +312,6 @@ a:hover {
     justify-content: start;
     z-index: 300000;
     overflow: hidden;
-    position: absolute;
     top: 0; }
     .mob-container #mob-dd-menu {
       grid-row: 1;
@@ -680,3 +679,17 @@ a:hover {
     text-decoration: none;
     color: black;
     text-align: left; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .mob-container {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    height: 100vh;
+    width: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    z-index: 300000;
+    overflow: hidden;
+    top: 0; } }
