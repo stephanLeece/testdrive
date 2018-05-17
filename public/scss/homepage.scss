@@ -492,6 +492,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         margin-left: 10vw;
+        margin-bottom: 1vh;
 
         #mob-test-eve {
           text-decoration: none;
@@ -903,7 +904,7 @@ a:hover {
 
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 568px) and (orientation: portrait){
+and (max-device-width : 640px) and (orientation: portrait){
 
 
 

@@ -155,7 +155,7 @@ and (max-device-width: 700px)
 and (orientation: portrait) {
   .catalogueContainer {
     display: grid;
-    grid-template-rows: 32.14vh 118.07vh 1fr 42.66vh;
+    grid-template-rows: 32.14vh 148.07vh 1fr 42.66vh;
     grid-template-columns: repeat(4, 22.22222222222222vw);
     grid-column-gap: 2.7777777777777777vw;
     height: 224.44444444444446vh;
