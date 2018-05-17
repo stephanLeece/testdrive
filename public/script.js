@@ -100,7 +100,7 @@ $('#c-form').submit(((e) => {
 function fadeIntoImg() {
     $('#halk').fadeOut(2000);
     $('#halk-mobile').fadeOut(2000);
-} 
+}
 fadeIntoImg();
 
 
