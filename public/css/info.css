@@ -73,7 +73,8 @@
         border: 2px solid black;
         margin-left: 3.5vw; }
         #infoContactInfo .info-contact .form-button form input {
-          height: auto;
+          width: 16vw;
+          height: 3.2vh;
           font-size: 1.75781vh;
           background: none;
           border: none;
