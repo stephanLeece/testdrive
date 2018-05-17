@@ -175,7 +175,7 @@
   -webkit-text-stroke: 0 #979797; }
 
 a:hover {
-  color: orange; }
+  color: #ffc278; }
 
 .active {
   color: #ffc278; }
@@ -195,7 +195,7 @@ a:hover {
   text-align: left;
   color: #000000; }
   .events a:hover {
-    color: orange; }
+    color: #ffc278; }
 
 #eve {
   grid-column: 11;
@@ -216,7 +216,7 @@ a:hover {
   text-align: left;
   -webkit-text-stroke: 0 #979797; }
   #eve a:hover {
-    color: orange; }
+    color: #ffc278; }
 
 #infoLink {
   grid-column: 11/ 12;

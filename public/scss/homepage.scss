@@ -213,7 +213,7 @@
 }
 
 a:hover {
-  color: orange;
+  color: rgb(255, 194, 120);
 }
 
 .active {
@@ -236,7 +236,7 @@ a:hover {
   color: #000000;
 
   a:hover {
-    color: orange;
+    color: rgb(255, 194, 120);
   }
 }
 
@@ -260,9 +260,10 @@ a:hover {
   -webkit-text-stroke: 0 #979797;
 
   a:hover {
-    color: orange;
+   color: rgb(255, 194, 120);
   }
 }
+
 
 #infoLink {
   grid-column: 11/ 12;

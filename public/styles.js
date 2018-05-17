@@ -17,7 +17,7 @@ window.addEventListener("resize", function() {
 
 if ($(window).width() < 700 && window.location.pathname == '/testdrive') {
   $("#makeitblack").hide();
-  $("#backButton").hide();
+  // $("#backButton").hide();
 }
 
 if (window.location.pathname == '/catalogue') {
@@ -36,6 +36,17 @@ if (window.location.pathname == '/testdrive') {
   $('.eventDetails:first-child').addClass('tdEventActive');
 }
 
+$("#eve").hover(function(){
+    $(this).css({'color': 'rgb(255, 194, 120)'});
+    }, function(){
+    $(this).css("color", "black");
+});
+
+$(".homepage-tdevents").hover(function(){
+    $(this).css({'color': 'rgb(255, 194, 120)'});
+    }, function(){
+    $(this).css("color", "black");
+});
 
 
 // desktop only functions
