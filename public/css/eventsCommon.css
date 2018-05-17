@@ -137,13 +137,6 @@
       text-align: center;
       color: #ffb760;
       -webkit-text-stroke: 0 #979797; }
-    .eventsContainer .burger {
-      display: inline-block;
-      grid-column: 1 / 5;
-      grid-row: 1 / 1;
-      align-self: center;
-      margin: auto;
-      z-index: 99999; }
     .eventsContainer #backButton {
       display: none; }
   .eventList {

@@ -141,11 +141,6 @@
       text-align: center;
       color: #ffb760;
       -webkit-text-stroke: 0 #979797; }
-    .catalogueContainer .burger {
-      display: inline-block;
-      grid-column: 1 / 5;
-      grid-row: 1 / 1;
-      align-self: center; }
     .catalogueContainer #backButton {
       display: none; }
   #artist-container {
