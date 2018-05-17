@@ -209,6 +209,11 @@
   letter-spacing: get-vw(-2.1px);
   text-align: left;
   -webkit-text-stroke: 0 #979797;
+
+}
+
+a:hover {
+  color: orange;
 }
 
 .active {
@@ -229,6 +234,10 @@
   letter-spacing: get-vw(-2.1px);
   text-align: left;
   color: #000000;
+
+  a:hover {
+    color: orange;
+  }
 }
 
 #eve {
@@ -249,6 +258,10 @@
   letter-spacing: get-vw(-2.1px);
   text-align: left;
   -webkit-text-stroke: 0 #979797;
+
+  a:hover {
+    color: orange;
+  }
 }
 
 #infoLink {

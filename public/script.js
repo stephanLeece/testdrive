@@ -38,9 +38,11 @@ function desktopHomepageFunctions() {
     $('#modal').css({'opacity': '1'})
   });
 
+  $('#modal').on("click", function() {
+    $('#modal').css({'opacity': '1'})
+  });
+
 };
-
-
 
 
 function mobileHomepageFunctions() {
