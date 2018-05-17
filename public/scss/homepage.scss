@@ -7,6 +7,11 @@
   @return ($object / $vh) * 1vh;
 }
 /* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
+
+.fixedPagePosition {
+  position: fixed;
+  height: 100vh;
+}
 #DriveDrive {
   width: get-vw(354px);
 }
@@ -394,11 +399,13 @@ a:hover {
   }
   //Inside Burger menu //Inside Burger menu //Inside Burger menu
   .mob-container {
-    position: fixed;
-    grid-row: 1;
-    grid-column: 1 / span 3;
-    height: 100%;
-    width: 100vw;
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+ -webkit-overflow-scrolling: touch;
     background-color: white;
     flex-direction: column;
     align-content: center;
