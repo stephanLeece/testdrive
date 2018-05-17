@@ -401,10 +401,11 @@ a:hover {
   }
   //Inside Burger menu //Inside Burger menu //Inside Burger menu
   .mob-container {
+    position: fixed;
     grid-row: 1;
     grid-column: 1 / span 3;
-    height: 100vh;
-    width: 100vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
     flex-direction: column;
     align-content: center;
@@ -413,17 +414,21 @@ a:hover {
     overflow: hidden;
     top: 0;
 
-    #mob-dd-menu {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-      width: 43%;
-      margin-left: 12vw;
-      margin-top: 4.3vh;
+    .mob-dd-menu {
+      margin-top: get-mob-vh(27px);
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 80vw;
+        height: auto;
+      }
+
     }
 
     .x {
-      display: flex;
-      margin: 8vh;
+      margin-bottom: get-mob-vh(24px);
+
     }
 
     .mob-con {
@@ -432,15 +437,14 @@ a:hover {
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 50%;
+      width: 100%;
 
       .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -5vh;
-        margin-left: 9vw;
+        margin-top: get-mob-vh(89px);
 
         #mob-eve {
           margin-bottom: 4vh;
@@ -491,7 +495,6 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 10vw;
         margin-bottom: 1vh;
 
         #mob-test-eve {
@@ -907,20 +910,6 @@ and (min-device-width : 320px)
 and (max-device-width : 640px) and (orientation: portrait){
 
 
-
-  .mob-container {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-      height: 100vh;
-      width: 100vh;
-      background-color: white;
-      flex-direction: column;
-      align-content: center;
-      justify-content: start;
-      z-index: 300000;
-      overflow: hidden;
-      top: 0;
-  }
 
 
 

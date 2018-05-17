@@ -41,7 +41,7 @@
   justify-self: center;
   align-self: end; }
   .home-video div {
-    height: 26.95312vh;
+    height: 26.95313vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;
@@ -96,7 +96,7 @@
     height: 90%;
     width: 65%;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 1.95313vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -302,10 +302,11 @@ a:hover {
     margin-top: -1vh;
     margin-left: -5vw; }
   .mob-container {
+    position: fixed;
     grid-row: 1;
     grid-column: 1 / span 3;
-    height: 100vh;
-    width: 100vh;
+    height: 100%;
+    width: 100vw;
     background-color: white;
     flex-direction: column;
     align-content: center;
@@ -313,29 +314,29 @@ a:hover {
     z-index: 300000;
     overflow: hidden;
     top: 0; }
-    .mob-container #mob-dd-menu {
-      grid-row: 1;
-      grid-column: 1 / span 3;
-      width: 43%;
-      margin-left: 12vw;
-      margin-top: 4.3vh; }
-    .mob-container .x {
+    .mob-container .mob-dd-menu {
+      margin-top: 4.04798vh;
+      width: 100vw;
       display: flex;
-      margin: 8vh; }
+      justify-content: center; }
+      .mob-container .mob-dd-menu img {
+        width: 80vw;
+        height: auto; }
+    .mob-container .x {
+      margin-bottom: 3.5982vh; }
     .mob-container .mob-con {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       height: 100%;
-      width: 50%; }
+      width: 100%; }
       .mob-container .mob-con .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: -5vh;
-        margin-left: 9vw; }
+        margin-top: 13.34333vh; }
         .mob-container .mob-con .links #mob-eve {
           margin-bottom: 4vh;
           font-size: 41px;
@@ -378,7 +379,6 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 10vw;
         margin-bottom: 1vh; }
         .mob-container .mob-con #td-mob #mob-test-eve {
           text-decoration: none;
@@ -522,7 +522,7 @@ a:hover {
     justify-self: center;
     align-self: end; }
     .home-video div {
-      height: 26.95312vh;
+      height: 26.95313vh;
       width: 24.48052vw;
       justify-self: center;
       align-self: center;
@@ -567,7 +567,7 @@ a:hover {
       height: 90%;
       width: 65%;
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95312vh;
+      font-size: 1.95313vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -639,7 +639,7 @@ a:hover {
     justify-self: center;
     align-self: end; }
     .home-video div {
-      height: 26.95312vh;
+      height: 26.95313vh;
       width: 24.48052vw;
       justify-self: center;
       align-self: center;
@@ -680,17 +680,3 @@ a:hover {
     text-decoration: none;
     color: black;
     text-align: left; } }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation: portrait) {
-  .mob-container {
-    grid-row: 1;
-    grid-column: 1 / span 3;
-    height: 100vh;
-    width: 100vh;
-    background-color: white;
-    flex-direction: column;
-    align-content: center;
-    justify-content: start;
-    z-index: 300000;
-    overflow: hidden;
-    top: 0; } }
