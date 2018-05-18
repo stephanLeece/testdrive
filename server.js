@@ -111,7 +111,10 @@ function dateToString(date) {
   return date.join(' ');
 }
 app.get('/events', function(req, res) {
-  client.getEntries({'content_type': 'drivedriveEvent'}).then((entries) => {
+  client.getEntries({
+    'content_type': 'drivedriveEvent',
+    order: '-fields.ddEventDate'
+  }).then((entries) => {
     const eventList = entries.items
       ? entries.items.map((entry) => {
         let ddEventDate = dateToString(entry.fields.ddEventDate.split('-').reverse()) || null;
@@ -134,7 +137,10 @@ app.get('/events', function(req, res) {
   });
 });
 app.get('/testdrive', function(req, res) {
-  client.getEntries({'content_type': 'testdriveEvent'}).then((entries) => {
+  client.getEntries({
+    'content_type': 'testdriveEvent',
+order: '-fields.tdEventDate'
+  }).then((entries) => {
     const eventList = entries.items
       ? entries.items.map((entry) => {
         let tdEventDate = dateToString(entry.fields.tdEventDate.split('-').reverse()) || null;
