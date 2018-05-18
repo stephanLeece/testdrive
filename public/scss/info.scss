@@ -82,7 +82,7 @@
     }
 
     .facebook {
-      margin-top: -4vh;
+      margin-top: -2vh;
     }
 
 
@@ -525,7 +525,6 @@
 
 
     #infoContactInfo {
-
       grid-column: 1 / 4;
       grid-row: 5 / span 12;
       justify-self: start;
@@ -538,6 +537,7 @@
       .info-contact {
         margin-left: 6vw;
         margin-top: 2vh;
+        display: inline-block;
 
         p {
           font-size: 1.5vh;
@@ -548,15 +548,16 @@
         // a{
         //   padding-top:  1vh;
         // }
+        .form-button {
+          margin-top: 3vh;
+          margin-left: -1vw;
+        }
 
-        form {
-          width: 80vw;
-          height: 4vh;
-          display: flex;
-          justify-content: start;
-          align-items: center;
-          border: 2px solid black;
-          margin-left: 3.5vw;
+        .sign-up-to-our-maili {
+          margin-left: 0.3vh;
+        }
+        #c-form {
+          margin-left: 0px;
 
           input {
             height: 100%;
