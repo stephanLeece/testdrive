@@ -775,7 +775,9 @@ a:hover {
     }
   }
 }
-@media only screen and (min-device-width: 701px) and (orientation: portrait) {
+
+
+@media only screen and (min-device-width: 701px) and (orientation: portrait)  and (max-device-width: 1024px)  {
   #gallery-space-img {
     width: 70vw;
     height: 50vh;
@@ -916,17 +918,23 @@ a:hover {
 }
 //closing media q
 
-
-
-
-
-
+/*iPad Pro*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 640px) and (orientation: portrait){
+  and (min-device-width: 834px)
+  and (max-device-width: 834px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
 
-
-
+    #modal {
+        grid-column: 3 / 9;
+        grid-row: 3 / span 8;
+        justify-self: start;
+        align-self: center;
+        width: 10vw;
+    }
 
 
 }

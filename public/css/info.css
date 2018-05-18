@@ -453,11 +453,3 @@
       margin-top: 2vh; }
   #credits {
     font-size: 12px; } }
-
-@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #modal {
-    grid-column: 3 / 9;
-    grid-row: 3 / span 8;
-    justify-self: start;
-    align-self: center;
-    width: 70vw; } }
