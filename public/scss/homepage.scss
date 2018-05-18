@@ -325,8 +325,11 @@ a:hover {
 .fadeIn {
   opacity: 0;
 }
-/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
-//
+
+/// MOBILE //
+/// MOBILE //
+/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
+
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   @function get-mob-vw($object) {
     $vw: (300 * 0.01) * 1px;
@@ -653,9 +656,11 @@ a:hover {
   .halk {
     display: none;
   }
-}
-//closing media //
-//iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape
+}//closing media query for mobile - general //
+
+
+/*iponeX landscape*/
+//iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #modal {
     grid-column: 7 / 10;
@@ -696,9 +701,15 @@ a:hover {
   //   align-self: center;
   //   margin-top: 8vh;
   // }
-}
-//closing landscape ipjoneX
-////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD  ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD
+}//closing landscape ipjoneX
+
+
+
+
+////// SPECIFIC TO IPAD ////// SPECIFIC TO IPAD FROM HERE
+
+/*iPad*/
+/*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   .home-video {
     grid-column: 1 / span 4;
@@ -777,6 +788,8 @@ a:hover {
 }
 
 
+/*iPad*/
+/* Portrait */
 @media only screen and (min-device-width: 701px) and (orientation: portrait)  and (max-device-width: 1024px)  {
   #gallery-space-img {
     width: 70vw;
@@ -936,5 +949,45 @@ a:hover {
         width: 10vw;
     }
 
+}
+
+/*iPad Pro*/
+/* Landscape */
+@media only screen
+and (min-width: 1112px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  #modal {
+      grid-column: 3 / 9;
+      grid-row: 2 / span 10;
+      background-repeat: no-repeat;
+      margin-left: 9vw;
+      margin-bottom: 3vh;
+
+      .words {
+      font-family: TimesNewRomanPSMT;
+      font-size: 1.85vh;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: left;
+      color: #222222;
+      letter-spacing: normal;
+      align-self: center;
+      cursor: pointer;
+  }
+
+  }
+
+  .home-video #home-v {
+    justify-self: center;
+    align-self: center;
+    width: 19.48052vw;
+    height: 14.64844vh;
+    z-index: 1;
+    margin-left: -2vw;
+    margin-top: -6vh;
+}
 
 }
