@@ -38,6 +38,10 @@ function desktopHomepageFunctions() {
     $('#modal').css({'opacity': '1'})
   });
 
+  $('#bike').on("click", function() {
+    $('#modal').css({'opacity': '1'})
+  });
+
   $('#modal').on("click", function() {
     $('#modal').css({'opacity': '1'})
   });
@@ -68,7 +72,6 @@ function mobileHomepageFunctions() {
   });
 }
 
-
 // Handles post from form
 $('#c-form').submit(((e) => {
     e.preventDefault();
@@ -98,8 +101,8 @@ $('#c-form').submit(((e) => {
 // FADE OUT HULK IMAGE & FADE IN HOME PAGE
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
-    $('#halk').fadeOut(2000);
-    $('#halk-mobile').fadeOut(2000);
+    $('#halk').fadeOut(5000);
+    $('#halk-mobile').fadeOut(5000);
 }
 fadeIntoImg();
 

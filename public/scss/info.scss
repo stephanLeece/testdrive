@@ -523,44 +523,78 @@
     grid-row: 3 / span 4;
   }
 
-  #infoContactInfo {
 
-grid-column: 1 / 4;
-grid-row: 5 / span 12;
-justify-self: start;
-align-self: center;
-width: 55vw;
-display: flex;
-flex-direction: column;
-justify-content: start;
+    #infoContactInfo {
 
+      grid-column: 1 / 4;
+      grid-row: 5 / span 12;
+      justify-self: start;
+      align-self: center;
+      width: 55vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
 
+      .info-contact {
+        margin-left: 6vw;
+        margin-top: 2vh;
 
-    .info-contact {
-      margin-left: 6vw;
-      margin-top: 2vh;
+        p {
+          font-size: 1.5vh;
+          margin-left: -1vw;
+          margin-top: 2vh;
+        }
 
-      p {
-      font-size: 1.5vh;
-      margin-left: -1vw;
-      }
-      form {
-        width: get-vw(729px);
-        height: get-vh(40px);
+        // a{
+        //   padding-top:  1vh;
+        // }
 
-        input {
-          width: 65%;
+        form {
+          width: 80vw;
+          height: 4vh;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          border: 2px solid black;
+          margin-left: 3.5vw;
+
+          input {
+            height: 100%;
+            font-size: 15px;
+            background: none;
+            border: none;
+            outline: none;
+            font-family: TimesNewRomanPSMT;
+          }
         }
 
         button {
-          width: 35%;
+          margin-left: 11vw;
+          font-family: TimesNewRomanPSMT;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          text-align: left;
+          color: #222222;
+          height: 4.6vh;
+          /* width: 50%; */
+          border: inherit;
+          background: white;
+          font-size: 19px;
+          padding: 1px 3px 3px 9px;
+          text-shadow: 1px 1px black;
+          cursor: pointer;
         }
-      }
+
       .facebook {
-    margin-top: -2vh;
-        }
-    }
-  }
+        margin-bottom: 1vh;
+      }
+
+    }//info-contact
+
+  }//infoContactInfo
+
 
   .sign-up-to-our-maili {
       margin-left: -1.2vh;
@@ -583,9 +617,12 @@ margin-top: 2vh;
     }
   }
 
+
   #credits {
     font-size: 12px;
   }
+
+
 }
 
 
