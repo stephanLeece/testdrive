@@ -14,10 +14,13 @@ if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
 }
 
 window.addEventListener("resize", function() {
+  // fadeIntoImg();
   if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
         mobileHomepageFunctions();
   } else {
-
+    $('#halk').hide();
+    $('#halk-mobile').hide();
+      hideMobileMenu()
       desktopHomepageFunctions();
   }
 }, false);
@@ -137,45 +140,46 @@ $(".burger").on("click", function() {
     $(".tdLogo").css({
         "visibility": "hidden"
     });
-    $('.burger').hide();
     $("body").css({
         "background-color": "white"
     });
 });
 
 $(".x").on('click', function() {
-  $('body').removeClass('fixedPagePosition');
-    if (location.pathname == "/info") {
-        $('body').css({'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed', 'background-size': '100vw 100vh'});
-
-
-        $("#hide-for-mobile").css({
-            "display": "block"
-        });
-
-        $(".mob-container").animate({ opacity: 1 }).css({
-            "z-index": "5000"
-        });
-
-
-    }
-
-    $(".mob-container").css({
-        'display': 'none'
-    });
-
-    $('#gallery-space-img').css({
-        'display': 'block'
-    })
-
-    $(".tdLogo").css({
-        "visibility": "visible"
-    });
-
-
-    $('.burger').show();
-
+  hideMobileMenu()
 });
+
+
+function hideMobileMenu() {
+  $('body').removeClass('fixedPagePosition');
+  if (location.pathname == "/info") {
+    $('body').css(
+      {'background': 'url(./assets/Elements/Info/Info-bgA.png) no-repeat center center fixed',
+      'background-size': '100vw 100vh'
+    });
+
+    $("#hide-for-mobile").css({
+      "display": "block"
+    });
+
+    $(".mob-container").animate({ opacity: 1 }).css({
+      "z-index": "5000"
+    });
+  }
+
+  $(".mob-container").css({
+    'display': 'none'
+  });
+
+  $('#gallery-space-img').css({
+    'display': 'block'
+  })
+
+  $(".tdLogo").css({
+    "visibility": "visible"
+  });
+}
+
 
 
 // ------------------------------- video functions ----------
