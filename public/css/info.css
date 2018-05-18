@@ -94,7 +94,7 @@
         /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: 1.95313vh;
+        font-size: 1.95312vh;
         text-shadow: 1px 1px black;
         cursor: pointer; }
 
@@ -352,7 +352,7 @@
       #infoContactInfo .info-contact form {
         width: 80%;
         height: 3.90625vh;
-        margin-top: 0.39063vh;
+        margin-top: 0.39062vh;
         display: flex;
         justify-content: center;
         align-items: center; }
