@@ -16,6 +16,11 @@
   width: get-vw(354px);
 }
 
+
+video::-webkit-media-controls-panel {
+display: none;
+}
+
 .burger {
   display: none;
 }
@@ -330,6 +335,10 @@ a:hover {
   @function get-mob-vh($object) {
     $vh: (667 * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
+  }
+
+  video::-webkit-media-controls-panel {
+  display: none;
   }
 
   .home {
