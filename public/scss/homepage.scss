@@ -336,10 +336,10 @@ a:hover {
     $vh: (667 * 0.01) * 1px;
     @return ($object / $vh) * 1vh;
   }
-
-  video::-webkit-media-controls-panel {
-  display: none;
-  }
+  // 
+  // video::-webkit-media-controls-panel {
+  //  height: 30vh;
+  // }
 
   .home {
     display: grid;

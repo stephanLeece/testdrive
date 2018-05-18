@@ -264,8 +264,6 @@ a:hover {
   opacity: 0; }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
-  video::-webkit-media-controls-panel {
-    display: none; }
   .home {
     display: grid;
     grid-template-rows: 15vh 5vh 40vh 20vh 10vh 10vh;
