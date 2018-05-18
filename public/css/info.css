@@ -60,7 +60,7 @@
       text-align: left;
       margin-left: 4vw; }
     #infoContactInfo .info-contact .facebook {
-      margin-top: -4vh; }
+      margin-top: -2vh; }
     #infoContactInfo .info-contact .form-button {
       grid-column: 2 / span 4;
       grid-row: 10/ span 11; }
@@ -94,7 +94,7 @@
         /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: 1.95312vh;
+        font-size: 1.95313vh;
         text-shadow: 1px 1px black;
         cursor: pointer; }
 
@@ -352,7 +352,7 @@
       #infoContactInfo .info-contact form {
         width: 80%;
         height: 3.90625vh;
-        margin-top: 0.39062vh;
+        margin-top: 0.39063vh;
         display: flex;
         justify-content: center;
         align-items: center; }
@@ -398,20 +398,20 @@
     justify-content: start; }
     #infoContactInfo .info-contact {
       margin-left: 6vw;
-      margin-top: 2vh; }
+      margin-top: 2vh;
+      display: inline-block; }
       #infoContactInfo .info-contact p {
         font-size: 1.5vh;
         margin-left: -1vw;
         margin-top: 2vh; }
-      #infoContactInfo .info-contact form {
-        width: 80vw;
-        height: 4vh;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border: 2px solid black;
-        margin-left: 3.5vw; }
-        #infoContactInfo .info-contact form input {
+      #infoContactInfo .info-contact .form-button {
+        margin-top: 3vh;
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        margin-left: 0.3vh; }
+      #infoContactInfo .info-contact #c-form {
+        margin-left: 0px; }
+        #infoContactInfo .info-contact #c-form input {
           height: 100%;
           font-size: 15px;
           background: none;
