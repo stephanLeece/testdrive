@@ -6,16 +6,15 @@
   $vh: (1024 * 0.01) * 1px;
   @return ($object / $vh) * 1vh;
 }
-/* STYLING FOR BIG-MAC (DRIVEDRIVE) LOGO. */
 
 .fixedPagePosition {
   position: fixed;
   height: 100vh;
 }
+
 #DriveDrive {
   width: get-vw(354px);
 }
-
 
 video::-webkit-media-controls-panel {
 display: none;
@@ -362,6 +361,10 @@ a:hover {
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+    .burger {
+      grid-column: 1 / span 3;
+      margin-top: 16vh;
+    }
   }
 
   #infoLink {
@@ -392,10 +395,9 @@ a:hover {
     width: 100%;
 
     #DriveDrive {
-      margin-top: 7vh;
       width: 85%;
       height: 100%;
-      margin-left: 1vw;
+      margin: 7vh auto 0 auto;
     }
 
     ul {
@@ -661,7 +663,7 @@ a:hover {
 
 /*iponeX landscape*/
 //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape //iponeX landscape
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (min-device-width: 812px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   #modal {
     grid-column: 7 / 10;
     grid-row: 2 / span 9;
@@ -681,26 +683,12 @@ a:hover {
     justify-content: center;
     align-content: center;
   }
-  // .words {
-  //   height: 80%;
-  //   width: 55%;
-  //   font-size: get-mob-vh(18px);
-  //   line-height: 1.06;
-  //   letter-spacing: -0.8px;
-  //   text-align: left;
-  //   color: #222222;
-  //   z-index: -30000;
-  //   height: auto;
-  //   font-family: TimesNewRomanPSMT;
-  //   font-weight: normal;
-  //   font-style: normal;
-  //   font-stretch: normal;
-  //   text-align: left;
-  //   color: #222222;
-  //   letter-spacing: normal;
-  //   align-self: center;
-  //   margin-top: 8vh;
-  // }
+#gallery-space-img {
+  width: auto;
+}
+.home-video {
+width: 19.48052vw!important;
+}
 }//closing landscape ipjoneX
 
 
@@ -715,13 +703,9 @@ a:hover {
     grid-column: 1 / span 4;
     grid-row: 8 / 12;
     height: 100%;
-    width: 100%;
+    width: 30.48052vw;
     justify-self: center;
     align-self: end;
-
-
-      height: get-vh(276px);
-      width: get-vw(377px);
       justify-self: center;
       align-self: center;
       background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
@@ -732,7 +716,7 @@ a:hover {
       margin-top: 8vh;
       margin-left: 4vw;
       padding: 1vh;
-
+}
       #home-v {
         justify-self: center;
         align-self: center;
@@ -748,7 +732,7 @@ a:hover {
         }
       }
 
-  }
+
 
   #modal {
     grid-column: 5 / 9;
