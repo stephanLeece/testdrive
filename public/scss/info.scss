@@ -127,13 +127,15 @@
     font-size: get-vh(20px);
     text-shadow: 1px 1px black;
     cursor: pointer;
-  }
+    }
 
 
-}
+   }
+
 
   }//info-contact
 }//infoContactInfo
+
 
 .sign-up-to-our-maili {
   // font-size: get-vw(20px);
@@ -213,8 +215,8 @@
     background-image: url("/assets/mobile/Info-mobile.png");
     margin: 0;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
+    // background-size: contain;
+    background-size: 100%;
     height: 190.25487vh;
   }
 
@@ -435,7 +437,7 @@
 
 
 ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD ////////// IPAD
-@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 701px) and (max-device-width: 1030px) and (orientation: landscape) {
   #infoMap {
     grid-column: 6 / 11;
   }
@@ -585,6 +587,23 @@ margin-top: 2vh;
     font-size: 12px;
   }
 }
+
+
+
+@media only screen and (min-device-width: 800px) and (max-device-width : 1024px) and (orientation: portrait) {
+
+
+  #modal {
+      grid-column: 3 / 9;
+      grid-row: 3 / span 8;
+      justify-self: start;
+      align-self: center;
+      width: 70vw;
+
+    }
+}
+
+
 
 
 // IPONE X givin me a hard time // IPONE X givin me a hard time  // IPONE X givin me a hard time // IPONE X givin me a hard time  // IPONE X givin me a hard time

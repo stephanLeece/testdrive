@@ -116,8 +116,15 @@
     margin-right: 1vh;
     width: 55%;
     height: 70%; }
+  #video-container video::-webkit-media-controls-panel {
+    display: none; }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+  video::-webkit-media-controls-panel {
+    display: inherit;
+    border-radius: 8px;
+    margin-top: 10px;
+    min-width: 1px; }
   .catalogueContainer {
     display: grid;
     grid-template-rows: 32.14vh 148.07vh 1fr 42.66vh;

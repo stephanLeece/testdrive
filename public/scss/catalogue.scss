@@ -147,12 +147,29 @@
     width: 55%;
     height: 70%;
   }
+
+
+  video::-webkit-media-controls-panel {
+  display: none;
+  }
+
 }
 
 @media only screen
 and (min-device-width: 300px)
 and (max-device-width: 700px)
 and (orientation: portrait) {
+
+
+  video::-webkit-media-controls-panel {
+  display: inherit;
+  // background-color: rgb(255, 194, 120, 0.1);
+  // height: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  min-width: 1px;
+  }
+  
   .catalogueContainer {
     display: grid;
     grid-template-rows: 32.14vh 148.07vh 1fr 42.66vh;
@@ -177,7 +194,7 @@ and (orientation: portrait) {
     color: #ffb760;
     -webkit-text-stroke: 0 #979797;
     }
-  
+
 
     #backButton {
       display: none;
