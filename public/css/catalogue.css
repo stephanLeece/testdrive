@@ -119,6 +119,8 @@
   #video-container video::-webkit-media-controls-panel {
     display: none; }
 
+/* General mobile*/
+/*Portrait*/
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   video::-webkit-media-controls-panel {
     display: inherit;
@@ -215,6 +217,7 @@
   .pds {
     font-size: 0px; } }
 
+/* i have no idea what media q this is */
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   .artists {
     margin-top: 0vh;
@@ -223,6 +226,8 @@
     font-size: 1.62338vw;
     font-weight: normal; } }
 
+/*iPad*/
+/*Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .artists {
     margin-top: 3vh;
@@ -244,7 +249,21 @@
     z-index: 1000;
     margin-left: 2.34375vw; } }
 
+/*iPad*/
+/*Landscape*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #artist-container {
+    grid-row: 5 / 8;
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 0.78125vw;
+    z-index: 1000;
+    height: 80.85938vh;
+    width: 21.640625vw;
+    margin-left: -2vw; }
   .artists {
     margin-top: 3vh;
     height: 80vh;
@@ -253,3 +272,84 @@
     font-weight: normal; }
   .pds {
     font-size: 23px; } }
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  #video-container video {
+    width: 38vw;
+    height: 20vh; } }
+
+/*iPad Pro*/
+/* Landscape */
+@media only screen and (min-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .artists {
+    margin-top: 6vh;
+    height: inherit;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.5987vw; } }
+
+/*iPhone X*/
+/* Portrait */
+/*iPhone X*/
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #artist-container {
+    grid-row: 6 / 8;
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 0.78125vw;
+    z-index: 1000;
+    height: 80.85938vh;
+    width: 21.640625vw;
+    margin-left: -2vw; }
+  .pds {
+    font-size: 20px; } }
+
+/*iPhonePlus*/
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .burger {
+    display: inline-block;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    align-self: center;
+    margin: 0 auto;
+    z-index: 99999;
+    margin-left: 80px; } }
+
+/*iPhonePlus*/
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .pdf {
+    font-size: 18px;
+    margin-top: 0vh; } }
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait */
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  #artist-container {
+    grid-row: 5 / 8;
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 0.78125vw;
+    z-index: 1000;
+    height: 80.85938vh;
+    width: 21.640625vw;
+    /* margin-left: -2vw; */ }
+  .artists {
+    /* margin-top: 6vh; */
+    height: inherit;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.2987vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.12338vw;
+    text-align: left;
+    color: black; } }
