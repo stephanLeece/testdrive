@@ -457,8 +457,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 }
 
-/*iPhonePlus*/
+/iPhonePlus/
+
 /* Portrait */
+
 @media only screen
   and (min-device-width: 414px)
   and (max-device-width: 736px)
@@ -472,7 +474,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
        align-self: center;
        margin: 0 auto;
        z-index: 99999;
-       margin-left: 80px;
+       // margin-right: 13vh;
+
    }
 
 }
