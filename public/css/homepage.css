@@ -40,18 +40,12 @@ video::-webkit-media-controls-panel {
     flex-direction: column; }
 
 .home-video {
+  border: 1px solid red;
   grid-column: 1 / span 4;
   grid-row: 8 / 12;
-  height: 100%;
-  width: 100%;
-  justify-self: center;
-  align-self: end;
-  height: 26.95313vh;
-  width: 24.48052vw;
-  justify-self: center;
-  align-self: center;
   background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,15 +53,8 @@ video::-webkit-media-controls-panel {
   margin-left: 4vw;
   padding: 1vh; }
   .home-video #home-v {
-    justify-self: center;
-    align-self: center;
-    width: 19.48052vw;
-    height: 14.64844vh;
-    z-index: 1;
-    margin-left: -2vw; }
-    .home-video #home-v source {
-      height: 100%;
-      width: 100%; }
+    border: 1px solid red;
+    width: 73%; }
 
 #gallery-space-img {
   width: 79%;
