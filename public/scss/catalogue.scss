@@ -22,52 +22,40 @@
 }
 
 #artist-container {
-  grid-row: 5 / 8;
+  margin-top: 2vh;
+  grid-row: 4 / 13;
   grid-column: 2 / 5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1vh 0.78125vw;
-  z-index: 1000;
-  height: 80.85938vh;
-  width: 21.640625vw;
+  z-index: 2000;
   margin-left: -3vw;
-
-}
-
-#artist-containerBackground {
-  grid-row: 5 / 8;
-  grid-column: 2 / 5;
-  // height: 100vh;
-  width: 23.5vw;
-  margin-left: -3vw;
-
+  background-image: url("/assets/Elements/DriveDrive/Catalogue/artist-list-desktop.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .artists {
-  margin-top: 6vh;
+  margin-bottom: 8vh;
   height: inherit;
   font-family: TimesNewRomanPSMT;
-  font-size: 1.2987vw;
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: -0.12338vw;
   text-align: left;
   color: black;
-  ul {
-
-    margin: 0;
-    padding: 0;
-  }
 }
 
 #catalogue-line-green {
-  width: 14.5vw;
+  width: 12.5vw;
   height: auto;
   grid-column: 1 / 3;
-  grid-row: 12 / 13;
+  grid-row: 10 / span 1;
   cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
   z-index: 1000;
   margin-left: 2.34375vw;
@@ -174,7 +162,7 @@ and (orientation: portrait) {
 
   .catalogueContainer {
     display: grid;
-    grid-template-rows: 32.14vh 148.07vh 1fr 42.66vh;
+    grid-template-rows: 27.14vh 126.07vh 1fr 42.66vh;
     grid-template-columns: repeat(4, 22.22222222222222vw);
     grid-column-gap: 2.7777777777777777vw;
     height: 224.44444444444446vh;
@@ -210,23 +198,12 @@ and (orientation: portrait) {
     width: 100vw;
     grid-column: 1 / 5;
     grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     z-index: 1000;
   }
 
-  #artist-containerBackground {
-    width: 100vw;
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
-  }
-
   .artists {
-    margin-top: 16vh;
     font-family: TimesNewRomanPSMT;
-    font-size: 20px;
+    font-size: 5vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -274,7 +251,7 @@ and (orientation: portrait) {
     height: auto;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-top: 0;
+    margin-top: 4vh;
     cursor: url(/public/assets/Elements/Nav/bike.svg), auto;
     z-index: -1000;
   }
@@ -297,19 +274,6 @@ and (orientation: portrait) {
 }
 
 
-/* i have no idea what media q this is */
-@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
-  .artists {
-      margin-top: 0vh;
-      height: 80vh;
-      font-family: TimesNewRomanPSMT;
-      font-size: 1.62338vw;
-      font-weight: normal;
-}
-
-}
-
-
 /*iPad*/
 /*Portrait*/
 
@@ -322,9 +286,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .artists {
         margin-top: 3vh;
-        height: 80vh;
         font-family: TimesNewRomanPSMT;
-        font-size: 1.62338vw;
+        font-size: 1.98vw;
         font-weight: normal;
 
       }
@@ -364,21 +327,21 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 
     #artist-container {
-        grid-row: 5 / 8;
+        grid-row: 4 / 8;
         grid-column: 2 / 5;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 1vh 0.78125vw;
-        z-index: 1000;
-        height: 80.85938vh;
+        z-index: 2000;
+        height: 70vh;
         width: 21.640625vw;
         margin-left: -2vw;
     }
 
     .artists {
-        margin-top: 3vh;
+        margin-top: 10vh;
         height: 80vh;
         font-family: TimesNewRomanPSMT;
         font-size: 1.62338vw;
@@ -545,6 +508,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media only screen and (min-device-width: 1800px)  and (orientation: landscape) {
   #artist-container {
-    grid-row: 6 / 8;
+    grid-row: 4 / 13;
+  }
+
+  .artists {
+    font-size: 28px;
   }
 }
