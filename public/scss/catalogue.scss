@@ -217,6 +217,8 @@ and (orientation: portrait) {
   }
 
   #pdfs-container {
+    margin-top: -10vh;
+    z-index: 3000;
     width: 100vw;
     height: 41.77vh;
     grid-column: 1 / 5;
