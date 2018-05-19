@@ -60,39 +60,20 @@ display: none;
 .home-video {
   grid-column: 1 / span 4;
   grid-row: 8 / 12;
-  height: 100%;
-  width: 100%;
-  justify-self: center;
-  align-self: end;
-
-
-    height: get-vh(276px);
-    width: get-vw(377px);
-    justify-self: center;
-    align-self: center;
-    background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8vh;
-    margin-left: 4vw;
-    padding: 1vh;
-
-    #home-v {
-      justify-self: center;
-      align-self: center;
-      width: get-vw(300px);
-      height: get-vh(150px);
-      z-index: 1;
-      margin-left: -2vw;
-
-      source {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
+  background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  margin-left: 4vw;
+  padding: 1vh;
+  #home-v {
+width: 68%;
+height: 68%;
+margin-right: 1vw;
+  }
 }
 
 #gallery-space-img {
@@ -615,27 +596,12 @@ and (orientation: portrait) {
   }
 
   .home-video {
-    grid-column: 2;
-  grid-row: 3 / span 4;
-  height: 6%;
-  width: 100%;
-  justify-self: center;
-  justify-content: center;
-  width: 100%;
-  justify-self: center;
-  align-self: center;
-  margin-top: 19vh;
-
-  padding: 10vh;
+    grid-column: 1 / 4;
+  grid-row: 4 / 5;
   z-index: 333;
-
+  margin: -1vh 0 0 22vw;
       #home-v {
-        grid-column: 2;
-        grid-row: 3;
         z-index: 1000;
-
-        width: 25vh;
-        object-fit: contain;
       }
 
   }
@@ -717,10 +683,6 @@ and (orientation : portrait) {
     margin-top: 16vh;
 }
 
-.home-video #home-v {
-    margin-top: -2vh;
-}
-
 }
 
 
@@ -731,21 +693,15 @@ and (orientation : portrait) {
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
   .home-video {
-    grid-column: 1 / span 4;
-    grid-row: 8 / 12;
+    grid-row: 8 / 11;
     height: 100%;
     width: 30.48052vw;
-    justify-self: center;
-    align-self: end;
-      justify-self: center;
-      align-self: center;
       background: url("/assets/Elements/Home/Home-video-cloud-grey.svg") no-repeat;
-      background-size: 100%;
+      background-size: contain;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 8vh;
-      margin-left: 4vw;
       padding: 1vh;
 }
       #home-v {
@@ -754,13 +710,6 @@ and (orientation : portrait) {
         height: 15vh;
         width: 17vw;
         z-index: 1;
-        margin-left: -2vw;
-        margin-bottom: 7vh;
-
-        source {
-          height: 100%;
-          width: 100%;
-        }
       }
 
 
@@ -896,7 +845,6 @@ and (orientation : portrait) {
         width: get-vw(300px);
         height: get-vh(150px);
         z-index: 1;
-        margin-left: -2vw;
         margin-bottom: 16vh;
 
         source {
@@ -1003,8 +951,6 @@ and (orientation: landscape)  {
       width: 19.48052vw;
       height: 12.64844vh;
       z-index: 1;
-      margin-left: -1vw;
-      margin-top: -6vh;
   }
 
 
