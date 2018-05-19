@@ -329,7 +329,10 @@ a:hover {
 /// MOBILE //
 /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
+@media only screen
+and (min-device-width: 300px)
+and (max-device-width: 700px)
+and (orientation: portrait) {
   @function get-mob-vw($object) {
     $vw: (300 * 0.01) * 1px;
     @return ($object / $vw) * 1vw;
@@ -347,11 +350,6 @@ a:hover {
   margin-top: 10px;
 	min-width: 1px;
   }
-
-  video::-webkit-media-controls-play-button {
-  color: red;
-
-}
 
   .home {
     display: grid;
@@ -689,8 +687,41 @@ a:hover {
 .home-video {
 width: 19.48052vw!important;
 }
-}//closing landscape ipjoneX
+}//closing landscape iphoneX
 
+/*iPhone X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+#modal .words {
+    width: 43.32834vh;
+    height: 65.51724vh;
+    font-size: 2.4vh;
+    line-height: 1.06;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #222222;
+    z-index: -30000;
+    height: auto;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #222222;
+    letter-spacing: normal;
+    align-self: center;
+    margin-top: 16vh;
+}
+
+.home-video #home-v {
+    margin-top: -2vh;
+}
+
+}
 
 
 
@@ -937,41 +968,44 @@ width: 19.48052vw!important;
 
 /*iPad Pro*/
 /* Landscape */
+
 @media only screen
-and (min-width: 1112px)
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (min-device-width: 1366px)
+and (max-device-height: 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape)  {
 
-  #modal {
-      grid-column: 3 / 9;
-      grid-row: 2 / span 10;
-      background-repeat: no-repeat;
-      margin-left: 9vw;
-      margin-bottom: 3vh;
+    #modal {
 
-      .words {
-      font-family: TimesNewRomanPSMT;
-      font-size: 1.85vh;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      text-align: left;
-      color: #222222;
-      letter-spacing: normal;
+  grid-column: 5 / 10;
+  grid-row: 2/span 9;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+        .words {
+        font-family: TimesNewRomanPSMT;
+        font-size: 1.85vh;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: left;
+        color: #222222;
+        letter-spacing: normal;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    }
+
+    .home-video #home-v {
+      justify-self: center;
       align-self: center;
-      cursor: pointer;
+      width: 19.48052vw;
+      height: 12.64844vh;
+      z-index: 1;
+      margin-left: -1vw;
+      margin-top: -6vh;
   }
 
-  }
-
-  .home-video #home-v {
-    justify-self: center;
-    align-self: center;
-    width: 19.48052vw;
-    height: 14.64844vh;
-    z-index: 1;
-    margin-left: -2vw;
-    margin-top: -6vh;
-}
 
 }

@@ -268,8 +268,6 @@ a:hover {
     border-radius: 8px;
     margin-top: 10px;
     min-width: 1px; }
-  video::-webkit-media-controls-play-button {
-    color: red; }
   .home {
     display: grid;
     grid-template-rows: 15vh 5vh 40vh 20vh 10vh 10vh;
@@ -530,6 +528,30 @@ a:hover {
   .home-video {
     width: 19.48052vw !important; } }
 
+/*iPhone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #modal .words {
+    width: 43.32834vh;
+    height: 65.51724vh;
+    font-size: 2.4vh;
+    line-height: 1.06;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: #222222;
+    z-index: -30000;
+    height: auto;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #222222;
+    letter-spacing: normal;
+    align-self: center;
+    margin-top: 16vh; }
+  .home-video #home-v {
+    margin-top: -2vh; } }
+
 /*iPad*/
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -712,13 +734,12 @@ a:hover {
 
 /*iPad Pro*/
 /* Landscape */
-@media only screen and (min-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #modal {
-    grid-column: 3 / 9;
-    grid-row: 2 / span 10;
+    grid-column: 5 / 10;
+    grid-row: 2/span 9;
     background-repeat: no-repeat;
-    margin-left: 9vw;
-    margin-bottom: 3vh; }
+    background-size: 100% 100%; }
     #modal .words {
       font-family: TimesNewRomanPSMT;
       font-size: 1.85vh;
@@ -734,7 +755,7 @@ a:hover {
     justify-self: center;
     align-self: center;
     width: 19.48052vw;
-    height: 14.64844vh;
+    height: 12.64844vh;
     z-index: 1;
-    margin-left: -2vw;
+    margin-left: -1vw;
     margin-top: -6vh; } }
