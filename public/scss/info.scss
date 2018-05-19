@@ -214,8 +214,7 @@
     grid-template-rows: repeat(10, 10%);
     background-image: url("/assets/mobile/Info-mobile.png");
     margin: 0;
-    background-repeat: no-repeat;
-    // background-size: contain;
+    background-repeat: repeat-y;
     background-size: 100%;
     height: 190.25487vh;
   }
@@ -633,22 +632,13 @@ margin-top: 2vh;
 
 //iphone X media q
 //
-// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-//
-// .info {
-//   overflow-x: hidden;
-//   display: grid;
-//   grid-template-columns: repeat(4, 25%);
-//   grid-template-rows: repeat(10, 10%);
-//   background-image: url("/assets/mobile/Info-mobile.png");
-//   margin: 0;
-//   background-repeat: repeat-y;
-//   background-size: contain;
-//   width: 100%;
-//   height: 200vh;
-// }
-//
-// }//closing iphoneX
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+
+#testdriveLogoInfo {
+  margin-bottom: -7vh;
+}
+
+}//closing iphoneX
 
 
 //CANT HANDLE THIS
