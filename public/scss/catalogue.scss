@@ -457,7 +457,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 }
 
-/iPhonePlus/
+
 
 /* Portrait */
 
@@ -541,4 +541,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
     color: black;
 }
 
+}
+
+@media only screen and (min-device-width: 1800px)  and (orientation: landscape) {
+  #artist-container {
+    grid-row: 6 / 8;
+  }
 }
