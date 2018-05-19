@@ -453,3 +453,7 @@
       margin-top: 2vh; }
   #credits {
     font-size: 12px; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+  #testdriveLogoInfo {
+    margin-bottom: -7vh; } }
