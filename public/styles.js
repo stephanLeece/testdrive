@@ -134,9 +134,8 @@ function showMobileEvents() {
       $(this).addClass('tdEventActive');
     }
   });
-
-  $(".eventsInfoBox").click(function() {
-    $(this).css({
+  $(".pageBreadCrumb").click(function() {
+    $(".eventsInfoBox").css({
       '-webkit-transform': 'scale(1 , 0)',
       '-moz-transform': 'scale(1 , 0)',
       '-o-transform': 'scale(1 , 0)',
