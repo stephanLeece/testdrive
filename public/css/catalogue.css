@@ -307,7 +307,6 @@
   .pds {
     font-size: 20px; } }
 
-/*iPhonePlus*/
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .burger {
@@ -316,8 +315,7 @@
     grid-row: 1;
     align-self: center;
     margin: 0 auto;
-    z-index: 99999;
-    margin-left: 80px; } }
+    z-index: 99999; } }
 
 /*iPhonePlus*/
 /* Landscape */
@@ -353,3 +351,7 @@
     letter-spacing: -0.12338vw;
     text-align: left;
     color: black; } }
+
+@media only screen and (min-device-width: 1800px) and (orientation: landscape) {
+  #artist-container {
+    grid-row: 6 / 8; } }
