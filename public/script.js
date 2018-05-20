@@ -104,8 +104,8 @@ $('#c-form').submit(((e) => {
 // FADE OUT HULK IMAGE & FADE IN HOME PAGE
 // ~~~~~~~~ FULL-SCREEN & MOBILE ~~~~~~~~
 function fadeIntoImg() {
-    $('#halk').fadeOut(5000);
-    $('#halk-mobile').fadeOut(5000);
+    $('#halk').fadeOut(4000);
+    $('#halk-mobile').fadeOut(4000);
 }
 fadeIntoImg();
 
