@@ -83,6 +83,12 @@
 
     .facebook {
       margin-top: -2vh;
+      a:link, a:visited {
+        color: blue;
+      }
+      a:hover {
+        color: rgb(255, 194, 120);
+      }
     }
 
 
