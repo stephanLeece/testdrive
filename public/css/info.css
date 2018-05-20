@@ -61,6 +61,10 @@
       margin-left: 4vw; }
     #infoContactInfo .info-contact .facebook {
       margin-top: -2vh; }
+      #infoContactInfo .info-contact .facebook a:link, #infoContactInfo .info-contact .facebook a:visited {
+        color: blue; }
+      #infoContactInfo .info-contact .facebook a:hover {
+        color: #ffc278; }
     #infoContactInfo .info-contact .form-button {
       grid-column: 2 / span 4;
       grid-row: 10/ span 11; }

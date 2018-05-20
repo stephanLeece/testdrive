@@ -22,7 +22,7 @@
 
     <div class="home-video">
       {{#video}}
-      <video id='home-v' onmouseover="pause()" onmouseleave="play()" autoplay loop controls>
+      <video id='home-v' onmouseover="pause()" onmouseleave="play()" autoplay loop muted controls>
         <source src='https:{{url}}' type='{{contentType}}'>
       </video>
       {{/video}}

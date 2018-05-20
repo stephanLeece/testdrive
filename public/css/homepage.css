@@ -57,6 +57,7 @@ video::-webkit-media-controls-panel {
     margin-right: 1vw; }
 
 #gallery-space-img {
+  filter: drop-shadow(0 0 30px #ffc278);
   width: 79%;
   height: 80vh;
   margin-left: 3vw;
