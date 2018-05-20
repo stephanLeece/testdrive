@@ -113,7 +113,7 @@ function dateToString(date) {
 app.get('/events', function(req, res) {
   client.getEntries({
     'content_type': 'drivedriveEvent',
-    order: 'fields.ddEventDate'
+    order: '-fields.ddEventDate'
   }).then((entries) => {
     const eventList = entries.items
       ? entries.items.map((entry) => {
@@ -139,7 +139,7 @@ app.get('/events', function(req, res) {
 app.get('/testdrive', function(req, res) {
   client.getEntries({
     'content_type': 'testdriveEvent',
-order: 'fields.tdEventDate'
+order: '-fields.tdEventDate'
   }).then((entries) => {
     const eventList = entries.items
       ? entries.items.map((entry) => {
