@@ -7,7 +7,7 @@
   grid-column-gap: 1.94805vw;
   overflow: hidden;
   margin: 0;
-  background-image: url("/assets/Elements/Info/Info-bgA.png");
+  background-image: url("./../assets/optimizedImages/Info-bgA-min.png");
   background-size: 100vw 100vh;
   background-repeat: no-repeat; }
 
@@ -37,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   color: #222222;
-  background-image: url("/assets/Elements/Info/Info-contact-outline.png");
+  background-image: url("./../assets/optimizedImages/Info-contact-outline-min.png");
   background-size: 90%;
   background-repeat: no-repeat;
   margin-top: 8vh;
@@ -156,7 +156,7 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(10, 10%);
-    background-image: url("/assets/mobile/Info-mobile.png");
+    background-image: url("./../assets/optimizedImages/Info-mobile-min.png");
     margin: 0;
     background-repeat: repeat-y;
     background-size: 100%;
@@ -194,7 +194,7 @@
     flex-direction: column;
     justify-content: center;
     color: #222222;
-    background-image: url("/assets/Elements/Info/Info-contact-outline.png");
+    background-image: url("./../assets/optimizedImages/Info-contact-outline-min.png");
     background-size: 109vw 75vh;
     background-repeat: no-repeat;
     margin-top: 8vh;
