@@ -37,7 +37,7 @@
   width: 46.94805vw;
   height: 3.22266vh;
   font-family: TimesNewRomanPSMT;
-  font-size: 30px;
+  font-size: 1.94805vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -72,7 +72,7 @@
   .eventDetails .eventsDetailDate {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 17px;
+    font-size: 1.1039vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -82,7 +82,7 @@
   .eventDetails .eventsDetailTitle {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 20px;
+    font-size: 1.2987vw;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;

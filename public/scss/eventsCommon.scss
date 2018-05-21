@@ -50,7 +50,7 @@
   width: get-vw(723px);
   height: get-vh(33px);
   font-family: TimesNewRomanPSMT;
-  font-size: 30px;
+  font-size: get-vw(30px);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -91,7 +91,7 @@
   .eventsDetailDate {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 17px;
+    font-size: get-vw(17px);
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -103,7 +103,7 @@
   .eventsDetailTitle {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
-    font-size: 20px;
+    font-size: get-vw(20px);
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
