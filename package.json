@@ -20,6 +20,7 @@
     "eslint": "^4.9.0",
     "express": "~4.15.2",
     "express-handlebars": "^3.0.0",
+    "gulp-cli": "^2.0.1",
     "jquery-touchswipe": "^1.6.18",
     "node": "8.9.4",
     "node-sass": "^4.7.2",
