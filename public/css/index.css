@@ -745,7 +745,7 @@ video::-webkit-media-controls-panel {
     height: 90%;
     width: 65%;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95313vh;
+    font-size: 1.95312vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -1224,7 +1224,7 @@ a:hover {
       height: 90%;
       width: 65%;
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95313vh;
+      font-size: 1.95312vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -1297,7 +1297,7 @@ a:hover {
     width: 100%;
     justify-self: center;
     align-self: end;
-    height: 26.95313vh;
+    height: 26.95312vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;
@@ -1443,7 +1443,8 @@ a:hover {
       margin-left: 4vw; }
     #infoContactInfo .info-contact .facebook {
       margin-top: -2vh; }
-      #infoContactInfo .info-contact .facebook a:link, #infoContactInfo .info-contact .facebook a:visited {
+      #infoContactInfo .info-contact .facebook a:link,
+      #infoContactInfo .info-contact .facebook a:visited {
         color: blue; }
       #infoContactInfo .info-contact .facebook a:hover {
         color: #ffc278; }
@@ -1480,7 +1481,7 @@ a:hover {
         /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: 1.95313vh;
+        font-size: 1.95312vh;
         text-shadow: 1px 1px black;
         cursor: pointer; }
 
@@ -1591,10 +1592,10 @@ a:hover {
       flex-direction: column;
       justify-content: center;
       align-content: center;
-      margin-bottom: 15vh;
+      margin-bottom: 26vh;
       margin-left: 10vw; }
       #infoContactInfo .info-contact p {
-        font-size: 2vh;
+        font-size: 2.5vh;
         font-family: TimesNewRomanPSMT;
         font-weight: normal;
         font-style: normal;
@@ -1603,26 +1604,28 @@ a:hover {
         letter-spacing: -0.05844vw;
         text-align: left;
         margin-left: 4vw;
-        margin-bottom: 5vw; }
+        margin-bottom: 2.5vw; }
       #infoContactInfo .info-contact .facebook {
         margin-bottom: 6vh; }
-      #infoContactInfo .info-contact form {
-        width: 80vw;
+      #infoContactInfo .info-contact .form-button form {
+        width: 85vw;
         height: 4vh;
         display: flex;
         justify-content: start;
         align-items: center;
         border: 2px solid black;
         margin-left: 3.5vw; }
-        #infoContactInfo .info-contact form input {
+        #infoContactInfo .info-contact .form-button form input {
           height: 100%;
+          width: 59vw;
           font-size: 15px;
           background: none;
           border: none;
           outline: none;
           font-family: TimesNewRomanPSMT; }
-      #infoContactInfo .info-contact button {
-        margin-left: 11vw;
+      #infoContactInfo .info-contact .form-button button {
+        margin-right: -58px;
+        margin-left: 8vw;
         font-family: TimesNewRomanPSMT;
         font-weight: normal;
         font-style: normal;
@@ -1631,11 +1634,10 @@ a:hover {
         text-align: left;
         color: #222222;
         height: 4.6vh;
-        /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: 19px;
-        padding: 1px 3px 3px 9px;
+        font-size: 17px;
+        padding: 5px 15px 5px 15px;
         text-shadow: 1px 1px black;
         cursor: pointer; }
     #infoContactInfo .sign-up-to-our-maili {
@@ -1681,19 +1683,11 @@ a:hover {
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
   .sign-up-to-our-maili {
-    font-size: 10px; }
-  #infoContactInfo .info-contact form input {
-    width: 13vw;
-    height: 3vh;
-    font-size: 8px;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: TimesNewRomanPSMT; }
-  form {
-    width: 20.36364vw; }
-  #infoContactInfo .info-contact button {
-    margin-right: -20vw;
+    font-size: 10px;
+    text-shadow: 0.5px 0.5px black; }
+  #infoContactInfo .info-contact .form-button button {
+    grid-column: 3 / span 4;
+    margin-right: -22vw;
     font-family: TimesNewRomanPSMT;
     font-weight: normal;
     font-style: normal;
@@ -1702,19 +1696,27 @@ a:hover {
     text-align: left;
     color: #222222;
     height: 4.5vh;
-    width: 35%;
+    /* width: 50%; */
     border: inherit;
     background: white;
-    font-size: 9px;
-    text-shadow: 1px 1px black;
-    cursor: pointer; } }
+    font-size: 1.95312vh;
+    text-shadow: 0.3px 0.3px black;
+    cursor: pointer; }
+  #infoContactInfo .info-contact .form-button form {
+    width: 20.36364vw;
+    height: 4vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 3.5vw; } }
 
-@media only screen and (min-device-width: 701px) and (max-device-width: 1030px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #infoMap {
     grid-column: 6 / 11; }
   #infoContactInfo {
     grid-column: 2 / 5;
-    grid-row: 4 / span 7;
+    grid-row: 5/ span 8;
     width: 38vw;
     height: 60vh;
     justify-self: center;
@@ -1733,43 +1735,58 @@ a:hover {
       flex-direction: column;
       justify-content: center; }
       #infoContactInfo .info-contact p {
-        font-size: 1.8vh;
-        margin-left: 3.5vw; }
-      #infoContactInfo .info-contact form {
-        width: 80%;
-        height: 3.90625vh;
-        margin-top: 0.39063vh;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        #infoContactInfo .info-contact form button {
-          width: 10vw; }
-      #infoContactInfo .info-contact .facebook {
-        margin-top: -3vh; }
-      #infoContactInfo .info-contact .sign-up-to-our-maili {
-        margin-top: 1.5vh;
+        font-size: 2vh;
         margin-left: 3.5vw;
+        font-size: 2vh;
         font-family: TimesNewRomanPSMT;
-        font-size: 1.94805vw;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.05;
+        line-height: 1;
         letter-spacing: -0.05844vw;
         text-align: left;
-        color: #222222;
-        text-shadow: 1px 1px black; }
-      #infoContactInfo .info-contact input {
-        width: 8.44156vw;
-        height: 4.39453vh;
-        font-size: 40px;
-        background: none;
-        border: none;
-        outline: none;
+        margin-bottom: 1vh; }
+      #infoContactInfo .info-contact .form-button {
+        margin-top: 3vh;
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        text-shadow: 0.5px 0.5px black;
+        margin-left: 6vh;
+        margin-top: -1vh;
+        font-size: 2.5vh; }
+      #infoContactInfo .info-contact #c-form {
+        margin-left: 4.5vw;
+        width: 20vw;
+        height: 4.0vh;
+        border: 2px solid black; }
+        #infoContactInfo .info-contact #c-form input {
+          width: 20vw;
+          height: 100%;
+          font-size: 16px;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact button {
+        height: 3.42vh;
+        grid-column: 3 / span 4;
+        margin-right: -22vw;
+        margin-left: -0.1vw;
         font-family: TimesNewRomanPSMT;
-        text-shadow: 1px 1px black; } }
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        text-align: left;
+        border: inherit;
+        background: white;
+        font-size: 2.3vh;
+        text-shadow: 1px 1px black;
+        cursor: pointer; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 1vh; } }
 
-@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #infoMap {
     grid-column: 6 / 11;
     grid-row: 3 / span 4; }
@@ -1778,34 +1795,42 @@ a:hover {
     grid-row: 5 / span 12;
     justify-self: start;
     align-self: center;
-    width: 55vw;
+    width: 57vw;
     display: flex;
     flex-direction: column;
     justify-content: start; }
     #infoContactInfo .info-contact {
       margin-left: 6vw;
-      margin-top: 2vh;
+      margin-top: 3vh;
       display: inline-block; }
       #infoContactInfo .info-contact p {
-        font-size: 1.5vh;
+        font-size: 1.7vh;
         margin-left: -1vw;
-        margin-top: 2vh; }
+        margin-top: 1vh; }
       #infoContactInfo .info-contact .form-button {
         margin-top: 3vh;
         margin-left: -1vw; }
       #infoContactInfo .info-contact .sign-up-to-our-maili {
         margin-left: 0.3vh; }
       #infoContactInfo .info-contact #c-form {
-        margin-left: 0px; }
+        margin-left: 0;
+        width: 29vw;
+        height: 4.1vh;
+        border: 2px solid black; }
         #infoContactInfo .info-contact #c-form input {
+          width: 20vw;
           height: 100%;
-          font-size: 15px;
+          font-size: 16px;
           background: none;
           border: none;
           outline: none;
           font-family: TimesNewRomanPSMT; }
       #infoContactInfo .info-contact button {
-        margin-left: 11vw;
+        margin-left: 9vw;
+        height: 3.42vh;
+        width: 40%;
+        grid-column: 3 / span 4;
+        margin-right: -25vw;
         font-family: TimesNewRomanPSMT;
         font-weight: normal;
         font-style: normal;
@@ -1813,18 +1838,14 @@ a:hover {
         line-height: normal;
         text-align: left;
         color: #222222;
-        height: 4.6vh;
-        /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: 19px;
-        padding: 1px 3px 3px 9px;
-        text-shadow: 1px 1px black;
-        cursor: pointer; }
+        font-size: 1.75312vh;
+        text-shadow: 1px 1px black; }
       #infoContactInfo .info-contact .facebook {
         margin-bottom: 1vh; }
   .sign-up-to-our-maili {
-    margin-left: -1.2vh;
+    margin-left: 1vh;
     margin-top: 1vh;
     font-size: 2vh; }
   #testdriveLogoInfo {
@@ -1833,16 +1854,352 @@ a:hover {
     justify-self: center;
     align-self: center; }
     #testdriveLogoInfo img {
-      height: 9.76562vh;
       width: 28.83117vw;
       margin-right: 1vh;
       margin-top: 2vh; }
   #credits {
     font-size: 12px; } }
 
+/*iPad Pro*/
+/*Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* STYLES GO HERE */
+  #infoMap {
+    grid-column: 6 / 11;
+    grid-row: 3 / span 4; }
+  #infoContactInfo {
+    grid-column: 1 / 4;
+    grid-row: 6 / span 12;
+    justify-self: start;
+    align-self: center;
+    width: 57vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+    #infoContactInfo .info-contact {
+      margin-left: 6vw;
+      margin-top: 3vh;
+      display: inline-block; }
+      #infoContactInfo .info-contact p {
+        font-size: 1.7vh;
+        margin-left: -1vw;
+        margin-top: 1vh; }
+      #infoContactInfo .info-contact .form-button {
+        margin-top: 3vh;
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        margin-left: 0.1vh; }
+      #infoContactInfo .info-contact #c-form {
+        margin-left: 0;
+        width: 29vw;
+        height: 4.2vh;
+        border: 2px solid black; }
+        #infoContactInfo .info-contact #c-form input {
+          width: 20vw;
+          height: 100%;
+          font-size: 16px;
+          background: none;
+          border: none;
+          outline: none;
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 1vh; }
+  .sign-up-to-our-maili {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    font-size: 2.1vh; }
+  #testdriveLogoInfo {
+    grid-row: 11 / 12;
+    height: 100%;
+    justify-self: center;
+    align-self: center; }
+    #testdriveLogoInfo img {
+      height: 18vh;
+      width: 28.83117vw;
+      margin-right: 1vh;
+      margin-top: 2vh; }
+  #credits {
+    font-size: 12px; } }
+
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #infoMap {
+    grid-column: 5 / 10;
+    grid-row: 3 / 10;
+    margin-left: 10vh;
+    /* width: 95%; */
+    /* height: 100%; */
+    border: 1px solid black;
+    -moz-box-shadow: 0 0 50px #8315a8;
+    -webkit-box-shadow: 0 0 50px #8315a8;
+    box-shadow: 0 0 50px #8315a8; }
+  #infoContactInfo {
+    width: 32.23377vw;
+    height: 90%;
+    grid-column: 1 / span 5;
+    grid-row: 6/ span 9;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222222;
+    background-image: url("./../assets/optimizedImages/Info-contact-outline-min.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1vh;
+    margin-left: 8vw; }
+    #infoContactInfo .info-contact {
+      z-index: 200;
+      height: 80%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: -5vh; }
+  .sign-up-to-our-maili {
+    text-shadow: 1px 1px black;
+    margin-left: 5vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  #infoContactInfo .info-contact .form-button form {
+    width: 25.36364vw;
+    height: 4vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 3.5vw; }
+  #infoContactInfo .info-contact .form-button button {
+    /* grid-column: 3 / span 4; */
+    margin-right: -vw;
+    margin-left: 2.6vh;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.4vh;
+    width: 30%;
+    border: inherit;
+    background: white;
+    font-size: 1.95312vh;
+    text-shadow: 1px 1px black;
+    cursor: pointer; } }
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
   #testdriveLogoInfo {
-    margin-bottom: -7vh; } }
+    margin-bottom: -7vh; }
+  #infoContactInfo {
+    width: 108vw;
+    height: 100vh;
+    grid-column: 1 / span 4;
+    grid-row: 5/ span 9;
+    object-fit: contain;
+    margin-right: 22vw;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222222;
+    background-image: url(./../assets/optimizedImages/Info-contact-outline-min.png);
+    background-size: 121vw 75vh;
+    background-repeat: no-repeat;
+    margin-top: 8vh;
+    margin-left: 8vw;
+    /* padding-right: 22vw; */ }
+  #infoContactInfo .info-contact {
+    grid-column: 1 / span 3;
+    grid-row: 7/ span 9;
+    z-index: 200;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25vh;
+    margin-left: 10vw; }
+  #infoContactInfo .info-contact .form-button button {
+    margin-right: -58px;
+    margin-left: 8vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.6vh;
+    border: inherit;
+    background: white;
+    font-size: 17px;
+    padding: 5px 15px 5px 14px;
+    text-shadow: 1px 1px black;
+    cursor: pointer; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #infoMap {
+    grid-column: 5 / 9;
+    margin-left: 23px; }
+  #infoContactInfo {
+    width: 32.23377vw;
+    height: 100%;
+    grid-column: 1 / span 5;
+    grid-row: 4/ span 10;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222222;
+    background-image: url(/assets/Elements/Info/Info-contact-outline.png);
+    background-size: 25vw 62vh;
+    background-repeat: no-repeat;
+    margin-top: 15vh;
+    margin-left: 8vw; }
+    #infoContactInfo .info-contact {
+      margin-bottom: 11vh; }
+  #infoContactInfo .info-contact .sign-up-to-our-maili {
+    text-shadow: 0.5px 0.5px black;
+    margin-left: 8vh;
+    margin-top: -1vh;
+    font-size: 2.5vh;
+    font-size: 2.8vh;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.05844vw;
+    text-align: left;
+    color: #222222; }
+  #infoContactInfo .info-contact p {
+    margin-left: 3vw;
+    font-size: 2.5vh;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: -0.05844vw;
+    text-align: left;
+    margin-bottom: 1vh; }
+  #infoContactInfo .info-contact #c-form {
+    /* margin-left: 4.5vw; */
+    width: 18vw;
+    height: 3.9vh;
+    border: 1px solid black; }
+  #infoContactInfo .info-contact #c-form {
+    margin-left: 4vw;
+    width: 18vw;
+    height: 3vh;
+    border: 1px solid black; }
+  #infoContactInfo .info-contact #c-form input {
+    width: 20vw;
+    height: 100%;
+    font-size: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: TimesNewRomanPSMT; }
+  #infoContactInfo .info-contact .form-button button {
+    grid-column: 3 / span 4;
+    margin-right: -22vw;
+    margin-left: -5vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 3.5vh;
+    /* width: 50%; */
+    border: inherit;
+    background: white;
+    font-size: 1.95312vh;
+    text-shadow: 0.5px 0.5px black;
+    cursor: pointer; }
+  #testdriveLogoInfo {
+    grid-column: 10 / 12;
+    grid-row: 11 / span 12;
+    justify-self: end;
+    align-self: center;
+    margin-left: 5px; } }
+
+/*iPhone Plus*/
+/*Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  #infoContactInfo .info-contact .form-button button {
+    margin-right: -58px;
+    margin-left: 9vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.4vh;
+    width: 20vw;
+    border: inherit;
+    background: white;
+    font-size: 17px;
+    padding: 3px 5px 20px 13px;
+    text-shadow: 1px 1px black;
+    cursor: pointer; } }
+
+/*iPhone Plus*/
+/*Landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  #infoMap {
+    grid-column: 5 / 9;
+    margin-left: 28px; }
+  #infoContactInfo {
+    width: 42.23377vw;
+    height: 100%;
+    grid-column: 1 / span 6;
+    grid-row: 4/ span 10;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222222;
+    background-image: url(/assets/Elements/Info/Info-contact-outline.png);
+    background-size: 29vw 65vh;
+    background-repeat: no-repeat;
+    margin-top: 11vh;
+    margin-left: 8vw; }
+  #infoContactInfo .info-contact {
+    margin-bottom: -4vh; }
+  #infoContactInfo .info-contact .sign-up-to-our-maili {
+    text-shadow: 0.5px 0.5px black;
+    margin-left: 5vh;
+    margin-top: 1vh;
+    font-size: 2.5vh;
+    font-size: 2.8vh;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.05844vw;
+    text-align: left;
+    color: #222222; }
+  #infoContactInfo .info-contact #c-form {
+    margin-left: 3vw;
+    width: 18vw;
+    height: 4vh;
+    border: 1px solid black; } }
 
 body {
   margin: 0px;

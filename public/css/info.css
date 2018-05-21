@@ -1,43 +1,31 @@
-@function get-vw($object) {
-  $vw: (1540 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-@function get-vh($object) {
-  $vh: (1024 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-
 .info {
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 8.33333333%);
-  grid-column-gap: get-vw(30px);
+  grid-template-rows: repeat(12, 8.33333%);
+  grid-column-gap: 1.94805vw;
   overflow: hidden;
   margin: 0;
   background-image: url("./../assets/optimizedImages/Info-bgA-min.png");
   background-size: 100vw 100vh;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 #error {
   display: none;
   color: red;
   height: 20px;
-  font-size: get-vh(18px);
+  font-size: 1.75781vh;
   font-weight: bold;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 #infoContactBg {
-  width: get-vw(446.4px);
+  width: 28.98701vw;
   height: auto;
   position: fixed;
   z-index: -20;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
-}
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)); }
 
 #infoContactInfo {
   width: 32.23377vw;
@@ -45,79 +33,59 @@
   grid-column: 1 / span 5;
   grid-row: 4/ span 9;
   justify-self: center;
-  // align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #222222;
   background-image: url("./../assets/optimizedImages/Info-contact-outline-min.png");
-  // background-size: 30vw 58vh;
   background-size: 90%;
   background-repeat: no-repeat;
   margin-top: 8vh;
-  margin-left: 8vw;
-
-  .info-contact {
+  margin-left: 8vw; }
+  #infoContactInfo .info-contact {
     z-index: 200;
     height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-content: center;
-    margin-top: -5vh;
-
-    p {
-      font-size: get-vw(18px);
-      // font-size: 2vh;
+    margin-top: -5vh; }
+    #infoContactInfo .info-contact p {
+      font-size: 1.16883vw;
       font-family: TimesNewRomanPSMT;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.05;
-      letter-spacing: get-vw(-0.9px);
+      letter-spacing: -0.05844vw;
       text-align: left;
-      margin-left: 4vw;
-    }
-
-    .facebook {
-      margin-top: -2vh;
-
-      a:link,
-      a:visited {
-        color: blue;
-      }
-
-      a:hover {
-        color: rgb(255, 194, 120);
-      }
-    }
-
-    .form-button {
+      margin-left: 4vw; }
+    #infoContactInfo .info-contact .facebook {
+      margin-top: -2vh; }
+      #infoContactInfo .info-contact .facebook a:link,
+      #infoContactInfo .info-contact .facebook a:visited {
+        color: blue; }
+      #infoContactInfo .info-contact .facebook a:hover {
+        color: #ffc278; }
+    #infoContactInfo .info-contact .form-button {
       grid-column: 2 / span 4;
-      grid-row: 10/ span 11;
-
-      form {
+      grid-row: 10/ span 11; }
+      #infoContactInfo .info-contact .form-button form {
         width: 20.36364vw;
         height: 4vh;
         display: flex;
         justify-content: start;
         align-items: center;
         border: 2px solid black;
-        margin-left: 3.5vw;
-
-        input {
+        margin-left: 3.5vw; }
+        #infoContactInfo .info-contact .form-button form input {
           width: 16vw;
           height: 3.2vh;
-          font-size: get-vh(18px);
+          font-size: 1.75781vh;
           background: none;
           border: none;
           outline: none;
-          font-family: TimesNewRomanPSMT;
-        }
-      }
-
-      button {
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact .form-button button {
         grid-column: 3 / span 4;
         margin-right: -22vw;
         font-family: TimesNewRomanPSMT;
@@ -131,30 +99,22 @@
         /* width: 50%; */
         border: inherit;
         background: white;
-        font-size: get-vh(20px);
+        font-size: 1.95312vh;
         text-shadow: 1px 1px black;
-        cursor: pointer;
-      }
-    }
-  }
-  //info-contact
-}
-//infoContactInfo
+        cursor: pointer; }
 
 .sign-up-to-our-maili {
-  // font-size: get-vw(20px);
   text-shadow: 1px 1px black;
   margin-left: 7vh;
   font-family: TimesNewRomanPSMT;
-  font-size: get-vw(20px);
+  font-size: 1.2987vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.9px;
   text-align: left;
-  color: #222222;
-}
+  color: #222222; }
 
 #credits {
   grid-column: 2 / 5;
@@ -164,10 +124,9 @@
   white-space: nowrap;
   background-color: black;
   font-family: TimesNewRomanPSMT;
-  font-size: get-vw(12px);
+  font-size: 0.77922vw;
   color: white;
-  text-align: left;
-}
+  text-align: left; }
 
 #infoMap {
   grid-column: 6 / 10;
@@ -175,40 +134,24 @@
   width: 95%;
   height: 100%;
   border: 1px solid black;
-  -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
-  -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
-  box-shadow: 0 0 50px rgb(131, 21, 168);
-}
+  -moz-box-shadow: 0 0 50px #8315a8;
+  -webkit-box-shadow: 0 0 50px #8315a8;
+  box-shadow: 0 0 50px #8315a8; }
 
 #testdriveLogoInfo {
   grid-column: 10 / 12;
   grid-row: 11 / span 12;
   justify-self: end;
-  align-self: center;
-
-  img {
+  align-self: center; }
+  #testdriveLogoInfo img {
     margin-right: -6vh;
     margin-top: -6vh;
-    width: 23vw;
-  }
-}
+    width: 23vw; }
+
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 /* MOBILE DESIGN  */
 /* FUNCTIONS TO CONVERT TO vh AND vw FOR MOBILE */
-@function get-vw-mob($object) {
-  $vw: (360 * 0.01) * 1px;
-  @return ($object / $vw) * 1vw;
-}
-@function get-vh-mob($object) {
-  $vh: (667 * 0.01) * 1px;
-  @return ($object / $vh) * 1vh;
-}
-
-@media only screen
-and (min-device-width: 300px)
-and (max-device-width: 700px)
-and (orientation: portrait) {
-
+@media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
   .info {
     overflow-x: hidden;
     display: grid;
@@ -218,18 +161,14 @@ and (orientation: portrait) {
     margin: 0;
     background-repeat: repeat-y;
     background-size: 100%;
-    height: 190.25487vh;
-  }
-
+    height: 190.25487vh; }
   #mobile-menu-info {
     grid-column: 2 / 4;
     grid-row: 1;
     justify-self: center;
     align-self: end;
     margin-right: 5vw;
-    z-index: 30000;
-  }
-
+    z-index: 30000; }
   #infoMap {
     grid-column: 1/ span 4;
     grid-row: 2 / span 4;
@@ -240,11 +179,9 @@ and (orientation: portrait) {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    -moz-box-shadow: 0 0 50px rgb(131, 21, 168);
-    -webkit-box-shadow: 0 0 50px rgb(131, 21, 168);
-    box-shadow: 0 0 50px rgb(131, 21, 168);
-  }
-
+    -moz-box-shadow: 0 0 50px #8315a8;
+    -webkit-box-shadow: 0 0 50px #8315a8;
+    box-shadow: 0 0 50px #8315a8; }
   #infoContactInfo {
     width: 108vw;
     height: 100vh;
@@ -262,9 +199,8 @@ and (orientation: portrait) {
     background-size: 109vw 75vh;
     background-repeat: no-repeat;
     margin-top: 8vh;
-    margin-left: 8vw;
-
-    .info-contact {
+    margin-left: 8vw; }
+    #infoContactInfo .info-contact {
       grid-column: 1 / span 3;
       grid-row: 7/ span 9;
       z-index: 200;
@@ -274,56 +210,38 @@ and (orientation: portrait) {
       flex-direction: column;
       justify-content: center;
       align-content: center;
-      // margin-top: -30vh;
       margin-bottom: 26vh;
-      margin-left: 10vw;
-
-
-      p {
-        // font-size: get-vh(20px);
+      margin-left: 10vw; }
+      #infoContactInfo .info-contact p {
         font-size: 2.5vh;
         font-family: TimesNewRomanPSMT;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.05;
-        letter-spacing: get-vw(-0.9px);
+        letter-spacing: -0.05844vw;
         text-align: left;
         margin-left: 4vw;
-        margin-bottom: 2.5vw;
-        // margin: 2vh;
-      }
-
-
-      .facebook {
-        margin-bottom: 6vh;
-      }
-
-      .form-button {
-        // grid-column: 2 / span 4;
-        // grid-row: 10/ span 11;
-
-      form {
+        margin-bottom: 2.5vw; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 6vh; }
+      #infoContactInfo .info-contact .form-button form {
         width: 85vw;
         height: 4vh;
         display: flex;
         justify-content: start;
         align-items: center;
         border: 2px solid black;
-        margin-left: 3.5vw;
-
-        input {
+        margin-left: 3.5vw; }
+        #infoContactInfo .info-contact .form-button form input {
           height: 100%;
           width: 59vw;
           font-size: 15px;
           background: none;
           border: none;
           outline: none;
-          font-family: TimesNewRomanPSMT;
-        }
-      }
-
-      button {
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact .form-button button {
         margin-right: -58px;
         margin-left: 8vw;
         font-family: TimesNewRomanPSMT;
@@ -337,15 +255,10 @@ and (orientation: portrait) {
         border: inherit;
         background: white;
         font-size: 17px;
-            padding: 5px 15px 5px 15px;
+        padding: 5px 15px 5px 15px;
         text-shadow: 1px 1px black;
-        cursor: pointer;
-      }
-    }
-  }
-
-    .sign-up-to-our-maili {
-      // font-size: get-vw(20px);
+        cursor: pointer; }
+    #infoContactInfo .sign-up-to-our-maili {
       text-shadow: 1px 1px black;
       margin-left: 2vh;
       margin-top: -1vh;
@@ -357,11 +270,7 @@ and (orientation: portrait) {
       line-height: normal;
       letter-spacing: -0.9px;
       text-align: left;
-      color: #222222;
-    }
-  }
-  //infoContactInfo
-
+      color: #222222; }
   #testdriveLogoInfo {
     grid-column: 1 / span 4;
     grid-row: 9 / span 10;
@@ -372,15 +281,11 @@ and (orientation: portrait) {
     width: 100%;
     background-image: url("/assets/mobile/info-testdrive-box-02.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    img {
+    background-size: 100% 100%; }
+    #testdriveLogoInfo img {
       height: 100%;
       width: 90%;
-      margin-top: 7vh;
-    }
-  }
-
+      margin-top: 7vh; }
   #credits {
     grid-row: 10;
     grid-column: 1 / span 4;
@@ -392,21 +297,12 @@ and (orientation: portrait) {
     display: flex;
     flex-wrap: wrap;
     font-size: 8px;
-    z-index: 3000;
-  }
-}
+    z-index: 3000; } }
 
-
-//mobile landscape
-@media only screen
-and (min-device-width: 376px)
-and (max-device-width: 736px)
-and (orientation: landscape) {
+@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
   .sign-up-to-our-maili {
     font-size: 10px;
-    text-shadow: 0.5px 0.5px black;
-  }
-
+    text-shadow: 0.5px 0.5px black; }
   #infoContactInfo .info-contact .form-button button {
     grid-column: 3 / span 4;
     margin-right: -22vw;
@@ -423,9 +319,7 @@ and (orientation: landscape) {
     background: white;
     font-size: 1.95312vh;
     text-shadow: 0.3px 0.3px black;
-    cursor: pointer;
-}
-
+    cursor: pointer; }
   #infoContactInfo .info-contact .form-button form {
     width: 20.36364vw;
     height: 4vh;
@@ -433,22 +327,11 @@ and (orientation: landscape) {
     justify-content: start;
     align-items: center;
     border: 1px solid black;
-    margin-left: 3.5vw;
-}
+    margin-left: 3.5vw; } }
 
-}
-
-
-
-
-
-//closing mobile landscape
-////////// IPAD //////////  landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #infoMap {
-    grid-column: 6 / 11;
-  }
-
+    grid-column: 6 / 11; }
   #infoContactInfo {
     grid-column: 2 / 5;
     grid-row: 5/ span 8;
@@ -460,18 +343,16 @@ and (orientation: landscape) {
     flex-direction: column;
     justify-content: start;
     line-height: 1.05;
-    letter-spacing: get-vw(-0.9px);
+    letter-spacing: -0.05844vw;
     text-align: left;
-    color: #222222;
-
-    .info-contact {
+    color: #222222; }
+    #infoContactInfo .info-contact {
       height: 100%;
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-
-      p {
+      justify-content: center; }
+      #infoContactInfo .info-contact p {
         font-size: 2vh;
         margin-left: 3.5vw;
         font-size: 2vh;
@@ -480,43 +361,31 @@ and (orientation: landscape) {
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
-        letter-spacing: get-vw(-0.9px);
+        letter-spacing: -0.05844vw;
         text-align: left;
-        margin-bottom: 1vh;
-      }
-      // a{
-      //   padding-top:  1vh;
-      // }
-      .form-button {
+        margin-bottom: 1vh; }
+      #infoContactInfo .info-contact .form-button {
         margin-top: 3vh;
-        margin-left: -1vw;
-      }
-
-      .sign-up-to-our-maili {
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
         text-shadow: 0.5px 0.5px black;
         margin-left: 6vh;
         margin-top: -1vh;
-        font-size: 2.5vh;
-      }
-
-      #c-form {
+        font-size: 2.5vh; }
+      #infoContactInfo .info-contact #c-form {
         margin-left: 4.5vw;
         width: 20vw;
         height: 4.0vh;
-        border: 2px solid black;
-
-        input {
+        border: 2px solid black; }
+        #infoContactInfo .info-contact #c-form input {
           width: 20vw;
           height: 100%;
           font-size: 16px;
           background: none;
           border: none;
           outline: none;
-          font-family: TimesNewRomanPSMT;
-        }
-      }
-
-      button {
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact button {
         height: 3.42vh;
         grid-column: 3 / span 4;
         margin-right: -22vw;
@@ -531,24 +400,14 @@ and (orientation: landscape) {
         background: white;
         font-size: 2.3vh;
         text-shadow: 1px 1px black;
-        cursor: pointer;
-      }
+        cursor: pointer; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 1vh; } }
 
-      .facebook {
-        margin-bottom: 1vh;
-      }
-    }
-    //info-contact
-  }
-  //infoContactInfo
-}
-//closing media q ipad landscape
-@media only screen and (min-device-width: 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #infoMap {
     grid-column: 6 / 11;
-    grid-row: 3 / span 4;
-  }
-
+    grid-row: 3 / span 4; }
   #infoContactInfo {
     grid-column: 1 / 4;
     grid-row: 5 / span 12;
@@ -557,48 +416,34 @@ and (orientation: landscape) {
     width: 57vw;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-
-    .info-contact {
+    justify-content: start; }
+    #infoContactInfo .info-contact {
       margin-left: 6vw;
       margin-top: 3vh;
-      display: inline-block;
-
-      p {
+      display: inline-block; }
+      #infoContactInfo .info-contact p {
         font-size: 1.7vh;
         margin-left: -1vw;
-        margin-top: 1vh;
-      }
-      // a{
-      //   padding-top:  1vh;
-      // }
-      .form-button {
+        margin-top: 1vh; }
+      #infoContactInfo .info-contact .form-button {
         margin-top: 3vh;
-        margin-left: -1vw;
-      }
-
-      .sign-up-to-our-maili {
-        margin-left: 0.3vh;
-      }
-
-      #c-form {
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        margin-left: 0.3vh; }
+      #infoContactInfo .info-contact #c-form {
         margin-left: 0;
         width: 29vw;
         height: 4.1vh;
-        border: 2px solid black;
-
-        input {
+        border: 2px solid black; }
+        #infoContactInfo .info-contact #c-form input {
           width: 20vw;
           height: 100%;
           font-size: 16px;
           background: none;
           border: none;
           outline: none;
-          font-family: TimesNewRomanPSMT;
-        }
-      }
-
-      button {
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact button {
         margin-left: 9vw;
         height: 3.42vh;
         width: 40%;
@@ -614,49 +459,32 @@ and (orientation: landscape) {
         border: inherit;
         background: white;
         font-size: 1.75312vh;
-        text-shadow: 1px 1px black;
-      }
-
-      .facebook {
-        margin-bottom: 1vh;
-      }
-    }
-    //info-contact
-  }
-  //infoContactInfo
-
+        text-shadow: 1px 1px black; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 1vh; }
   .sign-up-to-our-maili {
     margin-left: 1vh;
     margin-top: 1vh;
-    font-size: 2vh;
-  }
-
+    font-size: 2vh; }
   #testdriveLogoInfo {
     grid-row: 11 / 12;
     height: 100%;
     justify-self: center;
-    align-self: center;
-
-    img {
+    align-self: center; }
+    #testdriveLogoInfo img {
       width: 28.83117vw;
       margin-right: 1vh;
-      margin-top: 2vh;
-    }
-  }
-
+      margin-top: 2vh; }
   #credits {
-    font-size: 12px;
-  }
-}
+    font-size: 12px; } }
+
 /*iPad Pro*/
 /*Portrait*/
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* STYLES GO HERE */
   #infoMap {
     grid-column: 6 / 11;
-    grid-row: 3 / span 4;
-  }
-
+    grid-row: 3 / span 4; }
   #infoContactInfo {
     grid-column: 1 / 4;
     grid-row: 6 / span 12;
@@ -665,80 +493,51 @@ and (orientation: landscape) {
     width: 57vw;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-
-    .info-contact {
+    justify-content: start; }
+    #infoContactInfo .info-contact {
       margin-left: 6vw;
       margin-top: 3vh;
-      display: inline-block;
-
-      p {
+      display: inline-block; }
+      #infoContactInfo .info-contact p {
         font-size: 1.7vh;
         margin-left: -1vw;
-        margin-top: 1vh;
-      }
-      // a{
-      //   padding-top:  1vh;
-      // }
-      .form-button {
+        margin-top: 1vh; }
+      #infoContactInfo .info-contact .form-button {
         margin-top: 3vh;
-        margin-left: -1vw;
-      }
-
-      .sign-up-to-our-maili {
-        margin-left: 0.1vh;
-      }
-
-      #c-form {
+        margin-left: -1vw; }
+      #infoContactInfo .info-contact .sign-up-to-our-maili {
+        margin-left: 0.1vh; }
+      #infoContactInfo .info-contact #c-form {
         margin-left: 0;
         width: 29vw;
         height: 4.2vh;
-        border: 2px solid black;
-
-        input {
+        border: 2px solid black; }
+        #infoContactInfo .info-contact #c-form input {
           width: 20vw;
           height: 100%;
           font-size: 16px;
           background: none;
           border: none;
           outline: none;
-          font-family: TimesNewRomanPSMT;
-        }
-      }
-
-      .facebook {
-        margin-bottom: 1vh;
-      }
-    }
-    //info-contact
-  }
-  //infoContactInfo
-
+          font-family: TimesNewRomanPSMT; }
+      #infoContactInfo .info-contact .facebook {
+        margin-bottom: 1vh; }
   .sign-up-to-our-maili {
     margin-left: 1vh;
     margin-top: 1vh;
-    font-size: 2.1vh;
-  }
-
+    font-size: 2.1vh; }
   #testdriveLogoInfo {
     grid-row: 11 / 12;
     height: 100%;
     justify-self: center;
-    align-self: center;
-
-    img {
+    align-self: center; }
+    #testdriveLogoInfo img {
       height: 18vh;
       width: 28.83117vw;
       margin-right: 1vh;
-      margin-top: 2vh;
-    }
-  }
-
+      margin-top: 2vh; }
   #credits {
-    font-size: 12px;
-  }
-}
-
+    font-size: 12px; } }
 
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   #infoMap {
@@ -750,9 +549,7 @@ and (orientation: landscape) {
     border: 1px solid black;
     -moz-box-shadow: 0 0 50px #8315a8;
     -webkit-box-shadow: 0 0 50px #8315a8;
-    box-shadow: 0 0 50px #8315a8;
-  }
-
+    box-shadow: 0 0 50px #8315a8; }
   #infoContactInfo {
     width: 32.23377vw;
     height: 90%;
@@ -767,18 +564,14 @@ and (orientation: landscape) {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 1vh;
-    margin-left: 8vw;
-
-    .info-contact {
+    margin-left: 8vw; }
+    #infoContactInfo .info-contact {
       z-index: 200;
       height: 80%;
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin-top: -5vh;
-    }
-  }
-
+      margin-top: -5vh; }
   .sign-up-to-our-maili {
     text-shadow: 1px 1px black;
     margin-left: 5vh;
@@ -790,9 +583,7 @@ and (orientation: landscape) {
     line-height: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222;
-  }
-
+    color: #222222; }
   #infoContactInfo .info-contact .form-button form {
     width: 25.36364vw;
     height: 4vh;
@@ -800,9 +591,7 @@ and (orientation: landscape) {
     justify-content: start;
     align-items: center;
     border: 2px solid black;
-    margin-left: 3.5vw;
-  }
-
+    margin-left: 3.5vw; }
   #infoContactInfo .info-contact .form-button button {
     /* grid-column: 3 / span 4; */
     margin-right: -vw;
@@ -820,21 +609,11 @@ and (orientation: landscape) {
     background: white;
     font-size: 1.95312vh;
     text-shadow: 1px 1px black;
-    cursor: pointer;
-  }
-}
+    cursor: pointer; } }
 
-//
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 812px)
-and (orientation: portrait) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
   #testdriveLogoInfo {
-    margin-bottom: -7vh;
-  }
-
-
+    margin-bottom: -7vh; }
   #infoContactInfo {
     width: 108vw;
     height: 100vh;
@@ -853,60 +632,42 @@ and (orientation: portrait) {
     background-repeat: no-repeat;
     margin-top: 8vh;
     margin-left: 8vw;
-    /* padding-right: 22vw; */
-}
-
+    /* padding-right: 22vw; */ }
   #infoContactInfo .info-contact {
-      grid-column: 1 / span 3;
-      grid-row: 7/ span 9;
-      z-index: 200;
-      height: 90%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      margin-bottom: 25vh;
-      margin-left: 10vw;
-  }
-
+    grid-column: 1 / span 3;
+    grid-row: 7/ span 9;
+    z-index: 200;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25vh;
+    margin-left: 10vw; }
   #infoContactInfo .info-contact .form-button button {
-      margin-right: -58px;
-      margin-left: 8vw;
-      font-family: TimesNewRomanPSMT;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      text-align: left;
-      color: #222222;
-      height: 4.6vh;
-      border: inherit;
-      background: white;
-      font-size: 17px;
-      padding: 5px 15px 5px 14px;
-      text-shadow: 1px 1px black;
-      cursor: pointer;
-  }
+    margin-right: -58px;
+    margin-left: 8vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.6vh;
+    border: inherit;
+    background: white;
+    font-size: 17px;
+    padding: 5px 15px 5px 14px;
+    text-shadow: 1px 1px black;
+    cursor: pointer; } }
 
-
-
-
-}
-//closing iphoneX
-
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-
-    #infoMap {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #infoMap {
     grid-column: 5 / 9;
-    margin-left: 23px;
-}
-
-#infoContactInfo {
+    margin-left: 23px; }
+  #infoContactInfo {
     width: 32.23377vw;
     height: 100%;
     grid-column: 1 / span 5;
@@ -921,32 +682,24 @@ and (orientation: portrait) {
     background-size: 25vw 62vh;
     background-repeat: no-repeat;
     margin-top: 15vh;
-    margin-left: 8vw;
-
-    .info-contact {
-    margin-bottom: 11vh;
-    }
-
-   }
-
-   #infoContactInfo .info-contact .sign-up-to-our-maili {
+    margin-left: 8vw; }
+    #infoContactInfo .info-contact {
+      margin-bottom: 11vh; }
+  #infoContactInfo .info-contact .sign-up-to-our-maili {
     text-shadow: 0.5px 0.5px black;
     margin-left: 8vh;
     margin-top: -1vh;
     font-size: 2.5vh;
-       font-size: 2.8vh;
-        font-family: TimesNewRomanPSMT;
-        font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.05;
-      letter-spacing: -0.05844vw;
+    font-size: 2.8vh;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.05;
+    letter-spacing: -0.05844vw;
     text-align: left;
-      color: #222222;
-}
-
-#infoContactInfo .info-contact p {
-
+    color: #222222; }
+  #infoContactInfo .info-contact p {
     margin-left: 3vw;
     font-size: 2.5vh;
     font-family: TimesNewRomanPSMT;
@@ -956,23 +709,17 @@ and (orientation: portrait) {
     line-height: 1;
     letter-spacing: -0.05844vw;
     text-align: left;
-    margin-bottom: 1vh;
-}
-
-#infoContactInfo .info-contact #c-form {
+    margin-bottom: 1vh; }
+  #infoContactInfo .info-contact #c-form {
     /* margin-left: 4.5vw; */
     width: 18vw;
     height: 3.9vh;
-    border: 1px solid black;
-}
-
-#infoContactInfo .info-contact #c-form {
+    border: 1px solid black; }
+  #infoContactInfo .info-contact #c-form {
     margin-left: 4vw;
     width: 18vw;
     height: 3vh;
-    border: 1px solid black;
-  }
-
+    border: 1px solid black; }
   #infoContactInfo .info-contact #c-form input {
     width: 20vw;
     height: 100%;
@@ -980,82 +727,60 @@ and (orientation: portrait) {
     background: none;
     border: none;
     outline: none;
+    font-family: TimesNewRomanPSMT; }
+  #infoContactInfo .info-contact .form-button button {
+    grid-column: 3 / span 4;
+    margin-right: -22vw;
+    margin-left: -5vw;
     font-family: TimesNewRomanPSMT;
-}
-
-#infoContactInfo .info-contact .form-button button {
-grid-column: 3 / span 4;
-margin-right: -22vw;
-margin-left: -5vw;
-font-family: TimesNewRomanPSMT;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-text-align: left;
-color: #222222;
-height: 3.5vh;
-/* width: 50%; */
-border: inherit;
-background: white;
-font-size: 1.95312vh;
-text-shadow: 0.5px 0.5px black;
-cursor: pointer;
-}
-
-#testdriveLogoInfo {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 3.5vh;
+    /* width: 50%; */
+    border: inherit;
+    background: white;
+    font-size: 1.95312vh;
+    text-shadow: 0.5px 0.5px black;
+    cursor: pointer; }
+  #testdriveLogoInfo {
     grid-column: 10 / 12;
     grid-row: 11 / span 12;
     justify-self: end;
     align-self: center;
-    margin-left: 5px;
-}
-
- }//closing iphonex landscape
-
+    margin-left: 5px; } }
 
 /*iPhone Plus*/
 /*Portrait*/
- @media only screen
- and (min-device-width : 414px)
- and (max-device-width : 736px)
- and (orientation: portrait)
-  {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  #infoContactInfo .info-contact .form-button button {
+    margin-right: -58px;
+    margin-left: 9vw;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    color: #222222;
+    height: 4.4vh;
+    width: 20vw;
+    border: inherit;
+    background: white;
+    font-size: 17px;
+    padding: 3px 5px 20px 13px;
+    text-shadow: 1px 1px black;
+    cursor: pointer; } }
 
-   #infoContactInfo .info-contact .form-button button {
-       margin-right: -58px;
-       margin-left: 9vw;
-       font-family: TimesNewRomanPSMT;
-       font-weight: normal;
-       font-style: normal;
-       font-stretch: normal;
-       line-height: normal;
-       text-align: left;
-       color: #222222;
-       height: 4.4vh;
-       width: 20vw;
-       border: inherit;
-       background: white;
-       font-size: 17px;
-       padding: 3px 5px 20px 13px;
-       text-shadow: 1px 1px black;
-       cursor: pointer;
-   }
- }
-
-
- /*iPhone Plus*/
- /*Landscape*/
- @media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px)
-and (orientation : landscape) {
-
+/*iPhone Plus*/
+/*Landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
   #infoMap {
     grid-column: 5 / 9;
-    margin-left: 28px;
-}
-
+    margin-left: 28px; }
   #infoContactInfo {
     width: 42.23377vw;
     height: 100%;
@@ -1071,14 +796,9 @@ and (orientation : landscape) {
     background-size: 29vw 65vh;
     background-repeat: no-repeat;
     margin-top: 11vh;
-    margin-left: 8vw;
-}
-
+    margin-left: 8vw; }
   #infoContactInfo .info-contact {
-      margin-bottom: -4vh;
-  }
-
-
+    margin-bottom: -4vh; }
   #infoContactInfo .info-contact .sign-up-to-our-maili {
     text-shadow: 0.5px 0.5px black;
     margin-left: 5vh;
@@ -1092,14 +812,9 @@ and (orientation : landscape) {
     line-height: 1.05;
     letter-spacing: -0.05844vw;
     text-align: left;
-    color: #222222;
-}
-
-
-#infoContactInfo .info-contact #c-form {
+    color: #222222; }
+  #infoContactInfo .info-contact #c-form {
     margin-left: 3vw;
     width: 18vw;
     height: 4vh;
-    border: 1px solid black;
-}
-  }
+    border: 1px solid black; } }
