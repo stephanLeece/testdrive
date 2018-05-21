@@ -89,7 +89,7 @@ video::-webkit-media-controls-panel {
     height: 90%;
     width: 65%;
     font-family: TimesNewRomanPSMT;
-    font-size: 1.95312vh;
+    font-size: 1.95313vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -568,7 +568,7 @@ a:hover {
       height: 90%;
       width: 65%;
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95312vh;
+      font-size: 1.95313vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -641,7 +641,7 @@ a:hover {
     width: 100%;
     justify-self: center;
     align-self: end;
-    height: 26.95312vh;
+    height: 26.95313vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;

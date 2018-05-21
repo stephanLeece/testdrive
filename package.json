@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch public/scss -o public/css"
+    "scss": "node-sass --watch public/scss/index.scss -o public/css"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "body-parser": "~1.17.1",
-    "chalk-animation": "^1.4.0",
     "contentful": "^5.1.0",
     "cookie-parser": "~1.4.3",
     "eslint": "^4.9.0",
@@ -26,5 +25,15 @@
     "node-sass": "^4.7.2",
     "nodemailer": "^4.6.0",
     "nodemon": "^1.15.1"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
   }
 }
