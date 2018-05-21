@@ -16,7 +16,7 @@
   background-position: center center; }
 
 #tdEventsInfobox {
-  background-image: url("./../assets/Elements/Testdrive Events/TD-Events-infobox-green-gradient.png");
+  background-image: url("./../assets/optimizedImages/TD-Events-infobox-green-gradient-min.png");
   filter: drop-shadow(0 0 0.75rem rgba(1, 223, 54, 0.5)); }
 
 @media only screen and (min-device-width: 300px) and (max-device-width: 700px) and (orientation: portrait) {
