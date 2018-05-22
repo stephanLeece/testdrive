@@ -466,7 +466,8 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; }
+    color: #222222;
+    cursor: pointer; }
   .eventDetails .eventsDetailTitle {
     margin-left: 50px;
     font-family: TimesNewRomanPSMT;
@@ -476,7 +477,8 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; }
+    color: #222222;
+    cursor: pointer; }
 
 #eve-disp {
   display: none; }
@@ -1527,8 +1529,8 @@ a:hover {
   align-self: center; }
   #testdriveLogoInfo img {
     margin-right: -6vh;
-    margin-top: -6vh;
-    width: 23vw; }
+    width: 23vw;
+    margin-bottom: 5vh; }
 
 /* ~~~~~~~~~~~~~~~~~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~~~~~~~~~~~~~~~~~ */
 /* MOBILE DESIGN  */
