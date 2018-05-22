@@ -38,6 +38,7 @@
 #ddEventsInfobox {
   background-image: url("./../assets/optimizedImages/DD-Events-infobox-red-gradient-min.png");
   filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
+
 }
 
 
@@ -70,5 +71,30 @@ and (orientation: portrait) {
     filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5));
   }
 
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  #ddEventsInfobox {
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    filter: drop-shadow(0 0 0.0rem rgba(246, 173, 173, 0.5));
+  }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+  #ddEventsInfobox {
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+  filter: drop-shadow(0 0 0.0rem rgba(246, 173, 173, 0.5));
+
+  }
 
 }

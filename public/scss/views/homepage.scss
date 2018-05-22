@@ -759,7 +759,9 @@ and (orientation : portrait) {
 
 /*iPad*/
 /* Portrait */
-@media only screen and (min-device-width: 701px) and (orientation: portrait)  and (max-device-width: 1024px)  {
+@media only screen and (min-device-width: 701px)
+and (orientation: portrait)
+and (max-device-width: 1024px)  {
   #gallery-space-img {
     width: 70vw;
     height: 50vh;
@@ -946,6 +948,8 @@ and (orientation: landscape)  {
         letter-spacing: normal;
         align-self: center;
         cursor: pointer;
+          margin-bottom: -25vh;
+
     }
 
     }

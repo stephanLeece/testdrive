@@ -445,7 +445,10 @@ and (orientation: landscape) {
 
 //closing mobile landscape
 ////////// IPAD //////////  landscape
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
   #infoMap {
     grid-column: 6 / 11;
   }
@@ -544,7 +547,12 @@ and (orientation: landscape) {
   //infoContactInfo
 }
 //closing media q ipad landscape
-@media only screen and (min-device-width: 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+@media only screen
+and (min-device-width: 701px)
+and (max-device-width : 1024px)
+and (orientation: portrait) {
+
+
   #infoMap {
     grid-column: 6 / 11;
     grid-row: 3 / span 4;
@@ -649,9 +657,15 @@ and (orientation: landscape) {
     font-size: 12px;
   }
 }
+
+
 /*iPad Pro*/
 /*Portrait*/
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (orientation: portrait) and
+(-webkit-min-device-pixel-ratio: 2) {
   /* STYLES GO HERE */
   #infoMap {
     grid-column: 6 / 11;
@@ -825,75 +839,72 @@ and (orientation: landscape) {
   }
 }
 
+// iphone x portrait
+// @media only screen
+// and (min-device-width: 375px)
+// and (max-device-width: 812px)
+// and (orientation: portrait) {
 //
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 812px)
-and (orientation: portrait) {
+//   #testdriveLogoInfo {
+//     margin-bottom: -7vh;
+//   }
 
-  #testdriveLogoInfo {
-    margin-bottom: -7vh;
-  }
+//
+//   #infoContactInfo {
+//     width: 108vw;
+//     height: 100vh;
+//     grid-column: 1 / span 4;
+//     grid-row: 5/ span 9;
+//     object-fit: contain;
+//     margin-right: 22vw;
+//     justify-self: center;
+//     align-self: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     color: #222222;
+//     background-image: url(./../assets/optimizedImages/Info-contact-outline-min.png);
+//     background-size: 121vw 75vh;
+//     background-repeat: no-repeat;
+//     margin-top: 8vh;
+//     margin-left: 8vw;
+//     /* padding-right: 22vw; */
+// }
 
-
-  #infoContactInfo {
-    width: 108vw;
-    height: 100vh;
-    grid-column: 1 / span 4;
-    grid-row: 5/ span 9;
-    object-fit: contain;
-    margin-right: 22vw;
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #222222;
-    background-image: url(./../assets/optimizedImages/Info-contact-outline-min.png);
-    background-size: 121vw 75vh;
-    background-repeat: no-repeat;
-    margin-top: 8vh;
-    margin-left: 8vw;
-    /* padding-right: 22vw; */
-}
-
-  #infoContactInfo .info-contact {
-      grid-column: 1 / span 3;
-      grid-row: 7/ span 9;
-      z-index: 200;
-      height: 90%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      margin-bottom: 25vh;
-      margin-left: 10vw;
-  }
-
-  #infoContactInfo .info-contact .form-button button {
-      margin-right: -58px;
-      margin-left: 8vw;
-      font-family: TimesNewRomanPSMT;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      text-align: left;
-      color: #222222;
-      height: 4.6vh;
-      border: inherit;
-      background: white;
-      font-size: 17px;
-      padding: 5px 15px 5px 14px;
-      text-shadow: 1px 1px black;
-      cursor: pointer;
-  }
-
-
-
-
-}
+//   #infoContactInfo .info-contact {
+//       grid-column: 1 / span 3;
+//       grid-row: 7/ span 9;
+//       z-index: 200;
+//       height: 90%;
+//       width: 100%;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-content: center;
+//       margin-bottom: 25vh;
+//       margin-left: 10vw;
+//   }
+//
+//   #infoContactInfo .info-contact .form-button button {
+//       margin-right: -58px;
+//       margin-left: 8vw;
+//       font-family: TimesNewRomanPSMT;
+//       font-weight: normal;
+//       font-style: normal;
+//       font-stretch: normal;
+//       line-height: normal;
+//       text-align: left;
+//       color: #222222;
+//       height: 4.6vh;
+//       border: inherit;
+//       background: white;
+//       font-size: 17px;
+//       padding: 5px 15px 5px 14px;
+//       text-shadow: 1px 1px black;
+//       cursor: pointer;
+//   }
+//
+// }
 //closing iphoneX
 
 @media only screen

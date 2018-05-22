@@ -713,7 +713,8 @@ a:hover {
       color: #222222;
       letter-spacing: normal;
       align-self: center;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-bottom: -25vh; }
   .home-video #home-v {
     justify-self: center;
     align-self: center;

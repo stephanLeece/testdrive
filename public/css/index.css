@@ -379,6 +379,16 @@
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); } }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #ddEventsInfobox {
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    filter: drop-shadow(0 0 0rem rgba(246, 173, 173, 0.5)); } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #ddEventsInfobox {
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    filter: drop-shadow(0 0 0rem rgba(246, 173, 173, 0.5)); } }
+
 .pageBreadCrumb {
   display: none; }
 
@@ -408,6 +418,8 @@
   display: flex;
   flex-direction: column;
   width: 93%;
+  font-size: 1.2987vw;
+  font-family: TimesNewRomanPSMT;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -453,7 +465,8 @@
   width: 30.24675vw;
   height: 9.85352vh;
   padding: 30px;
-  margin: -22px; }
+  margin: -22px;
+  margin-left: 1vw; }
   .eventDetails p {
     margin: 0;
     padding: 0; }
@@ -585,7 +598,14 @@
   .eventInfo {
     display: flex;
     flex-direction: column;
-    width: 95%; }
+    width: 95%;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #000000; }
   .eventsInfoHidden {
     display: none; }
   .events-img {
@@ -680,11 +700,36 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; } }
+    color: #222222; }
+  .eventInfo {
+    font-size: 3.8vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-family: TimesNewRomanPSMT;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #000000; } }
 
 /*iPhoneS5*/
 /*Potrait*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .eventInfo {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-size: 2.5vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #000000; }
   .eventDetails .eventsDetailTitle {
     margin-left: 40px;
     font-family: TimesNewRomanPSMT;
@@ -718,7 +763,24 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; } }
+    color: #222222; }
+  .eventList {
+    grid-column: 1 / 4;
+    grid-row: 5 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15.375vw; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23.24675vw;
+    height: 9.85352vh;
+    padding: 30px;
+    margin: -20px;
+    margin-left: 2vw; } }
 
 /*iPhoneX Portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -745,6 +807,26 @@
 
 /*iPhoneX Landscape*/
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .eventList {
+    grid-column: 1 / 4;
+    grid-row: 5 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10.375vw; }
+  .eventsInfoBox {
+    grid-column: 6 / 9;
+    margin-left: -4vw;
+    grid-row: 1 / 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40.05195vw;
+    height: 99.70703vh;
+    background-size: 48.05195vw 99.70703vh;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   .eventDetails .eventsDetailTitle {
     margin-left: 20px;
     font-family: TimesNewRomanPSMT;
@@ -779,6 +861,160 @@
     letter-spacing: -1.9px;
     text-align: left;
     margin-left: -1vw; } }
+
+/*iPad Protrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .eventList {
+    grid-column: 1 / 4;
+    grid-row: 1 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9.375vw; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30.24675vw;
+    height: 1.95352vh;
+    padding: 30px;
+    margin: -22px; }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventDetails .eventsDetailDate {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; } }
+
+/*iPad in landscape*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .eventDetails .eventsDetailDate {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.6vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30.24675vw;
+    height: 7.85352vh;
+    padding: 30px;
+    margin: -22px;
+    margin-left: -1vw; } }
+
+/*iPad Pro*/
+/*Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30.24675vw;
+    height: 3.8vh;
+    padding: 30px;
+    margin: -22px; }
+  .eventInfo {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    font-size: 1.5vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #000000; } }
+
+/*iPad Pro*/
+/*Landscape*/
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .eventList {
+    grid-column: 1 / 4;
+    grid-row: 2 / span 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9.375vw; }
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29.24675vw;
+    height: 9.85352vh;
+    padding: 30px;
+    margin: -22px;
+    margin-left: 1vw; }
+  .eventDetails .eventsDetailDate {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.4039vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 30px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.4987vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.4vh;
+    width: 93%;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #000000; } }
 
 .fixedPagePosition {
   position: fixed;
@@ -1495,7 +1731,8 @@ a:hover {
       color: #222222;
       letter-spacing: normal;
       align-self: center;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-bottom: -25vh; }
   .home-video #home-v {
     justify-self: center;
     align-self: center;
@@ -1913,7 +2150,7 @@ a:hover {
       #infoContactInfo .info-contact .facebook {
         margin-bottom: 1vh; } }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: portrait) {
   #infoMap {
     grid-column: 6 / 11;
     grid-row: 3 / span 4; }
@@ -2117,58 +2354,6 @@ a:hover {
     border: inherit;
     background: white;
     font-size: 1.95312vh;
-    text-shadow: 1px 1px black;
-    cursor: pointer; } }
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-  #testdriveLogoInfo {
-    margin-bottom: -7vh; }
-  #infoContactInfo {
-    width: 108vw;
-    height: 100vh;
-    grid-column: 1 / span 4;
-    grid-row: 5/ span 9;
-    object-fit: contain;
-    margin-right: 22vw;
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #222222;
-    background-image: url(./../assets/optimizedImages/Info-contact-outline-min.png);
-    background-size: 121vw 75vh;
-    background-repeat: no-repeat;
-    margin-top: 8vh;
-    margin-left: 8vw;
-    /* padding-right: 22vw; */ }
-  #infoContactInfo .info-contact {
-    grid-column: 1 / span 3;
-    grid-row: 7/ span 9;
-    z-index: 200;
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 25vh;
-    margin-left: 10vw; }
-  #infoContactInfo .info-contact .form-button button {
-    margin-right: -58px;
-    margin-left: 8vw;
-    font-family: TimesNewRomanPSMT;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    text-align: left;
-    color: #222222;
-    height: 4.6vh;
-    border: inherit;
-    background: white;
-    font-size: 17px;
-    padding: 5px 15px 5px 14px;
     text-shadow: 1px 1px black;
     cursor: pointer; } }
 
