@@ -78,9 +78,9 @@ display: none;
 
 #gallery-space-img {
   filter: drop-shadow(0 0 30px rgb(255, 194, 120));
-  // width: 79%;
-  width:55vw;
-  height: 80vh;
+  width: 79%;
+  // width:55vw;
+  height: 80%;
   margin-left: 3vw;
   margin-right: 3vw;
   grid-column: 3 / span 9;
@@ -313,7 +313,7 @@ a:hover {
 
 /// MOBILE //
 /// MOBILE //
-/// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE // /// MOBILE //
+/// MOBILE //
 
 @media only screen
 and (min-device-width: 300px)
@@ -412,7 +412,7 @@ and (orientation: portrait) {
       width: 100%;
       height: 100%;
       overflow-y: auto;
- -webkit-overflow-scrolling: touch;
+     -webkit-overflow-scrolling: touch;
     background-color: white;
     flex-direction: column;
     align-content: center;
@@ -502,7 +502,7 @@ and (orientation: portrait) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1vh;
+        margin-bottom: -3vh;
 
         #mob-test-eve {
           text-decoration: none;

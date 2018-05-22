@@ -58,8 +58,8 @@ video::-webkit-media-controls-panel {
 
 #gallery-space-img {
   filter: drop-shadow(0 0 30px #ffc278);
-  width: 55vw;
-  height: 80vh;
+  width: 79%;
+  height: 80%;
   margin-left: 3vw;
   margin-right: 3vw;
   grid-column: 3 / span 9;
@@ -381,7 +381,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1vh; }
+        margin-bottom: -3vh; }
         .mob-container .mob-con #td-mob #mob-test-eve {
           text-decoration: none;
           margin-top: 2vh;

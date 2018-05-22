@@ -379,13 +379,6 @@
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
     filter: drop-shadow(0 0 0.75rem rgba(246, 173, 173, 0.5)); } }
 
-@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
-  .ddEventActive {
-    background-image: url("./../assets/Elements/DriveDrive/Events/DD-Events-Hover-Active-state-pink.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; } }
-
 .pageBreadCrumb {
   display: none; }
 
@@ -414,7 +407,14 @@
 .eventInfo {
   display: flex;
   flex-direction: column;
-  width: 93%; }
+  width: 93%;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  text-align: left;
+  color: #000000; }
 
 .events-img {
   width: 90%;
@@ -458,7 +458,7 @@
     margin: 0;
     padding: 0; }
   .eventDetails .eventsDetailDate {
-    margin-left: 50px;
+    margin-left: 59px;
     font-family: TimesNewRomanPSMT;
     font-size: 1.1039vw;
     font-weight: normal;
@@ -469,7 +469,7 @@
     color: #222222;
     cursor: pointer; }
   .eventDetails .eventsDetailTitle {
-    margin-left: 50px;
+    margin-left: 59px;
     font-family: TimesNewRomanPSMT;
     font-size: 1.2987vw;
     font-weight: normal;
@@ -542,7 +542,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 92.26666666666667vw;
+    width: 95.26666666666667vw;
     height: 16.041979010494753vh;
     padding: 10px;
     margin: 0; }
@@ -562,7 +562,7 @@
     .eventDetails .eventsDetailTitle {
       margin-left: 50px;
       font-family: TimesNewRomanPSMT;
-      font-size: 5.55556vw;
+      font-size: 2.6vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -607,9 +607,21 @@
     display: none; } }
 
 @media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
+  .eventsInfoBox {
+    grid-column: 6 / 9;
+    margin-left: -4vw;
+    grid-row: 1 / 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40.05195vw;
+    height: 99.70703vh;
+    background-size: 48.05195vw 99.70703vh;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   .eventList {
     grid-column: 1 / 4;
-    grid-row: 3 / span 9;
+    grid-row: 5 / span 9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -623,11 +635,11 @@
     height: 9.85352vh;
     padding: 30px;
     margin: -20px;
-    margin-left: -8vw; }
+    margin-left: -5vw; }
     .eventDetails .eventsDetailTitle {
-      margin-left: 15px;
+      margin-left: 1px;
       font-family: TimesNewRomanPSMT;
-      font-size: 13px;
+      font-size: 11px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -635,9 +647,9 @@
       text-align: left;
       color: #222222; }
     .eventDetails .eventsDetailDate {
-      margin-left: 15px;
+      margin-left: 1px;
       font-family: TimesNewRomanPSMT;
-      font-size: 13px;
+      font-size: 11px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -646,15 +658,127 @@
       color: #222222; }
   .ddevent-top-title {
     margin-top: 1vh;
-    font-size: 3.24675vw; }
+    font-size: 4.5vh; }
   .event-top-title {
     margin-top: 2vh;
-    font-size: 3.24675vw; }
+    font-size: 4.5vh; }
   #testdriveLogoTL img {
     width: 90%;
     height: 80%;
     object-fit: contain;
     margin-top: -5vh; } }
+
+/*iPhoneS5*/
+/*Landscape*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .eventDetails .eventsDetailTitle {
+    margin-left: 1px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 3.6vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; } }
+
+/*iPhoneS5*/
+/*Potrait*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .eventDetails .eventsDetailTitle {
+    margin-left: 40px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2.6vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  .eventDetails .eventsDetailDate {
+    margin-left: 40px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2.54873vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; } }
+
+/*iPhonePLus*/
+/*Landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  .eventDetails .eventsDetailTitle {
+    margin-left: 1px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2.98vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; } }
+
+/*iPhoneX Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .eventDetails .eventsDetailDate {
+    margin-left: 40px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2.34vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 40px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 2.34vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222; } }
+
+/*iPhoneX Landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .eventDetails .eventsDetailTitle {
+    margin-left: 20px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.8vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .eventDetails .eventsDetailDate {
+    margin-left: 20px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 1.8vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.9px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer; }
+  .event-top-title {
+    width: 46.94805vw;
+    height: 3.22266vh;
+    font-family: TimesNewRomanPSMT;
+    font-size: 4.94805vh;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.9px;
+    text-align: left;
+    margin-left: -1vw; } }
 
 .fixedPagePosition {
   position: fixed;
@@ -716,8 +840,8 @@ video::-webkit-media-controls-panel {
 
 #gallery-space-img {
   filter: drop-shadow(0 0 30px #ffc278);
-  width: 55vw;
-  height: 80vh;
+  width: 79%;
+  height: 80%;
   margin-left: 3vw;
   margin-right: 3vw;
   grid-column: 3 / span 9;
@@ -1039,7 +1163,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1vh; }
+        margin-bottom: -3vh; }
         .mob-container .mob-con #td-mob #mob-test-eve {
           text-decoration: none;
           margin-top: 2vh;
@@ -2257,9 +2381,12 @@ body {
       height: 10vh;
       margin-left: 2vw; } }
 
+/*mobile landscape*/
 @media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
-  #backButton {
-    visibility: visible; } }
+  .tdEventActive {
+    padding-right: 9vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #testdriveLogoTL img {

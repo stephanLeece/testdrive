@@ -82,11 +82,21 @@
 
 }
 
+/*mobile landscape*/
+@media only screen
+and (min-device-width: 376px)
+and (max-device-width: 736px)
+and (orientation: landscape) {
 
-//WHY IS THIS NOT WORKING?
-@media only screen and (min-device-width: 376px) and (max-device-width: 736px) and (orientation: landscape) {
-#backButton {
-    visibility: visible;
+// #backButton {
+//     visibility: visible;
+// }
+
+.tdEventActive {
+
+    padding-right: 9vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 }
@@ -120,8 +130,5 @@ and (orientation : portrait) {
         object-fit: contain;
         margin-top: -3.5vh;
     }
-
-
-
 
 }
