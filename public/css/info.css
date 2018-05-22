@@ -404,7 +404,7 @@
       #infoContactInfo .info-contact .facebook {
         margin-bottom: 1vh; } }
 
-@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #infoMap {
     grid-column: 6 / 11;
     grid-row: 3 / span 4; }

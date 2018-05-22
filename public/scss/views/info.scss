@@ -403,6 +403,7 @@ and (orientation: portrait) {
 and (min-device-width: 376px)
 and (max-device-width: 736px)
 and (orientation: landscape) {
+
   .sign-up-to-our-maili {
     font-size: 10px;
     text-shadow: 0.5px 0.5px black;
@@ -547,8 +548,10 @@ and (orientation: landscape) {
   //infoContactInfo
 }
 //closing media q ipad landscape
+
+
 @media only screen
-and (min-device-width: 701px)
+and (min-device-width: 768px)
 and (max-device-width : 1024px)
 and (orientation: portrait) {
 
@@ -755,7 +758,11 @@ and (orientation: portrait) and
 }
 
 
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen
+and (min-device-width: 1366px)
+and (max-device-height: 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
   #infoMap {
     grid-column: 5 / 10;
     grid-row: 3 / 10;
