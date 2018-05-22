@@ -52,6 +52,29 @@ function desktopHomepageFunctions() {
 };
 
 
+// function mobileHomepageFunctions() {
+//   $(function() {
+//     $('#gallery-space-img').swipe( {
+//       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+//         if (direction == "left") {
+//           $('#modal').css({'display': 'flex'});
+//           $('#modal').css({'opacity': '1'});
+//         }
+//       },
+//       threshold: 20
+//     });
+//
+//     $('#modal').swipe( {
+//       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+//         if (direction == "right") {
+//           $('#modal').css({'display': 'none'});
+//         }
+//       },
+//       threshold:20
+//     });
+//   });
+// }
+
 function mobileHomepageFunctions() {
   $(function() {
     $('#gallery-space-img').swipe( {
@@ -73,6 +96,20 @@ function mobileHomepageFunctions() {
       threshold:20
     });
   });
+
+  $('#mob-bike').on("click", function() {
+      $('#modal').css({
+        'display':'flex',
+        'z-index':'900000000'
+      })
+    });
+
+    $("#modal").on("click", function() {
+      $('#modal').css({
+       'display':'none',
+      'z-index' : '0'
+      })
+    });
 }
 
 // Handles post from form
