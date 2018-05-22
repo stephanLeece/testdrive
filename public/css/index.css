@@ -280,6 +280,19 @@
 
 /*iPhone X*/
 /* Portrait */
+@media only screen and (max-device-width: 812px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  #pdfs-container {
+    width: 100vw;
+    height: 41.77vh;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    margin-top: -30vh;
+    justify-content: center;
+    object-fit: contain;
+    background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
+    box-shadow: 0 2px 40px 0 rgba(246, 173, 173, 0.5);
+    overflow-y: scroll; } }
+
 /*iPhone X*/
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -1015,6 +1028,12 @@
     letter-spacing: -0.9px;
     text-align: left;
     color: #000000; } }
+
+@media only screen and (min-device-width: 1800px) and (orientation: landscape) {
+  .eventDetails .eventsDetailDate {
+    margin-left: 70px; }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 70px; } }
 
 .fixedPagePosition {
   position: fixed;

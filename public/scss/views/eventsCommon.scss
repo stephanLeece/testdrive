@@ -827,3 +827,13 @@ and (orientation: landscape)  {
     color: #000000;
 }
 }
+
+
+@media only screen and (min-device-width: 1800px)  and (orientation: landscape) {
+  .eventDetails .eventsDetailDate {
+    margin-left: 70px;
+  }
+  .eventDetails .eventsDetailTitle {
+    margin-left: 70px;
+  }
+}
