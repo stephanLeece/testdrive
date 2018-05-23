@@ -612,6 +612,7 @@
     display: flex;
     flex-direction: column;
     width: 95%;
+    font-size: 2.5vh;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -701,8 +702,6 @@
     object-fit: contain;
     margin-top: -5vh; } }
 
-/*iPhoneS5*/
-/*Landscape*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   .eventDetails .eventsDetailTitle {
     margin-left: 1px;
@@ -713,36 +712,9 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; }
-  .eventInfo {
-    font-size: 3.8vh;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    font-family: TimesNewRomanPSMT;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #000000; } }
+    color: #222222; } }
 
-/*iPhoneS5*/
-/*Potrait*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-  .eventInfo {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    font-size: 2.5vh;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #000000; }
   .eventDetails .eventsDetailTitle {
     margin-left: 40px;
     font-family: TimesNewRomanPSMT;
@@ -828,18 +800,6 @@
     justify-content: center;
     align-items: center;
     margin-left: 10.375vw; }
-  .eventsInfoBox {
-    grid-column: 6 / 9;
-    margin-left: -4vw;
-    grid-row: 1 / 12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40.05195vw;
-    height: 99.70703vh;
-    background-size: 48.05195vw 99.70703vh;
-    overflow-y: scroll;
-    overflow-x: hidden; }
   .eventDetails .eventsDetailTitle {
     margin-left: 20px;
     font-family: TimesNewRomanPSMT;
@@ -960,19 +920,7 @@
     width: 30.24675vw;
     height: 3.8vh;
     padding: 30px;
-    margin: -22px; }
-  .eventInfo {
-    display: flex;
-    flex-direction: column;
-    width: 93%;
-    font-size: 1.5vh;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #000000; } }
+    margin: -22px; } }
 
 /*iPad Pro*/
 /*Landscape*/
@@ -1015,19 +963,7 @@
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222;
-    cursor: pointer; }
-  .eventInfo {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.4vh;
-    width: 93%;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    text-align: left;
-    color: #000000; } }
+    cursor: pointer; } }
 
 @media only screen and (min-device-width: 1600px) and (orientation: landscape) {
   .eventDetails .eventsDetailDate {
