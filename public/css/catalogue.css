@@ -183,6 +183,7 @@
     height: 41.77vh;
     grid-column: 1 / 5;
     grid-row: 3 / 4;
+    margin-top: 12vh;
     justify-content: center;
     object-fit: contain;
     background-image: linear-gradient(to bottom, #fbcaca, #ffffff);
