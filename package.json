@@ -22,6 +22,7 @@
     "express-handlebars": "^3.0.0",
     "gulp-cli": "^2.0.1",
     "jquery-touchswipe": "^1.6.18",
+    "marked": "^0.4.0",
     "node": "8.9.4",
     "node-sass": "^4.7.2",
     "nodemailer": "^4.6.0",
