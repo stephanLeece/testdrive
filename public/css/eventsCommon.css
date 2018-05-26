@@ -36,11 +36,10 @@
   letter-spacing: -0.9px;
   text-align: left;
   color: #000000; }
-
-.events-img {
-  width: 90%;
-  height: auto;
-  padding-left: 2.3vw; }
+  .eventInfo img {
+    width: 90%;
+    height: auto;
+    padding-left: 2.3vw; }
 
 .event-top-title {
   width: 46.94805vw;

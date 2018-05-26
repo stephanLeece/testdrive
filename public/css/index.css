@@ -441,11 +441,10 @@
   letter-spacing: -0.9px;
   text-align: left;
   color: #000000; }
-
-.events-img {
-  width: 90%;
-  height: auto;
-  padding-left: 2.3vw; }
+  .eventInfo img {
+    width: 90%;
+    height: auto;
+    padding-left: 2.3vw; }
 
 .event-top-title {
   width: 46.94805vw;
@@ -1543,7 +1542,7 @@ a:hover {
       height: 90%;
       width: 65%;
       font-family: TimesNewRomanPSMT;
-      font-size: 1.95312vh;
+      font-size: 1.95313vh;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -1616,7 +1615,7 @@ a:hover {
     width: 100%;
     justify-self: center;
     align-self: end;
-    height: 26.95312vh;
+    height: 26.95313vh;
     width: 24.48052vw;
     justify-self: center;
     align-self: center;

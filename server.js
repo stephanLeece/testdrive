@@ -4,7 +4,6 @@ const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
 const nodemailer = require('nodemailer');
-const marked = require('marked');
 const app = express();
 
 let secrets;
@@ -25,13 +24,6 @@ var transporter = nodemailer.createTransport({
 client = contentful.createClient({
   space: process.env.space || secrets.space,
   accessToken: process.env.accessToken || secrets.accessToken
-});
-
-marked.setOptions({
-  renderer: new marked.Renderer(),
-  sanitize: true,
-  smartLists: true,
-  smartypants: true
 });
 
 function compare(a, b) {
@@ -132,7 +124,7 @@ app.get('/events', function(req, res) {
         return {
           eventTitle: entry.fields.ddEventTitle,
           eventDate: ddEventDate,
-          eventInfo: marked(entry.fields.ddEventInfo),
+          eventInfo: entry.fields.ddEventInfo,
           eventContent: entry.fields.ddEventContent
             ? entry.fields.ddEventContent.map((image) => {
               return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -159,7 +151,7 @@ order: '-fields.tdEventDate'
         return {
           eventTitle: entry.fields.tdEventTitle,
           eventDate: tdEventDate,
-          eventInfo: marked(entry.fields.tdEventInfo),
+          eventInfo: entry.fields.tdEventInfo,
           eventContent: entry.fields.tdEventContent
             ? entry.fields.tdEventContent.map((image) => {
               return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
