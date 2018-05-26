@@ -4,6 +4,8 @@ const expressHandlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const contentful = require('contentful');
 const nodemailer = require('nodemailer');
+const marked = require('marked');
+const app = express();
 
 let secrets;
 if (process.env.NODE_ENV == 'production') {
@@ -24,8 +26,46 @@ client = contentful.createClient({
   space: process.env.space || secrets.space,
   accessToken: process.env.accessToken || secrets.accessToken
 });
-const app = express();
-// View engine setup
+
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  sanitize: true,
+  smartLists: true,
+  smartypants: true
+});
+
+function compare(a, b) {
+  var splitA = a.split(" ");
+  var splitB = b.split(" ");
+  var lastA = splitA[splitA.length - 1];
+  var lastB = splitB[splitB.length - 1];
+  if (lastA < lastB)
+    return -1;
+  if (lastA > lastB)
+    return 1;
+  return 0;
+}
+
+function dateToString(date) {
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  let numOfMonth = date[1] - 1;
+  date[1] = months[numOfMonth];
+  return date.join(' ');
+}
+
 app.engine('handlebars', expressHandlebars());
 app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
@@ -49,17 +89,6 @@ app.get('/', function(req, res) {
   });
 });
 
-function compare(a, b) {
-  var splitA = a.split(" ");
-  var splitB = b.split(" ");
-  var lastA = splitA[splitA.length - 1];
-  var lastB = splitB[splitB.length - 1];
-  if (lastA < lastB)
-    return -1;
-  if (lastA > lastB)
-    return 1;
-  return 0;
-}
 app.get('/catalogue', function(req, res) {
   client.getEntries().then((entries) => {
     let artists = [];
@@ -91,25 +120,7 @@ app.get('/catalogue', function(req, res) {
     console.log('err: ', err);
   });
 });
-function dateToString(date) {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ];
-  let numOfMonth = date[1] - 1;
-  date[1] = months[numOfMonth];
-  return date.join(' ');
-}
+
 app.get('/events', function(req, res) {
   client.getEntries({
     'content_type': 'drivedriveEvent',
@@ -121,7 +132,7 @@ app.get('/events', function(req, res) {
         return {
           eventTitle: entry.fields.ddEventTitle,
           eventDate: ddEventDate,
-          eventInfo: entry.fields.ddEventInfo,
+          eventInfo: marked(entry.fields.ddEventInfo),
           eventContent: entry.fields.ddEventContent
             ? entry.fields.ddEventContent.map((image) => {
               return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -136,6 +147,7 @@ app.get('/events', function(req, res) {
     });
   });
 });
+
 app.get('/testdrive', function(req, res) {
   client.getEntries({
     'content_type': 'testdriveEvent',
@@ -147,7 +159,7 @@ order: '-fields.tdEventDate'
         return {
           eventTitle: entry.fields.tdEventTitle,
           eventDate: tdEventDate,
-          eventInfo: entry.fields.tdEventInfo,
+          eventInfo: marked(entry.fields.tdEventInfo),
           eventContent: entry.fields.tdEventContent
             ? entry.fields.tdEventContent.map((image) => {
               return {image: `http:${image.fields['file'].url}`, imageDescrip: image.fields['description']};
@@ -162,9 +174,11 @@ order: '-fields.tdEventDate'
     });
   });
 });
+
 app.get('/info', function(req, res) {
   res.render('info', {layout: 'layout'});
 });
+
 app.post('/new-contact', function(req, res) {
   const { email } = req.body;
   if (!email) {
