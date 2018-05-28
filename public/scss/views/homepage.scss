@@ -571,7 +571,7 @@ and (orientation: portrait) {
     opacity: 1;
     z-index: 333334;
     justify-content: start;
-    padding: 8vh 5vh 14vh 8vh;
+    padding: 9vh 8vh 17vh 10vh;
     background-color: white;
     background-size: 100% 90%;
     margin-top: 15vh;
@@ -974,5 +974,5 @@ and (orientation: landscape)  {
 
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
 
-  
+
 }
