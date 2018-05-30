@@ -416,21 +416,6 @@ and (orientation : landscape) {
       text-align: left;
       color: #222222;
   }
-
-  // .eventInfo {
-  //   // font-size: 3.8vh;
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 95%;
-  //   font-family: TimesNewRomanPSMT;
-  //   font-weight: normal;
-  // 	font-style: normal;
-  // 	font-stretch: normal;
-  // 	line-height: normal;
-  // 	letter-spacing: -0.9px;
-  // 	text-align: left;
-  // 	color: #000000;
-  // }
 }
 // /*iPhoneS5*//*Potrait*/
 @media only screen
@@ -438,19 +423,6 @@ and (min-device-width : 320px)
 and (max-device-width : 568px)
 and (orientation : portrait) {
 
-//   .eventInfo {
-//     display: flex;
-//     flex-direction: column;
-//     width: 95%;
-//     font-size: 2.5vh;
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: normal;
-//     letter-spacing: -0.9px;
-//     text-align: left;
-//     color: #000000;
-// }
 
   .eventDetails .eventsDetailTitle {
       margin-left: 40px;
@@ -570,20 +542,6 @@ and (orientation : landscape) {
     align-items: center;
     margin-left: 10.375vw;
 }
-  //
-  // .eventsInfoBox {
-  //     grid-column: 6 / 9;
-  //     margin-left: -4vw;
-  //     grid-row: 1 / 12;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //     width: 40.05195vw;
-  //     height: 99.70703vh;
-  //     background-size: 48.05195vw 99.70703vh;
-  //     overflow-y: scroll;
-  //     overflow-x: hidden;
-  // }
 
   .eventDetails .eventsDetailTitle {
       margin-left: 20px;
@@ -680,6 +638,46 @@ and (orientation : portrait) {
     cursor: pointer;
 }
 
+#backButton {
+    grid-column: 11 / 12;
+    grid-row: 11 / span 2;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 3vw;
+    font-size: 3.24675vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer;
+    margin-right: -3vw;
+}
+
+// #infoLink .bike {
+//     // padding: 2vh;
+//     margin-right: -16vw;
+//     // margin-left: 5vw;
+// }
+//
+// #infoLink a h1 {
+//     font-size: 3.24675vw;
+//     font-weight: normal;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: normal;
+//     letter-spacing: -1.4px;
+//     text-align: left;
+//     margin-right: -25vw;
+//     color: #222222;
+//
+// }
 
  }
 
@@ -745,6 +743,10 @@ and (orientation: portrait) and
     margin: -22px;
 }
 
+// #infoLink .bike {
+//     padding: 2vh;
+//     margin-right: -17vw;
+// }
 }
 
 
@@ -803,19 +805,6 @@ and (orientation: landscape)  {
     cursor: pointer;
 }
 
-// .eventInfo {
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 2.4vh;
-//     width: 93%;
-//     font-weight: normal;
-//     font-style: normal;
-//     font-stretch: normal;
-//     line-height: normal;
-//     letter-spacing: -0.9px;
-//     text-align: left;
-//     color: #000000;
-// }
 }
 
 

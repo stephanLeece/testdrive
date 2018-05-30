@@ -878,7 +878,27 @@
     letter-spacing: -0.9px;
     text-align: left;
     color: #222222;
-    cursor: pointer; } }
+    cursor: pointer; }
+  #backButton {
+    grid-column: 11 / 12;
+    grid-row: 11 / span 2;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 3vw;
+    font-size: 3.24675vw;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -1.4px;
+    text-align: left;
+    color: #222222;
+    cursor: pointer;
+    margin-right: -3vw; } }
 
 /*iPad in landscape*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
