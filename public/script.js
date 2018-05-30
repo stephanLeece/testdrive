@@ -1,10 +1,10 @@
 // ---------------------------------- homepage functions -----------------
 
-let backButton = $("#backButton");
-let swiped = false;
-backButton.on('click', () => {
-    window.history.back();
-});
+// let backButton = $("#backButton");
+// let swiped = false;
+// backButton.on('click', () => {
+//     window.history.back();
+// });
 
 // activate function sets for either desktop or mobile
 if((window.innerHeight > window.innerWidth) && $(window).width() < 700) {
