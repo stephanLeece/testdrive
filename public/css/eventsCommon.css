@@ -39,7 +39,8 @@
   .eventInfo img {
     width: 90%;
     height: auto;
-    padding-left: 2.3vw; }
+    padding-left: 2.3vw;
+    margin-top: -3vh; }
 
 .event-top-title {
   width: 46.94805vw;
@@ -206,7 +207,6 @@
   .eventInfo {
     display: flex;
     flex-direction: column;
-    width: 95%;
     font-size: 2.5vh;
     font-weight: normal;
     font-style: normal;
@@ -215,6 +215,10 @@
     letter-spacing: -0.9px;
     text-align: left;
     color: #000000; }
+    .eventInfo img {
+      height: auto;
+      margin-top: 0.5vh;
+      width: 95%; }
   .eventsInfoHidden {
     display: none; }
   .events-img {
@@ -444,9 +448,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30.24675vw;
-    height: 1.95352vh;
-    padding: 30px;
+    width: 20.24675vw;
+    height: 2.9352vh;
+    padding: 50px;
     margin: -22px; }
   .eventDetails .eventsDetailTitle {
     margin-left: 30px;
@@ -512,9 +516,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30.24675vw;
-    height: 3.8vh;
-    padding: 30px;
+    width: 20.24675vw;
+    height: 2.9352vh;
+    padding: 50px;
     margin: -22px; } }
 
 /*iPad Pro*/
