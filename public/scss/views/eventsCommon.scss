@@ -48,6 +48,8 @@
 	text-align: left;
 	color: #000000;
   img {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     height: auto;
     padding-left: 2.3vw;
