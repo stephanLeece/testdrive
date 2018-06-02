@@ -976,5 +976,43 @@ and (orientation: landscape)  {
 
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
 
+  #modal {
+    grid-row: 1 / span 6;
+    grid-column: 1 / span 3;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    opacity: 1;
+    z-index: 333334;
+    justify-content: start;
+        // padding: 9vh 13vw 15vh 18vw;
+    padding: 9vh 8vh 17vh 10vh;
+    background-color: white;
+    background-size: 100% 90%;
+    margin-top: 15vh;
+    margin-left: -18vw;
+    opacity: 1;
+
+    .words {
+      width: get-mob-vh(289px);
+      height: get-mob-vh(437px);
+      font-size: get-mob-vh(18px);
+      line-height: 1.06;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: #222222;
+      z-index: -30000;
+      height: auto;
+      font-family: TimesNewRomanPSMT;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      text-align: left;
+      color: #222222;
+      letter-spacing: normal;
+      align-self: center;
+      margin-top: 8vh;
+    }
+  }
 
 }
