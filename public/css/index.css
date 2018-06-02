@@ -431,6 +431,8 @@
   text-align: left;
   color: #000000; }
   .eventInfo img {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     height: auto;
     padding-left: 2.3vw;
@@ -727,7 +729,11 @@
     font-stretch: normal;
     letter-spacing: -0.9px;
     text-align: left;
-    color: #222222; } }
+    color: #222222; }
+  .eventInfo img {
+    height: auto;
+    margin-top: 3vh;
+    width: 95%; } }
 
 /*iPhonePLus*/
 /*Landscape*/
@@ -1085,6 +1091,7 @@ video::-webkit-media-controls-panel {
     align-self: center;
     margin-top: 12vh;
     margin-bottom: 10vh;
+    margin-left: 1vw;
     cursor: pointer; }
 
 #testdriveLogoBR {
@@ -1825,6 +1832,8 @@ a:hover {
   font-size: 0.77922vw;
   color: white;
   text-align: left; }
+  #credits a {
+    color: white; }
 
 #infoMap {
   grid-column: 6 / 10;

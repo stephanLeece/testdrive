@@ -147,6 +147,10 @@
   font-size: get-vw(12px);
   color: white;
   text-align: left;
+
+   a{
+    color: white;
+  }
 }
 
 #infoMap {
@@ -172,6 +176,7 @@
     margin-bottom: 5vh;
   }
 }
+
 /* ~~~~ STYLING FOR MENU - MOBILE ONLY ~~~~~ */
 @function get-vw-mob($object) {
   $vw: (360 * 0.01) * 1px;

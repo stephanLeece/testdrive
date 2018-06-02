@@ -99,6 +99,7 @@ video::-webkit-media-controls-panel {
     align-self: center;
     margin-top: 12vh;
     margin-bottom: 10vh;
+    margin-left: 1vw;
     cursor: pointer; }
 
 #testdriveLogoBR {
@@ -436,7 +437,7 @@ a:hover {
     opacity: 1;
     z-index: 333334;
     justify-content: start;
-    padding: 8vh 5vh 14vh 8vh;
+    padding: 9vh 8vh 17vh 10vh;
     background-color: white;
     background-size: 100% 90%;
     margin-top: 15vh;

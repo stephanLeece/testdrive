@@ -111,6 +111,8 @@
   font-size: 0.77922vw;
   color: white;
   text-align: left; }
+  #credits a {
+    color: white; }
 
 #infoMap {
   grid-column: 6 / 10;
