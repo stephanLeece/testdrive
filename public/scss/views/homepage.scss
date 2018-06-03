@@ -701,12 +701,9 @@ and (orientation : portrait) {
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
 
   @supports not (display: grid) {
-
-    body {
-    background-image:url('https://i.imgur.com/j51uHm1.gifv');
-    background-position: center;
-    background-size: cover;
-}
+  .fallBackPage {
+    display: inline;
+  }
   }
 
   .home-video {
@@ -776,14 +773,7 @@ and (orientation: portrait)
 and (max-device-width: 1024px)  {
 
 
-  @supports not (display: grid) {
 
-    body {
-    background-image:url('https://i.imgur.com/j51uHm1.gifv');
-    background-position: center;
-    background-size: cover;
-}
-  }
 
 
   #gallery-space-img {
@@ -935,14 +925,7 @@ and (max-device-width: 1024px)  {
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    @supports not (display: grid) {
 
-      body {
-      background-image:url('https://i.imgur.com/j51uHm1.gifv');
-      background-position: center;
-      background-size: cover;
-  }
-    }
 
     #modal {
         grid-column: 3 / 9;
@@ -963,14 +946,7 @@ and (max-device-height: 1024px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape)  {
 
-  @supports not (display: grid) {
 
-    body {
-    background-image:url('https://i.imgur.com/j51uHm1.gifv');
-    background-position: center;
-    background-size: cover;
-}
-  }
 
     #modal {
 
