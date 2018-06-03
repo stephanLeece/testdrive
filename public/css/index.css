@@ -1539,7 +1539,9 @@ a:hover {
         margin-top: 10vh;
         margin-left: 15vw;
         width: 50vw;
-        z-index: 10000; } }
+        z-index: 10000; }
+    .home {
+      display: none; } }
   .home-video {
     grid-row: 8 / 11;
     height: 100%;
