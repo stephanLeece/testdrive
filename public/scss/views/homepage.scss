@@ -7,6 +7,10 @@
   @return ($object / $vh) * 1vh;
 }
 
+.fallBackPage {
+  display: none;
+}
+
 .fixedPagePosition {
   position: fixed;
   height: 100vh;
@@ -700,11 +704,11 @@ and (orientation : portrait) {
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
 
-  @supports not (display: grid) {
-  .fallBackPage {
-    display: inline;
-  }
-  }
+  // @supports not (display: grid) {
+  // .fallBackPage {
+  //   display: inline;
+  // }
+  // }
 
   .home-video {
     grid-row: 8 / 11;
@@ -771,9 +775,6 @@ and (orientation : portrait) {
 @media only screen and (min-device-width: 701px)
 and (orientation: portrait)
 and (max-device-width: 1024px)  {
-
-
-
 
 
   #gallery-space-img {

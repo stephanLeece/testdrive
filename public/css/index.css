@@ -990,6 +990,9 @@
   .eventDetails .eventsDetailTitle {
     margin-left: 73px; } }
 
+.fallBackPage {
+  display: none; }
+
 .fixedPagePosition {
   position: fixed;
   height: 100vh; }
@@ -1523,9 +1526,6 @@ a:hover {
 /*iPad*/
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
-  @supports not (display: grid) {
-    .fallBackPage {
-      display: inline; } }
   .home-video {
     grid-row: 8 / 11;
     height: 100%;
