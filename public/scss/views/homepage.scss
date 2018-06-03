@@ -7,7 +7,7 @@
   @return ($object / $vh) * 1vh;
 }
 
-.fallBackPage {
+.fall-back-page {
   display: none;
 }
 
@@ -704,11 +704,24 @@ and (orientation : portrait) {
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
 
-  // @supports not (display: grid) {
-  // .fallBackPage {
-  //   display: inline;
-  // }
-  // }
+  @supports not (display: grid) {
+  .fall-back-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    .fallBack-dd {
+     width:30vh;
+    }
+    .fallBack-gif {
+background-position: center;
+  margin-top: 10vh;
+margin-left: 15vw;
+width: 50vw;
+z-index: 10000;
+    }
+  }
+  }
 
   .home-video {
     grid-row: 8 / 11;
