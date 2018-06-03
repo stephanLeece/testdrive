@@ -699,6 +699,13 @@ and (orientation : portrait) {
 /*iPad*/
 /*Landscape*/
 @media only screen and (min-device-width: 701px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+  @supports not (display: grid) {
+    background-image:url('https://i.imgur.com/j51uHm1.gifv');
+background-position: center;
+background-size: cover;
+  }
+  
   .home-video {
     grid-row: 8 / 11;
     height: 100%;
