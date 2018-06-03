@@ -1595,6 +1595,22 @@ a:hover {
 /*iPad*/
 /* Portrait */
 @media only screen and (min-device-width: 701px) and (orientation: portrait) and (max-device-width: 1024px) {
+  @supports not (display: grid) {
+    .fall-back-page {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10vw;
+      margin-top: 10vh; }
+      .fall-back-page .fallBack-dd {
+        width: 30vh; }
+      .fall-back-page .fallBack-gif {
+        background-position: center;
+        margin-top: 10vh;
+        margin-left: 15vw;
+        width: 50vw;
+        z-index: 10000; }
+    .home {
+      display: none; } }
   #gallery-space-img {
     width: 70vw;
     height: 50vh;
@@ -1773,6 +1789,23 @@ a:hover {
       letter-spacing: normal;
       align-self: center;
       margin-top: 8vh; } }
+
+@supports not (display: grid) {
+  .fall-back-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 10vh; }
+    .fall-back-page .fallBack-dd {
+      width: 30vh; }
+    .fall-back-page .fallBack-gif {
+      background-position: center;
+      margin-top: 10vh;
+      margin-left: 15vw;
+      width: 50vw;
+      z-index: 10000; }
+  .home {
+    display: none; } }
 
 .info {
   height: 100vh;
