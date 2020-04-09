@@ -27,7 +27,7 @@
     "node": "8.9.4",
     "node-sass": "^4.9.1",
     "nodemailer": "^4.6.0",
-    "nodemon": "^1.15.1",
+    "nodemon": "^2.0.3",
     "styles": "^0.2.1",
     "snyk": "^1.116.2"
   },
